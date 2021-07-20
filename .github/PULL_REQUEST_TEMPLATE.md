@@ -1,13 +1,16 @@
-¡Hola! 👋 Este es un repositorio especial, hecho para el concurso #VeranoFrontend de Código Facilito, consideramos cada pull request una entrada para participar en el concurso.
+Antes de enviar el pull request, lee estos detalles y completa tu información 🚨🚨🚨🚨
 
-Antes de enviar el pull request asegúrate de lo siguiente:
+¡Hola! 👋 Este es un repositorio especial, hecho para el concurso #VeranoFrontend de Código Facilito, consideramos cada pull request una entrada para participar en el concurso.
 
 ✅ Haz finalizado todos los cambios que deseas hacer a la página, para participar en el concurso
 ✅ Activaste GitHub Actions y GitHub pages en tu repositorio, esto nos permitirá visualizar tu página funcionando en el navegador.
 
+
+======================
+
 Además, completa tu información para poder contactarte, en caso de que necesitemos información adicional, o debamos informarte que has ganado alguno de los premios, coloca debajo tu:
 
-** Nombre de usuario en codigofacilito.com: **
+Nombre de usuario en codigofacilito.com:
 
 Finalmente, aquí debajo, cuéntanos un poco sobre tu proyecto, qué es lo más interesante en tu código, o que destacarías de tu implementación: 👇
 
