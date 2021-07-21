@@ -1,38 +1,40 @@
-nav{
+nav {
   background-color: aliceblue;
   padding: 15px;
   display: flex;
-  gap:1em;
+  gap: 1em;
 }
 
-main{
+main {
   text-align: center;
   max-width: 960px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-section{
+section {
   margin-top: 3rem;
 }
 
-.cursos div{
-  background-color: black;
+.cursos div {
+  background-color: rgb(214, 3, 73);
   color: white;
   max-width: 200px;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  margin-right: 2em;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
-.fotos img{
+.fotos img {
   max-width: 450px;
   display: inline-block;
 }
-ul li{
+ul li {
   text-align: left;
 }
 ul li::marker {
   content: "🚀";
 }
 
-ol li{
+ol li {
   text-align: left;
 }
