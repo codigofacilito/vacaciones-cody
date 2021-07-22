@@ -1,14 +1,21 @@
 @import 'components/font-face'
 
+// $assetPath: "/wp-content/uploads"
+// $verde: #6A8042
+// $fontFamily: "Montserrat Alternates"
+    
 * 
     outline: none
 
 
 body
-    font-family: 'DM Sans', sans-serif
-    font-family: 'IBM Plex Sans', sans-serif
+    font-family: "DM Sans"
     font-weight: 400
 
+h1, h2, h3, h4, h5, h6 
+    font-family: "IBM Plex Sans"
+    font-weight: 700 
+    
 nav
     background-color: aliceblue
     padding: 15px
@@ -22,25 +29,3 @@ main
 
 section
     margin-top: 3rem
-
-
-.cursos div
-    background-color: black
-    color: white
-    max-width: 200px
-    display: inline-block
-    box-shadow: 5px 5px 10px black
-
-.fotos img
-    max-width: 450px
-    display: inline-block
-
-ul li
-    text-align: left
-
-ul li::marker 
-    content: "🚀"
-
-
-ol li
-    text-align: left;
