@@ -1,38 +1,159 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Oswald', sans-serif !important;
+  background-image: url("https://thumbs.dreamstime.com/b/arena-de-la-playa-del-mar-para-la-textura-y-el-fondo-31896702.jpg");
+  padding-bottom:20px;
 }
+
+h1,h2,h3,h4,h5{
+  color: #24a0ed;
+  
+}
+body a {
+  text-decoration: none;
+}
+body a:hover{
+  text-decoration: none;
+}
+body h1{
+  font-weight: bolder;
+}
+nav{
+  padding-top: 10px;
+  padding-left: 10px;
+  display: flex !important;
+  position: fixed;
+  gap:2em;
+}
+nav a:hover{
+
+  transform: scale(1.06);
+}
+button:hover{
+  transform: scale(1.06) !important;
+}
+a {
+  text-decoration:none;
+  color:#FFF;
+}
+.rainbow-button {
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:3vw;
+  font-weight:bold;
+  
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width: auto;
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+}
+nav .rainbow-button:hover {
+  animation:slidebg 4s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+hr{
+  background-color: #24a0ed ;
+height: 1px;
+border: 0;
+color: #24a0ed ;}
 
 main{
   text-align: center;
   max-width: 960px;
   margin:0 auto;
-}
+  background: rgb(249,247,100);
 
+background: linear-gradient(90deg, rgba(249,247,100,1) 0%,rgba(201,198,86,0.8239670868347339) 50%, rgba(189,184,17,0.8239670868347339) 100%);
+  height:100%;
+}
+.cursos{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
 section{
   margin-top: 3rem;
-}
-
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
 }
 .fotos img{
   max-width: 450px;
   display: inline-block;
 }
-ul li{
-  text-align: left;
+ul {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  text-align: left !important;
+  flex-direction: column;
+ 
+  
 }
 ul li::marker {
+  
   content: "🚀";
 }
+ol{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+#segunda{
+  margin: 25px;
+}
 
-ol li{
-  text-align: left;
+#tercera{
+  margin: 25px;
+}
+#cuarta{
+  margin: 25px;
+}
+#cuarta button:last-child{
+  margin-top: 10px;
+}
+#quinta{
+  margin: 25px;
+}
+#quinta button:last-child{
+  margin-top: 10px;
+}
+#sexta{
+  margin: 25px 0 -20px 0;
+}
+#sexta ol{
+  padding-bottom: 25px;
+}
+.fotos img{
+  margin: 5px;
+  max-width: 400px;
+  min-width: 380px;
+}
+@media (max-width:800px){
+  .cursos{
+    display:block;
+  }
+  .cursos button{
+    width: 100%;
+    margin: 10px;
+  }
+  nav{
+    position: inherit;
+  }
 }
