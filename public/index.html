@@ -12,74 +12,110 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
+  <header>
+    <nav>
+      <a href="/">
+        <img src="images/icons/home-active.svg">
+        Inicio
+      </a>
+      <a href="fotos.html">
+        <img src="images/icons/gallery.svg">
+        Galería
+      </a>
+    </nav>
 
+    <h1>Estas son mis Vacaciones</h1>
+    <p>Soy Cody, un aspirante a Dev</p>
+    <p>En 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+    <img src="images/corner_cody.png">
+  </header>
+
+  <main>
     <section>
       <header>
-        <h2>Mis vacaciones Frontend</h2>
+        <h2>Mis Vacaciones Frontend</h2>
       </header>
+
       <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
       <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
+
+      <h3> Estos son los cursos que estuve tomando </h3>
       <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
+        <a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank" class="curso">
+          <h3 class="curso-title">Curso profesional de Desarrollo Web</h3>
+          <img class="curso-img" src="images/curso-profesional-webdev.png">
+          <p class="curso-description">Cada día se vuelve más importante que todo el mundo aprenda a crear un sitio web, ya sea para un boletín de información, una invitación, un portafolio personal de trabajo, o para un negocio de desarrollo web.</p>
+        </a>
+        <a href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank" class="curso">
+          <h3 class="curso-title">Curso para crear mi primera página web</h3>
+          <img class="curso-img" src="images/curso-crear-primera-pagina.png">
+          <p class="curso-description">Aprende a crear tu primera página web desde 0, sin conocimientos previos. Crea un sitio web funcional y atractivo, aunque nunca antes hayas hecho una página web y no tengas idea de cómo crearla</p>
+        </a>
       </div>
     </section>
 
     <section>
       <header>
-        <h2>Ruta de aprendizaje 2021</h2>
+        <h2>Ruta de Aprendizaje 2021</h2>
         <p> También me propuse aprender nuevas tecnologías durante 2021</p>
       </header>
+
       <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
+        <li>
+          <input type="checkbox" checked>
+          Flexbox y Grid
+        </li>
+        <li>
+          <input type="checkbox" checked>
+          Animaciones con CSS y JavaScript
+        </li>
+        <li>
+          <input type="checkbox">
+          AJAX
+        </li>
+        <li>
+          <input type="checkbox">
+          HTML Semántico
+        </li>
+        <li>
+          <input type="checkbox">
+          Entre Otros
+        </li>
       </ul>
     </section>
+
     <section>
       <header>
-        <h2>Colabora en mi página</h2>
+        <h2>Colabora en mi Página</h2>
       </header>
+
       <p>
         Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
       </p>
       <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página y enviando un <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests" target="_blank">Pull Request</a>
       </p>
       <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
+        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un <a href="https://www.youtube.com/watch?v=Zqft6yNRuNs" target="_blank">tutorial que lo explica</a>
       </p>
+      <p>
+        También agregué un iframe para que puedas ver el tutorial sin abandonar la página
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Zqft6yNRuNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
+
     <section>
       <header>
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
       </header>
+
       <div class="fotos">
         <img src="images/1.jpg" alt="Cody en la playa">
         <img src="images/2.jpg" alt="Cody acampando">
         <img src="images/3.jpg" alt="Cody en una alberca">
         <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
+          Puedes ver más, en la <a href="fotos.html">galería de fotos de mi página</a>
         </p>
       </div>
     </section>
@@ -87,18 +123,24 @@
     <section>
       <header>
         <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
       </header>
-      
+
+      <p>
+        Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente
+      </p>
+
+      <p>
+        Durante mis vacaciones aprendí que existen distintos beneficios de descansar:
+      </p>
+      <ol>
+        <li>Mejora la salud mental</li>
+        <li>Incrementa la motivación</li>
+        <li>Reduce el <a href="https://www.significados.com/burnout/">Burnout</a></li>
+        <li>Mejora tu productividad y creatividad</li>
+      </ol>
     </section>
-    
   </main>
+
+  <footer>Hecho con 💚 por <a href="https://www.linkedin.com/in/angel-berlanga/">Angel Berlanga</a></footer>
 </body>
 </html>
