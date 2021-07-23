@@ -77,7 +77,20 @@
                     background-color: $lightRed
                     transition: 2s all
 
-    .menu__item--active
+.index
+    .menu__item:nth-child(1)
+        .menu__link
+            &::after
+                content: ''
+                position: absolute
+                left: 0
+                bottom: -5px
+                height: 3px
+                width: 100%
+                background-color: $lightRed
+                transition: 2s all
+.gallery
+    .menu__item:nth-child(2)
         .menu__link
             &::after
                 content: ''

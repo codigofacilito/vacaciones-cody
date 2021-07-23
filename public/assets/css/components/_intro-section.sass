@@ -1,0 +1,35 @@
+.intro 
+    text-align: left
+    .sky 
+        background: linear-gradient(180deg, #c0e8ef 0%, #00acc1 100% )
+        padding: 8em 0 3em
+    .sea
+        width: 100%
+        display: block
+        margin-top: -32px
+    .cody 
+        position: absolute
+        bottom: -75px
+        z-index: 1
+        max-width: 340px
+        animation: float 7s ease-in-out infinite;
+    .intro-title 
+        font-size: 4em;
+        line-height: 55px;
+        text-align: left;
+        color: $deepBlue
+        margin: 0 0 30px
+    .description
+        text-align: left
+        color: $lightGray
+        font-size: 20px
+
+
+@keyframes float 
+    0% 
+        transform: translatey(0px);   
+    50% 
+        transform: translatey(-20px) 
+    100% 
+        transform: translatey(0px)
+    
