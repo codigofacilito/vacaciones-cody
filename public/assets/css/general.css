@@ -1,0 +1,38 @@
+/** @format */
+
+* {
+	font-family: "Patrick Hand", cursive;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Patrick Hand", cursive;
+	color: #444444;
+}
+
+a {
+	color: #f7cb18;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f7cb18;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Patrick Hand", cursive;
+}
+ol {
+	text-decoration: none !important;
+}
+
+ol li {
+	text-decoration: none !important;
+}

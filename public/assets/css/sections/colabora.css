@@ -1,0 +1,30 @@
+/** @format */
+
+.colabora {
+	background: linear-gradient(rgba(2, 2, 2, 0.9), rgba(0, 0, 0, 0.9)),
+		url("/assets/images/bg/colabora.jpg");
+	background-size: cover;
+	padding: 150px 0;
+}
+.colabora h1 {
+	color: #f7ca18;
+	font-weight: 900;
+	margin-top: -100px;
+}
+.colabora p {
+	color: #ba9912;
+	font-weight: 900;
+}
+.colabora p .colabora-btn {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 10px 28px;
+	transition: 0.5s;
+	margin-top: 10px;
+	border: 2px solid #097146;
+	background-color: #11956f;
+	color: #fff;
+}
