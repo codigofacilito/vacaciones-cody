@@ -1,14 +1,28 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+* {
+  margin: 0;
+  background: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 136);
 }
 
-main{
-  text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+nav{
+  background: blue;
+  display: flex;
+  padding: 0.8rem;
+  gap: 2.5em;
+}
+
+a {
+  background: blue;
+  color: cornsilk;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#Galeria {
+  padding-left: 1.2rem;
+  margin: 1.8rem 0;
 }
 
 section{
@@ -22,9 +36,14 @@ section{
   display: inline-block;
   box-shadow: 5px 5px 10px black;
 }
+
+.fotos {
+  padding: auto;
+  justify-content: space-around;
+}
 .fotos img{
-  max-width: 450px;
-  display: inline-block;
+  max-width: 30%;
+  padding: 0.6rem;
 }
 ul li{
   text-align: left;
@@ -35,4 +54,10 @@ ul li::marker {
 
 ol li{
   text-align: left;
+}
+
+@media (max-width: 400px){
+  .fotos img {
+    width: 96%;
+  }
 }
