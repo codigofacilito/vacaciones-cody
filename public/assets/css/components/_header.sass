@@ -1,0 +1,90 @@
+@keyframes rotate 
+    0% 
+        transform: rotate(0deg)    
+    100% 
+        transform: rotate(360deg)
+
+.header 
+    padding: 15px 0
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .05)
+    background-color: #c0e8ef
+    &.sticky
+        position: fixed
+        width: 100%
+        background-color: #fff
+        padding: 6px 0
+        z-index: 100;
+        .menu__label
+            font-size: 1.2em
+            span
+                color: #f9a704
+        .menu__icon 
+            width: 35px
+            animation-name: rotate
+            animation-duration: 3s
+            animation-iteration-count: infinite
+            animation-timing-function: linear
+.menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 1em
+
+    &__brand
+        display: flex
+        align-items: center
+        &:hover 
+            .menu__icon
+                animation-name: rotate
+                animation-duration: 3s
+                animation-iteration-count: infinite
+                animation-timing-function: linear
+            .menu__label
+                span
+                    color: #f9a704
+
+    &__icon 
+        width: 45px
+        margin-right: 12px
+
+
+    &__label
+        font-family: $IBM
+        font-weight: 700
+        font-size: 1.5em
+        color: $deepBlue
+        text-decoration: none
+
+    &__list
+        display: flex
+        list-style: none 
+
+    &__item 
+        padding: 0 15px
+        .menu__link 
+            text-decoration: none
+            color: $deepBlue
+            position: relative
+            &:hover 
+                color: $lightRed
+                &::after
+                    content: ''
+                    position: absolute
+                    left: 0
+                    bottom: -5px
+                    height: 3px
+                    width: 100%
+                    background-color: $lightRed
+                    transition: 2s all
+
+    .menu__item--active
+        .menu__link
+            &::after
+                content: ''
+                position: absolute
+                left: 0
+                bottom: -5px
+                height: 3px
+                width: 100%
+                background-color: $lightRed
+                transition: 2s all

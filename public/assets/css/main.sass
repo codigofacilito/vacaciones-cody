@@ -1,21 +1,17 @@
+// Fuentes
 @import 'components/font-face'
 
 // $assetPath: "/URL/PATH"
 $deepBlue: #051626
+$lightGray: #486076
 $whiteSmoke: #f5f5f5
-$lightRed: #FD585F
+$lightRed: #f66d65
+$lightGreen: #5BCC85
 $DM: "DM Sans"
 $IBM: "IBM Plex Sans"
 
 * 
     outline: none
-
-
-@keyframes rotate 
-    0% 
-        transform: rotate(0deg)    
-    100% 
-        transform: rotate(360deg)
 
 body
     background-color: $whiteSmoke
@@ -23,6 +19,9 @@ body
     font-weight: 400
     font-size: 16px
     margin: 0
+
+p 
+    color: $lightGray
 
 h1, h2, h3, h4, h5, h6 
     font-family: $IBM
@@ -34,91 +33,74 @@ h1, h2, h3, h4, h5, h6
     width: 100%
     margin: 0 auto
 
-section
-    margin-top: 3rem
+.image 
+    width: 100%
+    display: block
 
-
-.header 
-    padding: 30px 0
-    &.sticky
-        position: fixed;
-        top: 0;
-        max-width: 1100px;
-        width: 100%;
-        margin-right: 0;
-        margin-left: 0;
-        background-color: #fff;
-        padding: 6px 0;
-
-        &+.wrap
-            padding-top: 200px;
-
-        
-
-.menu
+.row
     display: flex
-    align-items: center
-    justify-content: space-between
-    gap: 1em
+    flex-wrap: wrap
+    
+.col 
+    margin: 0 15px
+    position: relative
+    &--10 
+        width: calc( 10% - 30px )
+    &--20 
+        width: calc( 20% - 30px )    
+    &--30 
+        width: calc(30% - 30px)
+    &--40 
+        width: calc( 40% - 30px )
+    &--50 
+        width: calc(50%  - 30px)   
+    &--60 
+        width: calc( 60% - 30px )
+    &--70 
+        width: calc(70% - 30px )   
+    &--80 
+        width: calc( 80% - 30px )
+    &--90 
+        width: calc( 90% -  30px)
+    &--100 
+        width: calc( 100% - 30px )
 
-    &__brand
-        display: flex
-        align-items: center
-        &:hover 
-            .menu__icon
-                animation-name: rotate
-                animation-duration: 3s
-                animation-iteration-count: infinite
-                animation-timing-function: linear
-            .menu__label
-                span
-                    color: #f9a704
+// Header
+@import 'components/header'
 
-    &__icon 
-        width: 45px
-        margin-right: 12px
-
-
-    &__label
-        font-family: $IBM
-        font-weight: 700
-        font-size: 1.9em
+// Intro section
+.intro 
+    text-align: left
+    .sky 
+        background: linear-gradient(180deg, #c0e8ef 0%, #00acc1 100% )
+        padding: 8em 0 3em
+    .sea
+        width: 100%
+        display: block
+        margin-top: -32px
+    .cody 
+        position: absolute
+        bottom: -75px
+        z-index: 1
+        max-width: 340px
+        animation: float 7s ease-in-out infinite;
+    .intro-title 
+        font-size: 4em;
+        line-height: 55px;
+        text-align: left;
         color: $deepBlue
-        text-decoration: none
+        margin: 0 0 30px
+    .description
+        text-align: left
+        color: $lightGray
+        font-size: 20px
 
-    &__list
-        display: flex
-        list-style: none 
 
-    &__item 
-        padding: 0 15px
-        .menu__link 
-            text-decoration: none
-            color: $deepBlue
-            position: relative
-            &:hover 
-                color: $lightRed
-                &::after
-                    content: ''
-                    position: absolute
-                    left: 0
-                    bottom: -5px
-                    height: 3px
-                    width: 100%
-                    background-color: $lightRed
-                    transition: 2s all
-
-    .menu__item--active
-        .menu__link
-            color: $lightRed
-            &::after
-                content: ''
-                position: absolute
-                left: 0
-                bottom: -5px
-                height: 3px
-                width: 100%
-                background-color: $lightRed
-                transition: 2s all
-
+@keyframes float 
+    0% 
+        transform: translatey(0px);   
+    50% 
+        transform: translatey(-20px) 
+    100% 
+        transform: translatey(0px)
     
