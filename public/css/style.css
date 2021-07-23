@@ -1,9 +1,78 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+/* GENERAL */
+:root {
+  --color-primary: #8E2DE2;
+  --padding: 10px;
+  --navbar-height: calc(40px + (var(--padding) * 2));
+  --wrapper-width: calc(100vw - (var(--padding) * 2));
 }
+
+* {
+  font-family: 'Montserrat', arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin-bottom: var(--navbar-height);
+}
+
+/* NAVBAR */
+.Nav {
+  width: var(--wrapper-width);
+  height: 40px;
+  padding: var(--padding);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  position: fixed;
+  bottom: 0;
+  top: unset;
+
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.Nav-option {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color-primary);
+}
+
+.Nav-option span {
+  display: none;
+}
+
+.u-icon {
+  width: 40px;
+}
+
+.is-active span {
+  display: inline-block;
+}
+
+.is-active .u-icon {
+  width: 25px;
+}
+
+/* ADDED THIS JUST FOR HAVING REAL FULL VIEWPORT WIDTH */
+img {
+  width: 80vw;
+}
+
+iframe {
+  width: 100vw;
+}
+
+.Curso-img {
+  width: 80vw;
+}
+
+/* ------------------ */
 
 main{
   text-align: center;
