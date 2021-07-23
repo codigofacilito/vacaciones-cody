@@ -28,6 +28,9 @@ section{
 .fotos img{
   max-width: 450px;
   display: inline-block;
+  margin-right: 1em ;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgb(146, 143, 143);
 }
 ul li{
   text-align: left;
