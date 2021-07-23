@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -11,8 +11,8 @@ h2,
 a {
   font-family: "Waiting for the Sunrise", cursive;
 }
-p{
-  font-family: 'Roboto Mono', monospace;
+p {
+  font-family: "Roboto Mono", monospace;
   font-size: 15px;
   font-weight: bolder;
 }
@@ -32,6 +32,9 @@ nav {
   height: 50px;
   margin-bottom: 5px;
   justify-content: space-between;
+  color: #fedc38;
+}
+.header-fotos h2{
   color: #fedc38;
 }
 
@@ -149,14 +152,13 @@ div[class*="box"] {
   color: #013f88;
 }
 
-.container-info h1{
+.container-info h1 {
   text-align: center;
   margin-top: 0;
   font-size: 50px;
 }
-.container-info p{
+.container-info p {
   font-size: 20px;
-  /* font-family: inherit; */
   font-weight: bolder;
 }
 .container-items {
@@ -178,32 +180,67 @@ div[class*="box"] {
 .wave {
   width: 100%;
 }
-.section-one, .section-four, .section-five{
+.section-one,
+.section-four,
+.section-five {
   color: #fedc38;
 }
-.section-one{
+.section-one {
   margin: 0;
   padding-bottom: 25px;
 }
-.section-two, .section-three{
+.section-two,
+.section-three {
   background-color: white;
   color: #013f88;
   margin-top: 0px;
   padding: 10px;
 }
-.section-two header{
+.section-two header {
   padding-top: 10px;
 }
-.section-two h2{
+.section-two h2 {
   margin-top: 0px;
 }
-.section-two ul{
+.section-two ul {
   display: inline-block;
 }
-.section-five ol{
+.section-five ol {
   display: inline-block;
 }
 
-.section-four img{
+.section-four img {
   width: 100%;
+}
+
+.contenedor {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-contenedor {
+  width: 100%;
+  display: flex;
+}
+
+.contenido-slider {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+}
+.contenido-slider > img{
+  width: 100%;
+}
+footer{
+  color: #fedc38;
+}
+footer a{
+  color: #fedc38;
+}
+@media screen and (max-width:600px){
+  .container-hero{
+    background-position: 0;
+  }
 }
