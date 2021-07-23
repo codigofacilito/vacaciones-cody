@@ -1,0 +1,19 @@
+.social__menu {
+    list-style: none
+}
+.social__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 44px;
+    height: 44px;
+    border: 2px solid #0F0A0A;
+    box-sizing: border-box;
+    background: #00c6a7;
+}
+
+.social__icon {
+    width: 24px;
+    height: 24px;
+}

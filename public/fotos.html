@@ -1,34 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-  <main>
+  <nav class="nav">
+    <section class="brand">
+      Cody
+    </section>
+    <section class="menu">
+      <ul>
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="fotos.html">
+            Fotos
+          </a>
+        </li>
+      </ul>
+    </section>
+  </nav>
+  <main class="pictures">
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
       <h2>Galería completa de mis vacaciones</h2>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
-
   </main>
+  <section class="gallery">
+    <div class="photos">
+      <img src="images/1.jpg" class="zoom" alt="Cody en la playa">
+      <img src="images/2.jpg" class="zoom" alt="Cody acampando">
+      <img src="images/3.jpg" class="zoom" alt="Cody en una alberca">
+      <img src="images/4.jpg" class="zoom" alt="Cody en una alberca">
+      <img src="images/5.jpg" class="zoom" alt="Cody en una alberca">
+      <img src="images/6.jpg" class="zoom" alt="Cody en una alberca">
+
+    </div>
+  </section>
+  <footer class="footer__emman">
+    <div class="footer__wrapper">
+      <section class="footer__info">
+        Desarrollado por <strong>Emmanuel Lucio Urbina</strong>
+      </section>
+      <section class="footer__social">
+        <ul class="social__menu">
+          <li>
+            <a href="https://twitter.com/emmanuelluur" class="social__btn">
+              <img src="./images/icons/twitter-brands.svg" alt="twitter Emmanuel" title="Twitter Emmanuel"
+                class="social__icon">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/emmanuelurbina" class="social__btn">
+              <img src="./images/icons/github-brands.svg" alt="github Emmanuel" title="GitHub Emmanuel"
+                class="social__icon">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
 </body>
 
 </html>

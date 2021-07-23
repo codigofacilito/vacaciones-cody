@@ -1,0 +1,64 @@
+@media only screen and (max-width: 967px) {
+    .main{
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+    .main__image{
+      align-self: center;
+    }
+    .main__info{
+      width:100%;
+    }
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    main {
+      padding: 16px;
+    }
+    .main__info, .final__info {
+      width: 100%;
+    }
+    .card div {
+      padding: 0;
+    }
+    .card__image {
+      border-radius: 16px 16px 0 0;
+      width: 100%;
+      height: auto;
+    }
+    .card__body {
+      text-align: center;
+    }
+    .main {
+      flex-direction: column-reverse;
+    }
+    .cursos, .card, .middle {
+      flex-direction: column;
+    }
+    .prev, .next {
+      padding: 16px;
+    }
+    .photos {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+    }
+    .photos img:nth-child(even) {
+      padding-top: 0;
+    }
+    .zoom:hover {
+      transform: scale(1);
+    }
+    .footer__wrapper {
+      flex-direction: column-reverse;
+    }
+    .footer__info {
+      text-align: center;
+    }
+  }

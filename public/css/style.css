@@ -1,38 +1,215 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
-main{
+body {
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+.text-center {
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
 }
 
-section{
-  margin-top: 3rem;
+/*layout*/
+nav {
+  padding: 16px 36px;
+}
+main, .middle, .pictures, .final, .gallery {
+  padding: 36px;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
 }
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
 }
-ul li{
-  text-align: left;
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
 }
-ul li::marker {
+
+
+.final div{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.final__info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+}
+
+.final__info ol {
+  padding-left: 16px;
+}
+
+.pictures article:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.main__info {
+  line-height: 22px;
+  width: 60%;
+}
+
+.middle article {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  margin-top: 36px;
+  justify-content: center;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+.photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 70%;
+}
+.photos img {
+  width: 100%;
+  height: auto;
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+/*styles*/
+
+.main__info p {
+  margin: 16px 0 16px 0;
+}
+
+.main__info p:nth-child(6) {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.image {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  box-shadow: 4px 4px 14px rgb(0 0 0 / 25%);
+}
+
+.middle, .final {
+  background-color: #2b2a2a;
+  color: #fff;
+}
+
+.routes {
+  padding-left: 32px;
+}
+
+.routes li::marker {
   content: "🚀";
 }
 
-ol li{
-  text-align: left;
+h1, h2, h3 {
+  position: relative;
 }
+
+/*style headers*/
+
+h1::before, h2::before {
+  content: '';
+  position: absolute;
+  background-color: #00C6A7;
+  width: 15%;
+  height: 5px;
+  bottom: -6px;
+  left: 0;
+}
+
+/*card*/
+
+.cursos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 16px;
+}
+
+.card {
+  border-radius: 16px;
+  border: solid 1px #00C6A7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 4px 4px 14px rgb(0 0 0 / 25%);
+}
+
+.card div {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.card__image {
+  border-radius: 16px 0 0 16px;
+  background-color: #00C6A7;
+}
+
+.card p {
+  font-weight: 700;
+}
+
+.cursos__icono {
+  width: 40px;
+  height: 40px;
+}
+
+.links {
+  color: #00C6A7;
+  font-weight: 700;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
