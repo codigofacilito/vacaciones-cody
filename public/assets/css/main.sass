@@ -1,31 +1,124 @@
 @import 'components/font-face'
 
-// $assetPath: "/wp-content/uploads"
-// $verde: #6A8042
-// $fontFamily: "Montserrat Alternates"
-    
+// $assetPath: "/URL/PATH"
+$deepBlue: #051626
+$whiteSmoke: #f5f5f5
+$lightRed: #FD585F
+$DM: "DM Sans"
+$IBM: "IBM Plex Sans"
+
 * 
     outline: none
 
 
+@keyframes rotate 
+    0% 
+        transform: rotate(0deg)    
+    100% 
+        transform: rotate(360deg)
+
 body
-    font-family: "DM Sans"
+    background-color: $whiteSmoke
+    font-family: $DM
     font-weight: 400
+    font-size: 16px
+    margin: 0
 
 h1, h2, h3, h4, h5, h6 
-    font-family: "IBM Plex Sans"
+    font-family: $IBM
     font-weight: 700 
-    
-nav
-    background-color: aliceblue
-    padding: 15px
-    display: flex
-    gap: 1em
 
-main
+.wrap
     text-align: center
-    max-width: 960px
+    max-width: 1100px
+    width: 100%
     margin: 0 auto
 
 section
     margin-top: 3rem
+
+
+.header 
+    padding: 30px 0
+    &.sticky
+        position: fixed;
+        top: 0;
+        max-width: 1100px;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        background-color: #fff;
+        padding: 6px 0;
+
+        &+.wrap
+            padding-top: 200px;
+
+        
+
+.menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 1em
+
+    &__brand
+        display: flex
+        align-items: center
+        &:hover 
+            .menu__icon
+                animation-name: rotate
+                animation-duration: 3s
+                animation-iteration-count: infinite
+                animation-timing-function: linear
+            .menu__label
+                span
+                    color: #f9a704
+
+    &__icon 
+        width: 45px
+        margin-right: 12px
+
+
+    &__label
+        font-family: $IBM
+        font-weight: 700
+        font-size: 1.9em
+        color: $deepBlue
+        text-decoration: none
+
+    &__list
+        display: flex
+        list-style: none 
+
+    &__item 
+        padding: 0 15px
+        .menu__link 
+            text-decoration: none
+            color: $deepBlue
+            position: relative
+            &:hover 
+                color: $lightRed
+                &::after
+                    content: ''
+                    position: absolute
+                    left: 0
+                    bottom: -5px
+                    height: 3px
+                    width: 100%
+                    background-color: $lightRed
+                    transition: 2s all
+
+    .menu__item--active
+        .menu__link
+            color: $lightRed
+            &::after
+                content: ''
+                position: absolute
+                left: 0
+                bottom: -5px
+                height: 3px
+                width: 100%
+                background-color: $lightRed
+                transition: 2s all
+
+    

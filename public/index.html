@@ -25,23 +25,29 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <main>
+  <main class="wrap">
 
-    <header class="header">
+    <header class="header" id="header">
         <nav class="menu">
+            <div class="menu__brand">
+                <img class="menu__icon" src="assets/images/sun.png" alt="Sun icon">
+                <a class="menu__label" href="https://codigofacilito.com/verano/concurso" target="_blank" rel="noopener noreferrer">
+                    Concurso <span>#VeranoFrontend</span>
+                </a>
+            </div>
             <ul class="menu__list">
-                <li> <a class="menu__link" href="/">Inicio</a> </li>
-                <li> <a class="menu__link" href="fotos.html">Fotos</a> </li>
+                <li class="menu__item menu__item--active"> <a class="menu__link" href="/">Inicio</a> </li>
+                <li class="menu__item"> <a class="menu__link" href="fotos.html">Fotos</a> </li>
             </ul>
         </nav>
-        <h1>Estas son mis Vacaciones</h1>
-        <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
     </header>
 
     <section>
-      <header>
+        <h1>Estas son mis Vacaciones</h1>
+        <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>  
+
         <h2>Mis vacaciones Frontend</h2>
-      </header>
+      
       <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
       <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
       <p> Estos son los cursos que estuve tomando </p>
@@ -68,6 +74,7 @@
         <li> Entre otros </li>
       </ul>
     </section>
+   
     <section>
       <header>
         <h2>Colabora en mi página</h2>
@@ -84,6 +91,7 @@
 
       </p>
     </section>
+    
     <section>
       <header>
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
