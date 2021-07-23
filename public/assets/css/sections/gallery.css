@@ -1,0 +1,29 @@
+/** @format */
+
+#gallery {
+	background-color: #043823;
+	padding: 15px 0;
+	text-align: center;
+}
+#gallery img {
+	display: inline-block;
+	width: 80%;
+	filter: grayscale(100);
+	transition: all 0.4s ease-in-out;
+	padding: 15px 0;
+}
+#gallery img:hover {
+	filter: none;
+	transform: scale(1.2);
+}
+
+#gallery button {
+	background: none;
+	border: none;
+}
+#gallery h1,
+#gallery h2,
+#gallery p {
+	color: #f7ca18;
+	font-weight: 900;
+}

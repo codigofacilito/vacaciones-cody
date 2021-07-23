@@ -1,100 +1,438 @@
+<!-- @format -->
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vacaciones - Cody</title>
+		<!-- Favicons -->
+		<link href="./assets/images/cf.png" rel="icon" />
+		<link href="./assets/images/cf.png" rel="apple-touch-icon" />
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
-      </div>
-    </section>
+		<!-- Vendor CSS Files -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="./assets/vendor/bootstrap-icons/bootstrap-icons.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="./assets/vendor/boxicons/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="./assets/vendor/glightbox/css/glightbox.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header id="header" class="d-flex align-items-center">
+			<div class="container d-flex align-items-center justify-content-between">
+				<a href="#" class="logo"
+					><img
+						src="./assets/images/cf.png"
+						alt="ESDMX's Logo"
+						class="img-fluid"
+				/></a>
+				<nav id="navbar" class="navbar">
+					<ul>
+						<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+						<li>
+							<a class="nav-link scrollto" href="#vacaciones-frontend"
+								>Vacaciones Frontend</a
+							>
+						</li>
+						<li>
+							<a class="nav-link scrollto" href="#ruta-aprendizaje"
+								>Ruta de aprendizaje</a
+							>
+						</li>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+						<li><a class="nav-link scrollto" href="#colabora">Colabora</a></li>
+						<li><a class="nav-link scrollto" href="#gallery">Galería</a></li>
+						<li>
+							<a class="nav-link scrollto" href="#importancia-vacaciones"
+								>Importancia de las vacaciones</a
+							>
+						</li>
+					</ul>
+					<i class="bi bi-list mobile-nav-toggle"></i>
+				</nav>
+			</div>
+		</header>
+		<!-- ======= Hero Section ======= -->
+		<section id="hero" class="d-flex justify-content-center align-items-center">
+			<div
+				class="container position-relative"
+				data-aos="fade-up"
+				data-aos-delay="500"
+			>
+				<h1 class="text-center">Bienvenidos</h1>
+				<h2 class="text-center">Éstas son mis vacaciones</h2>
+				<div class="container d-flex justify-content-center">
+					<h2 class="textScramble text-center"></h2>
+				</div>
+				<div class="row position-relative mt-5 pt-5">
+					<a
+						href="#vacaciones-frontend"
+						class="d-flex justify-content-center mt-5 pt-2 align-items-center"
+					>
+						<i class="fas fa-arrow-down fa-2x"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- End Hero -->
 
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
-      </div>
-    </section>
+		<main class="main">
+			<!-- Vacaciones Frontend -->
+			<section id="vacaciones-frontend" class="vacaciones-frontend">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+							<img
+								src="./assets/images/cf.png"
+								class="img-fluid"
+								alt="Este soy yo"
+							/>
+						</div>
+						<div
+							class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
+							data-aos="fade-right"
+						>
+							<h1>Mis vacaciones Frontend</h1>
+							<p class="fst-italic" id="vacacionesFront"></p>
+							<p class="fst-italic">Estos son los cursos que estuve tomando</p>
+							<div class="row">
+								<div
+									class="
+										col-lg-6
+										pt-4 pt-lg-0
+										order-2 order-lg-1
+										content
+										text-center
+									"
+								>
+									<a
+										href="https://codigofacilito.com/cursos/frontend-profesional"
+										target="_blank"
+									>
+										<div class="h-100 p-2 text-white bg-dark rounded-3">
+											<p class="lead">Curso profesional de Desarrollo web</p>
+										</div>
+									</a>
+								</div>
+								<div
+									class="
+										col-lg-6
+										pt-4 pt-lg-0
+										order-2 order-lg-1
+										content
+										text-center
+									"
+								>
+									<a
+										href="https://www.youtube.com/watch?v=TC8bT7zTdoE"
+										target="_blank"
+									>
+										<div class="h-100 p-2 text-white bg-dark rounded-3">
+											<p class="lead">
+												Curso para crear mi primera página webs
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Vacaciones Frontend end-->
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
-  </main>
-</body>
+			<!-- Ruta de aprendizaje  -->
+			<section id="ruta-aprendizaje" class="ruta-aprendizaje text-center">
+				<div class="container">
+					<div class="section-title">
+						<h1>Ruta de aprendizaje 2021</h1>
+						<p>También me propuse aprender nuevas tecnologías durante 2021</p>
+					</div>
+
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up">
+							<div class="icon-box">
+								<div class="icon">
+									<img
+										src="./assets/images/ruta-aprendizaje/flexbox-grid.png"
+										alt="flexbox-cssgrid"
+										style="width: 18rem"
+									/>
+								</div>
+								<div class="row mt-5 pt-3">
+									<h4>
+										<a
+											href="https://somospnt.com/blog/152-css-grid-vs-flexbox-vs-bootstrap"
+											target="_blank"
+											>Flexbox y Grid</a
+										>
+									</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up">
+							<div class="icon-box">
+								<div class="icon">
+									<img
+										src="./assets/images/ruta-aprendizaje/animaciones-css.png"
+										alt="animaciones-css-js"
+										style="width: 18rem"
+									/>
+								</div>
+								<div class="row mt-5 pt-3">
+									<h4>
+										<a
+											href="https://desarrolloweb.com/articulos/intro-animaciones-css.html"
+											target="_blank"
+											>Animaciones con CSS y JavaScript</a
+										>
+									</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up">
+							<div class="icon-box">
+								<div class="icon">
+									<img
+										src="./assets/images/ruta-aprendizaje/ajax.png"
+										alt="ajax"
+										style="width: 18rem"
+									/>
+								</div>
+								<div class="row mt-5 pt-3">
+									<h4>
+										<a
+											href="https://www.hostinger.mx/tutoriales/que-es-ajax#:~:text=AJAX%20significa%20JavaScript%20as%C3%ADncrono%20y,al%20servidor%20en%20segundo%20plano."
+											target="_blank"
+											>AJAX</a
+										>
+									</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up">
+							<div class="icon-box">
+								<div class="icon">
+									<img
+										src="./assets/images/ruta-aprendizaje/html5.png"
+										alt="html-5"
+										style="width: 18rem"
+									/>
+								</div>
+								<div class="row mt-5 pt-3">
+									<h4>
+										<a
+											href="https://developer.mozilla.org/es/docs/Web/HTML"
+											target="_blank"
+											>HTML5</a
+										>
+									</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up">
+							<div class="icon-box">
+								<div class="icon">
+									<img
+										src="./assets/images/ruta-aprendizaje/etc.png"
+										alt="animaciones-css-js"
+										style="width: 18rem"
+									/>
+								</div>
+								<div class="row mt-5 pt-3">
+									<h4>Etc...</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Ruta de aprendizaje ends -->
+
+			<!-- Colabora  -->
+			<section id="colabora" class="colabora">
+				<div class="container" data-aos="zoom-in">
+					<div class="text-center">
+						<h1>Colabora en mi página</h1>
+						<p class="lead">
+							Como parte de mi formación Frontend, aprendí acerca de Git y
+							GitHub, por lo que decidí subir mi código a GitHub. <br />
+							Puedes ayudarme a mejorar mi página, haciendo un fork de mi
+							página, y enviando un pull request.
+						</p>
+						<p>
+							<a
+								href="https://www.youtube.com/watch?v=zH3I1DZNovk"
+								target="_blank"
+								class="colabora-btn"
+								>Ir al tutorial</a
+							>
+						</p>
+					</div>
+				</div>
+			</section>
+			<!-- Colabora ends -->
+			<!-- Gallery-->
+			<section id="gallery" class="gallery">
+				<div class="container aos-init aos-animate">
+					<div class="row d-flex align-items-center">
+						<h1>Galería</h1>
+						<h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
+						<p>
+							¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto
+							algunas fotos que tomé:
+						</p>
+					</div>
+					<div class="row d-flex align-items-center">
+						<div class="col-lg-2 col-md-4 col-6">
+							<a
+								href="./assets/images/1.jpg"
+								data-gallery="galleryLightbox"
+								class="gallery-lightbox preview-link"
+							>
+								<img src="./assets/images/1.jpg" alt="Cody en la playa" />
+							</a>
+						</div>
+						<div class="col-lg-2 col-md-4 col-6">
+							<a
+								href="./assets/images/2.jpg"
+								data-gallery="galleryLightbox"
+								class="gallery-lightbox preview-link"
+							>
+								<img src="./assets/images/2.jpg" alt="Cody acampando" />
+							</a>
+						</div>
+						<div class="col-lg-2 col-md-4 col-6">
+							<a
+								href="./assets/images/3.jpg"
+								data-gallery="galleryLightbox"
+								class="gallery-lightbox preview-link"
+							>
+								<img src="./assets/images/3.jpg" alt="Cody en la piscina" />
+							</a>
+						</div>
+						<div class="col-lg-2 col-md-4 col-6">
+							<a
+								href="./assets/images/4.jpg"
+								data-gallery="galleryLightbox"
+								class="gallery-lightbox preview-link"
+							>
+								<img
+									src="./assets/images/4.jpg"
+									alt="Cody descansando en la playa"
+								/>
+							</a>
+						</div>
+						<div class="col-lg-2 col-md-4 col-6">
+							<a
+								href="./assets/images/5.jpg"
+								data-gallery="galleryLightbox"
+								class="gallery-lightbox preview-link"
+							>
+								<img src="./assets/images/5.jpg" alt="Cody en Guanajuato" />
+							</a>
+						</div>
+						<div class="col-lg-2 col-md-4 col-6">
+							<a
+								href="./assets/images/6.jpg"
+								data-gallery="galleryLightbox"
+								class="gallery-lightbox preview-link"
+							>
+								<img src="./assets/images/6.jpg" alt="Cody en el aeropuerto" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Gallery end -->
+			<!-- Importancia de las vacaciones  -->
+			<section id="importancia-vacaciones" class="importancia-vacaciones">
+				<div class="container" data-aos="zoom-in">
+					<div class="row">
+						<div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+							<h1>La importancia de las vacaciones</h1>
+							<p>
+								Aprender a programar y escribir código, puede ser estresante,
+								por eso es muy importante que periódicamente nos desconectemos y
+								descansemos apropiadamente
+							</p>
+						</div>
+						<div
+							class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
+							data-aos="fade-right"
+						>
+							<h2>
+								Durante mis vacaciones aprendí que existen distintos beneficios
+								de descansar:
+							</h2>
+							<p>Mejora la salud mental</p>
+							<p>Incrementa la motivación</p>
+							<p>Reduce el burnout</p>
+							<p>Mejora tu productividad y creatividad</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Importancia de las vacaciones ends -->
+		</main>
+		<footer class="contenedor" id="footer">
+			<div class="creado-por">
+				<p>
+					Website develop by <a href="#"> Ing. Raúl Adolfo Torres Vargas </a> -
+					<a href="https://www.facebook.com/esdmx.protsea" target="_blank"
+						><img src="./assets/images/esdmx.png" width="60" alt=""
+					/></a>
+				</p>
+			</div>
+		</footer>
+		<a
+			href="#"
+			class="back-to-top d-flex align-items-center justify-content-center"
+			><i class="bi bi-arrow-up-short"></i
+		></a>
+		<div id="preloader"></div>
+		<!-- Vendor JS Files -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+		<script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		<!-- Template Main JS File -->
+		<script src="./assets/js/main.js"></script>
+		<script
+			src="https://kit.fontawesome.com/997ed15eaf.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>

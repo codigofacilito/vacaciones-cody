@@ -1,0 +1,22 @@
+/** @format */
+
+.importancia-vacaciones {
+	background: linear-gradient(rgba(2, 2, 2, 0.9), rgba(0, 0, 0, 0.9)),
+		url("/assets/images/bg/colabora.jpg");
+	background-size: cover;
+	padding: 150px 0;
+}
+.importancia-vacaciones h1,
+.importancia-vacaciones h2 {
+	color: #f7ca18;
+	font-weight: 900;
+}
+.importancia-vacaciones p {
+	color: #ba9912;
+	font-weight: 900;
+}
+.importancia-vacaciones ol li {
+	border: 2px solid #097146;
+	background-color: #11956f;
+	color: #fff;
+}

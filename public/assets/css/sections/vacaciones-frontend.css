@@ -1,0 +1,39 @@
+/**
+ * /*--------------------------------------------------------------
+ * # vacaciones-frontend
+ * --------------------------------------------------------------
+ *
+ * @format
+ */
+
+#vacaciones-frontend {
+	background: #097146;
+}
+
+.vacaciones-frontend .content h1 {
+	font-weight: 600;
+	font-size: 26px;
+	color: #1bbc9b;
+}
+
+.vacaciones-frontend .content ul {
+	list-style: none;
+	padding: 0;
+}
+
+.vacaciones-frontend .content ul li {
+	padding-bottom: 10px;
+}
+
+.vacaciones-frontend .content ul i {
+	font-size: 20px;
+	padding-right: 4px;
+	color: #cc1616;
+}
+
+.vacaciones-frontend p {
+	color: #f7cb18;
+}
+.vacaciones-frontend .content p:last-child {
+	margin-bottom: 0;
+}
