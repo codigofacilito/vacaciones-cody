@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -9,22 +11,28 @@ h2,
 a {
   font-family: "Waiting for the Sunrise", cursive;
 }
+p{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+  font-weight: bolder;
+}
 h2 {
   font-size: 2em;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #013f88;
   font-weight: bolder;
   display: inline-block;
 }
 nav {
-  padding: 15px;
+  padding: 5px;
   display: flex;
   align-items: center;
   height: 50px;
   margin-bottom: 5px;
   justify-content: space-between;
+  color: #fedc38;
 }
 
 main {
@@ -66,15 +74,15 @@ div[class*="box"] {
   cursor: pointer;
 }
 /* BOTON 1 */
-.btn-one {
-  color: #fff;
+.btn {
+  color: #fedc38;
   transition: all 0.3s;
   position: relative;
 }
-.btn-one span {
+.btn span {
   transition: all 0.3s;
 }
-.btn-one::before {
+.btn::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -92,14 +100,14 @@ div[class*="box"] {
   border-bottom-color: rgba(255, 255, 255, 0.5);
   transform: scale(0.1, 1);
 }
-.btn-one:hover span {
+.btn:hover span {
   letter-spacing: 2px;
 }
-.btn-one:hover::before {
+.btn:hover::before {
   opacity: 1;
   transform: scale(1, 1);
 }
-.btn-one::after {
+.btn::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -110,48 +118,11 @@ div[class*="box"] {
   transition: all 0.3s;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.btn-one:hover::after {
+.btn:hover::after {
   opacity: 0;
   transform: scale(0.1, 1);
 }
-/* BOTON 2 */
-.btn-two {
-  color: #fff;
-  transition: all 0.5s;
-  position: relative;
-}
-.btn-two::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: all 0.3s;
-}
-.btn-two:hover::before {
-  opacity: 0;
-  transform: scale(0.5, 0.5);
-}
-.btn-two::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: all 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  transform: scale(1.2, 1.2);
-}
-.btn-two:hover::after {
-  opacity: 1;
-  transform: scale(1, 1);
-}
+
 .fotos img {
   max-width: 450px;
   display: inline-block;
@@ -175,11 +146,18 @@ div[class*="box"] {
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
+  color: #013f88;
 }
-.container-hero h1 {
+
+.container-info h1{
   text-align: center;
   margin-top: 0;
   font-size: 50px;
+}
+.container-info p{
+  font-size: 20px;
+  /* font-family: inherit; */
+  font-weight: bolder;
 }
 .container-items {
   display: flex;
@@ -194,15 +172,18 @@ div[class*="box"] {
   align-items: center;
   gap: 5px;
   margin: 0px;
+  color: #fedc38;
 }
-.container-hero p {
-  font-size: 20px;
-}
+
 .wave {
   width: 100%;
 }
 .section-one, .section-four, .section-five{
   color: #fedc38;
+}
+.section-one{
+  margin: 0;
+  padding-bottom: 25px;
 }
 .section-two, .section-three{
   background-color: white;
