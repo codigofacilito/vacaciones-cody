@@ -1,8 +1,31 @@
+html{scroll-behavior:smooth;}
+
+body {
+  background: linear-gradient(black,#555,black);
+  font-family: 'Jetbrains Mono';
+}
+
+.header_main {
+  color:white;
+}
+
 nav{
-  background-color: aliceblue;
+  background: yellow ;
   padding: 15px;
-  display: flex;
-  gap:1em;
+  display:flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color:black;
+  text-decoration: none;
+  transition:0.8s;
+  font-size:20px;
+  font-weight: bold;
+}
+nav a:hover {
+  text-shadow:1px 1px 1px navy;
+  transition:0.8s;
 }
 
 main{
@@ -13,14 +36,23 @@ main{
 
 section{
   margin-top: 3rem;
+  background:white;
+  padding:15px;
+  border-radius: 8px;
+  filter:drop-shadow(1px 1px 5px white);
 }
 
 .cursos div{
-  background-color: black;
+  background-color:#2620bf;
+  border:none;
+  border-radius: 5px;
+  padding:10px;
   color: white;
   max-width: 200px;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 2px 3px 10px black;
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
 }
 .fotos img{
   max-width: 450px;
