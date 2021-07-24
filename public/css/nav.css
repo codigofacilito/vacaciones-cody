@@ -1,0 +1,36 @@
+.nav {
+    font-family: "Oxygen", sans-serif;
+    background:#2b2a2a;
+    color:#fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand {
+    font-weight: 700;
+    font-size: 28px;
+}
+.menu ul{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+
+.menu ul li {
+    font-size:22px;
+}
+
+.menu ul li a {
+    color: #fff;
+    font-weight: 400;
+}
+
+.menu ul li a:hover {
+    color: #00C6A7;
+}
+.menu ul li a:active {
+    outline:none;
+    color: #00C6A7;
+}
