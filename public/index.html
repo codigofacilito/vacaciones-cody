@@ -145,5 +145,16 @@
   </main>
 
   <footer class="u-paragraph">Hecho con 💚 por <a class="u-link" href="https://www.linkedin.com/in/angel-berlanga/">Angel Berlanga</a></footer>
+
+  <script>
+    function getViewportHeight() {
+      document.querySelector(':root').style
+          .setProperty('--vh', window.innerHeight/100 + 'px')
+    }
+
+    window.addEventListener('resize', getViewportHeight)
+
+    getViewportHeight()
+  </script>
 </body>
 </html>

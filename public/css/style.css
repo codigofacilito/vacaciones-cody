@@ -4,7 +4,7 @@
   --padding: 10px;
   --navbar-height: calc(40px + (var(--padding) * 2));
   --wrapper-width: calc(100vw - (var(--padding) * 2));
-  --landing-height: calc(100vh - var(--padding) - 12.5vh - var(--navbar-height));
+  --landing-height: calc((100 * var(--vh)) - var(--padding) - 12.5vh - var(--navbar-height));
   --curso-card-width: calc(100vw - (var(--padding) * 4));
 }
 
