@@ -77,7 +77,8 @@ div[class*="box"] {
   line-height: 25px;
   text-align: center;
   width: 250px;
-  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
 }
 /* BOTON 1 */
 .btn {
@@ -201,12 +202,14 @@ div[class*="box"] {
 .section-two h2 {
   margin-top: 0px;
 }
-.section-two ul {
+.section-two ul ,.section-five ol{
   display: inline-block;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
 }
-.section-five ol {
+/* .section-five ol {
   display: inline-block;
-}
+} */
 
 .section-four img {
   width: 100%;
