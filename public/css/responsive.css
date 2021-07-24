@@ -23,8 +23,11 @@
     .main__info, .final__info {
       width: 100%;
     }
+    .card {
+      height:auto;
+    }
     .card div {
-      padding: 0;
+      padding: 0;      
     }
     .card__image {
       border-radius: 16px 16px 0 0;
@@ -32,6 +35,7 @@
       height: auto;
     }
     .card__body {
+      padding: 16px !important;;
       text-align: center;
     }
     .main {

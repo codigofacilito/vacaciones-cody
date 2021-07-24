@@ -121,7 +121,9 @@ h2 {
 .main__info p {
   margin: 16px 0 16px 0;
 }
-
+.card__body p {
+  margin:0;
+}
 .main__info p:nth-child(6) {
   font-size: 22px;
   font-weight: 500;
@@ -180,6 +182,7 @@ h1::before, h2::before {
   align-items: center;
   gap: 16px;
   box-shadow: 4px 4px 14px rgb(0 0 0 / 25%);
+  height:100px;
 }
 
 .card div {
@@ -190,6 +193,9 @@ h1::before, h2::before {
   height: 100%;
 }
 
+.card__body {
+  padding: 0 16px 0 16px;
+}
 .card__image {
   border-radius: 16px 0 0 16px;
   background-color: #00C6A7;
@@ -209,7 +215,21 @@ h1::before, h2::before {
   font-weight: 700;
 }
 
-.links:hover {
+.links:hover, .course:hover {
   text-decoration: underline;
 }
 
+.course {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  color: black;
+  font-size: 14px;
+}
+.link_img{
+  width:14px;
+  height:14px;
+}
