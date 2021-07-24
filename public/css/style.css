@@ -4,6 +4,7 @@
   --padding: 10px;
   --navbar-height: calc(40px + (var(--padding) * 2));
   --wrapper-width: calc(100vw - (var(--padding) * 2));
+  --landing-height: calc(100vh - var(--padding) - 12.5vh - var(--navbar-height));
 }
 
 * {
@@ -18,6 +19,15 @@ body {
   margin-bottom: var(--navbar-height);
 }
 
+.u-wrapper {
+  width: var(--wrapper-width);
+  padding: var(--padding);
+}
+
+.u-icon {
+  width: 40px;
+}
+
 /* NAVBAR */
 .Nav {
   width: var(--wrapper-width);
@@ -27,6 +37,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 9999;
 
   position: fixed;
   bottom: 0;
@@ -47,10 +58,7 @@ body {
   display: none;
 }
 
-.u-icon {
-  width: 40px;
-}
-
+/* NAVBAR ACTIVE OPTION */
 .is-active span {
   display: inline-block;
 }
@@ -59,20 +67,84 @@ body {
   width: 25px;
 }
 
+/* LANDING SECTION */
+.Landing {
+  height: var(--landing-height);
+  padding-top: 12.5vh;
+
+  background: linear-gradient(150deg, #6E57FC 0%, #8E2DE2 100%);
+  color: white;
+}
+
+.Landing-title {
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2em;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Landing .u-text-secondary {
+  text-align: center;
+  margin: 10vh auto;
+}
+
+.Landing-paragraph {
+  padding-right: 20vw;
+  font-size: 1.5em;
+}
+
+.Landing-img {
+  position: absolute;
+  bottom: var(--navbar-height);
+  right: 0;
+
+  width: 150px;
+  height: 155px; 
+
+  aspect-ratio: 30 / 31;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+@media screen and (min-width: 425px) {
+  .Landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    height: calc(100vh - var(--navbar-height) - var(--padding));
+  }
+
+  .Landing-paragraph {
+    text-align: center;
+    padding-right: 0;
+    width: var(--wrapper-width);
+  }
+}
+
 /* ADDED THIS JUST FOR HAVING REAL FULL VIEWPORT WIDTH */
-img {
-  width: 80vw;
+.Fotos .Foto {
+  width: 20vw;
 }
 
 iframe {
-  width: 100vw;
+  width: 50vw;
 }
 
 .Curso-img {
-  width: 80vw;
+  width: 50vw;
 }
 
-/* ------------------ */
+.Cursos {
+  width: calc(var(--wrapper-width) - (var(--padding) * 2))
+}
+
+/*
 
 main{
   text-align: center;
@@ -105,3 +177,5 @@ ul li::marker {
 ol li{
   text-align: left;
 }
+
+*/
