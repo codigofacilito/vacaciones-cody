@@ -1,0 +1,87 @@
+.detail-vacations
+    background: url('../images/palm.png'), linear-gradient(180deg, $whiteSmoke 80%, #073e8a 80% )
+    background-repeat: no-repeat
+    background-position: right 80%
+    padding: 4em 0
+    h2
+        font-size: 3em;
+        line-height: 55px;
+        text-align: center;
+        color: $deepBlue
+        margin: 0 0 30px
+    p
+        font-size: 1.2em
+
+    .ball
+        margin: 40px 0
+
+    .subtitle
+        margin: 0
+        font-size: 28px
+
+.courses-wrap
+    display: flex 
+    justify-content: space-between
+    margin: 6em 0
+    .course 
+        width: calc( 24% - 30px )
+        margin: 0 15px
+        padding: 20px 30px
+        background-color: #fff
+        border-radius: 15px
+        position: relative
+        box-shadow: 0 3px 20px rgba(0, 0, 0, .05)
+        &:hover 
+            .ico-wrap 
+                transform: scale(1.1)
+                transition: .1s ease-in all
+
+        .ico-wrap
+            border-radius: 100%
+            box-sizing: border-box
+            width: 60px
+            height: 60px
+            padding: 10px
+            position: absolute
+            right: 0
+            left: 0
+            margin: 0 auto
+            top: -30px
+            .ico 
+                width: 100%
+                margin: 0 auto
+        
+        .desarrollo-web
+            background-color:  #0544a4
+        .primera-pag-web
+            background-color: #3f00ff
+        .transiciones
+            background-color: #5cb3ff
+        .javascript
+            background-color: #efe54d
+
+
+    .title-course 
+        font-size: 16px
+        color: $deepBlue
+        margin-bottom: 15px
+    .description-course 
+        font-size: 0.9em 
+
+    .btn 
+        background-color: $lightRed
+        text-decoration: none
+        color: $whiteSmoke
+        border-radius: 20px
+        font-size: 14px
+        padding: 10px 20px
+        font-weight: 700
+        margin: 20px 0
+        display: block 
+        border: 1px solid transparent
+        transition: .1s ease-in all;
+        &:hover 
+            background-color: #fff
+            color: $lightRed
+            border: 1px solid $lightRed
+
