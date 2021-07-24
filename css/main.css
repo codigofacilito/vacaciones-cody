@@ -7,6 +7,7 @@ main{
     text-align: center;
     max-width: 960px;
     margin:0 auto;
+    margin-top:0;
 }
 
 body {
@@ -26,7 +27,10 @@ section{
     box-shadow: 5px 5px 10px black;
 }
   
-img{
+.img{
     max-width: 300px;
     display: inline-block;
+}
+.title_fotos{
+    margin: 15px;
 }

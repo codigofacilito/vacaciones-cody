@@ -15,11 +15,20 @@
     margin: 0 auto;
 }
 
+.cody{
+    margin-left: 50px;
+}
+
 .logo{
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 25px;
-    line-height: 50px;
+    height: 30px;
+    width: 30px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    background-color: white;
+    margin-top: 10px;
 }
 
 .nav_link{
@@ -31,6 +40,7 @@
     display: flex;
     margin-right: 30px;
     list-style: none;
+    z-index: auto;
 }
 
 .nav_menu_item{
@@ -71,12 +81,14 @@
         height: 60px;
     }
     
-    .logo{
-        font-size: 25px;
-        padding: 0 20px;
-        line-height: 60px;
+    .cody{
+        margin-left: 15px;
     }
-     
+
+    .logo{
+        margin-top: 15px;
+    }
+
     .nav_menu{
         flex-direction: column;
         align-items: center;
@@ -106,6 +118,7 @@
 
     .nav-toggle{
         display: block;
+        margin-top: 8px;
     }
 
     .nav-menu_visible{
