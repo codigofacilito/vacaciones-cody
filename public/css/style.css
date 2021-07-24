@@ -1,10 +1,14 @@
 /* GENERAL */
 :root {
   --color-primary: #8E2DE2;
+  --color-secondary: #3F00FF;
+  --color-accent: #5BCC85;
+
   --padding: 10px;
+
   --navbar-height: calc(40px + (var(--padding) * 2));
-  --wrapper-width: calc(100vw - (var(--padding) * 2));
   --landing-height: calc((100 * var(--vh)) - var(--padding) - 12.5vh - var(--navbar-height));
+  --wrapper-width: calc(100vw - (var(--padding) * 2));
   --curso-card-width: calc(100vw - (var(--padding) * 4));
 }
 
@@ -27,6 +31,11 @@ body {
 .u-wrapper {
   width: var(--wrapper-width);
   padding: var(--padding);
+  margin-bottom: calc(var(--padding) * 2);
+}
+
+.u-margin-0 {
+  margin: 0;
 }
 
 .u-icon {
@@ -45,6 +54,10 @@ body {
   font-family: 'Fira Code', monospace;
   text-align: center;
   font-size: .9em;
+}
+
+.u-link {
+  color: var(--color-accent);
 }
 
 p {
@@ -95,7 +108,7 @@ p {
   height: var(--landing-height);
   padding-top: 12.5vh;
 
-  background: linear-gradient(150deg, #6E57FC 0%, #8E2DE2 100%);
+  background: linear-gradient(150deg, var(--color-secondary) 0%, var(--color-primary) 100%);
   color: white;
 }
 
@@ -104,7 +117,6 @@ p {
   font-weight: 700;
   text-align: center;
   font-size: 2em;
-
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -182,6 +194,70 @@ p {
 .Curso-img {
   min-width: var(--curso-card-width);
   border-radius: 10px;
+}
+
+/* RUTA DE APRENDIZAJE SECTION */
+.RutaDeAprendizaje-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding);
+}
+
+.RutaDeAprendizaje-list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  gap: var(--padding);
+}
+
+.Checkbox {
+  /* RESET CHECKBOX STYLE */
+  -webkit-appearance: none;
+  appearance: none;
+
+	display: inline-block;
+	position: relative;
+  width: 25px;
+  height: 25px;
+
+	border-radius: 50%;
+  background-color: transparent;
+  border: 5px solid var(--color-secondary);
+
+  animation: pop .5s;
+}
+
+.Checkbox:checked {
+  background-color: var(--color-secondary);
+  padding: 0;
+  border: none;
+
+  animation: pop-reverse .5s;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); } 
+  100% { transform: scale(1); }
+}
+
+@keyframes pop-reverse {
+  0% { transform: scale(1); } 
+  50% { transform: scale(.8); }
+  100% { transform: scale(1); }
+}
+
+.Checkbox:checked:after {
+  content: '';
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  background: url('../images/checkmark.png') no-repeat;
+  background-size: 60%;
+  background-position: center;
 }
 
 /* ADDED THIS JUST FOR HAVING REAL FULL VIEWPORT WIDTH */
