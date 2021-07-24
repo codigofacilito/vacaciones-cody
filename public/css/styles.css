@@ -27,6 +27,11 @@
   text-decoration: underline;
 }
 
+.info {
+  background-color: var(--fondo-menu-navegacion); 
+  color: var(--color-fuente-primario);
+}
+
 /* nav{
   background-color: aliceblue;
   padding: 15px;
