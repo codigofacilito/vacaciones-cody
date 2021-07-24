@@ -34,7 +34,9 @@ nav {
   justify-content: space-between;
   color: #fedc38;
 }
-
+.fotos img{
+  max-width: 450px;
+}
 .header-fotos h2 {
   color: #fedc38;
 }
