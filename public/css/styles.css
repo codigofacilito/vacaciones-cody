@@ -1,0 +1,67 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+:root {
+  --fondo-menu-navegacion: #39ac91;
+  --color-fuente-primario: #ffffff;
+  --color-hover-enlace: #000000;
+}
+
+.navegacion {
+  background-color: var(--fondo-menu-navegacion);
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.navegacion__enlace {
+  text-decoration: none;
+  color: var(--color-fuente-primario);
+}
+
+.navegacion__enlace:hover {
+  color: var(--color-hover-enlace);
+  text-decoration: underline;
+}
+
+/* nav{
+  background-color: aliceblue;
+  padding: 15px;
+  display: flex;
+  gap:1em;
+} */
+
+main{
+  text-align: center;
+  /* max-width: 960px; */
+  margin:0 auto;
+}
+
+section{
+  margin-top: 3rem;
+}
+
+.cursos div{
+  background-color: black;
+  color: white;
+  max-width: 200px;
+  display: inline-block;
+  box-shadow: 5px 5px 10px black;
+}
+.fotos img{
+  max-width: 450px;
+  display: inline-block;
+}
+ul li{
+  text-align: left;
+}
+ul li::marker {
+  content: "🚀";
+}
+
+ol li{
+  text-align: left;
+}

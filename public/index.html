@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+  <!--METODOLOGÍA BEM-->
+  <!--B = BLOQUE -->
+  <!--E = ELEMENTO -->
+  <!--M = MODIFICADOR -->
   <main>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+      <nav class="navegacion"> <!--BLOQUE-->
+        <a class="navegacion__enlace" href="./index.html"><i class="fas fa-home"></i> Inicio</a> <!--ELEMENTO-->
+        <a class="navegacion__enlace" href="fotos.html"><i class="fas fa-images"></i> Fotos</a> <!--ELEMENTO-->
       </nav>
       <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero
+        compartirlo contigo.</p>
     </header>
 
     <section>
       <header>
         <h2>Mis vacaciones Frontend</h2>
       </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve
+        aprendiendo HTML, CSS, y JavaScript </p>
+      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías
+        frontend, construyendo esta página </p>
       <p> Estos son los cursos que estuve tomando </p>
       <div class="cursos">
         <div>
@@ -60,7 +70,7 @@
       </p>
       <p>
         Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+        <a href="" target="_blank">Ir al tutorial</a>
 
       </p>
     </section>
@@ -83,7 +93,8 @@
     <section>
       <header>
         <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente
+          nos desconectemos y descansemos apropiadamente</p>
         <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
         <ol>
           <li>Mejora la salud mental</li>
@@ -92,9 +103,10 @@
           <li>Mejora tu productividad y creatividad</li>
         </ol>
       </header>
-      
+
     </section>
-    
+
   </main>
 </body>
+
 </html>
