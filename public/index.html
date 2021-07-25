@@ -1,100 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="svgs/flamingo.svg" type="image/x-icon">
 </head>
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+<body class="bg-gray-50">
+  <!--navegacion-->
+  <div class="header">
+    <nav class="bg-yellow-200 py-2 md:py-4">
+      <div class="container px-4 mx-auto md:flex md:items-center">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="font-bold text-xl text-gray-600">
+            <img src="svgs/popsicle.svg" alt="logo">
+          </a>
+          <button
+            class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
+            id="navbar-toggle">
+            <i><img src="svgs/menu.svg" alt="menu"></i>
+          </button>
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+        <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
+          <a href="index.html" class="p-2 lg:px-4 md:mx-2 text-white rounded bg-green-400">Inicio</a>
+          <a href="fotos.html"
+            class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-white hover:text-gray-700 transition-colors duration-300">Fotos</a>
         </div>
       </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
+    </nav>
+  </div>
+  <!--banner-->
+  <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill"
+    style="background-image: url(images/7.jpg)">
+    <div class="md:w-1/2">
+      <p class="font-bold text-sm uppercase">Mis vacaciones</p>
+      <p class="text-3xl font-bold">Estas son mis vacaciones frontend</p>
+      <p class="text-2xl mb-10 leading-none"></p>
+      <a href="sobre-mi.html"
+        class="bg-green-400 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Sobre
+        mi</a>
+    </div>
+  </div>
+  <!--contenedor principal-->
+  <div class="m-10 mx-auto p-16 sm:p-12 lg:p-24">
+    <!--card de presentacion-->
+    <div class="max-w-lg bg-white p-6 rounded-md shadow-2xl mx-auto mb-10">
+      <div class="flex items-center mb-4">
+        <img class="w-20" src="svgs/cody.svg" alt="avatar" />
+        <div id="header-text" class="leading-5 ml-6 sm">
+          <h4 class="text-xl font-semibold">¡Hola soy Cody!</h4>
+          <h5 class="font-semibold text-blue-600">Aspirante a Dev</h5>
+        </div>
       </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
-  </main>
+      <div id="quote">
+        <p class="text-gray-600">En 2019, organicé un viaje para desestresarme del código, y en esta página quiero
+          compartirlo contigo.</p>
+      </div>
+    </div>
+    <!--contenido-->
+    <main class="py-4">
+      <div class="px-4">
+        <div class="block md:flex justify-between md:-mx-2">
+          <div class="w-full lg:w-1/3 md:mx-2 mb-4 md:mb-0">
+            <div class="bg-white rounded-lg overflow-hidden shadow relative">
+              <img class="h-56 w-full object-cover object-center" src="images/1.jpg" alt="">
+              <div class="p-4 h-auto md:h-40 lg:h-48">
+                <a href="#"
+                  class="block text-blue-500 hover:text-blue-600 font-semibold mb-2 text-lg md:text-base lg:text-lg">
+                  Mis vacaciones Frontend
+                </a>
+                <div class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm">
+                  Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por que durante mi viaje,
+                  esuve aprendiendo HTML, CSS y JavaScript.
+                </div>
+                <div class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm">
+                  Cada tarde, despues de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en
+                  tecnologías frontend, construyendo esta página.
+                </div>
+                <div class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm">
+                  Estuve tomando los cursos de, Desarrollo web profesional y un curso para crear mi primera web.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/3 md:mx-2 mb-4 md:mb-0">
+            <div class="bg-white rounded-lg overflow-hidden shadow relative">
+              <img class="h-56 w-full object-cover object-center" src="images/2.jpg" alt="">
+              <div class="p-4 h-auto md:h-40 lg:h-48">
+                <a href="#"
+                  class="block text-blue-500 hover:text-blue-600 font-semibold mb-2 text-lg md:text-base lg:text-lg">
+                  Ruta de aprendizaje 2021
+                </a>
+                <div class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm">
+                  También me propuse aprender nuevas tecnologías durante este 2021:
+                </div>
+                <div class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm pl-3">
+                  <ul class="list-disc">
+                    <li>Flexbox</li>
+                    <li>Animaciones con CSS y Javascript</li>
+                    <li>AJAX</li>
+                    <li>HTML semántico</li>
+                    <li>Entre otros</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/3 md:mx-2 mb-4 md:mb-0">
+            <div class="bg-white rounded-lg overflow-hidden shadow relative">
+              <img class="h-56 w-full object-cover object-center" src="images/3.jpg" alt="">
+              <div class="p-4 h-auto md:h-40 lg:h-48">
+                <a href="#"
+                  class="block text-blue-500 hover:text-blue-600 font-semibold mb-2 text-lg md:text-base lg:text-lg">
+                  Colabora con mi página
+                </a>
+                <div class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm">
+                  Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código
+                  a GitHub
+                  Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+                  Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica Ir
+                  al tutorial
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--pase a la galeria-->
+    <div class="flex flex-col p-8 bg-white shadow-md hover:shodow-lg rounded-2xl">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <img src="svgs/parasol.svg" alt="parasol">
+          <div class="flex flex-col ml-3">
+            <div class="font-medium leading-none">¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé</div>
+          </div>
+        </div>
+        <a href="fotos.html" class="flex-no-shrink bg-red-500 px-5 ml-4 py-2 text-sm shadow-sm hover:shadow-lg font-medium tracking-wider border-2 border-red-500 text-white rounded-full">Ir la galería</a>
+      </div>
+  </div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
