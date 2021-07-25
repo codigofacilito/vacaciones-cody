@@ -13,7 +13,7 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path="/Inicio" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route path="/Gallery" component={Gallery} />
           <Route path="*">
             <Redirect to="/404" />
