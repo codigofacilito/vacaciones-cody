@@ -1,11 +1,11 @@
-
 .header {
-    background-color: #6d58fd;
+    background-color: #0f9bf6;
     position: fixed;
     height: 50px;
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 10000;
 }
 
 .nav{
@@ -31,6 +31,10 @@
     margin-top: 10px;
 }
 
+.nav-logo{
+    padding-block-end: 8px;
+}
+
 .nav_link{
     color: white;
     text-decoration: none;
@@ -40,7 +44,6 @@
     display: flex;
     margin-right: 30px;
     list-style: none;
-    z-index: auto;
 }
 
 .nav_menu_item{
@@ -57,8 +60,9 @@
 }
 
 .nav_menu_link:hover{
-    background-color: #b8aafd;
+    background-color: #318CE7;
     transition: 1s;
+    color: white;
 }
 
 .nav-toggle{
@@ -73,9 +77,6 @@
 }
 
 @media(max-width: 768px){
-    body {
-        padding-top: 70px;
-    }
     
     .header {
         height: 60px;

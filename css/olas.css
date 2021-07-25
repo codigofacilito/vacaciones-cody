@@ -1,0 +1,77 @@
+.olas_ {
+    height: 660px;
+    background: #0f9bf6;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.olas__ {
+    width: 100%;
+    height: 660px;
+    background: #0f9bf6;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.content {
+    font-family: Arial;
+    text-align: center;
+    font-size: 28px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.waves {
+    position: absolute;
+    bottom: -135px;
+    height: 527px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    left: -180px;
+    bottom: 0;
+    width: 2402px;
+    height: 427px;
+    background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
+    animation: 5s wave ease-in-out infinite alternate;
+}
+
+.wave.a {
+    background-position: 0 -854px;
+}
+
+.wave.b {
+    background-position: 0 -427px;
+    animation-delay: .6s;
+}
+
+.wave.c {
+    background-position: 0 0;
+    animation-delay: 1.2s;
+}
+
+/*.container {
+    position: absolute;
+  }*/
+
+@keyframes wave {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-80px, 30px);
+    }
+    100% {
+        transform: translate(160px, -60px);
+    }
+}

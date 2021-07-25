@@ -1,20 +1,13 @@
-*{
-    box-sizing: border-box;
-}
-
-body{
-    display: flex;
-}
 
 .container-slider{
     width: 90%;
-    max-width: 800px;
+    max-width: 750px;
     margin: auto;
     overflow: hidden;
-    box-shadow: 0 0 0 10px #fff,
+    box-shadow: 0 0 0 10px #E1EBEE,
                     0 15px 50px;
     position: relative;
-    z-index: auto;
+    z-index: 1;
 }
 
 .slider__img{
@@ -37,7 +30,7 @@ body{
 
 .slider__btn{
     position: absolute;
-    widows: 40px;
+    width: 40px;
     height: 40px;
     background: rgba(255, 255, 255, 0.7);
     top: 50%;
@@ -46,7 +39,7 @@ body{
     font-weight: bold;
     font-family:monospace;
     text-align: center;
-    border-radius: 10%;
+    border-radius: 50%;
     cursor:pointer;
 }
 .slider__btn:hover{
@@ -63,7 +56,7 @@ body{
 
 @media(max-width: 768px){
     .container-slider{
-        max-width: 350px;
+        max-width: 330px;
         width: 100%;
     }
 

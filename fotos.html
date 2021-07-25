@@ -6,14 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/png" href="./images/codi.png" />
   <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/slide.css">
+  <link rel="stylesheet" href="css/olas.css">
   <script src="https://kit.fontawesome.com/4eb76ce5d2.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
   <script defer src="js/navbar.js"></script>
   <script defer src="js/slider.js"></script>
 </head>
-
 <body>
   <header class="header">
     <nav class="nav">
@@ -25,56 +27,57 @@
       </button>
       <ul class="nav_menu">
         <li class="nav_menu_item">
-          <a href="index.html" class="nav_menu_link nav_link">Inicio</a>
+          <a href="index.html" class="nav_menu_link nav_link">
+            <lord-icon class="nav-logo" src="https://cdn.lordicon.com/gmzxduhd.json" trigger="loop"
+              colors="primary:#ffffff,secondary:#ffffff" stroke="80" style="width:40px;height:40px">
+            </lord-icon>
+            Inicio
+          </a>
         </li>
         <li class="nav_menu_item">
-          <a href="fotos.html" class="nav_menu_link nav_link">Fotos</a>
+          <a href="fotos.html" class="nav_menu_link nav_link">
+            <lord-icon class="nav-logo" src="https://cdn.lordicon.com/fgkmrslx.json" trigger="loop"
+              colors="primary:#ffffff,secondary:#ffffff"  stroke="80" style="width:40px;height:40px">
+            </lord-icon>
+            Fotos
+          </a>
         </li>
       </ul>
     </nav>
   </header>
-  <main>
+  <section class="olas__">
     <div class="title_fotos">
       <h2>Galería completa de mis vacaciones</h2>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="container-slider">
-            <div class="slider" id="slider">
-              <div class="slider__section">
-                <img src="./images/1.jpg" alt="" class="slider__img">
-              </div>
-              <div class="slider__section">
-                <img src="./images/2.jpg" alt="" class="slider__img">
-              </div>
-              <div class="slider__section">
-                <img src="./images/3.jpg" alt="" class="slider__img">
-              </div>
-              <div class="slider__section">
-                <img src="./images/4.jpg" alt="" class="slider__img">
-              </div>
-              <div class="slider__section">
-                <img src="./images/5.jpg" alt="" class="slider__img">
-              </div>
-              <div class="slider__section">
-                <img src="./images/6.jpg" alt="" class="slider__img">
-              </div>
-            </div>
-            <div class="slider__btn slider__btn--right" id="btn-right"> &#62; </div>
-            <div class="slider__btn slider__btn--left" id="btn-left"> &#60; </div>
-          </div>
+    <div class="container-slider">
+      <div class="slider" id="slider">
+        <div class="slider__section">
+          <img src="./images/1.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+          <img src="./images/2.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+          <img src="./images/3.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+          <img src="./images/4.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+          <img src="./images/5.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+          <img src="./images/6.jpg" alt="" class="slider__img">
         </div>
       </div>
+      <div class="slider__btn slider__btn--right" id="btn-right"> &#62; </div>
+      <div class="slider__btn slider__btn--left" id="btn-left"> &#60; </div>
     </div>
+    <div class="waves">
+      <div class="wave circulo a"></div>
+      <div class="wave circulo b"></div>
+      <div class="wave circulo c"></div>
     </div>
-  </main>
-  <!-- <img src="images/1.jpg" alt="Cody en la playa" class="img" />
-        <img src="images/2.jpg" alt="Cody acampando" class="img" />
-        <img src="images/3.jpg" alt="Cody en una alberca" class="img" />
-        <img src="images/4.jpg" alt="Cody en una alberca" class="img" />
-        <img src="images/5.jpg" alt="Cody en una alberca" class="img" />
-        <img src="images/6.jpg" alt="Cody en una alberca" class="img" /> -->
+    </section>
 </body>
-
 </html>
