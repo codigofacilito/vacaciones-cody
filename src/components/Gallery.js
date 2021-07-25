@@ -1,9 +1,13 @@
 import React from 'react';
+import AppBarNav from "./AppBar";
+
 
 export default function Gallery() {
     return (
-        <section>
-            Gallery
-        </section>
+        <>
+            <AppBarNav
+            text= {'Inicio'}
+            />
+        </>
     );
 }
