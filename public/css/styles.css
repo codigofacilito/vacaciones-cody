@@ -7,9 +7,11 @@
   --fondo-menu-navegacion: #39ac91;
   --color-fuente-primario: #ffffff;
   --color-hover-enlace: #000000;
+  --fondo-seccion-01: #26a659;
 }
 
-.navegacion {
+/* HEADER */
+main header .navegacion {
   background-color: var(--fondo-menu-navegacion);
   padding: 1rem;
   display: flex;
@@ -17,36 +19,43 @@
   justify-content: center;
 }
 
-.navegacion__enlace {
+main header .navegacion a {
   text-decoration: none;
   color: var(--color-fuente-primario);
 }
 
-.navegacion__enlace:hover {
+main header .navegacion a:hover {
   color: var(--color-hover-enlace);
   text-decoration: underline;
 }
 
-.info {
+main header .info {
   background-color: var(--fondo-menu-navegacion); 
   color: var(--color-fuente-primario);
+  padding: 1rem 1rem 3rem 1rem;
 }
 
-/* nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
-} */
-
-main{
+main header .info h1,
+main header .info p {
   text-align: center;
-  /* max-width: 960px; */
-  margin:0 auto;
 }
 
-section{
-  margin-top: 3rem;
+main header .info p {
+  margin-top: 1rem;
+}
+
+/* END OF HEADER */
+
+.section-01 {
+  background-color: var(--fondo-seccion-01);
+  color: var(--color-fuente-primario);
+  padding: 1rem;
+}
+
+/* main{
+  text-align: center;
+  max-width: 960px;
+  margin:0 auto;
 }
 
 .cursos div{
@@ -69,4 +78,4 @@ ul li::marker {
 
 ol li{
   text-align: left;
-}
+} */
