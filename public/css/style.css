@@ -22,6 +22,7 @@ a {
 
 ol {
   list-style-type: number;
+  margin-left: calc(var(--padding) * 2);
 }
 
 .u-wrapper {
