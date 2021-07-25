@@ -88,6 +88,7 @@ ol {
 p {
   margin-bottom: 15px;
   color: var(--color-text);
+  line-height: 1.5;
 }
 
 /* NAVBAR */
@@ -248,15 +249,30 @@ p {
 }
 
 @keyframes pop {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.2); } 
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0px rgba(0,0,0, 0.2);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 5px rgba(0,0,0, 0.1);
+  } 
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0,0,0, 0);
+  }
 }
 
 @keyframes pop-reverse {
-  0% { transform: scale(1); } 
-  50% { transform: scale(.8); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(.8);
+  } 
+  100% {
+    transform: scale(1);
+  }
 }
 
 .Checkbox:checked:after {
