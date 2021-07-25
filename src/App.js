@@ -1,3 +1,4 @@
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,8 +13,8 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/gallery" component={Gallery} />
+          <Route exact path="/Inicio" component={Home} />
+          <Route path="/Gallery" component={Gallery} />
           <Route path="*">
             <Redirect to="/404" />
           </Route>
