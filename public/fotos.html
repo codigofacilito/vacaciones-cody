@@ -5,30 +5,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Galería</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="svgs/flamingo.svg" type="image/x-icon">
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
-
-  </main>
+  <!--navegacion-->
+  <div class="header">
+    <nav class="bg-yellow-200 py-2 md:py-4">
+      <div class="container px-4 mx-auto md:flex md:items-center">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="font-bold text-xl text-gray-600">
+            <img src="svgs/popsicle.svg" alt="logo">
+          </a>
+          <button
+            class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
+            id="navbar-toggle">
+            <i><img src="svgs/menu.svg" alt="menu"></i>
+          </button>
+        </div>
+        <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
+          <a href="index.html" class="p-2 lg:px-4 md:mx-2 text-white rounded bg-green-400">Inicio</a>
+          <a href="fotos.html"
+            class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-white hover:text-gray-700 transition-colors duration-300">Fotos</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--galeria-->
+  <div class="m-10 mx-auto p-16 sm:p-12 lg:p-24">
+    <section class="pt-8 px-4">
+      <div class="flex flex-wrap -mx-4">
+        <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow-md" src="images/1.jpg" alt=""></div>
+        <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow-md" src="images/2.jpg" alt=""></div>
+        <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow-md" src="images/3.jpg" alt=""></div>
+        <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow-md" src="images/4.jpg" alt=""></div>
+        <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow-md" src="images/5.jpg" alt=""></div>
+        <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow-md" src="images/6.jpg" alt=""></div>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>
