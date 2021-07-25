@@ -6,7 +6,7 @@ export default function Gallery() {
     return (
         <>
             <AppBarNav
-            text= {'Inicio'}
+            text= {''}
             />
         </>
     );
