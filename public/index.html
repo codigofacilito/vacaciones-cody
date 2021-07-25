@@ -44,15 +44,15 @@
       <h3 class="u-h3 Cursos-title"> Estos son los cursos que estuve tomando </h3>
     </section>
 
-    <div class="u-wrapper Cursos">
-      <a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank" class="Curso">
+    <div class="u-wrapper Cursos u-horizontal-scroll">
+      <a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank" class="Curso u-horizontal-scroll-item">
         <h3 class="u-h3 Curso-title">Curso profesional de Desarrollo Web</h3>
-        <img class="Curso-img" src="images/curso-profesional-webdev.png">
+        <img class="Curso-img u-rounded u-horizontal-scroll-item-img" src="images/curso-profesional-webdev.png">
         <p class="Curso-description">Cada día se vuelve más importante que todo el mundo aprenda a crear un sitio web, ya sea para un boletín de información, una invitación, un portafolio personal de trabajo, o para un negocio de desarrollo web.</p>
       </a>
-      <a href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank" class="Curso">
+      <a href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank" class="Curso u-horizontal-scroll-item">
         <h3 class="u-h3 Curso-title">Curso para crear mi primera página web</h3>
-        <img class="Curso-img" src="images/curso-crear-primera-pagina.png">
+        <img class="Curso-img u-rounded u-horizontal-scroll-item-img" src="images/curso-crear-primera-pagina.png">
         <p class="Curso-description">Aprende a crear tu primera página web desde 0, sin conocimientos previos. Crea un sitio web funcional y atractivo, aunque nunca antes hayas hecho una página web y no tengas idea de cómo crearla</p>
       </a>
     </div>
@@ -114,23 +114,26 @@
       <p class="u-paragraph">
         También agregué un iframe para que puedas ver el tutorial sin abandonar la página
       </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Zqft6yNRuNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="u-rounded" width="560" height="315" src="https://www.youtube.com/embed/Zqft6yNRuNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
-    <section class="u-wrapper">
+    <section class="u-wrapper u-margin-0">
       <header>
         <h2 class="u-h2">Aquí te comparto algunas fotos de mis vacaciones</h2>
         <p class="u-paragraph">¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
       </header>
+    </section>
 
-      <div class="Fotos">
-        <img class="Foto" src="images/1.jpg" alt="Cody en la playa">
-        <img class="Foto" src="images/2.jpg" alt="Cody acampando">
-        <img class="Foto" src="images/3.jpg" alt="Cody en una alberca">
-        <p class="u-paragraph">
-          Puedes ver más, en la <a class="u-link" href="fotos.html">galería de fotos de mi página</a>
-        </p>
-      </div>
+    <div class="Fotos u-horizontal-scroll">
+      <img class="Foto u-rounded u-horizontal-scroll-item" src="images/1.jpg" alt="Cody en la playa">
+      <img class="Foto u-rounded u-horizontal-scroll-item" src="images/2.jpg" alt="Cody acampando">
+      <img class="Foto u-rounded u-horizontal-scroll-item" src="images/3.jpg" alt="Cody en una alberca">
+    </div>
+
+    <section class="u-wrapper">
+      <p class="u-paragraph">
+        Puedes ver más, en la <a class="u-link" href="fotos.html">galería de fotos de mi página</a>
+      </p>
     </section>
 
     <section class="u-wrapper">
@@ -165,6 +168,19 @@
     window.addEventListener('resize', getViewportHeight)
 
     getViewportHeight()
+  </script>
+  <script>
+    let prevScrollPos = window.pageYOffset
+    window.onscroll = function() {
+      let currentScrollPos = window.pageYOffset
+      if (prevScrollPos > currentScrollPos) {
+        document.querySelector('nav.Nav').style.bottom = "0"
+      } else {
+        document.querySelector('nav.Nav').style.bottom = "-60px"
+      }
+
+      prevScrollPos = currentScrollPos
+    }
   </script>
 </body>
 </html>
