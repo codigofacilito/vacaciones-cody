@@ -3,6 +3,7 @@
   --color-primary: #8E2DE2;
   --color-secondary: #3F00FF;
   --color-accent: #5BCC85;
+  --color-text: #070928;
 
   --padding: 10px;
 
@@ -40,7 +41,7 @@ ol {
 }
 
 .u-h2 {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-size: 1.25em;
   font-family: 'Fira Code', monospace;
   margin-bottom: var(--padding);
@@ -55,13 +56,14 @@ ol {
 
 .u-link {
   color: var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
 }
 
 .u-rounded {
   border-radius: var(--padding);
 }
 
-.u-horizontal-scroll {
+.u-horizontalScroll {
   display: inline-flex;
   overflow: auto;
   padding: 0 0 0 calc(var(--padding) * 2);
@@ -69,16 +71,23 @@ ol {
   gap: calc(var(--padding) * 3);
 }
 
-.u-horizontal-scroll-item {
+.u-horizontalScrollItem {
   width: var(--curso-card-width);
 }
 
-.u-horizontal-scroll-item:last-child {
+.u-horizontalScrollItem:last-child {
   margin-right: calc(var(--padding) * 2);
+}
+
+.u-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding);
 }
 
 p {
   margin-bottom: 15px;
+  color: var(--color-text);
 }
 
 /* NAVBAR */
@@ -130,6 +139,10 @@ p {
   color: white;
 }
 
+.Landing p {
+  color: white;
+}
+
 .Landing-title {
   font-family: 'Fira Code', monospace;
   font-weight: 700;
@@ -138,7 +151,7 @@ p {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.Landing .u-text-secondary {
+.Landing .u-textSecondary {
   text-align: center;
   margin: 10vh auto;
 }
@@ -201,12 +214,6 @@ p {
 }
 
 /* RUTA DE APRENDIZAJE SECTION */
-.RutaDeAprendizaje-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--padding);
-}
-
 .RutaDeAprendizaje-list li {
   display: flex;
   justify-content: flex-start;
@@ -229,7 +236,7 @@ p {
   background-color: transparent;
   border: 5px solid var(--color-secondary);
 
-  animation: pop .5s;
+  animation: pop-reverse .5s;
 }
 
 .Checkbox:checked {
@@ -237,7 +244,7 @@ p {
   padding: 0;
   border: none;
 
-  animation: pop-reverse .5s;
+  animation: pop .5s;
 }
 
 @keyframes pop {
