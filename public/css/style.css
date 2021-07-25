@@ -269,3 +269,18 @@ iframe {
   width: var(--wrapper-width);
 }
 
+/* FOOTER */
+.Footer {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  padding-top: 0;
+  padding-bottom: 0;
+  height: var(--navbar-height);
+
+  border-top: 1px solid #DDDDDD;
+  text-align: center;
+}
