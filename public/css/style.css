@@ -164,7 +164,7 @@ p {
 
 .Landing-img {
   position: absolute;
-  bottom: var(--navbar-height);
+  top: calc(100 * var(--vh) - var(--navbar-height) - 155px);
   right: 0;
 
   width: 150px;
