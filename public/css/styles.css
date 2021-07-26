@@ -150,6 +150,44 @@ main header .info p {
 }
 /* END OF SECTION 03 */
 
+/* SECTION 04 */
+.section-04 {
+  background-color: var(--section-02-bg);
+  color: var(--primary-color);
+  padding: 1rem;
+}
+
+.section-04 header h2,
+.section-04 header p {
+  text-align: center;
+}
+
+.section-04 header p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-04 .photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.section-04 .photos img {
+  width: 50%;
+  margin: 1rem;
+}
+
+.section-04 .photos p a {
+  color: #000000;
+}
+
+.section-04 .photos p a:hover {
+  opacity: 0.7;
+}
+/* END OF SECTION 04 */
+
 
 /*main{
   text-align: center;
