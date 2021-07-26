@@ -1,0 +1,42 @@
+@import "./global.css";
+@import "./fonts.css";
+@import "./variables.css";
+
+@import "./animations.css";
+
+@import "./components/navbar.css";
+@import "./components/button.css";
+@import "./components/ocean-element.css";
+
+@import "./sections/section.css";
+@import "./sections/banner.css";
+@import "./sections/intro.css";
+@import "./sections/learning-path.css";
+
+
+.main-container {
+  width: var(--max-width);
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.main-container__image {
+  object-fit: contain;
+  position: sticky;
+  top: calc(50% - 150px);
+  justify-self: center;
+  animation: vertical-translate 3s linear infinite;
+}
+
+.main-container__image::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+  height: 60px;
+  background: blue;
+}

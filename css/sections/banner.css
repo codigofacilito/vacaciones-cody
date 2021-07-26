@@ -1,0 +1,42 @@
+.banner {
+  /* width: 100%; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.banner__title {
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+.banner__title::before,
+.banner__title::after {
+  content: "";
+  width: 110px;
+  height: 16px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: -1;
+}
+
+.banner__title::before {
+  bottom: 0;
+  left: -8px;
+  background: #F8E2A9;
+}
+
+.banner__title::after {
+  bottom: 0;
+  right: -8px;
+  background: #A9DBF8;
+}
+
+.banner__subtitle {
+  font-size: 1.125rem;
+  color: var(--secondary-text-color);
+}

@@ -1,0 +1,24 @@
+* {
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,h2,h2,h3,h4,h5,h6 {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}

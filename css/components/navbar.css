@@ -1,0 +1,28 @@
+.menu {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+
+  background-color: var(--background-color);
+}
+
+.menu__navbar {
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 1.5rem 1rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--secondary-text-color);
+}
+
+.navbar__link--active {
+  color: var(--primary-color);
+}
