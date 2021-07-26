@@ -1,38 +1,43 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+:root {
+  /*colors*/
+  --Background:linear-gradient(180deg, #56C9FE 0%, #C6ECFF 8.29%, #3B80C4 38.34%, #1B5EC7 74.68%, #1C1D31 99.22%, #4CB9F2 99.47%);
+  --Gray: #a3a3a3;
+  --softGray: #e5e5e5;
+  --secundary: #eef7f8;
+  --Highlight: #5fbbc1;
+  --White: hsl(0, 0%, 100%);
+  --back: #000000;
+  --Slightlytransparent: hsla(0, 0%, 100%, 0.75);
+  --Slightly: hsla(0, 0%, 100%, 0.6);
+
+  /*font size variable*/
+  --fontBase: 'Roboto', sans-serif;
+  --alternativeFont : 'Fredoka One', cursive;
+
+  --headLine: bold 28px/33px var(--fontBase);
+  --Body: 15px/25px var(--fontBase);
+  --Label: 15px/25px var(--fontAlternative);
+  --Number: 15px/25px var(--fontBase);
+
+  --headLineMTablet: bold 24px/35px var(--fontBase);
+  --BodyTablet: 24px/35px var(--fontBase);
+  --LabelTablet: 16px/35px var(--fontBase);
+  --SocialTablet: 300 12px/35px var(--fontBase);
+
+  --headLineMobile1: bold 24px/35px var(--fontBase);
+  --BodyMobile: 18px/35px var(--fontBase);
+  --LabelMobile: 16px/35px var(--fontBase);
+  --SocialMobile: 300 12px/35px var(--fontBase);
 }
 
-main{
+body {
+  background: var(--Background);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--fontBase);
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
-}
-
-section{
-  margin-top: 3rem;
-}
-
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
-}
-
-ol li{
-  text-align: left;
+  min-width: 360px;
+  padding: 0;
+  margin: 0;
 }
