@@ -9,8 +9,12 @@
         text-align: center;
         color: $deepBlue
         margin: 0 0 30px
+        span
+            color: $lightRed
     p
         font-size: 1.2em
+        width: 80%
+        margin: 0 auto 15px
 
     .ball
         margin: 40px 0
@@ -32,6 +36,8 @@
         position: relative
         box-shadow: 0 3px 20px rgba(0, 0, 0, .05)
         &:hover 
+            transform: translatey(-20px) 
+            transition: 0.3s ease-in all
             .ico-wrap 
                 transform: scale(1.1)
                 transition: .1s ease-in all
