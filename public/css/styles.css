@@ -118,9 +118,37 @@ main header .info p {
 .section-02 ul li::marker {
   content: "🚀 ";
 }
-/* SECTION 02 */
-
 /* END OF SECTION 02 */
+
+/* SECTION 03 */
+.section-03 {
+  background-color: var(--section-01-bg);
+  color: var(--primary-color);
+  padding: 1rem;
+}
+
+.section-03 header h2,
+.section-03 p {
+  text-align: center;
+}
+
+.section-03 header h2,
+.section-03 p {
+  margin-bottom: 1rem;
+}
+
+.section-03 p a {
+  color: #000000;
+}
+
+.section-03 p a:hover {
+  opacity: 0.7;
+}
+
+.section-03 .p-03 {
+  padding-bottom: 3rem;
+}
+/* END OF SECTION 03 */
 
 
 /*main{
