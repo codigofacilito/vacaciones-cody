@@ -211,6 +211,7 @@ nav ul li a {
   border-radius: 20px;
   box-shadow: 1px 1px 30px -5px #20202049;
   cursor: pointer;
+  line-height: 100px;
   transition: box-shadow 500ms;
 }
 .container__info__button:hover {
@@ -409,11 +410,11 @@ footer {
   font-family: "Poppins", sans-serif;
   background-image: url(../images/background-footer.svg);
   background-size: cover;
-  background: #18a7f7;
+  background: rgb(33, 150, 243);
   background: linear-gradient(
     180deg,
-    rgba(24, 167, 247, 1) 0%,
-    rgba(27, 187, 188, 1) 63%
+    rgba(33, 150, 243, 1) 16%,
+    rgba(34, 193, 195, 1) 100%
   );
   -webkit-mask-image: url("../images/background-footer.svg");
   -moz-mask-image: url("../images/background-footer.svg");
@@ -444,18 +445,18 @@ footer {
   max-width: 350px;
   margin-top: 20px;
   font-weight: 500px;
-  color: #7a7a7a;
+  color: #373737;
 }
 
 .box__footer h2 {
   margin-bottom: 30px;
-  color: #7a7a7a;
+  color: #373737;
   font-weight: 700;
 }
 
 .box__footer a {
   margin-top: 10px;
-  color: #7a7a7a;
+  color: #373737;
   font-weight: 600;
 }
 
@@ -478,7 +479,7 @@ footer {
 }
 .box__copyright p {
   margin-top: 20px;
-  color: #7a7a7a;
+  color: #373737;
 }
 .box__copyright hr {
   border: none;
