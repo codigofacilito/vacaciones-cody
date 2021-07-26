@@ -289,8 +289,8 @@ nav ul li a {
   max-width: 70%;
   background-color: #f9f9f9;
   padding: 40px;
-  margin: auto;
-  margin-bottom: 100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
   border-radius: 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   justify-content: center;
@@ -327,7 +327,6 @@ nav ul li a {
 }
 .card:hover .icon,
 .card:focus .icon {
-  margin-top: -110px;
   border-radius: 20px 20px 0px 0px;
 }
 .icon {
@@ -347,6 +346,7 @@ nav ul li a {
   font-size: 150px;
   color: #fff;
   transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+  border-radius: 20px;
 }
 
 .info__description {
