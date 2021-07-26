@@ -1,0 +1,28 @@
+.header {
+  &__bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    &--svg {
+      position: relative;
+      display: block;
+      width: calc(224% + 1.3px);
+      height: 228px;
+      transform: rotateY(180deg);
+      @media (min-width: 768px) and (max-width: 1023px) {
+        width: calc(220% + 1.3px);
+        height: 216px;
+      }
+      @media (max-width: 767px) {
+        width: calc(219% + 1.3px);
+        height: 194px;
+      }
+    }
+    &--fill {
+      fill: $colorPurple;
+    }
+  }
+}
