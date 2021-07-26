@@ -6,6 +6,9 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container_all {
   position: relative;
   right: 0;
@@ -194,9 +197,10 @@ nav ul li a {
 .cover p {
   margin-top: 10px;
   color: #373737;
+  font-weight: bold;
 }
 
-.cover input[type="button"] {
+.container__info__button {
   padding: 10px 40px;
   margin-top: 40px;
   font-size: 18px;
@@ -209,7 +213,7 @@ nav ul li a {
   cursor: pointer;
   transition: box-shadow 500ms;
 }
-.cover input[type="button"]:hover {
+.container__info__button:hover {
   box-shadow: 1px 1px 30px -5px #20202085;
 }
 
@@ -405,9 +409,9 @@ footer {
   font-family: "Poppins", sans-serif;
   background-image: url(../images/background-footer.svg);
   background-size: cover;
-  background: rgb(24, 167, 247);
+  background: #18a7f7;
   background: linear-gradient(
-    90deg,
+    180deg,
     rgba(24, 167, 247, 1) 0%,
     rgba(27, 187, 188, 1) 63%
   );
