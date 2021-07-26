@@ -208,6 +208,18 @@ main header .info p {
 }
 /* END OF SECTION 05 */
 
+/* FOOTER */
+footer {
+  background-color: var(--navigation-menu-bg);
+  padding: 1rem;
+  color: var(--primary-color);
+}
+
+footer small {
+  text-align: center;
+}
+
+/* END OF FOOTER */
 
 
 
