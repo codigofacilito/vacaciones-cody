@@ -188,6 +188,28 @@ main header .info p {
 }
 /* END OF SECTION 04 */
 
+/* SECTION 05 */
+.section-05 {
+  background-color: var(--section-01-bg);
+  color: var(--primary-color);
+  padding: 1rem;
+}
+
+.section-05 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.section-05 header p,
+.section-05 header h2 {
+  margin-bottom: 1rem;
+}
+/* END OF SECTION 05 */
+
+
+
 
 /*main{
   text-align: center;
