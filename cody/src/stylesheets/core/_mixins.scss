@@ -1,0 +1,17 @@
+@mixin tablet() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin titles() {
+  font-size: 2rem;
+  padding: 30px;
+  text-transform: uppercase;
+}
