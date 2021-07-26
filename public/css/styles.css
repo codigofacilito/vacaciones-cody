@@ -5,8 +5,8 @@
 
 /* 
 PALETA DE COLORES:
-#90af3c ->
-#5db06a ->
+#90af3c -> ok
+#5db06a -> ok
 #39ac91 -> ok
 #24aa78 ->
 #26a659 -> ok
@@ -17,6 +17,7 @@ PALETA DE COLORES:
   --primary-color: #ffffff;
   --hover-link-color: #000000;
   --section-01-bg: #26a659;
+  --section-02-bg: #5db06a;
 }
 
 /* HEADER */
@@ -86,10 +87,43 @@ main header .info p {
   background-color: #90af3c;
   margin-top: 2rem;
 }
+
+.section-01 .courses .course-02 {
+  margin-bottom: 3rem;
+}
 /* END OF SECTION 01 */
+.section-02 {
+  background-color: var(--section-02-bg);
+  color: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-02 header h2,
+.section-02 header p {
+  text-align: center;
+}
+
+.section-02 header p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-02 ul {
+  padding-bottom: 3rem;
+}
+
+.section-02 ul li::marker {
+  content: "🚀 ";
+}
+/* SECTION 02 */
+
+/* END OF SECTION 02 */
 
 
-/* main{
+/*main{
   text-align: center;
   max-width: 960px;
   margin:0 auto;
