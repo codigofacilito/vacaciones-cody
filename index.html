@@ -11,9 +11,11 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/olas.css">
   <link rel="stylesheet" href="css/bulma.css">
+  <link rel="stylesheet" href="css/slider_init.css">
   <script src="https://kit.fontawesome.com/4eb76ce5d2.js" crossorigin="anonymous"></script>
   <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
   <script defer src="js/navbar.js"></script>
+  <script defer src="js/slider_init.js"></script>
 </head>
 
 <body>
@@ -45,7 +47,8 @@
       </ul>
     </nav>
   </header>
-  <section class="title_ olas_ section is-large">
+  <div class="contenedor">
+  <section class="title_ olas_">
     <div class="content">
       <h1>Estas son mis Vacaciones</h1>
       <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero
@@ -57,39 +60,30 @@
       <div class="wave circulo c"></div>
     </div>
   </section>
-  <main>
-    <section class="section is-large">
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve
-        aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías
-        frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <div class="card">
-            <div class="card-content">
-              <div class="content">
-                Curso profesional de Desarrollo Web
-              </div>
-            </div>
+  
+  
+  <section class="uno">
+        <header>
+          <h1>Mis vacaciones Frontend</h1>
+        </header>
+        <div class="parrafo">
+          <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve
+            aprendiendo HTML, CSS, y JavaScript </p>
+          <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías
+            frontend, construyendo esta página </p>
+          <p> Estos son los cursos que estuve tomando </p>
+        </div>
+        <div class="cursos">
+          <div >
+            Curso profesional de Desarrollo Web
+          </div>
+          <div>
+            Curso para crear mi primera página web
           </div>
         </div>
-        <div>
-          <div class="card">
-            <div class="card-content">
-              <div class="content">
-                 Curso para crear mi primera página web
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="section is-large">
+    <section class="dos">
       <header>
         <h2>Ruta de aprendizaje 2021</h2>
         <p> También me propuse aprender nuevas tecnologías durante 2021</p>
@@ -102,7 +96,8 @@
         <li> Entre otros </li>
       </ul>
     </section>
-    <section class="section is-large">
+
+    <section class="tres">
       <header>
         <h2>Colabora en mi página</h2>
       </header>
@@ -118,15 +113,27 @@
 
       </p>
     </section>
-    <section class="section is-large">
+
+    <section class="cuatro">
       <header>
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
       </header>
       <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa" class="img">
-        <img src="images/2.jpg" alt="Cody acampando" class="img">
-        <img src="images/3.jpg" alt="Cody en una alberca" class="img">
+        <div class="container-slider">
+          <div class="slider" id="slider">
+            <div class="slider__section">
+              <img src="./images/1.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+              <img src="./images/2.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+              <img src="./images/3.jpg" alt="" class="slider__img">
+            </div>
+          </div>
+      </div>
+      <div class="s4-p-fotos">
         <p>
           Puedes ver más, en la galería de fotos de mi página
           <a href="fotos.html">Ir a la galería</a>
@@ -134,7 +141,7 @@
       </div>
     </section>
 
-    <section class="section is-large">
+    <section class="cinco">
       <header>
         <h2>La importancia de las vacaciones</h2>
         <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente
@@ -148,11 +155,6 @@
         </ol>
       </header>
     </section>
-    <footer class="footer">
-      <div class="content has-text-centered">
-      </div>
-    </footer>
-  </main>
+  </div>
 </body>
-
 </html>

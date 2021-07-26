@@ -41,6 +41,7 @@
     text-align: center;
     border-radius: 50%;
     cursor:pointer;
+    color: white;
 }
 .slider__btn:hover{
     background: white;
@@ -58,6 +59,7 @@
     .container-slider{
         max-width: 330px;
         width: 100%;
+        margin-top: 30px;
     }
 
     .slider{
@@ -67,7 +69,10 @@
     .slider__img{
         max-width: 450px;
     }
-    .container-slider{
-        margin-top: 30px;
+
+    .slider__btn{
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
     }
 }

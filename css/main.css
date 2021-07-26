@@ -1,27 +1,32 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-main {
-    text-align: center;
 }
 
 body {
     font-family: sans-serif;
-    padding: 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 
-.cursos div {
-    color: black;
-    max-width: 200px;
-    display: inline-block;
-}
+/* ul li::marker {
+    content: "🚀";
+} */
+
 
 .img {
     max-width: 300px;
     display: inline-block;
+}
+
+.fotos img {
+    max-width: 450px;
 }
 
 .title_fotos {
@@ -30,16 +35,117 @@ body {
     font-family: sans-serif;
     font-size: 30px;
     text-align: center;
+    background: rgba( 0, 136, 255, 0.30);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 6.5px);
+    -webkit-backdrop-filter: blur( 6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
 }
 
-.title_{
+.title_ {
     margin-top: 60px;
 }
 
-@media(max-width: 768px) {
+.cursos div {
+    color: white;
+    max-width: 200px;
+    display: inline-block;
+    background: rgba( 15, 155, 246, 1.00);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
 
-    .title_fotos{
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.uno {
+    padding-top: 200px;
+    color: #0530ad;
+    background: linear-gradient(-45deg, white, #A4DDED);
+}
+
+.uno header {
+    font-size: 30px;
+}
+
+.uno .cursos {
+    padding-top: 30px;
+}
+
+.uno .parrafo {
+    margin-top: 10px;
+    background: rgba( 15, 155, 246, 0.20);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 20.0px);
+    -webkit-backdrop-filter: blur( 20.0px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.dos {
+    padding-top: 60px;
+    background: linear-gradient(-45deg, #0f9bf6, white);
+}
+
+.tres {
+    background: rgb(67, 91, 175);
+    padding-top: 60px;
+}
+
+.cuatro {
+    background: lightsalmon;
+    padding-top: 60px;
+}
+
+.cinco {
+    background: blueviolet;
+    padding-top: 60px;
+}
+
+.contenedor {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.contenedor::-webkit-scrollbar {
+    display: none;
+}
+
+.s4-p-fotos {
+    padding-top: 40px;
+}
+
+@media(max-width: 768px) {
+    .title_fotos {
         font-size: 20px;
         margin-top: 80px;
+    }
+    .cursos div {
+        max-width: 100px;
+    }
+    .uno {
+        padding-top: 70px;
+    }
+    .uno header {
+        font-size: 30px;
+    }
+    .uno .cursos {
+        padding-top: 30px;
+    }
+    .uno .parrafo {
+        margin-top: 10px;
     }
 }

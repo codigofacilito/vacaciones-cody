@@ -1,31 +1,31 @@
 .olas_ {
-    height: 660px;
+    height: 100vh;
     background: #0f9bf6;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
+    overflow:hidden;
 }
 
 .olas__ {
     width: 100%;
-    height: 660px;
+    height: 100vh;
     background: #0f9bf6;
     position: relative;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    justify-content: space-between;
+    overflow:hidden;
 }
 
-.content {
+.content{
     font-family: Arial;
     text-align: center;
     font-size: 28px;
-    color: rgba(255, 255, 255, .8);
+    color: rgb(255, 255, 255);
 }
 
 .waves {
@@ -59,10 +59,6 @@
     background-position: 0 0;
     animation-delay: 1.2s;
 }
-
-/*.container {
-    position: absolute;
-  }*/
 
 @keyframes wave {
     0% {
