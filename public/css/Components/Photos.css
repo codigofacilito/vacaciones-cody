@@ -1,0 +1,19 @@
+@import './Slider.css';
+
+.Photos{
+    
+}
+.Photos--title{
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    font: var(--h2Mobile);
+    color: var(--White);
+}
+.Photos--text{
+    margin-block-start: 30px;
+    margin-block-end: 30px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    font-weight: 700;
+    color: var(--Slightlytransparent);
+}

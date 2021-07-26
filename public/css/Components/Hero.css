@@ -1,0 +1,27 @@
+.hero{
+    margin-block-start: 20px;
+}
+
+.heroText--title{
+    margin-block-start: 0;
+    font:var(--headLineMobile);
+    color: var(--White);
+}
+
+.heroText--text{
+    margin-block-start: 23px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    font: var(--BodyMobile);
+    font-weight: 500;
+    color: var(--White);
+    text-align: left;
+}
+.heroImage{
+    margin-block-start: 40px;
+    z-index: 999;
+}
+.heroImage img{
+    z-index: 1050;
+    animation: waveMoveY 4s ease-in-out infinite ;
+}

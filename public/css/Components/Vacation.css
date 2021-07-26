@@ -1,0 +1,20 @@
+@import './items/card.css';
+
+.Vacation{
+    margin-block-end: 114px;
+    border-top: 2px solid #B8E1F9;
+    background: linear-gradient(180deg, #B8E1F9 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.Vacation--title{
+    margin-block-end: 10px;
+    font: var(--h2Mobile);
+    color: var(--White);
+}
+.Vacation--text{
+    margin-block-start: 20px;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+    font: var(--BodyMobile2);
+    
+}

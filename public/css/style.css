@@ -1,10 +1,22 @@
+@import './Components/Nav.css';
+@import './Components/Hero.css';
+@import './Components/Waves.css';
+@import './Components/Vacation.css';
+@import './Components/Learn.css';
+@import './Components/Collaborates.css';
+@import './Components/Photos.css';
+@import './Components/Advantages.css';
+@import './Components/Footer.css';
+
 :root {
   /*colors*/
-  --Background:linear-gradient(180deg, #56C9FE 0%, #C6ECFF 8.29%, #3B80C4 38.34%, #1B5EC7 74.68%, #1C1D31 99.22%, #4CB9F2 99.47%);
+  --Background:linear-gradient(180deg, #56C9FE 0%, #C6ECFF 21.76%, #3B80C4 38.34%, #1B5EC7 74.68%, #1C1D31 99.22%, #4CB9F2 99.47%);
+  --highlight:rgba(253, 223, 58, 1);
+  --cardColor1:#0544A4;
+  --cardColor2:#3F00FF;
   --Gray: #a3a3a3;
   --softGray: #e5e5e5;
   --secundary: #eef7f8;
-  --Highlight: #5fbbc1;
   --White: hsl(0, 0%, 100%);
   --back: #000000;
   --Slightlytransparent: hsla(0, 0%, 100%, 0.75);
@@ -24,10 +36,11 @@
   --LabelTablet: 16px/35px var(--fontBase);
   --SocialTablet: 300 12px/35px var(--fontBase);
 
-  --headLineMobile1: bold 24px/35px var(--fontBase);
-  --BodyMobile: 18px/35px var(--fontBase);
-  --LabelMobile: 16px/35px var(--fontBase);
-  --SocialMobile: 300 12px/35px var(--fontBase);
+  --headLineMobile: 48px/58.08px var(--alternativeFont);
+  --BodyMobile: 18px/22px var(--fontBase);
+  --BodyMobile2: 14px/22px var(--fontBase);
+  --h2Mobile: 36px/43.56px var(--alternativeFont);
+  --FooterMobile: 14px/35px var(--alternativeFont);
 }
 
 body {
@@ -37,7 +50,16 @@ body {
   background-size: cover;
   font-family: var(--fontBase);
   text-align: center;
-  min-width: 360px;
+  min-width: 300px;
   padding: 0;
   margin: 0;
+  font: var(--BodyMobile2);
+}
+.main{
+  width: 100%;
+  overflow: hidden;
+}
+
+.highlightText{
+  color: var(--highlight) ;
 }

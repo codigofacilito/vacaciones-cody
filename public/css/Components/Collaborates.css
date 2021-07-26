@@ -1,0 +1,22 @@
+@import './items/button.css';
+
+.Collaborates{
+    margin-block-end: 80px;
+}
+.Collaborates--title{
+    font: var(--h2Mobile);
+    color: var(--White);
+}
+.Collaborates--image{
+    margin-block-start: 30px;
+    margin-block-end: 40px;
+}
+.Collaborates--text{
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+    margin-block-end: 26px;
+    color: var(--Slightlytransparent);
+}
+.Collaborates--btn{
+    margin-block-start: 40px;
+}

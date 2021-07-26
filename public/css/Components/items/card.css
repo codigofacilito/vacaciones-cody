@@ -1,0 +1,26 @@
+.Vacation__cards--card{
+    margin-block-start: 75px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    border-radius: 25px;
+    width: 200px;
+    height: 275px;
+    color: var(--White);
+    font: var(--BodyMobile);
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.Vacation__cards--card img{
+    margin-block-start: 34px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    width: 141px;
+}
+
+.Vacation__cards .develop{
+    background-color: var(--cardColor1);
+}
+.Vacation__cards .pages{
+    background-color: var(--cardColor2);
+}

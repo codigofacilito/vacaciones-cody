@@ -1,0 +1,21 @@
+.Footer{
+    position: relative;
+    background: url('../../images/footer.svg');
+    width: 100%;
+    height: 200px;
+}
+.Footer-container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.Footer--image img{
+    margin-inline-end: 20px;
+}
+.Footer--text p{
+    margin-block-start: 5px;
+    font: var(--FooterMobile);
+    color:var(--White);
+}

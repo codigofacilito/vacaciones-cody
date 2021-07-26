@@ -1,0 +1,19 @@
+.Button--Container{
+    border: 2px solid white;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    width: 90%;
+    height: 45px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Button{
+    text-decoration: none;
+    font: var(--BodyMobile);
+    font-weight: 700;
+    color: white;
+}

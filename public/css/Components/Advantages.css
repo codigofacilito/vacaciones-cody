@@ -1,0 +1,30 @@
+.Advantages{
+    margin-block-start: 80px;    
+}
+.Advantages--title{
+    margin-block-start: 0px;
+    padding-inline-start: 20px;
+    padding-inline-end:20px;
+    font: var(--h2Mobile);
+    color: var(--White);
+}
+.Advantages--text{
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    padding-inline-start: 20px;
+    padding-inline-end:20px;
+    color: var(--Slightlytransparent);
+}
+
+.Advantages--list{
+    margin-block-start: 40px;
+    padding: 0;
+    list-style: none;
+    color: var(--White);
+}
+
+.Advantages__list--item{
+    margin-block-end: 50px;
+    font: var(--BodyMobile);
+    font-weight: 700;
+}

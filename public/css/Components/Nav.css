@@ -1,0 +1,17 @@
+.Header--NavBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; 
+}
+.Header--NavBar a{
+    text-decoration: none;
+    margin-inline-end: 15px;
+    font: var(--BodyMobile);
+    color: white;
+}
+
+.Header--NavBar .active{
+    color: var(--highlight);
+    font-weight: 700;
+}
