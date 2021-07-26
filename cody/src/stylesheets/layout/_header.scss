@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+
   &__bar {
     position: absolute;
     top: 0;
@@ -12,6 +14,7 @@
       width: calc(224% + 1.3px);
       height: 228px;
       transform: rotateY(180deg);
+      z-index: -1;
       @media (min-width: 768px) and (max-width: 1023px) {
         width: calc(220% + 1.3px);
         height: 216px;
@@ -23,6 +26,49 @@
     }
     &--fill {
       fill: $colorPurple;
+    }
+  }
+}
+
+.bm {
+  &-menu {
+    background-color: $colorYellow;
+    background-image: url("../../images/CodyPiscina.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 40px 25px 0;
+  }
+  &-burger {
+    &-button {
+      position: fixed;
+      width: 26px;
+      height: 20px;
+      left: 36px;
+      top: 36px;
+    }
+    &-bars {
+      cursor: pointer;
+      background: $colorPink;
+    }
+  }
+  &-cross {
+    background: $colorPurple;
+  }
+
+  &-item {
+    font-size: 1.2rem;
+    padding: 20px 0;
+    color: $colorPurple;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover {
+      color: $colorPink;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
   }
 }

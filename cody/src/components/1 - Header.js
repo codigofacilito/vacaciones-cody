@@ -1,6 +1,14 @@
+//COMPONENTS
+import { slide as Menu } from "react-burger-menu";
+
 const Header = () => {
   return (
     <header className="header">
+      <Menu width={280}>
+        <a className="menu__item" href="/">
+          Home
+        </a>
+      </Menu>
       <div className="header__bar">
         <svg
           className="header__bar--svg"
