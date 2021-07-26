@@ -198,6 +198,7 @@ nav ul li a {
   margin-top: 10px;
   color: #373737;
   font-weight: bold;
+  text-align: left;
 }
 
 .container__info__button {
@@ -278,6 +279,23 @@ nav ul li a {
     transform: scale(0);
     animation: none;
   }
+}
+.h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.parrafo {
+  font-family: "Poppins", sans-serif;
+  max-width: 70%;
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin: auto;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
 }
 
 .container__card {
