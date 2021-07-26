@@ -3,35 +3,44 @@
   margin: 0%;
 }
 
+/* 
+PALETA DE COLORES:
+#90af3c ->
+#5db06a ->
+#39ac91 -> ok
+#24aa78 ->
+#26a659 -> ok
+*/
+
 :root {
-  --fondo-menu-navegacion: #39ac91;
-  --color-fuente-primario: #ffffff;
-  --color-hover-enlace: #000000;
-  --fondo-seccion-01: #26a659;
+  --navigation-menu-bg: #39ac91;
+  --primary-color: #ffffff;
+  --hover-link-color: #000000;
+  --section-01-bg: #26a659;
 }
 
 /* HEADER */
-main header .navegacion {
-  background-color: var(--fondo-menu-navegacion);
+main header .navigation {
+  background-color: var(--navigation-menu-bg);
   padding: 1rem;
   display: flex;
   gap: 1rem;
   justify-content: center;
 }
 
-main header .navegacion a {
+main header .navigation a {
   text-decoration: none;
-  color: var(--color-fuente-primario);
+  color: var(--primary-color);
 }
 
-main header .navegacion a:hover {
-  color: var(--color-hover-enlace);
+main header .navigation a:hover {
+  color: var(--hover-link-color);
   text-decoration: underline;
 }
 
 main header .info {
-  background-color: var(--fondo-menu-navegacion); 
-  color: var(--color-fuente-primario);
+  background-color: var(--navigation-menu-bg); 
+  color: var(--primary-color);
   padding: 1rem 1rem 3rem 1rem;
 }
 
@@ -43,14 +52,42 @@ main header .info p {
 main header .info p {
   margin-top: 1rem;
 }
-
 /* END OF HEADER */
 
+/* SECTION 01 */
 .section-01 {
-  background-color: var(--fondo-seccion-01);
-  color: var(--color-fuente-primario);
+  background-color: var(--section-01-bg);
+  color: var(--primary-color);
   padding: 1rem;
 }
+
+.section-01 header h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-01 > p {
+  text-align: center;
+}
+
+.section-01 .courses div img {
+  width: 50%;
+}
+
+.section-01 .courses div p {
+  margin-top: 1rem;
+}
+
+.section-01 .courses div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #90af3c;
+  margin-top: 2rem;
+}
+/* END OF SECTION 01 */
+
 
 /* main{
   text-align: center;
