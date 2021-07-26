@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="2160" viewBox="0 0 3840 2160">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #f1faff;
+      }
+
+      .cls-3 {
+        font-size: 416.667px;
+        text-anchor: end;
+        font-family: Staatliches;
+      }
+    </style>
+  </defs>
+  <path id="Rectángulo_1" data-name="Rectángulo 1" class="cls-1" d="M0,0H3840V2160H0V0H0Z"/>
+  <circle id="Elipse_1" data-name="Elipse 1" class="cls-2" cx="507" cy="1639" r="477"/>
+  <circle id="Elipse_1_copia_4" data-name="Elipse 1 copia 4" class="cls-2" cx="3267" cy="1202" r="477"/>
+  <circle id="Elipse_1_copia" data-name="Elipse 1 copia" class="cls-2" cx="1869.75" cy="1338.75" r="177.75"/>
+  <circle id="Elipse_1_copia_2" data-name="Elipse 1 copia 2" class="cls-2" cx="2136.75" cy="1031.75" r="129.75"/>
+  <ellipse id="Elipse_1_copia_3" data-name="Elipse 1 copia 3" class="cls-2" cx="2423.25" cy="942.75" rx="89.25" ry="89.25"/>
+  <circle id="Elipse_1_copia_5" data-name="Elipse 1 copia 5" class="cls-2" cx="2266.25" cy="769.5" r="44.5"/>
+  <circle id="Elipse_1_copia_6" data-name="Elipse 1 copia 6" class="cls-2" cx="2624.25" cy="857.5" r="44.5"/>
+  <circle id="Elipse_1_copia_8" data-name="Elipse 1 copia 8" class="cls-2" cx="2648.75" cy="620.5" r="20"/>
+  <circle id="Elipse_1_copia_10" data-name="Elipse 1 copia 10" class="cls-2" cx="2467.75" cy="789.5" r="20"/>
+  <circle id="Elipse_1_copia_9" data-name="Elipse 1 copia 9" class="cls-2" cx="2809.75" cy="689.5" r="20"/>
+  <circle id="Elipse_1_copia_11" data-name="Elipse 1 copia 11" class="cls-2" cx="2624.75" cy="729.5" r="20"/>
+  <circle id="Elipse_1_copia_12" data-name="Elipse 1 copia 12" class="cls-2" cx="2749.75" cy="814.5" r="20"/>
+  <circle id="Elipse_1_copia_7" data-name="Elipse 1 copia 7" class="cls-2" cx="2512.25" cy="644.5" r="44.5"/>
+  <text id="_" data-name="$" class="cls-3" transform="translate(3450.382 1529.79) scale(2.261)"><tspan x="0">$</tspan></text>
+  <text id="_copia" data-name="$ copia" class="cls-3" transform="translate(2185.613 1118.223) scale(0.6)"><tspan x="0">$</tspan></text>
+  <text id="_copia_2" data-name="$ copia 2" class="cls-3" transform="translate(2527.219 670.9) scale(0.185)"><tspan x="0">$</tspan></text>
+</svg>

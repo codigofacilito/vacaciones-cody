@@ -1,100 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis vacaciones</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/41bcea2ae3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container__header">
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+        </div>
+        <div class="container__nav">
+          <nav id="nav">
+            <ul>
+              <li><a class="select" href="/">Inicio</a></li>
+              <li><a href="fotos.html">Fotos</a></li>
+            </ul>
+          </nav>
+          <div class="btn__menu" id="btn_menu"><i class="fas fa-bars"></i></div>
+        </div>
+      </div>
     </header>
 
-    <section>
-      <header>
+    <div class="container_all" id="container__all">
+      <div class="cover">
+        
+        <div class="bg_color"></div>
+        <div class="wave w1"></div>
+        <div class="wave w2"></div>
+
+        <div class="container__cover">
+          <div class="container__info">
+            <h1>Estas son</h1>
+            <h2>Mis Vacaciones</h2>
+            <p>
+              Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para
+              desestresarme del código, y en esta página quiero compartirlo
+              contigo.
+            </p>
+            <input type="button" value="¡A darle átomos!" />
+          </div>
+          <div class="container__vector">
+            <img src="images/Travel plans_Monochromatic.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="body__page">
+        <div>
         <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
         <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
+          Durante el verano de 2019, decidí comenzar a aprender desarrollo
+          frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y
+          JavaScript
         </p>
-      </div>
-    </section>
+        <p>
+          Cada tarde, después de conocer nuevos lugares en mis vacaciones,
+          practicaba mis habilidades en tecnologías frontend, construyendo esta
+          página
+        </p>
+        <p>Estos son los cursos que estuve tomando:</p>
+        </div>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
-  </main>
-</body>
+        <div class="container__card">
+        
+                <div class="card c1">
+                    <div class="icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="info__description">
+                        <p>Aprende cómo crear tu primera página web, no necesitas tener conocimientos previos de ningún tipo. Durante el curso te enseñaremos de manera práctica, y mucho más.</p>
+                        <input type="button" value="Leer Más">
+                    </div>
+                </div>
+
+                <div class="card c2">
+                    <div class="icon">
+                        <i class="fab fa-css3"></i>
+                    </div>
+                    <div class="info__description">
+                        <p>CSS es una poderosa tecnología que sirve para definir el diseño de una página web. Con CSS puedes crear animaciones, efectos, manejar colores, fuentes, y más.</p>
+                        <input type="button" value="Leer Más">
+                    </div>
+                </div>
+
+                <div class="card c3">
+                    <div class="icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="info__description">
+                        <p>Aprende JavaScript a profundidad, desde las bases del lenguaje, hasta el trabajo con objetos, programación asíncrona, novedades del lenguaje, etc. </p>
+                        <input type="button" value="Leer Más">
+                    </div>
+                </div>
+      </div>
+
+      <footer>
+        <div class="container__footer">
+          <div class="box__footer">
+            <div class="logo">
+              <img src="images/logo.png" alt="" />
+            </div>
+            <div class="terms">
+              <p>
+                <b>Cody</b> está aprendiendo desarrollo web, está dando sus primeros pasos en HTML, y decidió construir una página para mostrar las fotos de sus vacaciones. <b>BlasDarkSeid</b> le ayudó con este diseño. 
+              </p>
+            </div>
+          </div>
+          <div class="box__footer">
+            <img class="img__footer" src="images/cody.png" alt="" />
+          </div>
+          <div class="box__footer">
+            <h2>Redes Sociales</h2>
+            <a href=""><i class="fab fa-facebook-square"></i> Facebook</a>
+            <a href=""><i class="fab fa-twitter-square"></i>Twitter</a>
+            <a href=""><i class="fab fa-linkedin"></i>Linkedin</a>
+            <a href=""><i class="fab fa-instagram-square"></i>Instagram</a>
+          </div>
+        </div>
+        <div class="box__copyright">
+          <hr />
+          <p>Desarrollado por: <b>BlasDarkSeid © 2021</b></p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>
