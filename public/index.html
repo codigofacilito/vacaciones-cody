@@ -23,6 +23,7 @@
     <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
 </head>
 <body>
   <main class="index">
@@ -126,25 +127,53 @@
 		</div>
     </section>
     
-
-
-
-
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="assets/images/1.jpg" alt="Cody en la playa">
-        <img src="assets/images/2.jpg" alt="Cody acampando">
-        <img src="assets/images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
-      </div>
+    <section class="mis-vacaciones">
+		<img class="image" src="assets/images/bottom-wave.svg" alt="">
+		<div class="bg">
+			<div class="wrap">
+				<h2>Aquí te comparto algunas fotos de<br><span> mis vacaciones</span></h2>
+				<p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>			
+				<div class="swiper-container gallery">
+					<div class="corner corner--top corner--left"></div>
+					<div class="corner corner--top corner--right"></div>
+					<div class="swiper-wrapper">
+					  	<div class="swiper-slide">
+							<div class="slider-image">
+								<img class="image" src="assets/images/1.jpg" alt="Cody en la playa">
+							</div>
+					  	</div>
+					 	 <div class="swiper-slide">
+							<div class="slider-image">
+								<img class="image" src="assets/images/2.jpg" alt="Cody acampando">
+							</div>
+					  	</div>
+					  	<div class="swiper-slide">
+							<div class="slider-image">
+								<img class="image" src="assets/images/3.jpg" alt="Cody en una alberca">
+							</div>
+					  	</div>
+					  	<div class="swiper-slide">
+							<div class="slider-image">
+								<img class="image" src="assets/images/4.jpg" alt="Cody en una alberca">
+							</div>
+					  	</div>
+					</div>
+					<div class="corner corner--bottom corner--left"></div>
+					<div class="corner corner--bottom corner--right"></div>
+					<div class="sb swiper-button-prev"></div>
+					<div class="sb swiper-button-next"></div>
+				</div>	
+				<p>Puedes ver más, en la galería de fotos de mi página</p>
+				<a class="btn" href="fotos.html">Ir a la galería</a>				
+			</div>
+			<img src="assets/images/turtle.svg"class="turtle">
+		</div>
+		<img src="assets/images/sea.png" alt="" class="image wave-bottom">
     </section>
+
+
+
+
 
 
 
@@ -164,6 +193,8 @@
     </section>
     
   </main>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

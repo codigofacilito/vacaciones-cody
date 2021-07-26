@@ -1,0 +1,78 @@
+.mis-vacaciones
+    position: relative 
+   
+    .bg 
+        background-color: #073e8a
+        margin-top: -1px               
+
+    .turtle 
+        position: absolute
+        right: 10%
+        bottom: 20%
+        animation: float 7s ease-in-out infinite;
+
+    h2 
+        color: $whiteSmoke
+        margin: 0
+        font-size: 3em
+        line-height: 1.2em   
+        span
+            color: $lightRed
+
+    p 
+        color: $whiteSmoke
+        font-size: 1.2em
+
+    .btn 
+        max-width: 150px
+        margin: 3em auto 0
+
+    .wave-bottom
+        margin-top: -70px
+
+    .sb 
+        color: $whiteSmoke
+        background-color: $lightRed
+        padding: 1px 9px;
+        border-radius: 100%;
+        opacity: .9
+        transition: 0.1s ease-in all
+        &:hover 
+            opacity: 1
+        &::after
+            font-size: 25px
+
+    .gallery 
+        margin: 4em auto 2em
+        max-width: 60%
+        background-color: #aa6614
+        padding: 15px
+        overflow: initial
+
+.corner
+    background-color: #f4ca61
+    width: 50px
+    height: 50px
+    position: absolute
+    z-index: 2
+    &--top 
+        top: -5px
+    &--bottom
+        bottom: -5px
+    &--left
+        left: -5px
+    &--right 
+        right: -5px
+
+.corner--top.corner--left 
+    border-radius: 10px 1px 100% 1px
+
+.corner--top.corner--right 
+    border-radius: 1px 10px 1px 100%
+
+.corner--bottom.corner--left 
+    border-radius: 1px 100% 1px 10px
+
+.corner--bottom.corner--right 
+    border-radius: 100% 1px 10px 1px
+    

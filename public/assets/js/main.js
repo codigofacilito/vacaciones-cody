@@ -26,3 +26,21 @@ function heightFixed() {
         header.classList.remove("sticky");
     }
 }
+
+// Swiper home
+var swiper = new Swiper('.gallery', {
+    effect: 'fade',
+    loop: true,
+    autoplay: true,
+    fadeEffect: {
+        crossFade: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 5000,
+    }
+    
+  });
