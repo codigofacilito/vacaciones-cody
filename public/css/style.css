@@ -71,11 +71,8 @@ body {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  body{
-    border: 2px solid yellow;
-  }
+ 
   .Main{
-  border: 2px solid black;
   max-width: 2600px;
   margin-inline-end: auto;
   margin-inline-start:auto ;

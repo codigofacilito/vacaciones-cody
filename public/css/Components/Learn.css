@@ -67,13 +67,17 @@
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    .Header--NavBar{
-      border: 2px solid blue;
+    .Learn__list--item::before{
+        width: 40px;
+        height: 40px; 
+        color: var(--highlight);
+        font: var(--BodyMobile);
+        font-weight: 700;
+    }
+    .Learn{
+        margin-block-start: 150px;
+        margin-block-end: 150px;
     }
   }
   
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .Learn{
-    border: 2px solid black;
-  }}
+  

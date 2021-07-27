@@ -41,12 +41,13 @@
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     .Footer{
-      border: 2px solid blue;
+      
+      height: 470px;
     }
   }
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
     .Footer{
-    border: 2px solid black;
+    height: 590px;
   }}

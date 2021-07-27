@@ -131,19 +131,8 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
         width: 100%;
         margin-inline-end: 199px;
         justify-content: space-between;
-        border: 2px solid blue;
     }
   }
   
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .Photos--slider{
-        border: 2px solid yellow;
-    }
-  }
+ 
   
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .Photos--slider{
-    border: 2px solid black;
-  }}

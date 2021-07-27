@@ -48,13 +48,20 @@
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    .hero{
-      border: 2px solid blue;
+    
+    .heroText--title{
+      text-align: left;
+    }
+    .heroText--text{
+      margin-block-end: 90px;
+      text-align: left;
+      padding: 0;
+      max-width: 400px;
+    }
+    .heroImage img{
+      margin-inline-end: 10px;
+      margin-inline-start: 70%;
+      margin-block-end: 30px;
     }
   }
   
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .hero{
-    border: 2px solid black;
-  }}
