@@ -218,7 +218,6 @@ nav ul li a {
 .container__info__button:hover {
   box-shadow: 1px 1px 30px -5px #20202085;
 }
-
 .container__vector {
   position: relative;
 }
@@ -363,6 +362,7 @@ nav ul li a {
 .info__description p {
   font-size: 14px;
   margin-top: 10px;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -374,7 +374,7 @@ nav ul li a {
   overflow: hidden;
 }
 
-.info__description input {
+.container__info__card {
   margin-top: 20px;
   padding: 10px 40px;
   background: #2196f3;
@@ -386,9 +386,10 @@ nav ul li a {
   border-radius: 20px;
   box-shadow: 10px 10px 30px -5px #20202049;
   transition: box-shadow 300ms;
+  margin: 20px;
 }
-.info__description input:hover,
-.info__description input:focus {
+.container__info__card:hover,
+.container__info__card:focus {
   box-shadow: 10px 10px 30px -5px #20202099;
 }
 .c1:hover .icon,
