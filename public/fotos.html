@@ -5,26 +5,112 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
+  <title>Mis vacaciones/Foto</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
+      <main>
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Cody</a>
+            <strong><a href="index.html">Inicio</a></strong>
+            <strong><a href="fotos.html">Fotos</a></strong>
+            <strong><a href="historia.html">Historia De Cody</a></strong>
+
+            <button type="button" class="btn btn-primary">
+              Notificaciones <span class="badge badge-light">4</span>
+            </button>
+
+          </nav>
+        </header>
+    </main>
+
       <h2>Galería completa de mis vacaciones en proceso</h2>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
+    <div class="Fotos">
+
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center">
+            <img  src="images/1.jpg" class="d-block w-100" alt="Cody en la playa">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="alert alert-primary">
+              <h5 class="">Primer dia de Cody...</h5>
+              <p>Cody en la playa.</p>
+            </div>
+          </div>
+        </div>
+
+        
+          <div class="carousel-item">
+            <img src="images/2.jpg" class="d-block w-100" alt="Cody acampando">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="alert alert-primary">
+              <h5>Segundo dia de Cody</h5>
+              <p>Cody Acampando en la playa...</p>
+            </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/3.jpg" class="d-block w-100" alt="Cody en una alberca">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="alert alert-primary">
+              <h5>Tercer dia de Cody</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/4.jpg" class="d-block w-100" alt="Cody en una alberca">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="alert alert-primary">
+            <h5>Cuarto dia de Cody</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="carousel-item">
+        <img src="images/5.jpg" class="d-block w-100" alt="Cody en una alberca">
+        <div class="carousel-caption d-none d-md-block">
+          <div class="alert alert-primary">
+          <h5>Quinto dia de Cody</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="carousel-item">
+      <img src="images/6.jpg" class="d-block w-100" alt="Cody en una alberca">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="alert alert-primary">
+        <h5>Third slide label</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+        </a>
+      </div>
       
     </div>
 
@@ -32,3 +118,12 @@
 </body>
 
 </html>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+ integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

@@ -2,13 +2,13 @@ nav{
   background-color: aliceblue;
   padding: 15px;
   display: flex;
-  gap:1em;
+  gap:2em;
 }
 
 main{
   text-align: center;
   max-width: 960px;
-  margin:0 auto;
+  margin:2 auto;
 }
 
 section{
@@ -41,5 +41,22 @@ ul li::marker {
 
 ol li{
   text-align: left;
+}
+
+h2 { 
+  text-align: center;
+  padding-top: 2%;
+  padding-left: 3%;
+  padding-right: 5%;
+  font-family: 'Times New Roman', Times, serif;
+  background-size: 2ch;
+  padding: 15px;
+
+}
+
+p { 
+  font-family:monospace;
+  margin-bottom: 5px;
+  font-size: 2ch;
 }
 
