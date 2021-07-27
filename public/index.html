@@ -9,11 +9,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="app"></div>
+</body>
+<template id="main-view">
   <main>
     <header>
       <nav>
-        <a href="/vacaciones-cody/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+        <button id="main-btn">Inicio</button>
+        <button id="fotos-btn">Fotos</button>
       </nav>
       <h1>Estas son mis Vacaciones</h1>
       <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
@@ -97,5 +100,28 @@
     </section>
     
   </main>
-</body>
+</template>
+<template id="fotos-view">
+  <main>
+    <header>
+      <nav>
+        <button id="main-btn">Inicio</button>
+        <button id="fotos-btn">Fotos</button>
+      </nav>
+      </nav>
+      <h2>Galería completa de mis vacaciones</h2>
+    </header>
+    <div class="fotos">
+      <img src="images/1.jpg" alt="Cody en la playa">
+      <img src="images/2.jpg" alt="Cody acampando">
+      <img src="images/3.jpg" alt="Cody en una alberca">
+      <img src="images/4.jpg" alt="Cody en una alberca">
+      <img src="images/5.jpg" alt="Cody en una alberca">
+      <img src="images/6.jpg" alt="Cody en una alberca">
+      
+    </div>
+
+  </main>
+</template>
+<script src="js/main.js"></script>
 </html>
