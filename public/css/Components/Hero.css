@@ -20,11 +20,37 @@
 .heroImage{
     margin-block-start: 40px;
     z-index: 999;
+    position: relative;
 }
 .heroImage img{
     z-index: 1050;
     animation: waveMoveY 4s ease-in-out infinite ;
 }
+
+
+.heroImage--complement{
+  position: absolute;
+  width: 500%;
+  height: 300px;
+  top: -250px;
+  left: 0;
+  background: url('../../icons/nube.svg');
+  background-size: auto;
+  background-repeat: repeat-x;
+  opacity: 0.5;
+  animation: waveCloud 500s linear infinite ;
+}
+
+
+@keyframes waveCloud{
+  0%,100%{
+      transform: translateX(0);
+  }
+  50%{
+      transform: translateX(-100%);
+  }
+}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -44,6 +70,7 @@
       padding-inline-start: 50px;
       padding-inline-end:50px;
     }
+    
   }
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -63,5 +90,9 @@
       margin-inline-start: 70%;
       margin-block-end: 30px;
     }
+    
+    .heroImage--complement{
+      animation: waveCloud 2050s linear infinite ;
+    }
+
   }
-  
