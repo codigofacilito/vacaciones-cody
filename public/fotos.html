@@ -5,30 +5,58 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./icons/codi.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/Gallery.css">
 </head>
 
 <body>
-  <main>
+  <main class="Gallery">
+    <nav class="Header--NavBar">
+      <a href="/vacaciones-cody/">Inicio</a>
+      <a class="active" href="fotos.html">Fotos</a>
+    </nav>
     <header>
-      <nav class="Header--NavBar">
-        <a href="/vacaciones-cody/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
+      <h2 class="Photos--title">Galería completa de mis <span class="highlightText"> Vacaciones</span></h2>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
+    <div class="Gallery--row">
+      <div class="column">
+        <img src="images/1.jpg" alt="Cody en la playa">
+        <img src="images/2.jpg" alt="Cody acampando">
+      </div>
+      <div class="column">
+        <img src="images/3.jpg" alt="Cody en una alberca">
       <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
+      </div>
+      <div class="column">
+        <img src="images/5.jpg" alt="Cody en una alberca">
       <img src="images/6.jpg" alt="Cody en una alberca">
-      
+      </div> 
     </div>
-
+    <footer class="Footer footer--photos">
+      <section class="Footer-container">
+        <div class="Footer--image">
+          <a href="https://github.com/Mrbanano" target="_blank">
+              <img src="./icons/githubWhite.svg"  alt="github">
+          </a>
+          <a href="https://www.instagram.com/alvaro.castillo.web/" target="_blank">
+            <img src="./icons/instagram.svg"  alt="instagram">
+          </a>
+        </div>
+        <div class="Footer--text">
+          <p>Diseñado con <span>❤️</span>por Alvaro Castillo</p>
+        </div>
+      </section>
+    </footer>
   </main>
+  
 </body>
 
 </html>

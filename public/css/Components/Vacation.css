@@ -18,3 +18,25 @@
     font: var(--BodyMobile2);
     
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .Vacation{
+      padding-inline-start: 20px;
+      padding-inline-end: 20px;
+    }
+  }
+  
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .Vacation{
+      border: 2px solid blue;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .Vacation{
+    border: 2px solid black;
+  }}

@@ -8,6 +8,8 @@
 @import './Components/Advantages.css';
 @import './Components/Footer.css';
 
+
+
 :root {
   /*colors*/
   --Background:linear-gradient(180deg, #56C9FE 0%, #C6ECFF 21.76%, #3B80C4 38.34%, #1B5EC7 74.68%, #1C1D31 99.22%, #4CB9F2 99.47%);
@@ -51,11 +53,12 @@ body {
   font-family: var(--fontBase);
   text-align: center;
   min-width: 300px;
+  height: auto;
   padding: 0;
   margin: 0;
   font: var(--BodyMobile2);
 }
-.main{
+.Main{
   width: 100%;
   overflow: hidden;
 }
@@ -63,3 +66,18 @@ body {
 .highlightText{
   color: var(--highlight) ;
 }
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body{
+    border: 2px solid yellow;
+  }
+  .Main{
+  border: 2px solid black;
+  max-width: 2600px;
+  margin-inline-end: auto;
+  margin-inline-start:auto ;
+  overflow: hidden;
+}}

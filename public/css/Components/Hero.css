@@ -25,3 +25,36 @@
     z-index: 1050;
     animation: waveMoveY 4s ease-in-out infinite ;
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .hero{
+      padding-inline-start: 20px;
+      padding-inline-end: 20px;
+    }
+    .heroText--text{
+      text-align: center;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .heroText--text{
+      text-align: center;
+      padding-inline-start: 50px;
+      padding-inline-end:50px;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .hero{
+      border: 2px solid blue;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .hero{
+    border: 2px solid black;
+  }}

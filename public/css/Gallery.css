@@ -1,0 +1,25 @@
+.Gallery{
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+.footer--photos{
+    position: absolute;
+}
+.Gallery--row img{
+    width: 100%;
+}
+.Gallery--row{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.column{
+ flex: 50%;
+ padding: 5px;
+}

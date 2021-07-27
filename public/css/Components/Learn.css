@@ -51,3 +51,29 @@
 .more::before{
     content: "...";
 }
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+    .Learn--list{
+        flex-direction: row;
+        justify-content: space-around;
+        font:var(--BodyMobile2);
+    }
+  }
+  
+  
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .Header--NavBar{
+      border: 2px solid blue;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .Learn{
+    border: 2px solid black;
+  }}
