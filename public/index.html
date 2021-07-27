@@ -4,96 +4,290 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Las vacaciones de Cody">
   <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display&display=swap" as="style">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+
+</head> 
+<body class="font-sans">
+  <main>
+
+    <!-- HEADER - HERO -->
+    <header>
+      <nav 
+        x-data="{ isMobileNavOpen: false, atTop: true }"
+        x-on:scroll.window="atTop = (window.pageYOffset > 100) ? false : true; "
+        x-bind:class="{ 'bg-primary shadow-lg': !atTop }"
+        id="menu"
+        class="fixed w-full transition ease-in-out duration-500">
+        <ul class="container mx-auto flex font-semibold p-6 justify-between md:justify-start">
+          <li class="flex items-end">
+            <svg class="w-12 h-12 text-white mr-4 p-2" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11 0H13V4.06189C12.6724 4.02104 12.3387 4 12 4C11.6613 4 11.3276 4.02104 11 4.06189V0ZM7.0943 5.68018L4.22173 2.80761L2.80752 4.22183L5.6801 7.09441C6.09071 6.56618 6.56608 6.0908 7.0943 5.68018ZM4.06189 11H0V13H4.06189C4.02104 12.6724 4 12.3387 4 12C4 11.6613 4.02104 11.3276 4.06189 11ZM5.6801 16.9056L2.80751 19.7782L4.22173 21.1924L7.0943 18.3198C6.56608 17.9092 6.09071 17.4338 5.6801 16.9056ZM11 19.9381V24H13V19.9381C12.6724 19.979 12.3387 20 12 20C11.6613 20 11.3276 19.979 11 19.9381ZM16.9056 18.3199L19.7781 21.1924L21.1923 19.7782L18.3198 16.9057C17.9092 17.4339 17.4338 17.9093 16.9056 18.3199ZM19.9381 13H24V11H19.9381C19.979 11.3276 20 11.6613 20 12C20 12.3387 19.979 12.6724 19.9381 13ZM18.3198 7.0943L21.1923 4.22183L19.7781 2.80762L16.9056 5.6801C17.4338 6.09071 17.9092 6.56608 18.3198 7.0943Z" fill="currentColor"></path>
+            </svg>
+          </li>
+          <li class="hidden md:flex items-end">
+            <a class="px-2 py-2 mx-2 text-white border-b-2 border-secondary" href="#home">Inicio</a>
+          </li>
+          <li class="hidden md:flex items-end">
+            <a class="px-2 py-2 mx-2 text-white" href="#sobre-cody">Sobre Cody</a>
+          </li>
+          <li class="hidden md:flex items-end">
+            <a class="px-2 py-2 mx-2 text-white" href="#aprende">Aprende</a>
+          </li>
+          <li class="hidden md:flex items-end">
+            <a class="px-2 py-2 mx-2 text-white" href="#colabora">Colabora</a>
+          </li>
+          <li class="hidden md:flex items-end">
+            <a class="px-2 py-2 mx-2 text-white" href="#fotos">Fotos</a>
+          </li>
+          <li class="md:hidden z-20 ">
+            <button x-on:click.prevent="isMobileNavOpen = !isMobileNavOpen" type="button"
+              class="bg-white p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none"
+              aria-expanded="false">
+              <span class="sr-only">Open menu</span>
+              <svg class="h-6 w-6 block" :class="{ 'hidden': isMobileNavOpen, 'block': !isMobileNavOpen }"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+              </svg>
+              <svg class="h-6 w-6 hidden" :class="{ 'hidden': !isMobileNavOpen, 'block': isMobileNavOpen }"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <div
+          x-show="isMobileNavOpen"
+          x-cloak
+          @click.away="isMobileNavOpen = false"
+          class="bg-white h-screen absolute top-0 w-full"
+        >
+          <ul class="container mx-auto flex flex-col font-semibold p-6 justify-between md:justify-start">
+            <li class="flex items-end pb-4">
+              <svg class="w-12 h-12 text-primary mr-4 p-2" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11 0H13V4.06189C12.6724 4.02104 12.3387 4 12 4C11.6613 4 11.3276 4.02104 11 4.06189V0ZM7.0943 5.68018L4.22173 2.80761L2.80752 4.22183L5.6801 7.09441C6.09071 6.56618 6.56608 6.0908 7.0943 5.68018ZM4.06189 11H0V13H4.06189C4.02104 12.6724 4 12.3387 4 12C4 11.6613 4.02104 11.3276 4.06189 11ZM5.6801 16.9056L2.80751 19.7782L4.22173 21.1924L7.0943 18.3198C6.56608 17.9092 6.09071 17.4338 5.6801 16.9056ZM11 19.9381V24H13V19.9381C12.6724 19.979 12.3387 20 12 20C11.6613 20 11.3276 19.979 11 19.9381ZM16.9056 18.3199L19.7781 21.1924L21.1923 19.7782L18.3198 16.9057C17.9092 17.4339 17.4338 17.9093 16.9056 18.3199ZM19.9381 13H24V11H19.9381C19.979 11.3276 20 11.6613 20 12C20 12.3387 19.979 12.6724 19.9381 13ZM18.3198 7.0943L21.1923 4.22183L19.7781 2.80762L16.9056 5.6801C17.4338 6.09071 17.9092 6.56608 18.3198 7.0943Z" fill="currentColor"></path>
+              </svg>
+            </li>
+            <li class="flex items-end">
+              <a class="py-2 text-primary border-b-2 border-secondary" href="#home">Inicio</a>
+            </li>
+            <li class="flex items-end">
+              <a class="py-2 text-primary" href="#sobre-cody">Sobre Cody</a>
+            </li>
+            <li class="flex items-end">
+              <a class="py-2 text-primary" href="#aprende">Aprende</a>
+            </li>
+            <li class="flex items-end">
+              <a class="py-2 text-primary" href="#colabora">Colabora</a>
+            </li>
+            <li class="flex items-end">
+              <a class="py-2 text-primary" href="#fotos">Fotos</a>
+            </li>
+          </ul>
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+      </nav>
+      <div id="home" class="w-full bg-center bg-cover h-screen" style="background-image: url('images/3.jpg');">
+        <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-60">
+          <div class="text-center text-white mx-4 max-w-4xl">
+            <h1 class="font-bold font-serif text-4xl md:text-6xl mb-4">Estas son mis Vacaciones</h1>
+            <p class="font-bold text-xl md:text-2xl mb-12">Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <!-- Sobre Cody -->
+    <section id="sobre-cody" class="px-6">
+      <div class="container mx-auto py-32 lg:h-screen lg:flex lg:flex-wrap lg:items-center">
+        <div class="w-full">
+          <header>
+            <h2 class="font-bold font-serif text-4xl md:text-6xl mb-8 text-primary text-center">Mis vacaciones Frontend</h2>
+          </header>
+          <div class="text-center text-gray-600">
+            <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript.</p>
+            <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página.</p>
+          </div>
+          <div class="text-center text-gray-600 mt-4 mb-8">
+            <p> Estos son los cursos que estuve tomando: </p>
+          </div>
+          <div class="cursos flex flex-wrap justify-center">
+            <div class="w-full md:w-2/5 xl:w-auto bg-terciary hover:bg-primary cursor-pointer rounded-md text-white px-4 py-8 mx-4 my-2 lg:my-0 flex justify-between items-center font-semibold shadow">
+              <svg class="h-10 w-10 pr-3" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"></path>
+              </svg>
+              <p>Curso profesional de Desarrollo Web</p>
+            </div>
+            <div class="w-full md:w-2/5 xl:w-auto bg-terciary hover:bg-primary cursor-pointer rounded-md text-white px-4 py-8 mx-4 my-2 lg:my-0 flex justify-between items-center font-semibold shadow">
+              <svg class="h-10 w-10 pr-3" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+              <p>Curso para crear mi primera página web</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
+    <!-- Aprende -->
+    <section id="aprende" class="w-full h-2/3 bg-cover bg-center bg-fixed px-6 bg-opacity-60" style="background-image: url('images/4.jpg');">
+      <div class="container mx-auto py-32 lg:h-screen lg:flex lg:flex-wrap lg:items-center">
+        
+        <div class="bg-white max-w-3xl mx-auto rounded-md p-4">
+          <header>
+            <h2 class="font-bold font-serif text-4xl md:text-6xl mb-8 text-terciary text-center">Ruta de aprendizaje 2021</h2>
+            <p class="text-center text-terciary mb-8"> También me propuse aprender nuevas tecnologías durante 2021:</p>
+          </header>
+          <ul class="text-terciary p-4">
+            <li class="border-b border-terciary py-2"> Flexbox, y Grid </li>
+            <li class="border-b border-terciary py-2"> Animaciones con CSS y JavaScript </li>
+            <li class="border-b border-terciary py-2"> AJAX </li>
+            <li class="border-b border-terciary py-2"> HTML semántico </li>
+            <li class="py-2"> Entre otros </li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
 
-      </p>
+    <!-- Colabora -->
+    <section id="colabora" class="px-6">
+      <div class="container mx-auto py-32 lg:h-screen lg:flex lg:flex-wrap lg:items-center">
+        <div class="w-full">
+          <header>
+            <h2 class="font-bold font-serif text-4xl md:text-6xl mb-8 text-secondary text-center">Colabora en mi página</h2>
+          </header>
+          <p class="text-center text-gray-600 mb-2">
+            Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
+          </p>
+          <p class="text-center text-gray-600 mb-2">
+            Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+          </p>
+          <hr class="w-24 mx-auto border-t border-secondary my-8">
+          <p class="text-center text-gray-600 mb-2">
+            Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
+          </p>
+          <div class="text-center my-4">
+            <a class="inline-block bg-secondary hover:bg-terciary text-white font-bold py-2 px-8 rounded" href="" target="_blank" >Ir al tutorial</a>
+            <svg class="w-10 h-10 mx-auto text-terciary my-4" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+              <path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
     </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
+
+    <!-- Fotos -->
+    <section id="fotos" class="bg-primary px-6">
+      <div class="container mx-auto py-32 md:py-48">
+        <header>
+          <h2 class="font-bold font-serif text-4xl md:text-6xl mb-8 text-white text-center">Aquí te comparto algunas fotos de mis vacaciones</h2>
+          <p class="text-center text-white mb-8">¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+        </header>
+
+        <div 
+          x-data="{ imgModal : false, imgSrc : '', imgDesc : '' }"
+        >
+          <template 
+            @img-modal.window="imgModal = true; imgSrc = $event.detail.imgSrc; imgDesc = $event.detail.imgDesc;" 
+            x-if="imgModal"
+          >
+            <div
+              x-on:click.away="imgSrc = ''" 
+              class="p-2 fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75"
+            >
+              <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full overflow-auto">
+                <div class="z-50">
+                  <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
+                    <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                      <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="p-2">
+                  <img :alt="imgSrc" class="object-contain h-1/2-screen" :src="imgSrc">
+                  <p x-text="imgDesc" class="text-center text-white"></p>
+                </div>
+              </div>
+            </div>
+          </template>
+
+          <div 
+            x-data="{}" 
+            class="px-2"
+          >
+            <div class="flex -mx-2">
+
+                <div>
+                  <a @click="$dispatch('img-modal', {  imgSrc: 'images/1.jpg', imgDesc: 'Cody en la playa' })" class="cursor-pointer">
+                    <img alt="Cody en la playa" class="object-fit w-full" src="images/1.jpg">
+                  </a>
+                </div>
+        
+                <div>
+                  <a @click="$dispatch('img-modal', {  imgSrc: 'images/2.jpg', imgDesc: 'Cody acampando' })" class="cursor-pointer">
+                    <img alt="Cody acampando" class="object-fit w-full" src="images/2.jpg">
+                  </a>
+                </div>
+              
+                <div>
+                  <a @click="$dispatch('img-modal', {  imgSrc: 'images/3.jpg', imgDesc: 'Cody en una alberca' })" class="cursor-pointer">
+                    <img alt="Cody en una alberca" class="object-fit w-full" src="images/3.jpg">
+                  </a>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      <p class="text-center text-white my-4">
+        Puedes ver más, en la galería de fotos de mi página
+      </p>
+      <div class="text-center my-4">
+        <a class="inline-block bg-white hover:bg-terciary hover:text-white text-primary font-bold py-2 px-8 rounded"href="fotos.html">Ir a la galería</a>
+      </div>
+      </div>
+    </section>
+
+    <!-- Importancia -->
+    <section class="px-6">
+      <div class="container mx-auto py-32">
+        <h2 class="font-bold font-serif text-4xl md:text-6xl mb-8 text-primary text-center">La importancia de las vacaciones</h2>
+        <p class="text-center text-gray-600 mb-4">Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+        <p class="text-center text-gray-600">Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+        <ol class="flex flex-wrap justify-center my-8">
+          <li class="w-full lg:w-1/2 xl:w-auto bg-terciary hover:bg-primary cursor-pointer text-center text-white border border-white rounded-md py-4 px-6 md:mx-6 my-2 xl:my-0 inset-0 transform  hover:scale-125 transition duration-300">Mejora la salud mental</li>
+          <li class="w-full lg:w-1/2 xl:w-auto bg-terciary hover:bg-primary cursor-pointer text-center text-white border border-white rounded-md py-4 px-6 md:mx-6 my-2 xl:my-0 inset-0 transform  hover:scale-125 transition duration-300">Incrementa la motivación</li>
+          <li class="w-full lg:w-1/2 xl:w-auto bg-terciary hover:bg-primary cursor-pointer text-center text-white border border-white rounded-md py-4 px-6 md:mx-6 my-2 xl:my-0 inset-0 transform  hover:scale-125 transition duration-300">Reduce el burnout</li>
+          <li class="w-full lg:w-1/2 xl:w-auto bg-terciary hover:bg-primary cursor-pointer text-center text-white border border-white rounded-md py-4 px-6 md:mx-6 my-2 xl:my-0 inset-0 transform  hover:scale-125 transition duration-300">Mejora tu productividad y creatividad</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary p-4">
+      <div class="container mx-auto">
+        <p class="text-sm text-white font-bold text-center">
+          ©2021 by Cody & <a href="https://github.com/mcrojas/vacaciones-cody" target="_blank">mcrojasp</a>
         </p>
       </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
+    </footer>
     
   </main>
 </body>

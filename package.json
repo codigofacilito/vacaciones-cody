@@ -1,0 +1,25 @@
+{
+  "name": "vacacionescody",
+  "version": "1.0.0",
+  "description": "Cody está aprendiendo desarrollo Frontend, hizo su primer página, y ahora necesita de tu ayuda para mejorarla.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcrojas/vacaciones-cody.git"
+  },
+  "keywords": [],
+  "author": "Mary Rojas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcrojas/vacaciones-cody/issues"
+  },
+  "homepage": "https://github.com/mcrojas/vacaciones-cody#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  }
+}
