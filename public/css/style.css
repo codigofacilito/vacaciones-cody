@@ -1,13 +1,52 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.mainheader{
+  height: 100vh;
+  background-image: url(..//images/4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+
+h1{
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.subtittle{
+  width: 60%;
+  float: right;
+  margin-right: 30px;
+  margin-top: 60px;
+  font-size: 25px;
+}
+
 nav{
-  background-color: aliceblue;
+  background-color: rgb(249, 178, 8);
+  width: 30%;
   padding: 15px;
   display: flex;
   gap:1em;
+  margin: 0 auto 0 auto;
+  justify-content: center;
+}
+
+
+nav a{
+  color: rgb(0, 3, 5);
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 15px;
 }
 
 main{
+  font-family: 'Oswald', sans-serif;
   text-align: center;
-  max-width: 960px;
   margin:0 auto;
 }
 
@@ -21,6 +60,7 @@ section{
   max-width: 200px;
   display: inline-block;
   box-shadow: 5px 5px 10px black;
+  margin-right: 40px;
 }
 .fotos img{
   max-width: 450px;
@@ -28,6 +68,7 @@ section{
 }
 ul li{
   text-align: left;
+
 }
 ul li::marker {
   content: "🚀";
@@ -36,3 +77,32 @@ ul li::marker {
 ol li{
   text-align: left;
 }
+
+.section2{
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.section2 h2{
+  font-size: 40px;
+  font-weight: 800;
+  padding-top: 5%;
+  margin-bottom: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentsection2{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-size: 23px;
+}
+
+.contentsection2 p{
+  margin-bottom: 40px;
+}
+
