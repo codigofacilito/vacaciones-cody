@@ -85,6 +85,24 @@ ol {
   gap: calc(var(--padding) * 3);
 }
 
+.u-horizontalScroll::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+.u-horizontalScroll::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 10px;
+  border-right: var(--padding-double) transparent solid;
+  border-left: var(--padding-double) transparent solid;
+  
+  background-clip: padding-box;
+}
+
+.u-horizontalScroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 .u-horizontalScrollItem {
   width: var(--curso-card-width);
 }
@@ -99,7 +117,7 @@ ol {
   gap: var(--padding);
 }
 
-p {
+.u-paragraph {
   margin-bottom: 15px;
   color: var(--color-text);
   line-height: 1.5;
@@ -225,6 +243,11 @@ p {
 
 .Curso-img {
   min-width: var(--curso-card-width);
+}
+
+/* FOTOS SECTION */
+.Fotos {
+  padding-bottom: var(--padding);
 }
 
 /* RUTA DE APRENDIZAJE SECTION */
