@@ -11,13 +11,16 @@
 .Advantages--text{
     margin-block-start: 20px;
     margin-block-end: 20px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
     padding-inline-start: 20px;
     padding-inline-end:20px;
     color: var(--Slightlytransparent);
+    max-width: 496px;
 }
 
 .Advantages--list{
-    margin-block-start: 40px;
+    margin-block-start: 100px;
     padding: 0;
     list-style: none;
     color: var(--White);

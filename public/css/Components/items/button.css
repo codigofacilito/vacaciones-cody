@@ -5,7 +5,7 @@
     border: 2px solid white;
     width: 90%;
     height: 45px;
-    max-width: 700px;
+    max-width: 496px;
     margin-inline-start: auto;
     margin-inline-end: auto;
     border-radius: 25px;
@@ -21,5 +21,5 @@
 
 .Button:hover{
     background-color: var(--highlight);
-    transform: scale(1.05)
+    transform: scale(1)
 }

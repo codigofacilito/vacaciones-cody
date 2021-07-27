@@ -13,9 +13,13 @@
 }
 .Vacation--text{
     margin-block-start: 20px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
     padding-inline-start: 15px;
     padding-inline-end: 15px;
     font: var(--BodyMobile2);
+    max-width: 400px;
+
     
 }
 
@@ -24,6 +28,10 @@
     .Vacation{
       padding-inline-start: 20px;
       padding-inline-end: 20px;
+    }
+    .Vacation--text{
+        margin-block-start: 40px;
+        font: var(--BodyMobile);
     }
   }
   

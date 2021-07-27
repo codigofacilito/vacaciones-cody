@@ -1,3 +1,9 @@
+.Vacation__cards{
+    max-width: 500px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
 .Vacation__cards--card{
     margin-block-start: 75px;
     margin-inline-start: auto;

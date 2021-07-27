@@ -12,10 +12,13 @@
     margin-block-end: 40px;
 }
 .Collaborates--text{
+    margin-inline-start: auto;
+    margin-inline-end: auto;
     padding-inline-start: 15px;
     padding-inline-end: 15px;
     margin-block-end: 26px;
     color: var(--Slightlytransparent);
+    max-width: 496px;
 }
 .Collaborates--btn{
     margin-block-start: 40px;

@@ -25,8 +25,6 @@
     margin: 0;
   }
   .grid-item:hover {
-    margin-block-start: 20px;
-    margin-block-end: 20px;
     filter: opacity(0.9);
     transform: scale(1.09);
 
