@@ -1,13 +1,19 @@
-//COMPONENTS
-import Carousel from "./3-Carousel";
+import codyCode from "../images/CodyCode.png";
 
 const Presentation = () => {
   return (
     <>
-      <section className="presentation">
+      <article className="presentation">
         <h1 className="presentation__title">Las vacaciones de Cody</h1>
-        <Carousel />
-      </section>
+        <div className="presentation__text">
+          <p className="presentation__text-paragraph">
+            Soy Cody, un aspirante a Dev, en 2019, organicé un viaje 🧳✈️para
+            desestresarme del código, y en esta página quiero compartirlo
+            contigo.
+          </p>
+          <img src={codyCode} className="presentation__text-image" />
+        </div>
+      </article>
     </>
   );
 };

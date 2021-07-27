@@ -1,8 +1,24 @@
 .presentation {
-  padding-top: 200px;
+  padding: 200px 15% 15%;
   &__title {
     text-align: center;
     text-transform: uppercase;
-    padding: 10px;
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    &-paragraph {
+      padding-right: 15px;
+      text-align: justify;
+      line-height: 1.5rem;
+      text-align: right;
+    }
+    &-image {
+      background: linear-gradient($colorPink $colorWhite);
+      width: 25%;
+      height: 25%;
+    }
   }
 }
