@@ -1,25 +1,56 @@
-.Gallery{
+@import './Components/Nav.css';
+@import './Components/Footer.css';
+@import './Components/GalleryGrid.css';
+:root {
+    /*colors*/
+    --Background:linear-gradient(180deg, #56C9FE 0%, #C6ECFF 21.76%, #3B80C4 38.34%, #1B5EC7 74.68%, #1C1D31 99.22%, #4CB9F2 99.47%);
+    --highlight:rgba(253, 223, 58, 1);
+    --secundary: #eef7f8;
+    --White: hsl(0, 0%, 100%);
+    --back: #000000;
+     --Slightlytransparent: hsla(0, 0%, 100%, 0.75);
+  --Slightly: hsla(0, 0%, 100%, 0.6);
+
+     /*font size variable*/
+  --fontBase: 'Roboto', sans-serif;
+  --alternativeFont : 'Fredoka One', cursive;
+
+  --headLineMobile: 48px/58.08px var(--alternativeFont);
+  --BodyMobile: 18px/22px var(--fontBase);
+  --BodyMobile2: 14px/22px var(--fontBase);
+  --h2Mobile: 36px/43.56px var(--alternativeFont);
+  --FooterMobile: 14px/35px var(--alternativeFont);
+}
+
+
+body {
+    background: var(--Background);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-repeat: repeat-y;
-    box-sizing: border-box;
+    font-family: var(--fontBase);
+    text-align: center;
+    min-width: 300px;
+    height: auto;
     padding: 0;
     margin: 0;
-    height: 100vh;
+    font: var(--BodyMobile2);
+  }
+
+  .Gallery--title{
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    font: var(--h2Mobile);
+    color: var(--White);
 }
-.footer--photos{
-    position: absolute;
+.Gallery--text{
+  margin-block-start: 30px;
+  margin-block-end: 30px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  font-weight: 700;
+
 }
-.Gallery--row img{
-    width: 100%;
-}
-.Gallery--row{
-    border: 2px solid red;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-}
-.column{
- flex: 50%;
- padding: 5px;
+.highlightText{
+  color: var(--highlight) ;
 }

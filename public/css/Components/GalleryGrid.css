@@ -1,0 +1,35 @@
+
+.Gallery{
+  padding: 0;
+  margin: 0;
+}
+.grid-item{
+  padding: 0;
+  border-radius: 10px;
+  background-color:#CDF5FF;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.25);
+}
+.Gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  
+  .Gallery-container img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding: 0;
+    margin: 0;
+  }
+  .grid-item:hover {
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    filter: opacity(0.9);
+    transform: scale(1.09);
+
+  }
+  
+ 
