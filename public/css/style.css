@@ -28,16 +28,6 @@
   --fontBase: 'Roboto', sans-serif;
   --alternativeFont : 'Fredoka One', cursive;
 
-  --headLine: bold 28px/33px var(--fontBase);
-  --Body: 15px/25px var(--fontBase);
-  --Label: 15px/25px var(--fontAlternative);
-  --Number: 15px/25px var(--fontBase);
-
-  --headLineMTablet: bold 24px/35px var(--fontBase);
-  --BodyTablet: 24px/35px var(--fontBase);
-  --LabelTablet: 16px/35px var(--fontBase);
-  --SocialTablet: 300 12px/35px var(--fontBase);
-
   --headLineMobile: 48px/58.08px var(--alternativeFont);
   --BodyMobile: 18px/22px var(--fontBase);
   --BodyMobile2: 14px/22px var(--fontBase);
