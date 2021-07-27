@@ -78,10 +78,11 @@ Este es un proyecto que participa para el concurso de [#VeranoFrontend](https://
 
 <div align="center" >
 <img width="200px" src="./img/mobileOriginal.jpeg" />
-
-<img width="200px" src="./img/mobilePropuesta.png" />
 </div>
 <br>
+<div align="center" >
+<img width="200px" src="./img/mobilePropuesta.png" />
+</div>
 <br>
 <br>
 
