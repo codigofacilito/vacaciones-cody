@@ -1,26 +1,30 @@
 let counter = 1;
 let slider_container = document.querySelector('.slider_container');
-let itemImg = document.querySelector('#item');
-
-
-// const setStyles = (element,styles) => {
-//     Object.assign(element.style,styles);
-// }
 
 setInterval(() => {
     counter++;
     if(counter>6)
         counter=1;
         
-    itemImg.src = `images/${counter}.jpg`;
-}, 10000);
+    setStyles(slider_container,{
+        'background':`url('images/${counter}.jpg')`,
+        'background-size':'cover'
+    })
+}, 5000);
+
+const setStyles = (element,styles) => {
+    Object.assign(element.style,styles);
+}
 
 const next_img = () => {
     counter++;
     if(counter>6)
         counter=1;
+    setStyles(slider_container,{
+        'background':`url('images/${counter}.jpg')`,
+        'background-size':'cover'
+    })
 
-    itemImg.src = `images/${counter}.jpg`;
 }
 
 const previous_img = () => {
@@ -28,5 +32,8 @@ const previous_img = () => {
     if(counter<1)
         counter=6;
     
-    itemImg.src = `images/${counter}.jpg`;
+    setStyles(slider_container,{
+        'background':`url('images/${counter}.jpg')`,
+        'background-size':'cover'
+    })
 }
