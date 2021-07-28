@@ -8,8 +8,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"> 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Mis vacaciones - Cody</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/cody.ico" />
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Mis vacaciones - Home</title>
 </head>
 <body>
   <main>
@@ -103,13 +105,13 @@
           <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé</p>
         </header>
         <div class="fotos" data-aos="fade-up">
-          <div>
+          <div onclick="openModal('1')">
             <img src="images/1.jpg" alt="Cody en la playa">
           </div>
-          <div>
+          <div onclick="openModal('2')">
             <img src="images/2.jpg" alt="Cody acampando">
           </div>
-          <div>
+          <div onclick="openModal('3')">
             <img src="images/3.jpg" alt="Cody en una alberca">
           </div>
         </div>
@@ -138,10 +140,16 @@
       </a>
     </footer>
   </main>
+  <div class="modal modal-active" id="modal">
+    <img id="image" src="" alt="">
+    <div class="modal__text">
+      <h3 id="title">        
+      </h3>
+      <img src="./images/close.png" onclick="closeModal()" alt="Close">
+    </div>
+  </div>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init()
-  </script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

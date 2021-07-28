@@ -5,30 +5,75 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"> 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="./images/cody.ico" />
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <title>Mis vacaciones - Fotos</title>
 </head>
 
 <body>
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="container">
+          <div class="logo">
+            <img src="./images/cody.png" alt="Cody">
+          </div>
+          <div class="menu">
+            <a href="/">Inicio</a>
+            <a class="active" href="fotos.html">Fotos</a>
+          </div>
+        </div>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
+      <h1 data-aos="fade-down">Galería completa de mis vacaciones</h1>
+      <a class="btn" href="#gallery">
+        Ver Fotos
+      </a>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+    <div class="content container">
+      <div class="fotos" id="gallery">
+        <div data-aos="fade-up" onclick="openModal('1')">
+          <img src="images/1.jpg" alt="Cody en la playa">
+        </div>
+        <div data-aos="fade-up" onclick="openModal('2')">
+          <img src="images/2.jpg" alt="Cody acampando">
+        </div>
+        <div data-aos="fade-up" onclick="openModal('3')">
+          <img src="images/3.jpg" alt="Cody en una alberca">
+        </div>
+        <div data-aos="fade-up" onclick="openModal('4')">
+          <img src="images/4.jpg" alt="Cody en una alberca">
+        </div>
+        <div data-aos="fade-up" onclick="openModal('5')">
+          <img src="images/5.jpg" alt="Cody en una alberca">
+        </div>
+        <div data-aos="fade-up" onclick="openModal('6')">
+          <img src="images/6.jpg" alt="Cody en una alberca">
+        </div>        
+      </div>
     </div>
+    <footer>
+      ❮ ❯ by -
+      <a href="https://carlosc.tech" target="_blank">
+        ccdev
+      </a>
+    </footer>
 
   </main>
-</body>
+  <div class="modal modal-active" id="modal">
+    <img id="image" src="" alt="">
+    <div class="modal__text">
+      <h3 id="title">        
+      </h3>
+      <img src="./images/close.png" onclick="closeModal()" alt="Close">
+    </div>
+  </div>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/main.js"></script>
+</body>
 </html>

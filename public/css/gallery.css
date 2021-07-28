@@ -1,0 +1,25 @@
+.fotos {
+  padding: var(--padding);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.fotos div {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+.fotos img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+  cursor: zoom-in;
+}
+.fotos img:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 580px) {
+  .fotos {
+    grid-template-columns: 1fr;
+  }
+}
