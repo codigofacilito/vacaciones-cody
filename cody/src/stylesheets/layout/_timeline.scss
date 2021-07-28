@@ -1,6 +1,7 @@
 .path {
   padding: 0 15%;
   &__title {
+    font-size: 1.2rem;
     @include titles();
   }
   &__paragraph {
@@ -11,10 +12,10 @@
     }
   }
   &__timeline {
-    border-left: 4px solid $colorYellow;
+    border-left: 4px solid $colorPurple;
     @include tablet() {
       border-left: 0;
-      border-top: 4px solid $colorYellow;
+      border-top: 4px solid $colorPurple;
       display: flex;
       justify-content: space-around;
     }
@@ -22,7 +23,7 @@
     &--container {
       margin: 5%;
       padding: 5%;
-      border: 1px solid $colorYellow;
+      border: 1px solid $colorPurple;
       border-radius: 10px;
       text-align: center;
       @include tablet() {

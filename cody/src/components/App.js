@@ -11,9 +11,10 @@ function App() {
   return (
     <>
       <Header />
-      <Presentation />
-      <Studies />
-      <Timeline />
+      <main>
+        <Presentation />
+        <Studies />
+      </main>
     </>
   );
 }

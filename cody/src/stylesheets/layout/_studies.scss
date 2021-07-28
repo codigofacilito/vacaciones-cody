@@ -1,4 +1,5 @@
 .studies {
+  box-shadow: 5px 5px 15px 5px $colorLightGray;
   &__title {
     @include titles();
     font-size: 1.5rem;

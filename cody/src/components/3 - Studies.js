@@ -1,4 +1,5 @@
 import coursesData from "../data/coursesData.json";
+import Timeline from "./4-Timeline";
 
 const Studies = () => {
   //RENDER FUNCTION OF COURSES DONE
@@ -23,7 +24,7 @@ const Studies = () => {
   };
 
   return (
-    <>
+    <section className="studies">
       <h2 className="studies__title">Mis vacaciones Front-End</h2>
       <p className="studies__paragraph">
         Durante el verano de 2019, decidí comenzar a aprender desarrollo
@@ -34,7 +35,8 @@ const Studies = () => {
       </p>
       <h3 className="studies__cursos">Cursos que hice</h3>
       <div className="studies__cursos--buttonWrap">{RenderCourses()}</div>
-    </>
+      <Timeline />
+    </section>
   );
 };
 export default Studies;
