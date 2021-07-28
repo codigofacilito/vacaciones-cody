@@ -11,7 +11,11 @@ const Presentation = () => {
             desestresarme del código, y en esta página quiero compartirlo
             contigo.
           </p>
-          <img src={codyCode} className="presentation__text-image" />
+          <img
+            src={codyCode}
+            className="presentation__text-image"
+            alt="Cody codeando"
+          />
         </div>
       </article>
     </>

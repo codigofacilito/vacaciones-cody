@@ -1,9 +1,6 @@
 //COMPONENTS
 import ImageGallery from "react-image-gallery";
 
-//DATA
-import imagesData from "../data/imagesData.json";
-
 const Carousel = () => {
   const images = [
     {
@@ -46,9 +43,6 @@ const Carousel = () => {
       description: "El tiempo vuela y yo también, ¡ese es mi avión!✈️🛫",
     },
   ];
-  const renderImages = imagesData.map((image) => {
-    return <img src={image.imgURL} alt={image.name} />;
-  });
 
   return (
     <div className="carousel">

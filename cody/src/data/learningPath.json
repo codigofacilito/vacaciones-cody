@@ -1,6 +1,6 @@
 [
-  { "tech": "Flexbox y Grid" },
-  { "tech": "Animaciones con CSS y Javascript" },
-  { "tech": "AJAX" },
-  { "tech": "HTML Semántico" }
+  { "id": "Tech 1", "tech": "Flexbox y Grid" },
+  { "id": "Tech 2", "tech": "Animaciones con CSS y Javascript" },
+  { "id": "Tech 3", "tech": "AJAX" },
+  { "id": "Tech 4", "tech": "HTML Semántico" }
 ]

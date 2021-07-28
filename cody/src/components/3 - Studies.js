@@ -4,7 +4,7 @@ import Timeline from "./4-Timeline";
 const Studies = () => {
   //RENDER FUNCTION OF COURSES DONE
   const RenderCourses = () => {
-    return coursesData.map((course) => {
+    return coursesData.map((course, index) => {
       return (
         <>
           <button type="button" className="studies__cursos--button">
