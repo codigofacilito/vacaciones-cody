@@ -1,5 +1,5 @@
 .path {
-  padding: 0 15%;
+  padding: 0 15% 30px;
   &__title {
     font-size: 1.2rem;
     @include titles();
@@ -13,6 +13,7 @@
   }
   &__timeline {
     border-left: 4px solid $colorPurple;
+
     @include tablet() {
       border-left: 0;
       border-top: 4px solid $colorPurple;

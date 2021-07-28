@@ -1,0 +1,9 @@
+.image-gallery {
+  margin: 50px auto;
+  @include tablet() {
+    width: 70%;
+  }
+  &-thumbnails-wrapper {
+    display: none;
+  }
+}
