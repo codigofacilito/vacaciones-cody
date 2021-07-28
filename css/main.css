@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,24 +7,13 @@
 }
 
 body {
-    font-family: sans-serif;
     display: flex;
     flex-direction: column;
+    background: #4cb4f4;
 }
 
 body::-webkit-scrollbar {
     display: none;
-}
-
-
-/* ul li::marker {
-    content: "🚀";
-} */
-
-
-.img {
-    max-width: 300px;
-    display: inline-block;
 }
 
 .fotos img {
@@ -30,10 +21,10 @@ body::-webkit-scrollbar {
 }
 
 .title_fotos {
-    margin-top: 60px;
+    margin: 60px 5px 0 5px;
     color: white;
-    font-family: sans-serif;
-    font-size: 30px;
+    font-family: 'Mali', cursive;
+    font-size: 25px;
     text-align: center;
     background: rgba( 0, 136, 255, 0.30);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
@@ -43,20 +34,50 @@ body::-webkit-scrollbar {
     border: 1px solid rgba( 255, 255, 255, 0.18);
 }
 
+.title_fotos h2 {
+    margin: 5px 20px 5px 20px;
+}
+
 .title_ {
     margin-top: 60px;
 }
 
-.cursos div {
+.content p {
+    margin: 0 50px 0 50px;
+    font-family: 'Inconsolata', monospace;
+}
+
+button {
+    background: none;
+    border: 2px solid;
+    line-height: 1;
+    font-family: 'Inconsolata', monospace;
+    margin: 0.5em;
+    padding: 1em 2em;
+}
+
+button {
+    color: var(--color);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+button:hover, button:focus {
+    border-color: var(--hover);
     color: white;
-    max-width: 200px;
+}
+
+.fill {
+    --color: white;
+    --hover: #0f9bf6;
+}
+
+.fill:hover, .fill:focus {
+    box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.cursos div {
     display: inline-block;
-    background: rgba( 15, 155, 246, 1.00);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
-    backdrop-filter: blur( 4px);
-    -webkit-backdrop-filter: blur( 4px);
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18);
 }
 
 section {
@@ -70,48 +91,120 @@ section {
 
 .uno {
     padding-top: 200px;
-    color: #0530ad;
-    background: linear-gradient(-45deg, white, #A4DDED);
+    color: white;
+    background: #4cb4f4;
 }
 
 .uno header {
-    font-size: 30px;
+    font-size: 50px;
+    font-family: 'Mali', cursive;
 }
 
 .uno .cursos {
     padding-top: 30px;
+    font-family: 'Inconsolata', monospace;
 }
 
 .uno .parrafo {
+    font-family: 'Inconsolata', monospace;
     margin-top: 10px;
-    background: rgba( 15, 155, 246, 0.20);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
-    backdrop-filter: blur( 20.0px);
-    -webkit-backdrop-filter: blur( 20.0px);
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18);
-    margin-left: 80px;
-    margin-right: 80px;
+    font-size: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 .dos {
     padding-top: 60px;
-    background: linear-gradient(-45deg, #0f9bf6, white);
+    background: white;
+    color: #013f88;
 }
 
-.tres {
-    background: rgb(67, 91, 175);
-    padding-top: 60px;
+.dos ul {
+    list-style: none;
+    padding: 0px;
+    margin-left: 40%;
+    text-align: left;
+}
+
+.dos ul li::before {
+    content: "🚀";
+    display: inline-block;
+}
+
+.dos header h2 {
+    font-family: 'Mali', cursive;
+    font-size: 40px;
+    margin: 50px 0 5px 0;
+}
+
+.dos p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    margin: 0 50px 0 50px;
 }
 
 .cuatro {
-    background: lightsalmon;
-    padding-top: 60px;
+    padding-top: 100px;
+    color: white;
+}
+
+.cuatro h2 {
+    font-size: 40px;
+    font-family: 'Mali', cursive;
+}
+
+.cuatro p {
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    margin: 0 50px 0 50px;
 }
 
 .cinco {
-    background: blueviolet;
-    padding-top: 60px;
+    padding-top: 100px;
+    background: white;
+    color: #013f88;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: lista-personalizada;
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+}
+
+ol li {
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 4px 0 10px 50px;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+}
+
+ol li:before {
+    content: counter(lista-personalizada);
+    counter-increment: lista-personalizada;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 8px 8px 8px 5px;
+    background: #0f9bf6;
+    color: white;
+    height: 45px;
+}
+
+.cinco h2{
+    font-size: 40px;
+    font-family: 'Mali', cursive;
+}
+
+.cinco p{
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    margin: 0 50px 0 50px;
 }
 
 .contenedor {
@@ -124,17 +217,18 @@ section {
     display: none;
 }
 
+.parrafo .text-p {
+    margin: 10px;
+}
+
 .s4-p-fotos {
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 @media(max-width: 768px) {
     .title_fotos {
         font-size: 20px;
-        margin-top: 80px;
-    }
-    .cursos div {
-        max-width: 100px;
+        margin: 80px 10px 0 10px;
     }
     .uno {
         padding-top: 100px;
@@ -146,6 +240,47 @@ section {
         padding-top: 30px;
     }
     .uno .parrafo {
-        margin-top: 10px;
+        margin: 10px 10px 0 10px;
+    }
+    .content p {
+        margin: 0 20px 0 20px;
+    }
+    .content h1 {
+        margin: 0 5px 0 5px;
+    }
+    .dos {
+        padding-top: 100px;
+    }
+    .dos header h2 {
+        font-size: 26px;
+        margin: 10px 0 5px 0;
+    }
+    .dos p {
+        margin: 0 10px 0 10px;
+        font-size: 16px;
+    }
+    .dos ul {
+        margin-left: 30%;
+    }
+    .cuatro {
+        padding-top: 100px;
+    }
+    .cuatro h2 {
+        font-size: 26px;
+    }
+    .cuatro p {
+        font-size: 16px;
+    }
+
+    .cinco h2 {
+        font-size: 26px;
+    }
+    .cinco p {
+        font-size: 16px;
+    }
+
+    ol li:before{
+        margin-left: 8px;
+        margin-right: 8px;
     }
 }

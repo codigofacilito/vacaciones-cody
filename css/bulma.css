@@ -1958,6 +1958,7 @@ fieldset[disabled] .button {
   color: white;
   font-weight: 600;
   line-height: 1.125;
+  font-family: 'Mali', cursive;
 }
 
 .content h1 {

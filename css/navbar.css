@@ -52,6 +52,7 @@
     line-height: 50px;
     text-transform: uppercase;
     width: max-content;
+    font-family: 'Inconsolata', monospace;
 }
 
 .nav_menu_link{
