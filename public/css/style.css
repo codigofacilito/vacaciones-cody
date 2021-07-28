@@ -44,7 +44,7 @@ ol li{
 }
 
 h2 { 
-  text-align: center;
+  
   padding-top: 2%;
   padding-left: 3%;
   padding-right: 5%;
@@ -60,3 +60,6 @@ p {
   font-size: 2ch;
 }
 
+.a { 
+  font-family: 'Times New Roman', Times, serif;
+}
