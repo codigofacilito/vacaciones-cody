@@ -1,0 +1,123 @@
+.bcd_cont_banner {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/1.jpg");
+}
+
+.bcd_sombra {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    margin: auto;
+}
+
+.bcd_cont_banner_logo {
+    width: 96%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+.bcd_cont_banner_letras {
+    width: 96%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+
+.bcd_sombra hr {
+    border-top: 1px solid #fff;
+}
+
+
+.bcd_cont_banner_link {
+    margin: 15px;
+    position: relative;
+}
+
+.bcd_cont_banner_link a {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 1px;
+    margin-bottom: 5px;
+    width: 200px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.bcd_cont_banner_link a:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    color: rgb(6, 66, 94);
+}
+
+.bcd_banner_link {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bcd_banner_link1 {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/**************************************************/
+
+
+.bcd_cont_banner_fotos {
+    height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bcd_sombra_fotos {
+    position: relative;
+    top: 50px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    margin: auto;
+}
+
+.bcd_letrasgaleria p {
+    position: relative;
+    top: 3px;
+    padding: 5px;
+    width: 30%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    margin: auto;
+}
+
+.bcd_letrasgaleria h5 {
+    position: relative;
+    top: 3px;
+    padding: 5px;
+    width: 30%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    margin: auto;
+}

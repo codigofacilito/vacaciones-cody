@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'akrobatblack';
+    src: url('../ext/fuentes/akrobat-black-webfont.woff2') format('woff2'), url('../ext/fuentes/akrobat-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akrobatbold';
+    src: url('../ext/fuentes/akrobat-bold-webfont.woff2') format('woff2'), url('../ext/fuentes/akrobat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akrobatextrabold';
+    src: url('../ext/fuentes/akrobat-extrabold-webfont.woff2') format('woff2'), url('../ext/fuentes/akrobat-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akrobatextralight';
+    src: url('../ext/fuentes/akrobat-extralight-webfont.woff2') format('woff2'), url('../ext/fuentes/akrobat-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akrobatlight';
+    src: url('../ext/fuentes/akrobat-light-webfont.woff2') format('woff2'), url('../ext/fuentes/akrobat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akrobatregular';
+    src: url('../ext/fuentes/akrobat-regular-webfont.woff2') format('woff2'), url('../ext/fuentes/akrobat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akrobatsemibold';
+    src: url('../ext/fuentes/akrobat-semibold-webfont.woff2') format('woff2'), url('../ext/fuentes/akrobat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akrobatthin';
+    src: url('../ext/fuentes/akrobat-thin-webfont.woff2') format('woff2'), url('../ext/fuentes/akrobat-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../ext/fuentes/gilroy-extrabold-webfont.woff2') format('woff2'), url('../ext/fuentes/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../ext/fuentes/gilroy-light-webfont.woff2') format('woff2'), url('../ext/fuentes/gilroy-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'harabara_maisharabaramaisbdit';
+    src: url('../ext/fuentes/harabara_mais_bdit-webfont.woff2') format('woff2'), url('../ext/fuentes/harabara_mais_bdit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'harabara_maiharabaramaisBlkIt';
+    src: url('../ext/fuentes/harabara_mais_black_italic-webfont.woff2') format('woff2'), url('../ext/fuentes/harabara_mais_black_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'harabara_mais_harabaramaisBlk';
+    src: url('../ext/fuentes/harabara_mais_black-webfont.woff2') format('woff2'), url('../ext/fuentes/harabara_mais_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'harabara_mais_bharabaramaisBd';
+    src: url('../ext/fuentes/harabara_mais_bold-webfont.woff2') format('woff2'), url('../ext/fuentes/harabara_mais_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'harabara_maisharabaramaisdemo';
+    src: url('../ext/fuentes/harabara_mais_demo-webfont.woff2') format('woff2'), url('../ext/fuentes/harabara_mais_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'harabara_mais_iharabaramaisIt';
+    src: url('../ext/fuentes/harabara_mais_italic-webfont.woff2') format('woff2'), url('../ext/fuentes/harabara_mais_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'harabara_mais_lharabaramaisLt';
+    src: url('../ext/fuentes/harabara_mais_light-webfont.woff2') format('woff2'), url('../ext/fuentes/harabara_mais_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'harabara_maisharabaramaisltit';
+    src: url('../ext/fuentes/harabara_mais_ltit-webfont.woff2') format('woff2'), url('../ext/fuentes/harabara_mais_ltit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'harabara_maisharabara_mais';
+    src: url('../ext/fuentes/harabara_mais-webfont.woff2') format('woff2'), url('../ext/fuentes/harabara_mais-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'harabarabold';
+    src: url('../ext/fuentes/harabara-bold-webfont.woff2') format('woff2'), url('../ext/fuentes/harabara-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sheenline_scriptregular';
+    src: url('../ext/fuentes/sheenline_script-webfont.woff2') format('woff2'), url('../ext/fuentes/sheenline_script-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
