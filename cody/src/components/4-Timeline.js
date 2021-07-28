@@ -1,11 +1,11 @@
 import learningPath from "../data/learningPath.json";
 
 const Timeline = () => {
-  const willDo = learningPath.map((data) => {
+  const willDo = learningPath.map((data, i) => {
     return (
       <>
         <li className="path__timeline--container" key={data.id}>
-          <p className="path__timeline__container-content">{data.tech}</p>
+          {data.tech}
         </li>
       </>
     );

@@ -1,12 +1,12 @@
 [
   {
-    "id": "1",
+    "id": "C1",
     "name": "Curso Profesional Desarrollo Web",
     "link": "https://codigofacilito.com/cursos/frontend-profesional",
     "frontName": " Profesional Desarrollo Web"
   },
   {
-    "id": "2",
+    "id": "C2",
     "name": "Curso para crear mi primera página web",
     "link": "https://codigofacilito.com/cursos/primera-pagina-2019",
     "frontName": "Crear mi primera página web"

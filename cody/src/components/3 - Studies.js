@@ -3,25 +3,26 @@ import Timeline from "./4-Timeline";
 
 const Studies = () => {
   //RENDER FUNCTION OF COURSES DONE
-  const RenderCourses = () => {
-    return coursesData.map((course, index) => {
-      return (
-        <>
-          <button type="button" className="studies__cursos--button">
-            <a
-              href={course.link}
-              alt={course.name}
-              target="_blank"
-              rel="noreferrer"
-              className="studies__cursos--button-link"
-            >
-              {course.frontName}
-            </a>
-          </button>
-        </>
-      );
-    });
-  };
+  const data = coursesData.map((course) => {
+    return (
+      <button
+        type="button"
+        className="studies__cursos--button"
+        key={course.name}
+      >
+        <a
+          href={course.link}
+          alt={course.name}
+          key={course.name}
+          target="_blank"
+          rel="noreferrer"
+          className="studies__cursos--button-link"
+        >
+          {course.frontName}
+        </a>
+      </button>
+    );
+  });
 
   return (
     <section className="studies">
@@ -34,7 +35,7 @@ const Studies = () => {
         construyendo esta página.
       </p>
       <h3 className="studies__cursos">Cursos que hice</h3>
-      <div className="studies__cursos--buttonWrap">{RenderCourses()}</div>
+      <div className="studies__cursos--buttonWrap">{data}</div>
       <Timeline />
     </section>
   );
