@@ -1,8 +1,23 @@
 nav{
-  background-color: aliceblue;
   padding: 15px;
   display: flex;
   gap:1em;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  margin-top: auto!important;
+  margin-bottom: auto!important;
+}
+
+nav ul li i{
+  font-size: 23px;
+  color: #2a2a2a;
+  padding: 10px;
+}
+
+nav img{
+  border: 2px solid #929090;
 }
 
 main{
@@ -26,7 +41,7 @@ section{
   max-width: 450px;
   display: inline-block;
 }
-ul li{
+/* ul li{
   text-align: left;
 }
 ul li::marker {
@@ -35,4 +50,4 @@ ul li::marker {
 
 ol li{
   text-align: left;
-}
+} */
