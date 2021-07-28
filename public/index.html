@@ -6,95 +6,230 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="Stylesheet" href="ext/aos.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
+  <link rel="Stylesheet" href="ext/booststrap/css/bootstrap.min.css">
+  <link rel="Stylesheet" href="ext/booststrap/css/open-iconic-bootstrap.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/iconos//apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/iconos//apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/iconos//apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/iconos//apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/iconos//apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/iconos//apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/iconos//apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/iconos//apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/iconos//apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./img/iconos//android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/iconos//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/iconos//favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/iconos//favicon-16x16.png">
+  <link rel="manifest" href="./img/iconos//manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./img/iconos//ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="Stylesheet" href="css/keyframes.css">
+  <link rel="Stylesheet" href="css/banner.css">
+  <link rel="Stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/fontstyles.css" type="text/css" charset="utf-8" />
 </head>
 <body>
   <main>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+      <nav class="bcd_navbar navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./img/iconos/favicon-32x32.png" alt="Cody"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href=".\index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href=".\fotos.html">Fotos</a>
+                        </li>
+                     </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
+    <!-- Titulo / Presentacion -->
+
     <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+        <div class="bcd_cont_banner">
+            <div class="bcd_sombra">
+                <div class="bcd_cont_banner_letras">
+                    <h2>Mis vacaciones FrontEnd</h2>
+                </div>
+                <hr/>
+                <div class="bcd_cont_banner_link">
+                  <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+                </div>
+            </div>
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+    </section>
+
+    <!-- Texto y botones a cursos -->
+
+    <section>
+        <div class="container">
+            <div class="row bcd_cont_sec_1">
+                <div class="text-center">
+                    <h2><b>Mis vacaciones Frontend</b></h2>
+                    <hr/>
+                    <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript
+                    Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+                    <p></p>
+                    <p>Estos son los cursos que estuve tomando!</p>
+                    <div class="col-md-12 text-center">
+                      <div class="bcd_cont_banner_link bcd_sombra2">
+                        <a data-aos="fade-right" class="bcd_banner_link" href="https://codigofacilito.com/cursos/frontend-profesional"  target="_blank">Curso profesional de Desarrollo Web</a>
+                        <a data-aos="fade-left" class="bcd_banner_link1" href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank">Curso para crear mi primera página web</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
-      </div>
-    </section>
+    <!-- Imagenes ruta personal -->
 
     <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <hr/>
+                    <h2>Ruta de aprendizaje 2021</h2>
+                    <p>También me propuse aprender estas nuevas tecnologías, entre otras, durante el año 2021</p>
+                    <hr/>
+                </div>
+            </div>
+            <div class="bcd_lista_2021 row">
+                <div class="col-md-3 text-center">
+                    <img data-aos="fade-right" src="img/flexbox-cssgrid.png" class="img-fluid" alt="Flexbox, y Grid">
+                    <h3 data-aos="fade-right">Flexbox, y Grid</h3>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img data-aos="fade-left" src="img/animacionesCSS.png" class="img-fluid" alt="Animaciones con CSS y JavaScript">
+                    <h3 data-aos="fade-left">Animaciones con CSS y JavaScript</h3>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img data-aos="fade-right" src="img/AJAXWeb.png" class="img-fluid" alt="AJAX">
+                    <h3 data-aos="fade-right">AJAX</h3>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img data-aos="fade-left" src="img/HTMLsemantico.png" class="img-fluid" alt="HTML semántico">
+                    <h3 data-aos="fade-left">HTML semántico</h3>
+                </div>
+            </div>
+        </div>
     </section>
-    
+
+    <!-- Texto y enlace a video GitHub -->
+
+    <section class="bcd_sec_colab">
+      <hr/>
+        <div class="container">
+            <div class="row">
+                <div class="bcd_colaboracion col-md-6">
+                    <br>
+                    <h2>Colabora en mi página</h2>
+                    <br>
+                    <p>Como parte de mi formación Frontend, aprendí acerca de
+                        <span class="popup" onmouseover="lecturaPopUpGit()"><b><u>Git</u></b><span class="popuptext" id="myPopup"> Git es un sistema de control de versiones distribuido gratuito</span></span> y 
+                        <span class="popup2" onmouseover="lecturaPopUpGitHub()"><b><u>GitHub</u></b>.
+                        <span class="popuptext2" id="myPopup2">GitHub es una forja para alojar proyectos utilizando el sistema de control de versiones Git.</span></span>
+                        <br>Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+                        <br>Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica!
+                        <br>Si no tenés ganas de buscarlo podés hacer click en la imagen para verlo ^^
+                        <br><div class="text-center"></p></div>
+                </div>
+                <div class="col-md-6 text-center">
+                  <br>
+                  <a href="https://vimeo.com/577246176" target="_blank" ><img data-aos="fade-left" src="img/TutorialGitHub.png" class="img-fluid" alt="Tutorial GitHub"></a>
+                  </div>
+            </div>
+        </div>
+      <hr/>
+    </section>
+
+    <!-- Fotos y enlaces a galeria -->
+
+    <section>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <hr/>
+                    <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
+                    <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+                    <hr/>
+                </div>
+            </div>
+            <div class="bcd_lista_2021 row">
+                <div class="col-md-4 text-center">
+                    <a href="fotos.html"><img data-aos="fade-right" src="img/1.jpg" class="img-fluid" alt="Cody en la playa"></a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="fotos.html"><img data-aos="fade-left" src="img/2.jpg" class="img-fluid" alt="Cody acampando"></a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="fotos.html"><img data-aos="fade-right" src="img/3.jpg" class="img-fluid" alt="Cody en una alberca"></a>
+                </div>
+                <div class="text-center bcd_sec_viaje_cody">
+                    <br>
+                    Puedes ver más, en la galería de fotos de mi página!
+                    <a href="fotos.html">Ir a la galería</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recomendaciones Cody -->
+
+    <section>
+        <div class="container bcd_sec_recomienda">
+            <div class="row bcd_cont_sec_1">
+                <div class="text-center">
+                    <h2><b>La importancia de las vacaciones</b></h2>
+                    <hr/>
+                    <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+                    <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+                    <p></p>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 bcd_sec_recomienda_block">
+                        <ol>
+                          <li>Mejora la salud mental</li>
+                          <li>Incrementa la motivación</li>
+                          <li>Reduce el burnout</li>
+                          <li>Mejora tu productividad y creatividad</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
   </main>
-</body>
+  
+    <!-- Archivos Bootstrap -->
+    
+    <script src="ext/booststrap/js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="ext/booststrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  
+    <!-- Archivo Animacion -->
+    
+    <script src="ext/aos.js"></script>
+    
+     <!-- Archivos Propios -->
+
+    <script src="js/index.js"></script>
+    <script src="js/funciones.js"></script>
+    
+    </body>
 </html>
