@@ -4,97 +4,144 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"> 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <title>Mis vacaciones - Cody</title>
 </head>
 <body>
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="container">
+          <div class="logo">
+            <img src="./images/cody.png" alt="Cody">
+          </div>
+          <div class="menu">
+            <a class="active" href="/">Inicio</a>
+            <a href="fotos.html">Fotos</a>
+          </div>
+        </div>
       </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+      <h1 data-aos="fade-down">Estas son mis Vacaciones</h1>
+      <p data-aos="fade-down">
+        Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme
+        <br />
+        del código, y en esta página quiero compartirlo contigo.
+      </p>
+      <a href="#holidays" class="btn" data-aos="zoom-in">Acompáñame en esta aventura</a>
     </header>
-
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+    <div class="content container">
+      <section class="holidays" id="holidays">
+        <div class="holidays__text" data-aos="fade-up">
+          <header>
+            <h2>Mis vacaciones Frontend</h2>
+          </header>
+          <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
+          <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+          <p> Estos son los cursos que estuve tomando: </p>
+          <div class="cursos">
+            <a class="cursos__item" href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank">
+              Curso profesional de Desarrollo Web
+            </a>
+            <a class="cursos__item" href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank">
+              Curso para crear mi primera página web
+            </a>
+          </div>
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+        <div class="holidays__image" data-aos="zoom-in">
+          <img src="./images/summer.png" alt="Cody Summer">
         </div>
-      </div>
-    </section>
+      </section>
+  
+      <section class="route">
+        <header data-aos="fade-up">
+          <h2>Ruta de aprendizaje 2021</h2>
+          <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+        </header>
+        <ul >
+          <li data-aos="fade-up" data-aos-duration="200"> Flexbox - Grid </li>
+          <li data-aos="fade-up" data-aos-duration="300"> Animaciones con CSS - JavaScript </li>
+          <li data-aos="fade-up" data-aos-duration="400"> AJAX </li>
+          <li data-aos="fade-up" data-aos-duration="500"> HTML semántico </li>
+          <li data-aos="fade-up" data-aos-duration="600"> Entre otros </li>
+        </ul>
+        <img class="wave_top" src="./images/wave_top.svg" alt="Wave">
+        <img class="cody_summer" src="./images/cody-summer.png" alt="Cody Summer">
+      </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+      <section class="collaborate">
+        <div class="collaborate__container">
+          <header data-aos="fade-up">
+            <h2>Colabora en mi página</h2>
+          </header>
+          <div class="collaborate__text" data-aos="fade-up">
+            <p>
+              Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub.
+              Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+              Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica      
+            </p>
+          </div>
+          <div class="collaborate__btn">
+            <a
+              data-aos="zoom-in"
+              class="btn"
+              href="https://vimeo.com/577246176"
+              target="_blank"
+            >
+              Ver Tutorial
+            </a>
+          </div>
+        </div>
+      </section>
 
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
+      <section class="gallery">
+        <header data-aos="fade-up">
+          <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
+          <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé</p>
+        </header>
+        <div class="fotos" data-aos="fade-up">
+          <div>
+            <img src="images/1.jpg" alt="Cody en la playa">
+          </div>
+          <div>
+            <img src="images/2.jpg" alt="Cody acampando">
+          </div>
+          <div>
+            <img src="images/3.jpg" alt="Cody en una alberca">
+          </div>
+        </div>
+          <a data-aos="zoom-in" class="btn" href="fotos.html">Ir a la galería</a>
+      </section>
+  
+      <section class="importance">
+        <header data-aos="fade-up">
+          <h2>La importancia de las vacaciones</h2>
+          <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+          <br />
+          <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+          <ul>
+            <li>Mejora la salud mental</li>
+            <li>Incrementa la motivación</li>
+            <li>Reduce el burnout</li>
+            <li>Mejora tu productividad y creatividad</li>
+          </ul>
+        </header>      
+      </section>
+    </div>
+    <footer>
+      ❮ ❯ by -
+      <a href="https://carlosc.tech" target="_blank">
+        ccdev
+      </a>
+    </footer>
   </main>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init()
+  </script>
 </body>
 </html>
