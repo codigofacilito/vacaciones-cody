@@ -1,11 +1,11 @@
 body {
-  background-color: blue;
+  background-color: #4e71d9;
   display: flex;
   flex-wrap: wrap;
 }
 
 nav {
-  background-color: blueviolet;
+  background-color: #f29f05;
   padding: 15px;
   display: flex;
   gap: 1em;
@@ -22,16 +22,21 @@ section {
 }
 
 .cursos div {
-  background-color: black;
+  background-color: #f29f05;
   color: white;
   max-width: 200px;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px gray;
+  border-radius: 2px;
 }
 .fotos img {
   max-width: 450px;
   display: inline-block;
 }
+ul {
+  background-color: #815dd9;
+}
+
 ul li {
   text-align: left;
 }
@@ -44,26 +49,31 @@ ol li {
 }
 
 #fotos-btn {
-  background-color: aqua;
+  background-color: #1dbd9a;
   border: solid 0px;
   border-radius: 5px;
-  color: black;
+  color: #fff;
   padding: 10px 15px;
   cursor: pointer;
 }
 
 #main-btn {
-  background-color: aqua;
+  background-color: #1dbd9a;
   border: solid 0px;
   border-radius: 5px;
-  color: black;
+  color: #fff;
   padding: 10px 15px;
   cursor: pointer;
+}
+button:hover {
+  background-color: #f2cb05;
 }
 
 #app {
   flex: 1;
   min-width: 250px;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 img {
