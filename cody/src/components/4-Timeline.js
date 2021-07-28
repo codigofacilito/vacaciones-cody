@@ -1,13 +1,12 @@
 import learningPath from "../data/learningPath.json";
 
 const Timeline = () => {
-  const willDo = learningPath.map((data, i) => {
+  //RENDER FUNCTION OF LEARNING PATH
+  const willDo = learningPath.map((data) => {
     return (
-      <>
-        <li className="path__timeline--container" key={data.id}>
-          {data.tech}
-        </li>
-      </>
+      <li className="path__timeline--container" key={data.id}>
+        {data.tech}
+      </li>
     );
   });
   if (learningPath.length > 0)
