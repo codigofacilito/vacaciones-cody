@@ -45,9 +45,14 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="carousel">
-      <ImageGallery items={images} />
-    </div>
+    <>
+      <h3 className="pictures__title">
+        Estas son algunas fotos de mis vacaciones
+      </h3>
+      <div className="carousel">
+        <ImageGallery items={images} />
+      </div>
+    </>
   );
 };
 export default Carousel;
