@@ -65,3 +65,10 @@ ol li {
   flex: 1;
   min-width: 250px;
 }
+
+img {
+  height: auto;
+  width: auto;
+  max-height: 300px;
+  max-width: 300px;
+}
