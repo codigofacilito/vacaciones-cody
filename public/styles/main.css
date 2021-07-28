@@ -1,0 +1,10 @@
+@import "./fonts.css";
+@import "./variables.css";
+@import "./global.css";
+@import "./animations.css";
+
+@import "./components/navbar.css";
+@import "./components/button.css";
+
+@import "./sections/main.css";
+@import "./sections/banner.css";

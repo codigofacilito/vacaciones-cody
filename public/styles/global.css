@@ -1,6 +1,6 @@
 * {
-  font-family: 'Rubik', sans-serif;
   box-sizing: border-box;
+  font-family: 'Rubik', system-ui;
   margin: 0;
   padding: 0;
 }
@@ -10,15 +10,15 @@ html {
 }
 
 body {
-  background: var(--background-color);
-  color: var(--text-color);
-}
-
-h1,h2,h2,h3,h4,h5,h6 {
-  font-weight: 500;
+  background: var(--body-background);
+  color: var(--body-color);
 }
 
 a {
   text-decoration: none;
   color: var(--link-color);
+}
+
+p {
+  line-height: 1.5;
 }
