@@ -5,17 +5,19 @@ const Studies = () => {
   const RenderCourses = () => {
     return coursesData.map((course) => {
       return (
-        <button type="button" className="studies__cursos--button">
-          <a
-            href={course.link}
-            alt={course.name}
-            target="_blank"
-            rel="noreferrer"
-            className="studies__cursos--button-link"
-          >
-            {course.frontName}
-          </a>
-        </button>
+        <>
+          <button type="button" className="studies__cursos--button">
+            <a
+              href={course.link}
+              alt={course.name}
+              target="_blank"
+              rel="noreferrer"
+              className="studies__cursos--button-link"
+            >
+              {course.frontName}
+            </a>
+          </button>
+        </>
       );
     });
   };
