@@ -204,28 +204,6 @@
     Hecho con 💚 por <a class="u-link" href="https://www.linkedin.com/in/angel-berlanga/" target="_blank">Angel Berlanga</a>
   </footer>
 
-  <script>
-    function getViewportHeight() {
-      document.querySelector(':root').style
-          .setProperty('--vh', window.innerHeight/100 + 'px')
-    }
-
-    window.addEventListener('resize', getViewportHeight)
-
-    getViewportHeight()
-  </script>
-  <script>
-    let prevScrollPos = window.pageYOffset
-    window.onscroll = function() {
-      let currentScrollPos = window.pageYOffset
-      if (prevScrollPos > currentScrollPos) {
-        document.querySelector('nav.Nav').style.bottom = "0"
-      } else {
-        document.querySelector('nav.Nav').style.bottom = "-60px"
-      }
-
-      prevScrollPos = currentScrollPos
-    }
-  </script>
+  <script src="js/app.js"></script>
 </body>
 </html>
