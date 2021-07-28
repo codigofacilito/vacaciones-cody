@@ -18,14 +18,20 @@
         flex-direction: row;
       }
     }
+    &--buttonWrap {
+      display: flex;
+      justify-content: center;
+    }
     &--button {
       margin-bottom: 10px;
       text-transform: uppercase;
-      width: 35%;
       border-radius: 15px;
       line-height: 30px;
       background: $colorPink;
       box-shadow: 2px 2px 5px $colorPurple;
+      @include tablet() {
+        margin: 0 10px;
+      }
       &:hover {
         transform: scale(1.05);
         background: $colorYellow;
