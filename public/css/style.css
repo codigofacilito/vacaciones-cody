@@ -421,6 +421,28 @@ nav ul li a {
 .c3:hover .icon i {
   color: #fff;
 }
+.c4:hover .icon {
+  background-color: #1bbc9b;
+}
+.c4 .icon i {
+  color: #1bbc9b;
+}
+.c4:hover .icon i {
+  color: #fff;
+}
+.c5:hover .icon {
+  background-color: #af6dec;
+}
+.c5 .icon i {
+  color: #af6dec;
+}
+.c5:hover .icon i {
+  color: #fff;
+}
+
+.ul li::marker {
+  content: "✔";
+}
 
 /* Footer*/
 footer {
