@@ -15,7 +15,11 @@
 }
 
 .brand {
-    @apply rounded-full h-12 w-12
+    @apply rounded-full h-9 w-9
+}
+
+.links {
+    @apply font-semibold m-0 self-end
 }
 
 .btn {
