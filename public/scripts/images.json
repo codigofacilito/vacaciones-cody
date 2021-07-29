@@ -1,0 +1,32 @@
+[
+    {
+        "imagen": "images/1.jpg",
+        "alt": "Cody Probando Una Bicicleta En La Playa",
+        "text": "Yo Probando Una Bicleta En La Playa"
+    },
+    {
+        "imagen": "images/2.jpg",
+        "alt": "Cody Acampando A La Orilla Del Mar",
+        "text": "Yo Acampando A La Orilla Del Mar"
+    },
+    {
+        "imagen": "images/3.jpg",
+        "alt": "Cody Disfrutando El Sol En Un Colchon Inflable En Una Bella Aberca",
+        "text": "Yo Disfrutando El Sol En Un Colchon Inflable En Una Bella Aberca"
+    },
+    {
+        "imagen": "images/4.jpg",
+        "alt": "Cody Disfrutando Un Delicioso Coco A La Orilla De La Playa",
+        "text": "Yo Disfrutando Un Delicioso Coco A La Orilla De La Playa"
+    },
+    {
+        "imagen": "images/5.jpg",
+        "alt": "Cody Llegando A Su Cuarto Rentado Con Airbnb",
+        "text": "Yo Llegando A Mi Cuarto Rentado Con Airbnb"
+    },
+    {
+        "imagen": "images/6.jpg",
+        "alt": "Cody Enojado En El Aeropuerto Por Que Ya Terminaron Sus Vacaciones",
+        "text": "Yo Enojado En El Aeropuerto Por Que Ya Terminaron Mis Vacaciones"
+    }
+]

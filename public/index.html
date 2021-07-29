@@ -1,100 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/new-style.css">
+  <title>Cody - Mis Vacaciones</title>
 </head>
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
-
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
+    <main>
+        <header class="[ container-header ]">
+            <div class="[ header ] [ container--clouds ]">
+              <nav class="[ header ] [ clouds ] [ container---nav ]">
+                <a class="[ header ] [ clouds ] [ nav ] [ logotipo----nav ]" href="./"><img src="images/favicon.png" alt="Logotipo de mis vacaciones"></a>
+                <a class="[ header ] [ clouds ] [ nav ] [ items----nav ]" href="./">Inicio</a>
+                <a class="[ header ] [ clouds ] [ nav ] [ items----nav ]" href="#ruta">Ruta</a>
+                <a class="[ header ] [ clouds ] [ nav ] [ items----nav ]" href="#fotos">Fotos</a>
+                <a class="[ header ] [ clouds ] [ nav ] [ items----nav ]" href="#salud">Salud</a>
+              </nav>
       
-    </section>
-    
-  </main>
+              <section class="[ header ] [ container--hero ]">
+                <h1 class="[ header ] [ hero ] [ h1---hero ]">Estas son mis Vacaciones</h1>
+                <p class="[ header ] [ hero ] [ p---hero ]">Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+              </section>
+            </div>
+          </header>
+
+          <div class="[ container-grid ]">
+            <section class="[ grid ] [ container--banner ]">
+              <h2 class="[ grid ] [ banner ] [ h2---banner ]">Mis Vacaciones Frontend</h2>
+
+              <div class="[ grid ] [ banner ] [ container---slide-banner ]">
+                <button id="prev-slide-banner" class="[ grid ] [ banner ] [ slide-banner ] [ prev----button-banner ]"><i class="fas fa-chevron-left"></i></button>
+                <p id="slide-banner-p" class="[ grid ] [ banner ] [ slide-banner ] [ parrafo----slide ]"></p>
+                <a id="slide-banner-b1" class="[ grid ] [ banner ] [ slide-banner ] [ hidde ]" href="" target="_blank"></a>
+                <a id="slide-banner-b2" class="[ grid ] [ banner ] [ slide-banner ] [ hidde ]" href="" target="_blank"></a>
+                <button id="next-slide-banner" class="[ grid ] [ banner ] [ slide-banner ] [ next----button-banner ]"><i class="fas fa-chevron-right"></i></button>
+              </div>
+   
+              <div class="custom-shape-divider-bottom-1627216586">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+                </svg>
+              </div>
+            </section> 
+
+            <section id="ruta" class="[ container-ruta1 ]">
+              <h2>Ruta de aprendizaje 2021</h2>
+              <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+              <ul>
+                <li>Flexbox, y Grid </li>
+                <li>Animaciones con CSS y JavaScript </li>
+                <li>AJAX </li>
+                <li>HTML semántico </li>
+                <li>Entre otros </li>
+              </ul>
+            </section>
+            
+            <section class="[ container-icon1 ]">
+              <i class="devicon-devicon-plain"></i>
+            </section>
+
+            <section class="[ container-icon2 ]">
+              <i class="devicon-github-original"></i>
+            </section>
+
+            <section class="[ container-ruta2 ]">
+              <h2>Colabora en mi página</h2>
+              <p>Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub.</p>
+              <p>Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.</p>
+              <p>Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica.</p>
+              <button><a href="https://codigofacilito.com/cursos/git-profesional" target="_blank">Ir al tutorial</a></button>
+            </section>
+
+            <section class="[ container-images-slide ]">
+              <div class="custom-shape-divider-top-1627216747">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+                </svg>
+              </div>
+              
+              <h2 id="fotos" class="[ images-slide ] [ h2--images-slide ]">Aquí te comparto algunas fotos de mis vacaciones</h2>
+
+              <div class="[ images-slide ] [ sub--container-images ]"> 
+                <button id="prev-slide-images" class="[ images-slide ] [ container-images ] [ prev----button-banner ]"><i class="fas fa-chevron-left"></i></button>
+                <img id="images-slide" class="[ images-slide ] [ container-images ] [ imagen---slides ]" src="" alt="">
+                <button id="next-slide-images" class="[ images-slide ] [ container-images ] [ next----button-banner ]"><i class="fas fa-chevron-right"></i></button>
+              </div>
+
+              <p id="text-images-slide" class="[ images-slide ] [ p--images-slides ]"></p>
+  
+              <div class="custom-shape-divider-bottom-1627216586">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+                </svg>
+              </div>
+            </section>
+
+            <section id="salud" class="[ container-salud1 ]">
+              <h2>La importancia de las vacaciones</h2>
+              <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente.</p>
+            </section>
+            
+            <section class="[ container-icon-salud1 ]">
+              <i class="fas fa-heartbeat"></i>
+            </section>
+  
+            <section class="[ container-icon-salud2 ]">
+              <i class="fas fa-notes-medical"></i>
+            </section>
+  
+            <section class="[ container-salud2 ]">
+              <h2>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</h2>
+                <ol>
+                  <li>Mejora la salud mental</li>
+                  <li>Incrementa la motivación</li>
+                  <li>Reduce el burnout</li>
+                  <li>Mejora tu productividad y creatividad</li>
+                </ol>
+            </section>
+          </div>
+        </main>
+        
+        <footer>
+          <div class="custom-shape-divider-top-1627218082">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+          </div>
+          <p>Powered By Cody | Mis Vacaciones - 2021</p>
+        </footer>
+
+        <script src="scripts/slides.js"></script>
 </body>
 </html>
