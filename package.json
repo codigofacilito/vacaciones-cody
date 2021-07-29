@@ -1,0 +1,23 @@
+{
+  "name": "vacaciones-cody",
+  "version": "1.0.0",
+  "description": "Cody está aprendiendo desarrollo Frontend, hizo su primer página, y ahora necesita de tu ayuda para mejorarla.",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiverMtz/vacaciones-cody.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NiverMtz/vacaciones-cody/issues"
+  },
+  "homepage": "https://github.com/NiverMtz/vacaciones-cody#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  }
+}

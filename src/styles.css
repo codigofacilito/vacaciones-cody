@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,100;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply font-extrabold;
+    @apply text-xl;
+  }
+  img {
+    @apply rounded-lg;
+  }
+}
+
+.brand {
+    @apply rounded-full h-12 w-12
+}
+
+.btn {
+  @apply py-2 px-4 font-semibold rounded-lg shadow-md;
+}
+.btn-green {
+  @apply text-white bg-green-500 hover:bg-green-700;
+}
