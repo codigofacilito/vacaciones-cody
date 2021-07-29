@@ -1,100 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
+    <header class="hero">
 
-    <section>
+      <nav class="nav">
+        <div class="nav__logo">
+          <img class="nav__logo__img" src="https://codigofacilito.com/assets/corner_cody-11947754168231d38e3e72c600a2e2670ef125b64bf6e49de933a86eab32ec2d.png" alt="logo-facilito"></div>
+    
+        <div class="nav__links button" >
+       
+        <a class="nav__links__link" href="fotos.html">Fotos</a>
+        </div>
+      </nav>
+
+
+      <div class="info " data-tilt data-tilt-max="2" data-tilt-glare data-tilt-speed="10" data-tilt-perspective="500" max-tilt-glare=".8">
+        
+       <div class="info__title">
+      <h1>Estas son mis Vacaciones</h1>
+      <p 
+      >Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+    </div> 
+
+      
+      <div class="info__img">
+        <img class="img" src="images/maleta3.webp" alt=""></div>
+      </div>
+    </header>
+ 
+<div class="vacaciones">
+
+  <section class="vacas">
+      <class class="vacas__info">
       <header>
-        <h2>Mis vacaciones Frontend</h2>
+        <h2 class="vacas__info__title">Mis vacaciones<br> Frontend</h2>
       </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
+      <p class="vacas__info__p"> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript 
+       Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+      <h2 class="vacas__info__title"> Estos son los cursos que estuve tomando</h2>
+      <div class="vacas__info__cursos">
         <div>
-          <p>Curso profesional de Desarrollo Web</p>
+          <p class="vacas__info__p">Curso profesional de Desarrollo Web</p>
         </div>
         <div>
-          <p>Curso para crear mi primera página web</p>
+          <p class="vacas__info__p">Curso para crear mi primera página web</p>
         </div>
       </div>
-    </section>
+    </section> 
 
-    <section>
+    <section class="vacas">
+      <div class="vacas__info">
       <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+        <h2 class="vacas__info__title">Ruta de aprendizaje<br> 2021</h2>
+        <p class="vacas__info__p"> También me propuse aprender nuevas tecnologías durante 2021</p>
       </header>
       <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
+        <li class="vacas__list"> Flexbox, y Grid </li>
+        <li class="vacas__list"> Animaciones con CSS y JavaScript </li>
+        <li class="vacas__list"> AJAX </li>
+        <li class="vacas__list"> HTML semántico </li>
+        <li class="vacas__list"> Entre otros </li>
+      </ul></div>
     </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
 
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+    <section class="vacas">
+      <div class="vacas__info">
+      <header >
+        <h2 class="vacas__info__title">Colabora en mi página</h2>
       </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
+      <p class="vacas__info__p">
+        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub.
+        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica</p>
+        <a class="vacas__vinculo"  href="https://codigofacilito.com/" target="_blank" >Ir al tutorial</a>
+      </div>
+    
+    </section>
+
+    <section class="vacas">
+      <div class="vacas__info">
+      <header>
+        <h2 class="vacas__info__title">Te comparto<br> algunas fotos <br>de mis vacaciones</h2>
+        <p class="vacas__info__p">¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+      </header>
+      <div class="vacas__fotos">
+        <img loading="lazy" class="tilt" src="images/1.jpg" alt="Cody en la playa">
+        <img loading="lazy" class="tilt" src="images/2.jpg" alt="Cody acampando">
+        <img loading="lazy" class="tilt" src="images/3.jpg" alt="Cody en una alberca">
+        
         </p>
       </div>
+    <p class="vacas__info__p">
+          Puedes ver más, en la galería de fotos de mi página</p>
+          <a class="vacas__vinculo button" href="fotos.html">Ir a la galería</a>
+    </div>
     </section>
 
-    <section>
+    <section class="vacas">
+      <div class="vacas__info">
       <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+        <h2 class="vacas__info__title">La importancia de las vacaciones</h2>
+        <p class="vacas__info__p">Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente.
+        Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
         <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
+          <li class="vacas__list">Mejora la salud mental</li>
+          <li class="vacas__list">Incrementa la motivación</li>
+          <li class="vacas__list">Reduce el burnout</li>
+          <li class="vacas__list">Mejora tu productividad</li>
+          <li class="vacas__list">Despierta tu creatividad</li>
         </ol>
       </header>
-      
+      </div>
     </section>
-    
+</div>
   </main>
+  <footer class="footer">
+    <p>2021&reg;Desarrollada por EdGuSPra.<br>Córdoba Argentina </p>
+  </footer>
+  <script type="text/javascript" src="js/tilt.js"></script>
+  
 </body>
 </html>
