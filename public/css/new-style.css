@@ -369,6 +369,9 @@ footer p {
   .container---nav * + * {
     font-size: 17px;
   }
+  .container--hero {
+     padding: 5rem 1rem;
+  }
   .container-ruta2 button {
     padding: 1rem 2rem;
   }
@@ -380,6 +383,7 @@ footer p {
   .container--hero {
     text-align: center;
     width: 100%;
+    padding: 5rem 1rem;
   }
   .container-grid {
     grid-template-columns: repeat(3, 1fr);
