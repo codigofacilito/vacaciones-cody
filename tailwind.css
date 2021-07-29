@@ -1,0 +1,13 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base     {
+    h2 {
+        @apply font-extralight;
+        @apply text-xl;
+    }
+    img {
+        @apply rounded-md;
+    }
+}
