@@ -16,7 +16,8 @@ main{
 }
 
 .navbar-espacio img{
-  margin-right: 130%;
+  margin-top: 15px;
+  margin-right: 70%;
 }
 
 .navbar-espacio a{
@@ -81,6 +82,14 @@ main{
 }
 
 .bg-oscuro{
+  background: transparent;
+  -webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
+
+.active-navbar{
   background-color: #343a40ed;
 }
 
@@ -90,11 +99,19 @@ main{
   color: white;
 }
 
+.color-fondo-gallery{
+  background-color: #343a4066;
+}
+
 .color-fondo h2{
   margin-bottom: 2rem;
 }
 .color-fondo p{
   margin-bottom: 8px;
+}
+
+.color-fondo-gallery h1{
+  color: white;
 }
 
 .section{

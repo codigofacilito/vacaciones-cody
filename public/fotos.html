@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="icon" href="images/cody.png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,14 +19,15 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script type="text/javascript" src="js/venobox.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body class="fondo-gallery">
-  <main>
+  <main class="color-fondo-gallery">
     <header>
       <nav class="navbar navbar-dark bg-oscuro navbar-expand-lg fixed-top">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav navbar-espacio">
-              <img src="images/cody.png" width="12%">
+              <img src="images/logo.png" width="25%" height="25%">
               <a class="nav-item nav-link " href="index.html"><span class="material-icons">&#xe88a;</span>Inicio</a>
               <a class="nav-item nav-link active" href="?"><span class="material-icons">&#xe3b6;</span>Fotos</a>
           </div>
@@ -119,18 +121,3 @@
   </div>
 </footer>
 </html>
-<script>
-  $(document).ready(function(){
-		$('.venobox').venobox({
-      border     : '10px',
-      numeratio  : true,
-      infinigall : true,
-      titleBackground: '#333',
-      closeBackground: '#333',
-      titleColor: '#fff',
-      spinColor: '#fff',
-      spinner: 'three-bounce',
-      numerationPosition: 'bottom'
-    }); 
-	});
-</script>
