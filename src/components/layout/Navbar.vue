@@ -43,16 +43,28 @@ nav {
     width: 70px;
     margin-left: 25px;
     cursor: pointer;
+
+    @media(max-width: 750px){
+      width: 50px;
+      margin-left: 10px;
+    }
   }
 
   a {
     margin-right: 20px;
-    padding: 0 20px;
+    padding: 10px 20px;
     color: $font-color;
     font-weight: bold;
     font-size: 1.2rem;
     font-family: 'IBM Plex Sans', sans-serif;
     text-decoration: none;
+    border-radius: 8px;
+    transition: all 500ms ease;
+
+    &:hover {
+      background-color: hsl($hue, $saturation, $lightness - 2%);
+      color: #00C6A7;
+    }
   }
 }
 </style>
