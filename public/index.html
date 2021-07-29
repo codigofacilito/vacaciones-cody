@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://localhost:5000/">
 
   <!-- MANIFEST ICONS -->
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -12,26 +13,38 @@
   <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="images/favicon/android-chrome-512x512.png">
   <link rel="manifest" href="/site.webmanifest">
+
   <meta name="apple-mobile-web-app-status-bar" content="#FFFFFF" />
   <meta name="theme-color" content="#FFFFFF" />
 
+  <!-- META TAGS -->
+  <meta name="author" content="Angel Berlanga">
+  <meta name="description" content="En 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.">
+  <meta name="keywords" content="Cody, Vacaciones, CodigoFacilito, Concurso, Verano">
+
   <!-- OPENGRAPH -->
   <meta property="og:title" content="Cody | Mis Vacaciones" />
-  <meta property="og:image" content="https://c20102a57eca.ngrok.io/images/1.jpg" />
+  <meta property="og:image" content="https://d1a41f39233c.ngrok.io/images/1.jpg" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://c20102a57eca.ngrok.io/" />
+  <meta property="og:url" content="https://d1a41f39233c.ngrok.io/" />
   <meta property="og:description" content="En 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo." />
 
-  <title>Cody | Mis vacaciones</title>
+  <title>Cody | Mis Vacaciones</title>
 
   <!-- STYLES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="css/reset.css" as="style">
+  <link rel="preload" href="css/utils.css" as="style">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="css/home.css" as="style">
+  <link rel="stylesheet" href="css/reset.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/utils.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/home.css" media="print" onload="this.media='all'">
 
-  <!-- REGISTER SERVICE WORKER -->
+   <!-- REGISTER SERVICE WORKER -->
   <script>
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", function() {
@@ -47,11 +60,11 @@
   <header>
     <nav class="Nav">
       <a href="index.html" class="Nav-option is-active">
-        <img class="u-icon" src="images/icons/home-active.svg">
+        <img class="u-icon" src="images/icons/home-active.svg" width="25" height="25" alt="">
         <span>Inicio</span>
       </a>
       <a href="fotos.html" class="Nav-option">
-        <img class="u-icon" src="images/icons/gallery.svg">
+        <img class="u-icon" src="images/icons/gallery.svg" width="40" height="40" alt="Galería">
         <span>Galería</span>
       </a>
     </nav>
@@ -60,7 +73,7 @@
       <h1 class="u-header Landing-title">Estas son mis Vacaciones</h1>
       <p class="Landing-secondaryText"><i>Soy Cody, un aspirante a Dev</i></p>
       <p class="Landing-paragraph">En 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-      <img class="Landing-img" src="./images/corner_cody.png" loading="lazy">
+      <img class="Landing-img" src="./images/corner_cody.png" alt="">
     </section>
   </header>
 
@@ -72,7 +85,7 @@
         </a>
       </header>
 
-      <p class="u-paragraph"> Durante el verano de 2019, decidí comenzar a aprender desarrollo <a href="https://frontendmasters.com/books/front-end-handbook/2018/what-is-a-FD.html" class="u-link" target="_blank">Frontend</a>, por lo que durante mi viaje, estuve aprendiendo <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="u-link" target="_blank">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="u-link" target="_blank">CSS</a>, y <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="u-link" target="_blank">JavaScript</a></p>
+      <p class="u-paragraph"> Durante el verano de 2019, decidí comenzar a aprender desarrollo <a href="https://frontendmasters.com/books/front-end-handbook/2018/what-is-a-FD.html" class="u-link" target="_blank" rel="noreferrer">Frontend</a>, por lo que durante mi viaje, estuve aprendiendo <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="u-link" target="_blank" rel="noreferrer">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="u-link" target="_blank" rel="noreferrer">CSS</a>, y <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="u-link" target="_blank" rel="noreferrer">JavaScript</a></p>
       <p class="u-paragraph"> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías Frontend, construyendo esta página </p>
 
       <h3 class="u-header u-h3 Cursos-title"> Estos son los cursos que estuve tomando </h3>
@@ -80,14 +93,14 @@
     </section>
 
     <div class="u-wrapper Cursos u-horizontalScroll">
-      <a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank" class="Curso u-horizontalScrollItem">
+      <a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank" class="Curso u-horizontalScrollItem" rel="noreferrer">
         <h3 class="u-header u-h3 Curso-title">Curso profesional de Desarrollo Web</h3>
-        <img class="Curso-img u-rounded u-horizontal-scroll-item-img" src="images/curso-profesional-webdev.png" loading="lazy">
+        <img class="Curso-img u-rounded u-horizontal-scroll-item-img" src="images/curso-profesional-webdev.png" loading="lazy" alt="">
         <p class="u-paragraph Curso-description">Cada día se vuelve más importante que todo el mundo aprenda a crear un sitio web, ya sea para un boletín de información, una invitación, un portafolio personal de trabajo, o para un negocio de desarrollo web.</p>
       </a>
-      <a href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank" class="Curso u-horizontalScrollItem">
+      <a href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank" class="Curso u-horizontalScrollItem" rel="noreferrer">
         <h3 class="u-header u-h3 Curso-title">Curso para crear mi primera página web</h3>
-        <img class="Curso-img u-rounded u-horizontal-scroll-item-img" src="images/curso-crear-primera-pagina.png" loading="lazy">
+        <img class="Curso-img u-rounded u-horizontal-scroll-item-img" src="images/curso-crear-primera-pagina.png" loading="lazy" alt="">
         <p class="u-paragraph Curso-description">Aprende a crear tu primera página web desde 0, sin conocimientos previos. Crea un sitio web funcional y atractivo, aunque nunca antes hayas hecho una página web y no tengas idea de cómo crearla</p>
       </a>
     </div>
@@ -142,16 +155,16 @@
       </header>
 
       <p class="u-paragraph">
-      Como parte de mi formación Frontend, aprendí acerca de <a href="https://codigofacilito.com/cursos/git-profesional" class="u-link" target="_blank">Git</a> y <a href="https://codigofacilito.com/articulos/como-crear-una-cuenta-y-un-repo-en-github" class="u-link" target="_blank">GitHub</a>, por lo que decidí subir <a href="https://github.com/codigofacilito/vacaciones-cody" class="u-link" target="_blank">mi código</a> a GitHub
+      Como parte de mi formación Frontend, aprendí acerca de <a href="https://codigofacilito.com/cursos/git-profesional" class="u-link" target="_blank" rel="noreferrer">Git</a> y <a href="https://codigofacilito.com/articulos/como-crear-una-cuenta-y-un-repo-en-github" class="u-link" target="_blank" rel="noreferrer">GitHub</a>, por lo que decidí subir <a href="https://github.com/codigofacilito/vacaciones-cody" class="u-link" target="_blank" rel="noreferrer">mi código</a> a GitHub
       </p>
       <p class="u-paragraph">
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página y enviando un <a class="u-link" href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests" target="_blank">Pull Request</a>
+        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página y enviando un <a class="u-link" href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests" target="_blank" rel="noreferrer">Pull Request</a>
       </p>
       <p class="u-paragraph">
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un <a class="u-link" href="https://www.youtube.com/watch?v=Zqft6yNRuNs" target="_blank">tutorial que lo explica</a>
+        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un <a class="u-link" href="https://www.youtube.com/watch?v=Zqft6yNRuNs" target="_blank" rel="noreferrer">tutorial que lo explica</a>
       </p>
       <p class="u-paragraph">
-      También agregué un <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" class="u-link" target="_blank">iframe</a> para que puedas ver el tutorial sin abandonar la página
+      También agregué un <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" class="u-link" target="_blank" rel="noreferrer">iframe</a> para que puedas ver el tutorial sin abandonar la página
       </p>
       <iframe class="u-rounded" width="560" height="315" src="https://www.youtube.com/embed/Zqft6yNRuNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
     </section>
@@ -166,9 +179,9 @@
     </section>
 
     <div class="Fotos u-horizontalScroll">
-      <img class="Foto u-rounded u-horizontalScrollItem" src="images/1.jpg" alt="Cody en la playa" loading="lazy">
-      <img class="Foto u-rounded u-horizontalScrollItem" src="images/2.jpg" alt="Cody acampando" loading="lazy">
-      <img class="Foto u-rounded u-horizontalScrollItem" src="images/3.jpg" alt="Cody en una alberca" loading="lazy">
+      <img class="u-rounded u-horizontalScrollItem" src="images/1.jpg" alt="Cody en la playa" loading="lazy">
+      <img class="u-rounded u-horizontalScrollItem" src="images/2.jpg" alt="Cody acampando" loading="lazy">
+      <img class="u-rounded u-horizontalScrollItem" src="images/3.jpg" alt="Cody en una alberca" loading="lazy">
     </div>
 
     <section class="u-wrapper">
@@ -194,14 +207,14 @@
       <ol class="u-list">
         <li>Mejora la salud mental</li>
         <li>Incrementa la motivación</li>
-        <li>Reduce el <a class="u-link" href="https://www.significados.com/burnout/" target="_blank">Burnout</a></li>
+        <li>Reduce el <a class="u-link" href="https://www.significados.com/burnout/" target="_blank" rel="noreferrer">Burnout</a></li>
         <li>Mejora tu productividad y creatividad</li>
       </ol>
     </section>
   </main>
 
   <footer class="Footer u-wrapper u-margin-0 u-paragraph">
-    Hecho con 💚 por <a class="u-link" href="https://www.linkedin.com/in/angel-berlanga/" target="_blank">Angel Berlanga</a>
+    Hecho con 💚 por <a class="u-link" href="https://www.linkedin.com/in/angel-berlanga/" target="_blank" rel="noreferrer">Angel Berlanga</a>
   </footer>
 
   <script src="js/app.js"></script>

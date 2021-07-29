@@ -1,0 +1,224 @@
+ol {
+  list-style-type: number;
+  margin-left: var(--padding-double);
+}
+
+.u-h3 {
+  color: black;
+  text-align: center;
+  font-size: .9em;
+}
+
+.u-textSecondary {
+  font-size: .7em;
+  color: #6B705C;
+  text-align: center;
+}
+
+.u-rounded {
+  border-radius: var(--padding);
+}
+
+.u-horizontalScroll {
+  display: inline-flex;
+  overflow: auto;
+  padding: 0 0 0 var(--padding-double);
+  width: calc(100vw - var(--padding-double));
+  gap: calc(var(--padding) * 3);
+}
+
+.u-horizontalScroll::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+.u-horizontalScroll::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 10px;
+  border-right: var(--padding-double) transparent solid;
+  border-left: var(--padding-double) transparent solid;
+  
+  background-clip: padding-box;
+}
+
+.u-horizontalScroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.u-horizontalScrollItem {
+  width: var(--curso-card-width);
+}
+
+.u-horizontalScrollItem:last-child {
+  margin-right: var(--padding-double);
+}
+
+.u-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding);
+}
+
+/* LANDING SECTION */
+.Landing {
+  height: var(--landing-height);
+  padding-top: 12.5vh;
+
+  background: linear-gradient(150deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+}
+
+.Landing-title {
+  font-family: var(--font-header);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Landing-secondaryText {
+  text-align: center;
+  margin: 7.5vh auto;
+  color: white;
+}
+
+.Landing-paragraph {
+  color: white;
+  padding-right: 20vw;
+  font-size: 1.5em;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.Landing-img {
+  position: absolute;
+  top: calc(var(--100vh) - var(--navbar-height) - 155px);
+  right: 0;
+
+  width: 150px;
+  height: 155px; 
+
+  aspect-ratio: 30 / 31;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+@media screen and (min-width: 425px) {
+  .Landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    height: calc(var(--100vh) - var(--navbar-height) - var(--padding-double));
+  }
+
+  .Landing-paragraph {
+    text-align: center;
+    padding-right: 0;
+    width: var(--wrapper-width);
+  }
+}
+
+/* INTRO SECTION */
+.Cursos-title.u-h3 {
+  margin: var(--padding);
+}
+
+.Curso {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--padding);
+  color: black;
+}
+
+.Curso-title {
+  width: var(--curso-card-width);
+}
+
+/* FOTOS SECTION */
+.Fotos {
+  padding-bottom: var(--padding);
+}
+
+/* RUTA DE APRENDIZAJE SECTION */
+.RutaDeAprendizaje-list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  gap: var(--padding);
+}
+
+.Checkbox {
+  /* RESET CHECKBOX STYLE */
+  -webkit-appearance: none;
+  appearance: none;
+
+	display: inline-block;
+	position: relative;
+  width: 25px;
+  height: 25px;
+
+	border-radius: 50%;
+  background-color: transparent;
+  border: 5px solid var(--color-secondary);
+
+  animation: pop-reverse .5s;
+}
+
+.Checkbox:checked {
+  background-color: var(--color-secondary);
+  padding: 0;
+  border: none;
+
+  animation: pop .5s;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0px rgba(0,0,0, 0.2);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 5px rgba(0,0,0, 0.1);
+  } 
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0,0,0, 0);
+  }
+}
+
+@keyframes pop-reverse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(.8);
+  } 
+  100% {
+    transform: scale(1);
+  }
+}
+
+.Checkbox:checked:after {
+  content: '';
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  background: url('../images/checkmark.png') no-repeat;
+  background-size: 60%;
+  background-position: center;
+}
+
+/* COLABORA EN MI PAGINA SECTION */
+iframe {
+  width: calc(var(--wrapper-width) - var(--padding-double));
+  height: 40vh;
+}
+

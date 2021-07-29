@@ -1,51 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
+  <link rel="canonical" href="https://localhost:5000/fotos.html">
+
+  <!-- MANIFEST ICONS -->
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/favicon/android-chrome-512x512.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta name="apple-mobile-web-app-status-bar" content="#FFFFFF" />
+  <meta name="theme-color" content="#FFFFFF" />
+
+  <!-- META TAGS -->
+  <meta name="author" content="Angel Berlanga">
+  <meta name="description" content="En 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.">
+  <meta name="keywords" content="Cody, Vacaciones, CodigoFacilito, Concurso, Verano, Fotos, Galería">
+ 
+  <!-- OPENGRAPH -->
+  <meta property="og:title" content="Cody | Galería de Fotos" />
+  <meta property="og:image" content="https://c20102a57eca.ngrok.io/images/1.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://c20102a57eca.ngrok.io/fotos.html" />
+  <meta property="og:description" content="En 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo." />
+ 
+  <title>Cody | Galería de Fotos</title>
+ 
+  <!-- STYLES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="css/reset.css" as="style">
+  <link rel="preload" href="css/utils.css" as="style">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="css/fotos.css" as="style">
+  <link rel="stylesheet" href="css/reset.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/utils.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/fotos.css" media="print" onload="this.media='all'">
+ 
+  <!-- REGISTER SERVICE WORKER -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker
+          .register("/serviceWorker.js")
+            .then(res => console.log("service worker registered"))
+            .catch(err => console.log("service worker not registered", err))
+      })
+    }
+  </script>
 </head>
 
 <body>
   <header>
     <nav class="Nav">
-      <a href="index.html" class="Nav-option">
-        <img class="u-icon" src="images/icons/home.svg">
+      <a href="/" class="Nav-option">
+        <img class="u-icon" src="images/icons/home.svg" width="40" height="40" alt="Inicio">
         <span>Inicio</span>
       </a>
       <a href="fotos.html" class="Nav-option is-active">
-        <img class="u-icon" src="images/icons/gallery-active.svg">
+        <img class="u-icon" src="images/icons/gallery-active.svg" width="25" height="25" alt="">
         <span>Galería</span>
       </a>
     </nav>
 
-    <h2 class="u-h2">Galería completa de mis vacaciones</h2>
+    <h2 class="u-wrapper u-h2">Galería completa de mis vacaciones</h2>
   </header>
 
   <main>
-    
-
-    <div class="Fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+    <div class="u-wrapper Gallery-fotos">
+      <img class="Gallery-foto" src="images/1.webp" alt="Cody en la playa" width="640" height="480">
+      <img class="Gallery-foto" src="images/2.webp" alt="Cody acampando" width="640" height="480">
+      <img class="Gallery-foto" src="images/3.webp" alt="Cody en una alberca" loading="lazy" width="640" height="480">
+      <img class="Gallery-foto" src="images/4.webp" alt="Cody tomando el sol en la playa" loading="lazy" width="640" height="480">
+      <img class="Gallery-foto" src="images/5.webp" alt="Cody en los callejones de la ciudad" loading="lazy" width="640" height="480">
+      <img class="Gallery-foto" src="images/6.webp" alt="Cody en el aeropuerto" loading="lazy" width="640" height="480">
     </div>
-
   </main>
 
+  <footer class="Footer u-wrapper u-margin-0 u-paragraph">
+    Hecho con 💚 por <a class="u-link" href="https://www.linkedin.com/in/angel-berlanga/" target="_blank" rel="noreferrer">Angel Berlanga</a>
+  </footer>
 
-  <footer class="u-paragraph">Hecho con 💚 por <a class="u-link" href="https://www.linkedin.com/in/angel-berlanga/">Angel Berlanga</a></footer>
+  <script src="js/app.js"></script>
+  <script src="js/popUp.js"></script>
 </body>
-
 </html>
