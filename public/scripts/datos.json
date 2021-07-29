@@ -1,0 +1,15 @@
+[
+    {
+        "parrafo": "Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript"
+    },
+    {
+        "parrafo": "Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página"
+    },
+    {
+        "parrafo": "Estos son los cursos que estuve tomando:",
+        "enlace1": "https://codigofacilito.com/cursos/frontend-profesional",
+        "texto1": "Curso profesional de Desarrollo Web",
+        "enlace2": "https://codigofacilito.com/cursos/primera-pagina-2019",
+        "texto2": "Curso para crear mi primera página web"
+    }
+]

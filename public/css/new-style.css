@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --ColorPrincipalFont: #000000;
+  --Gradient: linear-gradient(25deg, #ffff00 0%, #00d4ff 100%);
+}
+body {
+  font-size: 16px;
+}
+.hidde {
+    display: none;
+}
+.container-header {
+  width: 100%;
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-position: center center;
+}
+.container--clouds {
+  width: 100%;
+  animation: clouds 500s linear infinite;
+  background: url(../images/clouds.png) repeat-x;
+  background-size: cover;
+  position: relative;
+}
+@keyframes clouds {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: -113.68rem;
+  }
+}
+.container---nav {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  padding: 1em;
+}
+.logotipo----nav img {
+  width: 3em;
+}
+.container---nav * + * {
+  font-size: 1.5em;
+  color: var(--ColorPrincipalFont);
+  font-weight: bold;
+  margin-left: 2rem;
+}
+.container---nav * + *:hover {
+  color: white;
+}
+.container--hero {
+  padding: 5rem 3rem;
+  width: 75%;
+}
+.h1---hero {
+  color: var(--ColorPrincipalFont);
+  font-size: 7em;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.p---hero {
+  color: var(--ColorPrincipalFont);
+  font-size: 1.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.container-grid {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "banner			     banner          banner"
+    "ruta1	         ruta1           icon1"
+    "icon2		       ruta2           ruta2"
+    "images-slides 	 images-slides   images-slides"
+    "salud1          salud1          icon-salud1"
+    "icon-salud2     salud2          salud2";
+}
+.container--banner {
+  padding: 1em 0 0 0;
+  grid-area: banner;
+  background: var(--Gradient);
+}
+.h2---banner {
+  text-align: center;
+  font-size: 3em;
+}
+.container---slide-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 5em;
+}
+.parrafo----slide {
+    font-size: 1.5em;
+    text-align: center;
+}
+.prev----button-banner {
+    font-size: 3em;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    left: 1rem;
+    position: absolute;
+    transition: 500ms;
+}
+.prev----button-banner:hover {
+    color: var(--ColorPrincipalFont);
+    transition: 500ms;
+}
+.next----button-banner {
+    font-size: 3em;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    right: 1rem;
+    position: absolute;
+    transition: 500ms;
+}
+.next----button-banner:hover {
+    color: var(--ColorPrincipalFont);
+    transition: 500ms;
+}
+.button----slide {
+    color: var(--ColorPrincipalFont);
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    transition: 500ms;
+    font-size: 1em;
+}
+.button----slide:hover {
+    color: #ffffff;
+    background-color: var(--ColorPrincipalFont);
+    transition: 500ms;
+}
+.container-ruta1 {
+    grid-area: ruta1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+.container-ruta1 h2 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+.container-ruta1 p {
+    font-size: 2em;
+    text-transform: capitalize;
+}
+.container-ruta1 ul {
+    margin-top: 1rem;
+    font-size: 1.5em;
+    list-style: none;
+}
+.container-icon1 {
+    grid-area: icon1;
+    display: flex;
+    justify-content: center;
+    font-size: 25em;
+    align-items: center;
+}
+.container-icon2 {
+    grid-area: icon2;
+    display: flex;
+    justify-content: center;
+    font-size: 25em;
+    align-items: center;
+}
+.container-ruta2 {
+    grid-area: ruta2;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+.container-ruta2 h2 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+.container-ruta2 p {
+    font-size: 2em;
+    margin-top: 1rem;
+}
+.container-ruta2 button {
+    margin-top: 1em;
+    background-color: var(--ColorPrincipalFont);
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 25px;
+    transition: 500ms;
+    font-size: 2em;
+}
+.container-ruta2 button:hover {
+    background-color: #00d4ff;
+    transition: 500ms;
+}
+.container-ruta2 button a {
+    color: #ffffff;
+}
+.container-images-slide {
+    text-align: center;
+    grid-area: images-slides;
+    background: var(--Gradient);
+}
+.h2--images-slide {
+    font-size: 3em;
+    margin: 1rem 0;
+    text-transform: capitalize;
+}
+.sub--container-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagen---slides {
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 25px;
+}
+.p--images-slides {
+  font-size: 2em;
+  color: var(--ColorPrincipalFont);
+  margin: 1rem 0;
+}
+.container-salud1 {
+  grid-area: salud1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+.container-salud1 h2 {
+  font-size: 3.5em;
+  text-transform: uppercase;
+}
+.container-salud1 p {
+  font-size: 2em;
+  margin-top: 1rem;
+}
+.container-icon-salud1 {
+  grid-area: icon-salud1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 25em;
+}
+.container-icon-salud2 {
+  grid-area: icon-salud2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 25em;
+}
+.container-salud2 {
+  grid-area: salud2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+.container-salud2 h2 {
+  font-size: 3.5em;
+  text-transform: uppercase;
+}
+.container-salud2 ol {
+  margin-top: 1rem;
+  font-size: 1.5em;
+}
+footer {
+  margin-top: 3rem;
+  background-image: url(../images/background-footer.png);
+  background-size: cover;
+}
+footer p {
+  font-size: 2em;
+  padding: 1em 0;
+  text-align: center;
+}
+.custom-shape-divider-top-1627216747 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .custom-shape-divider-top-1627216747 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+  }
+  .custom-shape-divider-top-1627216747 .shape-fill {
+    fill: #ffffff;
+  }
+  .custom-shape-divider-bottom-1627216586 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  .custom-shape-divider-bottom-1627216586 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+  }
+  .custom-shape-divider-bottom-1627216586 .shape-fill {
+    fill: #ffffff;
+  }
+  .custom-shape-divider-top-1627218082 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .custom-shape-divider-top-1627218082 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 86px;
+    transform: rotateY(180deg);
+  }
+  .custom-shape-divider-top-1627218082 .shape-fill {
+    fill: #ffffff;
+  }
+
+  /*Media Querys*/
+@media (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 8px;
+  }
+  .container---nav * + * {
+    font-size: 17px;
+  }
+  .container-ruta2 button {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 9px;
+  }
+  .container--hero {
+    text-align: center;
+    width: 100%;
+  }
+  .container-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:
+      "banner			     banner          banner"
+      "ruta1	         ruta1           ruta1"
+      "icon1           icon1           icon1"
+      "ruta2		       ruta2           ruta2"
+      "icon2           icon2           icon2"
+      "images-slides 	 images-slides   images-slides"
+      "salud1          salud1          salud1"
+      "icon-salud1     icon-salud1     icon-salud1"
+      "salud2          salud2          salud2"
+      "icon-salud2     icon-salud2     icon-salud2";
+  }
+  i {
+    padding: 2rem 0;
+  }
+}
