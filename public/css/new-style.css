@@ -372,6 +372,9 @@ footer p {
   .container--hero {
      padding: 5rem 1rem;
   }
+  .imagen---slides {
+    width:80%;
+  }
   .container-ruta2 button {
     padding: 1rem 2rem;
   }
