@@ -9,15 +9,26 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <nav class="navigation">
+        <ul>
+          <li><a id="inicio">Inicio</a></li>
+          <li><a id="fotos">Fotos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <div id="app"></div>
+  <footer class="footer">
+    <div class="container">
+      <p>Diseño: Mauricio Covarrubias</p>
+    </div>
+  </footer>
 </body>
 <template id="main-view">
-  <main>
+  <main class="container">
     <header>
-      <nav>
-        <button id="main-btn">Inicio</button>
-        <button id="fotos-btn">Fotos</button>
-      </nav>
       <h1>Estas son mis Vacaciones</h1>
       <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
     </header>
@@ -102,13 +113,8 @@
   </main>
 </template>
 <template id="fotos-view">
-  <main>
+  <main class="container">
     <header>
-      <nav>
-        <button id="main-btn">Inicio</button>
-        <button id="fotos-btn">Fotos</button>
-      </nav>
-      </nav>
       <h2>Galería completa de mis vacaciones</h2>
     </header>
     <div class="fotos">
@@ -118,9 +124,7 @@
       <img src="images/4.jpg" alt="Cody en una alberca">
       <img src="images/5.jpg" alt="Cody en una alberca">
       <img src="images/6.jpg" alt="Cody en una alberca">
-      
     </div>
-
   </main>
 </template>
 <script src="js/main.js"></script>

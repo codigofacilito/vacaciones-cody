@@ -1,20 +1,74 @@
 body {
-  background-color: #4e71d9;
-  display: flex;
-  flex-wrap: wrap;
+  background: #4e71d9;
+  font-family: georgia, Times, serif;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.6em;
+  margin: 0;
 }
 
-nav {
+h1 {
+  font-size: 2rem;
+  line-height: 1.3em;
+}
+
+p {
+  margin-bottom: 1.6em;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation ul li a:hover {
+  background-color: #1dbd9a;
+}
+
+.container {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.header {
   background-color: #f29f05;
-  padding: 15px;
-  display: flex;
-  gap: 1em;
+  color: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+}
+
+.footer {
+  background-color: #f29f05;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 6rem;
 }
 
 main {
-  text-align: center;
-  /*max-width: 960px;*/
-  margin: 0 auto;
+  padding-top: 5rem;
 }
 
 section {
@@ -27,14 +81,11 @@ section {
   max-width: 200px;
   display: inline-block;
   box-shadow: 5px 5px 10px gray;
-  border-radius: 2px;
+  border-radius: 0.5;
 }
 .fotos img {
   max-width: 450px;
   display: inline-block;
-}
-ul {
-  background-color: #815dd9;
 }
 
 ul li {
@@ -46,34 +97,6 @@ ul li::marker {
 
 ol li {
   text-align: left;
-}
-
-#fotos-btn {
-  background-color: #1dbd9a;
-  border: solid 0px;
-  border-radius: 5px;
-  color: #fff;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-
-#main-btn {
-  background-color: #1dbd9a;
-  border: solid 0px;
-  border-radius: 5px;
-  color: #fff;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #f2cb05;
-}
-
-#app {
-  flex: 1;
-  min-width: 250px;
-  color: #fff;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 img {
