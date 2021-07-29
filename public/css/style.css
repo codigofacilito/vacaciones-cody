@@ -16,7 +16,7 @@ main{
 }
 
 .navbar-espacio img{
-  margin-right: 150%;
+  margin-right: 130%;
 }
 
 .navbar-espacio a{
@@ -43,8 +43,26 @@ main{
   flex-direction: column;
   text-align: center;
   color: white;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 10rem !important;
+  padding-right: 10rem !important;
+}
+
+.banner-circle{
+  border-radius: 50% !important;
+  padding: 12px 0 !important;
+  border-width: 3px !important;
+  width: 80px;
+  height: 80px;
+}
+
+
+.banner-circle span{
+  font-size: 50px;
+  animation-duration: 1.2s;
+  animation-name: flecha;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: 0.3s ease-in-out;
 }
 
 .imagen-fondo{
@@ -58,8 +76,12 @@ main{
   background-color: #f9f9f9;
 }
 
+.fondo-gallery{
+  background-image: url("../images/fondogallery.png");
+}
+
 .bg-oscuro{
-  background-color: #343a40d9;
+  background-color: #343a40ed;
 }
 
 .color-fondo{
@@ -195,6 +217,21 @@ main{
   animation-name: zoom;
 }
 
+.vbox-title{
+  font-size: 18px !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.footer-circle{
+  border-radius: 50% !important;
+  padding: 5px !important;
+}
+
+.footer-circle span{
+  padding: 5px !important;
+  font-size: 30px;
+}
+
 ul li{
   text-align: left;
 }
@@ -210,5 +247,15 @@ ol li{
 
   to {
     transform:scale(1);
+  }
+}
+
+@keyframes flecha {
+  from {
+    margin-top: 10%;
+  }
+
+  to {
+    margin-top: 0%;
   }
 }
