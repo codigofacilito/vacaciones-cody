@@ -1,7 +1,7 @@
 <template>
   <Navbar />
   <main>
-    <router-view/>
+    <router-view :images=images />
   </main>
   <Footer />
 </template>
@@ -9,11 +9,19 @@
 <script>
 import Navbar from '@/components/layout/Navbar.vue'
 import Footer from '@/components/layout/Footer.vue'
+import importedImages from '@/assets/images'
+
+const images = Object.values(importedImages)
 
 export default {
   components: {
     Navbar,
     Footer
+  },
+  data () {
+    return {
+      images
+    }
   }
 }
 </script>
@@ -25,6 +33,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 #app {
