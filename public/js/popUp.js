@@ -13,7 +13,6 @@ popUpImages.forEach((imageElement, index)=> {
 
     // DUPLICATE IMAGE
     let image = e.target
-    popUpImage.classList.add('u-rounded')
     popUpImage.classList.add('PopUp-image')
     popUpImage.setAttribute('src', image.src)
 
