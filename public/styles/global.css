@@ -11,7 +11,7 @@ html {
 
 body {
   background: var(--body-background);
-  color: var(--body-color);
+  color: var(--body-text);
 }
 
 a {
@@ -21,4 +21,9 @@ a {
 
 p {
   line-height: 1.5;
+}
+
+*:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--focus-border), 0 0 4px var(--focus-shadow);
 }

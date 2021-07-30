@@ -7,13 +7,14 @@
   padding: 3rem;
 }
 
-.main__image {
+.main__container-image {
   animation: vertical-translate 3.320s linear infinite;
   position: relative;
-  margin: 2rem 0 3rem;
+  margin: 1em 0 3em;
+  width: 280px;
 }
 
-.main__image img {
+.main__image {
   width: 100%;
   object-fit: contain;
 }

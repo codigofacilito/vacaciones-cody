@@ -4,7 +4,8 @@
   "description": "Cody está aprendiendo desarrollo Frontend, hizo su primer página, y ahora necesita de tu ayuda para mejorarla.",
   "main": "index.html",
   "scripts": {
-    "dev": "servor public index.html 3000 --reload"
+    "dev": "servor public index.html 3000 --reload",
+    "postcss": "postcss --watch src/styles/index.pcss -o dist/css/index.css"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,6 @@
   },
   "devDependencies": {
     "servor": "^4.0.2",
-    "webpack": "^5.47.0",
-    "webpack-cli": "^4.7.2"
+    "postcss": "^8.3.6"
   }
 }

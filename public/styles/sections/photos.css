@@ -1,0 +1,44 @@
+.photos {
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.photos__list {
+  justify-self: center;
+  list-style: none;
+  display: -webkit-inline-box;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.photos__item {
+  width: 100%;
+  max-width: 520px;
+  position: relative;
+  scroll-snap-align: center;
+  overflow: hidden;
+}
+
+.photos__image {
+  height: 100%;
+  object-fit: cover;
+}
+
+.photos__link {
+  justify-self: end;
+}
+
+.photos__location {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(255,255,255,0.5);
+  font-weight: 500;
+  backdrop-filter: blur(16px);
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+}

@@ -8,3 +8,9 @@
 
 @import "./sections/main.css";
 @import "./sections/banner.css";
+@import "./sections/introduction.css";
+@import "./sections/learning-path.css";
+@import "./sections/courses.css";
+@import "./sections/collaboration.css";
+@import "./sections/photos.css";
+@import "./sections/importance.css";
