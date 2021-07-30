@@ -4,8 +4,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      rale: ['Raleway', 'sans-serif'],
-      roboto: ['Roboto', 'sans-serif']
+      'dmsans' : ['DM Sans', 'sans-serif'],
+      'roboto' : ['Roboto Slab', 'serif']
     },
     extend: {
       colors: {

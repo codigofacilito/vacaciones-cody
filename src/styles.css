@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,100;1,200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto+Slab&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply font-dmsans
+  }
   h2 {
     @apply font-extrabold;
     @apply text-xl;
@@ -14,17 +16,40 @@
   }
 }
 
-.brand {
-    @apply rounded-full h-9 w-9
+.gradient {
+  @apply bg-gradient-to-t from-summer-400
 }
 
-.links {
-    @apply font-semibold m-0 self-end
+.cover {
+  @apply flex h-52 p-5 items-stretch
+}
+
+
+.hello {
+  @apply flex items-end w-20 gap-5 self-end
+}
+
+.hello__avatar {
+  @apply w-12 h-12 rounded-full
+}
+
+.hello__name {
+  @apply text-white font-extrabold font-roboto text-4xl
+}
+
+.navbar {
+  @apply flex justify-between;
+  @apply border-b-2 border-gray-200 p-4;
+  @apply text-summer-400;;
 }
 
 .btn {
-  @apply py-2 px-4 font-semibold rounded-lg shadow-md;
+  @apply px-4 py-1 text-sm text-summer-400;
+  @apply rounded-full border-2 border-summer-400 ;
+  /* @apply hover:text-summer-400 hover:bg-white hover:border-transparent; */
+  @apply focus:outline-none focus:ring-2 focus:ring-summer-400 focus:ring-offset-2;
 }
-.btn-green {
-  @apply text-white bg-green-500 hover:bg-green-700;
+
+.is-secondary {
+  @apply bg-summer-400 text-white
 }
