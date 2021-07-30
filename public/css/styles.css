@@ -60,6 +60,8 @@ main header .info p {
   background-color: var(--section-01-bg);
   color: var(--primary-color);
   padding: 1rem;
+  position: relative;
+  padding-top: 12rem;
 }
 
 .section-01 header h2 {
@@ -101,6 +103,8 @@ main header .info p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  padding-top: 12rem;
 }
 
 .section-02 header h2,
@@ -127,6 +131,8 @@ main header .info p {
   background-color: var(--section-01-bg);
   color: var(--primary-color);
   padding: 1rem;
+  position: relative;
+  padding-top: 12rem;
 }
 
 .section-03 header h2,
@@ -157,6 +163,8 @@ main header .info p {
   background-color: var(--section-02-bg);
   color: var(--primary-color);
   padding: 1rem;
+  position: relative;
+  padding-top: 12rem;
 }
 
 .section-04 header h2,
@@ -200,6 +208,8 @@ main header .info p {
   background-color: var(--section-01-bg);
   color: var(--primary-color);
   padding: 1rem;
+  position: relative;
+  padding-top: 12rem;
 }
 
 .section-05 header {
@@ -221,6 +231,9 @@ footer {
   background-color: var(--navigation-menu-bg);
   padding: 1rem;
   color: var(--primary-color);
+  position: relative;
+  padding-top: 12rem;
+  padding-bottom: 3rem;
 }
 
 footer small {
@@ -228,3 +241,74 @@ footer small {
 }
 
 /* END OF FOOTER */
+
+/* DIVIDERS */
+
+/* DIVIDER 01 */
+.custom-shape-divider-top-1627642084 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1627642084 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1627642084 .shape-fill {
+  fill: #39AC91;
+}
+/* END OF DIVIDER 01 */
+
+/* DIVIDER 02 */
+.custom-shape-divider-top-1627642288 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1627642288 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1627642288 .shape-fill {
+  fill: #26a659;
+}
+/* END OF DIVIDER 02 */
+
+/* DIVIDER 03 */
+.custom-shape-divider-top-1627642512 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1627642512 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1627642512 .shape-fill {
+  fill: #5DB06A;
+}
+/* END OF DIVIDER 03 */
+
+/* END OF DIVIDERS */
+
