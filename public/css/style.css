@@ -43,13 +43,21 @@ ol li{
   text-align: left;
 }
 
+h1 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
 h2 { 
+  border-radius: 10px;
+  border-bottom: black;
   padding-top: 2%;
   padding-left: 3%;
   padding-right: 5%;
   font-family: 'Times New Roman', Times, serif;
   background-size: 2ch;
   padding: 15px;
+  text-align: center;
 
 }
 
