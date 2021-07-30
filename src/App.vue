@@ -47,6 +47,7 @@ export default {
 
   main {
     margin: 15px 0;
+    min-height: 100vh;
   }
 }
 </style>
