@@ -5,7 +5,7 @@ import Hidden from "components/Hidden";
 
 const SidebarComponent = ({ height }) => {
   return (
-    <Hidden onMovil>
+    <Hidden onmovil>
       <Sidebar height={height}>
         <Link to="/">
           <VscHome size="2rem" /> Inicio

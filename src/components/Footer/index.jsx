@@ -4,7 +4,7 @@ import { Footer } from "./style";
 
 const FooterComponent = () => {
   return (
-    <Hidden onDesktop>
+    <Hidden ondesktop>
       <Footer>HOla mundo</Footer>
     </Hidden>
   );
