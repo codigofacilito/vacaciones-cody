@@ -1,25 +1,26 @@
 <template>
-  <h2>Galería completa de mis vacaciones</h2>
   <div class="images">
-    <img v-for="(image, i) in images"
-    class="images__image"
-    :src="image.url"
-    :alt="image.alt"
-    :key="i">
+    <h2>Galería completa de mis vacaciones</h2>
+    <div class="images__container">
+      <img v-for="image in images"
+      class="images__image"
+      :src="image.url"
+      :alt="image.alt"
+      :key="image.id"
+      data-fancybox="gallery">
+    </div>
   </div>
 </template>
 
 <script>
-import importedImages from '@/assets/images'
-
-const images = Object.values(importedImages)
 
 export default {
   components: {
   },
-  data () {
-    return {
-      images
+  props: {
+    images: {
+      type: Array,
+      required: true
     }
   }
 }
@@ -31,13 +32,44 @@ h2 {
 }
 
 .images {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @media(max-width: 900px){
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width: 750px){
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0;
+    }
+  }
 
   &__image {
-    width: 350px;
+      width: 350px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 500ms ease;
+
+      @media(max-width: 750px){
+        width: 150;
+      }
+
+      @media(max-width: 340px){
+        width: 300px;
+      }
+
+      &:hover {
+        transform: scale3d(1.05, 1.05, 1.05);
+      }
   }
 }
 

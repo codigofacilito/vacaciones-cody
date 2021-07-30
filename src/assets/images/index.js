@@ -6,12 +6,12 @@ import * as five from './5.jpg'
 import * as six from './6.jpg'
 
 const images = [
-  { url: one, alt: 'Cody en la playa' },
-  { url: two, alt: 'Cody acampando' },
-  { url: three, alt: 'Cody en una alberca' },
-  { url: four, alt: 'Cody en una alberca' },
-  { url: five, alt: 'Cody en una alberca' },
-  { url: six, alt: 'Cody en una alberca' }
+  { id: 1, url: one, alt: 'Cody en la playa' },
+  { id: 2, url: two, alt: 'Cody acampando' },
+  { id: 3, url: three, alt: 'Cody en una alberca' },
+  { id: 4, url: four, alt: 'Cody en una alberca' },
+  { id: 5, url: five, alt: 'Cody en una alberca' },
+  { id: 6, url: six, alt: 'Cody en una alberca' }
 ]
 
 export default images
