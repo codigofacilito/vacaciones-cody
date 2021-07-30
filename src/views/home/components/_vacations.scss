@@ -44,6 +44,7 @@ $font-color: #fff;
         & > img {
           width: 300px;
           border-radius: 8px;
+          cursor: pointer;
           transition: all 500ms ease;
 
           @media(max-width: 500px){
@@ -51,7 +52,7 @@ $font-color: #fff;
           }
 
           &:hover {
-            transform: translateY(-30px) scale3d(1.2, 1.2, 1.2);
+            transform: translateY(-10px) scale3d(1.1, 1.1, 1.1);
           }
         }
       }
