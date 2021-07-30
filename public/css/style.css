@@ -1,38 +1,189 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+:root {
+  --green-100: #5bcc85;
+  --green-200: #4eb473;
+  --green-300: #46a368;
+  --dark-blue: 1, 3, 38;
+  --dark-blue-100: #010344;
+
+  --base-transition: all .4s ease-in-out;
 }
 
-main{
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #222;
+  line-height: 1.5;
+  background-color: #FCFCFC;
+}
+
+h1, h2, h3, h4, h5, h6, button, a {
+  font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h1 {
+	font-size: 2.75em;
+}
+
+h2 {
+	font-size: 2.25em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.625em;
+}
+
+h5 {
+	font-size: 1.25em;
+}
+
+h6 {
+	font-size: 1.125em;
+}
+
+p {
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px){
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.875em;
+	}
+
+	h3 {
+		font-size: 1.75em;
+	}
+
+	h4 {
+		font-size: 1.5em;
+	}
+
+	h5 {
+		font-size: 1.375em;
+	}
+}
+
+main {
   text-align: center;
-  max-width: 960px;
+  max-width: 90%;
   margin:0 auto;
 }
 
-section{
+section {
   margin-top: 3rem;
 }
 
-.cursos div{
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.text-green {
+  color: var(--green-200);
+}
+
+nav {
+  background-color: rgb(var(--dark-blue), 5%);
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: auto;
+  color: var(--green-200);
+  transition: var(--base-transition);
+}
+
+nav .logo:hover {
+  color: var(--green-300);
+}
+
+nav .menu .menu-link {
+  font-size: 18px;
+  color: var(--dark-blue-100);
+  border-radius: 5px;
+  background-color: transparent;
+  transition: var(--base-transition);
+  padding: 6px 12px;
+}
+
+nav .menu .menu-link:hover {
+  color: #FFF;
+  background-color: var(--dark-blue-100);
+}
+
+nav .menu .menu-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.page-title {
+  margin-top: 30px;
+}
+
+.page-title::after {
+  content: "";
+  width: 40%;
+  height: 4px;
+  background-color: var(--green-100);
+  display: block;
+  margin: -5px auto 20px;
+  border-radius: 5px;
+}
+
+.text-information {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.cursos div {
   background-color: black;
   color: white;
   max-width: 200px;
   display: inline-block;
   box-shadow: 5px 5px 10px black;
 }
-.fotos img{
+.fotos img {
   max-width: 450px;
   display: inline-block;
 }
-ul li{
+ul li {
   text-align: left;
 }
 ul li::marker {
   content: "🚀";
 }
 
-ol li{
+ol li {
   text-align: left;
 }

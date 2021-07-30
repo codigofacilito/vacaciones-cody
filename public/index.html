@@ -5,26 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <main>
     <header>
       <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+        <a href="/" class="logo">
+          Vacaciones
+        </a>
+        <div class="menu">
+          <a href="/" class="menu-link">Inicio</a>
+          <a href="fotos.html" class="menu-link">Fotos</a>
+        </div>
       </nav>
-      <h1>Estas son mis Vacaciones</h1>
+      <h1 class="page-title">Estas son mis Vacaciones</h1>
       <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
     </header>
 
     <section>
       <header>
-        <h2>Mis vacaciones Frontend</h2>
+        <h2 class="text-green">Mis vacaciones Frontend</h2>
       </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
+      <div class="text-information">
+        <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
+        <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+        <p> Estos son los cursos que estuve tomando </p>
+      </div>
       <div class="cursos">
         <div>
           <p>Curso profesional de Desarrollo Web</p>
