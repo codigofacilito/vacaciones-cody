@@ -18,8 +18,8 @@
       <div class="vacations__courses">
           <p class="vacations__courses-title">Estos son los cursos que estuve tomando:</p>
           <ul>
-              <li><a href="">🌈 <span>Curso profesional de Desarrollo Web</span> 😎</a></li>
-              <li><a href="">🚀 <span>Curso para crear mi primera página web</span> 💨</a></li>
+              <li><a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank">🌈 <span>Curso profesional de Desarrollo Web</span> 😎</a></li>
+              <li><a href="https://www.youtube.com/watch?v=TC8bT7zTdoE&t&ab_channel=codigofacilito" target="_blank">🚀 <span>Curso para crear mi primera página web</span> 💨</a></li>
           </ul>
       </div>
     </section>
@@ -67,7 +67,8 @@
           <img v-for="image in imagesToRender"
           :src="image.url"
           :alt="image.alt"
-          :key="image.id">
+          :key="image.id"
+          data-fancybox="gallery">
         </div>
         <p>
           Puedes ver más, en la galería de fotos de mi página
