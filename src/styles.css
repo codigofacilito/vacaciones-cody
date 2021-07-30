@@ -24,7 +24,6 @@
   @apply flex h-52 p-5 items-stretch
 }
 
-
 .hello {
   @apply flex items-end w-20 gap-5 self-end
 }
@@ -39,8 +38,12 @@
 
 .navbar {
   @apply flex justify-between;
-  @apply border-b-2 border-gray-200 p-4;
-  @apply text-summer-400;;
+  @apply p-4;
+  @apply text-white;
+}
+
+.links {
+  @apply hidden lg:flex
 }
 
 .btn {
@@ -51,5 +54,67 @@
 }
 
 .is-secondary {
-  @apply bg-summer-400 text-white
+  @apply bg-summer-400 text-white;
+}
+
+.banner {
+    @apply h-screen bg-local;
+    @apply bg-summer-100;
+    @apply flex justify-between items-end;
+}
+
+.banner__hero {
+  @apply max-w-lg;
+  @apply flex flex-col justify-end;
+}
+
+.banner__comment {
+  @apply flex flex-col gap-5;
+  @apply text-2xl p-8 bg-summer-300;
+}
+
+.banner__photos {
+  width: 50%;
+  height: 50%;
+  transition: all .1s ease-in-out;
+  background-image: url(../images/1.jpg);
+  -webkit-animation: banner 8s infinite linear;
+          animation: banner 8s infinite linear;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@-webkit-keyframes banner {
+  0% {
+    background-image: url(../images/1.jpg);
+  }
+
+  25% {
+    background-image: url(../images/1.jpg);
+  }
+
+  26% {
+    background-image: url(../images/2.jpg);
+  }
+
+  50% {
+    background-image: url(../images/2.jpg);
+  }
+
+  51% {
+    background-image: url(../images/3.jpg);
+  }
+
+  75% {
+    background-image: url(../images/3.jpg);
+  }
+
+  76% {
+    background-image: url(../images/4.jpg);
+  }
+
+  100% {
+    background-image: url(../images/4.jpg);
+  }
 }
