@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
-import theme from "theme";
+// import theme from "theme";
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
