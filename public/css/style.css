@@ -331,6 +331,14 @@ body {
     background: var(--pink30);
 }
 
+.learning-path__img {
+    text-align: center;
+}
+
+.learning-path__img-cody {
+    width: 100%;
+}
+
 @media screen and (min-width:960px) {
     .learning-path__description {
         margin-inline: 110px;
