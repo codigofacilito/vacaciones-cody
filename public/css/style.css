@@ -220,6 +220,40 @@ body {
     width: 100%;
 }
 
+@media screen and (min-width:960px) {
+    .vacation-frontend__title {
+        font: var(--title);
+        text-transform: uppercase;
+        margin-block: 0;
+    }
+    .vacation-frontend__info {
+        font: var(--description);
+    }
+    .vacation-frontend__img-cody {
+        width: 100%;
+    }
+    .vacation-frontend__img img {
+        /* block-size: 500px; */
+        block-size: auto;
+        inline-size: 500px;
+    }
+    .vacation-frontend__card {
+        width: 200px;
+        height: 250px;
+    }
+    .vacation-frontend__description {
+        display: block;
+        margin: auto;
+        inline-size: 650px;
+    }
+    .vacation-frontend__card-description {
+        padding-inline: 30px;
+    }
+    .vacation-frontend__card-details {
+        justify-content: space-evenly;
+    }
+}
+
 
 /* nav {
   background-color: aliceblue;
