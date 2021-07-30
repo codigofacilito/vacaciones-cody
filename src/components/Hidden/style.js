@@ -5,4 +5,7 @@ export const Hidden = styled.main`
   @media screen and (max-width: ${theme.threshold.width}) {
     display: ${(props) => (props.onMovil ? "none" : "block")};
   }
+  @media screen and (min-width: ${theme.threshold.width}) {
+    display: ${(props) => (props.onDesktop ? "none" : "block")};
+  }
 `;
