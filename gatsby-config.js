@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/reponame",
+  pathPrefix: "/vacaciones-cody",
   plugins: [
     `gatsby-plugin-styled-components`,
     "gatsby-plugin-image",

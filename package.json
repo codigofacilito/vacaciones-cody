@@ -4,6 +4,7 @@
   "description": "This is a fork from the original repo",
   "main": ".",
   "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
