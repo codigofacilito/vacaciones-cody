@@ -20,6 +20,10 @@ PALETA DE COLORES:
   --section-02-bg: #5db06a;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* HEADER */
 main header .navigation {
   background-color: var(--navigation-menu-bg);

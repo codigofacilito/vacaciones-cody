@@ -22,9 +22,9 @@
 
 body {
     background: #5db06a;
-    font-family: 'Baskervville', serif;
+    font-family: 'Roboto', sans-serif;
 }
-  
+
 /* NAVIGATION */
 header .navigation {
     background-color: var(--navigation-menu-bg);
