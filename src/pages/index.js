@@ -1,12 +1,10 @@
 import React from "react";
 import LayoutPage from "components/Layout";
-import Header from "components/Header";
 import Section from "components/Section";
 
 export default function Home() {
   return (
     <LayoutPage>
-      <Header />
       <Section>
         <h2>Mis vacaciones Frontend</h2>
         <p>
