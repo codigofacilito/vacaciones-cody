@@ -231,6 +231,7 @@ body {
         margin: auto;
         margin-block: 62px;
         inline-size: 450px;
+        z-index: 1;
     }
     .vacation-frontend__card-details {
         justify-content: space-evenly;
@@ -348,6 +349,22 @@ body {
     width: 100%;
 }
 
+@media screen and (min-width:414px) {
+    .learning-path__info ul li {
+        width: 150px;
+    }
+    .learning-path__info ul {
+        margin-block: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+    .learning-path__img-cody {
+        width: 300px;
+    }
+}
+
 @media screen and (min-width:960px) {
     .learning-path__description {
         margin-inline: 110px;
@@ -361,17 +378,13 @@ body {
     }
     .learning-path__info ul li {
         margin-block-end: 0;
-        width: 150px;
+        /* width: 150px; */
     }
     .learning-path__img-cody {
         max-width: 400px;
     }
     .learning-path__info ul {
-        margin-block-start: 100px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 30px;
+        margin-block-start: 80px;
     }
 }
 
