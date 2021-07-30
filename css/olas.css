@@ -1,3 +1,17 @@
+.sun:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at center,#FFEA00,#FFEA00 33%,#fd0 33%,#fd0 55%,#fa0 55%,#fa0 100%);
+    background-size: 100% 100%;
+    box-shadow: 0 4px 100px 33px #fd585f;
+    border-radius: 50%;
+    content: '';
+}
+
 .olas_ {
     height: 100vh;
     background: #0f9bf6;
@@ -69,5 +83,12 @@
     }
     100% {
         transform: translate(160px, -60px);
+    }
+}
+
+@media(max-width: 768px){
+    .sun:after{
+        width:200px;
+        height: 200px;
     }
 }

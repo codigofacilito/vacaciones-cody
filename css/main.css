@@ -42,6 +42,33 @@ body::-webkit-scrollbar {
     margin-top: 60px;
 }
 
+
+.palmera {
+    float: right;
+    width: 400px;
+    position: relative;
+}
+
+.Cody-playa{
+    transition: .3s;
+    animation: float 7s ease-in-out infinite;
+    float: left;
+    margin-left: 15%;
+    position: relative;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
 .content p {
     margin: 0 50px 0 50px;
     font-family: 'Inconsolata', monospace;
@@ -54,6 +81,7 @@ button {
     font-family: 'Inconsolata', monospace;
     margin: 0.5em;
     padding: 1em 2em;
+    border-radius: 20px;
 }
 
 button {
@@ -69,11 +97,12 @@ button:hover, button:focus {
 
 .fill {
     --color: white;
-    --hover: #0f9bf6;
+    --hover: #013f88;
 }
 
 .fill:hover, .fill:focus {
     box-shadow: inset 0 0 0 2em var(--hover);
+    border-color: white;
 }
 
 .cursos div {
@@ -87,6 +116,9 @@ section {
     align-items: center;
     text-align: center;
     scroll-snap-align: start;
+    position: relative;
+    display: inline-block;
+    text-align: center;
 }
 
 .uno {
@@ -165,6 +197,7 @@ section {
     color: #013f88;
 }
 
+
 ol {
     list-style-type: none;
     counter-reset: lista-personalizada;
@@ -196,12 +229,12 @@ ol li:before {
     height: 45px;
 }
 
-.cinco h2{
+.cinco h2 {
     font-size: 40px;
     font-family: 'Mali', cursive;
 }
 
-.cinco p{
+.cinco p {
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
     margin: 0 50px 0 50px;
@@ -241,6 +274,7 @@ ol li:before {
     }
     .uno .parrafo {
         margin: 10px 10px 0 10px;
+        font-size: 16px;
     }
     .content p {
         margin: 0 20px 0 20px;
@@ -271,7 +305,6 @@ ol li:before {
     .cuatro p {
         font-size: 16px;
     }
-
     .cinco h2 {
         font-size: 26px;
     }
@@ -279,8 +312,15 @@ ol li:before {
         font-size: 16px;
     }
 
-    ol li:before{
+    ol{
+        width: 400px;
+    }
+
+    ol li:before {
         margin-left: 8px;
-        margin-right: 8px;
+    }
+    .uno button {
+        width: 300px;
+        margin-bottom: 10px;
     }
 }
