@@ -1,0 +1,44 @@
+.galeria-completa
+    background: linear-gradient(180deg, #c0e8ef 20%, #00acc1 100% )
+    padding: 6em 0
+    h2 
+        margin: 0
+        font-size: 3em
+        line-height: 1.2em
+        span
+            color: $lightRed
+.fotos
+    display: flex
+    flex-wrap: wrap
+    margin: 4em 0
+    .lightbox_trigger 
+        width: calc(33.333% - 26px)
+        padding: 5px
+        background-color: #aa6614
+        margin: 8px
+
+#lightbox 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, .8)
+    display: flex
+    align-items: center
+    justify-content: center
+
+    p
+        text-align: right
+        color: #fff
+        margin-right: 20px
+        font-size: 12px
+
+    img
+        box-shadow: 0 0 25px #111
+        width: 840px
+        background-color: #aa6614
+        padding: 15px
+
+#content
+    position: relative
