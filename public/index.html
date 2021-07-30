@@ -1,100 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="icon" href="images/cody.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="js/venobox.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
   <main>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+      <nav class="navbar navbar-dark bg-oscuro navbar-expand-lg fixed-top">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav navbar-espacio">
+            <img src="images/logo.png" width="25%" height="25%">
+            <a class="nav-item nav-link active" href="?"><span class="material-icons">&#xe88a;</span>Inicio</a>
+            <a class="nav-item nav-link" href="fotos.html"><span class="material-icons">&#xe3b6;</span>Fotos</a>
+          </div>
+        </div>
       </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
     </header>
-
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+    <section class="banner">
+      <div class="centro color-fondo">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h1>Estas son mis Vacaciones</h1>
+          <br>
+          <h4>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo</h4>
+          <br>
+          <a class="btn btn-outline-light btn-floating m-1 banner-circle" href="#section1">
+            <span class="material-icons">&#xe5db;</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="section fondo-claro" id="section1">
       <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+        <h2 data-aos="zoom-in">Mis vacaciones Frontend</h2>
       </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
+      <div data-aos="zoom-in">
+        <p>Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript</p>
+        <p>Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página</p>
+        <br>
+        <p>Estos son los cursos que estuve tomando:</p>
+      </div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist" data-aos="zoom-in">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Curso para crear mi primera página web</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Curso profesional de Desarrollo Web</a>
+        </li>
       </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
+      <div class="tab-content cursos" id="myTabContent" data-aos="zoom-in">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row">
+            <div class="col-md-8" data-aos="fade-right" data-aos-delay="500">
+              <p>Empecé realizando un curso para crear mi primera página web, al principio todo era un caos, las líneas de código eran un dolor de cabeza y nada más verlas me mareaba, poco a poco fui agarrando el hilo y empezando a diseñar mi página.</p>
+              <p>El resultado final fue para mí la página la mejor página de todas, con un diseño espectacular, aunque en la realidad eso era todo lo contrario, y pues sí, habían muchos defectos en cuanto a diseño, puesto que era mi primera vez, como dicen echando a perder se aprende y uno va mejorando con la práctica.</p>
+            </div>
+            <div class="col-md-4" data-aos="flip-right" data-aos-delay="500">
+              <img src="images/webpage1.jpg" title="primera página web" width="80%" />
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><div class="row">
+          <div class="col-md-8" data-aos="fade-right" data-aos-delay="500">
+            <p>Ya con una experiencia previa en el diseño de páginas web, ahora me lance al desarrollo web profesional, ahora es un aprendizaje más profundo y completo, abarcando muchos temas en de desarrollo web como son frameworks, principios usabilidad, manejo de seguridad, entre otros.</p>
+            <p>Como resultado pude crear una página más completa, con un mejor y más agradable diseño comparado con mi primera página web. No obstante, siempre se puede seguir mejorando, con la práctica se desarrolla mejores conocimientos y prácticas, debido a que nunca se deja de aprender.</p>
+          </div>
+          <div class="col-md-4" data-aos="flip-right" data-aos-delay="500">
+            <img src="images/webpage2.jpg" title="primera página web" width="80%" />
+          </div>
+        </div>
       </div>
     </section>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
+    <section class="section">
+      <h2  data-aos="zoom-in">Ruta de aprendizaje 2021</h2>
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-up">
+          <img src="images/rutaaprendizaje.jpg" title="technology" width="100%" style="border-radius: 5px;" />
+        </div>
+        <div class="col-md-6">
+          <h4 class="alinear-izquierda" data-aos="zoom-in">También me propuse aprender nuevas tecnologías durante 2021</h4>
+          <ul class="lista">
+            <li data-aos="fade-right" data-aos-delay="150"><i class="material-icons">&#xe5ca;</i>Flexbox, y Grid</li>
+            <li data-aos="fade-right" data-aos-delay="300"><i class="material-icons">&#xe5ca;</i>Animaciones con CSS y JavaScript</li>
+            <li data-aos="fade-right" data-aos-delay="450"><i class="material-icons">&#xe5ca;</i>AJAX</li>
+            <li data-aos="fade-right" data-aos-delay="600"><i class="material-icons">&#xe5ca;</i>HTML semántico</li>
+            <li data-aos="fade-right" data-aos-delay="750"><i class="material-icons">&#xe5ca;</i>Entre otros</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="imagen-fondo">
+      <div class="color-fondo">
+        <div data-aos="zoom-in">
+          <h2>Colabora en mi página</h2>
+          <p>Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub</p>
+          <p>Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.</p>
+          <p>Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica</p>
+          <br>
+          <a href="#" target="_blank" class="btn btn-tutorial">Ir al tutorial</a>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <header data-aos="zoom-in">
+        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
+      </header>
+      <p data-aos="zoom-in" data-aos-delay="150">¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+      <div id="carouselExampleIndicators" class="carousel slide quitar-margen" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/1.jpg" alt="Cody en la playa" height="650px">
+            <div class="carousel-caption d-none d-md-block" data-aos="zoom-in">
+              <h5>Cody en la playa</h5>
+              <p>Puedes ver más, en la galería de fotos de mi página</p>
+              <a href="fotos.html" class="btn btn-tutorial">Ir a la galería</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/2.jpg" alt="Cody acampando" height="650px">
+            <div class="carousel-caption d-none d-md-block" data-aos="zoom-in">
+              <h5>Cody acampando</h5>
+              <p>Puedes ver más, en la galería de fotos de mi página</p>
+              <a href="fotos.html" class="btn btn-tutorial">Ir a la galería</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/3.jpg" alt="Cody en una alberca" height="650px">
+            <div class="carousel-caption d-none d-md-block" data-aos="zoom-in">
+              <h5>Cody en una alberca</h5>
+              <p>Puedes ver más, en la galería de fotos de mi página</p>
+              <a href="fotos.html" class="btn btn-tutorial">Ir a la galería</a>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 data-aos="zoom-in">La importancia de las vacaciones</h2>
+      <div data-aos="zoom-in" data-aos-delay="150">
         <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
         <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
+      </div>
+      <br>
+      <div class="card-deck">
+        <div class="card" data-aos="fade-up">
+          <span class="material-icons">&#xe1d5;</span>
+          <div class="card-body">
+            <h5 class="card-title">Mejora la salud mental</h5>
+            <p class="card-text">La salud mental incluye nuestro bienestar emocional, psicológico y social. Afecta la forma en que pensamos, sentimos y actuamos cuando enfrentamos la vida.</p>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="150">
+          <span class="material-icons">&#xe7f2;</span>
+          <div class="card-body">
+            <h5 class="card-title">Incrementa la motivación</h5>
+            <p class="card-text">La motivación es un estado interno que mueve a la persona a realizar determinadas acciones y persistir en ellas para su culminación. </p>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+          <span class="material-icons">&#xe92c;</span>
+          <div class="card-body">
+            <h5 class="card-title">Reduce el burnout</h5>
+            <p class="card-text">El burnout es un estado de agotamiento mental, emocional y físico, se presenta como resultado de exigencias agobiantes o estrés crónico o insatisfacción laboral.</p>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="450">
+          <span class="material-icons">&#xea24;</span>
+          <div class="card-body">
+            <h5 class="card-title">Mejora tu productividad y creatividad</h5>
+            <p class="card-text">Potenciar nuestra creatividad ayuda a generar nuevas ideas o conceptos y la productividad mejora nuestro desempeño laboral.</p>
+          </div>
+        </div>
+      </div>
     </section>
-    
   </main>
+  <script> 
+    AOS.init(); 
+  </script>
 </body>
+<footer class="bg-dark text-center text-white">
+  <div class="container p-4 pb-0">
+    <section class="mb-4">
+      <a class="btn btn-outline-light btn-floating m-1 footer-circle" href="#!" role="button">
+        <span class="material-icons">&#xf234;</span>
+      </a>
+      <a class="btn btn-outline-light btn-floating m-1 footer-circle" href="#!" role="button">
+        <span class="material-icons">&#xe0be;</span>
+      </a>
+      <a class="btn btn-outline-light btn-floating m-1 footer-circle" href="#!" role="button">
+        <span class="material-icons">&#xe0cd;</span>
+      </a>
+      <a class="btn btn-outline-light btn-floating m-1 footer-circle" href="#!" role="button">
+        <span class="material-icons">&#xe7f4;</span>
+      </a>
+    </section>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <span class="text-white">ChuchinJJ</span>
+  </div>
+</footer>
 </html>

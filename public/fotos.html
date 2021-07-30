@@ -1,34 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="icon" href="images/cody.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen"/>
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="js/venobox.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
-
-<body>
-  <main>
+<body class="fondo-gallery">
+  <main class="color-fondo-gallery">
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+      <nav class="navbar navbar-dark bg-oscuro navbar-expand-lg fixed-top">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav navbar-espacio">
+              <img src="images/logo.png" width="25%" height="25%">
+              <a class="nav-item nav-link " href="index.html"><span class="material-icons">&#xe88a;</span>Inicio</a>
+              <a class="nav-item nav-link active" href="?"><span class="material-icons">&#xe3b6;</span>Fotos</a>
+          </div>
+        </div>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
-
+    <section class="section">
+      <br>
+      <h1 data-aos="zoom-in">Galería de vacaciones de Cody</h1>
+      <br>
+      <div class="row">
+        <div class="col-md-6 gallery" data-aos="fade-up">
+          <a class="venobox" href="images/1.jpg" data-gall="myGallery" title="Cody en Playa del Carmen">
+            <div class="descripcion-foto">
+              <h3>Playa del carmen, Quintana Roo</h3>
+            </div>
+            <img src="images/1.jpg" alt="Cody en la playa" width="100%">
+          </a>
+        </div>
+        <div class="col-md-6 gallery" data-aos="fade-up" data-aos-delay="200">
+          <a class="venobox" href="images/2.jpg" data-gall="myGallery" title="Cody acampando en Zipolite">
+            <div class="descripcion-foto">
+              <h3>Zipolite, Oaxaca</h3>
+            </div>
+            <img src="images/2.jpg" alt="Cody acampando" width="100%">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 gallery" data-aos="fade-up" data-aos-delay="400">
+          <a class="venobox" href="images/3.jpg" data-gall="myGallery" title="Cody en el Cañón de las Flores">
+            <div class="descripcion-foto">
+              <h3>Cañón de las Flores, Guadalajara</h3>
+            </div>
+            <img src="images/3.jpg" alt="Cody en una alberca" width="100%">
+          </a>
+        </div>
+        <div class="col-md-6 gallery" data-aos="fade-up" data-aos-delay="600">
+          <a class="venobox" href="images/4.jpg" data-gall="myGallery" title="Cody en Puerto Arista">
+            <div class="descripcion-foto">
+              <h3>Puerto Arista, Chiapas</h3>
+            </div>
+            <img src="images/4.jpg" alt="Cody tomando el sol" width="100%">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 gallery" data-aos="fade-up" data-aos-delay="800">
+          <a class="venobox" href="images/5.jpg" data-gall="myGallery" title="Cody en El Callejón del Beso">
+            <div class="descripcion-foto">
+              <h3>El Callejón del Beso, Guanajuato</h3>
+            </div>
+            <img src="images/5.jpg" alt="Cody turisteando" width="100%">
+          </a>
+        </div>
+        <div class="col-md-6 gallery" data-aos="fade-up" data-aos-delay="1000">
+          <a class="venobox" href="images/6.jpg" data-gall="myGallery" title="Cody en el Aeropuerto Internacional">
+            <div class="descripcion-foto">
+              <h3>Aeropuerto Internacional de la Ciudad de México</h3>
+            </div>
+            <img src="images/6.jpg" alt="Cody en el aeropuerto" width="100%">
+          </a>
+        </div>
+      </div>
+    </section>
+    <script> 
+      AOS.init(); 
+    </script>
   </main>
 </body>
-
+<footer class="bg-dark text-center text-white">
+  <div class="container p-4 pb-0">
+    <section class="mb-4">
+      <a class="btn btn-outline-light btn-floating m-1 footer-circle" href="#!" role="button">
+        <span class="material-icons">&#xf234;</span>
+      </a>
+      <a class="btn btn-outline-light btn-floating m-1 footer-circle" href="#!" role="button">
+        <span class="material-icons">&#xe0be;</span>
+      </a>
+      <a class="btn btn-outline-light btn-floating m-1 footer-circle" href="#!" role="button">
+        <span class="material-icons">&#xe0cd;</span>
+      </a>
+      <a class="btn btn-outline-light btn-floating m-1 footer-circle" href="#!" role="button">
+        <span class="material-icons">&#xe7f4;</span>
+      </a>
+    </section>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <span class="text-white">ChuchinJJ</span>
+  </div>
+</footer>
 </html>

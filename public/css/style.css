@@ -1,38 +1,278 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+body{
+  margin: 0px;
+  color: #444 !important;
+  font-size: 18px !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 main{
   text-align: center;
-  max-width: 960px;
   margin:0 auto;
 }
 
-section{
-  margin-top: 3rem;
+.navbar-espacio{
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
-.cursos div{
-  background-color: black;
+.navbar-espacio img{
+  margin-top: 15px;
+  margin-right: 70%;
+}
+
+.navbar-espacio a{
+  margin-right: 25px;
+}
+
+.banner{
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.centro{
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
   color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  padding-left: 10rem !important;
+  padding-right: 10rem !important;
 }
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
+
+.banner-circle{
+  border-radius: 50% !important;
+  padding: 12px 0 !important;
+  border-width: 3px !important;
+  width: 80px;
+  height: 80px;
 }
-ul li{
+
+
+.banner-circle span{
+  font-size: 50px;
+  animation-duration: 1.2s;
+  animation-name: flecha;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: 0.3s ease-in-out;
+}
+
+.imagen-fondo{
+  background-image: url("../images/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.fondo-claro{
+  background-color: #f9f9f9;
+}
+
+.fondo-gallery{
+  background-image: url("../images/fondogallery.png");
+}
+
+.bg-oscuro{
+  background: transparent;
+  -webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
+
+.active-navbar{
+  background-color: #343a40ed;
+}
+
+.color-fondo{
+  background-color: #343a40c2;
+  padding: 30px;
+  color: white;
+}
+
+.color-fondo-gallery{
+  background-color: #343a4066;
+}
+
+.color-fondo h2{
+  margin-bottom: 2rem;
+}
+.color-fondo p{
+  margin-bottom: 8px;
+}
+
+.color-fondo-gallery h1{
+  color: white;
+}
+
+.section{
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.section h2 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.section h2::after {
+  border: 1px solid #333;
+  bottom: -20px;
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
+
+.card span{
+  font-size: 50px;
+  margin-top: 25px;
+}
+
+.card{
+  box-shadow: 1px 1px 10px 3px rgb(52 58 64 / 12%);
+  border-radius: 15px !important;
+}
+
+.card:hover{
+  background-color: rgb(52 58 64);
+  cursor: default;
+  color: white;
+}
+
+.btn-tutorial{
+  border-radius: 10px !important;
+  border-color: white !important;
+  padding: 15px !important;
+  color: white;
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.btn-tutorial:hover{
+  background-color: white;
+  color: #333;
+}
+
+.lista li{
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.lista i{
+  padding-right: 10px;
+  font-size: 17px;
+}
+
+.alinear-izquierda{
   text-align: left;
 }
-ul li::marker {
-  content: "🚀";
+
+.cursos{
+  text-align: left !important;
+  padding: 30px;
+}
+
+.quitar-margen{
+  margin-right: -50px;
+  margin-left: -50px;
+}
+
+.carousel-caption{
+  background-color: #343a408f;
+  border-radius: 25px;
+  padding-bottom: 30px !important;
+}
+
+.gallery{
+  margin-bottom: 30px;
+}
+
+.gallery img{
+  border-radius: 10px;
+}
+
+.descripcion-foto{
+  display: none;
+  background-color: #000000c9;
+  position: absolute;
+  padding: 30px;
+  height: 100%;
+  width: 95.5%;
+  margin-right: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+.descripcion-foto h3{
+  padding-top: 30%;
+}
+
+.gallery:hover .descripcion-foto{
+  display: block;
+}
+
+.gallery:hover .descripcion-foto h3{
+  animation-duration: 1s;
+  animation-name: zoom;
+}
+
+.vbox-title{
+  font-size: 18px !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.footer-circle{
+  border-radius: 50% !important;
+  padding: 5px !important;
+}
+
+.footer-circle span{
+  padding: 5px !important;
+  font-size: 30px;
+}
+
+ul li{
+  text-align: left;
 }
 
 ol li{
   text-align: left;
+}
+
+@keyframes zoom {
+  from {
+    transform:scale(0.5);
+  }
+
+  to {
+    transform:scale(1);
+  }
+}
+
+@keyframes flecha {
+  from {
+    margin-top: 10%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
 }
