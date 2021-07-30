@@ -1,23 +1,77 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;400;500&display=swap');
+
+*, 
+*::after, *::before{
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
 }
+:root {
+  --main_color: white;
+  --text_color: #051626;
+  --lighter_grey: #F5F5F5;
+  --light_grey: #D1D1D1;
+  --grey_500: #474E5C;
+  --yellow: #F8CD5B;
+  --light_blue: #6e57fc;
+  --tomato: #fd585f;
+  --green: #41b883;
+}
+html, body {
+  font-family: 'Mitr', sans-serif;
+  color: var(--light_grey);
+}
+
 
 main{
   text-align: center;
   max-width: 960px;
   margin:0 auto;
+  background-color: var(--light_blue);
 }
-
+nav{
+  background-color: #816eff;
+  padding: 15px;
+  display: flex;
+  gap:1em;
+  color: var(--main_color);
+  border-bottom: 1px solid black;
+}
+a:-webkit-any-link {
+  color: var(--main_color);
+  text-decoration: none;
+}
+h1, h2{
+  font-family: 'Monoton', cursive;
+  font-weight: 100;
+}
+h1{
+  font-size: 2rem;
+  word-spacing: 1.5rem;
+  line-height: 2.5rem;
+}
+h2{
+  font-weight: 100;
+  word-spacing: 0.5rem;
+}
+p{
+  max-width: 600px;
+  margin: 15px auto;
+}
 section{
-  margin-top: 3rem;
+  padding: 40px 0;
+  border: 1px solid black;
 }
-
+ul, ol{
+  width: 200px;
+  margin: 0 auto;
+  text-align: start;
+}
 .cursos div{
-  background-color: black;
-  color: white;
+  margin-top: 10px;
+  background-color: var(--yellow);
+  color: var(--text_color);
   max-width: 200px;
   display: inline-block;
   box-shadow: 5px 5px 10px black;
@@ -26,13 +80,93 @@ section{
   max-width: 450px;
   display: inline-block;
 }
-ul li{
-  text-align: left;
+.last{
+  padding-bottom: 160px;
 }
-ul li::marker {
-  content: "🚀";
+img{
+  width: 100%;
 }
 
-ol li{
-  text-align: left;
+
+/* ANIMATION */
+
+.cody{
+  background-image: url('./cody-verano-95c1d9e3a3d913ed0d97f7adcd2d38046b241b99f450356dfd2e8dcd9b9aebf3.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 260px;
+  animation: cody 2s linear infinite;
+}
+@keyframes cody {
+  0%{
+    background-position-y: 0;
+  }
+  25%{
+    background-position-y: 5px;
+  }
+  50%{
+    background-position-y: 7px;
+  }
+  75%{
+    background-position-y: 5px;
+  }
+  100%{
+    background-position-y: 0px;
+  }
+}
+
+.wave-container{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+  z-index: 0;
+}
+.wave-container .wave{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url("./wave.png");
+  background-size: 1000px 100px;
+}
+.wave-container .wave.wave1{
+  animation: animate 30s linear infinite;
+  z-index: 1;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+@keyframes animate {
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+}
+.wave-container .wave.wave2{
+  animation: animate 20s linear infinite;
+  animation-direction: reverse;
+  z-index: 2;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+.wave-container .wave.wave3{
+  animation: animate 15s linear infinite;
+  z-index: 3;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+.wave-container .wave.wave4{
+  animation: animate 5s linear infinite;
+  animation-direction: reverse;
+  z-index: 4;
+  opacity: 0.7;
+  animation-delay: -2s;
+  bottom: 20px;
 }
