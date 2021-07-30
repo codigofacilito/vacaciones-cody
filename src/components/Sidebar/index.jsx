@@ -2,9 +2,10 @@ import React from "react";
 import { Link, Sidebar } from "./style";
 import { VscHome, VscBook } from "react-icons/vsc";
 
-const SidebarComponent = () => {
+const SidebarComponent = ({ height }) => {
+  console.log(height);
   return (
-    <Sidebar>
+    <Sidebar height={height}>
       <Link to="/">
         <VscHome size="2rem" /> Inicio
       </Link>

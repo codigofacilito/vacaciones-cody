@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Sidebar from "components/Sidebar";
 import Header from "components/Header";
 import { GlobalStyle, Layout } from "./style";
@@ -8,6 +8,13 @@ export default function LayoutComponent({
   children,
   title = "Mis vacaciones - HectorMtz22",
 }) {
+  const [height, setHeight] = useState(null);
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    setHeight(() => headerRef.current.scrollHeight);
+  }, []);
+
   return (
     <>
       <GlobalStyle theme="purple" />
@@ -22,8 +29,8 @@ export default function LayoutComponent({
         href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
         rel="stylesheet"
       />
-      <Header />
-      <Sidebar />
+      <Header ref={headerRef} />
+      <Sidebar height={height} />
       <Layout>{children}</Layout>
     </>
   );

@@ -5,7 +5,7 @@ import theme from "theme";
 export const Sidebar = styled.main`
   width: 15vw;
   position: fixed;
-  top: 90px;
+  top: ${(props) => (props.height ? props.height + "px" : "90px")};
   left: 0;
   bottom: 0;
   background-color: ${theme.colors.primary};
