@@ -67,9 +67,9 @@ export default function Home() {
           fotos que tomé:
         </P>
         <Grid>
-          <img src="images/1.jpg" alt="Cody en la playa" />
-          <img src="images/2.jpg" alt="Cody acampando" />
-          <img src="images/3.jpg" alt="Cody en una alberca" />
+          <img src="/images/1.jpg" alt="Cody en la playa" />
+          <img src="/images/2.jpg" alt="Cody acampando" />
+          <img src="/images/3.jpg" alt="Cody en una alberca" />
         </Grid>
         <P>
           Puedes ver más, en la galería de fotos de mi página

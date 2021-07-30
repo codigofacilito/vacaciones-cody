@@ -3,7 +3,6 @@ import { Link, Sidebar } from "./style";
 import { VscHome, VscBook } from "react-icons/vsc";
 
 const SidebarComponent = ({ height }) => {
-  console.log(height);
   return (
     <Sidebar height={height}>
       <Link to="/">
