@@ -41,7 +41,7 @@ $transition-duration: 0.5s;
 	box-sizing: border-box;
 }
 .active {
-	color: $colorPrimary;
+	color: $pink;
 	transform: scale(1.2);
 }
 
@@ -56,7 +56,7 @@ body {
 .hero {
 	background-image: url('../images/bg.svg');
 	background-size: cover;
-	background-position: top;
+	background-position: center;
 	background-repeat: no-repeat;
 	min-height: 90vh;
 	width: 100%;
@@ -83,7 +83,7 @@ body {
 
 	&__logo {
 		
-		width: 90px;
+		width: 95px;
 		height: 100%;
 		
 
@@ -91,7 +91,7 @@ body {
 			width: 100%;
 			border-radius: 50%;
 		}
-		filter: drop-shadow(-2px -2px 1px rgba(0, 0, 0, 0.5));
+		filter: drop-shadow(-2px -2px 1px rgba(0, 0, 0, 0.9));
 	}
 
 	&__links {
@@ -113,28 +113,15 @@ body {
 	}
 }
 
-section:nth-child(1) {
-	background: linear-gradient(180deg, $colorPrimary 50%, $colorBase 50%);
+section:nth-child(1n) {
+background: linear-gradient(180deg, $colorPrimary 50%, $colorBase 50%);
 }
 
-section:nth-child(2) {
-	background: linear-gradient(180deg, $colorPrimary 50%, $colorBase 50%);
+section:nth-child(2n) {
+	background: linear-gradient(180deg, $colorBase 50%, $colorPrimary 50%);
 }
 
-section:nth-child(3) {
-	background: linear-gradient(-180deg, $colorBase 50%, $colorPrimary 50%);
-}
-section:nth-child(4) {
-	background: linear-gradient(180deg, $colorPrimary 50%, $colorBase 50%);
-}
 
-section:nth-child(5) {
-	background: linear-gradient(-180deg, $colorBase 50%, $colorPrimary 5%);
-}
-
-section:nth-child(6) {
-	background: linear-gradient(-180deg, $colorPrimary 50%, $colorBase 50%);
-}
 
 .info {
 	
@@ -268,7 +255,7 @@ section:nth-child(6) {
 
 		&__title {
 			font-size: 2rem;
-			margin: 1rem 0;
+			margin: 1rem 1rem;
 			@extend .clip;
 		}
 
@@ -285,8 +272,10 @@ section:nth-child(6) {
 			color: $light;
 			font-size: 1rem;
 
+
 			p {
 				border-radius: 30px;
+				background: linear-gradient(90deg, $black, $colorPrimary,$black);
 				padding: 1rem;
 				margin: 0.6rem;
 				@extend .dark-mode-inner-shadow;
@@ -345,6 +334,7 @@ section:nth-child(6) {
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
+
 	
 	.galeria {
 		display: none;
@@ -488,6 +478,7 @@ section:nth-child(6) {
 			img {
 				width: 60%;
 				cursor: pointer;
+				pointer-events: auto;
 			}
 		}
 	}

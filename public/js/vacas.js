@@ -4,10 +4,12 @@ let content = document.querySelector('.fotos');
 
 let match = window.matchMedia('(min-width: 992px)').matches;
 content.addEventListener('click', cambiar);
+
+
 function cambiar(e) {
 	e.preventDefault();
 	let t = e.target.src;
-	if (t !== undefined) {
+	if (t  && match) {
 		galeria.src = t;
 	}
 }
@@ -20,9 +22,8 @@ let auto = () => {
 
 	galeria.src = `images/${count}.jpg`;
 };
-console.log();
+
 if (match) {
-	galeria.src = `images/${count}.jpg`;
 	auto();
 }
 
