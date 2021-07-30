@@ -12,6 +12,16 @@ export default function LayoutComponent({
     <>
       <GlobalStyle theme="purple" />
       <title>{title}</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="true"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+        rel="stylesheet"
+      />
       <Header />
       <Sidebar />
       <Layout>{children}</Layout>
