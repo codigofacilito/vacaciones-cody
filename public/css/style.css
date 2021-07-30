@@ -225,6 +225,18 @@ body {
     width: 100%;
 }
 
+@media screen and (min-width:414px) {
+    .vacation-frontend__description {
+        display: block;
+        margin: auto;
+        margin-block: 62px;
+        inline-size: 450px;
+    }
+    .vacation-frontend__card-details {
+        justify-content: space-evenly;
+    }
+}
+
 @media screen and (min-width:960px) {
     .vacation-frontend__title {
         font: var(--title);
@@ -243,19 +255,16 @@ body {
         inline-size: 500px;
     }
     .vacation-frontend__card {
+        font-size: 16px;
         width: 200px;
         height: 250px;
     }
     .vacation-frontend__description {
-        display: block;
-        margin: auto;
         inline-size: 650px;
+        margin-block: 0;
     }
     .vacation-frontend__card-description {
         padding-inline: 30px;
-    }
-    .vacation-frontend__card-details {
-        justify-content: space-evenly;
     }
 }
 
