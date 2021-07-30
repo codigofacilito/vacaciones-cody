@@ -1,0 +1,159 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+  
+/* 
+  PALETA DE COLORES:
+  #90af3c -> ok
+  #5db06a -> ok
+  #39ac91 -> ok
+  #24aa78 ->
+  #26a659 -> ok
+*/
+  
+:root {
+    --navigation-menu-bg: #39ac91;
+    --primary-color: #ffffff;
+    --hover-link-color: #000000;
+    --section-01-bg: #26a659;
+    --section-02-bg: #5db06a;
+}
+
+body {
+    background: #5db06a;
+    font-family: 'Baskervville', serif;
+}
+  
+/* NAVIGATION */
+header .navigation {
+    background-color: var(--navigation-menu-bg);
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+  
+header .navigation a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+  
+header .navigation a:hover {
+    color: var(--hover-link-color);
+    text-decoration: underline;
+}
+/* END OF NAVIGATION */
+
+/* CONTAINER HEADER */
+.container .header h1 {
+    text-align: center;
+    color: #ffffff
+}
+/* END OF CONTAINER HEADER */
+
+/* CONTENT */
+.container .header h1, 
+.container .content .img-box p {
+    padding: 1rem;
+}
+
+.container .header h1::selection, 
+.container .content .img-box p::selection {
+    background-color: #000;
+    color: #ffffff;
+}
+  
+.container {
+    max-width: 960px;
+    margin: 2rem auto 2rem auto;
+    background-color: #424242;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+}
+  
+.container .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #BDBDBD;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3);
+}
+  
+.container .content .img-box {
+    background-color: #eeeeee;
+    width: 200px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+  }
+  
+.container .content .img-box .img-config {
+    width: 200px;
+    height: 140px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.container .content .img-box .img-config:hover {
+    opacity: 0.7;
+}
+
+.container .content .img-box .img-text {
+    text-align: center;
+}
+
+@keyframes scale {
+    0% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(2, 2)
+    }
+}
+/* END OF CONTENT */
+
+  /* MODAL */
+.modal-inactive {
+    display: none;
+}
+  
+.modal-active {
+    display: block;
+    z-index: 1;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+.img-modal {
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    display: block;
+    animation: zoom 0.5s;
+    border-radius: 10px;
+}
+  
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.close:hover {
+    opacity: 0.5;
+}
+/* END OF MODAL */

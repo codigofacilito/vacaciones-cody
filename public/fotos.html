@@ -6,29 +6,77 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/photos.css">
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="./index.html">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
 
-  </main>
+  <header>
+    <nav class="navigation">
+      <a href="./index.html"><i class="fas fa-home"></i> Inicio</a>
+      <a href="fotos.html"><i class="fas fa-images"></i> Fotos</a>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <header class="header">
+      <h1>Galería completa de mis vacaciones</h1>
+    </header>
+    <main class="content">
+
+      <div id="modal" class="modal-inactive">
+        <span id="close" class="close">X</span>
+        <img src="./assets/img/christmas.jpg" id="img-modal" class="img-modal">
+      </div>
+
+      <div class="img-box">
+        <img src="images/1.jpg" id="img-1" class="img-config" alt="Cody en la playa" title="Cody en la playa">
+        <p class="img-text">Cody en la playa</p>
+      </div>
+
+      <div class="img-box">
+        <img src="images/2.jpg" id="img-2" class="img-config" alt="Cody acampando" title="Cody acampando">
+        <p class="img-text">Cody acampando</p>
+      </div>
+
+      <div class="img-box">
+        <img src="images/3.jpg" id="img-3" class="img-config" alt="Cody en una alberca" title="Cody en una alberca">
+        <p class="img-text">Cody en una alberca</p>
+      </div>
+
+      <div class="img-box">
+        <img src="images/4.jpg" id="img-4" class="img-config" alt="Cody en una playa" title="Cody en una playa">
+        <p class="img-text">Cody en una playa</p>
+      </div>
+
+      <div class="img-box">
+        <img src="images/5.jpg" id="img-5" class="img-config" alt="Cody en una calle" title="Cody en una calle">
+        <p class="img-text">Cody en una calle</p>
+      </div>
+
+      <div class="img-box">
+        <img src="images/6.jpg" id="img-6" class="img-config" alt="Cody en un aeropuerto" title="Cody en un aeropuerto">
+        <p class="img-text">Cody en un aeropuerto</p>
+      </div>
+
+      <div class="img-box">
+        <img src="images/1.jpg" id="img-7" class="img-config" alt="Cody en la playa" title="Cody en la playa">
+        <p class="img-text">Cody en la playa</p>
+      </div>
+
+      <div class="img-box">
+        <img src="images/2.jpg" id="img-8" class="img-config" alt="Cody acampando" title="Cody acampando">
+        <p class="img-text">Cody acampando</p>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="./js/photos.js"></script>
 </body>
 
 </html>
