@@ -6,7 +6,8 @@
       class="images__image"
       :src="image.url"
       :alt="image.alt"
-      :key="image.id">
+      :key="image.id"
+      data-fancybox="gallery">
     </div>
   </div>
 </template>
@@ -55,6 +56,8 @@ h2 {
   &__image {
       width: 350px;
       border-radius: 8px;
+      cursor: pointer;
+      transition: all 500ms ease;
 
       @media(max-width: 750px){
         width: 150;
@@ -62,6 +65,10 @@ h2 {
 
       @media(max-width: 340px){
         width: 300px;
+      }
+
+      &:hover {
+        transform: scale3d(1.05, 1.05, 1.05);
       }
   }
 }
