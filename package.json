@@ -1,0 +1,24 @@
+{
+  "name": "vacaciones-cody",
+  "version": "1.0.0",
+  "description": "This is a fork from the original repo",
+  "main": ".",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HectorMtz22/vacaciones-cody.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HectorMtz22/vacaciones-cody/issues"
+  },
+  "homepage": "https://github.com/HectorMtz22/vacaciones-cody#readme",
+  "dependencies": {
+    "gatsby": "^3.10.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
