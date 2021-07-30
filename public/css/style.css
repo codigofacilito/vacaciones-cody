@@ -209,11 +209,11 @@ body {
 }
 
 .card-red {
-    background: #FF512F;
+    background: linear-gradient(90deg, #FF512F 0%, #DD2476 100%);
 }
 
 .card-blue {
-    background: #0575E6;
+    background: linear-gradient(90deg, #0575E6 0%, #021B79 100%);
 }
 
 .linear-gradient__img-gradient-blue {
