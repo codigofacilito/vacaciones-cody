@@ -3,6 +3,7 @@ import LayoutPage from "components/Layout";
 import Section from "components/Section";
 import Button from "components/Button";
 import P from "components/Paragraph";
+import Grid from "components/Grid";
 
 export default function Home() {
   return (
@@ -65,15 +66,15 @@ export default function Home() {
           ¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas
           fotos que tomé:
         </P>
-        <div class="fotos">
+        <Grid>
           <img src="images/1.jpg" alt="Cody en la playa" />
           <img src="images/2.jpg" alt="Cody acampando" />
           <img src="images/3.jpg" alt="Cody en una alberca" />
-          <P>
-            Puedes ver más, en la galería de fotos de mi página
-            <a href="fotos.html">Ir a la galería</a>
-          </P>
-        </div>
+        </Grid>
+        <P>
+          Puedes ver más, en la galería de fotos de mi página
+          <a href="fotos.html">Ir a la galería</a>
+        </P>
       </Section>
 
       <Section>
