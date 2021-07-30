@@ -10,12 +10,17 @@
     --green80: #087146;
     --green70: #11956E;
     --green40: #33A677;
-    --gren30: #5BCC85;
     --gray80: #505050;
     --gray70: #626262;
+    --gren30: #5BCC85;
     --black90: #000;
     --white90: #FFF;
     --white10: #F8FAFC;
+    --yellow70: #FF9900;
+    --yellow50: #F8CD5B;
+    --brown80: #3F2F18;
+    --pink30: #F76779;
+    --blue30: #4DD1FF;
 }
 
 body {
@@ -252,6 +257,78 @@ body {
     .vacation-frontend__card-details {
         justify-content: space-evenly;
     }
+}
+
+
+/* Learning-path */
+
+.learning-path__content {
+    background: var(--white90);
+}
+
+.learning-path__description {
+    margin-inline: 51px;
+    padding-block: 100px;
+}
+
+.learning-path__title {
+    font: var(--title-mobile);
+    color: var(--yellow50);
+    margin-block-start: 0;
+    margin-block-end: 40px;
+    width: auto;
+}
+
+.learning-path__title span {
+    color: var(--brown80);
+}
+
+.learning-path__info {
+    font: var(--description-mo--title-mobile);
+}
+
+.learning-path__info ul {
+    margin-block: 50px;
+    list-style: none;
+    display: block;
+    padding-inline-start: 0;
+}
+
+.learning-path__info ul li {
+    margin-block-end: 40px;
+    text-align: center;
+}
+
+.circle {
+    block-size: 62px;
+    inline-size: 62px;
+    border-radius: 50px;
+    color: white;
+    display: inline-block;
+}
+
+.circle span {
+    line-height: 62px;
+}
+
+.circle-one {
+    background: var(--blue30);
+}
+
+.circle-two {
+    background: var(--black90);
+}
+
+.circle-three {
+    background: var(--green40);
+}
+
+.circle-four {
+    background: var(--yellow50);
+}
+
+.circle-five {
+    background: var(--pink30);
 }
 
 
