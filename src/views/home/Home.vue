@@ -89,7 +89,7 @@
             <li>Mejora tu productividad y creatividad</li>
           </ol>
       </header>
-      <img src="@/assets/images/cody.png" alt="Cody despidiendose" class="tips__cody">
+      <img src="@/assets/logo.png" alt="Cody despidiendose" class="tips__cody">
     </section>
 </template>
 
