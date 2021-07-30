@@ -1,8 +1,10 @@
 import React from "react";
-import { GlobalStyle } from "./style";
+import Sidebar from "components/Sidebar";
+import Header from "components/Header";
+import { GlobalStyle, Layout } from "./style";
 //import theme from "theme";
 
-export default function Layout({
+export default function LayoutComponent({
   children,
   title = "Mis vacaciones - HectorMtz22",
 }) {
@@ -10,7 +12,9 @@ export default function Layout({
     <>
       <GlobalStyle theme="purple" />
       <title>{title}</title>
-      {children}
+      <Header />
+      <Sidebar />
+      <Layout>{children}</Layout>
     </>
   );
 }
