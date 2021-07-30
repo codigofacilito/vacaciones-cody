@@ -2,13 +2,13 @@ nav{
   background-color: aliceblue;
   padding: 15px;
   display: flex;
-  gap:1em;
+  gap:2em;
 }
 
 main{
   text-align: center;
   max-width: 960px;
-  margin:0 auto;
+  margin:2 auto;
 }
 
 section{
@@ -16,15 +16,21 @@ section{
 }
 
 .cursos div{
-  background-color: black;
+  background-color: darkcyan;
+  border-radius: 15px ;
   color: white;
   max-width: 200px;
   display: inline-block;
   box-shadow: 5px 5px 10px black;
+  margin-right: 2em;
+
 }
 .fotos img{
   max-width: 450px;
   display: inline-block;
+  margin-right: 1em ;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgb(146, 143, 143);
 }
 ul li{
   text-align: left;
@@ -35,4 +41,32 @@ ul li::marker {
 
 ol li{
   text-align: left;
+}
+
+h1 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+h2 { 
+  border-radius: 10px;
+  border-bottom: black;
+  padding-top: 2%;
+  padding-left: 3%;
+  padding-right: 5%;
+  font-family: 'Times New Roman', Times, serif;
+  background-size: 2ch;
+  padding: 15px;
+  text-align: center;
+
+}
+
+p { 
+  font-family:monospace;
+  margin-bottom: 5px;
+  font-size: 2ch;
+}
+
+.a { 
+  font-family: 'Times New Roman', Times, serif;
 }
