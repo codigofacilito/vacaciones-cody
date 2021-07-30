@@ -120,7 +120,7 @@ body {
 /* Vacation */
 
 .vacation {
-    margin-block-start: -150px;
+    margin-block-start: -50px;
 }
 
 .vacation-frontend__content {
