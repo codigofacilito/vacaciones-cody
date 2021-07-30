@@ -6,6 +6,9 @@ const theme = {
     third: "#417318",
     thirdVariant: "#72BF32",
   },
+  opacity: {
+    global: 0.9,
+  },
 };
 
 export default theme;
