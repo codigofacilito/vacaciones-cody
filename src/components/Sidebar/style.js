@@ -12,9 +12,13 @@ export const Sidebar = styled.main`
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
+  opacity: ${theme.opacity.global};
 `;
 
 export const Link = styled(LinkGatsby)`
   color: #fff;
   padding: 1rem 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;

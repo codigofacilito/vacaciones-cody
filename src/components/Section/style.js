@@ -11,6 +11,7 @@ export const Section = styled.section`
   color: #ccc;
   border-radius: 5px;
   list-style-position: inside;
+  opacity: ${theme.opacity.global};
   h2::before {
     font-family: monospace;
     color: ${theme.colors.thirdVariant};
@@ -29,8 +30,9 @@ export const Section = styled.section`
     left: 1px;
     right: -1px;
     bottom: -1px;
-    background-color: black;
-    filter: blur(2px);
+    background-color: #5555;
+    filter: blur(4px);
     z-index: -1;
+    opacity: ${theme.opacity.global};
   }
 `;

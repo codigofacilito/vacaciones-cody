@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
+import theme from "theme";
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
@@ -10,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Raleway, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
+
 
   a {
     text-decoration: none;
