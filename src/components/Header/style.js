@@ -10,4 +10,5 @@ export const Header = styled.header`
   left: 0;
   right: 0;
   z-index: 1;
+  opacity: ${theme.opacity.global};
 `;
