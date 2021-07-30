@@ -1,38 +1,38 @@
 import React from "react";
 import LayoutPage from "components/Layout";
 import Section from "components/Section";
+import Button from "components/Button";
+import P from "components/Paragraph";
 
 export default function Home() {
   return (
     <LayoutPage>
       <Section>
         <h2>Mis vacaciones Frontend</h2>
-        <p>
+        <P>
           Durante el verano de 2019, decidí comenzar a aprender desarrollo
           frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y
           JavaScript
-        </p>
-        <p>
+        </P>
+        <P>
           Cada tarde, después de conocer nuevos lugares en mis vacaciones,
           practicaba mis habilidades en tecnologías frontend, construyendo esta
           página
-        </p>
-        <p>Estos son los cursos que estuve tomando</p>
+        </P>
+        <P>Estos son los cursos que estuve tomando</P>
         <div class="cursos">
-          <div>
+          <Button>
             <p>Curso profesional de Desarrollo Web</p>
-          </div>
-          <div>
+          </Button>
+          <Button>
             <p>Curso para crear mi primera página web</p>
-          </div>
+          </Button>
         </div>
       </Section>
 
       <Section>
-        <header>
-          <h2>Ruta de aprendizaje 2021</h2>
-          <p>También me propuse aprender nuevas tecnologías durante 2021</p>
-        </header>
+        <h2>Ruta de aprendizaje 2021</h2>
+        <P>También me propuse aprender nuevas tecnologías durante 2021</P>
         <ul>
           <li>Flexbox, y Grid</li>
           <li>Animaciones con CSS y JavaScript</li>
@@ -42,63 +42,57 @@ export default function Home() {
         </ul>
       </Section>
       <Section>
-        <header>
-          <h2>Colabora en mi página</h2>
-        </header>
-        <p>
+        <h2>Colabora en mi página</h2>
+        <P>
           Como parte de mi formación Frontend, aprendí acerca de Git y GitHub,
           por lo que decidí subir mi código a GitHub
-        </p>
-        <p>
+        </P>
+        <P>
           Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y
           enviando un pull request.
-        </p>
-        <p>
+        </P>
+        <P>
           Si nunca antes has colaborado con un repositorio, en Código Facilito
           hay un tutorial que lo explica
           <a href="" target="_blank">
             Ir al tutorial
           </a>
-        </p>
+        </P>
       </Section>
       <Section>
-        <header>
-          <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-          <p>
-            ¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto
-            algunas fotos que tomé:
-          </p>
-        </header>
+        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
+        <P>
+          ¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas
+          fotos que tomé:
+        </P>
         <div class="fotos">
           <img src="images/1.jpg" alt="Cody en la playa" />
           <img src="images/2.jpg" alt="Cody acampando" />
           <img src="images/3.jpg" alt="Cody en una alberca" />
-          <p>
+          <P>
             Puedes ver más, en la galería de fotos de mi página
             <a href="fotos.html">Ir a la galería</a>
-          </p>
+          </P>
         </div>
       </Section>
 
       <Section>
-        <header>
-          <h2>La importancia de las vacaciones</h2>
-          <p>
-            Aprender a programar y escribir código, puede ser estresante, por
-            eso es muy importante que periódicamente nos desconectemos y
-            descansemos apropiadamente
-          </p>
-          <p>
-            Durante mis vacaciones aprendí que existen distintos beneficios de
-            descansar:
-          </p>
-          <ol>
-            <li>Mejora la salud mental</li>
-            <li>Incrementa la motivación</li>
-            <li>Reduce el burnout</li>
-            <li>Mejora tu productividad y creatividad</li>
-          </ol>
-        </header>
+        <h2>La importancia de las vacaciones</h2>
+        <P>
+          Aprender a programar y escribir código, puede ser estresante, por eso
+          es muy importante que periódicamente nos desconectemos y descansemos
+          apropiadamente
+        </P>
+        <P>
+          Durante mis vacaciones aprendí que existen distintos beneficios de
+          descansar:
+        </P>
+        <ol>
+          <li>Mejora la salud mental</li>
+          <li>Incrementa la motivación</li>
+          <li>Reduce el burnout</li>
+          <li>Mejora tu productividad y creatividad</li>
+        </ol>
       </Section>
     </LayoutPage>
   );
