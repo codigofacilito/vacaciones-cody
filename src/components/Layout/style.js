@@ -26,4 +26,5 @@ export const Layout = styled.main`
   @media screen and (min-width: ${theme.threshold.width}) {
     margin-left: 15vw;
   }
+  margin-bottom: 100px;
 `;
