@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Header } from "./style";
 
 const HeaderComponent = React.forwardRef((_, ref) => {
