@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
-// import theme from "theme";
+import theme from "theme";
 
 export const GlobalStyle = createGlobalStyle`
   // I prefer this styles
@@ -23,5 +23,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Layout = styled.main`
-  margin-left: 15vw;
+  @media screen and (min-width: ${theme.threshold.width}) {
+    margin-left: 15vw;
+  }
 `;

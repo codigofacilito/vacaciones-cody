@@ -9,6 +9,9 @@ const theme = {
   opacity: {
     global: 0.9,
   },
+  threshold: {
+    width: "900px",
+  },
 };
 
 export default theme;
