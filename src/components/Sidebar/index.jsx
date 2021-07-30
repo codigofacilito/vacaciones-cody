@@ -1,11 +1,12 @@
 import React from "react";
+import { Link, Sidebar } from "./style";
 
 const SidebarComponent = () => {
   return (
-    <nav>
-      <a href="/">Inicio</a>
-      <a href="fotos.html">Fotos</a>
-    </nav>
+    <Sidebar>
+      <Link to="/">Inicio</Link>
+      <Link to="/fotos">Fotos</Link>
+    </Sidebar>
   );
 };
 
