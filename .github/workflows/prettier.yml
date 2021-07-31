@@ -2,6 +2,8 @@ name: Prettier
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "public/**"
 
   workflow_dispatch:
 
