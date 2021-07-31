@@ -28,13 +28,13 @@ const ContactComponent = () => {
     <Contact>
       <h2>Me puedes encontrar en varias Redes Sociales:</h2>
 
-      <Box>
-        {socialNetworks.map((network) => (
-          <Link key={network.name} {...network}>
+      {socialNetworks.map((network) => (
+        <Box key={network.name}>
+          <Link {...network}>
             {network.component} {network.name} {network.username}
           </Link>
-        ))}
-      </Box>
+        </Box>
+      ))}
     </Contact>
   );
 };
