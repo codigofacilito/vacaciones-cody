@@ -78,10 +78,11 @@
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
       </header>
+      <!-- Efecto en las fotos al pasar el ratón y al dar click sobre ellas -->
       <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
+        <img src="images/1.jpg" class="item_fotos" alt="Cody en la playa" onclick="showCompleteImg(event)">
+        <img src="images/2.jpg" class="item_fotos" alt="Cody acampando" onclick="showCompleteImg(event)">
+        <img src="images/3.jpg" class="item_fotos" alt="Cody en alberca" onclick="showCompleteImg(event)">
         <p>
           Puedes ver más, en la galería de fotos de mi página
           <a href="fotos.html" class="btn_link">Ir a la galería <i class="fas fa-camera"></i></a>
@@ -101,9 +102,8 @@
           <li>Mejora tu productividad y creatividad</li>
         </ol>
       </header>
-      
     </section>
-    
   </main>
+  <script src="js/script.js"></script>
 </body>
 </html>
