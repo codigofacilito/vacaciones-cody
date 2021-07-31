@@ -11,26 +11,24 @@
 
   <main>
     <header>
-      <nav class="navbar shadow-lg fixed w-full backdrop-blur-md">
-        <div class="flex gap-5 items-center">
-          <a class="flex gap-2 items-center" href="./index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code stroke-current" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#363136" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <nav class="navbar">
+          <a class="navbar__brand" href="./index.html">
+            <svg class="brand__icon" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#363136" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <polyline points="7 8 3 12 7 16" />
               <polyline points="17 8 21 12 17 16" />
               <line x1="14" y1="4" x2="10" y2="20" />
             </svg>
-              <h1>Cody Dev</h1>
+            <h1 class="brand__text">Cody Dev</h1>
           </a>
-        </div>
-        <div class="flex gap-5 items-center">
-          <a class="links" href="./index.html">Inicio</a>
-          <a class="links" href="./perfil.html">Perfil</a>
-          <a class="links" href="./fotos.html">Fotos</a>
+        <div class="navbar__links">
+          <!-- <a class="links" href="./index.html">Inicio</a> -->
+          <a class="link" href="./perfil.html">Perfil</a>
+          <a class="link" href="./fotos.html">Fotos</a>
           <button class="btn is-secondary">Ingresar</button>
         </div>
       </nav>
-      <!-- <div class="banner" style="background-image: url(./images/cover.jpg)"> -->
+
         <div class="banner">
           <div class="banner__hero">
             <img class="rounded-none w-32 h-32" src="./images/cody-removebg-flip.png" alt="Cody Avatar">
@@ -123,7 +121,7 @@
     
   </main>
 
-  <footer class="bg-summer-400 text-white flex gap-10 justify-center content-center p-10">
+  <footer class="footer">
     <p>Todos los derechos reservados. Cody Blogs™</p>
   </footer>
   <script src="./js/app.js"></script>

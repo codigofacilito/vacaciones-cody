@@ -16,6 +16,48 @@
   }
 }
 
+/* Begin Navbar: brand & links */
+
+.navbar {
+  @apply flex justify-between;
+  @apply fixed w-full p-4;
+  @apply text-white shadow-lg backdrop-blur-md;
+}
+
+.navbar__brand {
+  @apply flex gap-2 items-center;
+}
+
+.brand__icon {
+  @apply stroke-current;
+}
+
+.brand__text {
+  @apply font-roboto text-2xl;
+}
+
+.navbar__links {
+  @apply flex gap-5 items-center;
+}
+
+.link {
+  @apply hidden lg:flex;
+}
+
+.btn {
+  @apply px-4 py-1 text-summer-400;
+  @apply rounded-full border-2 border-summer-400 ;
+  /* @apply hover:text-summer-400 hover:bg-white hover:border-transparent; */
+  @apply focus:outline-none focus:ring-2 focus:ring-summer-400 focus:ring-offset-2;
+}
+
+.is-secondary {
+  @apply bg-summer-400 text-white;
+} 
+
+/* End Navbar: brand & links */
+
+
 .gradient {
   @apply bg-gradient-to-t from-summer-400
 }
@@ -36,36 +78,15 @@
   @apply text-white font-extrabold font-roboto text-4xl
 }
 
-.navbar {
-  @apply flex justify-between;
-  @apply p-4;
-  @apply text-white;
-}
-
-.links {
-  @apply hidden lg:flex
-}
-
-.btn {
-  @apply px-4 py-1 text-sm text-summer-400;
-  @apply rounded-full border-2 border-summer-400 ;
-  /* @apply hover:text-summer-400 hover:bg-white hover:border-transparent; */
-  @apply focus:outline-none focus:ring-2 focus:ring-summer-400 focus:ring-offset-2;
-}
-
-.is-secondary {
-  @apply bg-summer-400 text-white;
-}
-
 .banner {
-    @apply h-screen bg-local;
+    @apply h-screen bg-local p-12;
     @apply bg-summer-100;
-    @apply flex justify-between items-end;
+    @apply flex flex-col lg:flex-row;
 }
 
 .banner__hero {
-  @apply max-w-lg;
-  @apply flex flex-col justify-end;
+  @apply mt-20;
+  @apply flex flex-col justify-end w-full lg:flex-1;
 }
 
 .banner__comment {
@@ -74,8 +95,9 @@
 }
 
 .banner__photos {
-  width: 50%;
-  height: 50%;
+  @apply w-full h-full border-8 border-summer-300;
+  /* width: 100%;
+  height: 100%; */
   transition: all .1s ease-in-out;
   background-image: url(../images/1.jpg);
   -webkit-animation: banner 8s infinite linear;
@@ -83,6 +105,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.banner__photos {
+  @apply lg:flex lg:flex-1 lg:self-center lg:h-3/5 lg:order-first;
 }
 
 @-webkit-keyframes banner {
@@ -117,4 +143,8 @@
   100% {
     background-image: url(../images/4.jpg);
   }
+}
+
+.footer {
+  @apply bg-summer-400 text-white flex gap-10 justify-center content-center p-10;
 }
