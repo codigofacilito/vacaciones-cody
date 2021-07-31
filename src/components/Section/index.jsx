@@ -1,8 +1,22 @@
 import React from "react";
-import { Section } from "./style";
+import { Section, TitleBar } from "./style";
+import {
+  VscChromeMinimize,
+  VscChromeMaximize,
+  VscChromeClose,
+} from "react-icons/vsc";
 
 const SectionComponent = ({ children }) => {
-  return <Section>{children}</Section>;
+  return (
+    <Section>
+      <TitleBar>
+        <VscChromeMinimize />
+        <VscChromeMaximize />
+        <VscChromeClose />
+      </TitleBar>
+      {children}
+    </Section>
+  );
 };
 
 export default SectionComponent;

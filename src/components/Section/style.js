@@ -50,3 +50,13 @@ export const Section = styled.section`
     }
   }
 `;
+
+export const TitleBar = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  display: flex;
+  width: 60px;
+  justify-content: space-between;
+`;
