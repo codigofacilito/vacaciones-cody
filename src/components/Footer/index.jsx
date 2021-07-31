@@ -8,7 +8,7 @@ const FooterComponent = () => {
   return (
     <Hidden ondesktop>
       <Footer>
-        <Grid>
+        <Grid length="2">
           <Link to="/">
             <VscHome size="2rem" /> Inicio
           </Link>

@@ -35,4 +35,12 @@ export const Section = styled.section`
     z-index: -1;
     opacity: ${theme.opacity.global};
   }
+
+  // For Movil
+  @media screen and (max-width: ${theme.threshold.width}) {
+    h2::before,
+    h2::after {
+      font-size: ${theme.fontSizes.movil};
+    }
+  }
 `;

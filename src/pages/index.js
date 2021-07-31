@@ -5,6 +5,7 @@ import Button from "components/Button";
 import P from "components/Paragraph";
 import Grid from "components/Grid";
 import Link from "components/Link";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Home() {
   return (
@@ -65,10 +66,10 @@ export default function Home() {
           ¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas
           fotos que tomé:
         </P>
-        <Grid>
-          <img src="/images/1.jpg" alt="Cody en la playa" />
-          <img src="/images/2.jpg" alt="Cody acampando" />
-          <img src="/images/3.jpg" alt="Cody en una alberca" />
+        <Grid movil>
+          <StaticImage src="../images/1.jpg" alt="Cody en la playa" />
+          <StaticImage src="../images/2.jpg" alt="Cody acampando" />
+          <StaticImage src="../images/3.jpg" alt="Cody en una alberca" />
         </Grid>
         <P>
           Puedes ver más, en la galería de fotos de mi página

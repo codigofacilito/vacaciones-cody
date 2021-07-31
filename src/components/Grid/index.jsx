@@ -1,8 +1,12 @@
 import React from "react";
 import { Grid } from "./style";
 
-const GridComponent = ({ children }) => {
-  return <Grid length={children.length}>{children}</Grid>;
+const GridComponent = (props) => {
+  return (
+    <Grid length={props.children.length} {...props}>
+      {props.children}
+    </Grid>
+  );
 };
 
 export default GridComponent;
