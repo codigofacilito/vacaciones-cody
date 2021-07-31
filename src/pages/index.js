@@ -58,7 +58,9 @@ export default function Home() {
           Si nunca antes has colaborado con un repositorio, en Código Facilito
           hay un tutorial que lo explica
         </P>
-        <Link to="/">Ir al tutorial</Link>
+        <Link to="/">
+          <Button>Ir al tutorial</Button>
+        </Link>
       </Section>
       <Section>
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
@@ -72,7 +74,9 @@ export default function Home() {
           <StaticImage src="../images/3.jpg" alt="Cody en una alberca" />
         </Grid>
         <P>Puedes ver más, en la galería de fotos de mi página</P>
-        <Link to="/fotos">Ir a la galería</Link>
+        <Link to="/fotos">
+          <Button>Ir a la galería</Button>
+        </Link>
       </Section>
 
       <Section>
@@ -92,6 +96,9 @@ export default function Home() {
           <li>Reduce el burnout</li>
           <li>Mejora tu productividad y creatividad</li>
         </ol>
+        <Link to="/docs">
+          <Button>Ir a la documentación</Button>
+        </Link>
       </Section>
     </LayoutPage>
   );
