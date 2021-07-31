@@ -12,6 +12,10 @@ const theme = {
   threshold: {
     width: "900px",
   },
+  fontSizes: {
+    movil: "14px",
+    desktop: "16px",
+  },
 };
 
 export default theme;

@@ -18,7 +18,7 @@ export default function LayoutComponent({
 
   return (
     <>
-      <GlobalStyle theme="purple" />
+      <GlobalStyle />
       <title>{title}</title>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link

@@ -23,8 +23,14 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Layout = styled.main`
+  // For Desktop
   @media screen and (min-width: ${theme.threshold.width}) {
+    font-size: ${theme.fontSizes.desktop};
     margin-left: 15vw;
   }
-  margin-bottom: 100px;
+  // For Movil
+  @media screen and (max-width: ${theme.threshold.width}) {
+    font-size: ${theme.fontSizes.movil};
+    margin-bottom: 100px;
+  }
 `;

@@ -4,6 +4,7 @@ import Section from "components/Section";
 import Button from "components/Button";
 import P from "components/Paragraph";
 import Grid from "components/Grid";
+import Link from "components/Link";
 
 export default function Home() {
   return (
@@ -55,10 +56,8 @@ export default function Home() {
         <P>
           Si nunca antes has colaborado con un repositorio, en Código Facilito
           hay un tutorial que lo explica
-          <a href="" target="_blank">
-            Ir al tutorial
-          </a>
         </P>
+        <Link to="/">Ir al tutorial</Link>
       </Section>
       <Section>
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
@@ -73,7 +72,7 @@ export default function Home() {
         </Grid>
         <P>
           Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
+          <Link to="/fotos">Ir a la galería</Link>
         </P>
       </Section>
 
