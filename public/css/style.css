@@ -271,7 +271,7 @@ section#intro {
   background-color: #02463a;
   margin: 50px 0 0 0;
   color: white;
-  background-image: url("./images/bg-contributors.jpg");
+  background-image: url("../images/bg-contributors.jpg");
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
