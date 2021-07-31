@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Sidebar from "components/Sidebar";
 import Header from "components/Header";
 import Footer from "components/Footer";
+import Contact from "components/Contact";
 import { GlobalStyle, Layout } from "./style";
 //import theme from "theme";
 
@@ -32,7 +33,10 @@ export default function LayoutComponent({
       />
       <Header ref={headerRef} />
       <Sidebar height={height} />
-      <Layout>{children}</Layout>
+      <Layout>
+        {children}
+        <Contact />
+      </Layout>
       <Footer />
     </>
   );

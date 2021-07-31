@@ -71,10 +71,8 @@ export default function Home() {
           <StaticImage src="../images/2.jpg" alt="Cody acampando" />
           <StaticImage src="../images/3.jpg" alt="Cody en una alberca" />
         </Grid>
-        <P>
-          Puedes ver más, en la galería de fotos de mi página
-          <Link to="/fotos">Ir a la galería</Link>
-        </P>
+        <P>Puedes ver más, en la galería de fotos de mi página</P>
+        <Link to="/fotos">Ir a la galería</Link>
       </Section>
 
       <Section>
