@@ -18,10 +18,16 @@ nav .logo {
   text-decoration: none;
   color: white;
 }
+nav ul#nav-mobile li {
+  padding: 0 15px;
+}
 nav ul#nav-mobile li a {
   text-decoration: none;
   color: white;
   position: relative;
+  padding: 8px 0;
+  display: unset;
+  
 }
 nav ul a:hover {
   background: none;
@@ -29,7 +35,7 @@ nav ul a:hover {
 nav ul#nav-mobile li a::before {
   content: "";
   position: absolute;
-  bottom: 15px;
+  bottom: -2px;
   left: 0;
   width: 0;
   height: 2px;
@@ -39,7 +45,9 @@ nav ul#nav-mobile li a::before {
 nav ul#nav-mobile li:hover a::before {
   width: 100%;
 }
-
+.active {
+  border-bottom: white solid 2px;
+}
 .nav-fixed {
   position: fixed;
   top: 0;
@@ -370,9 +378,8 @@ footer a:hover {
   z-index: 10;
   position: relative;
 }
-.swiper-slide-zoomed {
-  position: absolute;
-  z-index: 100000;
+.swiper-pagination-bullet-active {
+  background: #00bb9d;
 }
 
 /*******************************************/
