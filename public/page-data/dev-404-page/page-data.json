@@ -1,1 +1,12 @@
-{"componentChunkName":"component---cache-dev-404-page-js","path":"/dev-404-page/","result":{"data":{"allSiteFunction":{"nodes":[]},"allSitePage":{"nodes":[{"path":"/fotos/"},{"path":"/"}]}},"pageContext":{}},"staticQueryHashes":[]}
+{
+  "componentChunkName": "component---cache-dev-404-page-js",
+  "path": "/dev-404-page/",
+  "result": {
+    "data": {
+      "allSiteFunction": { "nodes": [] },
+      "allSitePage": { "nodes": [{ "path": "/fotos/" }, { "path": "/" }] }
+    },
+    "pageContext": {}
+  },
+  "staticQueryHashes": []
+}
