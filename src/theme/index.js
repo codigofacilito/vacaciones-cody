@@ -13,7 +13,7 @@ const theme = {
     width: "900px",
   },
   fontSizes: {
-    movil: "14px",
+    movil: "15px",
     desktop: "16px",
   },
 };
