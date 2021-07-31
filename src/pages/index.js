@@ -58,9 +58,7 @@ export default function Home() {
           Si nunca antes has colaborado con un repositorio, en Código Facilito
           hay un tutorial que lo explica
         </P>
-        <Link to="/" bold>
-          Ir al tutorial
-        </Link>
+        <Link to="/">Ir al tutorial</Link>
       </Section>
       <Section>
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
