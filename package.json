@@ -20,6 +20,7 @@
   "homepage": "https://github.com/HectorMtz22/vacaciones-cody#readme",
   "dependencies": {
     "babel-plugin-styled-components": "^1.13.2",
+    "framer-motion": "^4.1.17",
     "gatsby": "^3.10.2",
     "gatsby-plugin-image": "^1.10.1",
     "gatsby-plugin-sharp": "^3.10.2",
