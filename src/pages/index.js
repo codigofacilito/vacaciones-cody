@@ -21,14 +21,14 @@ export default function Home() {
           página
         </P>
         <P>Estos son los cursos que estuve tomando</P>
-        <div>
+        <Grid>
           <Button>
             <p>Curso profesional de Desarrollo Web</p>
           </Button>
           <Button>
             <p>Curso para crear mi primera página web</p>
           </Button>
-        </div>
+        </Grid>
       </Section>
 
       <Section>
