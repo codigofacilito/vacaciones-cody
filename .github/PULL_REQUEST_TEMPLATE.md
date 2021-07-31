@@ -10,9 +10,12 @@ Antes de enviar el pull request, lee estos detalles y completa tu información �
 
 Además, completa tu información para poder contactarte, en caso de que necesitemos información adicional, o debamos informarte que has ganado alguno de los premios, coloca debajo tu:
 
-Nombre de usuario en codigofacilito.com:
+Nombre de usuario en codigofacilito.com:Esteban Van  estebanvan9@gmail.com
 
 Finalmente, aquí debajo, cuéntanos un poco sobre tu proyecto, qué es lo más interesante en tu código, o que destacarías de tu implementación: 👇
 
+Fue muy bueno poder participar en este concurso, ya que es la primera vez que realizo una colaboracion de un proyecto haciendo un fork para pasarlo  a mi repositorio, es muy valorable lo que hacen para que personas como yo, que queremos lograr formar parte del mundo del software, puedan ir aprendiendo a trabajar de manera remota. 
+Con respecto al proyecto, le implemente un efecto parallax en la pagina principal, trabaje usando html, css,js y bootstrap , tambien le aplique efectos hover, colores en degrade, efectos y opacity en cards, imagenes de unsplash, iconos de google, animaciones css , ademas cuenta con  un diseño responsive.
+ les saluda atentamente Avila Esteban desde Argentina. Muchas gracias por el concurso, me incentivo a practicar y a seguir aprendiendo.!!
 
 Eso es todo, al crear el pull request, ya estás participando en el concurso, (cuentan todos los PRs enviados antes del 5 de Agosto)
