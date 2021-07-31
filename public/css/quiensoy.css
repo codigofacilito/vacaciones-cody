@@ -1,0 +1,105 @@
+body {
+    font-family: "Open Sans", sans-serif;
+  }
+  .banner-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #010c0b),
+      url(https://i.postimg.cc/8kMwMbJj/bg.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* text typing */
+  .typing-demo {
+    width: 32ch;
+    animation: typing 5s steps(32), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .typing-demo {
+      font-size: 1.2em;
+    }
+  }
+  
+  .navbar-container {
+    top: 0;
+    background-color: #262b37;
+    position: sticky;
+    z-index: 2;
+  }
+  
+  .about-container {
+    background-color: #00bdbd;
+  }
+  
+  .education-container {
+    background-color: #eeeeee;
+  }
+  .bg-redtype {
+    background-color: #fb857f !important;
+  }
+  .bg-redtype:hover {
+    color: black !important;
+  }
+  .redtype-color {
+    color: #fb857f;
+  }
+  .circle {
+    background-color: #fb857f;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .project-container {
+    background-color: #2bb3dd;
+  }
+  
+  .form-container {
+    background-color: #474d5d;
+  }
+  .inner-form {
+    background-color: #585f73;
+  }
+  .footer {
+    background-color: #2bb3dd;
+  }
+  .code {
+    font-family: monospace;
+    font-size: 1.5em;
+  }
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: white;
+  }
+
+  .ico{
+      background: white;
+      border-radius: 90px;
+  }
+  .foto{
+    border-radius: 90%;
+    width: 80px;
+    height:80px;
+}
+  .foto:hover{
+      width: 350px;
+      height:350px;
+  }

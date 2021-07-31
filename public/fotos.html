@@ -7,28 +7,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="body-gal">
+   <!-- Navbar-->
+   <div class="navBar">
+    <nav class="nav-n">
+      <ul class="ul-n">
+        <li class="li-n text-dark"> #CODY</li>
+        <li class="li-n"><a class="a-n" href='index.html'>INICIO </a></li>
+        <li class="li-n"><a class="a-n" href='fotos.html'>GALERIA </a></li>
+      </ul>
+    </nav>
+  </div>
+
   <main>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
+      <br><br>
+      <h1 class="display-3 p-5 my-2 text-dark">Galería completa de mis vacaciones</h1>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+    <div class="main-gal">
+      <div class="box-gal">
+        <img src="images/1.jpg" alt="">
+        <div class="details-gal">
+          <h4 class="text-light"> Cody en la playa</h4>
+        </div>
+      </div>
+
+      <div class="box-gal">
+        <img src="images/2.jpg" alt="">
+        <div class="details-gal">
+          <h4 class="text-light">Cody acampando</h4>
+        </div>
+      </div>
+
+      <div class="box-gal">
+        <img src="images/3.jpg" alt="">
+        <div class="details-gal">
+          <h4 class="text-light">Cody en una alberca</h4>
+        </div>
+      </div>
     </div>
 
+    <!-- ------------------------------------------ -->
+    <div class="main-gal ">
+      <div class="box-gal">
+        <img src="images/4.jpg" alt="">
+        <div class="details-gal">
+          <h4 class="text-light">Cody tomando sol</h4>
+        </div>
+      </div>
+
+      <div class="box-gal">
+        <img src="images/5.jpg" alt="">
+        <div class="details-gal">
+          <h4 class="text-light">Cody paseando</h4>
+        </div>
+      </div>
+
+      <div class="box-gal">
+        <img src="images/6.jpg" alt="">
+        <div class="details-gal">
+          <h4 class="text-light">Cody en una alberca</h4>
+        </div>
+      </div>
+    </div>
+    
   </main>
+  <!-- ------------------------------------------ -->
+  <!-- Footer -->
+  <div class="footer ">
+    <div class="main-container">
+      <div class="brand-name">
+        <p class="text-center p-2 text-dark"> #ConcursoVeranoFrontend  -  <a class="btn-outline-dark text-light p-2" href="quiensoy.html">QuienSoy</a></p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

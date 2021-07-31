@@ -6,95 +6,399 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+    <!-- Navbar-->
+    <div class="navBar">
+      <nav class="nav-n">
+        <ul class="ul-n">
+          <li class="li-n text-dark"> #CODY</li>
+          <li class="li-n"><a class="a-n" href='index.html'>INICIO </a></li>
+          <li class="li-n"><a class="a-n" href='fotos.html'>GALERIA </a></li>
+        </ul>
       </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
-
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+    </div>
+  <br>
+    <!-- --------------------------------- -->
+    <!-- presentacion -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <br>
+        <h1 class="display-1 ">Soy Cody</h1>
+        <p class="lead"> un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página
+          quiero compartirlo contigo. </p>
+      </div>
+    </div>
+    <!-- --------------------------------- -->
+    <!-- card con efectos -->
+    <section class="1 curso">
+      <section class="parallax">
+        <div class="parallax-inner">
+          <br>
+          <div class="box-wrapper">
+            <div class="card">
+              <div class="img-box">
+                <h1 class=' p-3 text-dark'>Estas son mis Vacaciones</h1>
+              </div>
+              <h2 class="text-dark">#VeranoFrontend</h2>
+            </div>
+          </div>
+          <br>
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+      </section>
+      <!-- -------------------------------------------- -->
+      <!-- seccion: fotos de mis vacaciones -->
+      <section>
+        <h1 class="text-center display-5 ">Aquí te comparto algunas fotos de mis vacaciones.!!</h1><br>
+        <h4 class="text-center ">¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:
+        </h4><br>
+      </section>
+      <!-- ----- -------------------------------- -->
+      <!-- comienza slider -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script>
+      <div class="introcontainer">
+        <!-- Slider -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="cards">
+                <div class="card ong">
+                  <img src="images/2.jpg" />
+                  <div class="text">
+                  </div>
+                  <div class="title-box">
+                    <h1>CODY </h1><br>
+                    <p>ACAMPANDO EN LA PLAYA EL PRIMER DIA DE SU VACACIONES .</p>
+                    <div class="seperator"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards">
+                <div class="card two">
+                  <img src="images/3.jpg" alt="" />
+                  <div class="text">
+                  </div>
+                  <div class="title-box">
+                    <h1>CODY</h1>
+                    <p>NADANDO EN LA PISCINA DEL MEJOR HOTEL DEL PAIS.</p>
+                    <div class="seperator"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards">
+                <div class="card three">
+                  <img src="images/4.jpg" alt="" />
+                  <div class="text">
+                  </div>
+                  <div class="title-box">
+                    <h1>CODY</h1>
+                    <p> TOMANDO SOL UN DIA MUY SOLEADO EN LA PLAYA.</p>
+                    <div class="seperator"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards">
+                <div class="card four">
+                  <img src="images/5.jpg" alt="" />
+                  <div class="text">
+                  </div>
+                  <div class="title-box">
+                    <h1>CODY</h1>
+                    <p> DANDO UN PASEO EN MOTOCICLETA, RECORRIENDO LAS ZONAS TURISTICAS.</p>
+                    <div class="seperator"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  pagination -->
+          <div class="swiper-pagination"></div>
+  
+          <!-- boton siguiente y atras -->
+          <div class="swiper-arrows">
+            <div class="swiper-button-prev"><span></span></div>
+            <div class="swiper-button-next"><span></span></div>
+          </div>
+  
+          <!-- scrollbar para la pagina -->
         </div>
       </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
-  </main>
+      <script>
+        const swiper = new Swiper('.swiper-container', {
+          speed: 500,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          centeredSlides: true,
+          paginationClickable: true,
+          watchSlidesProgress: true,
+          loop: true,
+          slidesPerView: 2,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
+      <!-- ----------------------------------------- -->
+      <section>
+        <h3 class="text-center "> Puedes ver más, en la galería de fotos de mi página <br><a  
+          class="btn-outline-dark text-light p-2"  href="fotos.html">Ir a la galería</a> </h3>
+      </section>
+      <section class="parallax-1">
+        <div class="parallax-inner">
+          <br>
+        </div>
+        </div>
+      </section>
+       <!-- ------------------------------------------ -->
+       <!-- seccion: Mis vacaciones frontend -->
+      <section class="2 curso">
+        <h1 class="display-3 ">Mis vacaciones Frontend</h1><br>
+        <ul class="card-wrapper-v p-2">
+          <li class="card-v curso">
+            <img
+              src="https://images.unsplash.com/photo-1581710862235-eb6e05d8783f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+            <h3>Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend </h3>
+          </li>
+          <li class="card-v curso">
+            <img
+              src="https://images.unsplash.com/photo-1607784042611-39ac8ee022ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=358&q=80"
+              alt="">
+            <h3> Por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </h3>
+          </li>
+          <li class="card-v curso">
+            <img
+              src="https://images.unsplash.com/photo-1460552181709-52ca8cb46336?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fHBsYXlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="">
+            <h3>Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías
+              frontend, construyendo esta página </h3>
+          </li>
+        </ul>
+        <!-- ---------------------------- -->
+          <!-- seccion: cursos que estuve tomando -->
+        <section class="text-center curso p-4 ">
+          <h1 class="display-5"> Estos son los cursos que estuve tomando : </h1><br>
+          <div class="grid text-center">
+            <div class="field">
+              <button class="but10"><b> Curso profesional de Desarrollo Web </b></button><br><br>
+              <button class="but10"> <b> Curso para crear mi primera página web</b></button>
+            </div>
+          </div>
+        </section>
+        <!-- -------------------------------------------- -->
+        <!-- seccion ruta de aprendizaje -->
+        <section class="parallax-2">
+          <div class="parallax-inner text-center">
+            <br>
+            <h1 class="text-center display-5"> Ruta de aprendizaje 2021 </h1>
+            <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+            <br>
+            <div class="flip">
+              <div class="front"
+                style="background-image: url(https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)">
+                <h1 class="text-shadow">HTML </h1>
+              </div>
+              <div class="back">
+                <img class="imag" src="images/html.png" alt="icon1">
+                <h4 class="text-shadow">HTML </h4>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="front"
+                style="background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60)">
+                <h1 class="text-shadow">CSS </h1>
+              </div>
+              <div class="back">
+                <img class="imag" src="images/css.png" alt="icon1">
+                <h4>Animaciones con CSS</h4>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="front"
+                style="background-image: url(https://images.unsplash.com/photo-1563118490-a6fbac646b50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80)">
+                <h1 class="text-shadow">Flexbox</hi>
+              </div>
+              <div class="back">
+                <img class="imag" src="images/flexbox.png" alt="icon1">
+                <h4>Flexbox</h4>
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="flip flip-vertical">
+              <div class="front"
+                style="background-image: url(https://images.unsplash.com/photo-1560457079-9a6532ccb118?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60)">
+                <h1 class="text-shadow">Grid</h1>
+              </div>
+              <div class="back">
+                <img class="imag" src="images/grid.png" alt="icon1">
+                <h4>Grid</h4>
+              </div>
+            </div>
+            <div class="flip flip-vertical">
+              <div class="front"
+                style="background-image: url(https://images.unsplash.com/photo-1543145499-8193615267de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60)">
+                <h1 class="text-shadow">AJAX</h1>
+              </div>
+              <div class="back">
+                <img class="imag" src="images/ajax.png" alt="icon1">
+                <h4>AJAX</h4>
+              </div>
+            </div>
+            <div class="flip flip-vertical">
+              <div class="front"
+                style="background-image: url(https://images.unsplash.com/photo-1517433456452-f9633a875f6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60)">
+                <h1 class="text-shadow">JavaScript</h1>
+              </div>
+              <div class="back">
+                <img class="imag" src="images/javascript.png" alt="icon1">
+                <h4>JavaScript</h4>
+              </div>
+            </div>
+            <br>
+          </div>
+        </section>
+        <!-- -------------------------------------------- -->
+        <!-- seccion colabora en mi pagina -->
+        <section class="text-center">
+          <h1 class="text-center display-5"> Colabora en mi página </h1>
+          <br>
+          <div class="flip">
+            <div class="front"
+              style="background-image: url(https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXIlMjB3b3JrfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)">
+  
+            </div>
+            <div class="back ">
+              <h6 class="text-light p-3">
+                Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a
+                GitHub
+              </h6>
+              <a href="" target="_blank" class="text-light">Ir al tutorial</a>
+            </div>
+          </div>
+          <div class="flip">
+            <div class="front"
+              style="background-image: url(https://images.unsplash.com/photo-1551434678-e076c223a692?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y29tcHV0ZXIlMjB3b3JrfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)">
+            </div>
+            <div class="back">
+              <h6 class="text-light p-3">
+                Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+              </h6>
+              <a href="" target="_blank" class="text-light">Ir al tutorial</a>
+            </div>
+          </div>
+          <div class="flip">
+            <div class="front"
+              style="background-image: url(https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60)">
+  
+            </div>
+            <div class="back">
+              <h6 class="text-light p-3">
+                Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
+              </h6>
+              <a href="" target="_blank" class="text-light">Ir al tutorial</a>
+            </div>
+          </div>
+          <br>
+          </div>
+        </section>
+        <!-- -------------------------------------------- -->
+        <!-- Seccion de importancia de las vacaciones -->
+        <section class="3">
+          <section class="parallax-3">
+            <div class="parallax-inner">
+            </div>
+          </section>
+          <section>
+            <div class="container-fluid mb-5">
+              <div class="text-center mt-5">
+                <h1 class="text-center display-5">La importancia de las vacaciones</h1>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="box">
+                    <div class="holiday uno">
+                      <div class="icon"> <img class="imag" src="images/icon2.png" alt="icon"> </div>
+                      <h4>1</h4>
+                      <p>Mejora la salud mental</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box">
+                    <div class="holiday dos">
+                      <div class="icon"> <img class="imag" src="images/icon3.png" alt="icon"> </div>
+                      <h4>2</h4>
+                      <p>Incrementa la motivación</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box">
+                    <div class="holiday tres">
+                      <div class="icon"> <img class="imag" src="images/icon1.png" alt="icon1"> </div>
+                      <h4>3</h4>
+                      <p>Reduce el burnout </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="box">
+                    <div class="holiday cuatro">
+                      <div class="icon"><img class="imag" src="images/icon4.png" alt="icon"></div>
+                      <h4>4</h4>
+                      <p>Mejora tu productividad</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box">
+                    <div class="holiday cinco">
+                      <div class="icon"> <img class="imag" src="images/icon6.png" alt="icon"></div>
+                      <h4>5</h4>
+                      <p>Mejora tu creatividad</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box">
+                    <div class="holiday seis">
+                      <div class="icon"> <img class="imag" src="images/icon5.png" alt="icon"> </div>
+                      <h4>6</h4>
+                      <p>Mejora tu rendimiento</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="footer ">
+              <div class="main-container">
+                <div class="brand-name">
+                  
+                  <p class="text-center p-2"> #ConcursoVeranoFrontend -  <a class="btn-outline-dark text-light p-2" href="quiensoy.html">QuienSoy</a></p>
+                 
+                </div>
+              </div>
+            </div>
+          </section>
+          
 </body>
 </html>
