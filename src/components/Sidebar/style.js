@@ -21,4 +21,8 @@ export const Link = styled(LinkGatsby)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &[aria-current] {
+    background-color: ${theme.colors.third};
+  }
 `;

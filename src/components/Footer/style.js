@@ -5,7 +5,6 @@ import { Link as LinkGatsby } from "gatsby";
 export const Footer = styled.footer`
   background-color: ${theme.colors.primary};
   color: #fff;
-  padding: 5px 0;
   position: fixed;
   left: 0;
   right: 0;
@@ -16,8 +15,13 @@ export const Footer = styled.footer`
 
 export const Link = styled(LinkGatsby)`
   display: flex;
+  padding: 5px 0;
   font-size: 0.7rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  &[aria-current] {
+    background-color: ${theme.colors.third};
+  }
 `;
