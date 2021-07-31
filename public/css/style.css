@@ -20,6 +20,8 @@
     --yellow50: #F8CD5B;
     --brown80: #3F2F18;
     --pink30: #F76779;
+    --pink70: #a00037;
+    --pink50: #e91e63;
     --blue30: #4DD1FF;
 }
 
@@ -230,7 +232,7 @@ body {
         display: block;
         margin: auto;
         margin-block: 62px;
-        inline-size: 450px;
+        inline-size: 362px;
         z-index: 1;
     }
     .vacation-frontend__card-details {
@@ -310,15 +312,15 @@ body {
 }
 
 .circle {
-    block-size: 62px;
-    inline-size: 62px;
-    border-radius: 50px;
+    block-size: 40px;
+    inline-size: 40px;
+    border-radius: 40px;
     color: white;
     display: inline-block;
 }
 
 .circle span {
-    line-height: 62px;
+    line-height: 40px;
 }
 
 .circle-one {
@@ -358,7 +360,7 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 30px;
+        gap: 15px;
     }
     .learning-path__img-cody {
         width: 300px;
@@ -385,6 +387,102 @@ body {
     }
     .learning-path__info ul {
         margin-block-start: 80px;
+    }
+    .circle {
+        block-size: 62px;
+        inline-size: 62px;
+        border-radius: 50px;
+    }
+    .circle span {
+        line-height: 62px;
+    }
+}
+
+
+/* Collaborate page */
+
+.collaborate-page {
+    width: 100%;
+}
+
+.collaborate-page__svg {
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    width: 100%;
+}
+
+.collaborate-page__svg svg {
+    width: 100%;
+    display: block;
+}
+
+.collaborate-page__svg svg path {
+    fill: var(--white90);
+}
+
+.collaborate-page__content {
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.collaborate-page__description {
+    margin-inline: 51px;
+}
+
+.button-collaborate {
+    background: var(--pink50);
+    margin-block-start: 30px;
+}
+
+.button-collaborate:hover {
+    background: var(--pink70);
+}
+
+.collaborate-btn-icon a {
+    color: var(--white90);
+}
+
+.collaborate-btn-icon {
+    display: block;
+    text-align: center;
+    margin-block: 80px;
+}
+
+.collaborate-page__description {
+    display: block;
+    margin-block: 62px;
+    margin-inline: 51px;
+    inline-size: 650px;
+}
+
+.collaborate-page__title {
+    font: var(--title-mobile);
+    text-transform: uppercase;
+    margin-block: 0;
+    text-align: center;
+}
+
+.collaborate-page__info {
+    font: var(--description-mobile);
+}
+
+@media screen and (min-width:414px) {
+    .button-collaborate {
+        display: inline;
+    }
+}
+
+@media screen and (min-width:960px) {
+    .collaborate-page__title {
+        font: var(--title);
+        text-transform: uppercase;
+        margin-block: 0;
+        text-align: center;
+    }
+    .collaborate-page__info {
+        font: var(--description);
     }
 }
 
