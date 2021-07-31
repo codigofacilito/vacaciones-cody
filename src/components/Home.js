@@ -3,31 +3,46 @@ import AppBarNav from "./AppBar";
 import { useStyles } from './StyleMaterialui/Home';
 import { Typography, } from '@material-ui/core/';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
-import CodeIcon from '@material-ui/icons/Code';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import ViewCompactIcon from '@material-ui/icons/ViewCompact';
-import image1 from '../images/1.jpg';
-import image2 from '../images/2.jpg';
-import image3 from '../images/3.jpg';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+
+import Slider from './Slider/Slider';
+
+import FlexBoxGrid from '../iconsSvgImage/FlexBoxGrid.svg';
+import Css from '../iconsSvgImage/Css.svg';
+import Ajax from '../iconsSvgImage/AJAX.svg';
+import Html from '../iconsSvgImage/HTML.svg';
+import Other from '../iconsSvgImage/Other.svg';
+import { useHistory } from 'react-router-dom';
+
+
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 export default function Home() {
     const classes = useStyles();
-        return (
+    const history = useHistory();
+    return (
         <React.Fragment> 
+        <div className={classes.imagebackground}>
             <AppBarNav
             text= {'Gallery'}
             />
+            <div className={classes.sizeBox}>
+                <div style={{marginBottom:'3em'}}>
+                    <Typography variant='h1' component='h2' align='center' className={classes.title}>vacaciones</Typography>
+                    <Typography variant='h3' component='h2' align='center' className={classes.title}>cody</Typography>
+                </div>
+                    <Typography variant='h6' component='h2' align='center' className={classes.subTitleFontBox}>
+                    Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.
+                    </Typography>
+            </div>
+        </div>
         <div className={classes.root}>
-            <header>
-            <ThemeProvider theme={theme}>
-                <Typography variant='h4' component='h2' align='center' className={classes.title}>Mis Vacaciones</Typography>
-            <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-            </ThemeProvider>
-            </header>
 
-            <section>
+
+        <div className={classes.container}>
+            <section className={classes.sizeSection}>
             <header>
             <ThemeProvider theme={theme}>
                 <Typography variant='h6' component='h2' className={classes.subTitle}>Mis vacaciones Frontend</Typography>
@@ -45,19 +60,46 @@ export default function Home() {
                 </div>
             </div>
             </section>
-            <section>
+            <section className={classes.sizeSection}>
                 <header>
                 <ThemeProvider theme={theme}>
                     <Typography variant='h6' component='h2' className={classes.subTitle}>Ruta de aprendizaje 2021</Typography>
                 </ThemeProvider>
                     <p> También me propuse aprender nuevas tecnologías durante 2021</p>
                 </header>
-                    <Typography className={classes.iconList}><ViewCompactIcon className={classes.iconMargin}/>Flexbox, y Grid</Typography>
-                    <Typography className={classes.iconList}><CodeIcon className={classes.iconMargin}/>Animaciones con CSS y JavaScript</Typography>
-                    <Typography className={classes.iconList}><CodeIcon className={classes.iconMargin}/>AJAX</Typography>
-                    <Typography className={classes.iconList}><CodeIcon className={classes.iconMargin}/>HTML semántico</Typography>
-                    <Typography className={classes.iconList}><CodeIcon className={classes.iconMargin}/>Entre otros</Typography>
+                    <Typography className={classes.iconList}><img src={FlexBoxGrid} alt='icon-FlexBox-Grid' className={classes.iconMargin}/>Flexbox, y Grid</Typography>
+                    <Typography className={classes.iconList}><img src={Css} alt='icon-CSS' className={classes.iconMargin}/>Animaciones con CSS y JavaScript</Typography>
+                    <Typography className={classes.iconList}><img src={Ajax} alt='icon-AJAX' className={classes.iconMargin}/>AJAX</Typography>
+                    <Typography className={classes.iconList}><img src={Html} alt='icon-HTML' className={classes.iconMargin}/>HTML semántico</Typography>
+                    <Typography className={classes.iconList}><img src={Other} alt='icon-Other' className={classes.iconMargin}/>Entre otros</Typography>
             </section>
+            <section className={classes.sizeSection}>
+            <header>
+            <ThemeProvider theme={theme}>
+                <Typography variant='h6' component='h2' className={classes.subTitle}>La importancia de las vacaciones</Typography>
+            </ThemeProvider>
+                <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+                <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+                <ol>
+                <li>Mejora la salud mental</li>
+                <li>Incrementa la motivación</li>
+                <li>Reduce el burnout</li>
+                <li>Mejora tu productividad y creatividad</li>
+                </ol>
+            </header>       
+            </section>
+            <section className={classes.sizeSection}>
+                <header>
+                <ThemeProvider theme={theme}>
+                    <Typography variant='h6' component='h2' className={classes.subTitle}>Algunas fotos de mis vacaciones</Typography>
+                </ThemeProvider>
+                    <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+                </header>
+                    <Slider/>
+                    Puedes ver más, en la galería de fotos de mi página
+                    <Typography onClick={() =>{history.push('/gallery')}}>Ir a la galería <ExitToAppIcon/></Typography>
+            </section>
+    </div>
             <section>
                 <header>
                 <ThemeProvider theme={theme}>    
@@ -74,38 +116,6 @@ export default function Home() {
                     Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
                     <a href="" target="_blank" >Ir al tutorial</a>
                 </p>
-            </section>
-            <section>
-                <header>
-                <ThemeProvider theme={theme}>
-                    <Typography variant='h6' component='h2' className={classes.subTitle}>Aquí te comparto algunas fotos de mis vacaciones</Typography>
-                </ThemeProvider>
-                    <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-                </header>
-                <div className="fotos">
-                    <img src={image1} alt="Cody en la playa" className={classes.img}/>
-                    <img src={image2} alt="Cody acampando" className={classes.img}/>
-                    <img src={image3} alt="Cody en una alberca" className={classes.img}/>
-                    Puedes ver más, en la galería de fotos de mi página
-                    <a href="/gallery">Ir a la galería</a>
-                </div>
-            </section>
-
-            <section>
-            <header>
-            <ThemeProvider theme={theme}>
-                <Typography variant='h6' component='h2' className={classes.subTitle}>La importancia de las vacaciones</Typography>
-            </ThemeProvider>
-                <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-                <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-                <ol>
-                <li>Mejora la salud mental</li>
-                <li>Incrementa la motivación</li>
-                <li>Reduce el burnout</li>
-                <li>Mejora tu productividad y creatividad</li>
-                </ol>
-            </header>
-            
             </section>
         </div>
         </React.Fragment>
