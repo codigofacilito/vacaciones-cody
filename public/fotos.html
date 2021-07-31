@@ -1,46 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Fotos</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/galeria.css" />
+     <script
       src="https://kit.fontawesome.com/41bcea2ae3.js"
       crossorigin="anonymous"
     ></script>
   </head>
+<header>
+  <div>
+     
+    <div class="logo">
+          <img src="images/logo.png" alt="" />
+          <a class="enlace" href="index.html">Inicio</a>
+        </div>
+        
+  </div>
 
-  <body id="container__all">
-    <main>
-      <header id="header">
-        <div class="container__header">
-          <div class="logo">
-            <img src="images/logo.png" alt="" />
-          </div>
-          <div class="container__nav">
-            <nav id="nav">
-              <ul>
-                <li><a class="select" href="/">Inicio</a></li>
-                <li><a class="select" href="fotos.html">Fotos</a></li>
-              </ul>
-            </nav>
-            <div class="btn__menu" id="btn_menu">
-              <i class="fas fa-bars"></i>
-            </div>
+</header>
+
+<body>
+    <div class="col s12 center-align">
+      <h1 class="titulo">Galería de Fotos</h1>
+    </div>
+
+    <!--main Fotos -->
+    <main class="container">
+      <div class="row"></div>
+
+      <div class="row galeria">
+        <div class="col s12 m4 l6">
+          <div class="material-placeholder">
+            <img
+              src="./images/1.jpg"
+              alt=""
+              class="responsive-img materialboxed"
+              data-caption="Disfrutando de la Playa y la Arena."
+            />
           </div>
         </div>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa" />
-        <img src="images/2.jpg" alt="Cody acampando" />
-        <img src="images/3.jpg" alt="Cody en una alberca" />
-        <img src="images/4.jpg" alt="Cody en una alberca" />
-        <img src="images/5.jpg" alt="Cody en una alberca" />
-        <img src="images/6.jpg" alt="Cody en una alberca" />
+
+        <div class="col s12 m4 l6">
+          <div class="material-placeholder">
+            <img
+              src="./images/2.jpg"
+              alt=""
+              class="responsive-img materialboxed"
+              data-caption="Acampando a orillas de una Isla Misteriosa."
+            />
+          </div>
+        </div>
+
+        <div class="col s12 m4 l6">
+          <div class="material-placeholder">
+            <img
+              src="./images/3.jpg"
+              alt=""
+              class="responsive-img materialboxed"
+              data-caption="Aprovechando la Piscina y el Sol, para mejorar mi Bronceado."
+            />
+          </div>
+        </div>
+
+        <div class="col s12 m4 l6">
+          <div class="material-placeholder">
+            <img
+              src="./images/4.jpg"
+              alt=""
+              class="responsive-img materialboxed"
+              data-caption="Meditando en Desarrollo Web mientras bebo y disfruto el sonido del Mar."
+            />
+          </div>
+        </div>
+
+        <div class="col s12 m4 l6">
+          <div class="material-placeholder">
+            <img
+              src="./images/5.jpg"
+              alt=""
+              class="responsive-img materialboxed"
+              data-caption="Posando de manera casual en Italia."
+            />
+          </div>
+        </div>
+
+        <div class="col s12 m4 l6">
+          <div class="material-placeholder">
+            <img
+              src="./images/6.jpg"
+              alt=""
+              class="responsive-img materialboxed"
+              data-caption="Furioso porque se me fue el Vuelo."
+            />
+          </div>
+        </div>
       </div>
     </main>
+     <footer class="footer">
+        <div class="container__footer">
+          <div class="box__footer">
+            <div class="logo">
+              <img src="images/logo.png" alt="" />
+            </div>
+            <div class="terms">
+              <p>
+                <b>Cody</b> está aprendiendo desarrollo web, está dando sus primeros pasos en HTML, y decidió construir una página para mostrar las fotos de sus vacaciones. <b>BlasDarkSeid</b> le ayudó con este diseño. 
+              </p>
+            </div>
+          </div>
+          <div class="box__footer">
+            <img class="img__footer" src="images/cody.png" alt="" />
+          </div>
+          <div class="box__footer">
+            <h2>Redes Sociales</h2>
+            <a href=""><i class="fab fa-facebook-square"></i> Facebook</a>
+            <a href=""><i class="fab fa-twitter-square"></i>Twitter</a>
+            <a href=""><i class="fab fa-linkedin"></i>Linkedin</a>
+            <a href=""><i class="fab fa-instagram-square"></i>Instagram</a>
+          </div>
+
+
+        </div>
+        <div class="box__copyright">
+          <p>Desarrollado por: <b>BlasDarkSeid © 2021</b></p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
