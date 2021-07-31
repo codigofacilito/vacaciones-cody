@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, } from '@material-ui/core/';
+import { AppBar, Button, Toolbar, Typography, } from '@material-ui/core/';
 import { useStyles } from './StyleMaterialui/AppBar';
+import LogoCodigo from '../iconsSvgImage/LogoCodigo.png';
+
 
   export default function AppBarNav(props) {
     const { text } = props;
@@ -18,13 +20,12 @@ import { useStyles } from './StyleMaterialui/AppBar';
         return (
         <React.Fragment>
             <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="static" className={classes.fontText}>
                 <Toolbar className={classes.fontText}>
+                <img src={LogoCodigo} className={classes.logo}  alt='logo-icon'/>
                 <Typography variant="h6" className={classes.title} align="center">
-                    Vacaciones de Cody
-                </Typography>
-                
-                <Typography color="inherit" className={classes.subtitle} onClick={()=>{history.push(`/${text}`)}} align="right" id='text'>{value}</Typography>
+                </Typography>               
+                <Button className={classes.subtitle} onClick={()=>{history.push(`/${text}`)}} align="right" id='text'>{value}</Button>
                 </Toolbar>
             </AppBar>
             </div>
