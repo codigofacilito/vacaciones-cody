@@ -1,10 +1,11 @@
 const theme = {
   colors: {
-    primary: "#243173",
-    primaryVariant: "#2841BF",
-    secondary: "#73402F",
+    primary: "#2841BF",
+    primaryVariant: "#243173",
+    secondary: "#A73B3C",
     third: "#417318",
     thirdVariant: "#72BF32",
+    grayVariant: "#333",
   },
   opacity: {
     global: 0.9,
@@ -15,6 +16,9 @@ const theme = {
   fontSizes: {
     movil: "15px",
     desktop: "16px",
+  },
+  transitions: {
+    global: "300ms ease",
   },
 };
 

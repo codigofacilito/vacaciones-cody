@@ -7,31 +7,37 @@ export const Section = styled.section`
   padding: 1rem;
   margin: 2rem auto;
   position: relative;
-  background-color: #333;
+  background-color: ${theme.colors.grayVariant};
   color: #ccc;
   border-radius: 5px;
   list-style-position: inside;
-  opacity: ${theme.opacity.global};
+  //opacity: ${theme.opacity.global};
   h2::before {
     font-family: monospace;
     color: ${theme.colors.thirdVariant};
     content: "<h2> ";
+    transition: ${theme.transitions.global};
   }
   h2::after {
     font-family: monospace;
     color: ${theme.colors.thirdVariant};
     content: " </h2>";
+    transition: ${theme.transitions.global};
+  }
+  &:hover h2::before,
+  &:hover h2::after {
+    color: ${theme.colors.secondary};
   }
   &::before {
     content: "";
     display: block;
     position: absolute;
-    top: 1px;
-    left: 1px;
-    right: -1px;
-    bottom: -1px;
-    background-color: #5555;
-    filter: blur(4px);
+    top: 4px;
+    left: 4px;
+    right: -4px;
+    bottom: -4px;
+    background-color: #555;
+    filter: blur(10px);
     z-index: -1;
     opacity: ${theme.opacity.global};
   }

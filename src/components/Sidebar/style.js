@@ -21,8 +21,13 @@ export const Link = styled(LinkGatsby)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: ${theme.transitions.global};
 
   &[aria-current] {
     background-color: ${theme.colors.third};
+  }
+
+  &:hover {
+    background-color: ${theme.colors.secondary};
   }
 `;

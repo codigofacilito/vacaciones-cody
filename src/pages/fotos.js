@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Fotos = () => {
   return (
-    <LayoutPage title="Mis fotos - HectorMtz22">
+    <LayoutPage title="Mis fotos">
       <Section>
         <h2>Galería completa de mis vacaciones</h2>
         <Grid length="3">

@@ -4,11 +4,11 @@ import Header from "components/Header";
 import Footer from "components/Footer";
 import Contact from "components/Contact";
 import { GlobalStyle, Layout } from "./style";
-//import theme from "theme";
+import theme from "theme";
 
 export default function LayoutComponent({
   children,
-  title = "Mis vacaciones - HectorMtz22",
+  title = "Mis vacaciones",
 }) {
   const [height, setHeight] = useState(null);
   const headerRef = useRef(null);
@@ -20,7 +20,8 @@ export default function LayoutComponent({
   return (
     <>
       <GlobalStyle />
-      <title>{title}</title>
+      <title>{title} - HectorMtz22</title>
+      <meta name="theme-color" content={theme.colors.primaryVariant} />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link
         rel="preconnect"
