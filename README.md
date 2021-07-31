@@ -1,29 +1,41 @@
-# Las Vacaciones de Cody
+# Las Vacaciones de Cody con HectorMtz22
+
 Cody está aprendiendo desarrollo Frontend, hizo su primer página, y ahora necesita de tu ayuda para mejorarla.
 
-Envía un pull request rediseñando por completo la página de este repo y participa en el concurso #VeranoFrontend de Código Facilito, las personas en los 5 primeros lugares ganan:
+## Primeros pasos - Vista
 
-✅ Un año Premium
-✅ CSS Secrets, de Lea Verou
-✅ Pack de stickers hasta la puerta de tu casa
-✅ Diploma
-✅ Asesoría personalizada para mejorar tu CV, con un reclutador de TI
+La vista consituye basicamente el proyecto entero. Consiste en 2 páginas:
 
-Para más detalles del concurso, reglas, y consideraciones, visita: https://codigofacilito.com/verano/concurso
+- Home '/'
+- Fotos '/fotos'
 
+La aplicación está hecha con el framework Gatsby, configurado manualmente para mantener la integridad del repositorio
 
-# Pasos para participar
+Puedes ver la aplicación en:
+[Vacaciones Cody - HectorMtz22](https://hmtzdev.tech/vacaciones-cody)
 
-1. Haz un fork de este repo
-2. Implementa tus cambios
-3. Haz un pull request con tus cambios
+(Cabe mencionar que el link es de Github Pages, pero tiene un dominio custom).
 
-Es muy importante que al participar, habilites GitHub Actions y GitHub Pages en tu repositorio, así podremos ver tu página online, puedes consultar este vídeo para ver cómo participar: https://vimeo.com/577246176
+## ¿Porqué lo hiciste así?
 
-# Fechas importantes
-La fecha límite para enviar tu pull request es el 4 de Agosto, 11:59pm
+Para hacer este proyecto (Blog, como me gusta llamarle) identifiqué que con puro HTML se repetían muchas cosas,
+haciendo que no pueda editarlo de una forma fácil.
 
-# Solución de problemas
+Con esto, configuré una aplicación con Gatsby que tiene mi librería favorita: `React JS`.
 
-**Mi página no se ve en GitHub Pages**
-Asegúrate de haber habilitado GitHub Actions y GitHub Pages, y que la rama de GitHub Pages sea gh-pages
+Mi intención inicial era por la filosofía de React `DRY` - Don't Repeat Yourself!, y puesto que me encanta esta librería,
+opté por hacerlo así. Por la forma de blog, decidí Gatsby directamente, puesto que no tendremos cosas dinámicas.
+
+## Genial, pero. ¿Cómo cambio las cosas?
+
+Hice una carpeta en
+
+```
+src/theme
+```
+
+Puedes editar los colores de la página, así como los límites entre `movil` y `desktop` (es decir, en qué límite de ancho va a ser
+la página responsive), entre otras cosas más.
+
+La app está diseñada con CSS in JS gracias a la librería `styled-components`. Los componentes están hechos para ser reutilizables y ser
+más productivo a la hora de hacer las páginas para el Blog.
