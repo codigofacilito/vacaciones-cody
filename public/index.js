@@ -9,7 +9,7 @@ function pathActive() {
   const photos = document.getElementById("photos");
   const path = window.location.pathname;
   console.log(path);
-  if (path === "/fotos") {
+  if (path === "/vacaciones-cody/fotos.html") {
     photos.classList.add("active");
   } else {
     home.classList.add("active");
