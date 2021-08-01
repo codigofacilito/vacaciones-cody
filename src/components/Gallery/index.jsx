@@ -5,7 +5,6 @@ import Image from "components/Image";
 import Section from "../Section";
 
 const GalleryComponent = ({ items }) => {
-  console.log(items);
   const [selectedId, setSelectedId] = useState(null);
   return (
     <AnimateSharedLayout type="crossfade">
