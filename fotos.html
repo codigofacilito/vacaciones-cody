@@ -2,33 +2,57 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Mis vacaciones</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+    <main>
+        <header class="menu">
+            <nav class="menu__nav">
+                <a href="/">Inicio</a>
+                <a class="activo" href="fotos.html">Fotos</a>
+            </nav>
+        </header>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#29BB89" fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,186.7C480,192,600,160,720,138.7C840,117,960,107,1080,128C1200,149,1320,203,1380,229.3L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+          </svg>
+        <h1 class="titulo text_aling">Galería completa de mis vacaciones</h1>
+    </main>
+
+    <div class="contenedor">
+        <ul class="slider">
+            <li id="uno"><img class="imaa" src="images/1.jpg" alt=""></li>
+            <li id="dos"><img class="imaa" src="images/2.jpg" alt=""></li>
+            <li id="tres"> <img class="imaa" src="images/3.jpg" alt=""></li>
+            <li id="cuatro"> <img class="imaa" src="images/4.jpg" alt=""></li>
+            <li id="cinco"> <img class="imaa" src="images/5.jpg" alt=""></li>
+            <li id="seis"> <img class="imaa" src="images/6.jpg" alt=""></li>
+        </ul>
+        <ul class="slidermenu">
+            <li><a href="#uno">1</a></li>
+            <li><a href="#dos">2</a></li>
+            <li><a href="#tres">3</a></li>
+            <li><a href="#cuatro">4</a></li>
+            <li><a href="#cinco">5</a></li>
+            <li><a href="#seis">6</a></li>
+        </ul>
+
+    </div>
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#29BB89" fill-opacity="1" d="M0,256L48,245.3C96,235,192,213,288,218.7C384,224,480,256,576,245.3C672,235,768,181,864,160C960,139,1056,149,1152,154.7C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+          </svg>
     </div>
 
-  </main>
 </body>
 
 </html>
