@@ -1,9 +1,8 @@
 body {
-  /* background: linear-gradient(black,#555,black); */
   background:url('../images/vacaciones.jpg') ;
-  background-size: cover;
-
+  background-size: auto;
   font-family: 'Jetbrains Mono';
+  height: 100vh;
 }
 
 .header_main {
@@ -72,14 +71,12 @@ section{
 }
 .item_fotos{
   width:450px;
-  max-width: 550px;
   display: inline-block;
   box-shadow:  2px 2px 15px black;
   border-radius: 8px;
   cursor:pointer;
 }
 .item_fotos:hover {
-  width:460px;
   filter:drop-shadow(3px 3px 20px black);
 }
 ul li,ol li{
@@ -124,7 +121,7 @@ ul li::marker {
 
 .slider_container {
   width:700px;
-  height: 450px;
+  height: 70vh;
   background:url('../images/1.jpg');
   background-size: cover;
   filter:drop-shadow(5px 5px 10px #333);
@@ -132,6 +129,11 @@ ul li::marker {
   transition:1s ease-in-out;
   border:none;
   border-radius: 8px;
+}
+
+@media screen and (max-width:715px) {
+  .slider_container { width:90vw; }
+  .item_fotos { width:100%; }
 }
 
 .group_btn {
