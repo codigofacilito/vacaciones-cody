@@ -61,6 +61,18 @@ nav {
     position: relative;
 }
 
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 28px;
+}
+
+nav ul li::marker {
+    content: "";
+}
+
 nav a {
     text-decoration: none;
     color: var(--color-oscuro);
