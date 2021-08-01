@@ -44,7 +44,8 @@
   <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="css/home.css" media="print" onload="this.media='all'">
 
-   <!-- REGISTER SERVICE WORKER -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@0.6.2/lite-youtube.js"></script>
+
   <script>
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", function() {
@@ -179,7 +180,7 @@
             También agregué un <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" class="u-link" target="_blank" rel="noreferrer">iframe</a> para que puedas ver el tutorial sin abandonar la página
           </p>
         </div>
-        <iframe class="u-rounded" width="560" height="315" src="https://www.youtube.com/embed/Zqft6yNRuNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        <lite-youtube class="iframe u-rounded" videoid="Zqft6yNRuNs"></lite-youtube>
       </div>
    </section>
 
@@ -193,9 +194,9 @@
     </section>
 
     <div class="Fotos u-horizontalScroll u-padding-0">
-      <img class="u-rounded u-horizontalScrollItem" src="images/1.webp" alt="Cody en la playa" loading="lazy">
-      <img class="u-rounded u-horizontalScrollItem" src="images/2.webp" alt="Cody acampando" loading="lazy">
-      <img class="u-rounded u-horizontalScrollItem" src="images/3.webp" alt="Cody en una alberca" loading="lazy">
+      <img class="u-rounded u-horizontalScrollItem" src="images/1.webp" alt="Cody en la playa" width="280" height="210" loading="lazy">
+      <img class="u-rounded u-horizontalScrollItem" src="images/2.webp" alt="Cody acampando" width="280" height="210" loading="lazy">
+      <img class="u-rounded u-horizontalScrollItem" src="images/3.webp" alt="Cody en una alberca" width="280" height="210" loading="lazy">
     </div>
 
     <section id="Fotos-secondaryText" class="u-padding-0 u-wrapper">
@@ -233,5 +234,6 @@
 
   <script src="js/app.js"></script>
   <script src="js/navbar.js"></script>
+
 </body>
 </html>

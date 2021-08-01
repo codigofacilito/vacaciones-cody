@@ -241,12 +241,10 @@ ol {
 }
 
 /* COLABORA EN MI PAGINA SECTION */
-iframe {
+.iframe {
   display: block;
-  width: calc(var(--wrapper-width) - var(--padding-quad));
   max-width: 1024px;
-  height: calc((var(--wrapper-width) - var(--padding-double)) / 2);
-  max-height: 90vh;
+  max-height: 720px;
   margin: 0 auto;
 }
 
@@ -318,6 +316,13 @@ iframe {
 
   .u-horizontalScrollItem:last-child {
     margin: 0;
+  }
+
+  .Fotos img {
+    width: 60vw;
+    max-width: 600px;
+    height: calc(60vw * .75);
+    max-height: calc(600px * .75);
   }
 }
 
@@ -398,12 +403,12 @@ iframe {
     gap: var(--padding-quad);
   }
 
-  iframe {
-    max-width: none;
+  .iframe {
+    padding-bottom: 0;
     width: 300vw;
-    max-width: 1500px;
-    height: 75vh;
-    max-height: calc((315px / 560px) * 1500px)
+    height: 150vh;
+    max-width: 1280px;
+    max-height: 680px;
   }
 
   .Colabora-description {
@@ -428,6 +433,7 @@ iframe {
   }
 
   .Fotos img {
-    width: 380px;
+    width: 360px;
+    height: 270px;
   }
 }
