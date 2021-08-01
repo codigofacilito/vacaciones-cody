@@ -1,7 +1,7 @@
 /* GENERAL */
 :root {
   --color-primary: #8E2DE2;
-  --color-secondary: #3F00FF;
+  --color-secondary: #6E57FC;
   --color-accent: #1F652A;
   --color-text: #070928;
 
@@ -27,11 +27,6 @@ a {
   text-decoration: none;
 }
 
-ol {
-  list-style-type: number;
-  margin-left: var(--padding-double);
-}
-
 .Nav {
   width: var(--wrapper-width);
   height: 40px;
@@ -47,7 +42,7 @@ ol {
   top: unset;
   transition: .5s bottom;
 
-  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   background-color: white;
 }
 
@@ -87,3 +82,47 @@ footer.Footer {
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .Nav {
+    top: 0;
+    justify-content: flex-end;
+    width: calc(var(--wrapper-width) - var(--padding-quad));
+    gap: var(--padding);
+    padding: var(--padding-double);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .Nav-option {
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px var(--padding-quad);
+    border-radius: 5px;
+  }
+
+  .Nav-option img {
+    height: 30px;
+  }
+
+  .Nav-option span {
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+  }
+
+  .is-active {
+    background: white;
+  }
+
+  .is-active img {
+    height: 25px;
+  }
+
+  .is-active span {
+    color: var(--color-primary);
+  }
+
+  .u-header {
+    font-size: 2em;
+  }
+}

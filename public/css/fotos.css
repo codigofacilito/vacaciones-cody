@@ -7,7 +7,7 @@
 	margin-bottom: 0;
 }
 
-nav {
+nav.Nav {
 	font-family: 'Montserrat', arial, sans-serif;
 }
 
@@ -16,7 +16,7 @@ nav {
 	flex-wrap: wrap;
 	gap: var(--padding);
 	justify-content: center;
-	width: calc(var(--wrapper-width) - var(--padding-double));
+	width: calc(var(--wrapper-width) - var(--padding-double) * 2);
 	margin: 0 auto;
 }
 
@@ -25,8 +25,8 @@ nav {
 	height: 100%;
 	max-height: 300px;
 	max-width: 400px;
+	cursor: pointer;
 }
-
 
 /* IMAGES POP UP */
 .PopUp {
@@ -93,9 +93,31 @@ nav {
 .PopUp-close {
 	width: 30px;
 	height: 30px;
+	cursor: pointer;
 }
 
 .PopUp-caption {
 	margin: 0;
 	font-weight: 600;
+}
+
+@media screen and (min-width: 1024px){
+	body {
+		margin-top: calc(var(--navbar-height) + var(--padding-double));
+	}
+
+	nav.Nav {
+		background: linear-gradient(150deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+	}
+
+	.PopUp {
+		height: 80vh;
+		max-height: 1280px;
+	}
+
+	.PopUp-image {
+		max-width: 650px;
+		max-height: 450px;
+		width: 50%;
+	}
 }

@@ -8,6 +8,11 @@
   margin: 0;
 }
 
+.u-padding-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .u-icon {
   width: 40px;
 }
@@ -22,6 +27,7 @@
 .u-link {
   color: var(--color-accent);
   border-bottom: 1px dashed var(--color-accent);
+  font-weight: 600;
 }
 
 .u-paragraph {
@@ -30,3 +36,16 @@
   line-height: 1.5;
 }
 
+@media screen and (min-width: 1024px) {
+  .u-wrapper {
+    width: calc(var(--wrapper-width) - var(--padding-quad));
+  }
+
+  .u-paragraph {
+    font-size: 1.25em;
+  }
+
+  .u-h2 {
+    display: inline-block;
+  }
+}

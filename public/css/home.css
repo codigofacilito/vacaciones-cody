@@ -7,6 +7,7 @@ ol {
   color: black;
   text-align: center;
   font-size: .9em;
+  font-family: var(--font-header);
 }
 
 .u-textSecondary {
@@ -16,7 +17,7 @@ ol {
 }
 
 .u-rounded {
-  border-radius: var(--padding);
+  border-radius: calc(var(--padding) / 2);
 }
 
 .u-horizontalScroll {
@@ -118,7 +119,7 @@ ol {
   .Landing-paragraph {
     text-align: center;
     padding-right: 0;
-    width: var(--wrapper-width);
+    width: calc(var(--wrapper-width) - var(--padding-quad));
   }
 }
 
@@ -134,8 +135,25 @@ ol {
   color: black;
 }
 
+.Curso-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding);
+}
+
 .Curso-title {
   width: var(--curso-card-width);
+}
+
+.Curso-img {
+  width: 300px;
+  height: 150px;
+
+  aspect-ratio: 2 / 1;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* FOTOS SECTION */
@@ -152,10 +170,16 @@ ol {
   gap: var(--padding);
 }
 
+.RutaDeAprendizaje-list li label {
+  cursor: pointer;
+}
+
 .Checkbox {
   /* RESET CHECKBOX STYLE */
+  cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
+  outline: none;
 
 	display: inline-block;
 	position: relative;
@@ -218,7 +242,192 @@ ol {
 
 /* COLABORA EN MI PAGINA SECTION */
 iframe {
-  width: calc(var(--wrapper-width) - var(--padding-double));
-  height: 40vh;
+  display: block;
+  width: calc(var(--wrapper-width) - var(--padding-quad));
+  max-width: 1024px;
+  height: calc((var(--wrapper-width) - var(--padding-double)) / 2);
+  max-height: 90vh;
+  margin: 0 auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .u-h3 {
+    font-size: 1.25em;
+    text-align: left;
+  }
+
+  ol {
+    font-size: 1.25em;
+  }
+
+  .u-textSecondary {
+    display: none;
+  }
+
+  .Landing {
+    height: calc(var(--100vh) - 17.5vh);
+    padding-top: 0;
+    padding-bottom: 17.5vh;
+  }
+
+  .Landing-img {
+    top: calc(var(--100vh) - 300px);
+    left: calc(50vw - (300px / 2));
+
+    height: 250px;
+    width: 300px;
+
+    animation: floatCody 4s infinite ease-in-out;
+  }
+
+  @keyframes floatCody {
+    0% {
+      transform: translateY(0);
+    }
+    60% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .Curso-title {
+    max-width: 500px;
+  }
+
+  .Curso-img {
+    max-width: 500px;
+  }
+
+  .u-horizontalScroll {
+    flex-direction: column;
+    width: calc(var(--wrapper-width) - var(--padding-quad));
+    margin: 0 auto;
+    padding: var(--padding-double);
+    padding-top: 0;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+    gap: var(--padding-double);
+  }
+
+  .u-horizontalScrollItem {
+    max-width: 500px;
+  }
+
+  .u-horizontalScrollItem:last-child {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section:not(.Landing):not(#FotosDeMisVacaciones):not(#MisVacacionesFrontend):not(#Fotos-secondaryText):not(#ImportanciaDeLasVacaciones) {
+    margin-top: var(--padding-quad);
+    margin-bottom: calc(var(--padding-quad) * 2);
+  }
+
+  #MisVacacionesFrontend {
+    margin-bottom: 0;
+  }
+
+  .Cursos {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .Curso {
+    justify-content: center;
+    max-width: 700px;
+    gap: var(--padding-double);
+  }
+
+  .Curso-title {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .Curso-info {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--padding-double);
+  }
+
+  .Curso-description {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  .Curso-img {
+    width: 800px;
+    height: 150px;
+
+    aspect-ratio: 2 / 1;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .RutaDeAprendizaje-list {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .RutaDeAprendizaje-list li {
+    flex-direction: column;
+  }
+
+  #ColaboraEnMiPagina {
+    height: calc(var(--100vh) - (var(--padding-double) * 3));
+    padding-top: var(--padding-quad);
+    padding-bottom: var(--padding-quad);
+    background: linear-gradient(150deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  }
+
+  #ColaboraEnMiPagina .u-h2 {
+    color: white;
+    margin-bottom: var(--padding-quad);
+  }
+
+  .Colabora-info {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    gap: var(--padding-quad);
+  }
+
+  iframe {
+    max-width: none;
+    width: 300vw;
+    max-width: 1500px;
+    height: 75vh;
+    max-height: calc((315px / 560px) * 1500px)
+  }
+
+  .Colabora-description {
+    font-weight: 600;
+    font-size: .9em;
+    padding-right: var(--padding-double);
+  }
+
+  .Colabora-description p {
+    color: white;
+  }
+
+  .Colabora-description a {
+    color: #4BFF33;
+    border-bottom: 2px dashed #4BFF33;
+  }
+
+  .Fotos {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .Fotos img {
+    width: 380px;
+  }
+}

@@ -64,7 +64,10 @@
         <span>Inicio</span>
       </a>
       <a href="/fotos" class="Nav-option">
-        <img class="u-icon" src="images/icons/gallery.svg" width="40" height="40" alt="Galería">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="images/icons/gallery-white.svg">
+          <img class="u-icon" src="images/icons/gallery.svg" width="40" height="40" alt="Galería">
+        </picture>
         <span>Galería</span>
       </a>
     </nav>
@@ -73,7 +76,10 @@
       <h1 class="u-header Landing-title">Estas son mis Vacaciones</h1>
       <p class="Landing-secondaryText"><i>Soy Cody, un aspirante a Dev</i></p>
       <p class="Landing-paragraph">En 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-      <img class="Landing-img" src="./images/corner_cody.png" alt="">
+      <picture>
+        <source class="Landing-img" media="(min-width: 1024px)" srcset="images/cody-verano.png">
+        <img class="Landing-img" src="./images/corner_cody.png" alt="">
+      </picture>
     </section>
   </header>
 
@@ -95,13 +101,17 @@
     <div class="u-wrapper Cursos u-horizontalScroll">
       <a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank" class="Curso u-horizontalScrollItem" rel="noreferrer">
         <h3 class="u-header u-h3 Curso-title">Curso profesional de Desarrollo Web</h3>
-        <img class="Curso-img u-rounded u-horizontal-scroll-item-img" src="images/curso-profesional-webdev.png" loading="lazy" alt="">
-        <p class="u-paragraph Curso-description">Cada día se vuelve más importante que todo el mundo aprenda a crear un sitio web, ya sea para un boletín de información, una invitación, un portafolio personal de trabajo, o para un negocio de desarrollo web.</p>
+        <div class="Curso-info">
+          <img class="Curso-img u-rounded u-horizontal-scroll-item-img" src="images/curso-profesional-webdev.png" width="300" height="150" loading="lazy" alt="">
+          <p class="u-paragraph Curso-description">Cada día se vuelve más importante que todo el mundo aprenda a crear un sitio web, ya sea para un boletín de información, una invitación, un portafolio personal de trabajo, o para un negocio de desarrollo web.</p>
+        </div>
       </a>
       <a href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank" class="Curso u-horizontalScrollItem" rel="noreferrer">
         <h3 class="u-header u-h3 Curso-title">Curso para crear mi primera página web</h3>
-        <img class="Curso-img u-rounded u-horizontal-scroll-item-img" src="images/curso-crear-primera-pagina.png" loading="lazy" alt="">
-        <p class="u-paragraph Curso-description">Aprende a crear tu primera página web desde 0, sin conocimientos previos. Crea un sitio web funcional y atractivo, aunque nunca antes hayas hecho una página web y no tengas idea de cómo crearla</p>
+        <div class="Curso-info">
+          <img class="Curso-img u-rounded u-horizontal-scroll-item-img" src="images/curso-crear-primera-pagina.png" width="300" height="150" loading="lazy" alt="">
+          <p class="u-paragraph Curso-description">Aprende a crear tu primera página web desde 0, sin conocimientos previos. Crea un sitio web funcional y atractivo, aunque nunca antes hayas hecho una página web y no tengas idea de cómo crearla</p>
+        </div>
       </a>
     </div>
 
@@ -154,20 +164,24 @@
         </a>
       </header>
 
-      <p class="u-paragraph">
-      Como parte de mi formación Frontend, aprendí acerca de <a href="https://codigofacilito.com/cursos/git-profesional" class="u-link" target="_blank" rel="noreferrer">Git</a> y <a href="https://codigofacilito.com/articulos/como-crear-una-cuenta-y-un-repo-en-github" class="u-link" target="_blank" rel="noreferrer">GitHub</a>, por lo que decidí subir <a href="https://github.com/codigofacilito/vacaciones-cody" class="u-link" target="_blank" rel="noreferrer">mi código</a> a GitHub
-      </p>
-      <p class="u-paragraph">
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página y enviando un <a class="u-link" href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests" target="_blank" rel="noreferrer">Pull Request</a>
-      </p>
-      <p class="u-paragraph">
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un <a class="u-link" href="https://www.youtube.com/watch?v=Zqft6yNRuNs" target="_blank" rel="noreferrer">tutorial que lo explica</a>
-      </p>
-      <p class="u-paragraph">
-      También agregué un <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" class="u-link" target="_blank" rel="noreferrer">iframe</a> para que puedas ver el tutorial sin abandonar la página
-      </p>
-      <iframe class="u-rounded" width="560" height="315" src="https://www.youtube.com/embed/Zqft6yNRuNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-    </section>
+      <div class="Colabora-info">
+        <div class="Colabora-description">
+          <p class="u-paragraph">
+            Como parte de mi formación Frontend, aprendí acerca de <a href="https://codigofacilito.com/cursos/git-profesional" class="u-link" target="_blank" rel="noreferrer">Git</a> y <a href="https://codigofacilito.com/articulos/como-crear-una-cuenta-y-un-repo-en-github" class="u-link" target="_blank" rel="noreferrer">GitHub</a>, por lo que decidí subir <a href="https://github.com/codigofacilito/vacaciones-cody" class="u-link" target="_blank" rel="noreferrer">mi código</a> a GitHub
+          </p>
+          <p class="u-paragraph">
+            Puedes ayudarme a mejorar mi página, haciendo un fork de mi página y enviando un <a class="u-link" href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests" target="_blank" rel="noreferrer">Pull Request</a>
+          </p>
+          <p class="u-paragraph">
+            Si nunca antes has colaborado con un repositorio, en Código Facilito hay un <a class="u-link" href="https://www.youtube.com/watch?v=Zqft6yNRuNs" target="_blank" rel="noreferrer">tutorial que lo explica</a>
+          </p>
+          <p class="u-paragraph">
+            También agregué un <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" class="u-link" target="_blank" rel="noreferrer">iframe</a> para que puedas ver el tutorial sin abandonar la página
+          </p>
+        </div>
+        <iframe class="u-rounded" width="560" height="315" src="https://www.youtube.com/embed/Zqft6yNRuNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+   </section>
 
     <section id="FotosDeMisVacaciones" class="u-wrapper u-margin-0">
       <header>
@@ -178,15 +192,15 @@
       </header>
     </section>
 
-    <div class="Fotos u-horizontalScroll">
+    <div class="Fotos u-horizontalScroll u-padding-0">
       <img class="u-rounded u-horizontalScrollItem" src="images/1.webp" alt="Cody en la playa" loading="lazy">
       <img class="u-rounded u-horizontalScrollItem" src="images/2.webp" alt="Cody acampando" loading="lazy">
       <img class="u-rounded u-horizontalScrollItem" src="images/3.webp" alt="Cody en una alberca" loading="lazy">
     </div>
 
-    <section class="u-wrapper">
+    <section id="Fotos-secondaryText" class="u-padding-0 u-wrapper">
       <p class="u-paragraph">
-        Puedes ver más, en la <a class="u-link" href="fotos.html">galería de fotos de mi página</a>
+        Puedes ver más, en la <a class="u-link" href="/fotos">galería de fotos de mi página</a>
       </p>
     </section>
 
@@ -218,5 +232,6 @@
   </footer>
 
   <script src="js/app.js"></script>
+  <script src="js/navbar.js"></script>
 </body>
 </html>
