@@ -1,6 +1,6 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import { Img } from "./style";
 
 // Note: You can change "images" to whatever you'd like.
 
@@ -12,7 +12,7 @@ const getImages = graphql`
           relativePath
           name
           childImageSharp {
-            fluid(maxWidth: 600) {
+            fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
             }
           }
