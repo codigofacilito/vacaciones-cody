@@ -20,7 +20,7 @@ const GalleryComponent = ({ items }) => {
           <Container onClick={() => setSelectedId(null)} layoutId={selectedId}>
             <Section>
               <Image
-                filename={items.find((item) => item.id == selectedId).filename}
+                filename={items.find((item) => item.id === selectedId).filename}
                 alt="Cody en la playa"
               />
             </Section>

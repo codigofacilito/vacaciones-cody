@@ -1,7 +1,7 @@
 import React from "react";
 import { Contact, Box } from "./style";
 import Link from "components/Link";
-import { FaGithub, FaFacebook, FaLinkedin, FaCode } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
 
 const socialNetworks = [
   {
