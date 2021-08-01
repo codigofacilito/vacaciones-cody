@@ -1,23 +1,24 @@
 import React from "react";
 import LayoutPage from "components/Layout";
-import Section from "components/Section";
 import Grid from "components/Grid";
-import { StaticImage } from "gatsby-plugin-image";
+import Gallery from "components/Gallery";
+
+const items = [
+  { id: 1, filename: "1.jpg", alt: "Cody en la playa" },
+  { id: 2, filename: "2.jpg", alt: "Cody acampando" },
+  { id: 3, filename: "3.jpg", alt: "Cody en una alberca" },
+  { id: 4, filename: "4.jpg", alt: "Cody en una alberca" },
+  { id: 5, filename: "5.jpg", alt: "Cody en una alberca" },
+  { id: 6, filename: "6.jpg", alt: "Cody en una alberca" },
+];
 
 const Fotos = () => {
   return (
     <LayoutPage title="Mis fotos">
-      <Section>
-        <h2>Galería completa de mis vacaciones</h2>
-        <Grid length="3" movil>
-          <StaticImage src="../images/1.jpg" alt="Cody en la playa" />
-          <StaticImage src="../images/2.jpg" alt="Cody acampando" />
-          <StaticImage src="../images/3.jpg" alt="Cody en una alberca" />
-          <StaticImage src="../images/4.jpg" alt="Cody en una alberca" />
-          <StaticImage src="../images/5.jpg" alt="Cody en una alberca" />
-          <StaticImage src="../images/6.jpg" alt="Cody en una alberca" />
-        </Grid>
-      </Section>
+      <h2>Galería completa de mis vacaciones</h2>
+      <Grid length="3" movil>
+        <Gallery items={items} />
+      </Grid>
     </LayoutPage>
   );
 };
