@@ -1,5 +1,5 @@
 body {
-  background: #4e71d9;
+  background: linear-gradient(to bottom, #4e71d9, #636af2);
   font-family: georgia, Times, serif;
   color: #fff;
   font-size: 1rem;
@@ -45,7 +45,7 @@ p {
 }
 
 .header {
-  background-color: #f29f05;
+  background: linear-gradient(90deg, #f2cb05, #f29f05);
   color: #fff;
   padding: 1rem 0;
   position: fixed;
@@ -56,12 +56,13 @@ p {
 
 .header a {
   color: #fff;
+  font-size: 1.2rem;
   text-decoration: none;
   align-items: center;
 }
 
 .footer {
-  background-color: #f29f05;
+  background: linear-gradient(90deg, #f2cb05, #f29f05);
   padding: 1rem 0;
   text-align: center;
   margin-top: 6rem;
@@ -76,7 +77,7 @@ section {
 }
 
 .cursos div {
-  background-color: #f29f05;
+  background: linear-gradient(90deg, #f2cb05, #f29f05);
   color: white;
   max-width: 200px;
   display: inline-block;
@@ -104,4 +105,9 @@ img {
   width: auto;
   max-height: 250px;
   max-width: 250px;
+}
+
+a {
+  color: #fff;
+  align-items: center;
 }
