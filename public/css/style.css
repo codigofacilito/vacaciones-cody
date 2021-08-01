@@ -12,6 +12,24 @@ h1 {
   line-height: 1.3em;
 }
 
+.logo-nav-container img {
+  height: auto;
+  width: auto;
+  max-height: 60px;
+  max-width: 60px;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-icon {
+  display: none;
+}
+
 p {
   margin-bottom: 1.6em;
   text-align: center;
@@ -81,7 +99,7 @@ p {
 }
 
 main {
-  padding-top: 5rem;
+  padding-top: 8rem;
 }
 
 section {
@@ -123,5 +141,47 @@ a {
     width: auto;
     max-height: 300px;
     max-width: 300px;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+  }
+
+  .logo-nav-container img {
+    height: auto;
+    width: auto;
+    max-height: 30px;
+    max-width: 30px;
+  }
+
+  .navigation {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .navigation ul {
+    display: none;
+  }
+
+  .navigation ul.show {
+    display: block;
+  }
+
+  .navigation ul li {
+    display: block;
+  }
+
+  .navigation ul li a {
+    display: block;
+    padding: 0.5rem 0rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .navigation ul li a:hover {
+    background-color: #55a5ed;
   }
 }
