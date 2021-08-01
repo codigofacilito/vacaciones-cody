@@ -1,8 +1,34 @@
+body {
+  background:url('../images/vacaciones.jpg') ;
+  background-size: auto;
+  font-family: 'Jetbrains Mono';
+  height: 100vh;
+}
+
+.header_main {
+  color:white;
+  text-shadow: 1px 1px 1px black;
+  filter:drop-shadow(2px 2px 5px black);
+}
+
 nav{
-  background-color: aliceblue;
+  background:rgba(0,0,0,0.6);
+  border-radius: 8px;
   padding: 15px;
-  display: flex;
-  gap:1em;
+  display:flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color:white;
+  text-decoration: none;
+  transition:0.8s;
+  font-size:20px;
+  font-weight: bold;
+}
+nav a:hover {
+  filter:drop-shadow(2px 2px 10px white);
+  transition:0.5s;
 }
 
 main{
@@ -13,26 +39,126 @@ main{
 
 section{
   margin-top: 3rem;
+  background:white;
+  padding:15px;
+  border-radius: 8px;
+  filter:drop-shadow(1px 1px 15px black);
+}
+
+.btn_link {
+  display:block;
+  width:50%;
+  margin:auto;
+  border:1px solid silver;
+  border-radius: 5px;
+  padding:5px;
+  text-decoration:none;
+  background:navy;
+  color:white;
 }
 
 .cursos div{
-  background-color: black;
+  background-color:#2620bf;
+  border:none;
+  border-radius: 5px;
+  padding:10px;
   color: white;
   max-width: 200px;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 2px 3px 10px black;
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
 }
-.fotos img{
-  max-width: 450px;
+.item_fotos{
+  width:450px;
   display: inline-block;
+  box-shadow:  2px 2px 15px black;
+  border-radius: 8px;
+  cursor:pointer;
 }
-ul li{
+.item_fotos:hover {
+  filter:drop-shadow(3px 3px 20px black);
+}
+ul li,ol li{
   text-align: left;
+  font-weight: bold;
 }
 ul li::marker {
   content: "🚀";
 }
 
-ol li{
-  text-align: left;
+/*MODAL IMAGEN*/
+.container_modal {
+  width:100%;
+  height: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.9);
+}
+.img_modal {
+  width:70%;
+  border:none;
+  border-radius:8px;
+  filter:drop-shadow(3px 3px 20px white);
+}
+.icon_exit {
+  color:white;
+  filter:drop-shadow(3px 3px 15px white);
+  position:absolute;
+  top:0;
+  right:2%;
+  font-size:40px;
+  cursor:pointer;
+}
+.title_img {
+  color:white;
+  filter:drop-shadow(2px 2px 10px white);
+  text-shadow:2px 3px 2px black;
+}
+
+/*SLIDER FOTOS*/
+
+.slider_container {
+  width:700px;
+  height: 70vh;
+  background:url('../images/1.jpg');
+  background-size: cover;
+  filter:drop-shadow(5px 5px 10px #333);
+  margin:0 auto;
+  transition:1s ease-in-out;
+  border:none;
+  border-radius: 8px;
+}
+
+@media screen and (max-width:715px) {
+  .slider_container { width:90vw; }
+  .item_fotos { width:100%; }
+}
+
+.group_btn {
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#btn_prev,#btn_next {
+  width:50px;
+  height:50px;
+  background:rgba(0,0,0,0.4);
+  color:white;
+  border:1px solid silver;
+  border-radius:50%;
+  font-size:25px;
+  font-weight: bold;
+  opacity:0;
+  transition:0.8s;
+  cursor:pointer;
+  text-align:center;
+}
+#btn_prev:hover,#btn_next:hover {
+  filter:drop-shadow(5px 5px 10px black);
+  opacity:1;
+  transition:0.8s;
 }
