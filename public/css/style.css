@@ -1,38 +1,293 @@
-nav{
-  background-color: aliceblue;
+/* import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&family=Rubik:wght@900&display=swap');
+
+
+/* mis estilos */
+
+  /* generales */
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  transition: 0.2s;
+}
+body{
+  margin: 0;
+  background: rgb(27,33,40);
+  background: linear-gradient(90deg, rgba(27,33,40,1) 0%, rgba(31,41,51,1) 50%, rgba(27,33,40,1) 100%);
+  color: white;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+  /* fonts */
+h1, h2{
+  font-family: 'Rubik', sans-serif;
+  color: hsl(159, 100%, 50%);
+}
+h1{
+  font-size: 100px;
+  font-weight: 900;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  margin: 30px 100px;
+}
+h2{
+  font-size: 45px;
+  font-weight: 400;
+  text-decoration: underline;
+  margin: 0;
+}
+p{
+  font-size: 20px;
+  line-height : 4px;
+}
+
+  /* contenedores */
+.contenedor-del-nav{
+  background-color: hsl(209, 26%, 17%);
+  display: grid;
+}
+.contenedor-del-nav nav{
+  justify-self: center;
   padding: 15px;
+  width: 1000px;
   display: flex;
   gap:1em;
 }
-
+a {
+  color: white;
+  opacity: 0.8;
+  text-decoration: none;
+}
+a:hover, ul :hover{
+  opacity: 1;
+  text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+.introduccion p{
+  /* box */
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 30px 30px 0px 30px;
+  /* color */
+  background-color: rgba(255, 255, 255, 0.025);
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  /* tipografia */
+  font-size: 23px;
+  line-height : 30px;
+}
+.cursos div{
+  background-color: rgba(216, 216, 216, 0.35);
+  color: rgb(12, 12, 12);
+  border-radius: 15px;
+  padding: 30px 8px;
+  max-width: 350px;
+  margin: 15px 20px 0px;
+  display: inline-block;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.5);
+}
+.cursos div p{
+  font-size: 30px;
+  line-height : 30px;
+  font-weight: 900;
+}
+.lista-de-tecnologias-estudiadas{
+  width: 1000px;
+}
+  /* estilos por defecto */
 main{
   text-align: center;
-  max-width: 960px;
   margin:0 auto;
 }
 
-section{
-  margin-top: 3rem;
-}
-
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
 .fotos img{
   max-width: 450px;
   display: inline-block;
 }
 ul li{
   text-align: left;
+  margin: 5px 0px;
 }
 ul li::marker {
-  content: "🚀";
+  content: "▶ ";
 }
 
 ol li{
   text-align: left;
+}
+
+/* estilos de secciones */
+main:first-of-type section h2{
+  margin-bottom: 50px;
+}
+main section:nth-child(2) h2{
+  color: rgba(253, 255, 131, 0.788);
+}
+main section:nth-child(2){
+  background: rgb(67,38,106);
+  background: linear-gradient(90deg, rgba(67,38,106,1) 0%, rgba(134,62,136,1) 100%);
+  margin: 0;
+  padding: 50px;
+  margin: 20px 70px;
+  border-radius: 100px 100px 100px 0px;
+}
+.section-parafos-contenedor__1{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1000px;
+}
+.section-parafos-contenedor__1 p{
+  /* box */
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 30px 30px 30px 0px;
+  /* color */
+  background-color: rgba(255, 255, 255, 0.075);
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  /* tipografia */
+  font-size: 23px;
+  line-height : 30px;
+}
+.section-parafos-contenedor__1 :nth-child(2){
+  border-radius: 30px 30px 0px 30px;
+  justify-self: end;
+}
+
+main section:nth-child(3){
+  background: rgb(59,162,157);
+  background: linear-gradient(90deg, rgba(59,162,157,1) 0%, rgba(80,96,178,1) 100%);
+  margin: 0;
+  padding: 50px 50px 30px 50px;
+  margin: 20px 70px;
+  border-radius: 0px 100px 0px 100px;
+}
+main section:nth-child(3) h2{
+  color: rgba(0, 0, 0, 0.788);
+}
+main section:nth-child(3) ul{
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: 700px;
+  justify-content: center;
+}
+
+main section:nth-child(4){
+  background: rgb(50,37,59);
+  background: linear-gradient(90deg, rgba(50,37,59,1) 0%, rgba(34,34,34,1) 50%, rgba(17,36,42,1) 99%);
+  margin: 0;
+  padding: 50px 50px 30px 50px;
+  margin: 20px 70px;
+  border-radius: 100px 0px 100px 0px;
+  padding-bottom: 6px;
+}
+main section:nth-child(4) h2{
+  color: rgba(255, 255, 255, 0.788);
+}
+main section:nth-child(4) a{
+  font-size: 30px;
+  line-height: 100px;
+  color: rgba(255, 255, 255, 0.788);
+}
+
+  /* seccion de fotos del home */
+main section:nth-child(5){
+  background: rgb(250,161,12);
+  background: linear-gradient(90deg, rgba(250,161,12,1) 0%, rgba(162,37,102,1) 99%);
+  margin: 0;
+  margin: 20px 70px;
+  border-radius: 0px 100px 100px 100px;
+}
+.seccion-foto-header header{
+  display: inline-block;
+  margin: 50px 50px 30px 0px;
+}
+.seccion-foto-header p{
+  line-height: 20px;
+}
+.seccion-foto-footer{
+  display: inline-block;
+  margin: 50px 20px 0px 50px;
+  line-height: 20px;
+}
+.seccion-foto-footer a{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 100px;
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+}
+.seccion-foto-footer a:hover{
+  opacity: 1;
+  text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+
+main section:nth-child(5) h2{
+  color: rgba(255, 255, 255, 0.788);
+}
+
+    /* fotos */
+.fotos{
+  display: grid;
+  grid-gap: 40px;
+}
+.fotos div{
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.5);
+  width: 700px;
+  background-color: white;
+  border-radius: 0px 30px 30px 0px;
+  display: grid;
+}
+.fotos :nth-child(2){
+  justify-self: end;
+  border-radius: 30px 0px 00px 30px;
+  justify-content: start;
+}
+.fotos div img{
+  border-radius: 35px;
+  justify-self: end;
+  border: 5px solid white;
+}
+
+  /* footer */
+.lista-footer{
+  background-color: hsl(202, 20%, 11%);
+  margin-top: 50px;
+  outline: hsl(202, 20%, 11%) solid 20px;
+  display: grid;
+}
+.lista-footer p{
+  line-height: 20px;
+}
+.lista-footer ul{
+  opacity: .8;
+  display: inline-block;
+  font-size: 24px;
+  justify-self: center;
+  width: 1000px;
+  margin-top: 0;
+}
+
+  /* page Fotos */
+.fotos-galeria{
+  margin: auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  grid-gap: 10px;
+  border-radius: 40px;
+  border: 8px solid rgb(50, 66, 82);
+  background-color: rgb(65, 94, 121);
+  overflow: hidden;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.5);
+}
+.fotos-galeria img{
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.h2-de-fotos{
+  margin: 20px 0px;
 }
