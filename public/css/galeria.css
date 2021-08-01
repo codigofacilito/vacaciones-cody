@@ -16,11 +16,12 @@ body {
 
 .div {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
   width: 100%;
   padding: 10px 0px;
-  background-color: rgb(34, 193, 195);
+  background-color: rgba(34, 193, 195, 0.8);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 8px;
+  border-radius: 20px;
 }
 
 .contenedorHeader {

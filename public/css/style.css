@@ -308,6 +308,19 @@ nav ul li a {
   align-items: center;
   text-align: justify;
 }
+.parrafoxl {
+  font-family: "Poppins", sans-serif;
+  max-width: 80%;
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
 
 .container__card {
   max-width: 1200px;
@@ -455,6 +468,7 @@ nav ul li a {
 
 .ul li::marker {
   content: "✔";
+  justify-content: center;
 }
 .enlace__container {
   display: flex;
