@@ -16,10 +16,9 @@ body {
 
 .div {
   max-width: 100%;
-  margin: 20px auto;
-  width: 100%;
+  margin: 0 auto;
   padding: 10px 0px;
-  background-color: rgba(34, 193, 195, 0.8);
+  background-color: #af6dec;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 8px;
   border-radius: 20px;
 }
@@ -27,6 +26,7 @@ body {
 .contenedorHeader {
   display: flex;
   padding: 5px;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 0 20px 20px 20px;
@@ -37,7 +37,7 @@ body {
 }
 .enlace {
   border-radius: 20px;
-  background: #359ef9;
+  background: #1bbc9b;
   padding: 10px 30px;
   color: white;
   transition: all 500ms;
