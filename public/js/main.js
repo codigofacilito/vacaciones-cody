@@ -12,9 +12,9 @@ const rendermain = () => {
   const mainview = document.getElementById("main-view");
   document.getElementById("app").innerHTML = mainview.innerHTML;
   const fotosbtn = document.getElementById("fotos");
+  fotosbtn.setAttribute("href", "/vacaciones-cody/fotos");
   fotosbtn.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log(window.location.href);
     renderFotos();
   });
 };
