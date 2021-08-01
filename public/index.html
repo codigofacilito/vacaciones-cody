@@ -5,37 +5,136 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"      rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"      rel="stylesheet"/>
+  <!-- STYLES -->
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
+  <main class="lead">
+    <header id="home">
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+  <!--  ======================= NAVIGATION =============================  -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" data-aos="fade-down" data-aos-delay="300" data-aos-duration="2000">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarCenteredExample"
+            aria-controls="navbarCenteredExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Collapsible wrapper -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarCenteredExample"
+          >
+            <!-- Left links -->
+            <ul class="navbar-nav mb-2 mb-lg-0 lead">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fotos">Ruta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fotos">Colabora</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fotos">Fotos</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+      </nav>
+
+      <div class="container my-5 py-md-5">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <h1 class="display-2"><b>Estas son mis <span class="text-primary">Vacaciones</span></b></h1>
+            <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+            <a class="btn btn-lg btn-success m-3" href="#ruta">Mi ruta</a>
+            <a class="btn btn-lg btn-danger m-3" href="#fotos">Mis Fotos</a>
+          </div>  
+          <div class="col-md-5">
+            <img src="images/cody1.png" class="img-fluid">
+          </div>
         </div>
       </div>
+
+    </header>
+
+    <section class="container-fluid p-0">
+      <!--svg wave-->
+      <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #08f;"></path></svg>
+      </div>
+
+      <div class="row align-items-center m-0 back">
+        <div class="col-md-4 p-5">
+          <img src="images/cody2.png" class="img-fluid">
+        </div>
+        <div class="col-md-8 p-5">
+          <h2 class="display-5 text-warning"><b>Mis vacaciones Frontend</b></h2>
+          <p class="text-white"> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript</p>
+          <p class="text-white"> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+        </div>
+      </div>
+
+      <div class="back text-white pb-5">
+        <div class="text-center">
+          <h2>Estos son los cursos que estuve tomando</h2>
+        </div>
+        <div class="row align-items-center mx-5">
+          <div class="col-md-6">
+            
+            <div class="row  shadow border rounded m-3">
+              <div class="col-md-4 p-auto">
+                <img src="images/curso1.jpeg" class="img-fluid">
+              </div>
+              <div class="col-md-8">
+                <h5>Curso profesional de Desarrollo Web</h5>
+                <p>Aprende a crear tu primera página web desde 0, sin conocimientos previos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row  shadow border rounded m-3">
+              <div class="col-md-4 p-auto">
+                <img src="images/curso2.jpeg" class="img-fluid">
+              </div>
+              <div class="col-md-8">
+                <h5>Curso crear mi primera pagina Web</h5>
+                <p>Cada día se vuelve más importante que todo el mundo aprenda desarrollo web.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--svg wave-->
+      <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 271.49,-50.00 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #08f;"></path></svg>
+      </div>
+      
+    
+
     </section>
 
-    <section>
+    <section class="container">
       <header>
         <h2>Ruta de aprendizaje 2021</h2>
         <p> También me propuse aprender nuevas tecnologías durante 2021</p>
@@ -48,7 +147,7 @@
         <li> Entre otros </li>
       </ul>
     </section>
-    <section>
+    <section class="container">
       <header>
         <h2>Colabora en mi página</h2>
       </header>
@@ -64,15 +163,15 @@
 
       </p>
     </section>
-    <section>
+    <section class="container">
       <header>
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
       </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
+      <div class="fotos" id="fotos">
+        <img src="images/1.jpg" alt="Cody en la playa" class="img-fluid">
+        <img src="images/2.jpg" alt="Cody acampando" class="img-fluid">
+        <img src="images/3.jpg" alt="Cody en una alberca" class="img-fluid">
         <p>
           Puedes ver más, en la galería de fotos de mi página
           <a href="fotos.html">Ir a la galería</a>
@@ -80,7 +179,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="container">
       <header>
         <h2>La importancia de las vacaciones</h2>
         <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
@@ -97,4 +196,14 @@
     
   </main>
 </body>
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery.3.4.1.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+  <!--  AOS  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- JS -->
+  <script type="text/javascript" src="js/app.js"></script>
+
 </html>

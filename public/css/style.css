@@ -1,38 +1,26 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+
+.container{
+  margin: 100px auto !important;
 }
 
-main{
-  text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+.btn{
+  box-shadow: none;
+  border: 1px solid;
+}
+.btn-success:hover{
+  background: white;
+  color: #5BCC85;
+  border: 1px solid #5BCC85;
+  box-shadow: none;
 }
 
-section{
-  margin-top: 3rem;
+.btn-danger:hover{
+  background: white;
+  color: #FD585F;
+  border: 1px solid #FD585F;
+  box-shadow: none;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
-}
-
-ol li{
-  text-align: left;
+.back{
+  background: #0088FF;
 }
