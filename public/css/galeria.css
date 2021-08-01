@@ -16,19 +16,23 @@ body {
 
 .div {
   max-width: 100%;
-  margin: 0 20px;
+  margin: 0 0px;
   padding: 10px 0px;
-  background-color: #af6dec;
+  background: rgb(33, 150, 243);
+  background: linear-gradient(
+    0deg,
+    rgba(33, 150, 243, 1) 16%,
+    rgba(34, 193, 195, 1) 100%
+  );
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 8px;
-  border-radius: 50px 50px 100px 100px;
+  border-radius: 0px 0px 60px 60px;
 }
 
 .contenedorHeader {
   display: flex;
   padding: 5px;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-top: 0 20px 20px 20px;
 }
 .contenedorHeader img {
@@ -37,11 +41,12 @@ body {
 }
 .enlace {
   border-radius: 20px;
-  background: #1bbc9b;
+  background: #af6dec;
   padding: 10px 30px;
-  color: white;
+  color: black;
   transition: all 500ms;
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .enlace:hover {
@@ -60,6 +65,9 @@ body {
   }
   .enlace {
     margin-top: 10px;
+  }
+  .div {
+    border-radius: 30px 30px 20px 20px;
   }
 }
 .container,
