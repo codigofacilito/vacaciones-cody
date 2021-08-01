@@ -2,6 +2,7 @@ import React from "react";
 import LayoutPage from "components/Layout";
 import Grid from "components/Grid";
 import Gallery from "components/Gallery";
+import Section from "components/Section";
 
 const items = [
   { id: 1, filename: "1.jpg", alt: "Cody en la playa" },
@@ -15,10 +16,12 @@ const items = [
 const Fotos = () => {
   return (
     <LayoutPage title="Mis fotos">
-      <h2>Galería completa de mis vacaciones</h2>
-      <Grid length="3" movil>
-        <Gallery items={items} />
-      </Grid>
+      <Section noanimations>
+        <h2>Galería completa de mis vacaciones</h2>
+        <Grid length="3" movil>
+          <Gallery items={items} />
+        </Grid>
+      </Section>
     </LayoutPage>
   );
 };

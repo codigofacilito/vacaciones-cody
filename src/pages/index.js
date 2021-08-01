@@ -5,7 +5,25 @@ import Button from "components/Button";
 import P from "components/Paragraph";
 import Grid from "components/Grid";
 import Link from "components/Link";
-import { StaticImage } from "gatsby-plugin-image";
+import Gallery from "components/Gallery";
+
+const items = [
+  {
+    id: 1,
+    filename: "1.jpg",
+    alt: "Cody en la playa",
+  },
+  {
+    id: 2,
+    filename: "2.jpg",
+    alt: "Cody acampando",
+  },
+  {
+    id: 3,
+    filename: "3.jpg",
+    alt: "Cody en una alberca",
+  },
+];
 
 export default function Home() {
   return (
@@ -62,16 +80,14 @@ export default function Home() {
           <Button>Ir al tutorial</Button>
         </Link>
       </Section>
-      <Section>
+      <Section noanimations>
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
         <P>
           ¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas
           fotos que tomé:
         </P>
-        <Grid movil>
-          <StaticImage src="../images/1.jpg" alt="Cody en la playa" />
-          <StaticImage src="../images/2.jpg" alt="Cody acampando" />
-          <StaticImage src="../images/3.jpg" alt="Cody en una alberca" />
+        <Grid length="3" movil>
+          <Gallery items={items} />
         </Grid>
         <P>Puedes ver más, en la galería de fotos de mi página</P>
         <Link to="/fotos">

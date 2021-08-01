@@ -13,17 +13,27 @@ const Motion = ({ children }) => (
   </motion.div>
 );
 
-const SectionComponent = ({ children }) => {
+const SectionView = ({ children }) => {
+  return (
+    <Section>
+      <TitleBar>
+        <VscChromeMinimize />
+        <VscChromeMaximize />
+        <VscChromeClose />
+      </TitleBar>
+      {children}
+    </Section>
+  );
+};
+
+const SectionComponent = ({ children, noanimations }) => {
+  if (noanimations) {
+    return <SectionView>{children}</SectionView>;
+  }
+
   return (
     <Motion>
-      <Section>
-        <TitleBar>
-          <VscChromeMinimize />
-          <VscChromeMaximize />
-          <VscChromeClose />
-        </TitleBar>
-        {children}
-      </Section>
+      <SectionView>{children}</SectionView>
     </Motion>
   );
 };
