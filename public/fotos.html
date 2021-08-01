@@ -2,33 +2,63 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis vacaciones</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2fa7808a9e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+    <main>
+        <header class="headerTop">
+            <div class="container">
+                <h1><a href="#">Cody Vacaciones</a></h1>
+                <div class="toggle"></div>
+                <nav>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5501/CodyVerano/">Inicio</a></li>
+                        <li><a href="fotos.html">Fotos</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+        <section class="bl-vacaciones bl">
+            <div class="container">
+                <header class="heading color-text-verde">
+                    <h2>Galería completa de mis vacaciones</h2>
+                    <span></span>
+                </header>
+                <div class="fotos">
+                    <div class="box-foto"><img src="images/1.jpg" alt="Cody en la playa"></div>
+                    <div class="box-foto"><img src="images/2.jpg" alt="Cody en la alberca"></div>
+                    <div class="box-foto"><img src="images/3.jpg" alt="Cody en la alberca"></div>
+                    <div class="box-foto"><img src="images/4.jpg" alt="Cody en la alberca"></div>
+                    <div class="box-foto"><img src="images/5.jpg" alt="Cody en la alberca"></div>
+                    <div class="box-foto"><img src="images/6.jpg" alt="Cody en la alberca"></div>
+
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <div class="container">
+                <p>Todos los derechos revardos by <a href="#" class="link-page">Cody</a> &copy 2021</p>
+            </div>
+        </footer>
+    </main>
+
+    <div id="ctnBOX " class="container__img">
+        <div class="container">
+            <div class="content">
+                <img id="bigSmallImg" src="" alt="">
+            </div>
+        </div>
     </div>
 
-  </main>
+    <script src="cody-app.js"></script>
 </body>
 
 </html>
