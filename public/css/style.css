@@ -434,10 +434,9 @@ body {
 
 .collaborate-page__content {
     background: linear-gradient(90deg, #232526 0%, #414345 100%);
-    color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    color: var(--white90);
+    display: block;
+    margin: auto;
 }
 
 .collaborate-page__description {
@@ -460,14 +459,12 @@ body {
 .collaborate-btn-icon {
     display: block;
     text-align: center;
-    margin-block: 80px;
 }
 
 .collaborate-page__description {
     display: block;
-    margin-block: 62px;
+    padding-block: 62px;
     margin-inline: 51px;
-    inline-size: 650px;
 }
 
 .collaborate-page__title {
@@ -479,15 +476,20 @@ body {
 
 .collaborate-page__info {
     font: var(--description-mobile);
+    margin-block: 60px
 }
 
 @media screen and (min-width:414px) {
     .button-collaborate {
-        display: inline;
+        display: inline-block;
     }
 }
 
 @media screen and (min-width:960px) {
+    .collaborate-page__description {
+        margin: auto;
+        inline-size: 650px;
+    }
     .collaborate-page__title {
         font: var(--title);
         text-transform: uppercase;
