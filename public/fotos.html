@@ -2,33 +2,88 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style-fotos.css" />
+    <title>Mis vacaciones</title>
 </head>
 
 <body>
   <main>
     <header>
       <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+        <a href="/" id="home">Inicio</a>
+        <a href="fotos.html" id="photos">Fotos</a>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
-
+    <article class="container-principal">
+      <div class="title-photos"></div>
+      <div class="container-photos">
+        <div class="photo">
+          <div class="numbertext">1 / 6</div>
+          <img src="images/1.jpg" alt="Feliz en bici por la playa" />
+        </div>
+        <div class="photo">
+          <div class="numbertext">2 / 6</div>
+          <img src="images/2.jpg" alt="Acampando por primera vez" />
+        </div>
+        <div class="photo">
+          <div class="numbertext">3 / 6</div>
+          <img src="images/3.jpg" alt="Día de relax en la piscina" />
+        </div>
+        <div class="photo">
+          <div class="numbertext">4 / 6</div>
+          <img src="images/4.jpg" alt="Atardecer, playa y un coquito..." />
+        </div>
+        <div class="photo">
+          <div class="numbertext">5 / 6</div>
+          <img src="images/5.jpg" alt="La caminata perfecta" />
+        </div>
+        <div class="photo">
+          <div class="numbertext">6 / 6</div>
+          <img src="images/6.jpg" alt="Volviendo recargado de energia" />
+        </div>
+        <!-- botones adelante atras -->
+        <div class="prev" id="prev" >&#10094;</div>
+        <div class="next" id="next" >&#10095;</div>
+        <!-- texto  de imagen-->
+        <div class="container-text">
+          <p id="text-photo"></p>
+        </div>
+        <div class="photos-little">
+          <div class="min-photo" >
+            <img class="photo-btn" src="images/1.jpg" data-id="1" alt="Feliz en bici por la playa" />
+          </div>
+          <div class="min-photo">
+            <img class="photo-btn" src="images/2.jpg" data-id="2" alt="Acampando por primera vez" />
+          </div>
+          <div class="min-photo">
+            <img class="photo-btn" src="images/3.jpg" data-id="3" alt="Día de relax en la piscina" />
+          </div>
+          <div class="min-photo">
+            <img class="photo-btn" src="images/4.jpg" data-id="4" alt="Atardecer, playa y un coquito..." />
+          </div>
+          <div class="min-photo">
+            <img class="photo-btn" src="images/5.jpg" data-id="5" alt="La caminata perfecta" />
+          </div>
+          <div class="min-photo">
+            <img class="photo-btn" src="images/6.jpg" data-id="6" alt="Volviendo recargado de energia" />
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <p>
+        Hecho con 💛 por
+        <a href="https://about-me-sigma.vercel.app/" target="_blank">Tatiana Roa</a>
+      </p>
+    </footer>
   </main>
+  <script src="./index.js" ></script>
+  <script src="./fotos.js" ></script>
 </body>
 
 </html>
