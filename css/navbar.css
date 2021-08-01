@@ -1,0 +1,129 @@
+.header {
+    background-color: #0f9bf6;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.cody{
+    margin-left: 50px;
+}
+
+.logo{
+    height: 30px;
+    width: 30px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.nav-logo{
+    padding-block-end: 8px;
+}
+
+.nav_link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav_menu{
+    display: flex;
+    margin-right: 30px;
+    list-style: none;
+}
+
+.nav_menu_item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 50px;
+    text-transform: uppercase;
+    width: max-content;
+    font-family: 'Inconsolata', monospace;
+}
+
+.nav_menu_link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav_menu_link:hover{
+    background-color: #318CE7;
+    transition: 1s;
+    color: white;
+}
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border:none;
+    font-size:30px;
+    padding: 0 20px;
+    line-height: 50px;
+
+    display: none;
+}
+
+@media(max-width: 768px){
+    
+    .header {
+        height: 60px;
+    }
+    
+    .cody{
+        margin-left: 15px;
+    }
+
+    .logo{
+        margin-top: 15px;
+    }
+
+    .nav_menu{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #454d5a;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav_menu_item{
+        line-height: 50px;
+    }
+    
+    .nav_menu_link:hover{
+        background:none;
+        color: #b8aafd;
+    }
+
+    .nav-toggle{
+        display: block;
+        margin-top: 8px;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+}

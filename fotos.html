@@ -2,33 +2,82 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="./images/codi.png" />
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slider_galeria.css">
+  <link rel="stylesheet" href="css/olas.css">
+  <script src="https://kit.fontawesome.com/4eb76ce5d2.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+  <script defer src="js/navbar.js"></script>
+  <script defer src="js/slider.js"></script>
 </head>
-
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="cody nav_link">
+        <img class="logo" src="./images/codi.png" alt="logo">
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav_menu">
+        <li class="nav_menu_item">
+          <a href="index.html" class="nav_menu_link nav_link">
+            <lord-icon class="nav-logo" src="https://cdn.lordicon.com/gmzxduhd.json" trigger="loop"
+              colors="primary:#ffffff,secondary:#ffffff" stroke="80" style="width:40px;height:40px">
+            </lord-icon>
+            Inicio
+          </a>
+        </li>
+        <li class="nav_menu_item">
+          <a href="fotos.html" class="nav_menu_link nav_link">
+            <lord-icon class="nav-logo" src="https://cdn.lordicon.com/fgkmrslx.json" trigger="loop"
+              colors="primary:#ffffff,secondary:#ffffff"  stroke="80" style="width:40px;height:40px">
+            </lord-icon>
+            Fotos
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="olas__">
+    <div class="title_fotos">
       <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
     </div>
-
-  </main>
+    <div class="container-slider">
+      <div class="slider" id="slider">
+        <div class="slider__section">
+          <img src="./images/1.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+          <img src="./images/2.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+          <img src="./images/3.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+          <img src="./images/4.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+          <img src="./images/5.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+          <img src="./images/6.jpg" alt="" class="slider__img">
+        </div>
+      </div>
+      <div class="slider__btn slider__btn--right" id="btn-right"> &#62; </div>
+      <div class="slider__btn slider__btn--left" id="btn-left"> &#60; </div>
+    </div>
+    <div class="waves">
+      <div class="wave circulo a"></div>
+      <div class="wave circulo b"></div>
+      <div class="wave circulo c"></div>
+    </div>
+    </section>
 </body>
-
 </html>
