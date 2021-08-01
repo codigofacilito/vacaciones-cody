@@ -1,0 +1,77 @@
+:root {
+  --fonts: "Raleway", sans-serif;
+  --color_btn: #049e42;
+}
+
+body {
+  font-family: var(--fonts);
+  font-size: 18px;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Hero Image */
+.hero {
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid red; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.hero__content {
+  padding: 0 10px;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.hero__ilustration {
+  /* border: 2px solid purple; */
+  margin: auto;
+  width: 400px;
+}
+
+.hero__btn {
+  display: inline-block;
+  margin: auto;
+  padding: 20px;
+  border: none;
+  font-family: var(--fonts);
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 30px;
+  background-color: var(--color_btn);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.hero__btn:hover {
+  background-color: transparent;
+  border: 2px solid var(--color_btn);
+  color: black;
+}

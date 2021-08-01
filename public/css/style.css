@@ -1,38 +1,39 @@
-nav{
+nav {
   background-color: aliceblue;
   padding: 15px;
   display: flex;
-  gap:1em;
+  gap: 1em;
 }
 
-main{
+main {
   text-align: center;
   max-width: 960px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-section{
+/* section {
   margin-top: 3rem;
-}
+} */
 
-.cursos div{
+.cursos div {
   background-color: black;
   color: white;
   max-width: 200px;
   display: inline-block;
   box-shadow: 5px 5px 10px black;
 }
-.fotos img{
+.fotos img {
   max-width: 450px;
   display: inline-block;
 }
-ul li{
+
+ul li {
   text-align: left;
 }
 ul li::marker {
   content: "🚀";
 }
 
-ol li{
+ol li {
   text-align: left;
 }
