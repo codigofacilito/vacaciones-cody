@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/HectorMtz22/vacaciones-cody#readme",
   "dependencies": {
+    "babel-plugin-remove-graphql-queries": "^3.10.0",
     "babel-plugin-styled-components": "^1.13.2",
     "framer-motion": "^4.1.17",
     "gatsby": "^3.10.2",
