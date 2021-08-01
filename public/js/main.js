@@ -12,8 +12,8 @@ const rendermain = () => {
   const mainview = document.getElementById("main-view");
   document.getElementById("app").innerHTML = mainview.innerHTML;
   const fotosbtn = document.getElementById("fotos");
-  fotosbtn.setAttribute("href", "/vacaciones-cody/fotos");
   fotosbtn.addEventListener("click", (e) => {
+    document.getElementById("fotos").href = "/vacaciones-cody/fotos";
     e.preventDefault();
     renderFotos();
   });
