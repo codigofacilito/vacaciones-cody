@@ -62,48 +62,13 @@ ol {
 
 /* LANDING SECTION */
 .Landing {
-  height: var(--landing-height);
-  padding-top: 12.5vh;
-
   background: linear-gradient(150deg, var(--color-secondary) 0%, var(--color-primary) 100%);
 }
 
-.Landing-title {
-  font-family: var(--font-header);
-  color: white;
-  font-weight: 700;
-  text-align: center;
-  font-size: 2em;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.Landing-secondaryText {
-  text-align: center;
-  margin: 7.5vh auto;
-  color: white;
-}
-
+.Landing-title,
+.Landing-secondaryText,
 .Landing-paragraph {
   color: white;
-  padding-right: 20vw;
-  font-size: 1.5em;
-  line-height: 1.25;
-  font-weight: 600;
-}
-
-.Landing-img {
-  position: absolute;
-  top: calc(var(--100vh) - var(--navbar-height) - 155px);
-  right: 0;
-
-  width: 150px;
-  height: 155px; 
-
-  aspect-ratio: 30 / 31;
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-  object-position: center bottom;
 }
 
 @media screen and (min-width: 425px) {
@@ -114,12 +79,6 @@ ol {
     align-items: center;
     padding-top: 0;
     height: calc(var(--100vh) - var(--navbar-height) - var(--padding-double));
-  }
-
-  .Landing-paragraph {
-    text-align: center;
-    padding-right: 0;
-    width: calc(var(--wrapper-width) - var(--padding-quad));
   }
 }
 
@@ -159,6 +118,17 @@ ol {
 /* FOTOS SECTION */
 .Fotos {
   padding-bottom: var(--padding);
+}
+
+.Fotos img {
+  width: 280px;
+  height: 210px;
+
+  aspect-ratio: 4 / 3;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* RUTA DE APRENDIZAJE SECTION */
@@ -270,10 +240,16 @@ ol {
 
   .Landing-img {
     top: calc(var(--100vh) - 300px);
-    left: calc(50vw - (300px / 2));
+    left: calc(50vw - (321px / 2));
 
     height: 250px;
-    width: 300px;
+    width: 321px;
+
+    aspect-ratio: 321 / 250;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
 
     animation: floatCody 4s infinite ease-in-out;
   }
@@ -296,6 +272,14 @@ ol {
 
   .Curso-img {
     max-width: 500px;
+    width: 500px;
+    height: 250px;
+
+    aspect-ratio: 2 / 1;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .u-horizontalScroll {
@@ -332,10 +316,6 @@ ol {
     margin-bottom: calc(var(--padding-quad) * 2);
   }
 
-  #MisVacacionesFrontend {
-    margin-bottom: 0;
-  }
-
   .Cursos {
     flex-direction: row;
     justify-content: space-around;
@@ -365,7 +345,7 @@ ol {
   }
 
   .Curso-img {
-    width: 800px;
+    width: 300px;
     height: 150px;
 
     aspect-ratio: 2 / 1;

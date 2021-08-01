@@ -6,7 +6,6 @@ const assets = [
   "/fotos.html",
   "/css/fotos.css",
   "/css/home.css",
-  "/css/reset.css",
   "/css/style.css",
   "/css/utils.css",
   "/js/app.js",
@@ -46,3 +45,4 @@ self.addEventListener("fetch", fetchEvent => {
     })
   )
 })
+

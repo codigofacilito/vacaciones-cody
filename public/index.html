@@ -31,31 +31,223 @@
 
   <title>Cody | Mis Vacaciones</title>
 
+  <!-- RESET -->
+  <style>
+    a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}
+  </style>
+
+  <!-- CSS VARIABLES -->
+  <style>
+    /* GENERAL */
+    :root {
+      --color-primary: #8E2DE2;
+      --color-secondary: #6E57FC;
+      --color-accent: #1F652A;
+      --color-text: #070928;
+
+      --font-header: 'Fira Code', monospace;
+
+      --padding: 10px;
+      --padding-double: calc(var(--padding) * 2);
+      --padding-quad: calc(var(--padding) * 4);
+
+      --100vh: calc(100 * var(--vh));
+  
+      --navbar-height: calc(40px + var(--padding-double));
+      --landing-height: calc(var(--100vh) - var(--padding-double) - 12.5vh - var(--navbar-height));
+      --wrapper-width: calc(100vw - var(--padding-double));
+      --curso-card-width: calc(100vw - var(--padding-quad));
+    }
+  </style>
+
+  <style>
+    * {
+      font-family: 'Montserrat', arial, sans-serif;
+    }
+
+    main {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .u-wrapper {
+      width: calc(var(--wrapper-width) - var(--padding-double));
+      padding: var(--padding-double);
+      margin-bottom: var(--padding-double);
+    }
+
+    .u-margin-0 {
+      margin: 0;
+    }
+
+    .u-padding-0 {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .u-h2 {
+      font-family: 'Fira Code', monospace;
+      font-size: 1.25em;
+      margin-bottom: var(--padding);
+    }
+
+    .u-link {
+      font-weight: 600;
+    }
+
+    .u-paragraph {
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .Nav {
+      width: var(--wrapper-width);
+      height: 40px;
+      padding: var(--padding);
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 9999;
+
+      position: fixed;
+      bottom: 0;
+      top: unset;
+      transition: .5s bottom;
+
+      font-family: 'Montserrat', arial, sans-serif;
+    }
+
+    .Nav-option span {
+      display: none;
+    }
+
+    .is-active span {
+      display: inline-block;
+    }
+
+    .Nav-option {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .is-active .u-icon {
+      width: 25px;
+    }
+
+
+    .Landing {
+      height: var(--landing-height);
+      padding-top: 12.5vh;
+    }
+
+    .Landing-title {
+      font-family: 'Fira Code', monospace;
+      font-weight: 700;
+      text-align: center;
+      font-size: 2em;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .Landing-secondaryText {
+      font-style: italic;
+      text-align: center;
+      margin: 7.5vh auto;
+    }
+
+    .Landing-paragraph {
+      padding-right: 20vw;
+      font-size: 1.5em;
+      line-height: 1.25;
+      font-weight: 600;
+    }
+
+    .Landing-img {
+      position: absolute;
+      top: calc(var(--100vh) - var(--navbar-height) - 155px);
+      right: 0;
+
+      width: 189px;
+      height: 155px; 
+
+      aspect-ratio: 189 / 155;
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      object-position: center bottom;
+    }
+
+    .Nav-option {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  </style>
+
+  <!-- RESPONSIVE -->
+  <style>
+    @media screen and (min-width: 425px) {
+      .Landing-paragraph {
+        text-align: center;
+        padding-right: 0;
+        width: calc(var(--wrapper-width) - var(--padding-quad));
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      .u-wrapper {
+        width: calc(var(--wrapper-width) - var(--padding-quad));
+      }
+
+      .u-paragraph {
+        font-size: 1.25em;
+      }
+
+      .u-h2 {
+        display: inline-block;
+      }
+
+      .u-header {
+        font-size: 2em;
+      }
+
+      .Nav-option {
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px var(--padding-quad);
+        max-width: 200px;
+      }
+
+      .Landing-title {
+        max-width: 500px;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      #MisVacacionesFrontend {
+        margin-bottom: 0;
+      }
+    }
+  </style>
+
+  <!-- INLINE FONTS -->
+  <style>
+    @font-face{font-family:'Fira Code';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v10/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_NprJVD7Ng.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  </style>
+
   <!-- STYLES -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="preload" href="css/reset.css" as="style">
   <link rel="preload" href="css/utils.css" as="style">
   <link rel="preload" href="css/style.css" as="style">
   <link rel="preload" href="css/home.css" as="style">
-  <link rel="stylesheet" href="css/reset.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="css/utils.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="css/home.css" media="print" onload="this.media='all'">
 
+  <script src="js/app.js"></script>
   <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@0.6.2/lite-youtube.js"></script>
-
-  <script>
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", function() {
-        navigator.serviceWorker
-          .register("/serviceWorker.js")
-          .then(res => console.log("service worker registered"))
-          .catch(err => console.log("service worker not registered", err))
-      })
-    }
-  </script>
 </head>
 <body>
   <header>
@@ -72,19 +264,19 @@
         <span>Galería</span>
       </a>
     </nav>
-
-    <section class="Landing u-wrapper">
-      <h1 class="u-header Landing-title">Estas son mis Vacaciones</h1>
-      <p class="Landing-secondaryText"><i>Soy Cody, un aspirante a Dev</i></p>
-      <p class="Landing-paragraph">En 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-      <picture>
-        <source class="Landing-img" media="(min-width: 1024px)" srcset="images/cody-verano.png">
-        <img class="Landing-img" src="./images/corner_cody.png" alt="">
-      </picture>
-    </section>
   </header>
 
   <main>
+    <section class="Landing u-wrapper">
+      <h1 class="u-header Landing-title">Estas son mis Vacaciones</h1>
+      <p class="Landing-secondaryText">Soy Cody, un aspirante a Dev</p>
+      <p class="Landing-paragraph">En 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+      <picture>
+        <source class="Landing-img" media="(min-width: 1024px)" srcset="images/cody-verano.png">
+        <img class="Landing-img" src="./images/corner_cody.png" width="189" height="155" alt="">
+      </picture>
+    </section>
+
     <section id="MisVacacionesFrontend" class="u-wrapper u-margin-0">
       <header>
         <a href="#MisVacacionesFrontend">
@@ -232,7 +424,6 @@
     Hecho con 💚 por <a class="u-link" href="https://www.linkedin.com/in/angel-berlanga/" target="_blank" rel="noreferrer">Angel Berlanga</a>
   </footer>
 
-  <script src="js/app.js"></script>
   <script src="js/navbar.js"></script>
 
 </body>

@@ -19,51 +19,17 @@
   --curso-card-width: calc(100vw - var(--padding-quad));
 }
 
-* {
-  font-family: 'Montserrat', arial, sans-serif;
-}
-
 a {
   text-decoration: none;
 }
 
 .Nav {
-  width: var(--wrapper-width);
-  height: 40px;
-  padding: var(--padding);
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 9999;
-
-  position: fixed;
-  bottom: 0;
-  top: unset;
-  transition: .5s bottom;
-
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   background-color: white;
 }
 
 .Nav-option {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   color: var(--color-primary);
-}
-
-.Nav-option span {
-  display: none;
-}
-
-/* NAVBAR ACTIVE OPTION */
-.is-active span {
-  display: inline-block;
-}
-
-.is-active .u-icon {
-  width: 25px;
 }
 
 footer.Footer {
@@ -94,9 +60,6 @@ footer.Footer {
   }
 
   .Nav-option {
-    flex-direction: row;
-    gap: 10px;
-    padding: 10px var(--padding-quad);
     border-radius: 5px;
   }
 
@@ -120,9 +83,5 @@ footer.Footer {
 
   .is-active span {
     color: var(--color-primary);
-  }
-
-  .u-header {
-    font-size: 2em;
   }
 }
