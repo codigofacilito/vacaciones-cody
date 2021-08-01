@@ -14,7 +14,7 @@ const rendermain = () => {
   const fotosbtn = document.getElementById("fotos");
   fotosbtn.addEventListener("click", (e) => {
     e.preventDefault();
-    fotosbtn.setAttribute("href", window.location.href + "/fotos");
+    console.log(window.location.href);
     renderFotos();
   });
 };
