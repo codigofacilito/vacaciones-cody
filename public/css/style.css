@@ -109,6 +109,9 @@ body {
         width: 610px;
         height: 610px;
     }
+    .header-content {
+        margin-inline: 51px;
+    }
     .header-description p {
         font: var(--description);
     }
@@ -230,9 +233,10 @@ body {
 @media screen and (min-width:414px) {
     .vacation-frontend__description {
         display: block;
-        margin: auto;
+        margin-inline: 51px;
+        /* margin: auto; */
         margin-block: 62px;
-        inline-size: 362px;
+        /* inline-size: 362px; */
         z-index: 1;
     }
     .vacation-frontend__card-details {
@@ -265,6 +269,7 @@ body {
     .vacation-frontend__description {
         inline-size: 650px;
         margin-block: 0;
+        margin: auto;
     }
     .vacation-frontend__card-description {
         padding-inline: 30px;
@@ -274,12 +279,15 @@ body {
 
 /* Learning-path */
 
-.learning-path__content {
+.learning-path {
     background: var(--white90);
 }
 
-.learning-path__description {
+.learning-path__content {
     margin-inline: 51px;
+}
+
+.learning-path__description {
     padding-block: 100px;
 }
 
@@ -288,7 +296,7 @@ body {
     color: var(--yellow70);
     margin-block-start: 0;
     margin-block-end: 40px;
-    width: auto;
+    text-transform: uppercase;
 }
 
 .learning-path__title span {
@@ -369,14 +377,21 @@ body {
 
 @media screen and (min-width:960px) {
     .learning-path__description {
-        margin-inline: 110px;
+        margin-inline: 51px;
+    }
+    .learning-path__content {
+        margin: auto;
+        max-width: 1400px;
     }
     .learning-path__title {
         font: var(--title);
-        width: 650px;
     }
     .learning-path__info {
         font: var(--description);
+    }
+    .learning-path__info ul {
+        margin-block-start: 80px;
+        gap: 30px
     }
     .learning-path__info ul li {
         margin-block-end: 0;
@@ -384,9 +399,6 @@ body {
     }
     .learning-path__img-cody {
         max-width: 400px;
-    }
-    .learning-path__info ul {
-        margin-block-start: 80px;
     }
     .circle {
         block-size: 62px;
@@ -403,6 +415,7 @@ body {
 
 .collaborate-page {
     width: 100%;
+    margin-block-start: -50px;
 }
 
 .collaborate-page__svg {
