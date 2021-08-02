@@ -178,9 +178,38 @@ ul li{
 
 .contentsectioncolabora{
   margin-bottom: 60px;
-  font-size: 1.8em;
-
+  font-size: 1em;
+  display: table;
 }
 
 
 /***********/
+
+.container{
+
+	background: tomato;
+  width: 90%;
+  margin: auto;
+  display: table;
+}
+.contentsectioncolabora{
+  position: relative; 
+	float: left;
+	background: tomato;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.contentsectioncolabora span {
+  position:absolute;
+  right:0;
+  width:0;
+  background: tomato;
+  border-left: 1px solid #000;
+  animation: escribir 8s steps(150) infinite alternate;
+}
+
+@keyframes escribir {
+  from { width: 100% }
+  to { width:0 }
+}
