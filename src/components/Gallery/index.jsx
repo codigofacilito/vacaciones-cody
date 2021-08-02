@@ -20,7 +20,7 @@ const GalleryComponent = ({ items }) => {
             <Section>
               <Image
                 filename={items.find((item) => item.id === selectedId).filename}
-                alt="Cody en la playa"
+                alt={items.find((item) => item.id === selectedId).alt}
               />
             </Section>
           </Container>
