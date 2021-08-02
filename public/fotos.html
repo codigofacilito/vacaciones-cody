@@ -1,34 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=codigofacilito.com"/>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/my_style.css">
+  <link rel="stylesheet" href="css/accordion.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/carrousel.css">
+  <link rel="stylesheet" href="css/social.css">
+  <link rel="stylesheet" href="css/postcard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">  
 </head>
-
 <body>
   <main>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+      <nav class="topNav">
+        <a href="index.html" title="Inicio"><i class="fa fa-home"></i><span class="navMenu"> Inicio</span></a>
+        <a href="#" class="active" title="Fotos"><i class="fa fa-photo"></i><span class="navMenu"> Fotos</span></a>
+        <div class="topnav-right">
+          <a href="https://codigofacilito.com/" title="Código Facilito"><img src="https://codigofacilito.com/assets/logo-cbf2a784ebee5d642aa7b8182df3e388d4feba0a23577eed1d2747fa05861f73.png" alt="Código Facilito" class="logo"></a>
+        </div>        
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
 
+    <header>
+      <h1>Galería de fotos</h1>
+      <div class="img-cody">
+        <img src="https://codigofacilito.com/assets/verano-2021/cody-verano-95c1d9e3a3d913ed0d97f7adcd2d38046b241b99f450356dfd2e8dcd9b9aebf3.png" alt="Cody" class="cody">
+        <div class="ocean">
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <button class="accordion accordion-active"><i class="fa fa-sun-o"></i> Galería completa de mis vacaciones</button>
+        <article class="accordion-panel" style="display: block;">
+          <div class="photosGallery">
+            <div class="leftArrow btnArrow">
+              &#60
+            </div>
+            <div class="rightArrow btnArrow">
+              &#62
+            </div>
+
+            <img src="images/1.jpg" alt="Cody en la playa" title="Cody en la playa">
+            <p>
+              <a href="images/1.jpg" download="Cody en la playa" target="_blank" class="linkExt" title="Descargar imagen" id="ImgDownload"><i class="fa fa-cloud-download"></i></a>
+              <a href="images/1.jpg" target="_blank" class="linkExt" title="Abrir imagen en pestaña nueva" id="ImgView"><i class="fa fa-file-photo-o"></i></a>
+            </p>
+          </div>
+        </article>
+    </section>
+
+    <section>
+      <button class="accordion"><i class="fa fa-sun-o"></i> Mis redes sociales</button>
+      <article class="accordion-panel">
+        <header>
+          <h2>Mis redes sociales</h2>
+        </header>
+        <p>Si gustas puedes seguirme para continuar el viaje.</p>
+          <div class="social">
+            <div class="socialCard">
+              <div class="contenido-card">
+                <h3>Twitter</h3>                
+              </div>
+              <a class="twitter-timeline" data-width="100%" data-height="450" data-dnt="true" data-theme="light" href="https://twitter.com/codigofacilito?ref_src=twsrc%5Etfw">Tweets by codigofacilito</a>
+            </div>
+            <div class="socialCard" id="Prueba">
+              <div class="contenido-card">
+                <h3>Youtube</h3>
+              </div>
+              <iframe src="https://www.youtube.com/embed/?listType=user_uploads&list=codigofacilito" width="100%" height="450"></iframe>
+            </div>
+            <div class="socialCard">
+              <div class="contenido-card">
+                <h3>Facebook</h3>
+              </div>
+              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcodigofacilito%2Fposts%2F4660971857248762&show_text=true&width=500" width="100%" height="450" style="border:none;overflow:hidden;background-color: white;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+          </div>
+      </article>
+    </section>
+
+    <section>
+      <button class="accordion"><i class="fa fa-sun-o"></i> Foto conmemorativa</button>
+      <article class="accordion-panel">
+        <header>
+          <h2>Tu imagen conmemorativa</h2>
+        </header>
+          <div class="photoConmemorative">
+            <input type="file" accept=".jpg,.jpge" value="/img/imgejemplo1.png" id="btnPostcard">
+              <canvas id="canvasPhoto" style="display: none;"></canvas>
+                <img id="canvasImg" src="images/postcard/default.png">
+                  <div class="divBtnDownload">
+                      <a id="btnDownload" href="images/postcard/default.png" download class="linkExt">Descargar</a>
+                  </div>
+          </div>
+      </article>
+    </section>
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="js/fotos.js" type="module"></script>
   </main>
 </body>
-
 </html>
