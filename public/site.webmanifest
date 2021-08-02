@@ -1,7 +1,7 @@
 {
 	"name":"Cody | Mis Vacaciones",
 	"short_name":"Mis Vacaciones",
-	"start_url":"https://eddyber16.github.io/vacaciones-cody/",
+	"start_url":"/vacaciones-cody/",
 	"icons":[
 		{
 			"src":"./images/favicon/favicon-16x16.png",
