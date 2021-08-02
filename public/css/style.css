@@ -24,3 +24,20 @@
 .back{
   background: #0088FF;
 }
+
+.imgcard{
+  width: 100%;
+  height: 100%;
+}
+
+ /* Default height for small devices */
+    #intro-example {
+      height: 500px;
+    }
+
+    /* Height for devices larger than 992px */
+    @media (min-width: 992px) {
+      #intro-example {
+        height: 600px;
+      }
+    }
