@@ -1,34 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+	<head>
 
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mis vacaciones</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;700&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+		<link rel="icon" type="imagefavicon/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+		<link rel="icon" type="imagefavicon/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="imagefavicon/png" sizes="96x96" href="favicon/favicon-96x96.png">
+		<link rel="icon" type="imagefavicon/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 
-  </main>
-</body>
+	</head>
+
+	<body>
+
+		<main class="main">
+
+			<header class="main__header">
+
+				<div class="main__header__icon --palm">
+
+					<img class="main__header__icon__img" src="./images/palm.webp" alt="Palmera">
+
+				</div>
+
+				<div class="main__header__icon --cody --flip">
+
+					<img class="main__header__icon__img" src="./images/cody-summer.webp" alt="Cody en un flotador">
+
+				</div>
+
+				<nav class="nav">
+					<a class="link" href="index.html">Inicio</a>
+					<a class="link" href="#">Fotos</a>
+				</nav>
+
+				<h1 class="title --title-photo">Galería completa de mis vacaciones</h1>
+
+			</header>
+
+			<section class="container --grid">
+
+				<div class="container__photo">
+
+					<p class="paragraph --photo-text">Cody en la playa</p>
+					<img class="container__photo__img" src="images/1.webp" alt="Cody en la playa">
+
+				</div>
+
+				<div class="container__photo">
+
+					<p class="paragraph --photo-text">Cody acampando</p>
+					<img class="container__photo__img" src="images/2.webp" alt="Cody acampando">
+
+				</div>
+
+				<div class="container__photo">
+
+					<p class="paragraph --photo-text">Cody en una alberca</p>
+					<img class="container__photo__img" src="images/3.webp" alt="Cody en una alberca">
+
+				</div>
+
+				<div class="container__photo">
+
+					<p class="paragraph --photo-text">Cody acostado en la playa</p>
+					<img class="container__photo__img" src="images/4.webp" alt="Cody acostado en la playa">
+
+				</div>
+
+				<div class="container__photo">
+
+					<p class="paragraph --photo-text">Cody en una vereda vintage</p>
+					<img class="container__photo__img" src="images/5.webp" alt="Cody en una vereda vintage">
+
+				</div>
+
+				<div class="container__photo">
+
+					<p class="paragraph --photo-text">Cody en el aeropuerto</p>
+					<img class="container__photo__img" src="images/6.webp" alt="Cody en el aeropuerto">
+
+				</div>
+
+			</section>
+
+		</main>
+
+		<script src="./js/index.js"></script>
+
+	</body>
 
 </html>
