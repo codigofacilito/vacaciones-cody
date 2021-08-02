@@ -151,7 +151,7 @@ img {
   transform: translate3d(0, 0, 0);
   transition: all 600ms;
   animation-name: autoplay;
-  animation-duration: 6.5s;
+  animation-duration: 13s;
   animation-direction: alternate;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
@@ -238,17 +238,56 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   background: #fff;
 }
 
+input[id="4"]:checked ~ .slide {
+  animation: none;
+  transform: translate3d(calc(-100% * 3), 0, 0);
+}
+
+input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
+  background: #fff;
+}
+
+input[id="5"]:checked ~ .slide {
+  animation: none;
+  transform: translate3d(calc(-100% * 4), 0, 0);
+}
+
+input[id="5"]:checked ~ .pagination .pagination-item[for="5"] {
+  background: #fff;
+}
+
+input[id="6"]:checked ~ .slide {
+  animation: none;
+  transform: translate3d(calc(-100% * 5), 0, 0);
+}
+
+input[id="6"]:checked ~ .pagination .pagination-item[for="6"] {
+  background: #fff;
+}
+
 @keyframes autoplay {
-  33% {
+  16% {
     transform: translate3d(calc(-100% * 0), 0, 0);
   }
 
-  66% {
+  32% {
     transform: translate3d(calc(-100% * 1), 0, 0);
   }
 
-  100% {
+  48% {
     transform: translate3d(calc(-100% * 2), 0, 0);
+  }
+
+  64% {
+    transform: translate3d(calc(-100% * 3), 0, 0);
+  }
+
+  80% {
+    transform: translate3d(calc(-100% * 4), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(calc(-100% * 5), 0, 0);
   }
 }
 
