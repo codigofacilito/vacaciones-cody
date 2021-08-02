@@ -1,34 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Otilio Rodríguez Hernández">
   <title>Mis vacaciones</title>
+  <link rel="shortcut icon" href="./images/icons/codigo-facilito.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="./css/computer.css" media="(min-width: 1024px)">
 </head>
 
 <body>
+  <header>
+    <ul class="header-left">
+      <li><h1>Galería completa de mis vacaciones</h1></li>
+    </ul>
+    <h1 class="header-movil-title">Estas son mis Vacaciones</h1>  
+    <nav id="navigation">  
+              <div class="control-menu">
+                  <a href="#navigation" class="open"><span>MENU</span></a>
+                  <a href="#" class="close"><span>CERRAR</span></a>  
+              </div>      
+      <ul class="nav-items">         
+        <li><a href="./index.html"> <span>Inicio</span></a></li>
+        <li><a href="./fotos.html"><span>Fotos</span></a></li>
+      </ul>
+    </nav> 
+    <ul class="header-right">
+      <li><a href="./index.html">Inicio</a></li>
+      <li><a href="./fotos.html">Fotos</a></li>
+    </ul>  
+  </header>
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
-
+    <section class="photos-container-page">
+      <div class="photos-container-page--img">
+        <img src="images/1.jpg" alt="Cody en la playa">
+        <img src="images/2.jpg" alt="Cody acampando">
+        <img src="images/3.jpg" alt="Cody en una alberca">
+        <img src="images/4.jpg" alt="Cody relajandose en la playa">
+        <img src="images/5.jpg" alt="Cody en la zona turistica de la ciudad">
+        <img src="images/6.jpg" alt="Cody en el aeropuerto">
+      </div>
+      <div class="photos-container--title">
+        <a class="photos--button" href="index.html">Volver</a>
+    </div> 
+    </section>
   </main>
+  <footer>
+    <img src="./images/icons/codigofacilito-logo.png" alt="Logo codigofacilito" height="40px">
+  </footer>
 </body>
-
 </html>
