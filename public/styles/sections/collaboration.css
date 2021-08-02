@@ -1,23 +1,34 @@
 .collaboration {
+  width: 100%;
+  max-width: var(--max-width);
   min-height: 100vh;
   overflow: hidden;
   position: relative;
-  display: flex;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding: 2rem 3rem;
-  gap: 2rem;
+  justify-content: flex-start; */
+  /* gap: 2rem; */
+}
+
+.collaboration-container {
+  display: inherit;
 }
 
 .collaboration__image {
+  display: block;
   filter: drop-shadow(0 10px 2.5rem var(--collaboration-image-shadow));
+  margin: 4rem auto;
+  width: 200px;
 }
 
 .collaboration__container-image-repository {
   width: auto;
   position: relative;
-  margin: 2rem 0 3rem;
+  display: inline-block;
+  margin: 2rem auto 3rem;
 }
 
 .collaboration__image-repository {
@@ -25,6 +36,7 @@
   border-radius: 0.75rem;
   object-fit: contain;
   display: inline-block;
+  position: relative;
 }
 
 .collaboration__container-image-repository::before {
@@ -50,4 +62,46 @@
 .collaboration__link {
   color: var(--link-active-color);
   text-decoration:underline;
+}
+
+.collaboration__content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.collaboration__content-container::before {
+  content: url(../../images/startfish.png);
+  width: 48px;
+  height: 46px;
+  transform: rotate(18deg);
+  align-self: flex-end;
+}
+
+.collaboration__content-container::after {
+  content: url(../../images/concha.png);
+  width: 48px;
+  height: 43px;
+  transform: rotate(-145deg);
+  align-self: flex-start;
+}
+
+@media screen and (min-width: 767px) {
+  .collaboration-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1 1 0px;
+    gap: 3.5rem;
+  }
+
+  .collaboration__content-container {
+    flex-shrink: 3;
+    width: 50%;
+  }
+
+  .collaboration__image {
+    flex-shrink: 1;
+    align-self: center;
+    width: 280px;
+  }
 }

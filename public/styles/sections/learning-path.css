@@ -72,3 +72,9 @@
   transform: rotate(-45deg);
   align-self: flex-end;
 }
+
+@media screen and (min-width: 768px) {
+  .learning-path {
+    grid-column: 2/3;
+  }
+}

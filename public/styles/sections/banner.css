@@ -43,3 +43,11 @@
   background-color: var(--sea-200);
   z-index: -1;
 }
+
+@media screen and (min-width: 768px) {
+  .banner {
+    grid-column: 2/3;
+    height: 80vh;
+    justify-content: center;
+  }
+}

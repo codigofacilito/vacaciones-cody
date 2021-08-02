@@ -99,7 +99,20 @@
 }
 
 @media screen and (min-width: 767px) {
+  .courses {
+    height: auto;
+    /* height: min-content; */
+  }
   .courses__back-image {
     left: 0;
-  } 
+  }
+  .courses__list {
+    flex-direction: row;
+  }
+
+  .courses__back-image {
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
 }

@@ -35,5 +35,7 @@
   --card-shadow-color: var(--gray-200);
   
   --collaboration-image-shadow: #1BBD9C80;
+
+  --max-width: 1140px;
   
 }

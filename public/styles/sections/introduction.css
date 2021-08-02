@@ -37,3 +37,9 @@
   transform: rotate(-25deg);
   align-self: flex-start;
 }
+
+@media screen and (min-width: 768px) {
+  .introduction {
+    grid-column: 2/3;
+  }
+}

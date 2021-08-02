@@ -1,5 +1,6 @@
 .main {
   width: 100%;
+  max-width: var(--max-width);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,4 +31,17 @@
   border-radius: 50%;
   z-index: -1;
   transform: scaleX(1.125);
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+
+  .main__container-image {
+    position: sticky;
+    top: calc(50% - 150px);
+  }
 }
