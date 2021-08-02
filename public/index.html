@@ -38,7 +38,6 @@
 
   <!-- CSS VARIABLES -->
   <style>
-    /* GENERAL */
     :root {
       --color-primary: #8E2DE2;
       --color-secondary: #6E57FC;
@@ -61,135 +60,106 @@
   </style>
 
   <style>
-    * {
-      font-family: 'Montserrat', arial, sans-serif;
-    }
-
+    * {font-family: 'Montserrat', arial, sans-serif;}
     main {
       width: 100%;
       height: 100%;
-      margin: 0;
       padding: 0;
     }
-
+    main,
+    .u-margin-0 {
+      margin: 0;
+    }
     .u-wrapper {
       width: calc(var(--wrapper-width) - var(--padding-double));
       padding: var(--padding-double);
       margin-bottom: var(--padding-double);
     }
-
-    .u-margin-0 {
-      margin: 0;
-    }
-
     .u-padding-0 {
       padding-top: 0;
       padding-bottom: 0;
     }
-
-    .u-h2 {
+    .u-h2,
+    .Landing-title {
       font-family: 'Fira Code', monospace;
+    }
+    .u-h2 {
       font-size: 1.25em;
       margin-bottom: var(--padding);
     }
-
-    .u-link {
-      font-weight: 600;
-    }
-
+    .u-link {font-weight: 600;}
     .u-paragraph {
       margin-bottom: 15px;
       line-height: 1.5;
     }
-
+    .Nav,
+    .Nav-option {
+      display: flex;
+      align-items: center;
+    }
     .Nav {
       width: var(--wrapper-width);
       height: 40px;
       padding: var(--padding);
-
-      display: flex;
       justify-content: space-around;
-      align-items: center;
       z-index: 9999;
-
       position: fixed;
       bottom: 0;
       top: unset;
       transition: .5s bottom;
-
-      font-family: 'Montserrat', arial, sans-serif;
     }
-
-    .Nav-option span {
-      display: none;
-    }
-
-    .is-active span {
-      display: inline-block;
-    }
-
-    .Nav-option {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    .is-active .u-icon {
-      width: 25px;
-    }
-
-
+    .Nav-option span {display: none;}
+    .is-active span {display: inline-block;}
+    .Nav-option {flex-direction: column;}
+    .is-active .u-icon {width: 25px;}
     .Landing {
       height: var(--landing-height);
       padding-top: 12.5vh;
     }
-
-    .Landing-title {
-      font-family: 'Fira Code', monospace;
-      font-weight: 700;
+    .Landing-title,
+    .Landing-secondaryText {
       text-align: center;
+    }
+    .Landing-title {
+      font-weight: 700;
       font-size: 2em;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
-
     .Landing-secondaryText {
       font-style: italic;
-      text-align: center;
       margin: 7.5vh auto;
     }
-
     .Landing-paragraph {
       padding-right: 20vw;
       font-size: 1.5em;
       line-height: 1.25;
       font-weight: 600;
     }
-
     .Landing-img {
       position: absolute;
       top: calc(var(--100vh) - var(--navbar-height) - 155px);
       right: 0;
-
       width: 189px;
       height: 155px; 
-
       aspect-ratio: 189 / 155;
       max-height: 100%;
       max-width: 100%;
       object-fit: contain;
       object-position: center bottom;
     }
-
-    .Nav-option {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
   </style>
 
   <!-- RESPONSIVE -->
   <style>
     @media screen and (min-width: 425px) {
+      .Landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+        height: calc(var(--100vh) - var(--navbar-height) - var(--padding-double));
+      }
       .Landing-paragraph {
         text-align: center;
         padding-right: 0;
@@ -198,38 +168,21 @@
     }
 
     @media screen and (min-width: 1024px) {
-      .u-wrapper {
-        width: calc(var(--wrapper-width) - var(--padding-quad));
-      }
-
-      .u-paragraph {
-        font-size: 1.25em;
-      }
-
-      .u-h2 {
-        display: inline-block;
-      }
-
-      .u-header {
-        font-size: 2em;
-      }
-
+      .u-wrapper {width: calc(var(--wrapper-width) - var(--padding-quad));}
+      .u-paragraph {font-size: 1.25em;}
+      .u-h2 {display: inline-block;}
+      .u-header {font-size: 2em;}
       .Nav-option {
         flex-direction: row;
         gap: 10px;
         padding: 10px var(--padding-quad);
         max-width: 200px;
       }
-
-      .Landing-title {
-        max-width: 500px;
-      }
+      .Landing-title {max-width: 500px;}
     }
 
     @media screen and (min-width: 1280px) {
-      #MisVacacionesFrontend {
-        margin-bottom: 0;
-      }
+      #MisVacacionesFrontend {margin-bottom: 0;}
     }
   </style>
 
@@ -239,14 +192,12 @@
   </style>
 
   <!-- STYLES -->
-  <link rel="preload" href="css/utils.css" as="style">
-  <link rel="preload" href="css/style.css" as="style">
-  <link rel="preload" href="css/home.css" as="style">
-  <link rel="stylesheet" href="css/utils.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="css/home.css" media="print" onload="this.media='all'">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="css/home.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/home.min.css" media="print" onload="this.media='all'">
 
-  <script src="js/app.js"></script>
+  <script src="js/app.min.js"></script>
   <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@0.6.2/lite-youtube.js"></script>
 </head>
 <body>
@@ -424,7 +375,7 @@
     Hecho con 💚 por <a class="u-link" href="https://www.linkedin.com/in/angel-berlanga/" target="_blank" rel="noreferrer">Angel Berlanga</a>
   </footer>
 
-  <script src="js/navbar.js"></script>
+  <script src="js/navbar.min.js"></script>
 
 </body>
 </html>

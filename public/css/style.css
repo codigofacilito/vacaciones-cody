@@ -1,36 +1,16 @@
-/* GENERAL */
-:root {
-  --color-primary: #8E2DE2;
-  --color-secondary: #6E57FC;
-  --color-accent: #1F652A;
-  --color-text: #070928;
-
-  --font-header: 'Fira Code', monospace;
-
-  --padding: 10px;
-  --padding-double: calc(var(--padding) * 2);
-  --padding-quad: calc(var(--padding) * 4);
-
-  --100vh: calc(100 * var(--vh));
-
-  --navbar-height: calc(40px + var(--padding-double));
-  --landing-height: calc(var(--100vh) - var(--padding-double) - 12.5vh - var(--navbar-height));
-  --wrapper-width: calc(100vw - var(--padding-double));
-  --curso-card-width: calc(100vw - var(--padding-quad));
+.u-icon {width: 40px;}
+.u-h2 {color: var(--color-secondary);}
+.u-link {
+  color: var(--color-accent);
+  border-bottom: 1px dashed var(--color-accent);
 }
-
-a {
-  text-decoration: none;
-}
-
+.u-paragraph {color: var(--color-text);}
+a {text-decoration: none;}
 .Nav {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   background-color: white;
 }
-
-.Nav-option {
-  color: var(--color-primary);
-}
+.Nav-option {color: var(--color-primary);}
 
 footer.Footer {
   display: flex;
@@ -59,29 +39,15 @@ footer.Footer {
     box-shadow: none;
   }
 
-  .Nav-option {
-    border-radius: 5px;
-  }
-
-  .Nav-option img {
-    height: 30px;
-  }
-
+  .Nav-option {border-radius: 5px;}
+  .Nav-option img {height: 30px;}
   .Nav-option span {
     display: inline-block;
     color: white;
     font-weight: 600;
   }
 
-  .is-active {
-    background: white;
-  }
-
-  .is-active img {
-    height: 25px;
-  }
-
-  .is-active span {
-    color: var(--color-primary);
-  }
+  .is-active {background: white;}
+  .is-active img {height: 25px;}
+  .is-active span {color: var(--color-primary);}
 }

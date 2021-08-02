@@ -3,9 +3,13 @@ ol {
   margin-left: var(--padding-double);
 }
 
+.u-h3,
+.u-textSecondary {
+  text-align: center;
+}
+
 .u-h3 {
   color: black;
-  text-align: center;
   font-size: .9em;
   font-family: var(--font-header);
 }
@@ -13,12 +17,9 @@ ol {
 .u-textSecondary {
   font-size: .7em;
   color: #6B705C;
-  text-align: center;
 }
 
-.u-rounded {
-  border-radius: calc(var(--padding) / 2);
-}
+.u-rounded {border-radius: 5px;}
 
 .u-horizontalScroll {
   display: inline-flex;
@@ -46,13 +47,9 @@ ol {
   background: transparent;
 }
 
-.u-horizontalScrollItem {
-  width: var(--curso-card-width);
-}
+.u-horizontalScrollItem {width: var(--curso-card-width);}
 
-.u-horizontalScrollItem:last-child {
-  margin-right: var(--padding-double);
-}
+.u-horizontalScrollItem:last-child {margin-right: var(--padding-double);}
 
 .u-list {
   display: flex;
@@ -71,64 +68,50 @@ ol {
   color: white;
 }
 
-@media screen and (min-width: 425px) {
-  .Landing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0;
-    height: calc(var(--100vh) - var(--navbar-height) - var(--padding-double));
-  }
+/* INTRO SECTION */
+.Cursos-title.u-h3 {margin: var(--padding);}
+
+.Curso,
+.Curso-info {
+  flex-direction: column;
 }
 
-/* INTRO SECTION */
-.Cursos-title.u-h3 {
-  margin: var(--padding);
+.Curso,
+.Curso-info,
+.RutaDeAprendizaje-list li {
+  gap: var(--padding);
 }
 
 .Curso {
   display: inline-flex;
-  flex-direction: column;
-  gap: var(--padding);
   color: black;
 }
 
-.Curso-info {
-  display: flex;
-  flex-direction: column;
-  gap: var(--padding);
-}
+.Curso-info {display: flex;}
 
-.Curso-title {
-  width: var(--curso-card-width);
-}
+.Curso-title {width: var(--curso-card-width);}
 
 .Curso-img {
   width: 300px;
   height: 150px;
-
   aspect-ratio: 2 / 1;
+}
+
+.Curso-img,
+.Fotos img {
   max-height: 100%;
   max-width: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center; 
 }
 
 /* FOTOS SECTION */
-.Fotos {
-  padding-bottom: var(--padding);
-}
+.Fotos {padding-bottom: var(--padding);}
 
 .Fotos img {
   width: 280px;
   height: 210px;
-
   aspect-ratio: 4 / 3;
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 /* RUTA DE APRENDIZAJE SECTION */
@@ -137,16 +120,13 @@ ol {
   justify-content: flex-start;
   align-items: center;
   cursor: pointer;
-  gap: var(--padding);
 }
 
-.RutaDeAprendizaje-list li label {
-  cursor: pointer;
-}
+.RutaDeAprendizaje-list li,
+.RutaDeAprendizaje-list li label,
+.Checkbox {cursor: pointer;}
 
 .Checkbox {
-  /* RESET CHECKBOX STYLE */
-  cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
   outline: none;
@@ -219,13 +199,12 @@ ol {
 }
 
 @media screen and (min-width: 1024px) {
-  .u-h3 {
-    font-size: 1.25em;
-    text-align: left;
-  }
-
+  .u-h3,
   ol {
     font-size: 1.25em;
+  }
+  .u-h3 {
+    text-align: left;
   }
 
   .u-textSecondary {
@@ -246,10 +225,7 @@ ol {
     width: 321px;
 
     aspect-ratio: 321 / 250;
-    max-height: 100%;
-    max-width: 100%;
     object-fit: contain;
-    object-position: center;
 
     animation: floatCody 4s infinite ease-in-out;
   }
@@ -266,20 +242,25 @@ ol {
     }
   }
 
-  .Curso-title {
+  .Curso-img,
+  .Landing-img {
+    max-height: 100%;
+    max-width: 100%;
+    object-position: center;
+  }
+
+  .Curso-title,
+  .Curso-img,
+  .u-horizontalScrollItem {
     max-width: 500px;
   }
 
   .Curso-img {
-    max-width: 500px;
     width: 500px;
     height: 250px;
 
     aspect-ratio: 2 / 1;
-    max-height: 100%;
-    max-width: 100%;
     object-fit: cover;
-    object-position: center;
   }
 
   .u-horizontalScroll {
@@ -292,10 +273,6 @@ ol {
     justify-content: center;
     align-items: center;
     gap: var(--padding-double);
-  }
-
-  .u-horizontalScrollItem {
-    max-width: 500px;
   }
 
   .u-horizontalScrollItem:last-child {
@@ -316,15 +293,25 @@ ol {
     margin-bottom: calc(var(--padding-quad) * 2);
   }
 
-  .Cursos {
+  .Cursos,
+  .Curso-info,
+  .RutaDeAprendizaje-list {
     flex-direction: row;
+  }
+
+  .Curso,
+  .Curso-info {
+    gap: var(--padding-double);
+  }
+
+  .Cursos,
+  .RutaDeAprendizaje-list {
     justify-content: space-around;
   }
 
   .Curso {
     justify-content: center;
     max-width: 700px;
-    gap: var(--padding-double);
   }
 
   .Curso-title {
@@ -333,11 +320,7 @@ ol {
     text-align: center;
   }
 
-  .Curso-info {
-    flex-direction: row;
-    align-items: center;
-    gap: var(--padding-double);
-  }
+  .Curso-info {align-items: center;}
 
   .Curso-description {
     margin: 0;
@@ -355,14 +338,7 @@ ol {
     object-position: center;
   }
 
-  .RutaDeAprendizaje-list {
-    justify-content: space-around;
-    flex-direction: row;
-  }
-
-  .RutaDeAprendizaje-list li {
-    flex-direction: column;
-  }
+  .RutaDeAprendizaje-list li {flex-direction: column;}
 
   #ColaboraEnMiPagina {
     height: calc(var(--100vh) - (var(--padding-double) * 3));
@@ -371,8 +347,12 @@ ol {
     background: linear-gradient(150deg, var(--color-secondary) 0%, var(--color-primary) 100%);
   }
 
-  #ColaboraEnMiPagina .u-h2 {
+  #ColaboraEnMiPagina .u-h2,
+  .Colabora-description p {
     color: white;
+  }
+
+  #ColaboraEnMiPagina .u-h2 {
     margin-bottom: var(--padding-quad);
   }
 
@@ -388,17 +368,13 @@ ol {
     width: 300vw;
     height: 150vh;
     max-width: 1280px;
-    max-height: 680px;
+    max-height: 600px;
   }
 
   .Colabora-description {
     font-weight: 600;
     font-size: .9em;
     padding-right: var(--padding-double);
-  }
-
-  .Colabora-description p {
-    color: white;
   }
 
   .Colabora-description a {
