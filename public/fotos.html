@@ -2,33 +2,110 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="Erick Játiva" content="Concurso Codigo Facilito" />
+  <title>Fotos de mis vacaciones CODY</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link href="css/style.css" rel="stylesheet" />
+  <style type="text/css">
+    img{ max-width:100%;}
+
+.gallery_box li
+{ width:33.333333%; max-width: 100% ;
+display:inline-block; float: left; text-align: center; overflow: hidden;
+position: relative;
+}
+.gallery_box{
+padding:0;display: flow-root;
+}
+
+.gallery_box li:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.gallery_box li img{
+    -webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+    }
+.gallery_box li:nth-child(even) {
+    height: 304px;
+}
+.gallery_box li:nth-child(odd) {
+    height: 438px;
+}
+.gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
+.gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
+.gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
+.gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
+.gallery_box li:hover .box_data{ background:rgba(255,0,39,0.55)}
+  </style>
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  <div class="container px-5">
+    <a class="navbar-brand" href="index.html">Inicio</a>-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
+  <section>
+    <ul class="gallery_box">
+      <li>
+        <a href="#0"><img src="images/5.jpg?random">
+          <div class="box_data">
 
-  </main>
+          </div></a>
+      </li>
+      <li>
+        <a href="#0"><img src="images/4.jpg?random">
+          <div class="box_data">
+
+          </div></a>
+      </li>
+      <li>
+        <a href="#0"><img src="images/3.jpg?random">
+          <div class="box_data">
+            <!--<span>White wall</span>-->
+          </div></a>
+      </li>
+      <li>
+        <a href="#0"><img src="images/2.jpg?random">
+          <div class="box_data">
+
+          </div></a>
+      </li>
+      <li style="    position: relative;
+    top: -134px;">
+        <a href="#0"><img src="images/1.jpg?random">
+          <div class="box_data">
+
+          </div></a>
+      </li>
+      <li>
+        <a href="#0"><img src="images/6.jpg?random">
+          <div class="box_data">
+
+          </div></a>
+      </li>
+
+    </ul>
+
+  </section>
+<!-- Footer-->
+<footer class="py-5 bg-black">
+  <div class="container px-5"><p class="m-0 text-center text-black small">Copyright &copy; erickjativa@gmail.com</p></div>
+</footer>
 </body>
 
 </html>

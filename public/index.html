@@ -1,100 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="Erick Játiva" content="Concurso Codigo Facilito" />
+        <title>Mis vacaciones CODY</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/style.css" rel="stylesheet" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
-      </div>
-    </section>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#page-top">Inicio</a>-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="masthead text-center text-white">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-0">Mis vacaciones Frontend</h1>
+                    <!--<h3 class="masthead-subheading mb-0">Estas son mis Vacaciones</h3>-->
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="fotos.html">Galería</a>
+                </div>
+            </div>
+            <!--<div class="bg-circle-1 bg-circle"></div>
+            <div class="bg-circle-2 bg-circle"></div>
+            <div class="bg-circle-3 bg-circle"></div>
+            <div class="bg-circle-4 bg-circle"></div>-->
+        </header>
+        <!-- Content section 1-->
+        <section id="scroll">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="images/5.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Estas son mis Vacaciones</h2>
+                            <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section 2-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="images/4.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Vacaciones Frontend</h2>
+                            <p>Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript</p>
+                            <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+                            <p> Estos son los cursos que estuve tomando </p>
+                                <div class="col-md-12">
+                                    <div class="card border-primary flex-md-row mb-4 shadow-sm h-md-250">
+                                        <div class="card-body d-flex flex-column align-items-start">
+                                            <strong class="d-inline-block mb-2 text-primary">FRONTEND</strong>
+                                            <h6 class="mb-0">
+                                                <a class="text-dark" href="https://codigofacilito.com/cursos/flutter-web">Curso para crear mi primera página web con Flutter</a>
+                                            </h6>
+                                            <p class="card-text mb-auto">Aprende en este mini proyecto cómo usar Flutter en páginas web y aprende a usar una misma base de código para apps.</p>
+                                        </div>
+                                        <img class="card-img-right flex-auto d-none d-lg-block" alt="Thumbnail [200x250]" src="https://codigofacilito.com/system/courses/white_avatars/000/000/334/medium/flutter-web.png" style="width: 200px; height: 200px; background-color:#ee0979;">
+                                    </div>
+                                </div>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+                            <div class="col-md-12">
+                                <div class="card border-success flex-md-row mb-4 shadow-sm h-md-250">
+                                    <div class="card-body d-flex flex-column align-items-start">
+                                        <strong class="d-inline-block mb-2 text-success">WEB</strong>
+                                        <h6 class="mb-0">
+                                            <a class="text-dark" href="https://codigofacilito.com/cursos/frontend-profesional">Curso Profesional Desarrollo Web</a>
+                                        </h6>
+                                        <p class="card-text mb-auto">Cada día se vuelve más importante que todo el mundo aprenda a crear un sitio web</p>
+                                    </div>
+                                    <img class="card-img-right flex-auto d-none d-lg-block" alt="Thumbnail [200x250]" src="https://codigofacilito.com/system/courses/white_avatars/000/000/186/medium/frontend-2018.png" style="width: 200px; height: 200px; background-color:#5bcc85;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <!-- Content section 3-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="images/6.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Ruta de aprendizaje 2021</h2>
+                            <p>También me propuse aprender nuevas tecnologías durante 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
 
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
-      </div>
-    </section>
+                <section class="customer-logos slider">
+                    <div class="slide">
+                        <span style="font-size: 6em; color: #5bcc85;">
+                            <i class="fab fa-css3-alt" title="CSS GRID"></i>
+                        </span>
+                    </div>
+                    <div class="slide">
+                        <span style="font-size: 6em; color: #5bcc85;">
+                            <i class="fab fa-js" title="JAVASCRIPT"></i>
+                        </span>
+                    </div>
+                    <div class="slide">
+                        <span style="font-size: 6em; color: #5bcc85;">
+                            <i class="fab fa-html5" title="HTML"></i>
+                        </span>
+                    </div>
+                    <div class="slide">
+                        <div class="slide">
+                        <span style="font-size: 6em; color: #5bcc85;">
+                            <i class="fab fa-python" title="PYTHON"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide">
+                        <span style="font-size: 6em; color: #5bcc85;">
+                            <i class="fab fa-github" title="GITHUB"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide">
+                        <span style="font-size: 6em; color: #5bcc85;">
+                            <i class="fab fa-docker" title="DOCKER"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide">
+                        <span style="font-size: 6em; color: #5bcc85;">
+                            <i class="fas fa-database" title="BASE DE DATOS"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide">
+                        <span style="font-size: 6em; color: #5bcc85;">
+                            <i class="fab fa-android" title="DESARROLLO EN ANDROID"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide">
+                        <span style="font-size: 6em; color: #5bcc85;">
+                            <i class="fab fa-php" title="PHP"></i>
+                        </span>
+                        </div>
+                    </div>
+                </section>
+        </section>
+        <!-- Content section 4-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="images/3.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Colabora en mi página</h2>
+                            <p>
+                                Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
+                            </p>
+                            <p>
+                                Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+                            </p>
+                            <p>
+                                Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
+                                <a href="https://codigofacilito.com/cursos/git-profesional" target="_blank" >Ir al tutorial</a>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
-  </main>
-</body>
+                            </p>
+
+                        </div>
+                    </div>
+        </section>
+        <!-- Content section 5-->
+        <section id="scroll">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="images/2.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">La importancia de las vacaciones</h2>
+                            <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+                            <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+                            <ol>
+                                <li>Mejora la salud mental</li>
+                                <li>Incrementa la motivación</li>
+                                <li>Reduce el burnout</li>
+                                <li>Mejora tu productividad y creatividad</li>
+                            </ol>
+                            <p>
+                                Puedes ver más, en la galería de fotos de mi página
+                                <a class="btn btn-primary btn-xl rounded-pill mt-5" href="fotos.html">Galería</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <div class="container px-5"><p class="m-0 text-center text-black small">Copyright &copy; erickjativa@gmail.com</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    </body>
 </html>
