@@ -45,18 +45,23 @@ más productivo a la hora de hacer las páginas para el Blog.
     .
     ├── ...
     ├── components              # Components folder
-        ├── Button              # Button
-        ├── Contact             # Redes sociales
-        ├── Footer              # Movil Footer
-        ├── Gallery             # Gallery pressable
-        ├── Grid                # Grid responsive
-        ├── Header              # Header de la pagina
-        ├── Hidden              # Para razones responsive
-        ├── Image               # Componente dinámico con Graphql
-        ├── Layout              # Compoente para cada página
-        ├── Link                # Link interno o externo dependiendo de las props
-        ├── Paragraph           # Styled p
-        ├── Section             # Seccion que parece una terminal
-        └── Sidebar             # Navegación en web
+    │   ├── Button              # Button
+    │   ├── Contact             # Redes sociales
+    │   ├── Footer              # Movil Footer
+    │   ├── Gallery             # Gallery pressable
+    │   ├── Grid                # Grid responsive
+    │   ├── Header              # Header de la pagina
+    │   ├── Hidden              # Para razones responsive
+    │   ├── Image               # Componente dinámico con Graphql
+    │   ├── Layout              # Compoente para cada página
+    │   ├── Link                # Link interno o externo dependiendo de las props
+    │   ├── Paragraph           # Styled p
+    │   ├── Section             # Seccion que parece una terminal
+    │   └── Sidebar             # Navegación en web
+    │
+    └── theme                   # Design System folder
+        └── index.js            # Toda la magia
 
 > Ahora vamos con los links...
+
+[See components](src/components)
