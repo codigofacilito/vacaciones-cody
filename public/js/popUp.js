@@ -23,7 +23,7 @@ popUpImages.forEach((imageElement, index)=> {
 
     // CREATE CLOSE ICON
     popUpCloseIcon.classList.add('PopUp-close')
-    popUpCloseIcon.src = '/images/icons/slide-down.png'
+    popUpCloseIcon.src = 'images/icons/slide-down.png'
      
     // CREATE BACKGROUND
     popUpBackground.classList.add('PopUp-background')
