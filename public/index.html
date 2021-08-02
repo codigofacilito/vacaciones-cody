@@ -4,97 +4,378 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="canonical" href="https://eddyber16.github.io/vacaciones-cody/">
+
+  <!-- MANIFEST ICONS -->
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/favicon/android-chrome-512x512.png">
+  <link rel="manifest" href="./site.webmanifest">
+
+  <meta name="apple-mobile-web-app-status-bar" content="#FFFFFF" />
+  <meta name="theme-color" content="#FFFFFF" />
+
+  <!-- META TAGS -->
+  <meta name="author" content="Angel Berlanga">
+  <meta name="description" content="En 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.">
+  <meta name="keywords" content="Cody, Vacaciones, CodigoFacilito, Concurso, Verano">
+
+  <!-- OPENGRAPH -->
+  <meta property="og:title" content="Cody | Mis Vacaciones" />
+  <meta property="og:image" content="https://eddyber16.github.io/vacaciones-cody/images/1.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eddyber16.github.io/vacaciones-cody/" />
+  <meta property="og:description" content="En 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo." />
+
+  <title>Cody | Mis Vacaciones</title>
+
+  <!-- RESET -->
+  <style>
+    a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}
+  </style>
+
+  <!-- CSS VARIABLES -->
+  <style>
+    :root {
+      --color-primary: #8E2DE2;
+      --color-secondary: #6E57FC;
+      --color-accent: #1F652A;
+      --color-text: #070928;
+
+      --font-header: 'Fira Code', monospace;
+
+      --padding: 10px;
+      --padding-double: calc(var(--padding) * 2);
+      --padding-quad: calc(var(--padding) * 4);
+
+      --100vh: calc(100 * var(--vh));
+  
+      --navbar-height: calc(40px + var(--padding-double));
+      --landing-height: calc(var(--100vh) - var(--padding-double) - 12.5vh - var(--navbar-height));
+      --wrapper-width: calc(100vw - var(--padding-double));
+      --curso-card-width: calc(100vw - var(--padding-quad));
+    }
+  </style>
+
+  <style>
+    * {font-family: 'Montserrat', arial, sans-serif;}
+    main {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+    }
+    main,
+    .u-margin-0 {
+      margin: 0;
+    }
+    .u-wrapper {
+      width: calc(var(--wrapper-width) - var(--padding-double));
+      padding: var(--padding-double);
+      margin-bottom: var(--padding-double);
+    }
+    .u-padding-0 {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .u-h2,
+    .Landing-title {
+      font-family: 'Fira Code', monospace;
+    }
+    .u-h2 {
+      font-size: 1.25em;
+      margin-bottom: var(--padding);
+    }
+    .u-link {font-weight: 600;}
+    .u-paragraph {
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+    .Nav,
+    .Nav-option {
+      display: flex;
+      align-items: center;
+    }
+    .Nav {
+      width: var(--wrapper-width);
+      height: 40px;
+      padding: var(--padding);
+      justify-content: space-around;
+      z-index: 9999;
+      position: fixed;
+      bottom: 0;
+      top: unset;
+      transition: .5s bottom;
+    }
+    .Nav-option span {display: none;}
+    .is-active span {display: inline-block;}
+    .Nav-option {flex-direction: column;}
+    .is-active .u-icon {width: 25px;}
+    .Landing {
+      height: var(--landing-height);
+      padding-top: 12.5vh;
+    }
+    .Landing-title,
+    .Landing-secondaryText {
+      text-align: center;
+    }
+    .Landing-title {
+      font-weight: 700;
+      font-size: 2em;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .Landing-secondaryText {
+      font-style: italic;
+      margin: 7.5vh auto;
+    }
+    .Landing-paragraph {
+      padding-right: 20vw;
+      font-size: 1.5em;
+      line-height: 1.25;
+      font-weight: 600;
+    }
+    .Landing-img {
+      position: absolute;
+      top: calc(var(--100vh) - var(--navbar-height) - 155px);
+      right: 0;
+      width: 189px;
+      height: 155px; 
+      aspect-ratio: 189 / 155;
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      object-position: center bottom;
+    }
+  </style>
+
+  <!-- RESPONSIVE -->
+  <style>
+    @media screen and (min-width: 425px) {
+      .Landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+        height: calc(var(--100vh) - var(--navbar-height) - var(--padding-double));
+      }
+      .Landing-paragraph {
+        text-align: center;
+        padding-right: 0;
+        width: calc(var(--wrapper-width) - var(--padding-quad));
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      .u-wrapper {width: calc(var(--wrapper-width) - var(--padding-quad));}
+      .u-paragraph {font-size: 1.25em;}
+      .u-h2 {display: inline-block;}
+      .u-header {font-size: 2em;}
+      .Nav-option {
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px var(--padding-quad);
+        max-width: 200px;
+      }
+      .Landing-title {max-width: 500px;}
+    }
+
+    @media screen and (min-width: 1280px) {
+      #MisVacacionesFrontend {margin-bottom: 0;}
+    }
+  </style>
+
+  <!-- INLINE FONTS -->
+  <style>
+    @font-face{font-family:'Fira Code';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v10/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_NprJVD7Ng.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  </style>
+
+  <!-- STYLES -->
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="css/home.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/home.min.css" media="print" onload="this.media='all'">
+
+  <script src="js/app.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@0.6.2/lite-youtube.js"></script>
 </head>
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
+  <header>
+    <nav class="Nav">
+      <a href="https://eddyber16.github.io/vacaciones-cody/" class="Nav-option is-active">
+        <img class="u-icon" src="images/icons/home-active.svg" width="25" height="25" alt="">
+        <span>Inicio</span>
+      </a>
+      <a href="https://eddyber16.github.io/vacaciones-cody/fotos" class="Nav-option">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="images/icons/gallery-white.svg">
+          <img class="u-icon" src="images/icons/gallery.svg" width="40" height="40" alt="Galería">
+        </picture>
+        <span>Galería</span>
+      </a>
+    </nav>
+  </header>
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
-      </div>
+  <main>
+    <section class="Landing u-wrapper">
+      <h1 class="u-header Landing-title">Estas son mis Vacaciones</h1>
+      <p class="Landing-secondaryText">Soy Cody, un aspirante a Dev</p>
+      <p class="Landing-paragraph">En 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+      <picture>
+        <source class="Landing-img" media="(min-width: 1024px)" srcset="images/cody-verano.png">
+        <img class="Landing-img" src="./images/corner_cody.png" width="189" height="155" alt="">
+      </picture>
     </section>
 
-    <section>
+    <section id="MisVacacionesFrontend" class="u-wrapper u-margin-0">
       <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+        <a href="#MisVacacionesFrontend">
+          <h2 class="u-header u-h2">Mis Vacaciones Frontend</h2>
+        </a>
       </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
+
+      <p class="u-paragraph"> Durante el verano de 2019, decidí comenzar a aprender desarrollo <a href="https://frontendmasters.com/books/front-end-handbook/2018/what-is-a-FD.html" class="u-link" target="_blank" rel="noreferrer">Frontend</a>, por lo que durante mi viaje, estuve aprendiendo <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="u-link" target="_blank" rel="noreferrer">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="u-link" target="_blank" rel="noreferrer">CSS</a>, y <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="u-link" target="_blank" rel="noreferrer">JavaScript</a></p>
+      <p class="u-paragraph"> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías Frontend, construyendo esta página </p>
+
+      <h3 class="u-header u-h3 Cursos-title"> Estos son los cursos que estuve tomando </h3>
+      <p class="u-textSecondary"><i>Puedes pulsar en cada tarjeta para visitar el curso en CódigoFacilito</i></p>
+    </section>
+
+    <div class="u-wrapper Cursos u-horizontalScroll">
+      <a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank" class="Curso u-horizontalScrollItem" rel="noreferrer">
+        <h3 class="u-header u-h3 Curso-title">Curso profesional de Desarrollo Web</h3>
+        <div class="Curso-info">
+          <img class="Curso-img u-rounded u-horizontal-scroll-item-img" src="images/curso-profesional-webdev.png" width="300" height="150" loading="lazy" alt="">
+          <p class="u-paragraph Curso-description">Cada día se vuelve más importante que todo el mundo aprenda a crear un sitio web, ya sea para un boletín de información, una invitación, un portafolio personal de trabajo, o para un negocio de desarrollo web.</p>
+        </div>
+      </a>
+      <a href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank" class="Curso u-horizontalScrollItem" rel="noreferrer">
+        <h3 class="u-header u-h3 Curso-title">Curso para crear mi primera página web</h3>
+        <div class="Curso-info">
+          <img class="Curso-img u-rounded u-horizontal-scroll-item-img" src="images/curso-crear-primera-pagina.png" width="300" height="150" loading="lazy" alt="">
+          <p class="u-paragraph Curso-description">Aprende a crear tu primera página web desde 0, sin conocimientos previos. Crea un sitio web funcional y atractivo, aunque nunca antes hayas hecho una página web y no tengas idea de cómo crearla</p>
+        </div>
+      </a>
+    </div>
+
+    <section id="RutaDeAprendizaje" class="u-wrapper">
+      <header>
+        <a href="#RutaDeAprendizaje">
+          <h2 class="u-header u-h2">Ruta de Aprendizaje 2021</h2>
+        </a>
+        <p class="u-paragraph"> También me propuse aprender nuevas tecnologías durante 2021</p>
+      </header>
+
+      <ul class="u-list RutaDeAprendizaje-list">
+        <li>
+          <input class="Checkbox" id="flexbox-y-grid" type="checkbox" checked>
+          <label for="flexbox-y-grid">
+            <i>Flexbox y Grid</i>
+          </label>
+        </li>
+        <li>
+          <input class="Checkbox" id="animaciones" type="checkbox" checked>
+          <label for="animaciones">
+            <i>Animaciones con CSS y JavaScript</i>
+          </label>
+        </li>
+        <li>
+          <input class="Checkbox" id="ajax" type="checkbox">
+          <label for="ajax">
+            <i>AJAX</i>
+          </label>
+        </li>
+        <li>
+          <input class="Checkbox" id="html-semantico" type="checkbox">
+          <label for="html-semantico">
+            <i>HTML Semántico</i>
+          </label>
+        </li>
+        <li>
+          <input class="Checkbox" id="otros" type="checkbox">
+          <label for="otros">
+            <i>Entre Otros</i>
+          </label>
+        </li>
       </ul>
     </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
 
-      </p>
-    </section>
-    <section>
+    <section id="ColaboraEnMiPagina" class="u-wrapper">
       <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+        <a href="#ColaboraEnMiPagina">
+          <h2 class="u-header u-h2">Colabora en mi Página</h2>
+        </a>
       </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
+
+      <div class="Colabora-info">
+        <div class="Colabora-description">
+          <p class="u-paragraph">
+            Como parte de mi formación Frontend, aprendí acerca de <a href="https://codigofacilito.com/cursos/git-profesional" class="u-link" target="_blank" rel="noreferrer">Git</a> y <a href="https://codigofacilito.com/articulos/como-crear-una-cuenta-y-un-repo-en-github" class="u-link" target="_blank" rel="noreferrer">GitHub</a>, por lo que decidí subir <a href="https://github.com/codigofacilito/vacaciones-cody" class="u-link" target="_blank" rel="noreferrer">mi código</a> a GitHub
+          </p>
+          <p class="u-paragraph">
+            Puedes ayudarme a mejorar mi página, haciendo un fork de mi página y enviando un <a class="u-link" href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests" target="_blank" rel="noreferrer">Pull Request</a>
+          </p>
+          <p class="u-paragraph">
+            Si nunca antes has colaborado con un repositorio, en Código Facilito hay un <a class="u-link" href="https://www.youtube.com/watch?v=Zqft6yNRuNs" target="_blank" rel="noreferrer">tutorial que lo explica</a>
+          </p>
+          <p class="u-paragraph">
+            También agregué un <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" class="u-link" target="_blank" rel="noreferrer">iframe</a> para que puedas ver el tutorial sin abandonar la página
+          </p>
+        </div>
+        <lite-youtube class="iframe u-rounded" videoid="Zqft6yNRuNs"></lite-youtube>
       </div>
+   </section>
+
+    <section id="FotosDeMisVacaciones" class="u-wrapper u-margin-0">
+      <header>
+        <a href="#FotosDeMisVacaciones">
+          <h2 class="u-header u-h2">Aquí te comparto algunas fotos de mis vacaciones</h2>
+        </a>
+        <p class="u-paragraph">¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+      </header>
     </section>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
+    <div class="Fotos u-horizontalScroll u-padding-0">
+      <img class="u-rounded u-horizontalScrollItem" src="images/1.webp" alt="Cody en la playa" width="280" height="210" loading="lazy">
+      <img class="u-rounded u-horizontalScrollItem" src="images/2.webp" alt="Cody acampando" width="280" height="210" loading="lazy">
+      <img class="u-rounded u-horizontalScrollItem" src="images/3.webp" alt="Cody en una alberca" width="280" height="210" loading="lazy">
+    </div>
+
+    <section id="Fotos-secondaryText" class="u-padding-0 u-wrapper">
+      <p class="u-paragraph">
+        Puedes ver más, en la <a class="u-link" href="https://eddyber16.github.io/vacaciones-cody/fotos">galería de fotos de mi página</a>
+      </p>
     </section>
-    
+
+    <section id="ImportanciaDeLasVacaciones" class="u-wrapper">
+      <header>
+        <a href="#ImportanciaDeLasVacaciones">
+          <h2 class="u-header u-h2">La importancia de las vacaciones</h2>
+        </a>
+      </header>
+
+      <p class="u-paragraph">
+        Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente
+      </p>
+
+      <p class="u-paragraph">
+        Durante mis vacaciones aprendí que existen distintos beneficios de descansar:
+      </p>
+      <ol class="u-list">
+        <li>Mejora la salud mental</li>
+        <li>Incrementa la motivación</li>
+        <li>Reduce el <a class="u-link" href="https://www.significados.com/burnout/" target="_blank" rel="noreferrer">Burnout</a></li>
+        <li>Mejora tu productividad y creatividad</li>
+      </ol>
+    </section>
   </main>
+
+  <footer class="Footer u-wrapper u-margin-0 u-paragraph">
+    Hecho con 💚 por <a class="u-link" href="https://www.linkedin.com/in/angel-berlanga/" target="_blank" rel="noreferrer">Angel Berlanga</a>
+  </footer>
+
+  <script src="js/navbar.min.js"></script>
+
 </body>
 </html>

@@ -1,34 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="canonical" href="https://eddyber16.github.io/vacaciones-cody/fotos">
+
+  <!-- MANIFEST ICONS -->
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/favicon/android-chrome-512x512.png">
+  <link rel="manifest" href="./site.webmanifest">
+
+  <meta name="apple-mobile-web-app-status-bar" content="#FFFFFF" />
+  <meta name="theme-color" content="#FFFFFF" />
+
+  <!-- META TAGS -->
+  <meta name="author" content="Angel Berlanga">
+  <meta name="description" content="En 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.">
+  <meta name="keywords" content="Cody, Vacaciones, CodigoFacilito, Concurso, Verano, Fotos, Galería">
+ 
+  <!-- OPENGRAPH -->
+  <meta property="og:title" content="Cody | Galería de Fotos" />
+  <meta property="og:image" content="https://eddyber16.github.io/vacaciones-cody/images/1.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eddyber16.github.io/vacaciones-cody/fotos" />
+  <meta property="og:description" content="En 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo." />
+ 
+  <title>Cody | Galería de Fotos</title>
+
+  <!-- RESET -->
+  <style>
+    a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}
+  </style>
+
+  <!-- CSS VARIABLES -->
+  <style>
+    /* GENERAL */
+    :root {
+      --color-primary: #8E2DE2;
+      --color-secondary: #6E57FC;
+      --color-accent: #1F652A;
+      --color-text: #070928;
+
+      --font-header: 'Fira Code', monospace;
+
+      --padding: 10px;
+      --padding-double: calc(var(--padding) * 2);
+      --padding-quad: calc(var(--padding) * 4);
+
+      --100vh: calc(100 * var(--vh));
+  
+      --navbar-height: calc(40px + var(--padding-double));
+      --landing-height: calc(var(--100vh) - var(--padding-double) - 12.5vh - var(--navbar-height));
+      --wrapper-width: calc(100vw - var(--padding-double));
+      --curso-card-width: calc(100vw - var(--padding-quad));
+    }
+  </style>
+
+  <style>
+    *,.Nav {font-family: 'Montserrat', arial, sans-serif;}
+    main {
+      width: 100%;
+      max-width: 100vw;
+      height: 100%;
+      max-height: 1890px;
+      padding: 0;
+    }
+    main,
+    .u-margin-0 {
+      margin: 0;
+    }
+    .Nav,
+    .Nav-option {
+      display: flex;
+      align-items: center;
+    }
+    .Nav {
+      width: var(--wrapper-width);
+      height: 40px;
+      padding: var(--padding);
+      justify-content: space-around;
+      z-index: 9999;
+      position: fixed;
+      bottom: 0;
+      top: unset;
+      transition: .5s bottom;
+    }
+    .Nav-option span {display: none;}
+    .is-active span {display: inline-block;}
+    .Nav-option {flex-direction: column;}
+    .is-active .u-icon {width: 25px;}
+    .u-wrapper {
+      width: calc(var(--wrapper-width) - var(--padding-double));
+      padding: var(--padding-double);
+      margin-bottom: 0;
+    }
+    .u-h2 {
+      font-family: 'Fira Code', monospace;
+      font-size: 1.25em;
+      max-width: 100vw;
+      max-height: 80px;
+    }
+    .u-link {font-weight: 600;}
+    .u-paragraph {
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+    .Gallery-fotos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--padding);
+      justify-content: center;
+      width: calc(var(--wrapper-width) - var(--padding-double) * 2);
+      margin: 0 auto;
+    }
+    .Gallery-foto {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      aspect-ratio: 4 / 3;
+      max-height: 300px;
+      max-width: 400px;
+      object-fit: cover;
+      object-position: center;
+    }
+  </style>
+
+  <!-- RESPONSIVE LAYOUT -->
+  <style>
+    @media screen and (min-width: 1024px) {
+      .u-wrapper {width: calc(var(--wrapper-width) - var(--padding-quad));}
+      .u-paragraph {font-size: 1.25em;}
+      .u-h2 {display: inline-block;}
+      .u-header {font-size: 2em;}
+      .Nav-option {
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px var(--padding-quad);
+      }
+    }
+  </style>
+
+  <!-- INLINE FONTS -->
+  <style>
+    @font-face{font-family:'Fira Code';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/firacode/v10/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_NprJVD7Ng.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  </style>
+
+  <!-- STYLES -->
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="css/fotos.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/fotos.min.css" media="print" onload="this.media='all'">
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+  <header>
+    <nav class="Nav">
+      <a href="https://eddyber16.github.io/vacaciones-cody/" class="Nav-option">
+        <picture>
+          <source media="(min-width:1024px)" srcset="images/icons/home-white.svg">
+          <img class="u-icon" src="images/icons/home.svg" width="40" height="40" alt="Inicio">
+        </picture>
+        <span>Inicio</span>
+      </a>
+      <a href="https://eddyber16.github.io/vacaciones-cody/fotos" class="Nav-option is-active">
+        <img class="u-icon" src="images/icons/gallery-active.svg" width="25" height="25" alt="">
+        <span>Galería</span>
+      </a>
+    </nav>
+
+    <h2 class="u-header u-wrapper u-h2">Galería completa de mis vacaciones</h2>
+  </header>
+
+  <main class="u-wrapper">
+    <div class="Gallery-fotos">
+      <img class="Gallery-foto" src="images/1.webp" alt="Cody en la playa" width="260" height="195">
+      <img class="Gallery-foto" src="images/2.webp" alt="Cody acampando" width="260" height="195">
+      <img class="Gallery-foto" src="images/3.webp" alt="Cody en una alberca" loading="lazy" width="260" height="195">
+      <img class="Gallery-foto" src="images/4.webp" alt="Cody tomando el sol en la playa" loading="lazy" width="260" height="195">
+      <img class="Gallery-foto" src="images/5.webp" alt="Cody en los callejones de la ciudad" loading="lazy" width="260" height="195">
+      <img class="Gallery-foto" src="images/6.webp" alt="Cody en el aeropuerto" loading="lazy" width="260" height="195">
     </div>
-
   </main>
-</body>
 
+  <footer class="Footer u-wrapper u-margin-0 u-paragraph">
+    Hecho con 💚 por <a class="u-link" href="https://www.linkedin.com/in/angel-berlanga/" target="_blank" rel="noreferrer">Angel Berlanga</a>
+  </footer>
+
+  <script src="js/app.min.js"></script>
+  <script src="js/popUp.min.js"></script>
+</body>
 </html>
