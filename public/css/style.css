@@ -206,7 +206,8 @@ img {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: url("../images/palms.webp") top left no-repeat;
+	background: url("https://seezly.github.io/vacaciones-cody/images/palms.webp")
+		top left no-repeat;
 	z-index: -1;
 	transform: translate(-15rem, -16rem);
 }
