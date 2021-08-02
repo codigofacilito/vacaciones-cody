@@ -1,34 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis vacaciones</title>
+    <link rel="stylesheet" href="../css/pictures.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/public/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+  <body>
+    <main class="p-pictures">
+      <nav class="p-pictures__linksBox">
+        <a href="/public/" class="p-pictures__linksBox__branding"
+          >Codigo Facilito</a
+        >
+        <div class="p-pictures__linksBox__right">
+          <a class="p-pictures__linksBox__link" href="/public/">Inicio</a>
+          <a class="p-pictures__linksBox__link active" href="pages/fotos.html"
+            >Galería</a
+          >
+        </div>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
-
-  </main>
-</body>
-
+      <div class="p-pictures__title">
+        <h2>Vacaciones verano Frontend 2021</h2>
+      </div>
+      <section class="p-pictures__galleryBox__gallery">
+        <div
+          id="pictureContainer"
+          class="p-pictures__galleryBox__gallery__items"
+        >
+          <img
+            data-picture="picture"
+            src="/public/assets/1.jpg"
+            alt="Playa, sol, arena, bikinis y muchas nenas"
+          />
+          <img
+            data-picture="picture"
+            src="/public/assets/2.jpg"
+            alt="Cody camper mode"
+          />
+          <img
+            data-picture="picture"
+            src="/public/assets/3.jpg"
+            alt="Relax bro"
+          />
+          <img
+            data-picture="picture"
+            src="/public/assets/4.jpg"
+            alt="Las mejores vistas"
+          />
+          <img
+            data-picture="picture"
+            src="/public/assets/5.jpg"
+            alt="Gran lugar, grande su gente"
+          />
+          <img
+            data-picture="picture"
+            src="/public/assets/6.jpg"
+            alt="Antes del vuelo :3"
+          />
+          <img
+            data-picture="picture"
+            src="/public/assets/5.jpg"
+            alt="Gran lugar, grande su gente"
+          />
+          <img
+            data-picture="picture"
+            src="/public/assets/1.jpg"
+            alt="Playa, sol, arena, bikinis y muchas nenas"
+          />
+          <img
+            data-picture="picture"
+            src="/public/assets/4.jpg"
+            alt="Las mejores vistas"
+          />
+          <img
+            data-picture="picture"
+            src="/public/assets/3.jpg"
+            alt="Relax bro"
+          />
+        </div>
+      </section>
+      <footer class="p-container__footer">
+        <h2>Las vacaciones son importantes</h2>
+        <div class="p-container__footer__info">
+          <div class="p-container__footer__info__left">
+            <p>
+              <em
+                >"Aprender a programar puede llegar a ser una estresante
+                aventura, <br />
+                por eso las vacaciones te ayudan a que botes menos lágrimas.
+                "</em
+              >
+            </p>
+            <p class="--author">
+              <em>Albert Einstein</em>
+            </p>
+          </div>
+          <div class="p-container__footer__info__right">
+            <p>Beneficios de descansar:</p>
+            <ul class="p-container__footer__info__right__info">
+              <li>Mejora la salud mental</li>
+              <li>Incrementa la motivación</li>
+              <li>Reduce el burnout</li>
+              <li>Mejora tu productividad y creatividad</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-container__footer__moreInfo">
+          <p>Concurso 2021 #VeranoFrontend</p>
+          <p>#CodigoFacilito</p>
+          <p>#noMamesWey</p>
+        </div>
+      </footer>
+      <div id="modal" class="codyModal">
+        <div class="codyModal__content">
+          <img id="photo" class="codyModal__content__image" />
+          <span id="caption" class="codyModal__content__info"></span>
+        </div>
+      </div>
+    </main>
+    <script src="/public/index.js"></script>
+  </body>
 </html>
