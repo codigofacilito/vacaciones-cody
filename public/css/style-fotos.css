@@ -1,0 +1,123 @@
+body {
+  background-image: url("../images/fondo2.jpg");
+}
+
+.title-photos {
+  background-image: url("../images/title-fotos-d.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 90%;
+  height: 50px;
+  max-width: 650px;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.container-photos {
+  position: relative;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  bottom:40%;
+  width: 40px;
+  height: 40px;
+  color: var(--color-title);
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 100%;
+  background-color: var(--color-yellow);
+  padding: 3px 0 0 2px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: var(--color-pink);
+  color: #f4f4f4;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 1rem;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.container-text {
+  text-align: center;
+  background-color: var(--color-yellow);
+  padding: 0.1rem 1rem;
+  color: var(--color-title);
+  font-size: 1.5rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.container-text:hover {
+  background-color: var(--color-pink);
+  color: #f4f4f4;
+}
+
+.photos-little:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.min-photo {
+  float: left;
+  width: 16.66%;
+}
+
+.photo-btn {
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.active,
+.photo-btn:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 580px) {
+  body {
+    background-image: url("../images/fondo_mobile.jpg");
+  }
+
+  .title-photos {
+    width: 100%;
+  }
+
+  .title-photos {
+    background-image: url("../images/title-fotos-m.png");
+  }
+
+  .prev,
+  .next {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    padding: 4px 0 0 0;
+  }
+
+  .container-text {
+    font-size: 0.9rem;
+  }
+}

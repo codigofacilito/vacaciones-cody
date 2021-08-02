@@ -1,0 +1,204 @@
+body {
+  background-image: url("../images/fondo_p.jpg");
+}
+
+.container-img-home {
+  width: 100%;
+  height: 260px;
+  background-image: url("../images/wane.png");
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cody-img {
+  width: 43%;
+  max-width: 190px;
+}
+
+.boya {
+  width: 60px;
+}
+
+.cody-img,
+.boya {
+  animation: float 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.title-home {
+  background-image: url("../images/title-home-d.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 90%;
+  height: 50px;
+  max-width: 650px;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-family: var(--font-title-btn);
+  font-size: 3rem;
+  color: var(--color-title);
+}
+
+.container-courses,
+.container-vacations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.future-courses {
+  border: solid 1px var(--color-pink);
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+.future-courses img {
+  width: 50px;
+  margin: 0 1.5rem 0 0;
+}
+
+.future-courses:hover {
+  background-color: var(--color-yellow);
+  border: var(--color-yellow) solid 1px;
+  color: var(--color-title);
+}
+
+.photos img {
+  width: 30%;
+  min-width: 220px;
+  display: inline-block;
+  margin: 0.3rem;
+  border-radius: 10px;
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.photos img:hover {
+  transform: scale(1.05);
+}
+
+.item-vacations {
+  border: solid 1px var(--color-pink);
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+.item-vacations div {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 1.5rem 0 0;
+}
+
+.img1 {
+  background-image: url("../images/1b.png");
+}
+
+.img2 {
+  background-image: url("../images/2b.png");
+}
+
+.img3 {
+  background-image: url("../images/3b.png");
+}
+
+.img4 {
+  background-image: url("../images/4b.png");
+}
+
+.item-vacations:hover {
+  background-color: var(--color-pink);
+  color: #f4f4f4;
+}
+
+.item-vacations:hover .img1 {
+  background-image: url("../images/1w.png");
+}
+
+.item-vacations:hover .img2 {
+  background-image: url("../images/2w.png");
+}
+
+.item-vacations:hover .img3 {
+  background-image: url("../images/3w.png");
+}
+
+.item-vacations:hover .img4 {
+  background-image: url("../images/4w.png");
+}
+
+@media screen and (max-width: 580px) {
+  body {
+    background-image: url("../images/fondo_mobile1.jpg");
+  }
+
+  .title-home {
+    background-image: url("../images/title-home-mobile.png");
+  }
+
+  .container-img-home {
+    height: 190px;
+  }
+
+  .boya {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .future-courses {
+    width: 90%;
+    padding: 0.5rem 1rem;
+  }
+
+  .future-courses img {
+    width: 45px;
+    margin: 0 1rem 0 0;
+  }
+
+  .item-vacations {
+    padding: 0.5rem 1rem;
+    width: 90%;
+  }
+
+  .item-vacations div {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 0.7rem 0 0;
+  }
+}

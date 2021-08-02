@@ -1,0 +1,23 @@
+{
+  "name": "vacaciones-cody",
+  "version": "1.0.0",
+  "description": "las vacaciones de cody",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatiroa994/vacaciones-cody.git"
+  },
+  "author": "tatiroa994",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tatiroa994/vacaciones-cody/issues"
+  },
+  "homepage": "https://github.com/tatiroa994/vacaciones-cody#readme",
+  "dependencies": {
+    "serve": "^12.0.0"
+  }
+}
