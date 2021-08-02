@@ -65,3 +65,19 @@ más productivo a la hora de hacer las páginas para el Blog.
 > Ahora vamos con los links...
 
 [See components](src/components)
+
+- [Button](src/components/Button)
+- [Contact](src/components/Contact)
+- [Footer](src/components/Footer)
+- [Gallery](src/components/Gallery)
+- [Grid](src/components/Grid)
+- [Header](src/components/Header)
+- [Hidden](src/components/Hidden)
+- [Image](src/components/Image)
+- [Layout](src/components/Layout)
+- [Link](src/components/Link)
+- [Paragraph](src/components/Paragraph)
+- [Section](src/components/Section)
+- [Sidebar](src/components/Sidebar)
+
+[See Design System](src/theme)
