@@ -7,27 +7,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon"
+    href="images/favicon.png"
+    type="image/x-icon">
 </head>
 
 <body>
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+    <header class="hero">
+      <nav class="nav">
+        <div class="nav__content container">
+          <a href="https://codigofacilito.com" target="_blank">
+            <figure class="nav__logo">
+              <picture>
+                <source media="(max-width: 554px)" srcset="./images/favicon.png">
+                <img src="./images/logo.png" alt="Logo">
+              </picture>
+            </figure>
+          </a>
+    
+          <div class="nav__menu">
+            <a href="index.html" class="nav__link">Inicio</a>
+            <a href="fotos.html" class="nav__link">Fotos</a>
+          </div>
+        </div>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
+      <div class="hero__content container">
+        <div>
+          <h2 class="hero__title">Galería completa de mis vacaciones</h2>
+          <a href="#section-one" class="arrowDown">
+            <img src="images/arrow-down.svg" alt="Arrow down">
+          </a>
+        </div>
+      </div>
+      <figure class="hero__image">
+        <img src="images/cody-transparent.png" alt="Hero Image">
+      </figure>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
-
+    <section class="section bg-violet" id="section-one">
+      <div class="section__content container">
+        <div class="fotos">
+          <figure class="fotos__card">
+            <img src="images/1.jpg" alt="Cody en la playa">
+          </figure>
+          <figure class="fotos__card">
+            <img src="images/2.jpg" alt="Cody acampando">
+          </figure>
+          <figure class="fotos__card">
+            <img src="images/3.jpg" alt="Cody en una alberca">
+          </figure>
+          <figure class="fotos__card">
+            <img src="images/4.jpg" alt="Cody en una alberca">
+          </figure>
+          <figure class="fotos__card">
+            <img src="images/5.jpg" alt="Cody en una alberca">
+          </figure>
+          <figure class="fotos__card">
+            <img src="images/6.jpg" alt="Cody en una alberca">
+          </figure>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>
+        Made with ❤️ by
+        <a target="_blank" class="section__link" href="https://twitter.com/gallardior">
+          @Gallardior
+        </a>
+        for
+        <a target="_blank" class="section__link" href="https://twitter.com/codigofacilito">
+          @codigofacilito
+        </a>
+      </p>
+    </footer>
   </main>
 </body>
 
