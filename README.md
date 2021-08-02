@@ -39,3 +39,24 @@ la página responsive), entre otras cosas más.
 
 La app está diseñada con CSS in JS gracias a la librería `styled-components`. Los componentes están hechos para ser reutilizables y ser
 más productivo a la hora de hacer las páginas para el Blog.
+
+### Components docs (on src)
+
+    .
+    ├── ...
+    ├── components              # Components folder
+        ├── Button              # Button
+        ├── Contact             # Redes sociales
+        ├── Footer              # Movil Footer
+        ├── Gallery             # Gallery pressable
+        ├── Grid                # Grid responsive
+        ├── Header              # Header de la pagina
+        ├── Hidden              # Para razones responsive
+        ├── Image               # Componente dinámico con Graphql
+        ├── Layout              # Compoente para cada página
+        ├── Link                # Link interno o externo dependiendo de las props
+        ├── Paragraph           # Styled p
+        ├── Section             # Seccion que parece una terminal
+        └── Sidebar             # Navegación en web
+
+> Ahora vamos con los links...
