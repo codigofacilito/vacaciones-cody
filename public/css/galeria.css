@@ -24,7 +24,7 @@ body {
     rgba(33, 150, 243, 1) 16%,
     rgba(34, 193, 195, 1) 100%
   );
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 8px;
+  box-shadow: rgba(99, 99, 99, 0.9) 0px 2px 8px 0px;
   border-radius: 0px 0px 60px 60px;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 .enlace {
   border-radius: 20px;
-  background: #af6dec;
+  background: #c485ff;
   padding: 10px 30px;
   color: black;
   transition: all 500ms;

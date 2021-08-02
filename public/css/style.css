@@ -291,6 +291,10 @@ nav ul li a {
     animation: none;
   }
 }
+.p {
+  display: flex;
+  flex-direction: column;
+}
 .h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -299,7 +303,7 @@ nav ul li a {
   font-family: "Poppins", sans-serif;
   max-width: 70%;
   background-color: #f9f9f9;
-  padding: 40px;
+  padding: 20px;
   margin: 0 auto;
   margin-bottom: 50px;
   border-radius: 20px;
@@ -479,6 +483,7 @@ nav ul li a {
   width: 25%;
   margin: 10px;
   padding: 10px 20px;
+  text-align: center;
   background: #2196f3;
   color: white;
   font-weight: 500;
@@ -515,121 +520,32 @@ nav ul li a {
   justify-content: center;
   padding: 30px;
 }
-.img {
-  max-width: 100%;
-}
-.container-all {
-  position: relative;
-  max-width: 1000px;
-  width: 100%;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.slide {
+/* Galeria */
+.fotos {
   display: flex;
-  transform: translate3d(0, 0, 0);
-  transition: all 600ms;
-  animation-name: autoplay;
-  animation-duration: 6.5s;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-}
-
-.item-slide {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  flex-grow: 0;
-  max-width: 100%;
-}
-
-.pagination {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  margin: 20px;
 }
 
-.pagination-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid white;
-  width: 16px;
-  height: 16px;
-  border-radius: 4px;
-  overflow: hidden;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.5);
-  margin: 0 10px;
-  text-align: center;
-  transition: all 300ms;
+.fotos .images {
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: box-shadow 300ms;
 }
-
-.pagination-item:hover {
-  transform: scale(2);
-}
-
-.pagination-item img {
-  display: inline-block;
-  max-width: none;
-  height: 100%;
-  transform: scale(1);
-  opacity: 0;
-  transition: all 300ms;
-}
-
-.pagination-item:hover img {
-  opacity: 1;
-  transform: scale(1);
-}
-
-input[id="1"]:checked ~ .slide {
-  animation: none;
-  transform: translate3d(0, 0, 0);
-}
-
-input[id="1"]:checked ~ .pagination .pagination-item[for="1"] {
-  background: #fff;
-}
-
-input[id="2"]:checked ~ .slide {
-  animation: none;
-  transform: translate3d(calc(-100% * 1), 0, 0);
-}
-
-input[id="2"]:checked ~ .pagination .pagination-item[for="2"] {
-  background: #fff;
-}
-
-input[id="3"]:checked ~ .slide {
-  animation: none;
-  transform: translate3d(calc(-100% * 2), 0, 0);
-}
-
-input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
-  background: #fff;
-}
-
-@keyframes autoplay {
-  33% {
-    transform: translate3d(calc(-100% * 0), 0, 0);
+@media (max-width: 968px) {
+  .fotos {
+    display: flex;
+    flex-direction: column;
   }
+}
 
-  66% {
-    transform: translate3d(calc(-100% * 1), 0, 0);
-  }
-
-  100% {
-    transform: translate3d(calc(-100% * 2), 0, 0);
-  }
+.images:hover {
+  box-shadow: 0px 2px 10px 1px #474747c2;
+  transition: box-shadow 300ms;
 }
 /* Footer*/
 footer {
