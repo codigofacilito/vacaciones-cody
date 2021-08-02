@@ -1,0 +1,54 @@
+html {
+    font-size: 72%;
+}
+header {
+    height: 60px;
+}
+header .header-left{
+    margin-left: 60px;
+    font-size: 1.1rem;
+}
+header .header-right {
+    margin-right: 60px;
+}
+header .header-right li {
+    padding-left: 30px;
+}
+.introduction {
+    height: 350px;
+}
+.introduction--image {
+    width: 50%;
+}
+.introduction--cody {
+    height: 250px;
+}
+.introduction--cody img {
+    height: 225px;
+    right: calc(50% - 130px);
+}
+.introduction--text p{
+    text-align: initial;
+    width: 65%;
+}
+.introduction--div {
+    padding: 50px;
+}
+.courses-container--cards article {
+    width: 400px;
+}
+.courses-container--title, 
+.github-container, 
+.advantages-container {
+    width: 65%;
+}
+.learning-container--cards {
+    width: 85%;
+}
+.github-container--text {
+    text-align: initial;
+    margin-left: 15px;
+}
+.advantages-container--cards article {
+    width: 330px;
+}

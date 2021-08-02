@@ -1,100 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Otilio Rodríguez Hernández">
   <title>Mis vacaciones</title>
+  <link rel="shortcut icon" href="./images/icons/codigo-facilito.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="./css/computer.css" media="(min-width: 1024px)">
 </head>
 <body>
+  <!-- Titulo y lista de paginas -->
+  <header>
+    <ul class="header-left">
+      <li><h1>Estas son mis Vacaciones</h1></li>
+    </ul>
+    <h1 class="header-movil-title">Estas son mis Vacaciones</h1>  
+    <nav id="navigation">  
+              <div class="control-menu">
+                  <a href="#navigation" class="open"><span>MENU</span></a>
+                  <a href="#" class="close"><span>CERRAR</span></a>  
+              </div>      
+      <ul class="nav-items">         
+        <li><a href="./index.html"> <span>Inicio</span></a></li>
+        <li><a href="./fotos.html"><span>Fotos</span></a></li>
+      </ul>
+    </nav> 
+    <ul class="header-right">
+      <li><a href="./index.html">Inicio</a></li>
+      <li><a href="./fotos.html">Fotos</a></li>
+    </ul>  
+  </header>
+  <!-- Seccion principal -->
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
-
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
-      </div>
+    <!-- Seccion de presentación de Cody -->
+    <section class="introduction">
+      <div class="introduction--image">
+        <figure class="introduction--cody">
+          <img src="./images/icons/cody.png" alt="Imagen de cody de codigofacilito" height="154px">
+        </figure>      
+        <div class="introduction--div"></div>
+      </div>      
+      <div class="introduction--text">
+        <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+      </div>      
     </section>
-
-    <section>
-      <header>
+    <!-- Sección de cursos tomados -->
+    <section class="courses-container">
+      <div class="courses-container--title">
+        <h2>Mis vacaciones Frontend</h2>
+        <p>Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
+        <p>Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+        <p>Estos son los cursos que estuve tomando:</p>
+      </div>
+      <section class="courses-container--cards">
+        <article>
+          <img src="./images/icons/WebDevIcon.png" alt="Icono de desarrollo web">
+          <p>Curso profesional de Desarrollo Web</p>
+        </article>
+        <article>
+          <img src="./images/icons/webDesign.jpg" alt="Icono de diseño web">
+          <p>Curso para crear mi primera página web</p>
+        </article>
+      </section>
+    </section>
+    <!-- Sección de ruta de aprendizaje -->
+    <section class="learning-container">
+      <div class="learning-container--title">
         <h2>Ruta de aprendizaje 2021</h2>
         <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
+      </div>
+      <section class="learning-container--cards">
+        <article>
+          <h2><span class="flex"></span></h2>          
+          <p>Flexbox, y Grid</p>
+        </article>
+        <article>
+          <h2><span class="animation"></span></h2>
+          <p>Anim. con CSS y JS</p>
+        </article>
+        <article>
+          <h2><span class="ajax"></span></h2>
+          <p></span>AJAX</p>
+        </article>
+        <article>
+          <h2><span class="html"></span></h2>
+          <p></span>HTML semántico</p>
+        </article>
+        <article>
+          <h2><span class="other"></span></h2>
+          <p>Entre otros</p>
+        </article>
+      </section>
     </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
-      </p>
+    <!-- Sección de repositorio Github -->
+    <section class="github-container">
+      <h2 class="github-container--title">Colabora en mi página</h2>
+      <div class="github-container--box">
+          <img src="./images/icons/github.png" alt="Icono de github">
+        <div class="github-container--text">
+          <p>Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub</p>
+          <p>Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.</p>
+          <p>Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica</p>
+        </div>    
+      </div>     
+      <a class="github--button" href="https://vimeo.com/577246176" target="_blank" >Ir al tutorial</a>    
     </section>
-    <section>
-      <header>
+    <!-- Sección de fotos -->
+    <section class="photos-container">
+      <div class="photos-container--title">
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
+      </div>
+      <div class="photos-container--img">
         <img src="images/1.jpg" alt="Cody en la playa">
         <img src="images/2.jpg" alt="Cody acampando">
         <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
       </div>
+      <div class="photos-container--title">
+          <p>Puedes ver más, en la galería de fotos de mi página</p>
+          <a class="photos--button" href="fotos.html">Ir a la galería</a>
+      </div>  
     </section>
-
-    <section>
-      <header>
+    <!-- Sección de beneficios de vacaciones -->
+    <section class="advantages-container">
+      <div class="advantages-container--title">
         <h2>La importancia de las vacaciones</h2>
         <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
         <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
-  </main>
+      </div> 
+      <section class="advantages-container--cards">
+        <article>
+          <img src="./images/icons/mentalHealth.png" alt="Icono salud mental cabeza">
+          <p>Mejora la salud mental</p>
+        </article>
+        <article>
+          <img src="./images/icons/motivation.png" alt="Icono motivación trofeo">
+          <p>Incrementa la motivación</p>
+        </article>
+        <article>
+          <img src="./images/icons/burnout.png" alt="Icono burnout bateria baja">
+          <p>Reduce el burnout</p>
+        </article>
+        <article>
+          <img src="./images/icons/productivity.png" alt="Icono productividad reloj de arena">
+          <p>Mejora tu productividad y creatividad</p>
+        </article>
+      </section>           
+    </section>    
+  </main>  
+  <!-- Pie de página -->
+  <footer>
+    <img src="./images/icons/codigofacilito-logo.png" alt="Logo codigofacilito" height="40px">
+  </footer>
 </body>
 </html>

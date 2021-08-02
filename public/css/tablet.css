@@ -1,0 +1,127 @@
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+:root {
+    /* Colores */
+    --gray-color: #474E5C;
+    --purple-soft: #A597FD;
+    --purple-light: #DBD6FE;
+    --purple-strong: #6F58FD;
+    --deep-blue: #023EBA;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    /* Propiedades de la fuente */
+    --size-text-computer: 1.7rem;
+    --size-title-computer: 2rem;
+}
+/* Estilos header tablet */
+header {
+    display: flex;
+    border-bottom: 1px solid #707070;
+    width: 100%;
+    min-width: 320px;
+    text-align: center;
+    justify-content: space-between;
+    height: 50px;
+    align-content: center;
+}
+header #navigation {
+    display: none;
+}
+header .header-left{
+    display: flex;
+    margin: 0 15px;
+    font-size: 1.3rem;
+    align-items: center;
+}
+header ul{
+    margin: auto 0;
+    list-style: none;
+}
+header .header-right {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    font-size: var(--size-text-computer);
+}
+header .header-right li {
+    padding-left: 15px;
+}
+header .header-right a {
+    text-decoration: none;
+    color: var(--gray-color);
+}
+header .header-right a:hover{
+    color: #000000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+header .header-movil-title {
+    display: none;
+}
+
+.introduction {
+    display: flex;
+}
+.introduction--image {
+    width: 100%;
+}
+.introduction--cody {
+    background-color: var(--purple-light);
+}
+.introduction--div {
+    background-color: var(--purple-soft);
+    padding: 30px;
+}
+.introduction--text {
+    display: flex;
+    background-color: var(--purple-strong);
+    padding: 0;
+    align-items: center;
+}
+.courses-container--cards {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.learning-container--cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.learning-container--cards article {
+    margin: 10px;
+    width: 300px;
+}
+.github-container {
+    margin-bottom: 25px;
+}
+.github-container--box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.github-container img {
+    margin-right: 15px;
+}
+.photos-container-page--img img,
+.photos-container--img img {
+    width: 380px;
+}
+.advantages-container--cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.advantages-container--cards article{
+    width: 345px;
+    height: 330px;
+}
+footer {
+    margin-top: 32px;
+}

@@ -1,38 +1,381 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+/* Reseteando medidas default */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+}
+/* Variables CSS */
+:root {
+  /* Colores */
+  --gray-color: #474E5C;
+  --purple-soft: #A597FD;
+  --purple-light: #DBD6FE;
+  --deep-blue: #023EBA;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+  /* Propiedades de la fuente */
+  --size-text-mobile: 1.8rem;
+  --size-title-mobile: 2rem;
+  --font-ibm: 'IBM Plex Sans', sans-serif;
 }
 
-main{
+/* Estilos header */
+/* header {
+  display: flex;
+  border-bottom: 1px solid #707070;
+  width: 100%;
+  min-width: 320px;
   text-align: center;
-  max-width: 960px;
+  justify-content: space-between;
+  height: auto;
+  align-content: center;
+}
+header ul{
+  margin: auto 0;
+  list-style: none;
+}
+header .header-left{
+  margin-right: 15px;
+}
+header .menu {
+  display: inline-block;
+  width: 33px;
+  height: 27px;
+  margin: 0 15px;
+  background-image: url('./../images/icons/menu-icon.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header h1 {
+  margin: 15px 0;
+  font-size: var(--size-title-mobile);
+  font-family: var(--font-ibm);
+}
+header .header-right {
+  display: none;
+} */
+
+/* Prueba */
+
+header, #central-content {
+  box-sizing: border-box;
+  width: 100%;
+}
+header {
+  border-bottom: 1px solid #707070;
+  width: 100%;
+}
+header .header-movil-title {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.control-menu {
+  background-color: transparent;
+  background-position: center center;
+  display: block;
+  float: right;
+  height: 47px;
+  margin-right: 1.3em;
+  width: 40px;
+}
+.control-menu a span {
+  display: inline-block;
+  height: 47px;
+  text-indent: -9999px;
+  width: 40px;
+}
+.control-menu .close {
+  background-image: url("./../images/icons/close-menu.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: none;
+}
+.control-menu .open {
+  background-image: url("./../images/icons/open-menu.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: grayscale(%100);
+  display: block;
+}
+header .header-left,
+header .header-right {
+  display: none;
+}
+
+ul.nav-items {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease-in-out 0s, background-color 2s ease 0s; /*El menú cambia su altura y su color de fondo mediante una transición suavizada al voover a su estado unicial*/
+}
+
+#navigation:target ul.nav-items {
+  height: 6.8em;
+  transition: height 0.4s ease-in-out 0s, background-color 0.9s ease 0s; /*El menú cambia su altura y su color de fondo mediante una transición suavizada al abrirse*/
+}
+
+
+/*Al hacer clic sobre el enlace que abre el menú éste desaparece*/
+
+.close { 
+ display:none;
+}
+      
+#navigation:target .open {
+    display: none;
+}
+
+/* Al hacer clic sobre el enlace que abre el menú aparece el enlace .close que previamente estaba oculto*/
+
+#navigation:target .close {
+      display: block;
+}
+
+/*Estilos menu*/
+
+ul.nav-items li {
+  display: block;
+}
+ul.nav-items a {
+  border-top: 2px dotted #dddbdb;
+  color: #333;
+  display: block;
+  height: 3em;
+  line-height: 3em;
+  margin: 0 1.3em;
+  text-decoration: none;
+}
+ul.nav-items li:first-child a {
+  border-top: 2px solid transparent;
+}
+ul.nav-items li a span {
+  height: 3.2em;
+  padding: 0.4em 0.5em;
+  font-size: 1.5rem;
+}
+
+/* Prueba */
+
+main {
+  width: 100%;
+  text-align: center;
   margin:0 auto;
 }
-
-section{
-  margin-top: 3rem;
+/* Seccion Introducción */
+.introduction {
+  margin: 0;
 }
-
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+.introduction--cody{
+  position: relative;
+  background-color: var(--purple-soft);
+  width: 100%;
+  height: 180px;
 }
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
+.introduction--cody img {
+  position: absolute;
+  bottom: -25px;
+  right: calc(50% - 90px);
 }
-ul li{
+.introduction--text {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: var(--deep-blue);
+  color: var(--white-color);
+}
+.introduction--text p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: var(--size-text-mobile);
+}
+/* Seccion Cursos */
+.courses-container--title,
+.github-container,
+.advantages-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.courses-container--title h2,
+.github-container--title,
+.advantages-container--title h2{
+  font-family: var(--font-ibm);
+  font-size: var(--size-title-mobile);
+  margin: 23px 0;
+}
+.courses-container--title p,
+.learning-container--title p, 
+.github-container--text p,
+.advantages-container--title p,
+.photos-container--title p{
+  font-size: var(--size-text-mobile);
+  margin-bottom: 20px;
+}
+.github-container--box img {
+  height: 190px;
+}
+.courses-container--cards p {
+  width: 85%;
+  margin: 23px auto;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: var(--size-title-mobile);
+  font-weight: bold;
+}
+.courses-container--cards img {
+  height: 190px;
+  width: 190px;
+}
+/* Seccion aprendizaje tecnologias */
+.learning-container {
+  background-color: var(--deep-blue);
+  color: var(--white-color);
+  height: auto;
+  padding-bottom: 10px;
+}
+.learning-container--title,
+.photos-container--title {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+.learning-container--title h2,
+.photos-container--title h2 {
+  font-size: var(--size-title-mobile);
+  font-family: var(--font-ibm);
+  margin-bottom: 15px;
+}
+.learning-container--cards {
+  width: 85%;
+  margin: 0 auto;
+}
+.learning-container--cards article {
+  display: flex;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: var(--size-text-mobile);
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 10px 0;
+  padding-top: 4px;
+}
+.learning-container--cards article p {
+  padding: 10px 0;
   text-align: left;
 }
-ul li::marker {
-  content: "🚀";
+.learning-container--cards .flex {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url('./../images/icons/grid.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 10px;
+  vertical-align: bottom;
+}
+.learning-container--cards .animation {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url('./../images/icons/animation.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 10px;
+  vertical-align: bottom;
+}
+.learning-container--cards .ajax {
+  display: inline-block;
+  width: 35px;
+  height: 40px;
+  background-image: url('./../images/icons/ajax.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 13px;
+  vertical-align: bottom;
+}
+.learning-container--cards .html {
+  display: inline-block;
+  width: 35px;
+  height: 40px;
+  background-image: url('./../images/icons/html.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 13px;
+  vertical-align: bottom;
+}
+.learning-container--cards .other {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url('./../images/icons/other.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 11px;
+  vertical-align: bottom;
+}
+/* Github seccion */
+.github-container{
+  margin-bottom: 35px;
+}
+.github-container img {
+  margin-bottom: 23px;
+}
+.github--button,
+.photos--button {
+  background-color: #5BCC85;
+  padding: 5px 60px;
+  font-family: var(--font-ibm);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 24px;
+  width: 275px;
+}
+.github--button:hover,
+.photos--button:hover {
+  background-color: #578b6b;
+  cursor: pointer;
 }
 
-ol li{
-  text-align: left;
+.photos-container {
+  background-color: #051626;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+}
+.photos-container-page {
+  background-color: #051626;
+  color: #FFFFFF;
+  padding: 25px 0;
+}
+.photos-container--img img,
+.photos-container-page--img img{
+  width: 100%;
+}
+.advantages-container--cards img {
+  height: 190px;
+  width: 190px;
+  margin-top: 20px;
+}
+.advantages-container--cards p {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #474e5c;
+  margin: 15px 0;
+}
+footer {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 25px;
 }
