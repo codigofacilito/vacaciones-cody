@@ -6,6 +6,7 @@
   box-sizing: content-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 :root {
   --main_color: white;
@@ -21,19 +22,25 @@
 html, body {
   font-family: 'Mitr', sans-serif;
   color: var(--light_grey);
+  background-color: var(--light_blue);
 }
 
 
 main{
+  display: none;
+  opacity: 0;
   text-align: center;
   max-width: 960px;
   margin:0 auto;
   background-color: var(--light_blue);
+  transition: all 500ms;
+  margin-bottom: 100px;
 }
 nav{
   background-color: #816eff;
   padding: 15px;
   display: flex;
+  justify-content: space-evenly;
   gap:1em;
   color: var(--main_color);
   border-bottom: 1px solid black;
@@ -60,6 +67,7 @@ p{
   margin: 15px auto;
 }
 section{
+  margin: 0 auto;
   padding: 40px 0;
   border: 1px solid black;
 }
@@ -80,8 +88,21 @@ ul, ol{
   max-width: 450px;
   display: inline-block;
 }
-.last{
-  padding-bottom: 160px;
+main a{
+  padding: 5px;
+  background-color: var(--green);
+  border-radius: 50px;
+  color: #051626;
+  opacity: 0.9;
+  box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.151), 4px 4px 5px -2px rgba(0, 0, 0, 0.151), 5px 5px 5px -2px rgba(0, 0, 0, 0.151);
+}
+main a:hover{
+  opacity: 0.7;
+}
+nav a{
+  width: 80px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.342);
 }
 img{
   width: 100%;
@@ -93,35 +114,30 @@ img{
 .cody{
   background-image: url('./cody-verano-95c1d9e3a3d913ed0d97f7adcd2d38046b241b99f450356dfd2e8dcd9b9aebf3.png');
   background-repeat: no-repeat;
-  width: 100%;
+  max-width: 375px;
   height: 260px;
-  animation: cody 2s linear infinite;
+  margin: 0 auto;
+  animation: cody 2s alternate infinite;
 }
 @keyframes cody {
   0%{
     background-position-y: 0;
   }
-  25%{
-    background-position-y: 5px;
-  }
-  50%{
-    background-position-y: 7px;
-  }
-  75%{
-    background-position-y: 5px;
-  }
   100%{
-    background-position-y: 0px;
+    background-position-y: 5px;
   }
 }
+
+/* OLAS */
 
 .wave-container{
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   height: 20vh;
   overflow: hidden;
-  z-index: 0;
+  z-index: 1;
 }
 .wave-container .wave{
   position: absolute;
@@ -169,4 +185,48 @@ img{
   opacity: 0.7;
   animation-delay: -2s;
   bottom: 20px;
+}
+
+/* LOAD */
+ .load{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+/* SOL */
+
+#sol { 
+  width: 150px; 
+  height: 150px; 
+  background: url('./sunny.png') no-repeat; 
+  background-position: center top;
+  position: absolute; 
+  animation: flota 1s alternate infinite;
+} 
+@keyframes flota {
+  0%{
+    /* transform: rotate(360deg); */
+    background-position-y: 10px;
+  }
+} 
+
+/* CARGANDO */
+
+.cargando::after{
+  content: '\2026';
+  display: inline-block;
+  vertical-align: bottom;
+  overflow: hidden;
+  animation: puntos steps(4, end) 2s infinite;
+  width: 0px;
+}
+@keyframes puntos {
+  to {
+    width: 1rem;
+  }
 }
