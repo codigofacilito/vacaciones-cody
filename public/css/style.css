@@ -230,3 +230,44 @@ img{
     width: 1rem;
   }
 }
+
+@media screen and (min-width:1024px) {
+
+  header h1{
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  header p{
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  section p{
+    font-size: 1.2rem;
+  }
+
+  .grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .section-one{
+    grid-column: 1/8;
+  }
+  .section-two{
+    grid-column: 8/13;
+  }
+  .section-three{
+    grid-row: 3/4;
+    grid-column: 1/7;
+  }
+  .section-four{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+  .section-five{
+    grid-row: 3/4;
+    grid-column: 7/13;
+  }
+}
