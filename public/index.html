@@ -18,6 +18,8 @@
         <a href="#inicio">Inicio</a>
         <a href="fotos.html">Fotos</a>
         <a href="#misvacaciones">Mis Vacaciones</a>
+        <a href="#ruta">Ruta de Aprendizaje</a>
+        <a href="#colabora">Colabora</a>
       </nav>
       <h1>¡¡¡ Estas son mis Vacaciones !!!</h1>
       <div class="subtittle">
@@ -25,9 +27,9 @@
     </div>
     </header>
 
-    <section id="misvacaciones" class="section2">
+    <section id="misvacaciones" class="section">
 
-        <h2>Mis vacaciones Frontend</h2>
+        <h2 class="subsec">Mis vacaciones Frontend</h2>
 
       <div class="contentsection2">
       <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
@@ -36,42 +38,58 @@
     </div>
       <div class="cursos">
         <div>
+          <a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank">
           <p>Curso profesional de Desarrollo Web</p>
+          </a>
         </div>
         <div>
-          <p>Curso para crear mi primera página web</p>
+          <p><a href="https://codigofacilito.com/cursos/crear-pagina-web" target="_blank">Curso para crear mi primera página web</a></p>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="section" id="ruta">
       <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+        <h2 class="subsec">Ruta de aprendizaje 2021</h2>
+        <p class="contentsectionruta"> También me propuse aprender nuevas tecnologías durante 2021</p>
       </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
+      <ul class="menu">
+        <li> <a>Flexbox, y Grid<svg preserveAspectRatio="none" viewBox="0 0 546.714 178.143"><path d="M546.214 89.072c0 48.917-122.162 88.571-272.857 88.571C122.662 177.643.5 137.988.5 89.072.5 40.155 122.662.5 273.357.5c150.695 0 272.857 39.655 272.857 88.572z"/></svg></a></li>
+        <li><a> Animaciones con CSS y JavaScript<svg preserveAspectRatio="none" viewBox="0 0 546.714 178.143"><path d="M546.214 89.072c0 48.917-122.162 88.571-272.857 88.571C122.662 177.643.5 137.988.5 89.072.5 40.155 122.662.5 273.357.5c150.695 0 272.857 39.655 272.857 88.572z"/></svg></a> </li>
+        <li><a>AJAX <svg preserveAspectRatio="none" viewBox="0 0 546.714 178.143"><path d="M546.214 89.072c0 48.917-122.162 88.571-272.857 88.571C122.662 177.643.5 137.988.5 89.072.5 40.155 122.662.5 273.357.5c150.695 0 272.857 39.655 272.857 88.572z"/></svg></a></li>
+        <li><a>HTML semántico<svg preserveAspectRatio="none" viewBox="0 0 546.714 178.143"><path d="M546.214 89.072c0 48.917-122.162 88.571-272.857 88.571C122.662 177.643.5 137.988.5 89.072.5 40.155 122.662.5 273.357.5c150.695 0 272.857 39.655 272.857 88.572z"/></svg></a></li>
+        <li><a>Entre otros<svg preserveAspectRatio="none" viewBox="0 0 546.714 178.143"><path d="M546.214 89.072c0 48.917-122.162 88.571-272.857 88.571C122.662 177.643.5 137.988.5 89.072.5 40.155 122.662.5 273.357.5c150.695 0 272.857 39.655 272.857 88.572z"/></svg></a> </li>
       </ul>
     </section>
-    <section>
+
+
+
+
+
+    <section id="colabora" class="section">
+      <div class="container">
       <header>
-        <h2>Colabora en mi página</h2>
+        <h2 class="subsec">Colabora en mi página</h2>
       </header>
-      <p>
+      <p class="contentsectioncolabora">
         Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
       </p>
-      <p>
+      <p class="contentsectioncolabora">
         Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
       </p>
-      <p>
+      <p class="contentsectioncolabora">
         Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
         <a href="" target="_blank" >Ir al tutorial</a>
 
       </p>
+
+ 
+
+
+
+
+
+    </div>
     </section>
     <section>
       <header>
@@ -105,6 +123,6 @@
     </section>
     
   </main>
-  
+  <script src="js/animation1.js"></script>
 </body>
 </html>

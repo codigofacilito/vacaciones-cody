@@ -1,15 +1,23 @@
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Lato:700,900);
+
 body{
   margin: 0;
   padding: 0;
-}
-
-.mainheader{
-  height: 100vh;
+  font-family: 'Oswald', sans-serif;
   background-image: url(..//images/4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+}
+
+.mainheader{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  
 
 }
 
@@ -28,7 +36,7 @@ h1{
 
 nav{
   background-color: rgb(249, 178, 8);
-  width: 30%;
+  width: 50%;
   padding: 15px;
   display: flex;
   gap:1em;
@@ -40,12 +48,11 @@ nav{
 nav a{
   color: rgb(0, 3, 5);
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 15px;
 }
 
 main{
-  font-family: 'Oswald', sans-serif;
   text-align: center;
   margin:0 auto;
 }
@@ -59,32 +66,37 @@ section{
   color: white;
   max-width: 200px;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   margin-right: 40px;
 }
+
+.cursos a{
+  text-decoration: none;
+  color: white;
+}
+
+
 .fotos img{
   max-width: 450px;
   display: inline-block;
 }
-ul li{
-  text-align: left;
 
-}
-ul li::marker {
+/*ul li::marker {
   content: "🚀";
-}
+}*/
 
 ol li{
   text-align: left;
 }
 
-.section2{
+.section{
   height: 100vh;
   width: 100vw;
-
+  margin: 0;
+  padding: 0;
 }
 
-.section2 h2{
+.subsec{
   font-size: 40px;
   font-weight: 800;
   padding-top: 5%;
@@ -106,3 +118,69 @@ ol li{
   margin-bottom: 40px;
 }
 
+.contentsectionruta{
+  font-size: 2em;
+}
+
+.menu{
+  margin: auto;
+  margin-top:150px;
+  padding:0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style:none; 
+
+}
+
+ul li{
+  padding: 2px 5px;   
+}
+
+.menu a {
+  position: relative;
+  font-size: 1.8em;
+  margin: 20px;
+  padding: 15px;
+
+}
+ 
+.menu a svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  z-index: -1;
+}
+
+.menu a svg path {
+  fill: transparent;
+  stroke-width: 5px;
+  stroke: currentColor;
+}
+
+.menu a svg path {
+  stroke-dasharray: 1210.709716796875;
+  stroke-dashoffset: -1210.709716796875;
+  transition: stroke-dashoffset .5s cubic-bezier(.29,.68,.74,1.02);
+}
+ 
+.menu a:hover svg path {
+  stroke-dashoffset: 0;
+}
+
+
+
+/********************************************************/
+
+
+.contentsectioncolabora{
+  margin-bottom: 60px;
+  font-size: 1.8em;
+
+}
+
+
+/***********/
