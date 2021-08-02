@@ -1,0 +1,30 @@
+.sectionTitle {
+	width: 100%;
+	margin-bottom: 3.125rem;
+
+	.icon {
+		width: 3.125rem;
+		margin-bottom: 0.625rem;
+
+		@media (min-width: 50rem) {
+			width: 3.75rem;
+		}
+	}
+
+	.title {
+		font-size: 2.5rem;
+
+		@media (min-width: 50rem) {
+			font-size: 3.75rem;
+		}
+	}
+}
+
+.text {
+	font-size: 1.5625rem;
+	margin-bottom: 1.5625rem;
+
+	@media (min-width: 50rem) {
+		font-size: 2.1875rem;
+	}
+}

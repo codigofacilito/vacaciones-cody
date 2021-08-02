@@ -1,0 +1,57 @@
+@import './variables';
+@import './const';
+
+@import './Page-Gallery/Gallery';
+@import './Section-Home/home';
+@import './Section-Vacations/vacations';
+@import './Section-Learning/learningPath';
+@import './Section-Gallery/gallery.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $MainSource;
+
+	&::selection {
+		background: $LightGreen;
+	}
+}
+
+[id] {
+	scroll-margin-top: 3.125rem;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: $Dark;
+	background-color: $White;
+	min-height: 3000px;
+
+	&::-webkit-scrollbar {
+		width: 10px;
+		background-color: $White;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $LightGreen;
+		border-radius: 3.125rem;
+	}
+}
+
+.mainContent {
+	max-width: 59.375rem;
+	margin: auto;
+	padding: 1.25rem;
+}
+
+.contentSection {
+	margin: 6.25rem 0;
+}
+
+.hidden {
+	overflow: hidden;
+}

@@ -1,0 +1,82 @@
+.vacations .cards-container {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	gap: 1.25rem;
+	padding: 1.25rem;
+
+	@media (min-width: 500px) {
+		flex-flow: row nowrap;
+	}
+
+	.card {
+		position: relative;
+
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 3.75rem 1fr;
+
+		width: 18.75rem;
+		height: 9.375rem;
+		padding: 1.25rem;
+
+		color: $White;
+		background: $Gradiant1;
+		box-shadow: $Shadow1;
+		border-radius: 1.875rem;
+
+		&::after {
+			content: '';
+			background-repeat: no-repeat;
+			background-size: 6.875rem;
+
+			position: absolute;
+			right: 1.25rem;
+
+			opacity: 25%;
+			transform: rotate(30deg);
+		}
+
+		&:nth-child(1)::after {
+			background-image: url('../../public/assets/icons/icon-web.png');
+			top: 20px;
+			width: 6.875rem;
+			height: 6.875rem;
+		}
+
+		&:nth-child(2)::after {
+			background-image: url('../../public/assets/icons/icon-code.png');
+			top: 2.1875rem;
+			width: 6.875rem;
+			height: 5rem;
+		}
+
+		.icon-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			width: 3.125rem;
+			height: 3.125rem;
+
+			background-color: $LightGreen;
+			border-radius: 50%;
+
+			.icon {
+				width: 70%;
+			}
+		}
+
+		.name-container {
+			display: flex;
+			align-items: center;
+
+			.name {
+				position: relative;
+				z-index: 1;
+				font-size: 1.25rem;
+				line-height: 1.25rem;
+			}
+		}
+	}
+}

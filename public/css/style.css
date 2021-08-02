@@ -1,38 +1,38 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+nav {
+	background-color: aliceblue;
+	padding: 15px;
+	display: flex;
+	gap: 1em;
 }
 
-main{
-  text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+main {
+	text-align: center;
+	max-width: 960px;
+	margin: 0 auto;
 }
 
-section{
-  margin-top: 3rem;
+section {
+	margin-top: 3rem;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+.cursos div {
+	background-color: black;
+	color: white;
+	max-width: 200px;
+	display: inline-block;
+	box-shadow: 5px 5px 10px black;
 }
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
+.fotos img {
+	max-width: 450px;
+	display: inline-block;
 }
-ul li{
-  text-align: left;
+ul li {
+	text-align: left;
 }
 ul li::marker {
-  content: "🚀";
+	content: '🚀';
 }
 
-ol li{
-  text-align: left;
+ol li {
+	text-align: left;
 }
