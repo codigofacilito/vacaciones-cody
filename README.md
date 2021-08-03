@@ -1,5 +1,3 @@
-
-
 <div align="center">
 <img width="150px"  src="./public/images/heroimagemobile.svg" />
 

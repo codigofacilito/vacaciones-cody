@@ -1,8 +1,11 @@
 .Footer{
     position: relative;
     background: url('../../images/footer.svg');
+    background-size: contain;
+    background-position: center;
     width: 100%;
     height: 200px;
+    
 }
 .Footer-container{
     position: absolute;
@@ -10,8 +13,10 @@
     right: 0;
     bottom: 0;
     margin: auto;
+    
 }
 .Footer--image img{
+    
     margin-inline-end: 20px;
 }
 .Footer--text p{
@@ -24,7 +29,6 @@
 @media only screen and (min-width: 600px) {
     .Footer{
       width: 99.99%;
-      
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -41,7 +45,6 @@
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     .Footer{
-      
       height: 470px;
     }
   }
@@ -49,5 +52,17 @@
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
     .Footer{
-    height: 590px;
-  }}
+    height: 100vh;
+    }
+    .Footer--text {
+      margin-block-end: 100px;
+    }
+    .Footer--text p{
+      font-size: 40px;
+    }
+    .Footer--image img{
+      padding-inline-start: 35px;
+      width: 80px;
+      margin-block-end: 30px;
+    }
+  }

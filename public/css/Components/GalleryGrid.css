@@ -1,5 +1,6 @@
 
 .Gallery{
+  
   padding: 0;
   margin: 0;
 }
@@ -31,3 +32,23 @@
   }
   
  
+  @media only screen and (min-width: 1020px) {
+    .Gallery-container{
+      max-inline-size: 75% ;
+      margin-inline-start: auto;
+      margin-inline-end: auto;
+      gap: 50px;
+    }
+  }
+  @media only screen and (min-width: 2700px) {
+    .Gallery-container{
+      margin-block-start: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+
+
+  

@@ -1,5 +1,6 @@
 .Advantages{
-    margin-block-start: 80px;    
+    margin-block-start: 80px; 
+      
 }
 .Advantages--title{
     margin-block-start: 0px;
@@ -21,6 +22,9 @@
 
 .Advantages--list{
     margin-block-start: 100px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    max-inline-size: 1060px;
     padding: 0;
     list-style: none;
     color: var(--White);
@@ -30,6 +34,36 @@
     margin-block-end: 50px;
     font: var(--BodyMobile);
     font-weight: 700;
+}
+
+.Advantages__list--itemText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Advantages__list--itemText span{
+    margin-block-start: 15px;
+    margin-block-end: 15px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Salud{
+    background: url('../../icons/salud-mental.svg');
+}
+.Motivacion{
+    background: url('../../icons/motivacion.svg');
+}
+.Burnout{
+    background: url('../../icons/ansiedad.svg');
+}
+.Creatividad{
+    background: url('../../icons/inspiracion.svg');
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
