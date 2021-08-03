@@ -17,19 +17,27 @@ body {
   background-color: var(--primary-color);
   color: var(--text-color);
   font-family: var(--body-font);
+  line-height: 1.6em;
 }
 
 main{
   text-align: center;
 }
 
+.wrapper {
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
 /* HEADER */
 .header {
   width: 100vw;
   height: 65vh;
+  padding: 0 15px;
 }
 
-header .hero {
+.header .hero {
   display: block;
   width: 100%;
   height: inherit;
@@ -37,24 +45,24 @@ header .hero {
   top: 0;
   left: 0;
   background-image: url('../images/2.jpg');
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -10;
 }
 
-header .hero::after {
+.header .hero::after {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to bottom, black 80%, rgba(255, 255, 255, .3));
-  opacity: .6;
+  background-image: linear-gradient(to bottom, black, var(--primary-color));
+  opacity: .7;
 }
 
-nav {
+.header nav {
   width: 100%;
   padding: 15px;
   display: flex;
@@ -63,12 +71,13 @@ nav {
 }
 
 .items {
-  width: 50%;
+  width: 60%;
+  max-width: 600px;
   display: flex;
   justify-content: space-between;
 }
 
-.items .item {
+.header .items {
   list-style: none;
 }
 
@@ -142,45 +151,82 @@ nav {
 }
 
 header h1 {
-  margin: 25px 0;
+  margin: 35px 0;
   font-family: var(--heading-font);
   animation: 5s slidein;
   height: 100px;
+  color: var(--secondary-color);
+  text-shadow: 1px 1px 5px black;
+  line-height: 1.6em;
 }
 
 .cards {
   border-radius: 15px;
   border: 2px solid white;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   font-size: 1.1em;
   margin: 0 auto;
   padding: 10px;
   line-height: 1.6em;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, .5));
 }
 
 header .presentation {
   width: 90%;
 }
 
-section{
-  margin-top: 3rem;
+header h2 {
+  font-family: var(--heading-font);
+  margin: 70px 0 25px;
+  color: var(--secondary-color);
+  text-shadow: 1px 1px 5px black;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+.frontend {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 25%;
+  gap: 5%;
 }
-.fotos img{
-  max-width: 300px;
-  display: inline-block;
-}
-ul li{
+
+.text-container {
   text-align: left;
 }
 
-ol li{
-  text-align: left;
+.frontend .technologies {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.technologies span {
+  display: block;
+  border: 2px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.cursos {
+  width: 100%;
+  /* height: 500px; */
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  gap: 35px;
+}
+
+.road .text-container {
+  width: 50%;
+  margin: 15px auto;
+}
+
+img {
+  width: 100px;
 }
