@@ -1,6 +1,6 @@
 const Colab = () => {
   return (
-    <section className="colab">
+    <section className="colab" id="colab">
       <h3 className="colab__title">Colabora en mi página</h3>
       <p className="colab__paragraph">
         Como parte de mi formación Frontend👩‍💻, aprendí acerca de Git y GitHub,

@@ -46,7 +46,7 @@ const Carousel = () => {
 
   return (
     <>
-      <h3 className="pictures__title">
+      <h3 className="pictures__title" id="vacations">
         Estas son algunas fotos de mis vacaciones
       </h3>
       <div className="carousel">

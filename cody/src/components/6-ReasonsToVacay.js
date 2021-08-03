@@ -18,7 +18,7 @@ const ReasonsToVacay = () => {
     );
   });
   return (
-    <section className="benefits">
+    <section className="benefits" id="benefits">
       <h3 className="benefits__title">La importancia de las vacaciones</h3>
       <p className="benefits__paragraph">
         Aprender a programar y escribir código, puede ser estresante, por eso es

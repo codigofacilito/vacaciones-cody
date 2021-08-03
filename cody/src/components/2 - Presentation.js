@@ -4,7 +4,9 @@ const Presentation = () => {
   return (
     <>
       <article className="presentation">
-        <h1 className="presentation__title">Las vacaciones de Cody</h1>
+        <h1 className="presentation__title" id="about">
+          Las vacaciones de Cody
+        </h1>
         <div className="presentation__text">
           <p className="presentation__text-paragraph">
             Soy Cody, un aspirante a Dev, en 2019, organicé un viaje 🧳✈️para

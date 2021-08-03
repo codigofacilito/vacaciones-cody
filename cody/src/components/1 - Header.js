@@ -2,13 +2,34 @@
 import { slide as Menu } from "react-burger-menu";
 
 const Header = () => {
+  //Menu handler that closes the menu when an option is clicked
+  const closeMenuHandler = () => {
+    if (isClosed === false) {
+      return setClosed(true);
+    } else {
+      setClosed(false);
+    }
+  };
   return (
     <header className="header">
-      <Menu width={280}>
-        <a className="menu__item" href="/">
+      <Menu isOpen={isClosed} width={280}>
+        <a className="menu__item" href="#top" onClick={closeMenuHandler}>
           Home
         </a>
+        <a className="menu__item" href="#about" onClick={closeMenuHandler}>
+          Sobre mi
+        </a>
+        <a className="menu__item" href="#vacations" onClick={closeMenuHandler}>
+          Mis vacaciones
+        </a>
+        <a className="menu__item" href="#benefits" onClick={closeMenuHandler}>
+          Beneficios de descansar
+        </a>
+        <a className="menu__item" href="#colab" onClick={closeMenuHandler}>
+          Colabora conmigo
+        </a>
       </Menu>
+
       <div className="header__bar">
         <svg
           className="header__bar--svg"
