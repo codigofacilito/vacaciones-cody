@@ -2,33 +2,50 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis vacaciones</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- slice -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
+    <main>
+        <header>
+            <nav class="nav">
+                <a href="index.html"><i class="fas fa-home"></i>Inicio</a>
+                <a href="fotos.html"><i class="fas fa-image"></i>Fotos</a>
+            </nav>
+            <section>
+                <h2>Galería completa de mis vacaciones</h2>
+            </section>
+        </header>
+        <div class="slidefoto top">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/1.jpg" alt="Cody en la playa"></div>
+                    <div class="swiper-slide"><img src="images/2.jpg" alt="Cody acampando"></div>
+                    <div class="swiper-slide"><img src="images/3.jpg" alt="Cody en una alberca"></div>
+                    <div class="swiper-slide"><img src="images/4.jpg" alt="Cody en la playa"></div>
+                    <div class="swiper-slide"><img src="images/5.jpg" alt="Cody en ciudad"></div>
+                    <div class="swiper-slide"><img src="images/6.jpg" alt="Cody en aeropuerto"></div>
 
-  </main>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="../public/js/script.js"></script>
 </body>
+<footer>Realizado por <a href="http://intagram.com/hdavidvc" target="_blank">David Cabrera</a></footer>
 
 </html>
