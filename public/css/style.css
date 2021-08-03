@@ -21,7 +21,6 @@ nav .navbar-profile{
 }
 
 main{
-  text-align: center;
   max-width: 960px;
   margin:0 auto;
 }
@@ -29,7 +28,39 @@ main{
 section{
   margin-top: 3rem;
 }
+.user-account{
+  align-items: center;
+}
+.user-account h2{
+  margin-bottom: 0;
+  margin-right:10px;
+}
+.user-account button{
+  font-size: 1rem;;
+  padding: 3px;
+  border: 1px solid #cbced2;
+  margin-right: 10px;;
+}
+.user-account .icon-settings{
+  font-size: 2rem;
+}
 
+.user-data{
+  list-style: none;
+  margin-top:15px;
+  padding: 0;
+}
+
+.user-data li{
+  margin-right: 40px;
+}
+
+.user-description a{
+  display: list-item;
+  list-style: none;
+  font-weight: bold;
+  color: #00376b;
+}
 .cursos div{
   background-color: black;
   color: white;
