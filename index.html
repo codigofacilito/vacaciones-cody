@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis vacaciones</title>
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="/styles/tailwind.css" />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- patterns css -->
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet" />
+
+    <!-- kursor css -->
+    <link rel="stylesheet" href="/styles/cursor.css" />
+
+
+  </head>
+  <body>
+    <nav
+      class="
+        flex
+        justify-between
+        items-center
+        px-10
+        py-5
+        bg-transparent
+        fixed
+        top-0
+        left-0
+        right-0
+        z-20
+      "
+    >
+      <a href="/" class="text-green-800 font-bold text-xl">Cody</a>
+
+      <ul class="text-green-800 font-semibold">
+        <a
+          href="/"
+          class="
+            mr-5
+            hover:bg-green-200
+            px-4
+            py-2
+            rounded-xl
+            transition
+            duration-200
+          "
+          >Inicio</a
+        >
+        <a
+          href="fotos.html"
+          class="
+            hover:bg-green-200
+            px-4
+            py-2
+            rounded-xl
+            transition
+            duration-200
+          "
+          >Fotos</a
+        >
+      </ul>
+    </nav>
+
+    <main>
+      <header
+        class="
+          h-screen
+          flex flex-col
+          justify-center
+          items-center
+          bg-green-100
+          text-center
+          px-3
+          pattern-vertical-lines-xl
+        "
+      >
+        <h1 class="text-3xl font-bold text-green-800 lg:text-6xl">
+          Estas son mis vacaciones!
+        </h1>
+        <p class="mt-4 text-md text-green-800 lg:text-xl lg:w-2/4">
+          Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para
+          desestresarme del código, y en esta página quiero compartirlo contigo.
+        </p>
+      </header>
+
+      <section class="h-screen bg-green-200">
+        <header class="text-center py-8">
+          <h2 class="text-2xl font-bold text-green-800">
+            Mis vacaciones Frontend
+          </h2>
+        </header>
+
+        <article
+          class="
+            px-6
+            text-md text-green-800
+            lg:w-4/5 lg:mx-auto lg:text-xl lg:p-auto
+          "
+        >
+          <p>
+            Durante el verano de 2019, decidí comenzar a aprender desarrollo
+            frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS,
+            y JavaScript.
+          </p>
+          <p class="mt-4">
+            Cada tarde, después de conocer nuevos lugares en mis vacaciones,
+            practicaba mis habilidades en tecnologías frontend, construyendo
+            esta página.
+          </p>
+        </article>
+
+        <article class="px-6 mt-10 lg:w-4/5 lg:mx-auto lg:p-auto">
+          <h3 class="text-xl font-bold text-green-800">
+            Estos son los cursos que estuve tomando:
+          </h3>
+
+          <ul class="cursos my-6 lg:flex lg:items-center">
+            <li
+              class="
+                bg-pink-100
+                text-pink-800
+                font-bold
+                py-4
+                px-2
+                text-center
+                rounded-xl
+                lg:flex lg:justify-center lg:items-center lg:h-28 lg:p-0 lg:px-6
+              "
+            >
+              <p>Curso profesional de Desarrollo Web</p>
+            </li>
+            <li
+              class="
+                bg-indigo-100
+                text-indigo-800
+                font-bold
+                py-4
+                px-2
+                text-center
+                rounded-xl
+                mt-2
+                lg:flex
+                lg:justify-center
+                lg:items-center
+                lg:h-28
+                lg:p-0
+                lg:px-6
+                lg:mt-0
+                lg:ml-2
+              "
+            >
+              <p>Curso para crear mi primera página web</p>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="min-h-screen bg-green-100">
+        <header class="text-center py-8">
+          <h2 class="text-2xl font-bold text-green-800 mb-2">
+            Ruta de aprendizaje 2021
+          </h2>
+          <p class="text-md text-green-800">
+            También me propuse aprender nuevas tecnologías durante 2021:
+          </p>
+        </header>
+
+        <ul class="flex flex-col justify-center m-auto">
+          <li class="flex bg-blue-200">
+            <section
+              class="
+                w-4/5
+                mx-auto
+                flex
+                md:flex-row
+                flex-col
+                md:text-left
+                text-center
+              "
+            >
+              <article
+                class="flex flex-col justify-center items-center relative"
+              >
+                <div class="w-56 h-12 md:flex hidden justify-center">
+                  <div class="h-full border-blue-300 border-dashed"></div>
+                </div>
+
+                <div
+                  class="
+                    rounded-full
+                    w-12
+                    h-12
+                    text-xl text-indigo-100
+                    bg-blue-700
+                    font-black
+                    flex
+                    justify-center
+                    items-center
+                    absolute
+                    top-0
+                    right-0
+                    mt-16
+                    shadow-lg
+                    mr-2
+                  "
+                >
+                  1
+                </div>
+                <img
+                  alt="step1"
+                  class="w-56 h-56 rounded-full shadow my-5 object-scale-down"
+                  src="/assets/icons/layout.png"
+                />
+                <div class="w-56 h-12 md:flex hidden justify-center">
+                  <div
+                    class="h-full border-r-4 border-blue-300 border-dashed"
+                  ></div>
+                </div>
+              </article>
+
+              <article
+                class="
+                  ml-5
+                  p-10
+                  flex flex-col
+                  justify-center
+                  max-w-2xl
+                  rounded
+                  bg-blue-200
+                "
+              >
+                <p class="text-xs uppercase font-bold text-blue-500">Step 1</p>
+                <h3 class="md:text-3xl text-xl font-bold text-blue-700">
+                  Flexbox, y Grid
+                </h3>
+              </article>
+            </section>
+          </li>
+
+          <li class="flex bg-red-200">
+            <article
+              class="
+                flex
+                w-4/5
+                mx-auto
+                md:flex-row md:text-left
+                text-center
+                flex-col
+              "
+            >
+              <article
+                class="flex flex-col justify-center items-center relative"
+              >
+                <div class="w-56 h-12 md:flex hidden justify-center">
+                  <div
+                    class="h-full border-r-4 border-red-300 border-dashed"
+                  ></div>
+                </div>
+                <div
+                  class="
+                    rounded-full
+                    w-12
+                    h-12
+                    text-xl text-red-100
+                    bg-red-700
+                    font-black
+                    flex
+                    justify-center
+                    items-center
+                    absolute
+                    top-0
+                    right-0
+                    mt-16
+                    shadow-lg
+                    mr-2
+                  "
+                >
+                  2
+                </div>
+                <img
+                  alt="step2"
+                  class="w-56 h-56 rounded-full shadow my-5 object-scale-down"
+                  src="/assets/icons/animations.png"
+                />
+                <div class="w-56 h-12 md:flex hidden justify-center">
+                  <div
+                    class="h-full border-r-4 border-red-300 border-dashed"
+                  ></div>
+                </div>
+              </article>
+              <article
+                class="
+                  ml-5
+                  p-10
+                  flex flex-col
+                  justify-center
+                  max-w-2xl
+                  rounded
+                  bg-red-200
+                "
+              >
+                <p class="text-xs uppercase font-bold text-red-500">Step 2</p>
+                <h3 class="md:text-3xl text-xl font-bold text-red-700">
+                  Animaciones con CSS y JavaScript
+                </h3>
+              </article>
+            </article>
+          </li>
+
+          <li class="flex bg-indigo-200">
+            <article
+              class="
+                flex
+                md:flex-row md:text-left
+                text-center
+                flex-col
+                mx-auto
+                w-4/5
+              "
+            >
+              <article
+                class="flex flex-col justify-center items-center relative"
+              >
+                <div class="w-56 h-12 md:flex hidden justify-center">
+                  <div
+                    class="h-full border-r-4 border-indigo-300 border-dashed"
+                  ></div>
+                </div>
+                <div
+                  class="
+                    rounded-full
+                    w-12
+                    h-12
+                    text-xl text-indigo-100
+                    bg-indigo-700
+                    font-black
+                    flex
+                    justify-center
+                    items-center
+                    absolute
+                    top-0
+                    right-0
+                    mt-16
+                    shadow-lg
+                    mr-2
+                  "
+                >
+                  3
+                </div>
+                <img
+                  alt="step3"
+                  class="w-56 h-56 rounded-full shadow my-5 object-scale-down"
+                  src="/assets/icons/data.png"
+                />
+                <div class="w-56 h-12 md:flex hidden justify-center">
+                  <div
+                    class="h-full border-r-4 border-indigo-300 border-dashed"
+                  ></div>
+                </div>
+              </article>
+              <article
+                class="
+                  ml-5
+                  p-10
+                  flex flex-col
+                  justify-center
+                  max-w-2xl
+                  rounded
+                  bg-indigo-200
+                "
+              >
+                <p class="text-xs uppercase font-bold text-indigo-500">
+                  Step 3
+                </p>
+                <h3 class="md:text-3xl text-xl font-bold text-indigo-700">
+                  AJAX
+                </h3>
+              </article>
+            </article>
+          </li>
+
+          <li class="flex bg-pink-200">
+            <article
+              class="
+                flex
+                md:flex-row
+                flex-col
+                md:text-left
+                text-center
+                w-4/5
+                mx-auto
+              "
+            >
+              <article
+                class="flex flex-col justify-center items-center relative"
+              >
+                <div class="w-56 h-12 md:flex hidden justify-center">
+                  <div
+                    class="h-full border-r-4 border-pink-300 border-dashed"
+                  ></div>
+                </div>
+                <div
+                  class="
+                    rounded-full
+                    w-12
+                    h-12
+                    text-xl text-pink-100
+                    bg-pink-700
+                    font-black
+                    flex
+                    justify-center
+                    items-center
+                    absolute
+                    top-0
+                    right-0
+                    mt-16
+                    shadow-lg
+                    mr-2
+                  "
+                >
+                  4
+                </div>
+                <img
+                  alt="step4"
+                  class="w-56 h-56 rounded-full shadow my-5 object-scale-down"
+                  src="/assets/icons/html.png"
+                />
+                <div class="w-56 h-12 md:flex hidden justify-center">
+                  <div class="h-full border-pink-300 border-dashed"></div>
+                </div>
+              </article>
+              <article
+                class="
+                  ml-5
+                  p-10
+                  flex flex-col
+                  justify-center
+                  max-w-2xl
+                  rounded
+                  bg-pink-200
+                "
+              >
+                <p class="text-xs uppercase font-bold text-pink-500">Step 4</p>
+                <h3 class="md:text-3xl text-xl font-bold text-pink-700">
+                  HTML semántico
+                </h3>
+              </article>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section class="h-screen bg-indigo-100">
+        <header class="text-center py-8">
+          <h2 class="text-indigo-800 font-bold text-2xl">
+            Colabora en mi página
+          </h2>
+        </header>
+
+        <section
+          class="
+            lg:grid lg:grid-cols-2 lg:gap-20 lg:items-center lg:w-4/5 lg:mx-auto
+          "
+        >
+          <article class="px-6 text-indigo-800">
+            <p>
+              Como parte de mi formación Frontend, aprendí acerca de Git y
+              GitHub, por lo que decidí subir mi código a GitHub. Puedes
+              ayudarme a mejorar mi página, haciendo un fork de mi página, y
+              enviando un pull request.
+            </p>
+            <p class="mt-2">
+              Si nunca antes has colaborado con un repositorio, en Código
+              Facilito hay un tutorial que lo explica
+            </p>
+
+            <a
+              href="https://stylessh.vercel.app"
+              target="_blank"
+              class="
+                inline-block
+                my-6
+                bg-indigo-800
+                text-white
+                px-6
+                py-2
+                w-full
+                text-center
+                font-bold
+                border-none
+                rounded-xl
+                border-indigo-800
+                hover:bg-indigo-700
+                transition
+                duration-200
+              "
+              >Ir al tutorial</a
+            >
+          </article>
+
+          <img
+            src="/assets/images/cody-coding.svg"
+            alt="Cody"
+            class="p-6 w-full"
+          />
+        </section>
+      </section>
+
+      <section class="min-h-screen bg-red-200">
+        <header class="py-8 px-6 text-center">
+          <h2 class="text-2xl font-bold text-red-800">
+            Aquí te comparto algunas fotos de mis vacaciones.
+          </h2>
+          <p class="mt-4 text-red-800">
+            ¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto
+            algunas fotos que tomé:
+          </p>
+        </header>
+
+        <section class="swiper-container my-8 mx-auto w-4/5 text-center">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <img
+                src="/assets/images/1.jpg"
+                alt="Cody en la playa"
+                class="w-full object-cover lg:w-2/4 mx-auto"
+              />
+            </li>
+            <li class="swiper-slide">
+              <img
+                src="/assets/images/2.jpg"
+                alt="Cody acampando"
+                class="w-full object-cover lg:w-2/4 mx-auto"
+              />
+            </li>
+            <li class="swiper-slide">
+              <img
+                src="/assets/images/3.jpg"
+                alt="Cody en una alberca"
+                class="w-full object-cover lg:w-2/4 mx-auto"
+              />
+            </li>
+          </ul>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </section>
+
+        <article class="px-6 lg:w-4/5 lg:mx-auto text-center">
+          <p class="text-red-800">
+            Puedes ver más, en la galería de fotos de mi página.
+          </p>
+          <a
+            href="fotos.html"
+            class="
+              inline-block
+              my-6
+              bg-red-800
+              text-white
+              px-6
+              py-2
+              w-full
+              text-center
+              font-bold
+              border-none
+              rounded-xl
+              lg:w-max
+              hover:bg-red-700
+              transition
+              duration-200
+            "
+            >Ir a la galería</a
+          >
+        </article>
+      </section>
+
+      <section class="h-screen lg:h-auto bg-green-200">
+        <header class="py-8 px-6 text-center">
+          <h2 class="font-bold text-2xl text-green-800">
+            La importancia de las vacaciones
+          </h2>
+        </header>
+
+        <article class="px-6 text-green-800 lg:w-4/5 lg:mx-auto lg:text-xl">
+          <p class="mb-4">
+            Aprender a programar y escribir código, puede ser estresante, por
+            eso es muy importante que periódicamente nos desconectemos y
+            descansemos apropiadamente
+          </p>
+
+          <p>
+            Durante mis vacaciones aprendí que existen distintos beneficios de
+            descansar:
+          </p>
+
+          <ol class="flex flex-col py-6 lg:flex-row justify-center w-full">
+            <li
+              class="
+                bg-green-300
+                text-center
+                p-6
+                rounded-xl
+                font-bold
+                mb-4
+                lg:mr-4
+              "
+            >
+              Mejora la salud mental
+            </li>
+            <li
+              class="
+                bg-green-300
+                text-center
+                p-6
+                rounded-xl
+                font-bold
+                mb-4
+                lg:mr-4
+              "
+            >
+              Incrementa la motivación
+            </li>
+            <li
+              class="
+                bg-green-300
+                text-center
+                p-6
+                rounded-xl
+                font-bold
+                mb-4
+                lg:mr-4
+              "
+            >
+              Reduce el burnout
+            </li>
+            <li class="bg-green-300 text-center p-6 rounded-xl font-bold mb-4">
+              Mejora tu productividad y creatividad
+            </li>
+          </ol>
+        </article>
+      </section>
+    </main>
+
+
+    <!-- slider -->
+    <script src="/js/slider.js"></script>
+
+
+    <!-- kursor js -->
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+
+    <script>
+      new kursor({
+        type: 5,
+        color: "#000",
+      });
+    </script>
+  </body>
+</html>

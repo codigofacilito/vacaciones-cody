@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis vacaciones</title>
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="/styles/tailwind.css" />
+
+    <!-- patterns css -->
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet" />
+
+    <!-- kursor css -->
+    <link rel="stylesheet" href="/styles/cursor.css" />
+
+    <!-- macy -->
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+  </head>
+
+  <body>
+    <nav
+      class="
+        flex
+        justify-between
+        items-center
+        px-10
+        py-5
+        bg-transparent
+        fixed
+        top-0
+        left-0
+        right-0
+        z-20
+      "
+    >
+      <a href="/" class="text-green-800 font-bold text-xl">Cody</a>
+
+      <ul class="text-green-800 font-semibold">
+        <a
+          href="/"
+          class="
+            mr-5
+            hover:bg-green-200
+            px-4
+            py-2
+            rounded-xl
+            transition
+            duration-200
+          "
+          >Inicio</a
+        >
+        <a
+          href="fotos.html"
+          class="
+            hover:bg-green-200
+            px-4
+            py-2
+            rounded-xl
+            transition
+            duration-200
+          "
+          >Fotos</a
+        >
+      </ul>
+    </nav>
+
+    <main>
+      <section class="min-h-screen py-20 px-10 lg:p-40 bg-green-200">
+        <h2 class="text-center text-3xl font-bold text-green-800 mb-10">
+          Mi galería de fotos
+        </h2>
+
+        <article class="container mx-auto" id="macy-container">
+          <img src="/assets/images/1.jpg" alt="Cody en la playa" />
+          <img
+            src="/assets/images/2.jpg"
+            class="h-80 object-cover"
+            alt="Cody acampando"
+          />
+          <img src="/assets/images/3.jpg" alt="Cody en una alberca" />
+          <img
+            src="/assets/images/4.jpg"
+            class="h-60 object-cover"
+            alt="Cody en una alberca"
+          />
+          <img src="/assets/images/5.jpg" alt="Cody en una alberca" />
+          <img src="/assets/images/6.jpg" alt="Cody en una alberca" />
+        </article>
+      </section>
+    </main>
+
+    <!-- masonry layout -->
+    <script src="/js/masonry.js"></script>
+
+    <!-- kursor js -->
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+
+    <script>
+      new kursor({
+        type: 5,
+        color: "#000",
+      });
+    </script>
+  </body>
+</html>
