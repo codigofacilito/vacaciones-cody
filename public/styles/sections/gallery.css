@@ -17,6 +17,9 @@
 
 .gallery__wrapper {
   position: relative;
+  background: var(--sand-200);
+  display: inherit;
+  border-radius: 0.5rem;
 }
 
 .gallery__image {
