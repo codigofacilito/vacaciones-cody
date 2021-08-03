@@ -2,11 +2,17 @@
   max-width: var(--max-width);
   margin: 0 auto;
   min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.gallery__collection {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   align-content: center;
-  padding: 3rem;
 }
 
 .gallery__wrapper {
@@ -39,6 +45,31 @@
   content: url(../../images/location.svg);
   display: inline-block;
   height: 15px;
+}
+
+.gallery::before,
+.gallery::after {
+  content: "";
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery::before {
+  background-image: url(../../images/concha.png);
+  width: 48px;
+  height: 46px;
+  transform: rotate(-45deg);
+  align-self: flex-end;
+}
+
+.gallery::after {
+  background-image: url(../../images/startfish.png);
+  width: 48px;
+  height: 43px;
+  transform: rotate(245deg);
+  align-self: flex-start;
 }
 
 .fullscreen {

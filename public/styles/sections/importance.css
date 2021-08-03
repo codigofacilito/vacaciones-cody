@@ -16,10 +16,16 @@
   margin-bottom: 1.5em;
 }
 
+.importance__image {
+  width: 100%;
+  max-width: 280px;
+  object-fit: contain;
+}
+
 .importance__content {
   font-size: 1.125rem;
   color: var(--body-secondary-text);
-  align-self: flex-start;
+  text-align: center;
 }
 
 .importance__list {
