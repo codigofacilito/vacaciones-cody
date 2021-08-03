@@ -22,6 +22,9 @@ body {
 
 main{
   text-align: center;
+  height: auto;
+  position: relative;
+  overflow-x: scroll;
 }
 
 .wrapper {
@@ -32,7 +35,7 @@ main{
 
 /* HEADER */
 .header {
-  width: 100vw;
+  width: 100%;
   height: 65vh;
   padding: 0 15px;
 }
@@ -44,7 +47,7 @@ main{
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url('../images/2.jpg');
+  background-image: url('../assets/images/2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,7 +102,7 @@ main{
 }
 
 .mode-switch {
-  background-image: linear-gradient(45deg, var(--secondary-color), var(--primary-color) 65%);
+  background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color) 75%);
   width: 100%;
   height: 100%;
   border: 2px solid white;
@@ -150,7 +153,7 @@ main{
   }
 }
 
-header h1 {
+.header h1 {
   margin: 35px 0;
   font-family: var(--heading-font);
   animation: 5s slidein;
@@ -174,6 +177,23 @@ header h1 {
 header .presentation {
   width: 90%;
 }
+
+.wave {
+  border: 1px solid red;
+  display: block;
+  width: 100vw;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  background-image: url('../assets/images/wave.svg');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* MAIN */
 
 header h2 {
   font-family: var(--heading-font);
@@ -202,14 +222,54 @@ header h2 {
   gap: 10px;
   align-items: center;
   justify-items: center;
+  padding: 5px 0;
 }
 
 .technologies span {
   display: block;
-  border: 2px solid white;
   width: 50px;
   height: 50px;
-  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.technologies:hover span::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .9);
+  text-align: center;
+  overflow-wrap: break-word;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.technologies .html {
+  background-image: url('../assets/icons/html.svg');
+}
+
+.technologies:hover .html::after {
+  content: "HTML";
+}
+
+.technologies .css {
+  background-image: url('../assets/icons/css-3.svg');
+}
+
+.technologies:hover .css::after {
+  content: "CSS";
+}
+
+.technologies .js {
+  background-image: url('../assets/icons/javascript.svg');
+}
+
+.technologies:hover .js::after {
+  content: "JavaScript";
 }
 
 .cursos {
