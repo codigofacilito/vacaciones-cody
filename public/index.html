@@ -6,95 +6,232 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/acedc33a96.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <main>
+  
     <header>
       <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+        <div class="nav-bar contenedor">
+          <h2 class="logo-text">Vacaciones Cody</h1>
+
+            <div class="nav-list">
+              <a href="/public/">Inicio</a>
+              <a href="fotos.html">Fotos</a>
+            </div>
+        </div>
       </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+
+      <div class="hero">
+        <div class="contenido-hero">
+          <h1>Estas son mis Vacaciones</h1>
+          <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+        </div>
+      </div>
+      
     </header>
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+    <main>
+      <section>
+        <header>
+          <h2>Mis vacaciones Frontend</h2>
+        </header>
+        <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo: </p>
+        
+        <div class="card-habilidades">
+          <div class="card">
+            <img src="../public/images/html.png" class="img-card" alt="imagen html">
+          </div>
+          <div class="card c-css">
+            <img src="../public/images/css3.png" class="img-css" alt="imagen css">
+          </div>
+          <div class="card c-js">
+            <img src="../public/images/js.png" class="img-card" alt="imagen js">
+          </div>
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+        
+        <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+        <p> Estos son los cursos que estuve tomando </p>
+
+        <div class="curso-contenido">
+          <div class="thecard">
+            <div class="thefront"><p>Curso profesional de Desarrollo Web</p></div>
+            <div class="theback"><p>En codigo facilito</p></div>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+        <div class="curso-contenido">
+          <div class="thecard">
+            <div class="thefront"><p>Curso para crear mi primera página web</p></div>
+            <div class="theback"><p>En codigo facilito</p></div>
+          </div>
+        </div>
 
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
+      </section>
+
+      <section>
+        <header>
+          <h2>Ruta de aprendizaje 2021</h2>
+          <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+        </header>
+
+        <div class="seccion-tecnologias">
+          <div class="box">
+            <h3>Tecnologías</h3>
+            <ul>
+              <li> Flexbox, y Grid </li>
+              <li> Animaciones con CSS y JavaScript </li>
+              <li> AJAX </li>
+              <li> HTML semántico </li>
+              <li> Entre otros </li>
+            </ul>
+          </div>
+        </div>
+        
+        
+      </section>
+      <section>
+        <header>
+          <h2>Colabora en mi página</h2>
+        </header>
+        <div class="box-colaboracion">
+          <p>
+            Como parte de mi formación Frontend, aprendí acerca de Git <i class="fab fa-git-alt"></i> y GitHub <i class="fab fa-github-square"></i>, por lo que decidí subir mi código a GitHub
+          </p>
+          <p>
+            Puedes ayudarme a mejorar mi página, haciendo un fork <i class="fas fa-code-branch"></i> de mi página, y enviando un pull request.
+          </p>
+          <p>
+            Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
+            <a href="" target="_blank" >Ir al tutorial <i class="fab fa-youtube"></i></a>
+          </p>
+        </div>
+      </section>
+      <section>
+        <header>
+          <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
+          <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+        </header>
+
+        <div class="carousel">
+          <h2>SubCategorias</h2>
+          <div class="slick-list" id="slick-list">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)" >
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+            </button>
+            <div class="slick-track" id="track">
+              <div class="slick">
+                <div>
+                  <a href="#">
+                    <h4><small>Vaciones Cody</small></h4>
+                    <picture>
+                        <img src="./images/1.jpg" alt="vacaciones">
+                    </picture>
+                  </a>
+                </div> 
+              </div>
+
+              <div class="slick">
+                <div>
+                  <a href="#">
+                    <h4><small>Vaciones Cody</small></h4>
+                    <picture>
+                        <img src="./images/2.jpg" alt="vacaciones">
+                    </picture>
+                  </a>
+                </div> 
+              </div>
+
+              <div class="slick">
+                <div>
+                  <a href="#">
+                    <h4><small>Vaciones Cody</small></h4>
+                    <picture>
+                        <img src="./images/3.jpg" alt="vacaciones">
+                    </picture>
+                  </a>
+                </div> 
+              </div>
+
+              <div class="slick">
+                <div>
+                  <a href="#">
+                    <h4><small>Vaciones Cody</small></h4>
+                    <picture>
+                        <img src="./images/4.jpg" alt="vacaciones">
+                    </picture>
+                  </a>
+                </div> 
+              </div>
+              <div class="slick">
+                <div>
+                  <a href="#">
+                    <h4><small>Vaciones Cody</small></h4>
+                    <picture>
+                        <img src="./images/5.jpg" alt="vacaciones">
+                    </picture>
+                  </a>
+                </div> 
+              </div>
+              <div class="slick">
+                <div>
+                  <a href="#">
+                    <h4><small>Vaciones Cody</small></h4>
+                    <picture>
+                        <img src="./images/6.jpg" alt="vacaciones">
+                    </picture>
+                  </a>
+                </div> 
+              </div>
+
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+            </button> 
+          </div>
+        </div>
+
         <p>
           Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
+          <a class="btn-galeria" href="fotos.html">Ir a la galería <i class="fas fa-images"></i></a>
         </p>
-      </div>
-    </section>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
+        <!--<div class="fotos">
+          <img src="images/1.jpg" alt="Cody en la playa">
+          <img src="images/2.jpg" alt="Cody acampando">
+          <img src="images/3.jpg" alt="Cody en una alberca">
+          <p>
+            Puedes ver más, en la galería de fotos de mi página
+            <a href="fotos.html">Ir a la galería</a>
+          </p>
+        </div> -->
+      </section>
+
+      <section>
+        <header>
+          <h2>La importancia de las vacaciones</h2>
+          <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+          <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+
+          <div class="seccion-tecnologias box-final">
+            <div class="box">
+              <h3>Tecnologías</h3>
+              <ol>
+                <li><span>1</span> Mejora la salud mental</li>
+                <li><span>2</span> Incrementa la motivación</li>
+                <li><span>3</span> Reduce el burnout</li>
+                <li><span>4</span> Mejora tu productividad y creatividad</li>
+              </ol>
+            </div>
+          </div>
+
+        </header>
+        
+      </section>
+
+    </main>
     
-  </main>
+
+    <script defer src="main.js"></script>
 </body>
 </html>
