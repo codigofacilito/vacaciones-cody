@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Mis vacaciones</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,87 +46,76 @@
       <br />
       <div class="container">
         <div class="row">
-          <div class="cajaTexto1">
+          <div class="col s12 center-align cajaTexto1">
             <h1 id="app">Estas son mis Vacaciones</h1>
             <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col s12 center-align">
-            <img src="images/5.jpg" alt="cody" class="imgTitulo" />
+        <div class="parallax-container">
+          <div class="parallax"><img src="images/5.jpg" /></div>
+        </div>
+
+        <div id="escena1" class="row">
+          <div id="pin1" class="col s12 left-align cajaTexto2">
+            <h2 id="titulo">Mis vacaciones Frontend</h2>
+            <p>
+              Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript, cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis
+              habilidades en tecnologías frontend, construyendo esta página.
+            </p>
+            <p>Estos son los cursos que estuve tomando:</p>
+            <div class="cursos">
+              <div>
+                <a class="waves-effect waves-light btn amber darken-3"><i class="Medium material-icons left">book</i>Curso profesional de Desarrollo Web</a>
+              </div>
+              <br />
+              <div>
+                <a class="waves-effect waves-light btn amber darken-3"><i class="material-icons left">important_devices</i>Curso para crear mi primera página web</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <section>
-          <header>
-            <h2 id="escena1">Mis vacaciones Frontend</h2>
-          </header>
-          <p>Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript</p>
-          <p>Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página</p>
-          <p>Estos son los cursos que estuve tomando</p>
-          <div class="cursos">
-            <div>
-              <p>Curso profesional de Desarrollo Web</p>
-            </div>
-            <div>
-              <p>Curso para crear mi primera página web</p>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <header>
+        <div id="escena2" class="row">
+          <div id="pin2" class="col s12 left-align cajaTexto2">
             <h2>Ruta de aprendizaje 2021</h2>
-            <p>También me propuse aprender nuevas tecnologías durante 2021</p>
-          </header>
-          <ul>
-            <li>Flexbox, y Grid</li>
-            <li>Animaciones con CSS y JavaScript</li>
-            <li>AJAX</li>
-            <li>HTML semántico</li>
-            <li>Entre otros</li>
-          </ul>
-        </section>
-        <section>
-          <header>
-            <h2>Colabora en mi página</h2>
-          </header>
-          <p>Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub</p>
-          <p>Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.</p>
-          <p>
-            Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-            <a href="" target="_blank">Ir al tutorial</a>
-          </p>
-        </section>
-        <section>
-          <header>
-            <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-            <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-          </header>
-          <div class="fotos">
-            <img src="images/1.jpg" alt="Cody en la playa" />
-            <img src="images/2.jpg" alt="Cody acampando" />
-            <img src="images/3.jpg" alt="Cody en una alberca" />
-            <p>
-              Puedes ver más, en la galería de fotos de mi página
-              <a href="fotos.html">Ir a la galería</a>
-            </p>
+            <p>También me propuse aprender nuevas tecnologías durante 2021:</p>
+            <ul>
+              <li><i class="material-icons left orange-text text-darken-4">beach_access</i> Flexbox, y Grid</li>
+              <li><i class="material-icons left orange-text text-darken-4">beach_access</i> Animaciones con CSS y JavaScript</li>
+              <li><i class="material-icons left orange-text text-darken-4">beach_access</i> AJAX</li>
+              <li><i class="material-icons left orange-text text-darken-4">beach_access</i> HTML semántico</li>
+              <li><i class="material-icons left orange-text text-darken-4">beach_access</i> Entre otros</li>
+            </ul>
           </div>
-        </section>
+        </div>
 
-        <section>
-          <header>
-            <h2>La importancia de las vacaciones</h2>
-            <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-            <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-            <ol>
-              <li>Mejora la salud mental</li>
-              <li>Incrementa la motivación</li>
-              <li>Reduce el burnout</li>
-              <li>Mejora tu productividad y creatividad</li>
-            </ol>
-          </header>
-        </section>
+        <h2>Colabora en mi página <i class="material-icons right orange-text text-darken-4">developer_mode</i></h2>
+        <p>Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub</p>
+        <p>Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.</p>
+        <p>
+          Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
+          <a href="" target="_blank">Ir al tutorial</a>
+        </p>
+        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
+        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+        <div class="fotos">
+          <img src="images/1.jpg" alt="Cody en la playa" />
+          <img src="images/2.jpg" alt="Cody acampando" />
+          <img src="images/3.jpg" alt="Cody en una alberca" />
+          <p>
+            Puedes ver más, en la galería de fotos de mi página
+            <a href="fotos.html">Ir a la galería</a>
+          </p>
+        </div>
+        <h2>La importancia de las vacaciones</h2>
+        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+        <ol>
+          <li>Mejora la salud mental</li>
+          <li>Incrementa la motivación</li>
+          <li>Reduce el burnout</li>
+          <li>Mejora tu productividad y creatividad</li>
+        </ol>
       </div>
     </main>
   </body>
@@ -127,5 +123,6 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="js/anime.min.js"></script>
   <script src="js/main.js"></script>
 </html>

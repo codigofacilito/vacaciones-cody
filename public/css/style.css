@@ -2,6 +2,7 @@ body {
   background: rgb(179, 229, 252);
   background: linear-gradient(180deg, rgba(179, 229, 252, 1) 0%, rgba(3, 169, 244, 1) 50%, rgba(1, 87, 155, 1) 100%);
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 18px;
 }
 nav {
   background-color: #6dc6f7;
@@ -19,21 +20,27 @@ nav ul a {
 }
 #app {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  /* font-family: Roboto Mono, monospace; */
   font-weight: 600;
 }
 .cajaTexto1 {
-  background-color: #ffffffad;
   border-radius: 20px;
   width: 100%;
   text-align: center;
   padding: 20px;
+  color: #2e4069;
 }
 .cajaTexto1 p {
   font-size: 20px;
-  color: #2b2b2b;
+  color: #2e4069;
   font-size: 1.75rem;
   font-weight: 400;
   line-height: 1.8;
   margin-bottom: 1.8rem;
+}
+.cajaTexto2 {
+  opacity: 0;
+  border-radius: 20px;
+  width: 100%;
+  padding: 20px;
+  color: #2e4069;
 }
