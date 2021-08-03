@@ -1,7 +1,12 @@
+import { useState } from "react";
+
 //COMPONENTS
 import { slide as Menu } from "react-burger-menu";
 
 const Header = () => {
+  //States
+  let [isClosed, setClosed] = useState();
+
   //Menu handler that closes the menu when an option is clicked
   const closeMenuHandler = () => {
     if (isClosed === false) {
