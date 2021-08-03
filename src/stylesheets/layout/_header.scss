@@ -1,0 +1,74 @@
+.header {
+  position: relative;
+
+  &__bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    &--svg {
+      position: relative;
+      display: block;
+      width: calc(224% + 1.3px);
+      height: 228px;
+      transform: rotateY(180deg);
+      z-index: -1;
+      @media (min-width: 768px) and (max-width: 1023px) {
+        width: calc(220% + 1.3px);
+        height: 216px;
+      }
+      @media (max-width: 767px) {
+        width: calc(219% + 1.3px);
+        height: 194px;
+      }
+    }
+    &--fill {
+      fill: $colorPurple;
+    }
+  }
+}
+
+.bm {
+  &-menu {
+    background-color: $colorYellow;
+    background-image: url("../../images/CodyPiscina.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 40px 25px 0;
+  }
+  &-burger {
+    &-button {
+      position: fixed;
+      width: 26px;
+      height: 20px;
+      left: 36px;
+      top: 36px;
+    }
+    &-bars {
+      cursor: pointer;
+      background: $colorPink;
+    }
+  }
+  &-cross {
+    background: $colorPurple;
+  }
+
+  &-item {
+    font-size: 1.2rem;
+    padding: 20px 0;
+    color: $colorPurple;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover {
+      color: $colorPink;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+}

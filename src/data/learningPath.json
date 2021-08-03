@@ -1,0 +1,6 @@
+[
+  { "id": "T1", "tech": "Flexbox y Grid" },
+  { "id": "T2", "tech": "Animaciones con CSS y Javascript" },
+  { "id": "T3", "tech": "AJAX" },
+  { "id": "T4", "tech": "HTML Semántico" }
+]
