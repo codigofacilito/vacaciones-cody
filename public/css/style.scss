@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
 
 $colorBase: #363795;
 $colorPrimary: #091540;
@@ -97,9 +97,10 @@ body {
 	z-index: 2;
 
 	&__logo {
-		
-		width: 95px;
-		height: 100%;
+		display:flex;
+		justify-content: center;
+		width:60px;
+		height: 70%;
 		
 
 		&__img {
@@ -116,8 +117,9 @@ body {
 		&__link {
 			text-decoration: none;
 			color: $light;
-			font-size: 2em;
-			font-weight: bold;
+			font-size: 1.5rem;
+			font-weight: 200;
+			letter-spacing: .6rem;
 			transition: all 1s;
 			text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
 
@@ -142,10 +144,10 @@ section:nth-child(2n) {
 	
 	display: flex;
 	flex-direction: column;
-	justify-content:center;
+	justify-content:space-between;
 	align-items: center;
 	width: 90%;
-	height: 80vh;
+	height: 85vh;
 	padding: 2rem;
 	position: relative;
 	z-index: 2;
@@ -186,16 +188,18 @@ section:nth-child(2n) {
 	}
 
 	&__img {
-		width: 80%;
-		height: 60%;
+		width: 100%;
+		height: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		position: relative;
 		transform: translateZ(20px);
 
 		.img {
-			width: 100%;
-			height: 100%;
+			
+			width: 80%;
+			height: 80%;
 			filter: drop-shadow(10px 17px 9px rgba(0, 0, 0, 0.5));
 		}
 	}
@@ -350,8 +354,8 @@ section:nth-child(2n) {
 }
 
 @keyframes mar {
-	0%, 100% {clip-path: polygon(0% 65%, 6% 56%, 15% 52%, 23% 56%, 27% 61%, 32% 66%, 41% 65%, 48% 60%, 53% 56%, 61% 51%, 66% 48%, 73% 43%, 83% 38%, 92% 35%, 100% 31%, 100% 100%, 1% 100%);}
-	50% {clip-path: polygon(0% 30%, 10% 32%, 14% 41%, 20% 50%, 28% 56%, 37% 58%, 44% 55%, 54% 51%, 63% 50%, 72% 50%, 81% 54%, 87% 59%, 90% 64%, 94% 71%, 98% 79%, 100% 100%, 0% 100%);}
+	0%, 100% {clip-path: polygon(0% 46%, 16% 45%, 34% 52%, 50% 61%, 68% 65%, 85% 61%, 100% 53%, 100% 100%, 0% 100%);}
+	50% {clip-path: polygon(0% 59%, 18% 67%, 36% 70%, 51% 66%, 66% 56%, 82% 49%, 100% 45%, 100% 100%, 0% 100%);}
 
 
 }
@@ -518,24 +522,24 @@ section:nth-child(2n) {
 
 			h2{
 				position: absolute;
-				top:-40px;
+				top:0px;
 				font-size:2rem;
-				
+				text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
 				&:nth-child(1){
 				color :transparent;
 				-webkit-text-stroke: 1px $light;
 				}
 
 				&:nth-child(2){
-				color :rgb(21, 101, 248);
-				clip-path: polygon(0% 65%, 6% 56%, 15% 52%, 23% 56%, 27% 61%, 32% 66%, 41% 65%, 48% 60%, 53% 56%, 61% 51%, 66% 48%, 73% 43%, 83% 38%, 92% 35%, 100% 31%, 100% 100%, 1% 100%);
-					animation: mar 3s  ease-in-out infinite;
+				color :rgba(21, 101, 248,.5);
+				clip-path: polygon(0% 46%, 16% 45%, 34% 52%, 50% 61%, 68% 65%, 85% 61%, 100% 53%, 100% 100%, 0% 100%);
+					animation: mar 2s  ease-in-out infinite;
 				}
 
 				&:nth-child(3){
-					color:rgba(5, 205, 255, 0.747);
-					clip-path: polygon(0% 65%, 6% 56%, 15% 52%, 23% 56%, 27% 61%, 32% 66%, 41% 65%, 48% 60%, 53% 56%, 61% 51%, 66% 48%, 73% 43%, 83% 38%, 92% 35%, 100% 31%, 100% 100%, 1% 100%);
-					animation: mar 5s ease-in-out infinite;
+					color:rgba(5, 205, 255, 0.5);
+					clip-path: polygon(0% 46%, 16% 45%, 34% 52%, 50% 61%, 68% 65%, 85% 61%, 100% 53%, 100% 100%, 0% 100%);
+					animation: mar 4s ease-in-out infinite;
 				}
 			}
 		}
