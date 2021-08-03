@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=RocknRoll+One&display=swap');
 
-:root {
-  --background-color-principal: #05AFF2;
-}
-
 *{
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -15,7 +11,7 @@ html{
 }
 
 body{
-  background: var(--background-color-principal);
+  background: #05AFF2;
 }
 
 /****** Header *****/
@@ -257,12 +253,6 @@ body{
   border-radius: 3px;
   letter-spacing: 1px;
   box-shadow: 0 1px 2px 0 hsla(143, 7%, 24%, 0.61);
-}
-
-.go-photos{
-  display: none;
-  width: 80px;
-  height: 12px;
 }
 
 .photos a:hover{
