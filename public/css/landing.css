@@ -1,0 +1,215 @@
+.present,
+.title {
+  color: var(--primary);
+  font-weight: 700;
+  margin: 0;
+}
+
+.present {
+  font-size: 24px;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 40px;
+  line-height: 60px;
+}
+
+.info {
+  max-inline-size: 375px;
+  margin-bottom: 20px;
+}
+
+.cta-1,
+.cta-2 {
+  text-decoration: none;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px 24px;
+  border-radius: 4px;
+}
+
+.cta-1 {
+  color: var(--background);
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.cta-2 {
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 0;
+}
+
+.hero {
+  position: relative;
+}
+
+.bird-1 {
+  position: absolute;
+  inset-inline-end: -50px;
+  inset-block-end: 150px;
+}
+
+.bird-2 {
+  position: absolute;
+  inset-inline-end: 30px;
+  inset-block-end: 200px;
+}
+
+.cody {
+  inline-size: 30vw;
+  padding-top: 85px; 
+}
+
+/* Vacactions, goals and marketing sections */
+
+.section-title {
+  font-size: 36px;
+  text-align: center;
+  color: var(--primary);
+  font-weight: 700;
+  margin: 0;
+}
+
+.cursos {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.curso {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--white);
+  max-inline-size: 300px;
+  border: 3px solid black;
+  border-radius: 15px;
+  text-align: center;
+  letter-spacing: .5px;
+  background-image: linear-gradient(75deg, var(--primary) 0%, var(--background) 30%);
+}
+
+.curso p {
+  padding: 0;
+  margin: 0;
+  max-inline-size: 290px;
+}
+
+.curso img {
+  margin-top: 5px;
+}
+
+.curso .img-2 {
+  inline-size: 60px;
+  margin-inline-start: 40px;
+}
+
+.curso:hover {
+  background-image: linear-gradient(75deg, var(--primary) 0%, var(--primary) 60%);
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  margin: 0;
+}
+
+ul li{
+  line-height: 30px;
+}
+ul li::marker {
+  content: "🚀";
+}
+
+.market {
+  inline-size: 375px;
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 25px 30px;
+}
+
+.market-link {
+  text-decoration: none;
+  color: black;
+}
+
+.logo,
+.coding {
+  margin-inline: 50%;
+  transform: translateX(-50%);
+}
+
+.market p {
+  margin-block-end: 0;
+}
+
+.cta-market {
+  background-color: #5BCC85;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 13px 24px;
+  margin-block: 18px;
+  letter-spacing: 1.5px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.flex-container-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.vacations {
+  margin-block: 60px;
+}
+
+.vacations img {
+  inline-size: 500px;
+}
+
+.vacations .flex-container {
+  justify-content: center;
+}
+
+.flex-container ol {
+  /* opacity: .35; */
+  color: var(--primary);
+  line-height: 35px;
+  margin-inline-start: 15%;
+}
+
+ol .active {
+  font-size: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 10px;
+}

@@ -1,0 +1,53 @@
+img {
+  inline-size: 100%;
+  max-inline-size: 725px;
+}
+
+.description {
+  inline-size: 100%;
+  max-inline-size: 375px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+}
+
+.location {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  /* Fix it: */
+  inset-block-end: -175px;
+  inset-inline-start: 0;
+}
+
+.location img {
+  inline-size: 50px;
+}
+
+.location p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.next {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  inline-size: 60px;
+  inset-inline-end: 100px;
+  inset-block-start: calc(30vw - 30%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.next:active {
+  transform: scale(.95);
+}

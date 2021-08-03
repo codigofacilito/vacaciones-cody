@@ -1,38 +1,56 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html {
+  --primary: #1bbc9b; 
+  --background: #421877; 
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0 100px;
+  background-color: var(--background);
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+.page {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+/* .page:hover {
+  background-color: #1BBC9B;
+} */
+
+.current {
+  color: var(--primary);
+}
+
+.navbar {
+  block-size: 17.5vh;
+  min-block-size: 65px;
+  max-block-size: 130px;
   display: flex;
-  gap: 1em;
+  align-items: center;
+  gap: 75px;
 }
 
-main{
-  text-align: center;
-  max-width: 960px;
-  margin:0 auto;
-}
-
-section{
-  margin-top: 3rem;
-}
-
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
-}
-
-ol li{
-  text-align: left;
+.sun {
+  background-color: #EAD839;
+  position: absolute;
+  inset-inline-end: -8%;
+  inset-block-start: -17.5%;
+  inline-size: 30vw;
+  block-size: 30vw;
+  max-inline-size: 400px;
+  max-block-size: 400px;
+  border-radius: 50%;
+  box-shadow: -18px 12px .5px rgba(234, 184, 57, .35);
+  z-index: -9;
 }
