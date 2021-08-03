@@ -1,8 +1,3 @@
-nav{
-  padding: 15px;
-  display: flex;
-  gap:1em;
-}
 nav ul{
   list-style: none;
   display: flex;
@@ -80,6 +75,39 @@ section{
 
 .story p{
   font-size: 0.85rem;
+}
+
+.posts-navigation{
+  padding:10px;
+}
+
+.posts-navigation{
+  padding:0;
+  border-top: 2px solid #f4f5f7;
+}
+.posts-navigation li{
+  margin: 0px 50px;
+}
+
+.posts-navigation li a{
+  display: flex;
+  color: #2a2a2a;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  align-items: center;
+}
+
+.posts-navigation li a:hover{
+  border-top:2px solid #2a2a2a;
+  margin-top: -2px;
+  text-decoration: none;
+}
+
+.posts-navigation li .active{
+  border-top:2px solid #2a2a2a;
+  margin-top: -2px;
 }
 
 .cursos div{
