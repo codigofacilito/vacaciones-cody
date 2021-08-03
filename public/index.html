@@ -5,96 +5,288 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- === SWIPER === -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+    <div class="nav_bar">
+      <nav class="nav bd-container">
+        <div class="logo">Cody</div>
+        <!-- <a href="#" class="nav__logo">Pizza´s Louis</a> -->
+  
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#home" class="nav__link">Inicio</a> </li>
+              <li class="nav__item"><a href="#cursos" class="nav__link">Cursos</a></li>
+              <li class="nav__item"><a href="#aprendizaje" class="nav__link">Aprendizaje</a></li>
+              <li class="nav__item"><a href="#colabora" class="nav__link">Colabora</a></li>
+              <li class="nav__item"><a href="#galeria" class="nav__link">Galeria</a></li>
+              <li class="nav__item"><a href="#beneficios" class="nav__link">Benficios</a></li>
+  
+            </ul>
+        </div>
+  
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
       </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+    </div>
+    <header class="header" id="home" >
+
+
+        <div class="hero">
+          <div class="hero_text">
+            <h1>ESTAS SON <br>MIS VACACIONES</h1>
+            <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+            <a class="boton" href="#galeria" class="nav__link">MIS FOTOS </a>
+          </div>
+          <div class="hero_image">
+            <img src="/public/images/cody-verano.png" alt="">
+          </div>
+        </div>
+
+
     </header>
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+    <section class="section" id="cursos">
+
+      <div class="container" >
+
+        <div class="section_text">
+          <header>
+            <h2>MIS VACACIONES FRONTEND</h2>
+          </header>
+          <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
+          <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+          <p> Estos son los cursos que estuve tomando </p>
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+        <div class="cursos">
+          <div class="curso">
+            <div class="icon">
+              <i class="ri-computer-line"></i>
+            </div>
+            <div>
+              <p>Curso profesional de Desarrollo Web</p>
+            </div>
+          </div>
+          <div class="curso">
+            <div class="icon">
+              <i class="ri-computer-line"></i>
+            </div>
+            <div>
+              <p>Curso para crear mi primera página web</p>
+            </div>
+          </div>
         </div>
+
+      </div>
+
+    </section>
+
+    <section class="bc_first" id="aprendizaje">
+
+      <div class="container">
+
+        <div class="section_text ">
+          <header>
+            <h2>RUTA DE APRENDIZAJE 2021</h2>
+            <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+          </header>
+        </div>
+
+        <div class="skills">
+
+          <div class="skill">
+            <div class="icon">
+              <i class="ri-grid-fill"></i>
+            </div>
+            <div>
+              <p>Flexbox, y Grid</p>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="icon">
+              <i class='bx bxl-javascript'></i>
+            </div>
+            <div>
+              <p> Animaciones con CSS y JavaScript</p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="icon">
+              <i class="ri-window-fill"></i>
+            </div>
+            <div>
+              <p>AJAX</p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="icon">
+              <i class='bx bxl-html5' ></i>
+            </div>
+            <div>
+              <p>HTML semántico</p>
+            </div>
+          </div>
+        
+        </div>
+
+      </div>
+
+    </section>
+    
+    <section class="bc_light" id="colabora">
+
+      <div class="container">
+
+        <div class="section_text">
+          <header>
+            <h2>COLABORA EN MI PAGINA</h2>
+          </header>
+          <p>
+            Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
+          </p>
+          <p>
+            Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+          </p>
+          <p>
+            Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
+            <a href="" target="_blank" >Ir al tutorial</a>
+          </p>
+        </div>
+
+        <div class="img_comp">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width="300" height="300" xml:space="preserve"><path d="M61 3.5H3c-1.654 0-3 1.346-3 3v40c0 1.654 1.346 3 3 3h20.72l-1.5 6H21c-1.654 0-3 1.346-3 3v1a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1v-1c0-1.654-1.346-3-3-3h-1.22l-1.5-6H61c1.654 0 3-1.346 3-3v-40c0-1.654-1.346-3-3-3zm-59 6h60v34H2v-34zm1-4h1.02c-.552 0-.994.447-.994 1s.452 1 1.005 1a1 1 0 1 0 0-2h2.988c-.552 0-.994.447-.994 1s.452 1 1.005 1a1 1 0 1 0 0-2h2.988c-.552 0-.994.447-.994 1s.452 1 1.005 1a1 1 0 1 0 0-2H61a1 1 0 0 1 1 1v1H2v-1a1 1 0 0 1 1-1zm18 52h22a1 1 0 0 1 1 1H20a1 1 0 0 1 1-1zm18.72-2H24.28l1.5-6h12.44l1.5 6zm21.28-8H3a1 1 0 0 1-1-1v-1h30.02c-.552 0-.994.447-.994 1s.452 1 1.005 1a1 1 0 1 0 0-2H62v1a1 1 0 0 1-1 1z"/><path d="M58.999 11.5H5a1 1 0 0 0-1 1v27.999a1 1 0 0 0 1 1h53.999a1 1 0 0 0 1-1V12.5a1 1 0 0 0-1-1zm-1 27.999H6V13.5h51.999v25.999z"/><path d="M53.293 18.207a.997.997 0 0 0 1.414 0l.293-.293.293.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414l-.293-.293.293-.293a.999.999 0 1 0-1.414-1.414l-.293.293-.293-.293a.999.999 0 1 0-1.414 1.414l.293.293-.293.293a.999.999 0 0 0 0 1.414zM10.004 29.5h2.999v1.002l.001.007c0 .185.012.368.028.549l-2.734 2.733a.999.999 0 1 0 1.414 1.414l1.962-1.961a6 6 0 0 0 5.315 3.253c.004 0 .008.003.013.003s.009-.003.013-.003a5.998 5.998 0 0 0 5.315-3.256l1.964 1.964a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414l-2.737-2.737c.017-.178.027-.356.027-.539 0-.004.003-.008.003-.013V29.5h3.001a1 1 0 1 0 0-2h-3.001v-.99l.002-.01c0-.189-.011-.376-.028-.561l2.733-2.732a.999.999 0 1 0-1.414-1.414l-1.962 1.962a6.066 6.066 0 0 0-1.33-1.715v-.54a3.992 3.992 0 0 0-1.699-3.262l.607-1.32a.999.999 0 1 0-1.816-.836l-.673 1.46c-.14-.015-.275-.042-.419-.042s-.279.027-.418.042l-.674-1.461a.999.999 0 1 0-1.816.838l.607 1.319a3.992 3.992 0 0 0-1.699 3.262v.54a6.013 6.013 0 0 0-1.329 1.714l-1.961-1.961a.999.999 0 1 0-1.414 1.414l2.731 2.731a5.81 5.81 0 0 0-.028.562l.002.01v.99h-2.999a1 1 0 1 0 0 2zm8.998-10a2 2 0 0 1 1.867 1.301c-.589-.192-1.215-.301-1.867-.301s-1.278.108-1.867.301a2 2 0 0 1 1.867-1.301zm0 3c1.858 0 3.412 1.279 3.859 3h-7.719c.448-1.721 2.002-3 3.86-3zm-3.998 8.002-.001-.005V27.5h2.999v6.855c-1.719-.446-2.998-1.997-2.998-3.853zm4.998 3.853V27.5h2.999v2.992l-.002.01c0 1.855-1.278 3.407-2.997 3.853zM34.001 25.5H53a1 1 0 1 0 0-2H34.001a1 1 0 1 0 0 2zM34.001 28.5H53a1 1 0 1 0 0-2H34.001a1 1 0 1 0 0 2zM34.001 22.5H53a1 1 0 1 0 0-2H34.001a1 1 0 1 0 0 2zM34.001 33.5H42a1 1 0 1 0 0-2h-7.999a1 1 0 1 0 0 2zM47 31.5a1 1 0 0 0-1-1h-1c-.011 0-.021.006-.031.006-.064.002-.127.024-.192.039-.066.016-.134.024-.194.053-.009.004-.02.003-.029.008-.045.022-.073.061-.113.088-.06.042-.12.079-.169.133-.044.047-.072.103-.106.157-.033.055-.07.104-.094.165-.025.068-.031.14-.042.212-.009.047-.03.089-.03.139 0 .011.006.02.006.03.002.066.024.13.04.196.016.065.024.131.052.19.004.01.003.021.008.03l.363.727A.985.985 0 0 0 44 33.5a1 1 0 0 0 1 1h1.001l.006-.001a.991.991 0 0 0 .413-.098c.009-.005.019-.003.027-.007.045-.022.073-.061.113-.088.06-.042.12-.079.169-.133.044-.047.072-.103.106-.157.033-.055.07-.104.094-.166.025-.067.031-.139.042-.211.008-.047.029-.089.029-.139 0-.011-.006-.02-.006-.03-.002-.066-.024-.13-.04-.195s-.023-.132-.052-.192c-.004-.009-.003-.02-.008-.029l-.363-.727A.985.985 0 0 0 47 31.5z"/></svg>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="galeria" id="galeria">
+
+      <div class="container rev_row">
+        <header class="section_text ">
+          <h2>MIS FOTOS</h2>
+          <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+        </header>
+
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"> <img loading="lazy" src="images/1.jpg" alt=""> </div>
+            <div class="swiper-slide"> <img loading="lazy" src="images/2.jpg" alt=""> </div>
+            <div class="swiper-slide"> <img loading="lazy" src="images/3.jpg" alt=""> </div>
+            <div class="swiper-slide"> <img loading="lazy" src="images/4.jpg" alt=""> </div>
+            <div class="swiper-slide"> <img loading="lazy" src="images/5.jpg" alt=""> </div>
+            <div class="swiper-slide"> <img loading="lazy" src="images/6.jpg" alt=""> </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>  
+
+        
+        <!-- <div class="fotos">
+          <img src="images/1.jpg" alt="Cody en la playa">
+          <img src="images/2.jpg" alt="Cody acampando">
+          <img src="images/3.jpg" alt="Cody en una alberca">
+          <p>
+            Puedes ver más, en la galería de fotos de mi página
+            <a href="fotos.html">Ir a la galería</a>
+          </p>
+        </div> -->
+
       </div>
     </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+    <section class="bc_first" id="beneficios">
 
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
+      <div class="container">
+        <header  class="section_text">
+          <h2>LA IMPORTANCIA DE LAS VACACIONES</h2>
+          <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+          <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+          <!-- <ol>
+            <li>Mejora la salud mental</li>
+            <li>Incrementa la motivación</li>
+            <li>Reduce el burnout</li>
+            <li>Mejora tu productividad y creatividad</li>
+          </ol> -->
+        </header>
+
+        <div class="skills">
+
+          <div class="skill">
+            <div class="icon">
+              <i class="ri-mental-health-fill"></i>
+            </div>
+            <div>
+              <p>Mejora la salud mental</p>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="icon">
+              <i class='bx bx-dumbbell'></i>
+            </div>
+            <div>
+              <p> Incrementa la motivación</p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="icon">
+              <i class='bx bx-pulse'></i>
+            </div>
+            <div>
+              <p>Reduce el burnout</p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="icon">
+              <i class="ri-computer-line"></i>
+            </div>
+            <div>
+              <p>Mejora tu productividad y creatividad</p>
+            </div>
+          </div>
+        
+        </div>
+
       </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
       
     </section>
     
   </main>
+
+      <!--========== FOOTER ==========-->
+      <footer class="footer section bd-container">
+        <p class="footer__copy">&#169; Diseñado por EduardoJmz</p>
+    </footer>
+
+      <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+  <!-- three js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+    integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+
+    <!-- ==================== SCROLL REVEAL ======================  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+
+  <!-- ===== SWIPER JS ===== -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="js/main.js"></script>
+
 </body>
 </html>
