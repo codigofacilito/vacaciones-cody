@@ -27,3 +27,8 @@ p {
   outline: 0;
   box-shadow: 0 0 0 2px var(--focus-border), 0 0 4px var(--focus-shadow);
 }
+
+*::selection {
+  background-color: var(--sea-200);
+  color: var(--gray-100);
+}

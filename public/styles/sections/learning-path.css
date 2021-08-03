@@ -40,7 +40,7 @@
 .learning-path__item:not(:last-child)::after {
   content: '';
   width: 4px;
-  height: 90px;
+  height: 104px;
   background-color: var(--learning-path-bar-color);
   position: absolute;
   top: 0.5rem;

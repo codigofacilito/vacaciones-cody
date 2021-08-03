@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 2rem 0;
   gap: 2rem;
 }
@@ -64,13 +64,18 @@
   color: var(--body-secondary-text);
 }
 
-.property:last-child::before {
+.property--video::before {
+  content: url(../../images/video.svg);
+}
+
+.property--exam::before {
   content: url(../../images/cap.svg);
 }
 
-.property:first-child::before {
-  content: url(../../images/video.svg);
+.property--online::before {
+  content: url(../../images/cloud.svg);
 }
+
 
 .course__image {
   border-radius: 50%;
@@ -96,12 +101,12 @@
   left: -150%;
   height: 100%;
   z-index: -1;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 767px) {
   .courses {
     height: auto;
-    /* height: min-content; */
   }
   .courses__back-image {
     left: 0;
@@ -113,6 +118,6 @@
   .courses__back-image {
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 }
