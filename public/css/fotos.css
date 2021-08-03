@@ -1,0 +1,308 @@
+/* Animaciones hechas a codigo puro */
+* {
+  padding: 0;
+  outline: none;
+  margin: 0;
+  font-family: "Source Sans Pro", "segoe ui", georgia, verdana;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+*::selection {
+  background: yellow;
+  color: rgb(61, 59, 63);
+}
+
+main {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-flow: row wrap;
+}
+header {
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to right, #ff3cac, #784ba0, #2b86c5);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: flex-end;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+header a:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+nav {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+nav a {
+  font-size: 2rem;
+  color: white;
+  margin-right: 20px;
+}
+
+.fotos {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+.img {
+  width: 30%;
+  height: 49%;
+  transition: 0.3s ease-in;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  position: relative;
+  overflow: hidden;
+  filter: grayscale(90%);
+}
+.img .banner {
+  position: absolute;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+  width: 50%;
+  transition: 0.4s ease-in;
+  height: 50px;
+  top: 0;
+  background: linear-gradient(to left, orange, violet);
+  right: -1000px;
+}
+.img:hover .banner {
+  right: 0;
+}
+.img:hover {
+  filter: grayscale(0%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+.flota {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  background-image: url(https://codigofacilito.com/assets/verano-2021/cody-verano-95c1d9e3a3d913ed0d97f7adcd2d38046b241b99f450356dfd2e8dcd9b9aebf3.png);
+  background-position: center center;
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+  left: -1000px;
+  animation: cody-fly 17s 1s;
+  animation-iteration-count: 1;
+}
+@keyframes cody-fly {
+  30% {
+    left: 100%;
+  }
+}
+
+#fin {
+  animation: homer 17s 2s;
+  background-image: url(https://thumbs.gfycat.com/SlowSilverAtlanticridleyturtle-size_restricted.gif);
+}
+@keyframes homer {
+  38% {
+    left: 100%;
+  }
+  85% {
+    transform: rotateY(200deg);
+  }
+}
+#msg {
+  background: none;
+  width: 100px;
+  height: 80px;
+  font-size: 1.6rem;
+  animation: msg 17s 2s;
+  animation-iteration-count: 1;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+@keyframes msg {
+  32% {
+    left: 100%;
+  }
+}
+
+section {
+  height: 900px;
+  width: 100%;
+  color: white;
+  background: rgb(79, 35, 121);
+  font-size: 2.1rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+section .h1 {
+  padding: 0px 30px;
+  width: 100%;
+  height: 20%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+.cajapadre {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+.cajas {
+  width: 30%;
+  height: 40%;
+  background-image: url(../images/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  overflow: hidden;
+  font-size: 1.1rem;
+}
+.caja1 {
+  background-image: url(../img/3.webp);
+}
+.caja2 {
+  background-image: url(../img/6.webp);
+}
+.caja3 {
+  background-image: url(../img/2.webp);
+}
+.caja4 {
+  background-image: url(../img/1.webp);
+}
+.caja5 {
+  background-image: url(../img/4.webp);
+}
+.caja6 {
+  background-image: url(../img/5.webp);
+}
+.cajas a {
+  border-radius: 20px;
+  width: 50%;
+  height: 50px;
+  background: yellow;
+  color: black;
+  opacity: 0;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+.cajas:hover a {
+  opacity: 1;
+}
+.cajas a:active {
+  top: 5px;
+  position: relative;
+}
+.h2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  transition: 0.3s ease-in;
+  background: linear-gradient(
+    to right,
+    rgb(255, 60, 172, 0.7),
+    rgb(120, 75, 160, 0.7),
+    rgb(43, 134, 197, 0.7)
+  );
+  padding: 0px 20px;
+  top: -1000px;
+}
+.cajas:hover .h2 {
+  top: 0;
+}
+
+/* contacto seccion */
+.contacto {
+  width: 100%;
+  height: 130px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  position: relative;
+}
+
+.network {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s ease-in;
+  cursor: pointer;
+}
+.contacto:hover .sombra1 {
+  width: 100%;
+}
+i {
+  transition: 0.3s ease-in;
+  color: rgb(54, 50, 50);
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+i:hover {
+  color: white;
+  transform: scale(1.4);
+}
+.sombra1 {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to right, #ff3cac, #784ba0, #2b86c5);
+  position: absolute;
+  left: 0;
+  transition: 0.3s ease-in;
+}
+.firma {
+  width: 100%;
+  height: 50px;
+  padding: 0px 20px;
+  color: rgb(54, 50, 50);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+/* coding by Jhonny Lefter*/

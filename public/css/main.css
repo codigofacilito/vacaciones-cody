@@ -1,0 +1,631 @@
+﻿/* Animaciones hechas a codigo puro */
+* {
+  padding: 0;
+  outline: none;
+  margin: 0;
+  font-family: "Source Sans Pro", "segoe ui", georgia, verdana;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: context-menu;
+}
+body {
+  overflow-x: hidden;
+}
+
+*::selection {
+  background: yellow;
+  color: rgb(43, 40, 40);
+}
+
+.header {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+}
+/* banner gag*/
+.goma {
+  width: 100%;
+  height: 100%;
+  top: -2000px;
+  position: absolute;
+  background: linear-gradient(to right, rgb(78, 78, 73), blueviolet);
+  animation: goma 7s 1s;
+  z-index: 111;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  font-size: 2rem;
+  color: white;
+  animation-iteration-count: 1;
+}
+
+@keyframes goma {
+  50% {
+    top: 100%;
+  }
+}
+.header .nav-bar {
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to right, #ff3cac, #784ba0, #2b86c5);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0px 40px;
+}
+.menu2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+.nav-bar .menu2 a {
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+  margin-right: 20px;
+}
+
+.menu1 {
+  font-weight: bold;
+
+  color: white;
+  cursor: context-menu;
+  font: 3.5rem "segoe ui";
+}
+.nav-bar a:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+.presentation {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  background: linear-gradient(to right, #ff3cac, #784ba0, #2b86c5);
+  overflow: hidden;
+}
+.wave-header {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  border: 0;
+}
+.presentation .text {
+  z-index: 2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+  height: 100%;
+  padding: 0px 30px;
+  font-size: 1.7rem;
+  color: white;
+}
+.presentation .presentation-pic {
+  z-index: 2;
+  width: 50%;
+  height: 100%;
+  background-image: url(https://codigofacilito.com/assets/verano-2021/cody-verano-95c1d9e3a3d913ed0d97f7adcd2d38046b241b99f450356dfd2e8dcd9b9aebf3.png);
+  background-position: center center;
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  animation: flotapic 3s infinite linear 1s;
+}
+/* animacion para que flote el elemento que
+contiene la imagen del header*/
+@keyframes flotapic {
+  50% {
+    transform: translatey(-20px);
+  }
+}
+
+/* contenedor section1*/
+.section-one {
+  width: 100%;
+  height: 800px;
+
+  overflow: hidden;
+  display: flex;
+  flex-flow: column wrap;
+}
+.section-one header {
+  width: 100%;
+  height: 20%;
+  color: rgb(100, 96, 96);
+  font-size: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.section-one .text-description {
+  width: 100%;
+  height: 20%;
+  color: rgb(61, 58, 58);
+  font-size: 1.2rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.text-description p {
+  font-family: "segoe ui";
+}
+.section-one .cursos {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.section-one .cursos .curso-uno {
+  width: 30%;
+  height: 90%;
+  box-shadow: 3px 3px 5px gray;
+  display: flex;
+  flex-flow: column wrap;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+}
+
+.section-one .cursos .curso-dos {
+  width: 30%;
+  height: 90%;
+  box-shadow: 3px 3px 5px gray;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+}
+.section-one .cursos .curso-tres {
+  width: 30%;
+  height: 90%;
+  box-shadow: 3px 3px 5px gray;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+}
+.zindex {
+  z-index: 5;
+}
+.curso-item1:hover .zindex {
+  color: white;
+  transition: 0.3s ease-in;
+}
+.efecto {
+  width: 100%;
+  height: 0%;
+  z-index: 3;
+  position: absolute;
+
+  bottom: 0;
+  background: rgb(51, 57, 134);
+  transition: 0.3s ease-in;
+}
+.curso-item1:hover .efecto {
+  height: 100%;
+  width: 100%;
+}
+.curso-item1 p {
+  font-family: "segoe ui";
+}
+.curso-item1 {
+  text-align: center;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.curso-item1 i {
+  font-size: 5.5rem;
+}
+
+.curso-item2 {
+  width: 100%;
+  height: 20%; /*
+  background: linear-gradient(to right, rgb(80, 77, 73), rgb(75, 69, 150));*/
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  font-weight: bold;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+}
+*:root {
+  --color1: rgb(182, 61, 182);
+  --color1: rgb(51, 57, 134);
+  --tiempo: 0.3s ease-in;
+}
+.btn:active {
+  top: 5px;
+}
+.curso-item2 .btn {
+  font-family: "segoe ui";
+  font-size: 1.2rem;
+  background: none;
+  width: 250px;
+  height: 60%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--color1);
+}
+.btn:hover .btn1 {
+  width: 100%;
+}
+.btn:hover .btn2 {
+  height: 100%;
+}
+.btn:hover .btn3 {
+  width: 100%;
+}
+.btn:hover .btn4 {
+  height: 100%;
+}
+.btn1 {
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: var(--color1);
+  transition: var(--tiempo);
+}
+.btn2 {
+  position: absolute;
+  width: 3px;
+  height: 20%;
+  bottom: 0;
+  right: 0;
+  background: var(--color1);
+  transition: var(--tiempo);
+}
+.btn3 {
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  bottom: 0;
+  right: 0;
+  background: var(--color1);
+  transition: var(--tiempo);
+}
+.btn4 {
+  position: absolute;
+  width: 3px;
+  height: 20%;
+  top: 0;
+  left: 0;
+  background: var(--color1);
+  transition: var(--tiempo);
+}
+
+/* contenedor section2*/
+.section-two {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  font-weight: bold;
+  background: #784ba0;
+  color: rgb(255, 255, 255);
+  flex-flow: column wrap;
+}
+.section-two header {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: 0px 30px;
+  font-size: 2rem;
+}
+.listas {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.listas .ul {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.ul li {
+  font-size: 1.5rem;
+  list-style-type: disc;
+}
+.listas .foto-listas {
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center center;
+  background-image: url(../img/1.svg);
+}
+/* contenedor section3*/
+.section-three {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  color: rgb(43, 41, 41);
+  display: flex;
+  flex-flow: column wrap;
+}
+.section-three header {
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 30px;
+  font-size: 2rem;
+}
+.section-three .texto {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-start;
+
+  color: rgb(53, 51, 51);
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 20px 0px;
+}
+.section-three .texto p {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.texto .a {
+  width: 300px;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  margin-top: 40px;
+  margin-right: 30px;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  position: relative;
+  color: rgb(56, 58, 59);
+}
+.texto .a:hover {
+  color: rgb(32, 193, 233);
+}
+.texto .a:active {
+  position: relative;
+  top: 5px;
+}
+/* efecto culebra fugaz al hipervínculo*/
+.texto .a .uno {
+  background: linear-gradient(to right, transparent, rgb(32, 193, 233));
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  left: -800px;
+  animation: efect1 3s infinite linear;
+}
+@keyframes efect1 {
+  30% {
+    left: 100%;
+  }
+}
+
+.texto .a .dos {
+  background: linear-gradient(to bottom, transparent, rgb(32, 193, 233));
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  right: 0;
+  top: -800px;
+  animation: efect2 3s infinite linear;
+}
+@keyframes efect2 {
+  30% {
+    top: 100%;
+  }
+}
+.texto .a .tres {
+  background: linear-gradient(to left, transparent, rgb(32, 193, 233));
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  right: -800px;
+  animation: efect3 3s infinite linear;
+}
+@keyframes efect3 {
+  30% {
+    right: 100%;
+  }
+}
+.texto .a .cuatro {
+  position: absolute;
+  background: linear-gradient(to bottom, transparent, rgb(32, 193, 233));
+  height: 100%;
+  left: 0;
+  bottom: -800px;
+  width: 5px;
+  animation: efect4 3s infinite linear;
+}
+@keyframes efect4 {
+  30% {
+    bottom: 100%;
+  }
+}
+
+/* contenedor section-four*/
+
+.section-four {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background: rgb(78, 72, 72);
+  display: flex;
+  flex-flow: column wrap;
+  color: white;
+}
+.section-four header {
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 30px;
+  font-size: 2rem;
+}
+.section-four .fotos {
+  width: 100%;
+  height: 80%;
+
+  display: flex;
+  flex-flow: column wrap;
+}
+.section-four .fotos .pics {
+  width: 100%;
+  height: 80%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.section-four .fotos .pics img {
+  filter: sepia(90%);
+  width: 30%;
+  height: 80%;
+  transition: 0.3s ease-in;
+}
+.section-four .fotos .pics img:hover {
+  filter: sepia(0%);
+}
+.section-four .fotos .text-pics {
+  width: 100%;
+  height: 20%;
+  padding: 0px 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
+  font-size: 1.6rem;
+}
+.orange {
+  color: orange;
+  cursor: pointer;
+}
+/*
+.section-four .fotos .text-pics p a {
+  color: orange;
+}
+*/
+/* contenedor section-five*/
+.section-five {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background: rgb(81, 69, 136);
+  background: #2b86c5;
+  display: flex;
+  flex-flow: column wrap;
+  color: white;
+}
+.section-five header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 70px;
+  font-size: 1.8rem;
+}
+.section-five header ol li {
+  list-style-type: disc;
+}
+/* contacto seccion */
+.contacto {
+  width: 100%;
+  height: 130px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  position: relative;
+  overflow: hidden;
+}
+
+.network {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s ease-in;
+  cursor: pointer;
+}
+.contacto:hover .sombra1 {
+  width: 100%;
+}
+i {
+  transition: 0.2s ease-in;
+  color: rgb(54, 50, 50);
+  font-size: 3rem;
+}
+.zj {
+  cursor: pointer;
+}
+
+.zj:hover {
+  color: white;
+  transform: scale(1.4);
+}
+.sombra1 {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to right, #ff3cac, #784ba0, #2b86c5);
+  position: absolute;
+  left: 0;
+  transition: 0.3s ease-in;
+}
+.firma {
+  width: 100%;
+  height: 50px;
+  padding: 0px 20px;
+  color: rgb(54, 50, 50);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+/* coding by Jhonny Lefter*/

@@ -1,0 +1,77 @@
+@media screen and (max-width: 900px) {
+  header h2 {
+    font-size: 0.8;
+  }
+  header {
+    height: 15%;
+  }
+  .fotos {
+    height: 85%;
+  }
+  main {
+    height: 1600px;
+  }
+  section .h1 {
+    font-size: 1.4rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .img {
+    width: 80%;
+    height: 15%;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+  .dos,
+  .cuatro,
+  .seis {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  }
+}
+@media screen and (max-width: 700px) {
+  section {
+    height: 1500px;
+  }
+  section .h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    height: 15%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .cajapadre {
+    height: 85%;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .cajapadre .cajas {
+    justify-content: center;
+    align-content: flex-end;
+    width: 80%;
+    height: 16%;
+  }
+  .cajas .a {
+    height: 50px;
+    font-size: 0.7;
+    text-align: center;
+  }
+
+  header {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+  }
+  header nav {
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+  #msg {
+    display: none;
+  }
+}
+/* coding by Jhonny Lefter*/

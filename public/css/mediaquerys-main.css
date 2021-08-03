@@ -1,0 +1,196 @@
+/* media querys */
+@media screen and (max-width: 1100px) {
+  .section-one header {
+    font-size: 1.5rem;
+  }
+  .section-one .text-description {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .section-four header {
+    font-size: 1.3rem;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .section-two header {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .goma {
+    text-align: center;
+  }
+  .header .presentation .text {
+    font-size: 1.5rem;
+  }
+  .section-two .listas .ul {
+    padding: 0px 50px;
+  }
+  .section-three .texto {
+    padding: 0px 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .nav-bar {
+    justify-content: space-evenly;
+  }
+  .nav-bar .menu1 {
+    font-size: 1.9rem;
+  }
+  .nav-bar .menu2 {
+    font-size: 1.5rem;
+  }
+  .header .presentation .text {
+    font-size: 1.3rem;
+  }
+  .section-one {
+    height: 1900px;
+  }
+  .section-one header {
+    height: 10%;
+  }
+  .section-one .text-description {
+    padding: 0px 20px;
+    height: 10%;
+  }
+  .section-one .cursos {
+    height: 80%;
+  }
+  .section-one .cursos .curso-uno {
+    width: 80%;
+    height: 30%;
+  }
+  .section-one .cursos .curso-dos {
+    width: 80%;
+    height: 30%;
+  }
+  .section-one .cursos .curso-tres {
+    width: 80%;
+    height: 30%;
+  }
+  .section-one .cursos .curso-item2 p {
+    font-size: 0.9rem;
+  }
+  .section-two {
+    height: 1300px;
+  }
+  .section-two header {
+    height: 10%;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .section-two .listas {
+    height: 90%;
+  }
+
+  .section-two .listas .ul {
+    text-align: center;
+    width: 100%;
+    height: 70%;
+  }
+  .section-two .listas .foto-listas {
+    width: 100%;
+    height: 30%;
+  }
+  .section-four {
+    height: 1400px;
+  }
+  .section-four .fotos .pics img {
+    width: 80%;
+    height: 30%;
+  }
+  .section-four .fotos .pics {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+  }
+  .section-five header {
+    font-size: 1.4rem;
+  }
+  .section-three {
+    height: 700px;
+    font-size: 1.5rem;
+  }
+  .section-three header {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-five {
+    height: 700px;
+  }
+  .header .presentation .text {
+    width: 100%;
+    height: 50%;
+  }
+  .header .presentation .presentation-pic {
+    width: 100%;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-one {
+    height: 1600px;
+  }
+  .section-one .text-description {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: center;
+    font-size: 1rem;
+  }
+  .section-three {
+    height: 900px;
+  }
+
+  .header {
+    height: 700px;
+  }
+  header .nav-bar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-evenly;
+  }
+  .menu1,
+  .menu2 {
+    text-align: center;
+    width: 100%;
+  }
+  .menu1 {
+    font: 2.1rem "segoe ui";
+    font-weight: bold;
+
+    color: rgb(255, 255, 255);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .section-one {
+    height: 2000px;
+  }
+  .section-one header {
+    text-align: center;
+  }
+  .section-one .text-description {
+    font-size: 0.9;
+  }
+  .section-five header {
+    font-size: 1.2rem;
+  }
+  .presentation .text {
+    text-align: center;
+  }
+  .goma {
+    font-size: 1.3rem;
+  }
+  .header {
+    height: 930px;
+  }
+}
+/* coding by Jhonny Lefter*/
