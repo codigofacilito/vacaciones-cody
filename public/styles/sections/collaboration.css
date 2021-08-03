@@ -1,0 +1,108 @@
+.collaboration {
+  width: 100%;
+  max-width: var(--max-width);
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; */
+  /* gap: 2rem; */
+}
+
+.collaboration-container {
+  display: inherit;
+}
+
+.collaboration__image {
+  display: block;
+  filter: drop-shadow(0 10px 2.5rem var(--collaboration-image-shadow));
+  margin: 4rem auto;
+  width: 200px;
+}
+
+.collaboration__container-image-repository {
+  width: auto;
+  position: relative;
+  display: inline-block;
+  margin: 2rem auto 3rem;
+}
+
+.collaboration__image-repository {
+  width: 100%;
+  border-radius: 0.75rem;
+  object-fit: contain;
+  display: inline-block;
+  position: relative;
+  background: var(--sand-200);
+}
+
+.collaboration__container-image-repository::before {
+  content: '';
+  font-display: block;
+  width: 90%;
+  height: 35%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: var(--card-shadow-color);
+  filter: blur(2rem);
+  z-index: -1;
+}
+
+.collaboration__content {
+  font-size: 1.125rem;
+  color: var(--body-secondary-text);
+}
+
+.collaboration__link {
+  color: var(--link-active-color);
+  text-decoration:underline;
+}
+
+.collaboration__content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.collaboration__content-container::before {
+  content: url(../../images/startfish.png);
+  width: 48px;
+  height: 46px;
+  transform: rotate(18deg);
+  align-self: flex-end;
+}
+
+.collaboration__content-container::after {
+  content: url(../../images/concha.png);
+  width: 48px;
+  height: 43px;
+  transform: rotate(-145deg);
+  align-self: flex-start;
+}
+
+@media screen and (min-width: 767px) {
+  .collaboration-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1 1 0px;
+    gap: 3.5rem;
+  }
+
+  .collaboration__content-container {
+    flex-shrink: 3;
+    width: 50%;
+  }
+
+  .collaboration__image {
+    flex-shrink: 1;
+    align-self: center;
+    width: 280px;
+  }
+}

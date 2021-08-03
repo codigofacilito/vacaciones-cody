@@ -1,0 +1,65 @@
+.importance {
+  width: 100%;
+  max-width: var(--max-width);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  padding: 2rem 3rem;
+  margin: 0 auto;
+}
+
+.importance__title {
+  margin-bottom: 1.5em;
+}
+
+.importance__image {
+  width: 100%;
+  max-width: 280px;
+  object-fit: contain;
+}
+
+.importance__content {
+  font-size: 1.125rem;
+  color: var(--body-secondary-text);
+  text-align: center;
+}
+
+.importance__list {
+  margin-top: 3em;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.importance__item {
+  list-style: none;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.importance__item svg {
+  color: var(--emerald-200);
+}
+
+.importance::before {
+  content: url(../../images/concha.png);
+  width: 48px;
+  height: 46px;
+  transform: rotate(65deg);
+  align-self: flex-end;
+}
+
+.importance::after {
+  content: url(../../images/startfish.png);
+  width: 48px;
+  height: 43px;
+  transform: rotate(-240deg);
+  align-self: flex-start;
+}

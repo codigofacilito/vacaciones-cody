@@ -1,0 +1,25 @@
+{
+  "name": "vacaciones-cody",
+  "version": "1.0.0",
+  "description": "Cody está aprendiendo desarrollo Frontend, hizo su primer página, y ahora necesita de tu ayuda para mejorarla.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "servor public index.html 3000 --reload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidp46/vacaciones-cody.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidp46/vacaciones-cody/issues"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "devDependencies": {
+    "servor": "^4.0.2"
+  }
+}

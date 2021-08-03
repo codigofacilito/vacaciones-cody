@@ -1,0 +1,18 @@
+@import "./fonts.css";
+@import "./variables.css";
+@import "./global.css";
+@import "./animations.css";
+
+@import "./components/navbar.css";
+@import "./components/button.css";
+
+@import "./sections/main.css";
+@import "./sections/banner.css";
+@import "./sections/introduction.css";
+@import "./sections/learning-path.css";
+@import "./sections/courses.css";
+@import "./sections/collaboration.css";
+@import "./sections/photos.css";
+@import "./sections/importance.css";
+
+@import "./sections/gallery.css";

@@ -1,0 +1,123 @@
+.courses {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.courses__list {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.5rem;
+}
+
+.courses__course {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  position: relative;
+}
+
+.course__badge {
+  width: 40px;
+  align-self: center;
+}
+
+.course__name {
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.course__author {
+  font-size: 1rem;
+  color: var(--body-secondary-text);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.course__properties {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-self: center;
+}
+
+.property {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 4px;
+  font-size: 0.875rem;
+  color: var(--body-secondary-text);
+}
+
+.property--video::before {
+  content: url(../../images/video.svg);
+}
+
+.property--exam::before {
+  content: url(../../images/cap.svg);
+}
+
+.property--online::before {
+  content: url(../../images/cloud.svg);
+}
+
+
+.course__image {
+  border-radius: 50%;
+}
+
+.courses__course::before {
+  content: '';
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 85%;
+  height: 2rem;
+  background-color: var(--card-shadow-color);
+  z-index: -1;
+  filter: blur(32px);
+}
+
+.courses__back-image {
+  position: absolute;
+  top: 0;
+  left: -150%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 767px) {
+  .courses {
+    height: auto;
+  }
+  .courses__back-image {
+    left: 0;
+  }
+  .courses__list {
+    flex-direction: row;
+  }
+
+  .courses__back-image {
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

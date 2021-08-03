@@ -1,0 +1,103 @@
+.gallery {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.gallery__collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-content: center;
+}
+
+.gallery__wrapper {
+  position: relative;
+  background: var(--sand-200);
+  display: inherit;
+  border-radius: 0.5rem;
+}
+
+.gallery__image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.gallery__badge {
+  position: absolute;
+  top: 0.5rem;
+  font-weight: 0.875rem;
+  font-weight: 500;
+  right: 0.5rem;
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(16px);
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  color: var(--body-secondary-text);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gallery__badge::before {
+  content: url(../../images/location.svg);
+  display: inline-block;
+  height: 15px;
+}
+
+.gallery::before,
+.gallery::after {
+  content: "";
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery::before {
+  background-image: url(../../images/concha.png);
+  width: 48px;
+  height: 46px;
+  transform: rotate(-45deg);
+  align-self: flex-end;
+}
+
+.gallery::after {
+  background-image: url(../../images/startfish.png);
+  width: 48px;
+  height: 43px;
+  transform: rotate(245deg);
+  align-self: flex-start;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(24px);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen__container {
+  width: 75%;
+  max-height: 100%;
+  position: relative;
+}
+
+.fullscreen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}

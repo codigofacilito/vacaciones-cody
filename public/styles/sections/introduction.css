@@ -1,0 +1,45 @@
+.introduction {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.introduction__content {
+  font-size: 1.125rem;
+  color: var(--body-secondary-text);
+}
+
+.introduction::before,
+.introduction::after {
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.introduction::before {
+  background-image: url(../../images/startfish.png);
+  width: 48px;
+  height: 46px;
+  transform: rotate(25deg);
+  align-self: flex-end;
+}
+
+.introduction::after {
+  background-image: url(../../images/concha.png);
+  width: 48px;
+  height: 43px;
+  transform: rotate(-25deg);
+  align-self: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .introduction {
+    grid-column: 2/3;
+  }
+}

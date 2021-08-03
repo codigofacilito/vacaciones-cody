@@ -1,0 +1,30 @@
+.navbar {
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: var(--navbar-background);
+  box-shadow: inset 0 -1px 0 0 var(--navbar-shadow);
+  z-index: 2;
+}
+
+.navbar__link {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.125s ease-in-out;
+}
+
+.navbar__link:hover {
+  background-color: var(--link-hover-background);
+}
+
+.navbar__link--active {
+  color: var(--link-active-color);
+}

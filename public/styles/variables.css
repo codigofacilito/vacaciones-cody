@@ -1,0 +1,41 @@
+:root {
+  /* Base colors */
+  --gray-100: #181C1E;
+  --gray-200: #48575F;
+  --sand-100: #D0990C;
+  --sand-200: #E5C995;
+  --sand-300: #FCEFD6;
+  --sea-100: #9DC9E2;
+  --sea-200: #A9DBF8;
+  --emerald-100: #117B65;
+  --emerald-200: #1BBD9C;
+
+  /* Body colors */
+  --body-background: var(--sand-300);
+  --body-text: var(--gray-100);
+  --body-secondary-text: var(--gray-200);
+
+  --focus-border: var(--emerald-100);
+  --focus-shadow: var(--emerald-200);
+
+  /* Links vars */
+  --link-color: var(--gray-200);
+  --link-hover-background: rgba(0, 0, 0, 0.1);
+  --link-active-color: var(--emerald-100);
+
+  /* Navbar */
+  --navbar-background: var(--sand-300);
+  --navbar-shadow: rgba(0, 0, 0, 0.08);
+
+  --button-primary-background: var(--emerald-200);
+  --button-primary-text: var(--gray-100);
+
+  --learning-path-bar-color: var(--sand-200);
+
+  --card-shadow-color: var(--gray-200);
+  
+  --collaboration-image-shadow: #1BBD9C80;
+
+  --max-width: 1140px;
+  
+}

@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik', system-ui;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--body-background);
+  color: var(--body-text);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+p {
+  line-height: 1.5;
+}
+
+*:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--focus-border), 0 0 4px var(--focus-shadow);
+}
+
+*::selection {
+  background-color: var(--sea-200);
+  color: var(--gray-100);
+}

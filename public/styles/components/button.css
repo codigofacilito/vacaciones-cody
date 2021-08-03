@@ -1,0 +1,26 @@
+.button {
+  font-size: 1rem;
+  font-weight: 500;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: transform 0.125s ease;
+}
+
+.button--primary {
+  background-color: var(--button-primary-background);
+  color: var(--button-primary-text);
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
