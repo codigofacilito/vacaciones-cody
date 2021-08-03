@@ -259,6 +259,11 @@ nav ul li a {
     width: 450px;
   }
 }
+@media screen and (max-width: 868px) {
+  .container__vector img {
+    width: 350px;
+  }
+}
 @media screen and (max-width: 760px) {
   .container__nav {
     display: flex;
