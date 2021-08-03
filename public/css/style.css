@@ -1,3 +1,21 @@
+:root {
+  --light:#fafafa;
+  --dark: #4d4d4d;
+  --blue: #073E8A;
+  --pink: #F66E66;
+  --green:#1BBC9B;
+  --body: #F5F5F5;
+}
+
+body{
+  background-color: var(--body);
+  color: var(--dark);
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: var(--pink);
+  font-weight: bold !important;
+}
 
 .container{
   margin: 100px auto !important;
@@ -6,23 +24,20 @@
 .btn{
   box-shadow: none;
   border: 1px solid;
-}
-.btn-success:hover{
-  background: white;
-  color: #5BCC85;
-  border: 1px solid #5BCC85;
-  box-shadow: none;
+  background: var(--green);
+  color: var(--light);
+  border: 1px solid var(--green);
 }
 
-.btn-danger:hover{
-  background: white;
-  color: #FD585F;
-  border: 1px solid #FD585F;
+.btn:hover{
+  background: var(--light);
+  color: var(--green);
+  border: 1px solid var(--green);
   box-shadow: none;
 }
 
 .back{
-  background: #0088FF;
+  background: var(--blue);
 }
 
 .imgcard{
@@ -30,9 +45,36 @@
   height: 100%;
 }
 
+i:hover{
+  cursor: pointer;
+  color: var(--green);
+}
+
+.skill{
+  font-size: 500%;
+  color: var(--blue);
+  margin: 10px;
+  padding: 10px;
+}
+
+.text1{
+  color: var(--light);
+}
+.text2{
+  color: var(--dark);
+}
+.text3{
+  color: var(--pink);
+}
+.text4{
+  color: var(--blue);
+}
+.text5{
+  color: var(--green);
+}
  /* Default height for small devices */
     #intro-example {
-      height: 500px;
+      height: 600px;
     }
 
     /* Height for devices larger than 992px */
