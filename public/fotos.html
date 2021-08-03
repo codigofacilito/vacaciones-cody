@@ -7,14 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <script defer type="text/javascript" src="./js/nightmode.js"></script>
 </head>
 
-<body>
+<body id="body">
   <main>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
+      <nav id="navegador">
+        <a href="index.html">Inicio</a>
         <a href="fotos.html">Fotos</a>
+        <label class="switchBtn" id="switchBtn" onclick="switching()">
+            <input type="checkbox" id="check-in">
+            <div class="slide round" id="switch-button">Day Mode</div>
+        </label>
       </nav>
       <h2>Galería completa de mis vacaciones</h2>
     </header>
@@ -25,7 +30,7 @@
       <img src="images/4.jpg" alt="Cody en una alberca">
       <img src="images/5.jpg" alt="Cody en una alberca">
       <img src="images/6.jpg" alt="Cody en una alberca">
-      
+
     </div>
 
   </main>

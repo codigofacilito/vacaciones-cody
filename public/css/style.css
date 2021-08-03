@@ -1,13 +1,148 @@
+@font-face {
+  font-family: "Bebas Neue";
+   src: url("..\\fonts\\bebasneue-bold.eot");
+
+   src: url("..\\fonts\\bebasneue-bold.eot?#iefix") format('embedded-opentype'),
+
+        url("..\\fonts\\bebasneue-bold.woff") format('woff'),
+
+        url("..\\fonts\\bebasneue-bold.ttf") format('truetype'),
+
+        url("..\\fonts\\bebasneue-bold.svg#adlerRegular") format('svg');
+
+  font-weight: bold;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+   src: url("..\\fonts\\bebasneue-regular.eot");
+
+   src: url("..\\fonts\\bebasneue-regular.eot?#iefix") format('embedded-opentype'),
+
+        url("..\\fonts\\bebasneue-regular.woff") format('woff'),
+
+        url("..\\fonts\\bebasneue-regular.ttf") format('truetype'),
+
+        url("..\\fonts\\bebasneue-regular.svg#adlerRegular") format('svg');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?6s6d3k');
+    src:    url('../fonts/icomoon.eot?6s6d3k#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?6s6d3k') format('truetype'),
+        url('../fonts/icomoon.woff?6s6d3k') format('woff'),
+        url('../fonts/icomoon.svg?6s6d3k#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 7px;
+}
+
+body::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+body{
+  font-family: "Bebas Neue";
+  background: #99D0F2;
+  color: #465902;
+}
+
 nav{
-  background-color: aliceblue;
+  background: #66B1F2;
   padding: 15px;
   display: flex;
+  align-items: center;
+  position: fixed;
   gap:1em;
+  left: 0;
+  border-radius: 0px 35px 35px 0px;
+  box-shadow: 3px 5px 7px 0px #00000054;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+}
+nav a:hover{
+  color: #F2B705;
+}
+
+.switchBtn {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.switchBtn input {display:none;}
+.slide {
+    text-align: initial;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #04BF8A;
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding: 8px 8px 8px 15px;
+    color: #fff;
+}
+.slide:before {
+    position: absolute;
+    content: "";
+    height: 33px;
+    width: 33px;
+    left: 92px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slide {
+    background-color: #F2B705;
+    padding-left: 45px;
+}
+input:focus + .slide {
+    box-shadow: 0 0 1px #01aeed;
+}
+input:checked + .slide:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    left: -20px;
+}
+.slide.round {
+    border-radius: 34px;
+    box-shadow: 0px 0px 0px 2px #ffffff;
+}
+.slide.round:hover{
+  box-shadow: 4px 4px 3px 0px #2f2f2f;
+}
+.slide.round:before {
+    border-radius: 50%;
 }
 
 main{
   text-align: center;
-  max-width: 960px;
+  width: 100%;
   margin:0 auto;
 }
 
@@ -15,12 +150,39 @@ section{
   margin-top: 3rem;
 }
 
-.cursos div{
-  background-color: black;
+.cursos-th{
+  text-align: center;
+}
+
+.cursos{
+  display: flex;
+  justify-content: space-evenly;
+}
+.cursos-bg{
+  background: #04BF8A;
   color: white;
   max-width: 200px;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 3px #ffffff;
+  padding: auto;
+  transition: .4s;
+}
+.cursos-bg:hover{
+  box-shadow: 4px 4px 3px 0px #2f2f2f;
+  cursor: pointer;
+}
+.cursos p{
+  text-align: center;
+}
+p a{
+  text-decoration: none;
+  color: #F2B705;
+  text-shadow: 1.5px 1.5px white;
+  transition: .4s;
+}
+p a:hover{
+  text-shadow: 1.5px 1.5px black;
 }
 .fotos img{
   max-width: 450px;

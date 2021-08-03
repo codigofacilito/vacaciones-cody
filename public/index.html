@@ -6,13 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <script defer type="text/javascript" src="./js/nightmode.js"></script>
 </head>
-<body>
+<body id="body">
   <main>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
+      <nav id="navegador">
+        <a href="index.html">Inicio</a>
         <a href="fotos.html">Fotos</a>
+        <label class="switchBtn" id="switchBtn" onclick="switching(); switchCurso()">
+            <input type="checkbox" id="check-in">
+            <div class="slide round" id="switch-button">Day Mode</div>
+        </label>
       </nav>
       <h1>Estas son mis Vacaciones</h1>
       <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
@@ -22,14 +27,14 @@
       <header>
         <h2>Mis vacaciones Frontend</h2>
       </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
+      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript. </p>
+      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página. </p>
+      <p class="cursos-th"> Estos son los cursos que estuve tomando: </p>
       <div class="cursos">
-        <div>
+        <div class="cursos-bg">
           <p>Curso profesional de Desarrollo Web</p>
         </div>
-        <div>
+        <div class="cursos-bg">
           <p>Curso para crear mi primera página web</p>
         </div>
       </div>
@@ -60,7 +65,7 @@
       </p>
       <p>
         Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+        <a href="" target="_blank">Ir al tutorial</a>
 
       </p>
     </section>
@@ -92,9 +97,9 @@
           <li>Mejora tu productividad y creatividad</li>
         </ol>
       </header>
-      
+
     </section>
-    
+
   </main>
 </body>
 </html>
