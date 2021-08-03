@@ -1,100 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurso #VeranoFrontend - Andrés Patiño</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
 </head>
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
+  <main class="index">
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
-      </div>
+	<header></header>
+
+    <section class="intro">
+		<div class="sky">
+			<div class="wrap">
+				<div class="row">
+					<div class="col col--40">
+						<img class="image cody" src="assets/images/cody-verano.png" alt="">
+					</div>
+					<div class="col col--60">
+						<h1 class="intro-title">Estas <br>son mis Vacaciones</h1>
+						<p class="description">Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>              
+					</div>
+				</div>
+			</div>
+		</div>
+		<img class="sea" src="assets/images/sea.png" alt="" srcset="">
     </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+	<section class="detail-vacations">
+		<div class="wrap">
+			<div class="row">
+				<h2>Mis <span>vacaciones</span> Frontend</h2>      
+				<p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript. </p>
+				<p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página. </p>
+				<div class="col col--100">
+					<img class="ball" src="assets/images/ball.png" alt="">
+				</div>
+				<h3 class="subtitle"> Estos son los cursos que estuve tomando </h3>
+				<div class="courses-wrap">
+					<div class="course">
+						<div class="ico-wrap desarrollo-web">
+							<img class="ico" src="assets/images/ico-dw.png" alt="">
+						</div>
+						<h5 class="title-course">Curso profesional de Desarrollo Web</h5>
+						<p class="description-course">Cada día se vuelve más importante que todo el mundo aprenda a crear un sitio web, ya sea apara un boletín de información...</p>
+						<a class="btn" href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank" rel="noopener noreferrer">  Ver más </a>
+					</div>
+					<div class="course">
+						<div class="ico-wrap primera-pag-web">
+							<img class="ico" src="assets/images/ico-pw.png" alt="">
+						</div>
+						<h5 class="title-course">Curso para crear mi primera página web</h5>
+						<p class="description-course">Aprende a crear tu primera página web desde 0, sin conocimientos previos. Crea un sitio web funcional y atractivo, aunque...</p>
+						<a class="btn" href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank" rel="noopener noreferrer"> Ver más </a>
+					</div>
+					<div class="course">
+						<div class="ico-wrap transiciones">
+							<img class="ico" src="assets/images/ico-an.png" alt="">
+						</div>
+						<h5 class="title-course">Curso de animaciones y transiciones con CSS</h5>
+						<p class="description-course">Aprende cómo usar las propiedades transition y animation, para crear animaciones en tus páginas web y sean fantásticas...</p>
+						<a class="btn" href="https://codigofacilito.com/cursos/css-animaciones-transiciones" target="_blank" rel="noopener noreferrer">  Ver más </a>
+					</div>
+					<div class="course">
+						<div class="ico-wrap javascript">
+							<img class="ico" src="assets/images/ico-js.png" alt="">
+						</div>
+						<h5 class="title-course">Nuevo curso profesional de JavaScript</h5>
+						<p class="description-course">Aprende JavaScript a profundidad, desde las bases del lenguaje, hasta el trabajo con objetos, programación...
+						</p>
+						<a class="btn" href="https://codigofacilito.com/cursos/javascript-profesional" target="_blank" rel="noopener noreferrer"> Ver más </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-      </p>
+    <section class="ruta-aprendizaje">
+		<div class="wrap">
+			<div class="row row--align-center">
+				<div class="col col--60">
+					<h2>Ruta de <br> aprendizaje <span>2021</span></h2>
+					<p> También me propuse aprender nuevas tecnologías durante 2021</p>
+					<ul>
+						<li> Flexbox, y Grid </li>
+						<li> Animaciones con CSS y JavaScript </li>
+						<li> AJAX </li>
+						<li> HTML semántico </li>
+						<li> Entre otros </li>
+					</ul>
+				</div>
+				<div class="col col--40">
+					<img class="image" src="assets/images/cody.png" alt="Cody">
+				</div>
+			</div>
+		</div>
     </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
-      </div>
-    </section>
+	<img class="image" src="assets/images/wave-gray.png" alt="">
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
+    <section class="colabora">
+		<div class="wrap">
+			<div class="row">
+				<div class="col col--100">
+					<img class="ball" src="assets/images/ball.png" alt="">
+				</div>
+				<h2>Colabora en mi página</h2>			 
+				<p>Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub</p>
+				<p>Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.</p>
+				<p>Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica.</p>
+				<div class="col col--100">
+					<a class="btn" href="https://codigofacilito.com/cursos/git" target="_blank" rel="noopener noreferrer" >
+						Ir al tutorial
+					</a>
+				</div>
+			</div>
+		</div>
     </section>
     
+    <section class="mis-vacaciones">
+		<img class="image" src="assets/images/bottom-wave.svg" alt="">
+		<div class="bg">
+			<div class="wrap">
+				<div class="row">
+					<h2>Aquí te comparto algunas fotos de<br><span> mis vacaciones</span></h2>
+					<p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+					<div class="col col--100">
+						<div class="swiper-container gallery">
+							<div class="corner corner--top corner--left"></div>
+							<div class="corner corner--top corner--right"></div>
+							<div class="swiper-wrapper">
+								  <div class="swiper-slide">
+									<div class="slider-image">
+										<img class="image" src="assets/images/1.jpg" alt="Cody en la playa">
+									</div>
+								  </div>
+								  <div class="swiper-slide">
+									<div class="slider-image">
+										<img class="image" src="assets/images/2.jpg" alt="Cody acampando">
+									</div>
+								  </div>
+								  <div class="swiper-slide">
+									<div class="slider-image">
+										<img class="image" src="assets/images/3.jpg" alt="Cody en una alberca">
+									</div>
+								  </div>
+								  <div class="swiper-slide">
+									<div class="slider-image">
+										<img class="image" src="assets/images/4.jpg" alt="Cody en una alberca">
+									</div>
+								  </div>
+							</div>
+							<div class="corner corner--bottom corner--left"></div>
+							<div class="corner corner--bottom corner--right"></div>
+							<div class="sb swiper-button-prev"></div>
+							<div class="sb swiper-button-next"></div>
+						</div>
+					</div>			
+	
+					<p>Puedes ver más, en la galería de fotos de mi página</p>
+					<div class="col col--100">
+						<a class="btn" href="fotos.html">Ir a la galería</a>
+					</div>
+				</div>
+			</div>
+			<img src="assets/images/turtle.svg"class="turtle">
+		</div>
+		<img src="assets/images/sea.png" alt="" class="image wave-bottom">
+    </section>
+
+    <section class="importancia-vacaciones">
+		<div class="wrap">
+			<div class="row"> 
+				<div class="col col--100">
+					<h2>La importancia de las <span>vacaciones</span></h2>
+				</div>
+			</div>
+			<div class="row row--align-center">
+				<div class="col col--60">
+					<p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+					<p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+				</div>
+				<div class="col col--40">
+					<ol class="list">
+						<li>Mejora la salud mental</li>
+						<li>Incrementa la motivación</li>
+						<li>Reduce el burnout</li>
+						<li>Mejora tu productividad y creatividad</li>
+					  </ol>					
+				</div>
+			</div>
+		</div>
+		<img src="assets/images/cody-vacaciones.png" class="cody-vacaciones">
+    </section>
+    
+	<footer></footer>
+
   </main>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

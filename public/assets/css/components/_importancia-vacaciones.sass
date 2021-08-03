@@ -1,0 +1,36 @@
+.importancia-vacaciones
+    position: relative
+    h2 
+        font-size: 2.5em
+        margin-bottom: 0px
+        span 
+            color: $lightRed
+    p 
+        margin: 0 auto 10px
+        font-size: 1.25em
+        text-align: left 
+    .list
+        font-size: 1.25em
+        color: $lightGray
+        list-style-type: none
+        text-align: left
+        margin: 0
+        li 
+            line-height: 1em
+            margin-bottom: 10px
+            &::before
+                content: ''
+                position: absolute
+                left: 0
+                background-image: url('../images/check.svg')
+                width: 19px
+                height: 19px
+    .row 
+        margin: 3em 0
+
+    .cody-vacaciones
+        position: absolute
+        right: 0;
+        bottom: -48px
+        max-width: 210px
+
