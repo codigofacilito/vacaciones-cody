@@ -10,21 +10,30 @@
 <body>
   <main>
     <header>
-      <nav>
+      <nav class="navegacion">
         <a href="/">Inicio</a>
         <a href="fotos.html">Fotos</a>
       </nav>
-      <h1>Estas son mis Vacaciones y estoy haciendo una prueba con la terminal</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+      <div class="breve">
+        <div class="colum-1">
+        <h1>¡Estas son mis Vacaciones!</h1>
+        <p class="intro">Soy Cody, un aspirante a Dev. En 2019 organicé un <br> viaje para desestresarme del código y <br> en esta página quiero compartirlo contigo.</p>
+      </div>
+        <div class="colum-2">
+          <img class="cody" src="/public/images/cody-profile.jpg" width="300" height="300" alt="mi foto de perfil">
+        </div>
+      </div>
     </header>
 
-    <section>
-      <header>
+    <section class="container-1">
+      <header class="title">
         <h2>Mis vacaciones Frontend</h2>
       </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
+
+      <div class="content">
+      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, <br> por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript <br> </p>
+      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, <br> practicaba mis habilidades en tecnologías frontend, construyendo esta página <br></p>
+      <p class="subtitle"> Estos son los cursos que estuve tomando </p>
       <div class="cursos">
         <div>
           <p>Curso profesional de Desarrollo Web</p>
@@ -33,6 +42,7 @@
           <p>Curso para crear mi primera página web</p>
         </div>
       </div>
+    </div>
     </section>
 
     <section>
