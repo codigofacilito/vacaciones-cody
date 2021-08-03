@@ -61,6 +61,27 @@ section{
   font-weight: bold;
   color: #00376b;
 }
+.stories{
+  padding: 0px 20px;
+}
+.stories .story{
+  width: 150px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.story img{
+  background: rgb(233,13,217);
+  background: linear-gradient(90deg, rgba(233,13,217,1) 0%, rgba(240,255,54,1) 100%);
+}
+
+.story p{
+  font-size: 0.85rem;
+}
+
 .cursos div{
   background-color: black;
   color: white;
