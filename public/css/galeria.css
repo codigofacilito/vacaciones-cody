@@ -1,0 +1,221 @@
+/* Galería */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: white;
+}
+
+.div {
+  max-width: 100%;
+  margin: 0 0px;
+  padding: 10px 0px;
+  background: rgb(33, 150, 243);
+  background: linear-gradient(
+    0deg,
+    rgba(33, 150, 243, 1) 16%,
+    rgba(34, 193, 195, 1) 100%
+  );
+  box-shadow: rgba(99, 99, 99, 0.9) 0px 2px 8px 0px;
+  border-radius: 0px 0px 60px 60px;
+}
+
+.contenedorHeader {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0 20px 20px 20px;
+}
+.contenedorHeader img {
+  margin: 20px;
+  width: 150px;
+}
+.enlace {
+  border-radius: 20px;
+  background: #c485ff;
+  padding: 10px 30px;
+  color: black;
+  transition: all 500ms;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  box-shadow: 0px 2px 10px 1px #20202085;
+}
+
+.enlace:hover {
+  background: #feba0b;
+  padding: 10px 30px;
+  color: black;
+  font-weight: 700;
+  border-radius: 20px;
+  transition: all 500ms;
+  box-shadow: 0px 2px 10px 1px #20202085;
+}
+@media (max-width: 480px) {
+  .contenedorHeader {
+    display: flex;
+    flex-direction: column;
+  }
+  .enlace {
+    margin-top: 10px;
+  }
+  .div {
+    border-radius: 30px 30px 20px 20px;
+  }
+}
+.container,
+.titulo {
+  font-family: "Poppins", sans-serif;
+  max-width: 70%;
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin: 50px auto;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 40px;
+  letter-spacing: 7px;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 90%;
+}
+
+.galeria img {
+  box-shadow: 0 8px -4px rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+}
+
+.materialbox-caption {
+  bottom: 30px;
+  right: 0;
+  width: 40%;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  background: #af6dec;
+  box-shadow: 1px 1px 10px 1px rgba(38, 1, 48, 0.411);
+  font-size: 25px;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  color: #eff3f5;
+  line-height: 28px;
+  border-radius: 20px;
+}
+
+.galeria .col {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .materialbox-caption,
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .materialbox-caption,
+  .container {
+    width: 70%;
+    padding: 10px;
+  }
+}
+
+.footer {
+  width: 100%;
+  padding: 50px 0px;
+  font-family: "Poppins", sans-serif;
+  background-image: url(../images/background-footer.svg);
+  background-size: cover;
+  background: rgb(33, 150, 243);
+  background: linear-gradient(
+    180deg,
+    rgba(33, 150, 243, 1) 16%,
+    rgba(34, 193, 195, 1) 100%
+  );
+  -webkit-mask-image: url("../images/background-footer.svg");
+  -moz-mask-image: url("../images/background-footer.svg");
+  -o-mask-image: url("../images/background-footer.svg");
+  mask-image: url("../images/background-footer.svg");
+  -webkit-mask-size: cover;
+  -moz-mask-size: cover;
+  -o-mask-size: cover;
+  mask-size: cover;
+}
+.logofooter img {
+  width: 150px;
+}
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box__footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500px;
+  color: #373737;
+}
+
+.box__footer h2 {
+  margin-bottom: 30px;
+  color: #373737;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.box__footer a {
+  margin-top: 10px;
+  color: #373737;
+  font-weight: 600;
+}
+
+.box__footer a:hover {
+  opacity: 0.8;
+}
+.box__footer a .fab {
+  font-size: 20px;
+}
+
+.img__footer {
+  width: 200px;
+}
+
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0 40px;
+}
+.box__copyright p {
+  margin-top: 20px;
+  color: #373737;
+}
+.box__copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a;
+}
