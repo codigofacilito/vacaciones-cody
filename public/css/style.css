@@ -76,7 +76,13 @@ ul, ol{
   margin: 0 auto;
   text-align: start;
 }
-.cursos div{
+.section-two li::marker{
+  color: transparent;
+}
+.section-two li::before{
+  content: '🚀';
+}
+.curso-container div{
   margin-top: 10px;
   background-color: var(--yellow);
   color: var(--text_color);
@@ -84,6 +90,11 @@ ul, ol{
   display: inline-block;
   box-shadow: 5px 5px 10px black;
 }
+.curso{
+  background-color: transparent;
+  box-shadow: none;
+}
+
 .fotos img{
   max-width: 450px;
   display: inline-block;
@@ -106,6 +117,20 @@ nav a{
 }
 img{
   width: 100%;
+}
+footer{
+  width: 50%;
+  margin: 30px auto;
+  margin-bottom: 200px;
+  background-color: var(--tomato);
+  border-radius: 10px;
+}
+footer a{
+  background-color: transparent;
+  box-shadow: none;
+}
+a:hover{
+  color: black;
 }
 
 
@@ -198,22 +223,30 @@ img{
 }
 
 
-/* SOL */
-
-#sol { 
+#clownfish, #sun { 
   width: 150px; 
-  height: 150px; 
-  background: url('./sunny.png') no-repeat; 
+  height: 200px; 
+  background: url('./clowfish.svg') no-repeat; 
   background-position: center top;
   position: absolute; 
   animation: flota 1s alternate infinite;
 } 
-@keyframes flota {
+#sun{
+  height: 150px;
+  background: url('./sunny.png') no-repeat center top;
+  animation: sun 1s alternate infinite;
+}
+@keyframes sun {
   0%{
-    /* transform: rotate(360deg); */
     background-position-y: 10px;
   }
+}
+@keyframes flota {
+  0%{
+    transform: translateX(10px);
+  }
 } 
+
 
 /* CARGANDO */
 
@@ -232,6 +265,9 @@ img{
 }
 
 @media screen and (min-width:1024px) {
+  nav{
+    border: 1px solid rgba(0, 0, 0, 0.250);
+  }
 
   header h1{
     font-size: 4rem;
