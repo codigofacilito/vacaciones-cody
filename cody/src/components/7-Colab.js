@@ -8,18 +8,25 @@ const Colab = () => {
       </p>
       <p className="colab__paragraph">
         Puedes ayudarme a mejorar mi página, haciendo un
-        <a href="https://github.com/codigofacilito/vacaciones-cody/">
+        <a
+          href="https://github.com/codigofacilito/vacaciones-cody/"
+          className="colab__paragraph-link"
+        >
+          {" "}
           fork de mi página
         </a>
         , y enviando un pull request🚀.
       </p>
-      <small className="colab__paragraph">
-        Si nunca antes has colaborado con un repositorio,
-        <a href="https://www.youtube.com/watch?v=xdCl0Wut-IA">
+      <p className="colab__paragraph">
+        Si nunca antes has colaborado con un repositorio,{" "}
+        <a
+          href="https://www.youtube.com/watch?v=xdCl0Wut-IA"
+          className="colab__paragraph-link"
+        >
           aquí está un tutorial
-        </a>
+        </a>{" "}
         de Código Facilito que lo explica.
-      </small>
+      </p>
     </section>
   );
 };
