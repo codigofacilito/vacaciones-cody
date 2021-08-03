@@ -173,7 +173,7 @@ nav ul li a {
     transform: translateY(10px);
   }
 }
-/*Wave final*/
+
 .container__cover {
   max-width: 1200px;
   margin: auto;
@@ -181,10 +181,6 @@ nav ul li a {
   display: flex;
   justify-content: space-between;
   position: relative;
-
-  /* background-image: url(../images/background-cover.svg);
-  background-size: cover;
-  background-position: bottom;*/
 }
 
 .cover .container__info {
@@ -525,7 +521,7 @@ nav ul li a {
   justify-content: center;
   padding: 30px;
 }
-/* Galeria */
+
 .fotos {
   display: flex;
   align-items: center;
@@ -552,7 +548,7 @@ nav ul li a {
   box-shadow: 0px 2px 10px 1px #474747c2;
   transition: box-shadow 300ms;
 }
-/* Footer*/
+
 footer {
   width: 100%;
   padding: 50px 0px;
