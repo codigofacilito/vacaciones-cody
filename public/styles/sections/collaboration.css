@@ -37,6 +37,7 @@
   object-fit: contain;
   display: inline-block;
   position: relative;
+  background: var(--sand-200);
 }
 
 .collaboration__container-image-repository::before {

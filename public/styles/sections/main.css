@@ -22,11 +22,12 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: calc(100% + 3.5em);
+  width: 100%;
   height: 60px;
   background: var(--sea-200);
   border-radius: 50%;
   z-index: -1;
+  transform: scaleX(1.125);
 }
 
 .main__image {
