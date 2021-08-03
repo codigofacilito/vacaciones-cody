@@ -4,9 +4,9 @@
     --title-mobile: bold 32px/47px var(--font);
     --description: 25px/35px var(--font);
     --description-mobile: 14px/18px var(--font);
-    --background-body: #E5E5E5;
     --button-text: bold 24px/18px var(--font);
     --button-text-mobile: bold 17px/18px var(--font);
+    --background-body: #E5E5E5;
     --green80: #087146;
     --green70: #11956E;
     --green40: #33A677;
@@ -14,6 +14,7 @@
     --gray70: #626262;
     --gren30: #5BCC85;
     --black90: #000;
+    --black50: #171717;
     --white90: #FFF;
     --white10: #F8FAFC;
     --yellow70: #FF9900;
@@ -28,14 +29,18 @@
     --max-width-wrapper: 1400px;
 }
 
+.z-index {
+    z-index: 1;
+}
+
 .wrapper {
     max-width: var(--max-width-wrapper);
     margin: auto;
 }
 
 .section-content {
-    margin-block: 62px;
-    margin-inline: 51px;
+    margin-block: var(--margin-block);
+    margin-inline: var(--margin-inline);
 }
 
 .title {
@@ -66,7 +71,6 @@
     .button-content {
         display: inline-block;
     }
-    /* Se sobreentiende */
     .section-content {
         margin-block: 62px;
         margin-inline: 51px;
@@ -86,6 +90,12 @@
     }
     .description {
         font: var(--description);
+    }
+}
+
+@media screen and (min-width:960px) {
+    .padding-bottom {
+        padding-block-end: 50px;
     }
 }
 
@@ -137,14 +147,13 @@ body {
     text-decoration: none;
 }
 
-.button:hover {
-    background: var(--green40);
-}
-
-.button-welcome {
+.button-green {
     background: var(--green80);
     color: var(--white90);
-    /* margin-block-start: 30px; */
+}
+
+.button-green:hover {
+    background: var(--green40);
 }
 
 @media screen and (min-width:960px) {
@@ -152,7 +161,6 @@ body {
         block-size: 700px;
     }
     .welcome__title {
-        /* font: var(--title); */
         text-align: left;
     }
     .welcome__image img {
@@ -170,63 +178,40 @@ body {
 
 /* Vacation */
 
-.vacation {
+.vacation-frontend__section {
     margin-block-start: -50px;
 }
 
-.vacation-frontend__content {
-    display: flex;
-    flex-direction: column;
-    color: var(--white90);
+.vacation-frontend__svg {
+    display: block;
+    height: 150px;
     background: linear-gradient(90deg, #4613E1 0%, #7F5AF0 100%);
 }
 
-.vacation-frontend__svg {
+.vacation-frontend__svg img {
     width: 100%;
-    height: 100%;
+    height: 150px;
+}
+
+.vacation-frontend__content {
     background: linear-gradient(90deg, #4613E1 0%, #7F5AF0 100%);
+    color: var(--white90);
+}
+
+.content-flex {
+    display: flex;
+    flex-direction: column;
 }
 
 .vacation-frontend__svg svg {
     width: 100%;
+    height: 100%;
     display: block;
+    background: linear-gradient(90deg, #4613E1 0%, #7F5AF0 100%);
 }
 
 .vacation-frontend__svg svg path {
     fill: var(--white90);
-}
-
-.vacation-frontend__img {
-    position: relative;
-    height: 125px;
-}
-
-.vacation-frontend__img img {
-    /* width: 270px; */
-    width: auto;
-    height: 270px;
-    display: block;
-}
-
-.vacation-frontend__img-cody {
-    position: absolute;
-    bottom: 0;
-}
-
-.vacation-frontend__description {
-    display: block;
-    z-index: 1;
-}
-
-.vacation-frontend__title {
-    /* font: var(--title-mobile); */
-    /* text-transform: uppercase; */
-    margin-block: 0;
-}
-
-.vacation-frontend__info {
-    /* margin-block: 60px; */
-    /* font: var(--description-mobile) */
 }
 
 .vacation-frontend__card-details {
@@ -257,6 +242,22 @@ body {
     transform: scale(1.1);
 }
 
+.vacation-frontend__img {
+    position: relative;
+    height: 125px;
+}
+
+.vacation-frontend__img img {
+    width: auto;
+    height: 270px;
+    display: block;
+}
+
+.vacation-frontend__img-cody {
+    position: absolute;
+    bottom: 0;
+}
+
 .card-red {
     background: linear-gradient(90deg, #FF512F 0%, #DD2476 100%);
 }
@@ -270,12 +271,8 @@ body {
 }
 
 @media screen and (min-width:414px) {
-    .vacation-frontend__description {
+    .section__description {
         display: block;
-        /* margin-inline: 51px; */
-        /* margin: auto; */
-        /* margin-block: 62px; */
-        /* inline-size: 362px; */
         z-index: 1;
     }
     .vacation-frontend__card-details {
@@ -284,7 +281,7 @@ body {
 }
 
 @media screen and (min-width:960px) {
-    .vacation-frontend__title {
+    .section__title {
         margin-block: 0;
     }
     .vacation-frontend__img-cody {
@@ -299,47 +296,28 @@ body {
         width: 200px;
         height: 250px;
     }
-    .vacation-frontend__description {
+    .section__description {
         inline-size: 650px;
         margin-block: 0;
         margin: auto;
     }
-    .vacation-frontend__card-description {
-        padding-inline: 30px;
-    }
 }
 
 
-/* Learning-path */
+/* Learning-path  */
 
-.learning-path {
+.learning-path__section {
     background: var(--white90);
 }
 
-.learning-path__content {
-    margin-inline: 51px;
-}
-
-.learning-path__description {
-    padding-block: 100px;
-}
-
 .learning-path__title {
-    /* font: var(--title-mobile); */
     color: var(--yellow70);
-    margin-block-start: 0;
-    margin-block-end: 40px;
-    /* text-transform: uppercase; */
+    margin-block: 0;
 }
 
 .learning-path__title span {
     color: var(--brown80);
 }
-
-
-/* .learning-path__info {
-    font: var(--description-mobile);
-} */
 
 .learning-path__info ul {
     margin-block: 50px;
@@ -394,9 +372,6 @@ body {
 }
 
 @media screen and (min-width:414px) {
-    .learning-path__info ul li {
-        width: 150px;
-    }
     .learning-path__info ul {
         margin-block: 50px;
         display: flex;
@@ -404,25 +379,15 @@ body {
         justify-content: center;
         gap: 15px;
     }
+    .learning-path__info ul li {
+        width: 150px;
+    }
     .learning-path__img-cody {
         width: 300px;
     }
 }
 
 @media screen and (min-width:960px) {
-    .learning-path__description {
-        margin-inline: 51px;
-    }
-    .learning-path__content {
-        margin: auto;
-        max-width: 1400px;
-    }
-    /* .learning-path__title {
-        font: var(--title);
-    }
-    .learning-path__info {
-        font: var(--description);
-    } */
     .learning-path__info ul {
         margin-block-start: 80px;
         gap: 30px
@@ -445,41 +410,30 @@ body {
 }
 
 
-/* Collaborate page */
+/* Collaborate Page */
 
-.collaborate-page {
-    width: 100%;
+.collaborate-page__section {
     margin-block-start: -50px;
 }
 
-.collaborate-page__svg {
+.collaborate-page__content {
     background: linear-gradient(90deg, #232526 0%, #414345 100%);
-    width: 100%;
+    color: var(--white90);
 }
 
 .collaborate-page__svg svg {
     width: 100%;
+    height: 100%;
     display: block;
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
 }
 
 .collaborate-page__svg svg path {
     fill: var(--white90);
 }
 
-.collaborate-page__content {
-    background: linear-gradient(90deg, #232526 0%, #414345 100%);
-    color: var(--white90);
-    display: block;
-    margin: auto;
-}
-
-.collaborate-page__description {
-    margin-inline: 51px;
-}
-
 .button-collaborate {
     background: var(--pink50);
-    /* margin-block-start: 30px; */
 }
 
 .button-collaborate:hover {
@@ -487,76 +441,15 @@ body {
 }
 
 
-/* .collaborate-btn-icon a {
-    color: var(--white90);
-} */
-
-
-/* .collaborate-btn-icon {
-    display: block;
-    text-align: center;
-} */
-
-.collaborate-page__description {
-    display: block;
-}
-
-.collaborate-page__title {
-    margin-block: 0;
-    text-align: center;
-}
-
-.collaborate-page__info {
-    /* margin-block: 60px */
-}
-
-@media screen and (min-width:414px) {
-    /* .button-collaborate {
-        display: inline-block;
-    } */
-}
-
-@media screen and (min-width:960px) {
-    .collaborate-page__description {
-        margin: auto;
-        inline-size: 650px;
-    }
-    .collaborate-page__title {
-        margin-block: 0;
-        text-align: center;
-    }
-    /* .collaborate-page__info {
-        font: var(--description);
-    } */
-}
-
-
 /* Vacation Photo */
 
-.vacation-photo {
+.vacation-photo__section {
     background: var(--white90);
-}
-
-.vacation-photo__content {
-    max-width: 1400px;
-    margin: auto;
-}
-
-.vacation-photo__description {
-    margin-inline: 51px;
-    padding-block: 60px;
     text-align: center;
 }
 
 .vacation-photo__title {
-    font: var(--title-mobile);
-    margin-block-start: 0;
     color: var(--green80);
-    text-transform: uppercase;
-}
-
-.vacation-photo__info {
-    font: var(--description-mobile);
 }
 
 .vacation-photo__list-image {
@@ -568,7 +461,6 @@ body {
 }
 
 .vacation-photo__card {
-    /* overflow: hidden; */
     text-align: center;
 }
 
@@ -603,42 +495,14 @@ body {
     box-shadow: 0 10px 18px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
-.button-vacation-photo {
-    background: var(--green70);
-    margin-block-start: 30px;
-}
-
-.button-vacation-photo:hover {
-    background: var(--green40);
-}
-
-.vacation-photo_btn-icon a {
-    color: var(--white90);
-}
-
-.vacation-photo_btn-icon {
-    display: block;
-    text-align: center;
-    margin-block-start: 40px;
-}
-
 @media screen and (min-width:414px) {
     .vacation-photo__list-image {
         grid-template-columns: repeat(auto-fill, minmax(150px, auto));
         justify-content: center;
     }
-    .vacation-photo_btn-icon {
-        display: inline-block;
-    }
 }
 
 @media screen and (min-width:960px) {
-    .vacation-photo__title {
-        font: var(--title);
-    }
-    .vacation-photo__info {
-        font: var(--description);
-    }
     .vacation-photo__list-image {
         grid-template-columns: repeat(auto-fill, minmax(150px, 400px));
     }
@@ -651,34 +515,9 @@ body {
 
 /* Vacation Important */
 
-.vacation-important__content {
-    display: flex;
-    flex-direction: column;
-    color: var(--white90);
-}
-
-.vacation-important {
+.vacation-important__section {
     background: #1256b6;
     color: var(--white90);
-}
-
-.vacation-important__svg svg {
-    width: 100%;
-    display: block;
-}
-
-.vacation-iimportant__svg {
-    width: 100%;
-    background: #1256b6;
-}
-
-.vacation-important__svg svg path {
-    fill: var(--white90);
-}
-
-.vacation-important__img {
-    position: relative;
-    height: 125px;
 }
 
 .vacation-important__img img {
@@ -688,115 +527,29 @@ body {
     right: 0;
 }
 
+.vacation-important__img {
+    position: relative;
+    height: 125px;
+}
+
 .vacation-important__img-cody {
     position: absolute;
     bottom: 0;
 }
 
-.vacation-important__description {
-    display: block;
-    margin-block: 62px;
-    margin-inline: 51px;
-    z-index: 1;
-}
-
-.vacation-important__title {
-    font: var(--title-mobile);
-    text-transform: uppercase;
-    margin-block: 0;
-}
-
-.vacation-important__info {
-    margin-block: 60px;
-    font: var(--description-mobile)
-}
-
-@media screen and (min-width:414px) {
-    .vacation-important__description {
-        display: block;
-        margin-inline: 51px;
-        margin-block: 62px;
-        z-index: 1;
-    }
-}
-
 @media screen and (min-width:960px) {
-    .vacation-important__title {
-        font: var(--title);
-        text-transform: uppercase;
-        margin-block: 0;
-    }
-    .vacation-important__info {
-        font: var(--description);
-    }
-    .vacation-important__img-cody {
+    .section__img-cody {
         width: 100%;
     }
     .vacation-important__img img {
         block-size: auto;
         inline-size: 500px;
-        /* right: 0; */
-    }
-    .vacation-important__description {
-        inline-size: 650px;
-        margin-block: 100px;
-        margin: 100px auto;
     }
 }
 
 .thank {
-    background: #171717;
+    background: var(--black50);
     padding-block: 10px;
     color: var(--white90);
     text-align: center;
 }
-
-
-/* nav {
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap: 1em;
-} */
-
-
-/* main {
-  text-align: center;
-  max-width: 960px;
-  margin: 0 auto;
-} */
-
-
-/* section {
-  margin-top: 3rem;
-} */
-
-
-/* .cursos div {
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-} */
-
-
-/* .fotos img {
-  max-width: 450px;
-  display: inline-block;
-} */
-
-
-/* ul li {
-  text-align: left;
-} */
-
-
-/* ul li::marker {
-  content: "🚀";
-} */
-
-
-/* ol li {
-  text-align: left;
-} */
