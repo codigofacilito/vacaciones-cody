@@ -15,14 +15,14 @@ html {
   transition: all 300ms;
 }
 header {
-  width: 100%;
-  height: 100px;
   font-family: "Poppins", sans-serif;
+  height: 100px;
   position: fixed;
-  top: 0;
   right: 0;
-  z-index: 100;
+  top: 0;
   transition: all 300ms;
+  width: 100%;
+  z-index: 100;
 }
 .move_content {
   right: 180px;
@@ -36,10 +36,10 @@ header {
   padding: 0px 20px;
 }
 header .logo {
-  height: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
 }
 .logo img {
   width: 150px;
