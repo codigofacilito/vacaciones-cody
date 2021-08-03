@@ -1,38 +1,309 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;400;500&display=swap');
+
+*, 
+*::after, *::before{
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+:root {
+  --main_color: white;
+  --text_color: #051626;
+  --lighter_grey: #F5F5F5;
+  --light_grey: #D1D1D1;
+  --grey_500: #474E5C;
+  --yellow: #F8CD5B;
+  --light_blue: #6e57fc;
+  --tomato: #fd585f;
+  --green: #41b883;
+}
+html, body {
+  font-family: 'Mitr', sans-serif;
+  color: var(--light_grey);
+  background-color: var(--light_blue);
 }
 
+
 main{
+  display: none;
+  opacity: 0;
   text-align: center;
   max-width: 960px;
   margin:0 auto;
+  background-color: var(--light_blue);
+  transition: all 500ms;
+  margin-bottom: 100px;
 }
-
+nav{
+  background-color: #816eff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  gap:1em;
+  color: var(--main_color);
+  border-bottom: 1px solid black;
+}
+a:-webkit-any-link {
+  color: var(--main_color);
+  text-decoration: none;
+}
+h1, h2{
+  font-family: 'Monoton', cursive;
+  font-weight: 100;
+}
+h1{
+  font-size: 2rem;
+  word-spacing: 1.5rem;
+  line-height: 2.5rem;
+}
+h2{
+  font-weight: 100;
+  word-spacing: 0.5rem;
+}
+p{
+  max-width: 600px;
+  margin: 15px auto;
+}
 section{
-  margin-top: 3rem;
+  margin: 0 auto;
+  padding: 40px 0;
+  border: 1px solid black;
 }
-
-.cursos div{
-  background-color: black;
-  color: white;
+ul, ol{
+  width: 200px;
+  margin: 0 auto;
+  text-align: start;
+}
+.section-two li::marker{
+  color: transparent;
+}
+.section-two li::before{
+  content: '🚀';
+}
+.curso-container div{
+  margin-top: 10px;
+  background-color: var(--yellow);
+  color: var(--text_color);
   max-width: 200px;
   display: inline-block;
   box-shadow: 5px 5px 10px black;
 }
+.curso{
+  background-color: transparent;
+  box-shadow: none;
+}
+
 .fotos img{
   max-width: 450px;
   display: inline-block;
 }
-ul li{
-  text-align: left;
+main a{
+  padding: 5px;
+  background-color: var(--green);
+  border-radius: 50px;
+  color: #051626;
+  opacity: 0.9;
+  box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.151), 4px 4px 5px -2px rgba(0, 0, 0, 0.151), 5px 5px 5px -2px rgba(0, 0, 0, 0.151);
 }
-ul li::marker {
-  content: "🚀";
+main a:hover{
+  opacity: 0.7;
+}
+nav a{
+  width: 80px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.342);
+}
+img{
+  width: 100%;
+}
+footer{
+  width: 50%;
+  margin: 30px auto;
+  margin-bottom: 200px;
+  background-color: var(--tomato);
+  border-radius: 10px;
+}
+footer a{
+  background-color: transparent;
+  box-shadow: none;
+}
+a:hover{
+  color: black;
 }
 
-ol li{
-  text-align: left;
+
+/* ANIMATION */
+
+.cody{
+  background-image: url('./cody-verano-95c1d9e3a3d913ed0d97f7adcd2d38046b241b99f450356dfd2e8dcd9b9aebf3.png');
+  background-repeat: no-repeat;
+  max-width: 375px;
+  height: 260px;
+  margin: 0 auto;
+  animation: cody 2s alternate infinite;
+}
+@keyframes cody {
+  0%{
+    background-position-y: 0;
+  }
+  100%{
+    background-position-y: 5px;
+  }
+}
+
+/* OLAS */
+
+.wave-container{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+  z-index: 1;
+}
+.wave-container .wave{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url("./wave.png");
+  background-size: 1000px 100px;
+}
+.wave-container .wave.wave1{
+  animation: animate 30s linear infinite;
+  z-index: 1;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+@keyframes animate {
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+}
+.wave-container .wave.wave2{
+  animation: animate 20s linear infinite;
+  animation-direction: reverse;
+  z-index: 2;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+.wave-container .wave.wave3{
+  animation: animate 15s linear infinite;
+  z-index: 3;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+.wave-container .wave.wave4{
+  animation: animate 5s linear infinite;
+  animation-direction: reverse;
+  z-index: 4;
+  opacity: 0.7;
+  animation-delay: -2s;
+  bottom: 20px;
+}
+
+/* LOAD */
+ .load{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+#clownfish, #sun { 
+  width: 150px; 
+  height: 200px; 
+  background: url('./clowfish.svg') no-repeat; 
+  background-position: center top;
+  position: absolute; 
+  animation: flota 1s alternate infinite;
+} 
+#sun{
+  height: 150px;
+  background: url('./sunny.png') no-repeat center top;
+  animation: sun 1s alternate infinite;
+}
+@keyframes sun {
+  0%{
+    background-position-y: 10px;
+  }
+}
+@keyframes flota {
+  0%{
+    transform: translateX(10px);
+  }
+} 
+
+
+/* CARGANDO */
+
+.cargando::after{
+  content: '\2026';
+  display: inline-block;
+  vertical-align: bottom;
+  overflow: hidden;
+  animation: puntos steps(4, end) 2s infinite;
+  width: 0px;
+}
+@keyframes puntos {
+  to {
+    width: 1rem;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  nav{
+    border: 1px solid rgba(0, 0, 0, 0.250);
+  }
+
+  header h1{
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  header p{
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  section p{
+    font-size: 1.2rem;
+  }
+
+  .grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .section-one{
+    grid-column: 1/8;
+  }
+  .section-two{
+    grid-column: 8/13;
+  }
+  .section-three{
+    grid-row: 3/4;
+    grid-column: 1/7;
+  }
+  .section-four{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+  .section-five{
+    grid-row: 3/4;
+    grid-column: 7/13;
+  }
 }
