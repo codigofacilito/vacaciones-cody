@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto+Slab&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply font-dmsans
+    @apply font-dmsans;
   }
   h2 {
     @apply font-extrabold;
@@ -21,7 +21,8 @@
 .navbar {
   @apply flex justify-between;
   @apply fixed w-full p-4;
-  @apply text-white shadow-lg backdrop-blur-md;
+  @apply text-summer-400 shadow-lg;
+  @apply backdrop-filter backdrop-grayscale backdrop-blur-md backdrop-contrast-200;
 }
 
 .navbar__brand {
@@ -37,7 +38,7 @@
 }
 
 .navbar__links {
-  @apply flex gap-5 items-center;
+  @apply flex gap-14 items-center;
 }
 
 .link {
@@ -46,42 +47,30 @@
 
 .btn {
   @apply px-4 py-1 text-summer-400;
-  @apply rounded-full border-2 border-summer-400 ;
+  @apply rounded-full border-2 border-summer-400;
   /* @apply hover:text-summer-400 hover:bg-white hover:border-transparent; */
   @apply focus:outline-none focus:ring-2 focus:ring-summer-400 focus:ring-offset-2;
 }
 
 .is-secondary {
   @apply bg-summer-400 text-white;
-} 
+}
 
 /* End Navbar: brand & links */
 
-
-.gradient {
+/* .gradient {
   @apply bg-gradient-to-t from-summer-400
 }
 
 .cover {
   @apply flex h-52 p-5 items-stretch
-}
+} */
 
-.hello {
-  @apply flex items-end w-20 gap-5 self-end
-}
-
-.hello__avatar {
-  @apply w-12 h-12 rounded-full
-}
-
-.hello__name {
-  @apply text-white font-extrabold font-roboto text-4xl
-}
+/* Begin Banner */
 
 .banner {
-    @apply h-screen bg-local p-12;
-    @apply bg-summer-100;
-    @apply flex flex-col lg:flex-row;
+  @apply h-screen bg-gradient-to-t from-summer-100 bg-local lg:p-12;
+  @apply flex flex-col lg:flex-row;
 }
 
 .banner__hero {
@@ -97,11 +86,11 @@
 .banner__photos {
   @apply w-full h-full border-8 border-summer-300;
   /* width: 100%;
-  height: 100%; */
-  transition: all .1s ease-in-out;
+height: 100%; */
+  transition: all 0.1s ease-in-out;
   background-image: url(../images/1.jpg);
   -webkit-animation: banner 8s infinite linear;
-          animation: banner 8s infinite linear;
+  animation: banner 8s infinite linear;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -143,6 +132,20 @@
   100% {
     background-image: url(../images/4.jpg);
   }
+}
+
+/* End Banner */
+
+.hello {
+  @apply flex items-end w-20 gap-5 self-end;
+}
+
+.hello__avatar {
+  @apply w-12 h-12 rounded-full;
+}
+
+.hello__name {
+  @apply text-white font-extrabold font-roboto text-4xl;
 }
 
 .footer {

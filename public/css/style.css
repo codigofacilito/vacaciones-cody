@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto+Slab&display=swap");
 
 /*! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com */
 
@@ -775,12 +775,17 @@ img{
   width: 100%;
   padding: 1rem;
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgba(12, 236, 221, var(--tw-text-opacity));
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   --tw-backdrop-blur: blur(12px);
   -webkit-backdrop-filter: var(--tw-backdrop-filter);
           backdrop-filter: var(--tw-backdrop-filter);
+  --tw-backdrop-contrast: contrast(2);
+  backdrop-filter: var(--tw-backdrop-filter);
+  --tw-backdrop-grayscale: grayscale(100%);
+  backdrop-filter: var(--tw-backdrop-filter);
+  backdrop-filter: var(--tw-backdrop-filter);
 }
 
 .navbar__brand{
@@ -802,7 +807,7 @@ img{
 .navbar__links{
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 3.5rem;
 }
 
 .link{
@@ -849,48 +854,31 @@ img{
 
 /* End Navbar: brand & links */
 
-.gradient{
-  background-image: linear-gradient(to top, var(--tw-gradient-stops));
-  --tw-gradient-from: #0CECDD;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(12, 236, 221, 0));
+/* .gradient {
+  @apply bg-gradient-to-t from-summer-400
 }
 
-.cover{
-  display: flex;
-  height: 13rem;
-  align-items: stretch;
-  padding: 1.25rem;
-}
+.cover {
+  @apply flex h-52 p-5 items-stretch
+} */
 
-.hello{
-  display: flex;
-  width: 5rem;
-  align-items: flex-end;
-  gap: 1.25rem;
-  align-self: flex-end;
-}
-
-.hello__avatar{
-  height: 3rem;
-  width: 3rem;
-  border-radius: 9999px;
-}
-
-.hello__name{
-  font-family: Roboto Slab, serif;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: 800;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
+/* Begin Banner */
 
 .banner{
   height: 100vh;
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  --tw-gradient-from: #C400FF;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(196, 0, 255, 0));
   background-attachment: local;
-  padding: 3rem;
-  --tw-bg-opacity: 1;
-  background-color: rgba(196, 0, 255, var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px){
+  .banner{
+    padding: 3rem;
+  }
+}
+
+.banner{
   display: flex;
   flex-direction: column;
 }
@@ -933,8 +921,8 @@ img{
   --tw-border-opacity: 1;
   border-color: rgba(255, 243, 56, var(--tw-border-opacity));
   /* width: 100%;
-  height: 100%; */
-  transition: all .1s ease-in-out;
+height: 100%; */
+  transition: all 0.1s ease-in-out;
   background-image: url(../images/1.jpg);
   -webkit-animation: banner 8s infinite linear;
   animation: banner 8s infinite linear;
@@ -997,6 +985,31 @@ img{
   100% {
     background-image: url(../images/4.jpg);
   }
+}
+
+/* End Banner */
+
+.hello{
+  display: flex;
+  width: 5rem;
+  align-items: flex-end;
+  gap: 1.25rem;
+  align-self: flex-end;
+}
+
+.hello__avatar{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 9999px;
+}
+
+.hello__name{
+  font-family: Roboto Slab, serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .footer{
