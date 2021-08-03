@@ -1,7 +1,18 @@
 {
   "private": true,
+  "scripts": {
+    "start": "nodemon server.js"
+  },
   "dependencies": {
     "express": "^4.17.1",
+    "nodemon": "^2.0.12",
     "pug": "^3.0.2"
+  },
+  "nodemonConfig": {
+    "ext": "pug, css, jpg, png, svg, ico",
+    "watch": [
+      "public",
+      "views"
+    ]
   }
 }
