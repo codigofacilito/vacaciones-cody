@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #050036;
+  --primary-color: #0092d1;
   --secondary-color: #e4be00;
   --text-color: #ffffff;
 
@@ -179,7 +179,6 @@ header .presentation {
 }
 
 .wave {
-  border: 1px solid red;
   display: block;
   width: 100vw;
   height: 100px;
@@ -244,7 +243,6 @@ header h2 {
   background-color: rgba(0, 0, 0, .9);
   text-align: center;
   overflow-wrap: break-word;
-  cursor: pointer;
   font-weight: bold;
 }
 
@@ -289,4 +287,34 @@ header h2 {
 
 img {
   width: 100px;
+}
+
+/* .scroll-container {
+  width: 4px;
+  height: 250px;
+  position: relative;
+} */
+
+.scroll {
+  width: 4px;
+  height: 300px;
+  border: 4px solid white;
+  border-radius: 4px;
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.sunMoon {
+  display: block;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 30px;
+  height: 30px;
+  background-image: url("https://img.icons8.com/fluency/96/000000/sun.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
