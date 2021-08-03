@@ -30,7 +30,6 @@ header {
 }
 
 nav {
-  border: 1px solid red;
   width: 100%;
   padding: 15px;
   display: flex;
@@ -56,6 +55,9 @@ nav {
   font-family: var(--heading-font);
 }
 
+.items .item:first-child {
+  text-decoration: underline;
+}
 /* DARK MODE */
 .mode-container {
   width: 75px;
@@ -88,13 +90,12 @@ nav {
   left: -3px;
   right: unset;
   transform: translateY(-50%);
-  background: var(--primary-color);
+  background: var(--secondary-color);
 }
 
 .active {
   left: unset;
   right: -3px;
-  background-color: var(--secondary-color);
 }
 
 
