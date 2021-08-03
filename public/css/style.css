@@ -1,14 +1,56 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+:root {
+  --primary-color: #050036;
+  --secondary-color: #e4be00;
+  --text-color: #ffffff;
+
+  --heading-font: Verdana, Geneva, Tahoma, sans-serif;
+  --body-font: serif, Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: var(--body-font);
 }
 
 main{
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+}
+
+/* HEADER */
+header {
+  border: 1px solid red;
+  width: 100vw;
+}
+
+nav {
+  border: 1px solid red;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items {
+  width: 50%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.items .item {
+  list-style: none;
+  
+}
+.items a {
+  text-decoration: none;
 }
 
 section{
@@ -23,14 +65,11 @@ section{
   box-shadow: 5px 5px 10px black;
 }
 .fotos img{
-  max-width: 450px;
+  max-width: 300px;
   display: inline-block;
 }
 ul li{
   text-align: left;
-}
-ul li::marker {
-  content: "🚀";
 }
 
 ol li{
