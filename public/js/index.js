@@ -1,6 +1,6 @@
 const Container = document.getElementById('Container'),
 	PageGallery = document.getElementById('gallery'),
-	Buttons = Array.from(document.querySelectorAll('#openGallery'));
+	Buttons = Array.from(document.querySelectorAll('.openGallery'));
 
 Buttons.map((button) => button.addEventListener('click', OpenGallery));
 PageGallery.addEventListener('click', CloseGallery);

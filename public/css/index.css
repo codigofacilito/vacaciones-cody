@@ -3,12 +3,14 @@
   margin-bottom: 3.125rem;
 }
 .sectionTitle .icon {
-  width: 3.125rem;
+  width: 50px;
+  height: 50px;
   margin-bottom: 0.625rem;
 }
 @media (min-width: 50rem) {
   .sectionTitle .icon {
     width: 3.75rem;
+    height: 3.75rem;
   }
 }
 .sectionTitle .title {
@@ -36,10 +38,13 @@
   left: 0;
   z-index: 2;
   width: 100%;
-  min-height: 1500px;
   background-color: #ffffff;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
+}
+.gallery .boxScroll {
+  width: 100%;
+  height: 100vh;
   overflow: auto;
 }
 
@@ -270,13 +275,13 @@
   transform: rotate(30deg);
 }
 .vacations .cards-container .card:nth-child(1)::after {
-  background-image: url("../../public/assets/icons/icon-web.png");
+  background-image: url("../assets/icons/icon-web.png");
   top: 20px;
   width: 6.875rem;
   height: 6.875rem;
 }
 .vacations .cards-container .card:nth-child(2)::after {
-  background-image: url("../../public/assets/icons/icon-code.png");
+  background-image: url("../assets/icons/icon-code.png");
   top: 2.1875rem;
   width: 6.875rem;
   height: 5rem;
@@ -320,6 +325,16 @@
 }
 .learningPath .route li .listName {
   font-size: 1.5625rem;
+}
+
+.collaborate {
+  padding: 30px 1.25rem;
+  color: #ffffff;
+  background-color: #18ac8e;
+}
+.collaborate .maxWidth {
+  max-width: 950px;
+  margin: auto;
 }
 
 .smallGallery .containsGallery {
@@ -388,6 +403,14 @@
   box-sizing: border-box;
   font-family: "Balsamiq Sans", cursive;
 }
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: #ffffff;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #00cba1;
+  border-radius: 3.125rem;
+}
 *::selection {
   background: #00cba1;
 }
@@ -405,13 +428,8 @@ body {
   background-color: #ffffff;
   min-height: 3000px;
 }
-body::-webkit-scrollbar {
-  width: 10px;
-  background-color: #ffffff;
-}
-body::-webkit-scrollbar-thumb {
-  background-color: #00cba1;
-  border-radius: 3.125rem;
+body main {
+  overflow: hidden;
 }
 
 .mainContent {
@@ -426,6 +444,39 @@ body::-webkit-scrollbar-thumb {
 
 .hidden {
   overflow: hidden;
+}
+
+.fullWidth {
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  width: 100vw;
+}
+
+.svg {
+  margin-bottom: -5px;
+}
+
+iframe {
+  width: 100%;
+  height: 16.25rem;
+  margin-top: 1.25rem;
+  border-radius: 0.9375rem;
+}
+@media (min-width: 31.25rem) {
+  iframe {
+    height: 25rem;
+  }
+}
+@media (min-width: 46.875rem) {
+  iframe {
+    height: 500px;
+  }
+}
+@media (min-width: 58.125rem) {
+  iframe {
+    height: 540px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
