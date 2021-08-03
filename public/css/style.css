@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+  font-family: dm sans,sans-serif;
+}
 nav{
   background-color: aliceblue;
   padding: 15px;
@@ -23,7 +27,7 @@ section{
   box-shadow: 5px 5px 10px black;
 }
 .fotos img{
-  max-width: 450px;
+  max-width: 250px;
   display: inline-block;
 }
 ul li{
