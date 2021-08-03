@@ -14,24 +14,28 @@
 
 <body>
     <main>
-        <header class="header">
+        <section class="welcome">
             <!-- <nav>
         <a href="/">Inicio</a>
         <a href="fotos.html">Fotos</a>
       </nav> -->
-            <div class="header-content">
-                <div class="header-content-wrapper">
-                    <h1 class="header__title">Estas son <span> <br> mis Vacaciones</span></h1>
-                    <div class="header-description">
-                        <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-                        <button class="button button-header">Fotos</button>
+            <div class="wrapper">
+                <div class="welcome-content section-content">
+                    <div class="welcome-content-wrapper">
+                        <h1 class="welcome__title title">Estas son <span> <br> mis Vacaciones</span></h1>
+                        <div class="welcome-description description ">
+                            <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+                            <div class="button-content">
+                                <a class="button button-welcome" href="fotos.html">Fotos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="welcome__image">
+                        <img src="./images/cody-hi.png" alt="cody-image-welcome">
                     </div>
                 </div>
-                <div class="header__image">
-                    <img src="./images/cody-image.png" alt="cody-image-header">
-                </div>
             </div>
-        </header>
+        </section>
         <section class="vacation">
             <div class="vacation-frontend__svg">
                 <svg viewBox="0 0 1900 461" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,9 +45,9 @@
                 </svg>
             </div>
             <section class="vacation-frontend__content">
-                <div class="vacation-frontend__description">
-                    <h2 class="vacation-frontend__title">Mis vacaciones Frontend</h2>
-                    <div class="vacation-frontend__info">
+                <div class="vacation-frontend__description section-content">
+                    <h2 class="vacation-frontend__title title">Mis vacaciones Frontend</h2>
+                    <div class="vacation-frontend__info description">
                         <p>Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
                         <p>Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
                         <p>Estos son los cursos que estuve tomando </p>
@@ -68,15 +72,15 @@
                     </div>
                 </div>
                 <div class="vacation-frontend__img">
-                    <img class="vacation-frontend__img-cody" src="./images/cody-greet.png" alt="cody-greet">
+                    <img class="vacation-frontend__img-cody" src="./images/cody-greet-file.png" alt="cody-greet">
                 </div>
             </section>
         </section>
         <section class="learning-path">
-            <div class="learning-path__content">
+            <div class="learning-path__content section-content">
                 <div class="learning-path__description">
-                    <h2 class="learning-path__title">Ruta de <br>aprendizaje <span>2021</span></h2>
-                    <div class="learning-path__info">
+                    <h2 class="learning-path__title title">Ruta de <br>aprendizaje <span>2021</span></h2>
+                    <div class="learning-path__info description">
                         <p> También me propuse aprender nuevas tecnologías durante 2021</p>
                         <ul>
                             <li>
@@ -117,7 +121,6 @@
                 </div>
             </div>
         </section>
-
         <section class="collaborate-page">
             <div class="collaborate-page__svg">
                 <svg viewBox="0 0 1920 324" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,10 +129,10 @@
                         fill="white" />
                 </svg>
             </div>
-            <div class="collaborate-page__content">
+            <div class="collaborate-page__content section-content">
                 <div class="collaborate-page__description">
-                    <h2 class="collaborate-page__title">Colabora en mi página</h2>
-                    <div class="collaborate-page__info">
+                    <h2 class="collaborate-page__title title">Colabora en mi página</h2>
+                    <div class="collaborate-page__info description">
                         <p>
                             Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
                         </p>
@@ -140,8 +143,10 @@
                             Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica.
                         </p>
                     </div>
-                    <div class="collaborate-btn-icon">
-                        <a class="button button-collaborate" href="https://www.youtube.com/watch?v=xdCl0Wut-IA" target="_blank">Ir al tutorial</a>
+                    <div class="button-center">
+                        <div class="button-content">
+                            <a class="button button-collaborate" href="https://www.youtube.com/watch?v=xdCl0Wut-IA" target="_blank">Ir al tutorial</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -192,9 +197,12 @@
         <section class="vacation-important">
             <div class="vacation-important__svg">
                 <svg viewBox="0 0 1920 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 0H0V72L80 66C160 60 320 48 480 54C548.571 56.5714 617.143 62.449 685.714 68.3265C777.143 76.1633 868.571 84 960 84C1088 84 1216 68.64 1344 53.28C1376 49.44 1408 45.6 1440 42C1600 24 1760 12 1840 6L1920 0Z" fill="url(#paint0_linear)" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1920 0H0V72L80 66C160 60 320 48 480 54C548.571 56.5714 617.143 62.449 685.714 68.3265C777.143 76.1633 868.571 84 960 84C1088 84 1216 68.64 1344 53.28C1376 49.44 1408 45.6 1440 42C1600 24 1760 12 1840 6L1920 0Z"
+                        fill="url(#paint0_linear)" />
                     <defs>
-                        <linearGradient id="paint0_linear" x1="0" y1="162" x2="1920" y2="162" gradientUnits="userSpaceOnUse">
+                        <linearGradient id="paint0_linear" x1="0" y1="162" x2="1920" y2="162"
+                            gradientUnits="userSpaceOnUse">
                             <stop stop-color="white" />
                         </linearGradient>
                     </defs>
