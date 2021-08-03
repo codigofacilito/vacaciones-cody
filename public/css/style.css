@@ -48,7 +48,7 @@ h1{
 
 nav{
   background-color: rgb(249, 178, 8);
-  width: 50%;
+  width: 70%;
   padding: 15px;
   display: flex;
   gap:1em;
@@ -279,6 +279,30 @@ ul li{
 
 .fotosp a{
   color: #000;
+}
+
+/***********************************************/
+
+.efecto{
+  position: relative;
+  font-size: 1.5em;
+  /*margin-left: auto;*/
+  margin: auto;
+  width: 250px;
+  height: 80px;
+  background: #fff;
+  display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+
+
+.efecto:hover{
+  -webkit-transform: rotate(360deg);transform: rotate(360deg);
+  transition:all .5s ease-in-out;
 }
 
 
