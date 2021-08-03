@@ -27,26 +27,3 @@ La fecha límite para enviar tu pull request es el 4 de Agosto, 11:59pm
 
 **Mi página no se ve en GitHub Pages**
 Asegúrate de haber habilitado GitHub Actions y GitHub Pages, y que la rama de GitHub Pages sea gh-pages
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
