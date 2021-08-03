@@ -1,0 +1,39 @@
+.Header--NavBar {
+  margin-block-start: 10px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 3000;
+}
+.Header--NavBar a {
+  text-decoration: none;
+  margin-inline-end: 15px;
+  font: var(--BodyMobile);
+  color: white;
+  text-transform: uppercase;
+}
+
+.Header--NavBar .active {
+  color: var(--highlight);
+  font-weight: 700;
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .Header--NavBar{
+    padding-inline-start: 60px;
+    padding-inline-end: 60px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {.Header--NavBar{
+  max-width: 2600px;
+  margin-inline-end: auto;
+  margin-inline-start: auto ;
+}}

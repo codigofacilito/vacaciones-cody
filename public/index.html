@@ -1,100 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
-
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./icons/codi.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--color de la barra nav mobil-->
+    <meta name="theme-color" content="#56C9FE" />
+    <!--mobile friendly-->
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <!---SEO-->
+    <link rel="canonical" href="https://mrbanano.github.io/vacaciones-cody/" />
+    <meta name="author" content="Alvaro Castillo Carreño" />
+    <meta
+      name="description"
+      content="Cody nos platica que hizo en su #VeranoFrontEnd "
+    />
+    <meta
+      name="keywords"
+      content="Alvar,Castillo,Carreño,ingenerio,sistemas,html,css,cody,codigofacilito,vacaciones,frontend,mobile,web,responsible,projecto,project,mexico,task,webdevelop,"
+    />
+    <!---Twitter-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@666alvaro" />
+    <meta name="twitter:creater" content="@666alvaro" />
+    <meta name="twitter:title" content="Vacaciones de cody por Alvaro" />
+    <meta
+      name="twitter:description"
+      content="Cody nos platica que hizo en su #VeranoFrontEnd"
+    />
+    <meta
+      name="twitter:image"
+      content="https://i.postimg.cc/L5RqBzLk/Facebook-post-2-2.png"
+    />
+    <!----facebook-->
+    <meta name="og:locale" content="es_MX" />
+    <meta name="og:type" content="website" />
+    <meta name="og:title" content="Vacaciones Cody" />
+    <meta
+      name="og:description"
+      content="Cody nos platica que hizo en su #VeranoFrontEnd"
+    />
+    <meta name="og:url" content="https://mrbanano.github.io/vacaciones-cody/" />
+    <meta
+      name="og:site_name"
+      content="https://mrbanano.github.io/vacaciones-cody/"
+    />
+    <meta
+      name="og:image"
+      content="https://i.postimg.cc/L5RqBzLk/Facebook-post-2-2.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mis vacaciones</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="Header--NavBar">
+      <a class="active" href="/vacaciones-cody/">Inicio</a>
+      <a href="fotos.html">Fotos</a>
+    </nav>
+    <main class="Main">
+      <header class="Header">
+        <div class="hero">
+          <div class="heroText">
+            <h1 class="heroText--title">
+              &quot Estas son mis
+              <span class="highlightText">Vacaciones </span>&quot
+            </h1>
+            <p class="heroText--text">
+              Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para
+              desestresarme del código, y en esta página quiero compartirlo
+              contigo.
+            </p>
+          </div>
+          <div class="heroImage">
+            <span class="heroImage--complement"></span>
+            <img
+              src="./images/heroimagemobile.svg"
+              alt="codydecodigofacilitoenlaplaya"
+            />
+          </div>
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
       </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
+      <section class="Wave">
+        <div class="Wave--item" id="wave1" style="--i: 1"></div>
+        <div class="Wave--item" id="wave2" style="--i: 2"></div>
+        <div class="Wave--item" id="wave3" style="--i: 3"></div>
+        <div class="Wave--item" id="wave4" style="--i: 4"></div>
+      </section>
+      <section class="Vacation">
+        <header class="Vacation--container">
+          <h2 class="Vacation--title">
+            Mis vacaciones <span class="highlightText">Frontend.</span>
+          </h2>
+        </header>
+        <p class="Vacation--text">
+          Durante el verano de 2019, decidí comenzar a aprender desarrollo
+          frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y
+          JavaScript
         </p>
-      </div>
-    </section>
+        <p class="Vacation--text">
+          Cada tarde, después de conocer nuevos lugares en mis vacaciones,
+          practicaba mis habilidades en tecnologías frontend, construyendo esta
+          página
+        </p>
+        <p class="Vacation--text">
+          <strong> Estos son los cursos que estuve tomando: </strong>
+        </p>
+        <div class="Vacation__cards">
+          <div class="Vacation__cards--card develop">
+            <img
+              src="./icons/webDevelop.svg"
+              alt="curso profesional de desarrollo web "
+            />
+            <p>Curso profesional de Desarrollo Web</p>
+          </div>
+          <div class="Vacation__cards--card pages">
+            <img
+              src="./icons/webpage.svg"
+              alt="curso para crear mi primera pagina web"
+            />
+            <p>Curso para crear mi primera página web</p>
+          </div>
+        </div>
+      </section>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
-  </main>
-</body>
+      <section class="Learn">
+        <header class="Learn--container">
+          <h2 class="Learn--title">
+            Ruta de aprendizaje <span class="highlightText"> 2021</span>
+          </h2>
+          <p class="Learn--text">
+            También me propuse aprender nuevas tecnologías durante 2021
+          </p>
+        </header>
+        <ul class="Learn--list">
+          <li class="Learn__list--item">Flexbox, y Grid</li>
+          <li class="Learn__list--item">Animaciones con CSS y JavaScript</li>
+          <li class="Learn__list--item">AJAX</li>
+          <li class="Learn__list--item">HTML semántico</li>
+          <li class="Learn__list--item more">Entre otros</li>
+        </ul>
+      </section>
+      <section class="Collaborates">
+        <header class="Collaborates--container">
+          <h2 class="Collaborates--title">
+            Colabora en mi <span class="highlightText">página</span>
+          </h2>
+          <img
+            class="Collaborates--image"
+            src="./icons/github.svg"
+            width="100px"
+            height="100px"
+            alt="logodegithub"
+          />
+        </header>
+        <p class="Collaborates--text">
+          Como parte de mi formación Frontend, aprendí acerca de Git y GitHub,
+          por lo que decidí subir mi código a GitHub
+        </p>
+        <p class="Collaborates--text">
+          Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y
+          enviando un pull request.
+        </p>
+        <p class="Collaborates--text">
+          Si nunca antes has colaborado con un repositorio, en Código Facilito
+          hay un tutorial que lo explica
+        </p>
+        <div class="Button--Container Collaborates--btn">
+          <a
+            class="Button"
+            href="https://github.com/codigofacilito/vacaciones-cody/"
+            target="_blank"
+            rel="noopener"
+            >Ir al tutorial</a
+          >
+        </div>
+      </section>
+      <section class="Photos">
+        <header class="Photos--container">
+          <h2 class="Photos--title">
+            Aquí te comparto algunas fotos de mis
+            <span class="highlightText">vacaciones</span>
+          </h2>
+          <p class="Photos--text">
+            ¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto
+            algunas fotos que tomé:
+          </p>
+        </header>
+        <div class="Photos--slider">
+          <input type="radio" id="1" name="image-slider" hidden />
+          <input type="radio" id="2" name="image-slider" hidden />
+          <input type="radio" id="3" name="image-slider" hidden />
+          <div class="slide">
+            <div class="item-slide">
+              <img src="images/1.jpg" alt="Cody en la playa" />
+            </div>
+            <div class="item-slide">
+              <img src="images/2.jpg" alt="Cody acampando" />
+            </div>
+            <div class="item-slide">
+              <img src="images/3.jpg" alt="Cody en una alberca" />
+            </div>
+          </div>
+          <div class="pagination">
+            <label for="1" class="pagination-item">
+              <img src="images/1.jpg" alt="Cody en la playa" />
+            </label>
+            <label for="2" class="pagination-item">
+              <img src="images/2.jpg" alt="Cody acampando" />
+            </label>
+            <label for="3" class="pagination-item">
+              <img src="images/3.jpg" alt="Cody en una alberca" />
+            </label>
+          </div>
+        </div>
+        <p class="Photos--text">
+          Puedes ver más, en la galería de fotos de mi página
+        </p>
+        <div class="Button--Container Slider--btn">
+          <a class="Button" href="fotos.html">Ir a la galería</a>
+        </div>
+      </section>
+      <section class="Advantages">
+        <header class="Advantages--container">
+          <h2 class="Advantages--title">
+            La importancia de las <span class="highlightText"> Vacaciones</span>
+          </h2>
+          <p class="Advantages--text">
+            Aprender a programar y escribir código, puede ser estresante, por
+            eso es muy importante que periódicamente nos desconectemos y
+            descansemos apropiadamente
+          </p>
+          <p class="Advantages--text">
+            Durante mis vacaciones aprendí que existen distintos beneficios de
+            descansar:
+          </p>
+          <ol class="Advantages--list">
+            <li class="Advantages__list--itemText"><span class="Salud"></span> Mejora la salud mental</li>
+            <li class="Advantages__list--itemText"><span class="Motivacion"></span> Incrementa la motivación</li>
+            <li class="Advantages__list--itemText"><span class="Burnout"></span> Reduce el burnout</li>
+            <li class="Advantages__list--itemText"><span class="Creatividad"></span> Mejora tu productividad y creatividad</li>
+          </ol>
+        </header>
+      </section>
+      <footer class="Footer">
+        <section class="Footer-container">
+          <div class="Footer--image">
+            <a
+              href="https://github.com/Mrbanano"
+              rel="noopener"
+              target="_blank"
+            >
+              <img src="./icons/githubWhite.svg" alt="github" />
+            </a>
+            <a
+              href="https://www.instagram.com/alvaro.castillo.web/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="./icons/instagram.svg" alt="instagram" />
+            </a>
+          </div>
+          <div class="Footer--text">
+            <p>Diseñado con <span>❤️</span>por Alvaro Castillo</p>
+          </div>
+        </section>
+      </footer>
+    </main>
+  </body>
 </html>

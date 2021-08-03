@@ -1,0 +1,39 @@
+@import './items/card.css';
+
+.Vacation{
+    margin-block-end: 114px;
+    border-top: 2px solid #B8E1F9;
+    background: linear-gradient(180deg, #B8E1F9 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.Vacation--title{
+    margin-block-end: 10px;
+    font: var(--h2Mobile);
+    color: var(--White);
+}
+.Vacation--text{
+    margin-block-start: 20px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+    font: var(--BodyMobile2);
+    max-width: 400px;
+
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .Vacation{
+      padding-inline-start: 20px;
+      padding-inline-end: 20px;
+    }
+    .Vacation--text{
+        margin-block-start: 40px;
+        font: var(--BodyMobile);
+    }
+  }
+  
+  
+
