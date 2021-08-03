@@ -24,15 +24,15 @@ main{
 }
 
 /* HEADER */
-header {
-  border: 1px solid red;
+.header {
   width: 100vw;
+  height: 65vh;
 }
 
 header .hero {
   display: block;
   width: 100%;
-  height: 100vh;
+  height: inherit;
   position: absolute;
   top: 0;
   left: 0;
@@ -148,12 +148,18 @@ header h1 {
   height: 100px;
 }
 
-header .presentation {
-  width: 90%;
+.cards {
   border-radius: 15px;
   border: 2px solid white;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: var(--secondary-color);
+  font-size: 1.1em;
   margin: 0 auto;
+  padding: 10px;
+  line-height: 1.6em;
+}
+
+header .presentation {
+  width: 90%;
 }
 
 section{

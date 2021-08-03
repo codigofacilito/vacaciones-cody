@@ -7,6 +7,7 @@ function changeMode() {
 }
 
 window.addEventListener('load', () => {
+  document.body.style.transition = ''
   changeMode()
 })
 
