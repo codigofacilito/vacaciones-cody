@@ -13,12 +13,7 @@ nav ul li i{
 
 nav .navbar-profile{
   border: 2px solid #929090;
-}
-
-main{
-  max-width: 960px;
-  margin:0 auto;
-}
+} 
 
 section{
   margin-top: 3rem;
