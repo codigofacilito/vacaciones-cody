@@ -1,100 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis vacaciones</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Create the first part -->
+    <header class="hero">
+      <div class="container">
+        <nav class="nav">
+          <a class="nav__items" href="/">Inicio</a>
+          <a class="nav__items" href="fotos.html">Fotos</a>
+        </nav>
+
+        <section class="hero__container">
+          <div class="hero__texts">
+            <h1 class="hero__title">Estas son mis Vacaciones</h1>
+            <p class="hero__subtitle">
+              Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para
+              desestresarme del código, y en esta página quiero compartirlo
+              contigo.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="hero__wave" style="overflow: hidden">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: #fff"
+          ></path>
+        </svg>
+      </div>
     </header>
-
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
+    <!-- Presentation -->
+    <main>
+      <section class="presentation container">
+        <img
+          src="./images/coddyAvatar.jpg"
+          alt="coddy avatar"
+          class="presentation__picture"
+        />
+        <h2 class="subtitle">Mis vacaciones Frontend</h2>
+        <p class="presentation--copy">
+          Durante el verano de 2019, decidí comenzar a aprender desarrollo
+          frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y
+          JavaScript.
         </p>
-      </div>
-    </section>
+        <p class="presentation--copy">
+          Cada tarde, después de conocer nuevos lugares en mis vacaciones,
+          practicaba mis habilidades en tecnologías frontend, construyendo esta
+          página
+        </p>
+        <div class="presentation--courses">
+          <p class="weight-700">Estos son los cursos que estuve tomando:</p>
+          <ul class="courses">
+            <li class="courses__item">Curso profesional de Desarrollo Web</li>
+            <li class="courses__item">
+              Curso para crear mi primera página web
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Presentation -->
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
-  </main>
-</body>
+      <!-- About Container -->
+      <section class="route container">
+        <div class="route__text">
+          <h2 class="subtitle">Ruta de aprendizaje 2021</h2>
+          <p>También me propuse aprender nuevas tecnologías durante 2021</p>
+        </div>
+        <div id="splide" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img
+                    class="images-logo"
+                    src="./images/css.svg"
+                    alt="css-logo"
+                  />
+                  <figcaption class="images-logo--info">
+                    Flexbox, y Grid
+                  </figcaption>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img
+                    class="images-logo"
+                    src="./images/html.svg"
+                    alt="html-logo"
+                  />
+                  <figcaption class="images-logo--info">
+                    HTML semántico
+                  </figcaption>
+                  <!-- <figcaption>Animaciones con CSS y JavaScript</figcaption> -->
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img
+                    class="images-logo"
+                    src="./images/jquery.svg"
+                    alt="javascript-logo"
+                  />
+                  <figcaption class="images-logo--info">AJAX</figcaption>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img
+                    class="images-logo"
+                    src="./images/animacss.svg"
+                    alt="animation-logo"
+                  />
+                  <figcaption class="images-logo--info">
+                    Animaciones CSS
+                  </figcaption>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img
+                    class="images-logo"
+                    src="./images/js.svg"
+                    alt="javascript-logo"
+                  />
+                  <figcaption class="images-logo--info">Entre otros</figcaption>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- About container -->
+
+      <section class="collaboration">
+        <div class="container">
+          <h2 class="subtitle">Colabora en mi página</h2>
+
+          <p class="collaboration--copy">
+            Como parte de mi formación Frontend, aprendí acerca de Git y GitHub,
+            por lo que decidí subir mi código a GitHub
+          </p>
+          <p class="collaboration--copy">
+            Puedes ayudarme a mejorar mi página, haciendo un fork de mi página,
+            y enviando un pull request.
+          </p>
+          <p class="collaboration--copy">
+            Si nunca antes has colaborado con un repositorio, en Código Facilito
+            hay un tutorial que lo explica
+          </p>
+          <a class="btn" href="" target="_blank">Ir al tutorial</a>
+        </div>
+      </section>
+
+      <section class="vacations">
+        <div class="container">
+          <h2 class="subtitle">
+            Aquí te comparto algunas fotos de mis vacaciones
+          </h2>
+          <p class="vacations--texts">
+            ¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto
+            algunas fotos que tomé:
+          </p>
+          <div class="collague__grid">
+            <article class="collague__item">
+              <img
+                class="collague__img"
+                src="images/5.jpg"
+                alt="Cody en la playa"
+              />
+
+              <div class="collague__hover">
+                <h2 class="collagues__title">Instagram</h2>
+                <i class="collague__icon fab fa-instagram collague__icon"></i>
+              </div>
+            </article>
+            <article class="collague__item">
+              <img
+                class="collague__img"
+                src="images/2.jpg"
+                alt="Cody acampando"
+              />
+
+              <div class="collague__hover">
+                <h2 class="collagues__title">Instagram</h2>
+                <i class="collague__icon fab fa-instagram"></i>
+              </div>
+            </article>
+            <article class="collague__item">
+              <img
+                class="collague__img"
+                src="images/3.jpg"
+                alt="Cody en una alberca"
+              />
+              <div class="collague__hover">
+                <h2 class="collagues__title">Instagram</h2>
+                <i class="collague__icon fab fa-instagram"></i>
+              </div>
+            </article>
+            <article class="collague__item">
+              <img
+                class="collague__img"
+                src="images/1.jpg"
+                alt="Cody en una alberca"
+              />
+              <div class="collague__hover">
+                <h2 class="collagues__title">Instagram</h2>
+                <i class="collague__icon fab fa-instagram"></i>
+              </div>
+            </article>
+          </div>
+          <div class="vacations--info">
+            <p>Puedes ver más, en la galería de fotos de mi página</p>
+            <a class="btn" href="fotos.html">Ir a la galería</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="information">
+        <div class="container">
+          <h2 class="subtitle">La importancia de las vacaciones</h2>
+          <p>
+            Aprender a programar y escribir código, puede ser estresante, por
+            eso es muy importante que periódicamente nos desconectemos y
+            descansemos apropiadamente
+          </p>
+          <p class="weight-700">
+            Durante mis vacaciones aprendí que existen distintos beneficios de
+            descansar:
+          </p>
+          <div class="health__flex">
+            <ul class="health">
+              <li class="health__item">Mejora la salud mental</li>
+              <li class="health__item">Incrementa la motivación</li>
+              <li class="health__item">Reduce el burnout</li>
+              <li class="health__item">
+                Mejora tu productividad y creatividad
+              </li>
+            </ul>
+            <img
+              class="health__img"
+              src="./images/cody-healt.png"
+              alt="cody-mamadisimo"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="grid">
+        <div class="footer-texts">
+          <h2 class="subtitle">Contactame</h2>
+        </div>
+        <div class="footer-item1">
+          <a href="https://github.com/codigofacilito">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <div class="footer-item2">
+          <a href="https://www.linkedin.com/company/c%C3%B3digofacilito/about/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        <div class="footer-item3">
+          <a href="https://twitter.com/codigofacilito">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <div class="footer-item4">
+          <a href="https://instagram.com/codigofacilito">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/5593a0ff38.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        var splide = new Splide("#splide", {
+          type: "loop",
+          perPage: 3,
+          autoplay: true,
+          breakpoints: {
+            640: {
+              perPage: 2,
+              gap: "1rem",
+            },
+            480: {
+              perPage: 1,
+              gap: "1rem",
+            },
+          },
+        });
+
+        splide.on("autoplay:playing", (rate) => {
+          console.log(rate);
+        });
+
+        splide.mount();
+      });
+    </script>
+  </body>
 </html>

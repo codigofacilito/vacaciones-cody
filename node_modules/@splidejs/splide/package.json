@@ -1,0 +1,55 @@
+{
+  "name": "@splidejs/splide",
+  "version": "2.4.21",
+  "description": "Splide is a lightweight and powerful slider/carousel without any dependencies.",
+  "author": "Naotoshi Fujita",
+  "license": "MIT",
+  "main": "dist/js/splide.js",
+  "module": "dist/js/splide.esm.js",
+  "types": "src/js/splide.d.ts",
+  "keywords": [
+    "splide",
+    "slider",
+    "carousel",
+    "slideshow",
+    "lightweight",
+    "touch",
+    "responsive"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Splidejs/splide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Splidejs/splide/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "autoprefixer": "^10.0.4",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-gzip": "^1.4.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-rollup": "^2.17.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-uglify": "^3.0.2",
+    "jest": "^26.6.3",
+    "merge-stream": "^2.0.0",
+    "serialize-javascript": "^5.0.1",
+    "webpack": "^5.9.0",
+    "webpack-stream": "^6.1.1"
+  },
+  "scripts": {
+    "build:js": "gulp build:js",
+    "build:sass": "gulp build:sass",
+    "test": "jest --clearCache && jest",
+    "lint": "gulp lint"
+  }
+}
