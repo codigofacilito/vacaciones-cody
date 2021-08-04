@@ -1,38 +1,138 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+section#navbar {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+section#navbar nav {
+  padding: 16px 0;
+  width: 100%;
+  background-color: #0EBD99;
   display: flex;
-  gap:1em;
+  justify-content: center;
+}
+section#navbar nav a {
+  margin: 0 16px;
+}
+section#navbar nav a img {
+  width: 50px;
 }
 
-main{
-  text-align: center;
+main {
   max-width: 960px;
-  margin:0 auto;
+  margin: 24px auto;
+}
+main section {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+main section header {
+  font-family: "Comfortaa", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section header p {
+  font-family: "Quicksand", sans-serif;
+}
+main section#vacations header ol, main section#vacations header ul {
+  display: flex;
+  list-style-type: none;
+}
+main section#vacations header ol li, main section#vacations header ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 16px;
+}
+main section#vacations header ol li i, main section#vacations header ul li i {
+  color: #0EBD99;
+  margin-bottom: 8px;
+  font-size: 70px;
+}
+main section#gallery p a img {
+  width: 40px;
+}
+main section#route header ol, main section#route header ul {
+  display: flex;
+  list-style-type: none;
+}
+main section#route header ol li, main section#route header ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 16px;
+}
+main section#route header ol li i, main section#route header ul li i {
+  color: #0EBD99;
+  margin-bottom: 8px;
+  font-size: 70px;
+}
+main div.fotos {
+  display: grid;
+  gap: 24px;
+}
+main div.fotos[data-document=index] {
+  height: 240px;
+  grid-template: 200px/repeat(3, 300px);
+}
+main div.fotos[data-document=gallery] {
+  height: 440px;
+  grid-template: repeat(2, 200px)/repeat(3, 300px);
+}
+main div.fotos img {
+  width: 250px;
+  height: 180px;
+  justify-self: center;
+  align-self: center;
+}
+main div.fotos img:hover {
+  cursor: pointer;
+  transition-delay: ease;
+  transform: scale(1.5);
 }
 
-section{
-  margin-top: 3rem;
+footer {
+  width: 100%;
+  background-color: #0EBD99;
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
 }
 
-.cursos div{
+#modal {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
   background-color: black;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#modal div {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  top: 16px;
+}
+#modal div i {
+  font-size: 30px;
   color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  padding-right: 16px;
 }
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
-}
-
-ol li{
-  text-align: left;
+#modal div i:hover {
+  cursor: pointer;
 }
