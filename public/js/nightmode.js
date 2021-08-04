@@ -20,7 +20,7 @@ var switching = function() {
     background = "#465902";
     colors = "white";
     navBg = "#04BF8A";
-    sunMoon = "images/moon.png";
+    sunMoon = "moon";
     cursosBg = "#F2B705"
   }
   else {
@@ -28,14 +28,15 @@ var switching = function() {
     background = "#99D0F2";
     colors = "black";
     navBg = "#465902";
-    sunMoon = "images/sun.png";
+    sunMoon = "sun";
     cursosBg = "#04BF8A";
   }
   backgroundLabel.style.background = background;
   backgroundLabel.style.color = colors;
   nav.style.background = navBg;
   footer.style.background = navBg;
-  sun.src = sunMoon;
+  sun.alt = sunMoon;
+  sun.src = `images/${sunMoon}.png`;
   for (var j = 0; j < enfasis.length; j++) {
     enfasis[j].style.color = cursosBg;
   }
