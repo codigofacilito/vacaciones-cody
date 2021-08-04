@@ -7,7 +7,7 @@
     <title>Mis vacaciones</title>
 
     <!-- tailwind -->
-    <link rel="stylesheet" href="/styles/tailwind.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
 
     <!-- swiper -->
     <link
@@ -22,7 +22,10 @@
     <!-- kursor css -->
     <link rel="stylesheet" href="/styles/cursor.css" />
 
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <nav
@@ -39,10 +42,11 @@
         right-0
         z-20
       "
+      data-aos="fade-in"
     >
       <a href="/" class="text-green-800 font-bold text-xl">Cody</a>
 
-      <ul class="text-green-800 font-semibold">
+      <ul class="text-green-800 font-semibold -mr-5">
         <a
           href="/"
           class="
@@ -84,18 +88,33 @@
           pattern-vertical-lines-xl
         "
       >
-        <h1 class="text-3xl font-bold text-green-800 lg:text-6xl">
+        <h1
+          class="text-3xl font-bold text-green-800 lg:text-6xl"
+          data-aos="fade-up"
+        >
           Estas son mis vacaciones!
         </h1>
-        <p class="mt-4 text-md text-green-800 lg:text-xl lg:w-2/4">
+        <p
+          class="mt-4 text-md text-green-800 lg:text-xl lg:w-2/4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para
           desestresarme del código, y en esta página quiero compartirlo contigo.
         </p>
+
+        <img
+          src="/assets/images/corner-cody.png"
+          alt="Cody"
+          class="absolute bottom-0 right-0 w-60"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        />
       </header>
 
       <section class="h-screen bg-green-200">
         <header class="text-center py-8">
-          <h2 class="text-2xl font-bold text-green-800">
+          <h2 class="text-2xl font-bold text-green-800" data-aos="fade-up">
             Mis vacaciones Frontend
           </h2>
         </header>
@@ -106,6 +125,8 @@
             text-md text-green-800
             lg:w-4/5 lg:mx-auto lg:text-xl lg:p-auto
           "
+          data-aos="fade-up"
+          data-aos-delay="200"
         >
           <p>
             Durante el verano de 2019, decidí comenzar a aprender desarrollo
@@ -120,11 +141,19 @@
         </article>
 
         <article class="px-6 mt-10 lg:w-4/5 lg:mx-auto lg:p-auto">
-          <h3 class="text-xl font-bold text-green-800">
+          <h3
+            class="text-xl font-bold text-green-800"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             Estos son los cursos que estuve tomando:
           </h3>
 
-          <ul class="cursos my-6 lg:flex lg:items-center">
+          <ul
+            class="cursos my-6 lg:flex lg:items-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <li
               class="
                 bg-pink-100
@@ -166,7 +195,7 @@
       </section>
 
       <section class="min-h-screen bg-green-100">
-        <header class="text-center py-8">
+        <header class="text-center py-8" data-aos="fade-in">
           <h2 class="text-2xl font-bold text-green-800 mb-2">
             Ruta de aprendizaje 2021
           </h2>
@@ -175,7 +204,7 @@
           </p>
         </header>
 
-        <ul class="flex flex-col justify-center m-auto">
+        <ul class="flex flex-col justify-center m-auto technologies">
           <li class="flex bg-blue-200">
             <section
               class="
@@ -200,7 +229,7 @@
                     rounded-full
                     w-12
                     h-12
-                    text-xl text-indigo-100
+                    text-xl text-blue-100
                     bg-blue-700
                     font-black
                     flex
@@ -217,7 +246,7 @@
                   1
                 </div>
                 <img
-                  alt="step1"
+                  alt="Layout"
                   class="w-56 h-56 rounded-full shadow my-5 object-scale-down"
                   src="/assets/icons/layout.png"
                 />
@@ -239,33 +268,41 @@
                   bg-blue-200
                 "
               >
-                <p class="text-xs uppercase font-bold text-blue-500">Step 1</p>
-                <h3 class="md:text-3xl text-xl font-bold text-blue-700">
-                  Flexbox, y Grid
+                <p
+                  class="text-xs uppercase font-bold text-blue-500"
+                  data-aos="fade-up"
+                >
+                  Step 1
+                </p>
+                <h3
+                  class="md:text-3xl text-xl font-bold text-blue-700"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  Flexbox y Grid
                 </h3>
               </article>
             </section>
           </li>
-
           <li class="flex bg-red-200">
-            <article
+            <section
               class="
-                flex
                 w-4/5
                 mx-auto
-                md:flex-row md:text-left
-                text-center
+                flex
+                md:flex-row
                 flex-col
+                md:text-left
+                text-center
               "
             >
               <article
                 class="flex flex-col justify-center items-center relative"
               >
                 <div class="w-56 h-12 md:flex hidden justify-center">
-                  <div
-                    class="h-full border-r-4 border-red-300 border-dashed"
-                  ></div>
+                  <div class="h-full border-red-300 border-dashed"></div>
                 </div>
+
                 <div
                   class="
                     rounded-full
@@ -285,10 +322,10 @@
                     mr-2
                   "
                 >
-                  2
+                  1
                 </div>
                 <img
-                  alt="step2"
+                  alt="Layout"
                   class="w-56 h-56 rounded-full shadow my-5 object-scale-down"
                   src="/assets/icons/animations.png"
                 />
@@ -298,6 +335,7 @@
                   ></div>
                 </div>
               </article>
+
               <article
                 class="
                   ml-5
@@ -309,33 +347,41 @@
                   bg-red-200
                 "
               >
-                <p class="text-xs uppercase font-bold text-red-500">Step 2</p>
-                <h3 class="md:text-3xl text-xl font-bold text-red-700">
+                <p
+                  class="text-xs uppercase font-bold text-red-500"
+                  data-aos="fade-up"
+                >
+                  Step 2
+                </p>
+                <h3
+                  class="md:text-3xl text-xl font-bold text-red-700"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   Animaciones con CSS y JavaScript
                 </h3>
               </article>
-            </article>
+            </section>
           </li>
-
           <li class="flex bg-indigo-200">
-            <article
+            <section
               class="
-                flex
-                md:flex-row md:text-left
-                text-center
-                flex-col
-                mx-auto
                 w-4/5
+                mx-auto
+                flex
+                md:flex-row
+                flex-col
+                md:text-left
+                text-center
               "
             >
               <article
                 class="flex flex-col justify-center items-center relative"
               >
                 <div class="w-56 h-12 md:flex hidden justify-center">
-                  <div
-                    class="h-full border-r-4 border-indigo-300 border-dashed"
-                  ></div>
+                  <div class="h-full border-indigo-300 border-dashed"></div>
                 </div>
+
                 <div
                   class="
                     rounded-full
@@ -355,10 +401,10 @@
                     mr-2
                   "
                 >
-                  3
+                  1
                 </div>
                 <img
-                  alt="step3"
+                  alt="Layout"
                   class="w-56 h-56 rounded-full shadow my-5 object-scale-down"
                   src="/assets/icons/data.png"
                 />
@@ -368,6 +414,7 @@
                   ></div>
                 </div>
               </article>
+
               <article
                 class="
                   ml-5
@@ -379,36 +426,41 @@
                   bg-indigo-200
                 "
               >
-                <p class="text-xs uppercase font-bold text-indigo-500">
+                <p
+                  class="text-xs uppercase font-bold text-indigo-500"
+                  data-aos="fade-up"
+                >
                   Step 3
                 </p>
-                <h3 class="md:text-3xl text-xl font-bold text-indigo-700">
+                <h3
+                  class="md:text-3xl text-xl font-bold text-indigo-700"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   AJAX
                 </h3>
               </article>
-            </article>
+            </section>
           </li>
-
           <li class="flex bg-pink-200">
-            <article
+            <section
               class="
+                w-4/5
+                mx-auto
                 flex
                 md:flex-row
                 flex-col
                 md:text-left
                 text-center
-                w-4/5
-                mx-auto
               "
             >
               <article
                 class="flex flex-col justify-center items-center relative"
               >
                 <div class="w-56 h-12 md:flex hidden justify-center">
-                  <div
-                    class="h-full border-r-4 border-pink-300 border-dashed"
-                  ></div>
+                  <div class="h-full border-pink-300 border-dashed"></div>
                 </div>
+
                 <div
                   class="
                     rounded-full
@@ -431,14 +483,17 @@
                   4
                 </div>
                 <img
-                  alt="step4"
+                  alt="Layout"
                   class="w-56 h-56 rounded-full shadow my-5 object-scale-down"
-                  src="/assets/icons/html.png"
+                  src="/assets/icons/layout.png"
                 />
                 <div class="w-56 h-12 md:flex hidden justify-center">
-                  <div class="h-full border-pink-300 border-dashed"></div>
+                  <div
+                    class="h-full border-r-4 border-pink-300 border-dashed"
+                  ></div>
                 </div>
               </article>
+
               <article
                 class="
                   ml-5
@@ -450,19 +505,28 @@
                   bg-pink-200
                 "
               >
-                <p class="text-xs uppercase font-bold text-pink-500">Step 4</p>
-                <h3 class="md:text-3xl text-xl font-bold text-pink-700">
+                <p
+                  class="text-xs uppercase font-bold text-pink-500"
+                  data-aos="fade-up"
+                >
+                  Step 4
+                </p>
+                <h3
+                  class="md:text-3xl text-xl font-bold text-pink-700"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   HTML semántico
                 </h3>
               </article>
-            </article>
+            </section>
           </li>
         </ul>
       </section>
 
       <section class="h-screen bg-indigo-100">
         <header class="text-center py-8">
-          <h2 class="text-indigo-800 font-bold text-2xl">
+          <h2 class="text-indigo-800 font-bold text-2xl" data-aos="fade-up">
             Colabora en mi página
           </h2>
         </header>
@@ -473,18 +537,19 @@
           "
         >
           <article class="px-6 text-indigo-800">
-            <p>
+            <p data-aos="fade-up" data-aos-delay="200">
               Como parte de mi formación Frontend, aprendí acerca de Git y
               GitHub, por lo que decidí subir mi código a GitHub. Puedes
               ayudarme a mejorar mi página, haciendo un fork de mi página, y
               enviando un pull request.
             </p>
-            <p class="mt-2">
+            <p class="mt-2" data-aos="fade-up" data-aos-delay="200">
               Si nunca antes has colaborado con un repositorio, en Código
               Facilito hay un tutorial que lo explica
             </p>
 
             <a
+              rel="noreferrer"
               href="https://stylessh.vercel.app"
               target="_blank"
               class="
@@ -504,6 +569,8 @@
                 transition
                 duration-200
               "
+              data-aos="fade-up"
+              data-aos-delay="300"
               >Ir al tutorial</a
             >
           </article>
@@ -512,22 +579,28 @@
             src="/assets/images/cody-coding.svg"
             alt="Cody"
             class="p-6 w-full"
+            data-aos="fade-in"
+            data-aos-delay="200"
           />
         </section>
       </section>
 
       <section class="min-h-screen bg-red-200">
         <header class="py-8 px-6 text-center">
-          <h2 class="text-2xl font-bold text-red-800">
+          <h2 class="text-2xl font-bold text-red-800" data-aos="fade-up">
             Aquí te comparto algunas fotos de mis vacaciones.
           </h2>
-          <p class="mt-4 text-red-800">
+          <p class="mt-4 text-red-800" data-aos="fade-up" data-aos-delay="200">
             ¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto
             algunas fotos que tomé:
           </p>
         </header>
 
-        <section class="swiper-container my-8 mx-auto w-4/5 text-center">
+        <section
+          class="swiper-container my-8 mx-auto w-4/5 text-center"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
               <img
@@ -556,7 +629,11 @@
           <div class="swiper-pagination"></div>
         </section>
 
-        <article class="px-6 lg:w-4/5 lg:mx-auto text-center">
+        <article
+          class="px-6 lg:w-4/5 lg:mx-auto text-center"
+          data-aos="fade-in"
+          data-aos-delay="300"
+        >
           <p class="text-red-800">
             Puedes ver más, en la galería de fotos de mi página.
           </p>
@@ -586,24 +663,28 @@
 
       <section class="h-screen lg:h-auto bg-green-200">
         <header class="py-8 px-6 text-center">
-          <h2 class="font-bold text-2xl text-green-800">
+          <h2 class="font-bold text-2xl text-green-800" data-aos="fade-up">
             La importancia de las vacaciones
           </h2>
         </header>
 
         <article class="px-6 text-green-800 lg:w-4/5 lg:mx-auto lg:text-xl">
-          <p class="mb-4">
+          <p class="mb-4" data-aos="fade-up" data-aos-delay="200">
             Aprender a programar y escribir código, puede ser estresante, por
             eso es muy importante que periódicamente nos desconectemos y
             descansemos apropiadamente
           </p>
 
-          <p>
+          <p data-aos="fade-up" data-aos-delay="200">
             Durante mis vacaciones aprendí que existen distintos beneficios de
             descansar:
           </p>
 
-          <ol class="flex flex-col py-6 lg:flex-row justify-center w-full">
+          <ol
+            class="flex flex-col py-6 lg:flex-row justify-center w-full text-md"
+            data-aos="fade-in"
+            data-aos-delay="300"
+          >
             <li
               class="
                 bg-green-300
@@ -651,10 +732,8 @@
       </section>
     </main>
 
-
     <!-- slider -->
     <script src="/js/slider.js"></script>
-
 
     <!-- kursor js -->
     <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
@@ -663,6 +742,13 @@
       new kursor({
         type: 5,
         color: "#000",
+      });
+
+      AOS.init({
+        duration: 400,
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: true,
+        easing: "ease-in-out",
       });
     </script>
   </body>

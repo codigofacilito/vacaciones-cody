@@ -7,7 +7,7 @@
     <title>Mis vacaciones</title>
 
     <!-- tailwind -->
-    <link rel="stylesheet" href="/styles/tailwind.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
 
     <!-- patterns css -->
     <link href="https://unpkg.com/pattern.css" rel="stylesheet" />
@@ -17,6 +17,11 @@
 
     <!-- macy -->
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
@@ -34,6 +39,7 @@
         right-0
         z-20
       "
+      data-aos="fade-in"
     >
       <a href="/" class="text-green-800 font-bold text-xl">Cody</a>
 
@@ -68,25 +74,52 @@
 
     <main>
       <section class="min-h-screen py-20 px-10 lg:p-40 bg-green-200">
-        <h2 class="text-center text-3xl font-bold text-green-800 mb-10">
+        <h2
+          class="text-center text-3xl font-bold text-green-800 mb-10"
+          data-aos="fade-up"
+        >
           Mi galería de fotos
         </h2>
 
         <article class="container mx-auto" id="macy-container">
-          <img src="/assets/images/1.jpg" alt="Cody en la playa" />
+          <img
+            src="/assets/images/1.jpg"
+            alt="Cody en la playa"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          />
           <img
             src="/assets/images/2.jpg"
             class="h-80 object-cover"
             alt="Cody acampando"
+            data-aos="fade-up"
+            data-aos-delay="200"
           />
-          <img src="/assets/images/3.jpg" alt="Cody en una alberca" />
+          <img
+            src="/assets/images/3.jpg"
+            alt="Cody en una alberca"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          />
           <img
             src="/assets/images/4.jpg"
             class="h-60 object-cover"
             alt="Cody en una alberca"
+            data-aos="fade-up"
+            data-aos-delay="200"
           />
-          <img src="/assets/images/5.jpg" alt="Cody en una alberca" />
-          <img src="/assets/images/6.jpg" alt="Cody en una alberca" />
+          <img
+            src="/assets/images/5.jpg"
+            alt="Cody en una alberca"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          />
+          <img
+            src="/assets/images/6.jpg"
+            alt="Cody en una alberca"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          />
         </article>
       </section>
     </main>
@@ -101,6 +134,13 @@
       new kursor({
         type: 5,
         color: "#000",
+      });
+
+      AOS.init({
+        duration: 400,
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: true,
+        easing: "ease-in-out",
       });
     </script>
   </body>
