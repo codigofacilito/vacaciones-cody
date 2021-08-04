@@ -137,3 +137,27 @@ section{
   color: #707171;
   font-size: 1.1rem;
 }
+
+.modal-stories{
+  background: rgb(233,13,217);
+  background: linear-gradient(90deg, rgba(233,13,217,1) 0%, rgba(240,255,54,1) 100%);
+  border: 1px solid #ffffff;
+}
+
+.modal-stories .modal-body{
+  height: 500px;
+  align-items: center;
+}
+
+.modal-stories .modal-body span{
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.modal-stories .carousel-indicators{
+  top:-90%!important;
+}
+.modal-stories .carousel-indicators li{
+  width: 33%!important;
+}

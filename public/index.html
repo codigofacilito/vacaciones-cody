@@ -83,7 +83,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="stories">
-            <div class="story">
+            <div class="story" class="img-fluid" data-toggle="modal" data-target="#modalViewStories">
               <img src="images/profile.jpg" width="70" height="70" class="img-fluid img-thumbnail rounded-circle">
               <p>Mis vacaciones Frontend</p>
             </div>
@@ -183,6 +183,42 @@
                   </div>
                 </form>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal para las stories -->
+    <div class="modal" tabindex="-1" id="modalViewStories">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content modal-stories">
+          <div class="modal-body d-flex justify-content-md-center">
+            <div id="stories" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#stories" data-slide-to="0" class="active"></li>
+                <li data-target="#stories" data-slide-to="1"></li>
+              </ol>            
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <span>Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript
+                    <i class="em em-nerd_face" aria-role="presentation" aria-label="NERD FACE"></i>
+                  </span>
+                </div>
+                <div class="carousel-item">
+                  <span>Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página
+                    <i class="em em-pencil2" aria-role="presentation" aria-label="PENCIL"></i>
+                  </span>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#stories" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#stories" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
           </div>
         </div>
