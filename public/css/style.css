@@ -1,38 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito+Sans:wght@300;400&display=swap');
+body{
+      font-family: 'Nunito Sans', sans-serif;
+      font-size:16px;
+      margin:0;
+      padding:0;
+      overflow-x: hidden;
+}
+
+:root{
+  --white:#FFFAFA;
+  --green:#49B094;
+  --green-light:#38DAAE;
+  --blue:#00143C;
+  --grey:#515151;
+  --grey-light:#FAFAFA;
+
+  --merry:'Merriweather', serif;
+  --merry-bold:700;
+
+  --nunito-light:300;
+  --nunito-regular:400;
+}
+/*helpers*/
+.animate{
+   -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.shadow-1{
+  -webkit-box-shadow: 0 6px 6px rgba(16,27,30,0.4);
+  box-shadow: 0 6px 6px rgba(16,27,30,0.4);
+}
+.c-white{
+  color:var(--white);
+}
+.c-black{
+  color:var(--black);
+}
+.c-grey{
+  color:var(--grey);
+}
+
+h1, h2{
+  font-family: var(--merry);
+  font-weight: var(--merry-bold);
+    margin:0;
+}
+
+h1{
+  font-size: 2.3rem;
+}
+h2{
+  margin:0;
+  font-size: 1.6rem;
+}
+p{
+  font-weight: var(--nunito-light);
+}
+
+.navigation{
+  position: fixed;
+z-index: 2;
+
+}
+nav .active{
+  color:var(--green-light)!important;
+}
 nav{
-  background-color: aliceblue;
-  padding: 15px;
+ width: 100vw;
+height: 70px;
+background: var(--white);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.navigation nav a{
+  text-decoration: none;
+  padding:10px;
+  font-family: var(--merry);
+  text-transform: uppercase;
+   color:var(--blue);
+}
+.navigation nav a:hover{
+  text-decoration: none;
+ color:var(--green-light);
+}
+
+/*hero*/
+.hero{
+ background: var(--green);
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+border-bottom-left-radius: 50px;
+margin-left: 5vw;
+padding: 0 5vw;
+}
+.hero article{
+  width: 50vw;
+}
+.hero img{
+width: 100%;
+max-width: 630px;
+margin-bottom: -100px;
+}
+.hero-text-container{
+  max-width: 500px;
+}
+
+/*section vacaciones front end*/
+.vacaciones-front-end{
+ margin-left: 5vw;
+padding: 5vh 5vw;
+margin-top: 20vh;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20vh;
+
+
+}
+.vacaciones-front-end article{
+  width: 50vw;
+}
+
+.vacaciones-front-end_text{
+  max-width: 500px;
+}
+.vacaciones-front-end_cursos{
   display: flex;
-  gap:1em;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+}
+.vacaciones-front-end_cursos .card{
+
+  margin:.5vw;
+  padding:2vw;
+    -webkit-background-size: cover!important;
+  -moz-background-size: cover!important;
+  -o-background-size: cover!important;
+  background-size: cover!important;
+  min-height: 180px;
+max-width: 180px;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: end;
+
+}
+.vacaciones-front-end_cursos .card:hover{
+  transform:scale(1.1);
+-webkit-box-shadow: 0 1px 1px rgba(16,27,30,0.15), 0 2px 2px rgba(16,27,30,0.15), 0 4px 4px rgba(16,27,30,0.15), 0 8px 8px rgba(16,27,30,0.15), 0 16px 16px rgba(16,27,30,0.15);
+box-shadow: 0 1px 1px rgba(16,27,30,0.15), 0 2px 2px rgba(16,27,30,0.15), 0 4px 4px rgba(16,27,30,0.15), 0 8px 8px rgba(16,27,30,0.15), 0 16px 16px rgba(16,27,30,0.15);
 }
 
-main{
+/*section ruta aprendizaje*/
+.ruta{
+  background: var(--blue);
+  padding-left:10vw;
+  margin-right:5vw;
+  border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
+padding-top:5vh;
+padding-bottom:5vh;
+display:flex;
+justify-content: center;
+align-items: center;
+padding-right: 5vw;
+margin-top:5vh;
+margin-bottom:5vh;
+}
+.ruta_text{
+  max-width: 500px;
+}
+.ruta article{
+  width: 50vw;
+}
+.ruta-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ruta article ul{
+list-style: none;
+margin: 0;
+padding: 0;
+width: auto;
+}
+.ruta article ul li{
+background: var(--green-light);
+color: var(--white);
+border-radius: 10px;
+padding: 20px 10px;
+margin: 10px 0;
+width: 100%;
+}
+.ruta article ul li:hover{
+background: var(--green);
+color: var(--white);
+transform: scale(1.1);
+cursor:pointer;
+-webkit-box-shadow: 0 1px 1px rgba(16,27,30,0.15), 0 2px 2px rgba(16,27,30,0.15), 0 4px 4px rgba(16,27,30,0.15), 0 8px 8px rgba(16,27,30,0.15), 0 16px 16px rgba(16,27,30,0.15);
+box-shadow: 0 1px 1px rgba(16,27,30,0.15), 0 2px 2px rgba(16,27,30,0.15), 0 4px 4px rgba(16,27,30,0.15), 0 8px 8px rgba(16,27,30,0.15), 0 16px 16px rgba(16,27,30,0.15);
+}
+
+/*section colabora*/
+.colabora{
+margin: 20vh 10vw;
+
+}
+.button{
+  text-decoration: none;
+  border-radius: 100px;
+  border:none;
+  display:block;
+  padding:10px 20px;
+  max-width: 160px;
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+
+}
+.button-green{
+background: var(--green);
+color:var(--white);
+
+}
+.button:hover{
+transform: scale(1.05);
+background: var(--green-light);
+}
+.colabora_text, .colabora_image{
+ width: 50vw;
+}
+.colabora_image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.colabora header{
+  text-align: center;
+  margin-bottom:5vw;
+}
+.colabora_text_container{
+  max-width: 500px;
+}
+.colabora img{
+width: 100%;
+max-width: 300px;
+}
+.colabora_columns{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section{
-  margin-top: 3rem;
-}
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
+/*section fotos*/
+.section-fotos{
+background: var(--grey-light);
+  padding: 15vh 10vw;
+}
+.section-fotos header{
+  text-align: center;
+}
+.section-fotos ul{
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+}
+.section-fotos ul li{
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
+}
+.section-fotos ul li img{
+  width: 100%;
+}
+.galeria-text{
+  padding-top:15vh;
+  text-align: center;
+  padding-bottom:5vh;
+}
+.fotos{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
 }
 .fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
+  width: 100%;
+  max-width: 500px;
 }
 
-ol li{
-  text-align: left;
+
+ /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+      .hero {
+    height: 100vh;
+    flex-direction: column;
+    margin-left: 0;
 }
+.hero article {
+    width: 90vw;
+   
+}
+.hero-text-container {
+    max-width: 500px;
+    text-align: center;
+    padding: 0 6vw;
+}
+.hero img {
+  
+    margin-bottom: 0;
+}
+.vacaciones-front-end {
+   margin-left: 0;
+padding: 0;
+margin-top: 10vh;
+margin-bottom: 10vh;
+flex-direction: column;
+}
+.vacaciones-front-end article {
+    width: 90vw;
+}
+.ruta {
+   
+    flex-direction: column;
+}
+.colabora {
+    margin: 10vh 10vw;
+}
+.colabora_columns {
+
+    flex-direction: column;
+}
+.colabora_image {
+
+    margin-top: 5vh;
+}
+.section-fotos ul {
+    
+    flex-direction: column;
+}
+    }
