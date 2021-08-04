@@ -131,7 +131,7 @@
         </div>
 
         <div class="post col-md-4" v-for="post in posts">
-          <img v-bind:src="post.picture" class="img-fluid" data-toggle="modal" data-target="#modalViewPost">
+          <img v-bind:src="post.picture" class="img-fluid" @click="seleccionarPost(post);" data-toggle="modal" data-target="#modalViewPost">
         </div>
       </div>
     </section>

@@ -8,12 +8,15 @@ var main = new Vue({
             {picture:"images/4.jpg", user:{nombre:"Cody", picture:"images/progile.jpg"}, description:"Una foto antes de que las olas se llevaran mis chanclas", comments:0, likes:0, emojis:""},
             {picture:"images/5.jpg", user:{nombre:"Cody", picture:"images/profile.jpg"}, description:"Modo incógnito", comments:0, likes:0, emojis:""},
             {picture:"images/6.jpg", user:{nombre:"Cody", picture:"images/profile.jpg"}, description:"Olvidé los audífonos en casa", comments:0, likes:0, emojis:""}
-        ]
+        ],
+        post:null
     },
     mounted: function(){
 
     },
     methods:{
-
+        seleccionarPost(post){
+            this.post = post;
+        }
     }
 });
