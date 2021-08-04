@@ -1,6 +1,6 @@
 :root {
-  --backcolor-nav: #fff;
   --backcolor-main: #fff;
+  --backcolor-nav: #fff;
   --backcolor-header-inicio: #000839;
 
   --backcolor-button: #FFA41B;
@@ -11,20 +11,31 @@
   --paragraph-font-family: arial;
   --paragraph-font-weight: lighter;
   
-  
-  /* --title-font-color: #5a5a5a;
-  --paragraph-font-color: #5a5a5a; */
-  
   --white-title-font-color: #fff;
   --white-paragraph-font-color: #ffffffc6;
   --black-title-font-color: #333;
   --black-paragraph-font-color: #333333c6;
 }
 
+
+
+
+
+
+
+
+
+
 /******* SETEO DE ESTILOS ELEMENTOS PRINCIPALES *******/
 * { 
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  cursor: url(./../images/puntero.png), auto;
+}
+
+a {
+  cursor: url(./../images/puntero_selecting.png), auto;
 }
 
 h1, h2 {
@@ -47,33 +58,17 @@ main {
   text-align: center;
 }
 
-main > header,
-main > section {
-  /* border: 2px solid red; */
-  min-height: min(600px, 70vh);
-  padding: 2rem;
 
-  display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
 
-main > header > *,
-main > section > * {
-  /* border: 2px solid goldenrod; */
-  width: min(500px, 100%);
-  padding: 1rem;
-  box-sizing: border-box;
-  font-size: max(20px, 1rem);
 
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
 
-/******* DISEÑOS CLASES GENRALES *******/
+
+
+
+
+/*************************************************/
+/************ DISEÑOS CLASES GENRALES ************/
+/*************************************************/
 .white_title {
   color: var(--white-title-font-color);
 }
@@ -90,13 +85,85 @@ main > section > * {
   color: var(--black-paragraph-font-color);
 }
 
+.componente {
+  /* border: 2px solid red; */
+  min-height: min(600px, 70vh);
+  padding: 1rem;
+  margin-bottom: 5rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.componente > * {
+  /* border: 2px solid goldenrod; */
+  width: min(500px, 100%);
+  padding: 1rem;
+  box-sizing: border-box;
+  font-size: max(20px, 1rem);
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.componente > div > img {
+  width: 100%;
+}
+
+.boton {
+  background-color: var(--backcolor-button);
+  padding: 1rem;
+  width: 100%;
+  margin: 0.5rem;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 7px #bfbfbf;
+  
+  background-image: linear-gradient(#fbfafa64, #fbfafa64);
+  background-repeat: no-repeat;
+  background-size: 10% 100%;
+  background-position-x: 111%;
+}
+
+.boton a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.boton:hover {
+  font-weight: bold;
+  box-shadow: none;
+  transition: 1s;
+
+  animation-name:  relucir;
+  animation-duration: 0.3s;
+}
+
+@keyframes relucir {
+  to {
+    background-position-x: -10%;
+  }
+}
+
+
+
+
+
+
 
 /************************************************/
 /*************** SECCION NAVIGATOR **************/
 /************************************************/
-.navigator {
+.navegacion {
   background-color: var(--backcolor-nav);
-  padding: min(1rem, 50px);
+  padding: 1rem;
   
   display: flex;
   justify-content: space-between;
@@ -112,11 +179,11 @@ main > section > * {
   box-shadow: 0 0 20px #c4c4c4;
 }
 
-.navigator__isotipoCF {
+.navegacion__isotipoCF {
   width: min(200px, 50%);
 }
 
-.navigator__isotipoCF img {
+.navegacion__isotipoCF img {
   width: 100%;
 }
 
@@ -145,17 +212,24 @@ main > section > * {
   background-size:  0% 10%;
 }
 
-.menu__enlace--selected {
+.menu__enlace--seleccionado {
   background-size: 100% 10% !important;
 }
 
 .menu__enlace:hover {
   background-image: linear-gradient(var(--backcolor-header-inicio), var(--backcolor-header-inicio));
-  background-color: #fff;
+  /* background-color: #fff; */
   transition: 0.3s;
   background-size:  100% 10%;
-  text-decoration: none;
 }
+
+
+
+
+
+
+
+
 
 
 /************************************************/
@@ -165,14 +239,14 @@ main > section > * {
   background-color: var(--backcolor-header-inicio);
 }
 
-.inicio__info h1 {
-  margin-bottom: 1rem;
+.inicio__info {
+  padding-top: 0;
 }
 
 .inicio__imagen img {
-  --border-shadow-cody: 3px;
-
   max-width: min(300px, 80%);
+  --border-shadow-cody: 3px;
+  
   filter: drop-shadow(var(--border-shadow-cody) 0px 0 white)
   drop-shadow(calc(var(--border-shadow-cody) * -1) 0px 0 white)
   drop-shadow(0px var(--border-shadow-cody) 0 white)
@@ -184,81 +258,169 @@ main > section > * {
   drop-shadow(0px calc(var(--border-shadow-cody) * -1) 0 white);
 }
 
+.inicio__flecha_siguiente_seccion a {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin: 0;
+  height: auto;
+  width: 50%;
+  background-color: #ffffff05;
+
+  display: flex;
+  justify-content: center;
+}
+
+.inicio__flecha_siguiente_seccion a img {
+  width: 2.5rem;
+  /* height: 100%; */
+  /* border: 1px solid red; */
+  color: white;
+}
+
+.inicio__flecha_siguiente_seccion a:active {
+  /* background-color: #ffffff10; */
+  background-color: none;
+}
+
+
+
+
+
+
+
+
 
 /************************************************/
 /****** SECCION "Mis vacaciones frontend" ******/
 /************************************************/
-.vacaciones_frontend__imagen img {
-  width: 100%;
-}
-
 .cursos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-
-  /* border: 1px solid red; */
 }
 
-.cursos div {
-  background-color: var(--backcolor-button);
-  padding: 1rem;
+
+
+
+
+
+
+
+
+
+
+/************************************************/
+/****** SECCION "Ruta de aprendizaje 2021" ******/
+/************************************************/
+.lista_tecnologias {
+  /* border: 1px solid rebeccapurple; */
+}
+
+.lista_tecnologias li {
+  /* border: 1px solid black; */
   width: 100%;
-  /* max-width: 200px; */
-  margin: 0.5rem;
-  color: white;
-  /* display: inline-block; */
-  border-radius: 8px;
+  min-height: 3rem;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.lista_tecnologias li a {
+  width: 100%;
+  height: 100%;
+  
+  box-sizing: border-box;
+  padding: 0.5rem;
+  text-decoration: none;
+  /* border: 1px solid red; */
+  text-align: left;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background-image: linear-gradient(#333, #333);
+  background-repeat: no-repeat;
+  background-size: 0% 0.2rem;
+  background-position-y: bottom;
+  
+  color: #606060;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 1rem;
-  box-sizing: border-box;
-  /* text-shadow: 0 0 5px #333; */
-  box-shadow: 7px 7px 7px #bfbfbf;
-
-  background-image: linear-gradient(#fbfafa64, #fbfafa64);
-  background-repeat: no-repeat;
-  background-size: 10% 100%;
-  background-position-x: 111%;
 }
 
-.cursos div:hover {
-  font-weight: bold;
-  box-shadow: none;
+.lista_tecnologias li a:hover {
   transition: 1s;
-
-  animation-name:  relucir;
-  animation-duration: 0.3s;
+  background-size: 100% 0.2rem;
 }
 
-@keyframes relucir {
-  to {
-    background-position-x: -10%;
-  }
+.lista_tecnologias li img {
+  width: 30px;
+  background-color: blue;
+  border-radius: 100%;
+  padding: 0.7rem;
 }
+
+.lista_tecnologias li img[src*="flex-grid"] {
+  background-color: #2175FF;
+}
+
+.lista_tecnologias li img[src*="animaciones"] {
+  background-color: #5CB3FF;
+}
+
+.lista_tecnologias li img[src*="ajax"] {
+  background-color: #6051D2;
+}
+
+.lista_tecnologias li img[src*="html5"] {
+  background-color: #273195;
+}
+
+.lista_tecnologias li img[src*=isotipo] {
+  width: calc(50px);
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+/************************************************/
+/****** SECCION "Colabora ccon mi pagina" ******/
+/************************************************/
+
+
+
+
+
 
 .fotos img {
   max-width: 90%;
   display: inline-block;
 }
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
-}
-
-ol li{
-  text-align: left;
-}
 
 
-/******* FANCY CURSOR *******/
-* {
-  cursor: url(./../images/puntero.png), auto;
-}
 
-a {
-  cursor: url(./../images/puntero_selecting.png), auto;
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1065px) {
+  .componente_invertido > :first-child {
+    order: 1;
+  }
+
+  .lista_tecnologias li a {
+    box-shadow: 3px 3px 10px rgba(51, 51, 51, 0.231);
+    border-radius: 5px;
+  }
+
+  /* MENU HAMBURGUESA */
 }

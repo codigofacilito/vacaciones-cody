@@ -7,7 +7,7 @@
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="./css/style.css">
   
-  <link rel="shortcut icon" href="./images/cody.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 
   <!-- Dependencias -->
   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
@@ -15,17 +15,17 @@
 <body>
   <main>
 
-    <nav class="navigator">
-      <div class="navigator__isotipoCF">
+    <nav class="navegacion">
+      <div class="navegacion__isotipoCF">
         <img src="./images/imagotipo-CF.png" alt="isotipo de codigo facilito" draggable="false">
       </div>
       <div class="menu">
-        <a class="menu__enlace menu__enlace--selected" href="./" rel="noopener noreferrer">Inicio</a>
+        <a class="menu__enlace menu__enlace--seleccionado" href="./" rel="noopener noreferrer">Inicio</a>
         <a class="menu__enlace" href="fotos.html" rel="noopener noreferrer">Fotos</a>
       </div>
     </nav>
     
-    <header class="inicio">
+    <header class="componente inicio">
       <div class="inicio__info">
         <h1 class="white_title">Estas son mis Vacaciones</h1>
         <p class="white_paragraph">Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
@@ -33,9 +33,19 @@
       <div class="inicio__imagen">
         <img src="./images/cody-saludando.png" alt="Cody" draggable="false">
       </div>
+      <div class="inicio__flecha_siguiente_seccion">
+        <a href="#vacaciones" rel="noopener noreferrer">
+          <img src="./images/icons/flecha-hacia-abajo.png" alt="Flecha para navegar la siguiente seccion" draggable="false">
+        </a>
+      </div>
     </header>
 
-    <section class="vacaciones_frontend">
+    <div id="vacaciones" style="height: 4rem;"></div>
+
+    <section class="componente componente_invertido">
+      <div class="vacaciones_frontend__imagen">
+        <img draggable="false" src="./images/cody-flotando-en-alberca.png" alt="Cody sobre un flotandor rosa, en una alberca muy refrescante">
+      </div>
       <div class="vacaciones_frontend__info">
         <header>
           <h2 class="black_title">Mis vacaciones Frontend</h2>
@@ -44,49 +54,80 @@
         <p class="black_paragraph"> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
         <p class="black_paragraph"> Estos son los cursos que estuve tomando </p>
         <div class="cursos">
-          <div>
+          <div class="boton">
             <a rel="noopener noreferrer">Curso profesional de Desarrollo Web</a>
           </div>
-          <div>
+          <div class="boton">
             <a rel="noopener noreferrer">Curso para crear mi primera página web</a>
           </div>
         </div>
       </div>
-      <div class="vacaciones_frontend__imagen">
-        <img draggable="false" src="./images/cody-flotando-en-alberca.png" alt="Cody sobre un flotandor rosa, en una alberca muy refrescante">
+    </section>
+
+    <section class="componente">
+      <header>
+        <h2 class="black_title">Ruta de aprendizaje 2021</h2>
+        <p class="black_paragraph"> También me propuse aprender nuevas tecnologías durante 2021</p>
+      </header>
+      <ul class="lista_tecnologias">
+        <li>
+          <a rel="noopener noreferrer" target="_blank" href="https://codigofacilito.com/cursos/css" title="Curso CSS a fondo de Codigo Facilito">
+            Flexbox, y Grid
+            <img src="./images/icons/css-flex-grid.png" alt="icono que representa al curso de css a fondo en la plataforma de Codigo Facilito" draggable="false">
+          </a>
+        </li> 
+        <li>
+          <a rel="noopener noreferrer" target="_blank" href="https://codigofacilito.com/cursos/css-animaciones-transiciones" title="Curso de animaciones y transiciones con CSS de Codigo Facilito">
+            Animaciones con CSS y JavaScript
+            <img src="./images/icons/animaciones-transiciones-css.png" alt="Icono que representa al curso de animaciones y transiciones con CSS" draggable="false">
+          </a>
+        </li>
+        <li>
+          <a rel="noopener noreferrer" target="_blank" href="https://codigofacilito.com/cursos/consumir-apis-javascript" title="Curso para consumir APIs con AJAX de Codigo Facilito">
+            AJAX
+            <img src="./images/icons/ajax.png" alt="Icono que representa al curso para consumir APIs con AJAX en la plataforma de Codigo Facilito" draggable="false">
+          </a>
+        </li>
+        <li>
+          <a rel="noopener noreferrer" target="_blank" href="https://codigofacilito.com/cursos/html5-2017" title="Curso a fondo de HTML5 de Codigo Facilito">
+            HTML semántico
+            <img src="./images/icons/html5.png" alt="Icono que representa al curso a fondo de HTML5 de Codigo Facilito" draggable="false">
+          </a>
+        </li>
+        <li>
+          <a draggable="false" rel="noopener noreferrer" target="_blank" href="https://codigofacilito.com" title="Plataforma Codigo Facilito">
+            Entre otros
+            <img src="./images/isotipo-codigofacilito.png" alt="Isotipo de Codigo Facilito" draggable="false">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="componente componente_invertido">
+      <div>
+        <img src="./images/git-github.png" alt="Imagotipos de git y github" draggable="false">
+      </div>
+      <div>
+        <header>
+          <h2 class="black_title">Colabora en mi página</h2>
+        </header>
+        <p class="black_paragraph">
+          Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
+        </p>
+        <p class="black_paragraph">
+          Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+        </p>
+        <p class="black_paragraph">
+          Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica <br> <br>
+        </p>
+        <div class="boton">
+          <a href="https://youtu.be/Zqft6yNRuNs" target="_blank" rel="noopener noreferrer">Ir al tutorial</a>
+        </div>
+
       </div>
     </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" rel="noopener noreferrer">Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
+    <section class="componente">
       <header>
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
@@ -102,7 +143,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="componente">
       <header>
         <h2>La importancia de las vacaciones</h2>
         <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
