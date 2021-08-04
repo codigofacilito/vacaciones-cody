@@ -116,4 +116,24 @@ section{
 
 .post img{
   border-radius: 4px;
+  transition: all .4s ease-in-out;
+}
+
+.post img:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.modal-body .community{
+  border-top: 2px solid #f4f5f7;
+  padding:10px;
+}
+
+.community .item{
+  margin-right: 15px;
+}
+
+.community i, .community span{
+  color: #707171;
+  font-size: 1.1rem;
 }
