@@ -12,7 +12,9 @@ nav ul li i{
 }
 
 nav .navbar-profile{
-  border: 2px solid #929090;
+  background-color: #ffffff;
+  border: 1px solid #707171;
+  padding:2px;
 } 
 
 section{
