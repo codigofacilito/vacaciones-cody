@@ -10,6 +10,7 @@ var enfasis = document.getElementsByClassName("enfasis");
 var ruta = document.getElementById("ruta");
 var vacations = document.getElementById("vacations");
 var footer = document.getElementById("footer");
+var content = document.getElementsByClassName("content");
 var background, colors, navBg, cursosBg, sunMoon, switchMode, checking;
 
 var switching = function() {
@@ -62,5 +63,18 @@ var switchIndex = function() {
   }
   for (var i = 0; i < cursos.length; i++) {
     cursos[i].style.background = cursosBg
+  }
+}
+
+var switchFotos = function() {
+  checking = document.getElementById("check-in").checked;
+  if (checking) {
+    background = "#465902";
+  }
+  else {
+    background = "#99D0F2";
+  }
+  for (var i = 0; i < content.length; i++) {
+    content[i].style.background = background
   }
 }
