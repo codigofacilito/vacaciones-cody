@@ -16,11 +16,13 @@ section{
 }
 
 .cursos div{
-  background-color: black;
-  color: white;
+  background-color: blueviolet;
+  color: whitesmoke;
   max-width: 200px;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  margin-right: 3em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0.3, 0.5);
+  border-radius: 12px;
 }
 .fotos img{
   max-width: 450px;
