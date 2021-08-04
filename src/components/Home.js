@@ -1,21 +1,18 @@
 import React from 'react';
-import AppBarNav from "./AppBar";
+import AppBarNav from './AppBar';
 import { useStyles } from './StyleMaterialui/Home';
 import { Typography, } from '@material-ui/core/';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import BookmarkIcon from '@material-ui/icons/Bookmark';
+import BookmarksIcon from '@material-ui/icons/Bookmarks';
+import HealingIcon from '@material-ui/icons/Healing';
 
 import Slider from './Slider/Slider';
 
-import FlexBoxGrid from '../iconsSvgImage/FlexBoxGrid.svg';
-import Css from '../iconsSvgImage/Css.svg';
-import Ajax from '../iconsSvgImage/AJAX.svg';
-import Html from '../iconsSvgImage/HTML.svg';
-import Other from '../iconsSvgImage/Other.svg';
 import { useHistory } from 'react-router-dom';
-
-
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
@@ -48,16 +45,12 @@ export default function Home() {
                 <Typography variant='h6' component='h2' className={classes.subTitle}>Mis vacaciones Frontend</Typography>
             </ThemeProvider>
             </header>
-            <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-            <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-            <p> Estos son los cursos que estuve tomando </p>
-            <div className="cursos">
-                <div>
-                <p>Curso profesional de Desarrollo Web</p>
-                </div>
-                <div>
-                <p>Curso para crear mi primera página web</p>
-                </div>
+            <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript. <br/>
+             Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página. </p>
+            <Typography className={classes.subList}><ArrowDropDownIcon/>Estos son los cursos que estuve tomando</Typography>
+            <div>
+                <Typography className={classes.list} style={{marginBottom:'5px'}}><BookmarksIcon/><a href='https://codigofacilito.com/cursos/frontend-profesional' target='_blank' rel="noopener noreferrer" className={classes.linkCourse}>Curso profesional de Desarrollo Web</a></Typography>
+                <Typography className={classes.list}><BookmarksIcon/><a href='https://codigofacilito.com/cursos/primera-pagina-2019' target='_blank' rel="noopener noreferrer" className={classes.linkCourse}>Curso para crear mi primera página web</a></Typography>
             </div>
             </section>
             <section className={classes.sizeSection}>
@@ -67,11 +60,11 @@ export default function Home() {
                 </ThemeProvider>
                     <p> También me propuse aprender nuevas tecnologías durante 2021</p>
                 </header>
-                    <Typography className={classes.iconList}><img src={FlexBoxGrid} alt='icon-FlexBox-Grid' className={classes.iconMargin}/>Flexbox, y Grid</Typography>
-                    <Typography className={classes.iconList}><img src={Css} alt='icon-CSS' className={classes.iconMargin}/>Animaciones con CSS y JavaScript</Typography>
-                    <Typography className={classes.iconList}><img src={Ajax} alt='icon-AJAX' className={classes.iconMargin}/>AJAX</Typography>
-                    <Typography className={classes.iconList}><img src={Html} alt='icon-HTML' className={classes.iconMargin}/>HTML semántico</Typography>
-                    <Typography className={classes.iconList}><img src={Other} alt='icon-Other' className={classes.iconMargin}/>Entre otros</Typography>
+                    <Typography className={classes.list}><BookmarkIcon/>Flexbox, y Grid</Typography>
+                    <Typography className={classes.list}><BookmarkIcon/>Animaciones con CSS y JavaScript</Typography>
+                    <Typography className={classes.list}><BookmarkIcon/>AJAX</Typography>
+                    <Typography className={classes.list}><BookmarkIcon/>HTML semántico</Typography>
+                    <Typography className={classes.list}><BookmarkIcon/>Entre otros</Typography>
             </section>
             <section className={classes.sizeSection}>
             <header>
@@ -81,10 +74,10 @@ export default function Home() {
                 <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
                 <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
                 <ol>
-                <li>Mejora la salud mental</li>
-                <li>Incrementa la motivación</li>
-                <li>Reduce el burnout</li>
-                <li>Mejora tu productividad y creatividad</li>
+                <Typography className={classes.list}><HealingIcon className={classes.HealingIcon}/>Mejora la salud mental</Typography>
+                <Typography className={classes.list}><HealingIcon className={classes.HealingIcon}/>Incrementa la motivación</Typography>
+                <Typography className={classes.list}><HealingIcon className={classes.HealingIcon}/>Reduce el burnout</Typography>
+                <Typography className={classes.list}><HealingIcon className={classes.HealingIcon}/>Mejora tu productividad y creatividad</Typography>
                 </ol>
             </header>       
             </section>
@@ -97,7 +90,7 @@ export default function Home() {
                 </header>
                     <Slider/>
                     Puedes ver más, en la galería de fotos de mi página
-                    <Typography onClick={() =>{history.push('/gallery')}}>Ir a la galería <ExitToAppIcon/></Typography>
+                    <Typography onClick={() =>{history.push('/gallery')}} className={classes.list}>Ir a la galería <ExitToAppIcon/></Typography>
             </section>
     </div>
             <section>
@@ -106,18 +99,25 @@ export default function Home() {
                     <Typography variant='h6' component='h2' className={classes.subTitle}>Colabora en mi página</Typography>
                 </ThemeProvider>    
                 </header>
-                <p>
+                <div>
+                <p className={classes.sectionText}>
                 Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub <GitHubIcon/>
                 </p>
-                <p>
+                <p className={classes.sectionText}>
                     Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
                 </p>
-                <p>
+                <p className={classes.sectionText}>
                     Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-                    <a href="" target="_blank" >Ir al tutorial</a>
+                    <a href="https://vimeo.com/577246176" target="_blank" rel="noopener noreferrer" className={classes.linkCourse} style={{marginLeft:'8px'}}>Ir al tutorial</a>
                 </p>
+                </div>
             </section>
-        </div>
+            </div>
+            <footer className={classes.footer}>
+                <p className={classes.textFooter}>Vacaciones Cody</p>
+                <img src='https://codigofacilito.com/assets/logo-cbf2a784ebee5d642aa7b8182df3e388d4feba0a23577eed1d2747fa05861f73.png' alt='logo-códigoFacilito' className={classes.imgLogo} onClick={()=> window.open("https://codigofacilito.com/", "_blank")}/>
+                <p className={classes.textFooter} onClick={()=> window.open("https://github.com/CarlaSanchezCorrea", "_blank")}>@carlasanchezcorrea</p>
+            </footer>
         </React.Fragment>
     );
 }

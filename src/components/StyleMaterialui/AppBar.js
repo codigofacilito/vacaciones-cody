@@ -18,12 +18,11 @@ const useStyles = makeStyles((theme) => ({
       }
     },
     subtitle: {
-      backgroundColor: 'rgb(56,43,115,0.4)',
+      backgroundColor: 'rgb(163,163,163, 0.1)',
       color: '#fff',
       fontWeight: 'bold',
       '&:hover': {
-        color: 'pink',
-        backgroundColor: 'rgb(0,129,0,0.4)',
+        backgroundColor: 'rgb(26,26,26)',
       },
         ['@media (max-width:280px)']: { // eslint-disable-line no-useless-computed-key
           fontSize: '12px'      

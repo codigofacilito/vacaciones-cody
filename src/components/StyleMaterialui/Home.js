@@ -44,21 +44,10 @@ const useStyles = makeStyles((theme) => ({
     },
     subTitle: {
         fontWeight: 'bold',
-        marginBottom: '-10px',
-    },
-    iconList: {
-        display: 'flex',
-        flexDirection: 'row ',
-        alignItems: 'center',
-        marginBottom: '18px',
-    },
-    iconMargin: {
-        marginRight: '5px',
-        width: '22px',
-    },
-    img: {
-        width: '100%',
-        marginBottom: '10px',
+        background: '#000',
+        color: '#fff',
+        paddingLeft: '10px',
+        texAlign: 'right',
     },
     imagebackground: {
         backgroundImage:
@@ -93,5 +82,59 @@ const useStyles = makeStyles((theme) => ({
             maxWidth:'100%',    
         },
     },
+    subList: {
+        display: 'flex',
+        flexDirection:'row',
+        fontWeight: 'bold',
+        marginBottom: '1em',
+        fontSize: '15px',
+        WebkitTextStroke:'0.3px #000',
+    },
+    list: {
+        display: 'flex',
+        flexDirection:'row',
+        alignItems: 'center',
+        fontSize: '15px',
+    }, 
+    linkCourse : {
+        listStyle: 'none',
+        outline: 'none',
+        color: '#000',
+        listStyleType: 'none',
+        textDecoration: 'none',
+        backgroundColor: '#468b7a',
+        padding: '2px 6px',
+        borderRadius: '5px',
+        '&:hover': {
+            backgroundColor: '#59ab97',
+          },
+    },
+    HealingIcon: {
+        color:'#468b7a'
+    },
+    sectionText: {
+        margin: '0',
+        padding: '0',
+    },
+    footer: {
+        backgroundColor: '#468b7a',
+        color: '#202730',
+        display: 'flex',
+        flexDirection:'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginTop:'3em',
+        padding: '20px 25px'
+    }, 
+    imgLogo : {
+        width: '13%',
+        cursor: 'pointer',
+    },
+    textFooter: {
+        fontWeight: 'bold',
+        fontSize: '16px',
+        cursor: 'pointer',
+    }
+
 }));
 export { useStyles }
