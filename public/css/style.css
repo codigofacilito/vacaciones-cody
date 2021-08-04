@@ -33,6 +33,10 @@ body{
   --btnNext-small: 48px;
 }
 
+audio {
+  display: none;
+}
+
 main {
   display: block;
   width: 100%;
