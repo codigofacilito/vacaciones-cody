@@ -20,7 +20,7 @@ sass.renderSync({
   outFile: 'index.css'
 })
 
-sass.render({
+sass.renderSync({
   file: 'styles/index.scss',
   outputStyle: 'compressed'
 }, function (error, result) { // node-style callback from v3.0.0 onwards
