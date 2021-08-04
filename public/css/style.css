@@ -51,7 +51,8 @@ section{
   display: list-item;
   list-style: none;
   font-weight: bold;
-  color: #00376b;
+  font-size: 0.9rem;
+  color: #0266c4;
 }
 .stories{
   padding: 0px 20px;
