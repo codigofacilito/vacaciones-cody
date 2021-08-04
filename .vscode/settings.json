@@ -2,7 +2,7 @@
   "editor.tabSize": 2,
   "standard.autoFixOnSave": true,
   "files.trimFinalNewlines": true,
-  "standard.engine": "ts-standard",
+  "standard.engine": "standard",
   "files.insertFinalNewline": true,
   "editor.detectIndentation": false,
   "javascript.validate.enable": false,

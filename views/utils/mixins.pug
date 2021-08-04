@@ -1,0 +1,8 @@
+mixin navbar(pageName, pageHref)
+  nav.navbar.navbar-light.bg-light.fixed-top
+    .container
+      a.navbar-brand(href='#')
+        img(src="images/navbar.png" alt="logo-not-found" height="40")
+      .d-flex
+        a(href=pageHref)
+          button.navButton= pageName

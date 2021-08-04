@@ -1,2 +1,10 @@
-public/*.html
+# Dependencies
 node_modules/
+
+# File system
+.DS_Store
+desktop.ini
+
+# Build files
+public/*.css
+public/*.html

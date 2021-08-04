@@ -1,18 +1,23 @@
 {
   "private": true,
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "build": "node compile.js"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.12",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "sass": "^1.37.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   },
   "nodemonConfig": {
-    "ext": "pug, css, jpg, png, svg, ico",
+    "ext": "pug, scss, js, png, svg, ico, jpg, jpeg",
     "watch": [
-      "public",
-      "views"
+      "*.js",
+      "views",
+      "styles"
     ]
   }
 }

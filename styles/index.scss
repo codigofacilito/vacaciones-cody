@@ -1,0 +1,75 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: aliceblue;
+  padding: 15px;
+  display: flex;
+  gap: 1em;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+.cursos div {
+  background-color: black;
+  color: white;
+  max-width: 200px;
+  display: inline-block;
+  box-shadow: 5px 5px 10px black;
+}
+
+.fotos img {
+  max-width: 450px;
+  display: inline-block;
+}
+
+ul li {
+  text-align: left;
+}
+
+ul li::marker {
+  content: "🚀";
+}
+
+ol li {
+  text-align: left;
+}
+
+.top-space {
+  padding-top: 100px;
+}
+
+footer {
+  background-image: url(/images/footer.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.navButton {
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background: #5CB3FF;
+  transition: all 500ms ease 0s;
+  &:hover {
+    color: white;
+    background: #F66D65;
+    text-decoration: none;
+  }
+}

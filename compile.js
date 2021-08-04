@@ -1,5 +1,4 @@
-const { readdir, writeFileSync } = require('fs')
-const { exec } = require('child_process')
+const { readdir, lstatSync, writeFileSync } = require('fs')
 const { compileFile } = require('pug')
 const { join } = require('path')
 
@@ -9,10 +8,11 @@ const publicDirectory = join(__dirname, 'public')
 readdir(viewsDirectory, (error, files) => {
   if (error) return
   files.forEach(file => {
-    var array = file.split('.')
+    if (lstatSync(file).isDirectory()) return
+    const array = file.split('.')
     if (array.length !== 2) return
     if (array[1] !== 'pug') return
-    var name = array[0]
+    const name = array[0]
     const compiledFunction = compileFile(`views/${name}.pug`)
     const compiledHTML = compiledFunction({ environment: 'Production' })
     writeFileSync(join(publicDirectory, `${name}.html`), compiledHTML)
