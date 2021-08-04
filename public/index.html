@@ -51,18 +51,35 @@
 
     <section class="courses">
       <div class="wrapper">
-        <header>
-          <h2>Mis vacaciones Frontend</h2>
-        </header>
-        <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-        <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-        <p> Estos son los cursos que estuve tomando </p>
-        <div>
-          <div>
-            <p>Curso profesional de Desarrollo Web</p>
+        <div class="courses__content">
+          <div class="courses__content--image">
+            <img src="./images/rsz_html-css-rounded.png" alt="HTML-CSS-JS">
           </div>
-          <div>
-            <p>Curso para crear mi primera página web</p>
+          <div class="courses__content--text">
+            <header>
+              <h2>Mis vacaciones Frontend</h2>
+            </header>
+            <p> Durante el verano de 2019, decidí comenzar a aprender <span>desarrollo frontend</span>, por lo que durante mi viaje, estuve aprendiendo <span>HTML, CSS, y JavaScript.</span></p>
+            <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis <span>habilidades en tecnologías frontend</span>, construyendo esta página.</p>
+            <p> Estos son los cursos que estuve tomando:</p>
+            <div class="courses__cards">
+              <div class="card">
+                <img src="./images/imgCardDW.jpg" alt="DW">
+                <div class="card__description">
+                  <p>Curso profesional de Desarrollo Web</p>
+                  <img src="./images/codigo_.png " alt="CodFacilito">
+                  <a target="_blank" href="https://codigofacilito.com/cursos/frontend-profesional">Ver más...</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/imgCardWS.jpg" alt="WS">
+                <div class="card__description">
+                  <p>Curso para crear mi primera página web</p>
+                  <img src="./images/codigo_.png " alt="CodFacilito">
+                  <a target="_blank" href="https://codigofacilito.com/cursos/primera-pagina-2019">Ver más...</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -140,7 +157,17 @@
   </main>
 
   <footer class="footer">
-    <p>Todos los derechos reservados. Cody Dev™</p>
+    <div class="wrapper">
+      <div class="footer-content">
+        <a href="">Cody Dev</a>
+        <p>Todos los derechos reservados. Cody Dev™</p>
+        <div class="social-media">
+          <a href="https://github.com/codigofacilito" target="_blank"><img src="./images/github-square-brands.svg" alt="GH"></a>
+          <a href="https://www.youtube.com/user/codigofacilito" target="_blank"><img src="./images/youtube-square-brands.svg" alt="YT"></a>
+          <a href="https://twitter.com/codigofacilito" target="_blank"><img src="./images/twitter-square-brands.svg" alt="TW"></a>
+        </div>
+      </div>
+    </div>
   </footer>
   <script src="./js/app.js"></script>
 </body>

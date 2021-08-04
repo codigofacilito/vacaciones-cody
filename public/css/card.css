@@ -1,0 +1,47 @@
+.card {
+    display: flex;
+    gap: 1rem;
+    background: var(--white);
+    border-radius: 1rem;
+}
+
+.card img {
+    border-radius: 1rem 0rem 0rem 1rem;
+    width: 40%;
+}
+
+.card__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    align-items: start;
+    background: var(--white);
+    border-radius: 0 1rem 1rem 0;
+}
+
+.card__description p {
+    text-align: center;
+    /* padding: .5rem; */
+    margin: 0;
+    font-size: 16px !important;
+    font-weight: bold;
+    margin-block-end: .5em;
+}
+
+.card__description a {
+    width: 50%;
+    align-self: center;
+    text-decoration: none;
+    background: var(--green10);
+    border-radius: .5rem;
+    padding: .6rem;
+    color: var(--white);
+    align-self: flex-start;
+}
+
+.card__description a:hover,
+.card__description a:active {
+    cursor: pointer;
+    background: var(--green20);
+}
