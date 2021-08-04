@@ -1,0 +1,15 @@
+Cambios:
+
+1. Etiqueta nav se movió fuera del main y del primer header, puesto que 
+es una barra de navegación y por norma este va fuera de la etiqueta main.
+Además no está directamente vinculado al header que lo contenía.
+
+2. Corregidos direcciones de etiquetas a porque no hacían una buena 
+referencia.
+
+3. Corregida ubicación de los beneficios de descansar, porque no eran 
+parte del header de la sección.
+
+4. Cambiado idioma de las páginas a es.
+
+5. Cambio de etiqueta del título de fotos.html. Cambio de h2 a h1.
