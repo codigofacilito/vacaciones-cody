@@ -6,29 +6,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <section id="navbar">
+    <nav>
+      <a href="/">
+        <img src="images/cody.png" alt="inicio" />
+      </a>
+      <a href="fotos.html">
+        <img src="images/camara.png" alt="fotos" />
+      </a>
+    </nav>
+  </section>
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+    <section>
+      <header>
+        <h2>Galería completa de mis vacaciones</h2>
+      </header>
+    </section>
+    <div class="fotos"  data-document="gallery">
+      <img onclick="modal(this)" src="images/1.jpg" alt="Cody en la playa">
+      <img onclick="modal(this)" src="images/2.jpg" alt="Cody acampando">
+      <img onclick="modal(this)" src="images/3.jpg" alt="Cody en una alberca">
+      <img onclick="modal(this)" src="images/4.jpg" alt="Cody en una alberca">
+      <img onclick="modal(this)" src="images/5.jpg" alt="Cody en una alberca">
+      <img onclick="modal(this)" src="images/6.jpg" alt="Cody en una alberca">
     </div>
 
   </main>
+  <footer>
+    <p>Made by Cody and <a href="https://github.com/tw1ttt3r" target="_blank">tw1ttt3r</a></p>
+  </footer>
+
+  <section id="modal">
+    <div>
+      <i class="fas fa-times" onclick="modal()"></i>
+    </div>
+    <img id="content">
+  </section>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>

@@ -5,20 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/cody.png" type="image/png">
 </head>
 <body>
+  <section id="navbar">
+    <nav>
+      <a href="/">
+        <img src="images/cody.png" alt="inicio" />
+      </a>
+      <a href="fotos.html">
+        <img src="images/camara.png" alt="fotos" />
+      </a>
+    </nav>
+  </section>
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
-
     <section>
+      <header>
+        <h1>Estas son mis Vacaciones</h1>
+        <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+      </header>
+    </section>
+
+    <section id="description">
       <header>
         <h2>Mis vacaciones Frontend</h2>
       </header>
@@ -35,20 +45,36 @@
       </div>
     </section>
 
-    <section>
+    <section id="route">
       <header>
         <h2>Ruta de aprendizaje 2021</h2>
         <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+        <ul>
+          <li>
+            <i class="fas fa-border-none"></i>
+            <p> Flexbox, y Grid </p>
+          </li>
+          <li>
+            <i class="fab fa-js"></i>
+            <p> Animaciones con CSS y JavaScript </p>
+          </li>
+          <li>
+            <i class="fas fa-broadcast-tower"></i>
+            <p> AJAX </p>
+          </li>
+          <li>
+            <i class="fab fa-html5"></i>
+            <p> HTML semántico </p>
+          </li>
+          <li>
+            <i class="fas fa-tools"></i>
+            <p> Entre otros </p>
+          </li>
+        </ul>
       </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
     </section>
-    <section>
+
+    <section id="collaboration">
       <header>
         <h2>Colabora en mi página</h2>
       </header>
@@ -64,37 +90,60 @@
 
       </p>
     </section>
-    <section>
+
+    <section id="gallery">
       <header>
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
       </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
+      <div class="fotos" data-document="index">
+        <img onclick="modal(this)" src="images/1.jpg" alt="Cody en la playa">
+        <img onclick="modal(this)" src="images/2.jpg" alt="Cody acampando">
+        <img onclick="modal(this)" src="images/3.jpg" alt="Cody en una alberca">
       </div>
+      <p>
+        Puedes ver más, en la galería de fotos de mi página
+        <a href="fotos.html"><img src="images/camara.png" alt="fotos" /></a>
+      </p>
     </section>
 
-    <section>
+    <section id="vacations">
       <header>
         <h2>La importancia de las vacaciones</h2>
         <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
         <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
         <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
+          <li>
+            <i class="fas fa-brain"></i>
+            <p>Mejora la salud mental</p>
+          </li>
+          <li>
+            <i class="far fa-lightbulb"></i>
+            <p>Incrementa la motivación</p>
+          </li>
+          <li>
+            <i class="far fa-tired"></i>
+            <p>Reduce el burnout</p>
+          </li>
+          <li>
+            <i class="fas fa-wrench"></i>
+            <p>Mejora tu productividad y creatividad</p>
+          </li>
         </ol>
       </header>
       
     </section>
-    
   </main>
+  <footer>
+    <p>Made by Cody and <a href="https://github.com/tw1ttt3r" target="_blank">tw1ttt3r</a></p>
+  </footer>
+
+  <section id="modal">
+    <div>
+      <i class="fas fa-times" onclick="modal()"></i>
+    </div>
+    <img id="content">
+  </section>
+  <script src="js/modal.js"></script>
 </body>
 </html>
