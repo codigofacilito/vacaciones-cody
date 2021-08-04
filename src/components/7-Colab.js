@@ -1,4 +1,24 @@
+import silviaData from "../data/silviaData.json";
+
 const Colab = () => {
+  //RENDER FUNCTION OF SILVIA'S DATA
+  const data = silviaData.map((silvia) => {
+    return (
+      <button type="button" className="studies__cursos--button" key={silvia.id}>
+        <a
+          href={silvia.link}
+          alt={silvia.name}
+          key={silvia.name}
+          target="_blank"
+          rel="noreferrer"
+          className="studies__cursos--button-link"
+        >
+          {silvia.frontName}
+        </a>
+      </button>
+    );
+  });
+
   return (
     <section className="colab" id="colab">
       <h3 className="colab__title">Colabora en mi página</h3>
@@ -30,30 +50,7 @@ const Colab = () => {
         quieres ver otros trabajos de ella, puedes visitar sus perfiles de
         GitHub o su portafolio
       </p>
-      <div className="studies__cursos--buttonWrap">
-        <button type="button" className="studies__cursos--button">
-          <a
-            href="https://github.com/silviaespanagil"
-            alt="GitHub de Silvia"
-            target="_blank"
-            rel="noreferrer"
-            className="studies__cursos--button-link"
-          >
-            GitHub
-          </a>
-        </button>
-        <button type="button" className="studies__cursos--button">
-          <a
-            href="https://silviaespanagil.github.io/portfolio/"
-            alt="Portafolio de Silvia"
-            target="_blank"
-            rel="noreferrer"
-            className="studies__cursos--button-link"
-          >
-            Portafolio
-          </a>
-        </button>
-      </div>
+      <div className="studies__cursos--buttonWrap">{data}</div>
     </section>
   );
 };
