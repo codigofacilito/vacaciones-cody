@@ -30,11 +30,32 @@ main {
     margin: 24px auto;
     section {
         @include margin_y_section();
+        text-align: center;
         header {
             @include font_comfortaa();
             @include center_vertical_content();
             p {
                 @include font_quicksand();
+            }
+        }
+    }
+
+    section#description {
+        .cursos {
+            margin-top: 8px;
+            @include center_horizontal_content(); 
+            div.items {
+                border-radius: 4px;
+                padding: 8px;
+                background-color: #3E95EE;
+                display: inline-block;
+                margin-left: 4px;
+                margin-right: 4px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 700;
+                }
             }
         }
     }
@@ -58,6 +79,16 @@ main {
     section#route {
         header {
             @include lists();
+        }
+    }
+
+    section#collaboration {
+        p:nth-child(4) {
+            a {
+                img {
+                    width: 50px;
+                }
+            }
         }
     }
 
