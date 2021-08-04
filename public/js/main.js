@@ -71,12 +71,12 @@ TweenMax.staggerFrom(".nav__toggle", 1.5, {
 }, 0.08);
 
 // MEDIA
-// TweenMax.staggerFrom(".hero_image", 1.5, {
-//   delay: 0.5,
-//   opacity: 0,
-//   x: "50",
-//   ease: Expo.easeInOut
-// }, 0.08);
+TweenMax.staggerFrom(".hero_image", 1.5, {
+  delay: 0.5,
+  opacity: 0,
+  x: "50",
+  ease: Expo.easeInOut
+}, 0.08);
 
   // TEXT
   TweenMax.staggerFrom(".hero_text h1", 1.5, {
