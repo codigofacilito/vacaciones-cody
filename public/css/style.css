@@ -1,8 +1,21 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;  
+}
+
 nav{
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   padding: 15px;
   display: flex;
   gap:1em;
+
+}
+
+a {
+  background-color: transparent;
+  color: #3498db;
 }
 
 main{
@@ -15,24 +28,104 @@ section{
   margin-top: 3rem;
 }
 
+h1 {
+  text-transform: uppercase;
+}
+
+.nav-link {
+  padding: .5rem 1rem;
+  border-radius: 8px;
+  text-decoration:none;
+}
+
+.nav-link:hover {
+  background-color: #27ae60;
+  color: #ecf0f1;
+}
+
 .cursos div{
-  background-color: black;
+  background-color: #2ecc71;
   color: white;
   max-width: 200px;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px #1abc9c;
+  border-radius: 8px;
 }
-.fotos img{
-  max-width: 450px;
+.fotos img {
+  max-width: 33%;
+  height: auto;
+  transition: width 3s, height 6s;
   display: inline-block;
+  border-radius: 8px;
 }
+
 ul li{
   text-align: left;
 }
-ul li::marker {
+.nave li::marker {
   content: "🚀";
 }
 
 ol li{
   text-align: left;
+}
+
+.active {
+  color: #ecf0f1;
+  background-color: #1abc9c;
+  border-color: #dee2e6 #dee2e6 #f8fafc;
+}
+
+p {
+text-align: justify;
+}
+
+
+/**Fotos**/
+.column {
+  float: left;
+  width: 14%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
 }

@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis vacaciones | Fotos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="./images/globe.png">
+  </head>
 
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <a class="btn nav-link" 
+            href="./"
+          >
+            Inicio
+          </a>
 
-  </main>
-</body>
+          <a class="btn nav-link active" 
+            href="./fotos.html"
+          >
+            Fotos
+          </a>
+        </nav>
+        <h1>Galería completa de mis vacaciones</h1>
+        <h3>Haga clic en las imágenes de abajo</h3>
+      </header>
 
+      <div class="row">
+        <div class="column">
+          <img src="./images/1.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="./images/2.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="./images/3.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="./images/4.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="./images/5.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="./images/6.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+      </div>
+
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+      <!-- <div class="fotos">
+        <img src="./images/1.jpg" alt="Cody en la playa">
+        <img src="./images/2.jpg" alt="Cody acampando">
+        <img src="./images/3.jpg" alt="Cody en una alberca">
+        <img src="./images/4.jpg" alt="Cody en una alberca">
+        <img src="./images/5.jpg" alt="Cody en una alberca">
+        <img src="./images/6.jpg" alt="Cody en una alberca">      
+      </div> -->
+
+    </main>
+    <script src="./js/util.js"></script>
+  </body>
 </html>
