@@ -38,6 +38,10 @@
 
 			background-color: transparent;
 
+			@media (min-width: 1000px) {
+				padding: 0 80px;
+			}
+
 			.title {
 				font-size: 30px;
 				color: $White;
@@ -134,11 +138,14 @@
 					padding: 1.25rem;
 					gap: 1.875rem;
 
+					@media (min-width: 31.25rem) {
+						margin-top: 6.25rem;
+					}
+
 					.messageContainer {
 						display: flex;
 						justify-content: center;
 						align-items: center;
-						// border: 5px solid red;
 
 						p {
 							color: $White;
@@ -151,11 +158,9 @@
 						display: flex;
 						justify-content: center;
 						align-items: center;
-						// border: 5px solid red;
 
 						img {
 							width: 100%;
-							max-width: 46.875rem;
 							border-radius: 0.625rem;
 						}
 					}
