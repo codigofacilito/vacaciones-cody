@@ -1,14 +1,30 @@
+body{
+  background:#2b4b67;
+  color: aliceblue;
+}
 nav{
-  background-color: aliceblue;
+  background-color: #ea852d;
   padding: 15px;
   display: flex;
   gap:1em;
+  color:white;
+  font-weight: bold;
+  font-size:1.2em;
+  border-radius:5px;
+
+}
+nav a{
+  color:white;
+  z-index:100;
 }
 
 main{
   text-align: center;
   max-width: 960px;
   margin:0 auto;
+  font-family: 'Roboto', sans-serif;
+  z-index:100;
+
 }
 
 section{
@@ -16,7 +32,7 @@ section{
 }
 
 .cursos div{
-  background-color: black;
+  background-color: #615c5c;
   color: white;
   max-width: 200px;
   display: inline-block;
@@ -29,10 +45,240 @@ section{
 ul li{
   text-align: left;
 }
-ul li::marker {
+ul li:hover{
+  color:orange;
+  cursor:pointer;
+}
+ul li::marker, ol li::marker {
   content: "🚀";
 }
 
 ol li{
   text-align: left;
+}
+ol li:hover{
+  color:orange;
+  cursor:pointer;
+}
+
+a{
+  text-decoration: none;
+  list-style: none;
+  color: orange;
+}
+h1{
+  color:orange;
+}
+h2{
+  color: #009688;
+}
+
+/*My classes*/
+.container_princ{
+
+}
+
+.enc_index{
+  position: fixed;
+  top: 5px;
+  min-width: 50%;
+  z-index:200;
+}
+.sec_index{
+  margin-top: 6em;
+}
+
+.sec_index, .sec1_index, .sec3_index, .sec5_index{
+  background-color: #252323b0;
+  border-radius:5px;
+  padding: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.sec2_index, .sec4_index{
+  background-color: #252323;
+  border-radius:5px;
+  padding: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+/*animations*/
+/*animation square*/
+.cuadrados, .cuadrados2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  z-index: 0;
+}
+
+.cuadrados2 > li{
+  list-style: none;
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 30px;
+  height: 30px;
+  bottom:-1000px;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-animation: square 25s infinite linear;
+  -moz-animation: square 25s infinite linear;
+  animation: square 25s infinite linear;
+}
+
+.cuadrados > li{
+  list-style: none;
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 30px;
+  height: 30px;
+  bottom:-30px;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-animation: square 25s infinite linear;
+  -moz-animation: square 25s infinite linear;
+  animation: square 25s infinite linear;
+}
+.cuadrados li:nth-child(1), .cuadrados2 li:nth-child(1)  {
+  left: 25%;
+  width: 140px;
+  height: 140px;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.cuadrados li:nth-child(2), .cuadrados2 li:nth-child(2) {
+  left: 32%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.cuadrados li:nth-child(6), .cuadrados2 li:nth-child(6) {
+  left: 75%;
+  width: 40px;
+  height: 40px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+}
+.cuadrados li:nth-child(13), .cuadrados2 li:nth-child(13) {
+  left: 50%;
+  width: 140px;
+  height: 140px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+}
+.cuadrados li:nth-child(14), .cuadrados2 li:nth-child(14) {
+  left: 20%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+}
+.cuadrados li:nth-child(3), .cuadrados2 li:nth-child(3) {
+  left: 90%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 26s;
+          animation-duration: 26s;
+}
+.cuadrados li:nth-child(4), .cuadrados2 li:nth-child(4) {
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+}
+.cuadrados li:nth-child(5), .cuadrados2 li:nth-child(5) {
+  left: 80%;
+  width: 70px;
+  height: 70px;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-duration: 35s;
+          animation-duration: 65s;
+}
+.cuadrados li:nth-child(7), .cuadrados2 li:nth-child(7) {
+  left: 50%;
+  width: 130px;
+  height: 130px;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+}
+.cuadrados li:nth-child(8), .cuadrados2 li:nth-child(8) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+}
+.cuadrados li:nth-child(9), .cuadrados2 li:nth-child(9) {
+  left: 65%;
+  width: 90px;
+  height: 90px;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+}
+.cuadrados li:nth-child(10), .cuadrados2 li:nth-child(10) {
+  left: 55%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+}
+.cuadrados li:nth-child(11), .cuadrados2 li:nth-child(11) {
+  left: 45%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+}
+.cuadrados li:nth-child(12), .cuadrados2 li:nth-child(12) {
+  left: 35%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+}
+@-webkit-keyframes square {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-700px) rotate(600deg); }
+}
+@keyframes square {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-700px) rotate(600deg); }
+}
+
+
+/*media queries*/
+
+@media (max-width: 390px) {
+  .fotos img{
+    max-width: 358px;
+  }
 }
