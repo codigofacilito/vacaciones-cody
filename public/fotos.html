@@ -5,30 +5,225 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"">
+
+      <!-- deslizamiento css -->
+      <link rel=" stylesheet" href="css/swiper-bundle.min.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
 
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo">VeranoFrontend</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="foo"><a href="#" class="nav__link">Github</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main -->
+  <main class="main">
+    <div class="swiper-container gallery-top">
+      <div class="swiper-wrapper">
+        <!-- Viaje numero uno -->
+        <section class="travel swiper-slide">
+          <img src="images/1.jpg" alt="Cody en la playa" class="travel__bg">
+
+          <div class="travel__container bd-container">
+            <div class="travel__data">
+              <h2 class="travel__subtitle">Cancun, Mexico</h2>
+              <h1 class="travel__title">Playa Delfines</h1>
+              <p class="travel__description">Como primera parada, Cody disfruto de México. <br> <br>
+                Testimonio de Cody: Por el día andar en bicicleta era genial, no tanto cuando me caía
+                porque
+                en la arena manejar es un reto, pero caminar por la playa en la noche era relajante,solo
+                escuchar las olas y con las estrellas brillantes.</p><br> <br>
+              <a href="https://goo.gl/maps/hudoSES4wsXZv6KbA" class="travel__button"> Ubicación <i
+                  class='bx bxs-map travel__button-icon'></i></a>
+            </div>
+          </div>
+
+        </section>
+        <!-- Viaje numero dos -->
+        <section class="travel swiper-slide">
+          <img src="images/2.jpg" alt="Cody en la isla de Maui" class="travel__bg">
+
+          <div class="travel__container bd-container">
+            <div class="travel__data">
+              <h2 class="travel__subtitle">Maui, Hawaii</h2>
+              <h1 class="travel__title">Kapalua</h1>
+              <p class="travel__description">Cody se vio influenciado por Google y las recomendaciones de
+                viaje, Hawaii es un lugar atractivo para despejarse y no querer volver <br> <br>
+                Review y primeras impresiones de Cody: La encantadora costa de Kapalua está bordeada por
+                cinco bahías y tres playas de arena blanca, El lugar parece que abraza el mar, perfecto
+                para
+                ser admirado desde una tienda de campaña</p> <br> <br>
+
+              <a href="https://goo.gl/maps/zpMA1PHD7zVFaDgY7" class="travel__button">Ubicación <i
+                  class='bx bxs-map travel__button-icon'></i></a>
+            </div>
+          </div>
+
+        </section>
+        <!-- Viaje numero tres -->
+        <section class="travel swiper-slide">
+          <img src="images/3.jpg" alt="Cody en la piscina" class="travel__bg">
+
+          <div class="travel__container bd-container">
+            <div class="travel__data">
+              <h2 class="travel__subtitle">Sydney, Australia</h2>
+              <h1 class="travel__title">Hotel Four Seasons</h1>
+              <p class="travel__description">Como parte del viaje, Cody tenía que subir fotos a sus Redes
+                Sociales, Haciendo un pequeño
+                descanso en Australia, disfrutando de un hotel bastante bien valorado en otras
+                plataformas.
+                <br> <br>
+                Opinión de Cody: Excelente Wifi en la piscina.
+              </p> <br> <br>
+              <a href="https://goo.gl/maps/DejqP5o8f3Aorofd8" class="travel__button">Ubicación <i
+                  class='bx bxs-map travel__button-icon'></i></a>
+            </div>
+          </div>
+
+        </section>
+        <!-- Viaje numero cuatro -->
+        <section class="travel swiper-slide">
+          <img src="images/4.jpg" alt="Cody en la playa tomando un coco adulterado" class="travel__bg">
+
+          <div class="travel__container bd-container">
+            <div class="travel__data">
+              <h2 class="travel__subtitle">Lombok, Indonesia</h2>
+              <h1 class="travel__title">Playa Senggigi </h1>
+              <p class="travel__description">La playa de Senggigi, al igual que las otras que ha visitado
+                Cody, tiene vistas realmente únicas, especialmente al atardecer. <br> <br>
+                Cody: Es un destino al que no tenia planeado ir, pero encontré una oferta que no podía
+                dejar
+                pasar, sumado a eso, los cocos eran muy refrescantes y parece que un poco adulterados.
+                <br>
+                <br><em>*Inserte el meme: Veremos que sucede estoy un poco nervioso* </em>
+              </p>
+
+              <br> <br>
+
+              <a href="https://goo.gl/maps/g1fmLdwAZ5oq2hfq7" class="travel__button">Ubicación <i
+                  class='bx bxs-map travel__button-icon'></i></a>
+            </div>
+          </div>
+
+        </section>
+        <!-- Viaje numero cinco -->
+        <section class="travel swiper-slide">
+          <img src="images/5.jpg" alt="Cody en la playa" class="travel__bg">
+
+          <div class="travel__container bd-container">
+            <div class="travel__data">
+              <h2 class="travel__subtitle">Italia</h2>
+              <h1 class="travel__title">Viaje de Comida</h1>
+              <p class="travel__description">Uno de los lugares que realmente anhelaba Cody era Italia por
+                la
+                buena comida que sirven y por lo fan que es de la Pizza (Que regalan cuando tiene que
+                hacer
+                horas extra) <br> <br>
+                Visito varios restaurantes donde el mejor fue: La Pergola. <br> <br>
+                Cody el catador de alimentos opina: Yo diría que es uno de los mejores restaurantes de
+                Roma,
+                que ofrece una cocina muy fina con una amplia selección de vinos y agua, un servicio
+                superior y una calidad de comida impresionante, merece totalmente la pena la visita.
+                <br>
+                <br>
+              </p>
+
+              <a href="https://goo.gl/maps/wo8AwQxfKa3ca9FK8" class="travel__button">Ubicación <i
+                  class='bx bxs-map travel__button-icon'></i></a>
+            </div>
+          </div>
+
+        </section>
+        <!-- Viaje numero seis -->
+        <section class="travel swiper-slide">
+          <img src="images/6.jpg" alt="Cody en la playa" class="travel__bg">
+
+          <div class="travel__container bd-container">
+            <div class="travel__data">
+              <h2 class="travel__subtitle">Perdido en el espacio</h2>
+              <h1 class="travel__title">Aeropuerto</h1>
+              <p class="travel__description">Cody se quedo dormido en la sala de espera y nadie lo
+                despertó,
+                perdió su vuelo de regreso a México y ahora siente muy frustrado, pero a motivo de que
+                las
+                vacaciones se le acabaron. <br> <br>
+                Aunque algo misterioso paso después … </p> <br> <br>
+
+              <a href="https://goo.gl/maps/VbRi5YShHpqPVnxF6" class="travel__button">Ubicación <i
+                  class='bx bxs-map travel__button-icon'></i></a>
+            </div>
+          </div>
+
+        </section>
+        <!-- Viaje numero siete? -->
+        <section class="travel swiper-slide">
+          <img src="images/7.png" alt="Cody en la playa" class="travel__bg">
+
+          <div class="travel__container bd-container">
+            <div class="travel__data">
+              <h2 class="travel__subtitle">Perdido en el multiverso</h2>
+              <h1 class="travel__title">Vacío al final de la línea del tiempo</h1>
+              <p class="travel__description">Cody existe en el multiverso de <del>MARVEL</del> , Subrayado
+                por
+                temas
+                legales. <br> <br>
+                Su perdida del vuelo causo un evento Nexus, ahora Cody o mas bien llamado Variante se
+                enfrenta a algo mas terrible que arreglar bugs en producción. </p>
+              <br> <br>
+              <a href="https://www.disneyplus.com/series/loki/6pARMvILBGzF" class="travel__button"> Loki -
+                Disney + <i class='bx bx-play-circle travel__button-icon'></i></a>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </div>
   </main>
+
+  <!-- controles -->
+  <div class="controls gallery-thumbs">
+    <div class="controls__container swiper-wrapper">
+      <img src="images/1.jpg" alt="" class="controls__img swiper-slide">
+      <img src="images/2.jpg" alt="" class="controls__img swiper-slide">
+      <img src="images/3.jpg" alt="" class="controls__img swiper-slide">
+      <img src="images/4.jpg" alt="" class="controls__img swiper-slide">
+      <img src="images/5.jpg" alt="" class="controls__img swiper-slide">
+      <img src="images/6.jpg" alt="" class="controls__img swiper-slide">
+      <img src="images/7.png" alt="" class="controls__img swiper-slide">
+    </div>
+  </div>
+
+  <!-- gsap -->
+  <script src="js/gsap.min.js"></script>
+
+  <!-- deslizamiento css -->
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <!-- javascript -->
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>

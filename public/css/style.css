@@ -1,4 +1,4 @@
-nav{
+/* nav{
   background-color: aliceblue;
   padding: 15px;
   display: flex;
@@ -35,4 +35,315 @@ ul li::marker {
 
 ol li{
   text-align: left;
+} */
+
+/* Contribicion */
+/* Gooogle fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+/* variables css */
+
+:root {
+  --header-height: 3rem;
+
+  /* colores */
+  --first-color: #26a69a;
+  --first-color-lighter: #ecf3f2;
+  --title-color: #11443f;
+  --text-color: #5b7b78;
+  --body-color: #f5fffe;
+
+  /* fuente y tipografia */
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 3rem;
+  --big-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+
+  /* fuente */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* z index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 5.5rem;
+    --big-font-size: 2rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/* base */
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1, h2, ul, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: auto;
+  height: 100%;
+}
+
+/* layout */
+.main {
+  position: relative;
+}
+
+.bd-container {
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* header */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+/* nav */
+.nav {
+  max-width: 968px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1.5rem;
+    background-color: var(--first-color-lighter);
+    border-radius: 1rem;
+    transition: .4s;
+  }
+}
+
+.nav__logo, .nav__toggle {
+  color: var(--body-color);
+}
+
+.nav__link {
+  color: var(--first-color-lighter);
+  font-weight: var(--font-medium);
+}
+
+.nav__item {
+  margin-bottom: 1.5rem;
+}
+
+.nav__toggle {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* show menu */
+.show-menu {
+  top: calc(var(--header-height) + 1rem);
+}
+
+/* Travels */
+.travel {
+  height: 100vh;
+  position: relative;
+}
+
+.travel__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.travel__container {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 0.25fr;
+  align-content: center;
+}
+
+.travel__subtitle, .travel__title, .travel__description {
+  color: var(--first-color-lighter);
+}
+
+.travel__subtitle {
+  font-size: var(--big-font-size);
+  font-weight: var(--font-medium);
+}
+
+.travel__title {
+  font-size: var(--biggest-font-size);
+}
+
+.travel__description {
+  margin-bottom: 1rem;
+}
+
+.travel__button {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--first-color-lighter);
+  color: var(--first-color);
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.travel__button:hover {
+  background-color: var(--body-color);
+}
+
+.travel__button-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+/* controles */
+.controls__img {
+  width: 35px;
+  height: 35px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.controls {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.25rem 0.5rem;
+  background-color: var(--first-color-lighter);
+  border-radius: 0.75rem;
+  z-index: var(--z-tooltip);
+  overflow: hidden;
+}
+
+.controls__container {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+/* Controles */
+.swiper-slide-thumb-active {
+  width: 45px;
+  height: 45px;
+}
+
+/* control de medios */
+@media screen and (max-width: 320px) {
+  .bd-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .controls__container {
+    column-gap: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__item {
+    margin-bottom: 0;
+    margin-bottom: 2rem;
+  }
+
+  .nav__link {
+    color: var(--first-color-lighter);
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .travel__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .travel__description {
+    padding-right: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .controls {
+    padding: 0.5rem;
+    border-radius: 1.25rem;
+  }
+
+  .controls__container {
+    column-gap: 1.5rem;
+  }
+
+  .controls__img {
+    width: 45px;
+    height: 45px;
+    border-radius: 0.75rem;
+  }
+
+  .swiper-slide-thumb-active {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .travel__description {
+    padding-right: 11rem;
+  }
+}
+
+/* EdgarGc026 codigo de Discord para el texto*/
+.foo{
+  text-align: center;
+  margin: 0 auto;
 }
