@@ -2,11 +2,15 @@ var switcher = document.getElementById("switch-button");
 var backgroundLabel = document.getElementById("body");
 var nav = document.getElementById("navegador");
 var cursos = document.getElementsByClassName("cursos-bg");
-var background;
-var colors;
-var navBg;
-var cursosBg;
-var checking;
+var relax = document.getElementById("relax")
+var sun = document.getElementById("sun");
+var web = document.getElementById("web");
+var webDesign = document.getElementById("web-design");
+var enfasis = document.getElementsByClassName("enfasis");
+var ruta = document.getElementById("ruta");
+var vacations = document.getElementById("vacations");
+var footer = document.getElementById("footer");
+var background, colors, navBg, cursosBg, sunMoon, switchMode, checking;
 
 var switching = function() {
   checking = document.getElementById("check-in").checked;
@@ -16,25 +20,44 @@ var switching = function() {
     background = "#465902";
     colors = "white";
     navBg = "#04BF8A";
+    sunMoon = "images/moon.png";
+    cursosBg = "#F2B705"
   }
   else {
     switcher.textContent = "Day Mode";
     background = "#99D0F2";
-    colors = "#465902";
+    colors = "black";
     navBg = "#465902";
+    sunMoon = "images/sun.png";
+    cursosBg = "#04BF8A";
   }
   backgroundLabel.style.background = background;
   backgroundLabel.style.color = colors;
   nav.style.background = navBg;
+  footer.style.background = navBg;
+  sun.src = sunMoon;
+  for (var j = 0; j < enfasis.length; j++) {
+    enfasis[j].style.color = cursosBg;
+  }
 }
 
-var switchCurso = function() {
+var switchIndex = function() {
   checking = document.getElementById("check-in").checked;
   if (checking) {
     cursosBg = "#F2B705"
+    switchMode = "night"
   }
   else {
     cursosBg = "#04BF8A";
+    switchMode = "day"
+  }
+  relax.src = `images/relax_${switchMode}.png`;
+  web.src = `images/web_${switchMode}.png`;
+  webDesign.src = `images/webdesign_${switchMode}.png`;
+  ruta.src = `images/ruta_${switchMode}.png`;
+  vacations.src = `images/vacations_${switchMode}.png`
+  for (var j = 0; j < enfasis.length; j++) {
+    enfasis[j].style.color = cursosBg;
   }
   for (var i = 0; i < cursos.length; i++) {
     cursos[i].style.background = cursosBg
