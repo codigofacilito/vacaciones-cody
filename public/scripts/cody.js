@@ -19,6 +19,7 @@ const moveSections = (btn, state) => {
     brotherDadBtn = dadBtn.nextElementSibling
 
     if(btn.id == "btnPhotoNext") brotherDadBtn = dadBtn.nextElementSibling.nextElementSibling;
+    if(btn.id == "btnPrincipal") musicCodigoFacilito();
   }
 
   if(state == 'previous') {
@@ -72,18 +73,11 @@ const moveSlider = (elemClassName) => {
   }, 1000);
 };
 
-var promiseAudio = document.querySelector('audio').play();
-
-/*const musicCodigoFacilito = () => {
-  let musicCody = document.querySelector('#musicCody');
-  setTimeout(() => {
-    musicCody.play();
-  }, 2000)
-}*/
+const musicCodigoFacilito = () => {
+  let musicCody = document.querySelector("audio").play();
+}
 
 /* Events */
-// resetwindow.onload = musicCodigoFacilito;
-
 animateTabs("tabs__controller-1");
 animateTabs("tabs__controller-2");
 
