@@ -52,6 +52,10 @@ section{
   display: flex;
 }
 
+.section_text{
+  line-height: 2.5rem;
+}
+
 .section_text p{
   text-align: justify;
   padding: 1rem 0;
@@ -108,16 +112,25 @@ a{
 .hero_text h1{
   line-height: 3.5rem;
 }
+ 
+.hero_text  p{
+  line-height: 2.5rem;
+}
 
-.boton{
+.boton , .boton_2{
   background-color: var(--first-color);
   color: #E0E9D2;
   font-size: 1.5rem;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   padding: 1.5rem 2rem;
-  margin-left: 4rem;
+  margin: 2rem;
   float: left;
   border-radius: 10px;
+  text-align: center;
+}
+
+.boton_2{
+  font-size: 1rem;
 }
 
 /* ===== HEADER ===== */
@@ -126,6 +139,8 @@ a{
   max-width: 1200px;
   min-height: calc( 100vh );
   margin: 0 auto;
+  display: flex;
+  padding-top: var(--header-size);
 }
 
 .nav_bar{
@@ -231,7 +246,7 @@ nav div{
 .header p{
   padding: 1rem;
   margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
   font-size: 1.5rem;
 
 }
@@ -250,14 +265,14 @@ p{
 }
 
 .hero{
-  position:absolute;
+  /* position:absolute; */
   display: flex;
   /* text-align: left; */
   flex-wrap: nowrap;
   align-items: center;
   flex-direction: column;
   /* align-content: center; */
-  height: calc(100vh - var(--header-size));
+  /* height: calc(100vh - var(--header-size)); */
   margin: 10px;
   top: var(--header-size);
 }
