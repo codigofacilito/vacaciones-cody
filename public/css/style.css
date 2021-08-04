@@ -13,15 +13,29 @@ body{
   background-color: chartreuse;
 }
 header{
+  position: block;
+  height: 10vh;
+}
+header nav{
   background-color: aqua;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
 }
 main{
   background-color: blueviolet;
+  width: 100%;
 }
 footer{
   background-color: brown;
 }
 section{
+  display: block;
   background-color: cadetblue;
-  margin-top: 20px;
+  margin-top: 0;
+  height: 90vh;
 }
+section:nth-child(1){
+background-color: chocolate;
+}
+
