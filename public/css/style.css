@@ -1,29 +1,245 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+:root {
+  --backcolor-nav: #fff;
+  --backcolor-main: #fff;
+  --backcolor-header-inicio: #000839;
+
+  --backcolor-button: #FFA41B;
+
+  --title-font-family: Helvetica;
+  --title-font-weight: bold;
+  
+  --paragraph-font-family: arial;
+  --paragraph-font-weight: lighter;
+  
+  
+  /* --title-font-color: #5a5a5a;
+  --paragraph-font-color: #5a5a5a; */
+  
+  --white-title-font-color: #fff;
+  --white-paragraph-font-color: #ffffffc6;
+  --black-title-font-color: #333;
+  --black-paragraph-font-color: #333333c6;
 }
 
-main{
+/******* SETEO DE ESTILOS ELEMENTOS PRINCIPALES *******/
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: var(--title-font-family);
+  color: var(--title-font-color);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: var(--paragraph-font-family);
+  color: var(--paragraph-font-color);
+  font-weight: lighter;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+main {
+  background-color: var(--backcolor-main);
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
 }
 
-section{
-  margin-top: 3rem;
+main > header,
+main > section {
+  /* border: 2px solid red; */
+  min-height: min(600px, 70vh);
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
-.cursos div{
-  background-color: black;
+main > header > *,
+main > section > * {
+  /* border: 2px solid goldenrod; */
+  width: min(500px, 100%);
+  padding: 1rem;
+  box-sizing: border-box;
+  font-size: max(20px, 1rem);
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/******* DISEÑOS CLASES GENRALES *******/
+.white_title {
+  color: var(--white-title-font-color);
+}
+
+.white_paragraph {
+  color: var(--white-paragraph-font-color);
+}
+
+.black_title {
+  color: var(--black-title-font-color);
+}
+
+.black_paragraph {
+  color: var(--black-paragraph-font-color);
+}
+
+
+/************************************************/
+/*************** SECCION NAVIGATOR **************/
+/************************************************/
+.navigator {
+  background-color: var(--backcolor-nav);
+  padding: min(1rem, 50px);
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 20px #c4c4c4;
+}
+
+.navigator__isotipoCF {
+  width: min(200px, 50%);
+}
+
+.navigator__isotipoCF img {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  padding: 0 1% 0 0;
+}
+
+
+.menu__enlace {
+  font-family: var(--title-font-family);
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  text-decoration: none;
+  min-width: 4rem;
+  position: relative;
+  border-radius: 4px;
+  color: #333;
+  
+  background-image: linear-gradient(#dadada, #dadada);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size:  0% 10%;
+}
+
+.menu__enlace--selected {
+  background-size: 100% 10% !important;
+}
+
+.menu__enlace:hover {
+  background-image: linear-gradient(var(--backcolor-header-inicio), var(--backcolor-header-inicio));
+  background-color: #fff;
+  transition: 0.3s;
+  background-size:  100% 10%;
+  text-decoration: none;
+}
+
+
+/************************************************/
+/****** SECCION "Estas son mis vacaciones" ******/
+/************************************************/
+.inicio {
+  background-color: var(--backcolor-header-inicio);
+}
+
+.inicio__info h1 {
+  margin-bottom: 1rem;
+}
+
+.inicio__imagen img {
+  --border-shadow-cody: 3px;
+
+  max-width: min(300px, 80%);
+  filter: drop-shadow(var(--border-shadow-cody) 0px 0 white)
+  drop-shadow(calc(var(--border-shadow-cody) * -1) 0px 0 white)
+  drop-shadow(0px var(--border-shadow-cody) 0 white)
+  drop-shadow(0px calc(var(--border-shadow-cody) * -1) 0 white);
+
+  -webkit-filter: drop-shadow(var(--border-shadow-cody) 0px 0 white)
+  drop-shadow(calc(var(--border-shadow-cody) * -1) 0px 0 white)
+  drop-shadow(0px var(--border-shadow-cody) 0 white)
+  drop-shadow(0px calc(var(--border-shadow-cody) * -1) 0 white);
+}
+
+
+/************************************************/
+/****** SECCION "Mis vacaciones frontend" ******/
+/************************************************/
+.vacaciones_frontend__imagen img {
+  width: 100%;
+}
+
+.cursos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /* border: 1px solid red; */
+}
+
+.cursos div {
+  background-color: var(--backcolor-button);
+  padding: 1rem;
+  width: 100%;
+  /* max-width: 200px; */
+  margin: 0.5rem;
   color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  /* display: inline-block; */
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  box-sizing: border-box;
+  /* text-shadow: 0 0 5px #333; */
+  box-shadow: 7px 7px 7px #bfbfbf;
+
+  background-image: linear-gradient(#fbfafa64, #fbfafa64);
+  background-repeat: no-repeat;
+  background-size: 10% 100%;
+  background-position-x: 111%;
 }
-.fotos img{
-  max-width: 450px;
+
+.cursos div:hover {
+  font-weight: bold;
+  box-shadow: none;
+  transition: 1s;
+
+  animation-name:  relucir;
+  animation-duration: 0.3s;
+}
+
+@keyframes relucir {
+  to {
+    background-position-x: -10%;
+  }
+}
+
+.fotos img {
+  max-width: 90%;
   display: inline-block;
 }
 ul li{
@@ -35,4 +251,14 @@ ul li::marker {
 
 ol li{
   text-align: left;
+}
+
+
+/******* FANCY CURSOR *******/
+* {
+  cursor: url(./../images/puntero.png), auto;
+}
+
+a {
+  cursor: url(./../images/puntero_selecting.png), auto;
 }
