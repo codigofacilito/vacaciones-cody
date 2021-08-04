@@ -1,5 +1,11 @@
 const nameStorage = 'preferences';
 const darkMode_switch = document.getElementById('mode_check');
+const circle = document.querySelector('.mode-circle');
+
+darkMode_switch.addEventListener('click', () => {
+  circle.style.transition = 'all 2s'
+  changeMode()
+});
 
 // Functions
 function changeMode() {
@@ -7,13 +13,19 @@ function changeMode() {
   const sunMoon = document.getElementById('sunMoon');
 
   if(darkMode_switch.checked) {
-    document.documentElement.style.setProperty('--primary-color', '#050036')
-    sunMoon.style.backgroundImage = "url('https://img.icons8.com/office/96/000000/moon.png')"
-    localStorage.setItem(nameStorage, JSON.stringify({darkMode: true}))
+
+    document.documentElement.style.setProperty('--primary-color', '#050036');
+    sunMoon.style.backgroundImage = "url('https://img.icons8.com/office/96/000000/moon.png')";
+    localStorage.setItem(nameStorage, JSON.stringify({darkMode: true}));
+    circle.classList.add('active');
+
   } else {
-    document.documentElement.style.setProperty('--primary-color', '#0092d1')
-    sunMoon.style.backgroundImage = "url('https://img.icons8.com/fluency/96/000000/sun.png')"
-    localStorage.setItem(nameStorage, JSON.stringify({darkMode: false}))
+
+    document.documentElement.style.setProperty('--primary-color', '#0092d1');
+    sunMoon.style.backgroundImage = "url('https://img.icons8.com/fluency/96/000000/sun.png')";
+    localStorage.setItem(nameStorage, JSON.stringify({darkMode: false}));
+    circle.classList.remove('active');
+
   }
 }
 
@@ -34,28 +46,13 @@ function scrollBar() {
 
 
 window.addEventListener('load', () => {
-  document.body.style.transition = ''
+  //LocalStorage
   let preferences = localStorage.getItem(nameStorage);
   preferences = JSON.parse(preferences);
-  console.log(preferences.darkMode);
-  
-  if(preferences.darkMode) {
-    darkMode_switch.checked = true
-  } else {
-    darkMode_switch.checked = false
-  }
-  
+
+  (preferences.darkMode) ? darkMode_switch.checked = true
+  : darkMode_switch.checked = false;
+
   changeMode()
   scrollBar()
 })
-
-
-darkMode_switch.addEventListener('click', () => {
-  const circle = document.querySelector('.mode-circle');
-
-  circle.style.transition = 'all 2s'
-  circle.classList.toggle('active')
-  changeMode()
-});
-
-

@@ -1,0 +1,18 @@
+@import url('./cssFormat.css');
+@import url('./features.css');
+
+.items .item:last-child {
+  text-decoration: underline;
+}
+
+.header h2 {
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+  text-shadow: 1px 1px 5px black;
+  line-height: 1.6em;
+}
+
+.header {
+  height: auto;
+  padding-bottom: 30px;
+}
