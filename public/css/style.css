@@ -97,6 +97,7 @@ header h2 {
 
 .frontend .technologies {
   width: 100%;
+  max-width: 100px;
   height: 100%;
   background-image: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
   display: grid;

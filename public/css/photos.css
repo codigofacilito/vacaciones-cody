@@ -1,6 +1,10 @@
 @import url('./cssFormat.css');
 @import url('./features.css');
 
+main {
+  padding-bottom: 25px;
+}
+
 .items .item:last-child {
   text-decoration: underline;
 }
@@ -15,4 +19,20 @@
 .header {
   height: auto;
   padding-bottom: 30px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.photos img {
+  width: 100%;
 }
