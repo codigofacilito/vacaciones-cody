@@ -1,100 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+  <meta name="description" content="Es una página web de Cody la mascosta oficial de códigoFacilito">
+  <meta name="author" content="Estiven Mayhuay">
+  <meta name="copyright" content="@Estiven Mayhuay"/>
+  <meta name="robots" content="index"/>
+  <meta name="robots" content="follow"/>
+  <meta name="keywords" content="HTML, CSS, JavaScript, GIT, CódigoFacilito"/>
+  <link rel="shortcut icon" href="./images/mascota-codigo-facilito.png" type="image/x-icon">
+  <title>Las Vacaciones de Cody</title>
+  
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- typed js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
+  <audio src="./audio/musicCody.mp3" id="musicCody"></audio>
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
-
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
+    <!-- presentation -->
+    <section class="section presentation">
+      <p class="sun sunBright"><img src="./images/sun-beach.png" alt="Sun"></p>
+      <div class="contentBall">
+        <p class="ballBeach runBall"><img src="./images/ball-beach.png" alt="The Ball"></p>
+      </div>
+      <div class="intro">
+        <p class="intro__img"><img src="./images/beach.png" alt="Beach" /></p>
+        <h1 class="intro__title" id="typedMain"></h1>
+        <p class="cody"><img src="./images/mascota-codigo-facilito.png" alt="Cody" /></p>
+        <button class="btn btnNext" id="btnPrincipal"><img src="./images/icon-next.svg" alt="icon next"></i></button>
       </div>
     </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+    <!-- ¿Qué veremos? -->
+    <section class="section howToSee">
+      <div class="codyTalk">
+        <img src="./images/mascota-codigo-facilito.png" alt="Cody talk" class="cody--small">
+        <p class="codyTalk__desc" id="typed-1"></p>
+      </div>
 
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
+      <!-- tabs -->
+      <h2 class="section__title">¿Qué Veremos?</h2>
+
+      <div class="contentTabs">
+        <div class="tabs">
+          <div class="tabs__controller-1">
+            <button class="active">Cursos</button>
+            <button>Ruta</button>
+            <button>Repositorio</button>
+            <button>Galeria</button>
+          </div>
+          <div class="tabs__container">
+            <div class="card">
+              <h3>Cursos</h3>
+              <p>Hubieron muchos cursos que tomé como: <b>HTML, CSS y JavaScript.</b></p>
+              <p>Estos cursos me sirvierón como base para aprender cosas aún más complejas por venir.</p>
+            </div>
+            <div class="card">
+              <h3>Ruta</h3>
+              <p>En esta pequeña historia sobre mi verano podrás ver que ruta seguí para tener unos conceptos sólidos en los lenguajes nativos de la web.</p>
+              <p>Responderemos a preguntas cómo: <mark><b>¿Qué ruta seguir? ¿Qué aprender primero?</b></mark></p>
+            </div>
+            <div class="card">
+              <h3>Repositorio</h3>
+              <p>No solo aprendí las tecnologías base para el desarrollo web, sino también un <b>Sistema de control de versiones</b>, el cual me permite llevar un historial de los cambios en mis proyectos.</p>
+              <p>Aquí te dejo un enlace a mi repositorio personal <a href="https://github.com/codigofacilito/vacaciones-cody/" target="_blank">Repo Código Facilito</a></p>
+            </div>
+            <div class="card">
+              <h3>Galeria</h3>
+              <p>Como dicen <b>"No todo es estudio y siempre hay que relajarse"</b>. Por lo tanto, también te compartiré las fotos de los lugares que visite en mis vacaciones. 😁😉</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btnControllers">
+        <button class="btn btnPreview" id="btnHowToseePreview"><img src="./images/icon-preview.svg" alt="btn Preview"></button>
+        <button class="btn btnNext" id="btnHowToSeeNext"><img src="./images/icon-next.svg" alt="btn Next"></button>
       </div>
     </section>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
+    <!-- Cursos -->
+    <section class="section courses">
+      <div class="codyTalk--up">
+        <img src="./images/mascota-codigo-facilito.png" alt="Cody talk" class="cody--small">
+        <p class="codyTalk__desc--large" id="typed-2"></p>
+      </div>
+
+      <h2 class="section__title">Mis Cursos</h2>
+
+      <div class="contentCards">
+        <div class="cardCourse">
+          <img src="./images/frontend-course.png" alt="Desarrollo Web">
+          <h4>Desarrollo Web Frontend</h4>
+          <a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank" class="btn btnMore">Ver más</a>
+        </div>
+        <div class="cardCourse">
+          <img src="./images/firt-website.jpg" alt="Mi primera página">
+          <h4>Mi primera página Web</h4>
+          <a href="https://codigofacilito.com/cursos/crear-pagina-web" target="_blank" class="btn btnMore">Ver más</a>
+        </div>
+      </div>
+
+      <div class="btnControllers">
+        <button class="btn btnPreview" id="btnCoursesPreview"><img src="./images/icon-preview.svg" alt="btn Preview"></button>
+        <button class="btn btnNext" id="btnCoursesNext"><img src="./images/icon-next.svg" alt="btn Next"></button>
+      </div>
+    </section>
+
+    <!-- Ruta Aprendizaje -->
+    <section class="section routerLearning">
+      <div class="codyTalk--up">
+        <img src="./images/mascota-codigo-facilito.png" alt="Cody talk" class="cody--small">
+        <p class="codyTalk__desc--large" id="typed-3"></p>
+      </div>
+
+      <h2 class="section__title">Ruta de Aprendizaje 2021</h2>
+
+      <div class="contentTabs">
+        <div class="tabs">
+          <div class="tabs__controller-2">
+            <button class="active">HTML5</button>
+            <button>CSS3</button>
+            <button>JS</button>
+          </div>
+          <div class="tabs__container">
+            <div class="card">
+              <h3>HTML5</h3>
+              <p>HTML es un lenguaje de marcado de información para websites.</p>
+              <ul>
+                <li>Tags básicos</li>
+                <li>Tags Semánticos</li>
+                <li>API del navegador</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>CSS3</h3>
+              <p>Lenguaje de Estilos en Cascada.</p>
+              <ul>
+                <li>Selectores básicos</li>
+                <li>Pseudo-elementos</li>
+                <li>Pseudo-clases</li>
+                <li>Flexbox</li>
+                <li>CSS Grid</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>JavaScript</h3>
+              <p>Lenguaje de Programación Interpretados.</p>
+              <ul>
+                <li>Variables</li>
+                <li>Funciones</li>
+                <li>Arrow Functions</li>
+                <li>Objects</li>
+                <li>Arrays</li>
+                <li>Callbacks</li>
+                <li>Promises</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gitHub">
+        <a href="https://github.com/codigofacilito/vacaciones-cody/" target="_blank"><img src="./images/icon-github.png" alt="gitHub"></a>
+        <a href="https://github.com/codigofacilito/vacaciones-cody/" target="_blank">Ir a mi repo</a>
+      </div>
+
+      <div class="btnControllers">
+        <button class="btn btnPreview" id="btnRutaPreview"><img src="./images/icon-preview.svg" alt="btn Preview"></button>
+        <button class="btn btnNext" id="btnRutaNext"><img src="./images/icon-next.svg" alt="btn Next"></button>
+      </div>
+    </section>
+
+    <!-- Photos -->
+    <section class="section photos">
+      <div class="codyTalk--up">
+        <img src="./images/mascota-codigo-facilito.png" alt="Cody talk" class="cody--small">
+        <p class="codyTalk__desc--large" id="typed-4"></p>
+      </div>
+
+      <h2 class="section__title">Mis Lugares Visitados</h2>
+
+      <div class="content">
+        <div class="contentPhotos">
+          <div class="slider" id="slider-1">
+            <div class="cardPhoto">
+              <img src="./images/cody-alberca.jpg" alt="">
+            </div>
+            <div class="cardPhoto">
+              <img src="./images/cody-playa.jpg" alt="">
+            </div>
+            <div class="cardPhoto">
+              <img src="./images/cody-campamento.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn btnSecond" id="btnGoGallery">Ir a Galleria</a>
+      </div>
+
+      <div class="btnControllers">
+        <button class="btn btnPreview" id="btnPhotoPreview"><img src="./images/icon-preview.svg" alt="btn Preview"></button>
+        <button class="btn btnNext" id="btnPhotoNext"><img src="./images/icon-next.svg" alt="btn Next"></button>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery">
+      <div class="codyTalk--up">
+        <img src="./images/mascota-codigo-facilito.png" alt="Cody talk" class="cody--small">
+        <p class="codyTalk__desc--large" id="typed-5"></p>
+      </div>
+
+      <h2 class="section__title">Mi Galería</h2>
+
+      <div class="content">
+        <div class="contentPhotos">
+          <div class="slider" id="slider-2">
+            <div class="cardPhoto">
+              <img src="./images/6.jpg" alt="cody 6">
+            </div>
+            <div class="cardPhoto">
+              <img src="./images/5.jpg" alt="cody 5">
+            </div>
+            <div class="cardPhoto">
+              <img src="./images/4.jpg" alt="cody 4">
+            </div>
+            <div class="cardPhoto">
+              <img src="./images/3.jpg" alt="cody 3">
+            </div>
+            <div class="cardPhoto">
+              <img src="./images/2.jpg" alt="cody 2">
+            </div>
+            <div class="cardPhoto">
+              <img src="./images/1.jpg" alt="cody 1">
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn btnSecond" id="btnBackGallery">Volver</a>
+      </div>
+    </section>
+
+    <!-- Tips -->
+    <section class="section tips">
+      <div class="codyTalk--up">
+        <img src="./images/mascota-codigo-facilito.png" alt="Cody talk" class="cody--small">
+        <p class="codyTalk__desc--large" id="typed-6"></p>
+      </div>
+
+      <h2 class="section__title">Beneficios</h2>
+
+      <div class="contentTips">
+        <ul class="listTips">
+          <li>Mejora la Salud Mental</li>
+          <li>Incrementa la Motivación</li>
           <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
+          <li>Mejora la Productividad y Creatividad</li>
+        </ul>
+      </div>
+
+      <div class="btnControllers">
+        <button class="btn btnPreview" id="btnTipsPreview"><img src="./images/icon-preview.svg" alt="btn Preview"></button>
+        <button class="btn btnNext" id="btnTipsNext"><img src="./images/icon-next.svg" alt="btn Next"></button>
+      </div>
     </section>
-    
+
+    <!-- Footer -->
+    <section class="section footer">
+      <div class="codigoFacilito"><img src="./images/logo-codigo-facilito.png" alt="Codigo Facilito"></div>
+      <p class="cody"><img src="./images/mascota-codigo-facilito.png" alt="Cody" /></p>
+
+      <div class="social">
+        <a href="https://twitter.com/codigofacilito?lang=en" target="_blank" class="icon"><img src="./images/icon-twitter.svg" alt="twitter" /></a>
+        <a href="https://www.facebook.com/codigofacilito" target="_blank" class="icon"><img src="./images/icon-facebook.svg" alt="facebook"/></a>
+        <a href="https://www.youtube.com/user/codigofacilito" target="_blank" class="icon"><img src="./images/icon-youtube.svg" alt="youtube" /></a>
+        <a href="https://www.instagram.com/codigofacilito/" target="_blank" class="icon"><img src="./images/icon-instagram.svg" alt="instagram" /></a>
+      </div>
+
+      <a href="#" class="iconRefresh" id="btnRefresh"><img src="./images/icon-refresh.svg" alt="icon refresh"></a>
+    </section>
   </main>
+
+  <script src="./scripts/cody.js"></script>
 </body>
 </html>
