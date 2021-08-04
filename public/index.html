@@ -4,15 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Mis vacaciones | Inicio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" href="./images/globe.png">
 </head>
 <body>
   <main>
     <header>
       <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+        <a class="btn nav-link active" 
+          href="./"          
+        >
+          Inicio
+        </a>
+        
+        <a class="btn nav-link" 
+          href="./fotos.html"          
+        >
+          Fotos
+        </a>
       </nav>
       <h1>Estas son mis Vacaciones</h1>
       <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
@@ -27,10 +37,10 @@
       <p> Estos son los cursos que estuve tomando </p>
       <div class="cursos">
         <div>
-          <p>Curso profesional de Desarrollo Web</p>
+          <h3>Curso profesional de Desarrollo Web</h3>
         </div>
         <div>
-          <p>Curso para crear mi primera página web</p>
+          <h3>Curso para crear mi primera página web</h3>
         </div>
       </div>
     </section>
@@ -40,7 +50,7 @@
         <h2>Ruta de aprendizaje 2021</h2>
         <p> También me propuse aprender nuevas tecnologías durante 2021</p>
       </header>
-      <ul>
+      <ul class="nave">
         <li> Flexbox, y Grid </li>
         <li> Animaciones con CSS y JavaScript </li>
         <li> AJAX </li>
@@ -70,12 +80,12 @@
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
       </header>
       <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
+        <img src="./images/1.jpg" alt="Cody en la playa">
+        <img src="./images/2.jpg" alt="Cody acampando">
+        <img src="./images/3.jpg" alt="Cody en una alberca">
         <p>
           Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
+          <a href="./fotos.html">Ir a la galería</a>
         </p>
       </div>
     </section>
@@ -96,5 +106,7 @@
     </section>
     
   </main>
+
+  <script src="./js/util.js"></script>
 </body>
 </html>
