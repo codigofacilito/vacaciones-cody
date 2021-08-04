@@ -33,6 +33,7 @@ main {
 main section {
   margin-top: 16px;
   margin-bottom: 16px;
+  text-align: center;
 }
 main section header {
   font-family: "Comfortaa", cursive;
@@ -43,7 +44,26 @@ main section header {
 main section header p {
   font-family: "Quicksand", sans-serif;
 }
+main section#description .cursos {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+main section#description .cursos div.items {
+  border-radius: 4px;
+  padding: 8px;
+  background-color: #3E95EE;
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+main section#description .cursos div.items a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
 main section#vacations header ol, main section#vacations header ul {
+  margin-top: 16px;
   display: flex;
   list-style-type: none;
 }
@@ -62,6 +82,7 @@ main section#gallery p a img {
   width: 40px;
 }
 main section#route header ol, main section#route header ul {
+  margin-top: 16px;
   display: flex;
   list-style-type: none;
 }
@@ -75,6 +96,9 @@ main section#route header ol li i, main section#route header ul li i {
   color: #0EBD99;
   margin-bottom: 8px;
   font-size: 70px;
+}
+main section#collaboration p:nth-child(4) a img {
+  width: 50px;
 }
 main div.fotos {
   display: grid;
