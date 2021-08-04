@@ -1,0 +1,60 @@
+.accordion {
+    background-color: #158874;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion-active, .accordion:hover {
+    background-color: white;
+    color: #19ab8e;
+}
+
+.accordion:hover:after, .accordion-active:hover:after {
+    text-shadow: 0 0 0#19ab8e;
+}
+
+.accordion-panel {
+    padding: 0 15px;
+    background-color:#19ab8e;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion:after {
+    content: '\02795';
+    font-size: 15px;
+    float: right;
+    margin-left: 5px;
+    color: transparent;
+    text-shadow: 0 0 0 white;
+}
+
+.accordion-active:after {
+    content: "\2796";
+    text-shadow: 0 0 0 #19ab8e;
+}
+
+
+.linkExt {
+    display: inline-block;
+    background-color:white;
+    border: #158874 2px solid;
+    color: #158874;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+  }
+  
+.linkExt:hover, .linkExt:active {
+    background-color:#158874;
+    border: white 2px solid;
+    color: white;
+}

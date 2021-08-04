@@ -1,0 +1,58 @@
+img {
+    max-width: 800px;
+    max-height: 600px;
+}
+
+.photosGallery {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    position: relative;
+    height: 100%;    
+}
+
+.btnArrow {
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #158874;
+    box-shadow: 0 0 15px rgb(255, 255, 255, 0.6);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.btnArrow:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+.leftArrow {
+    left: -1%;
+    top: calc(50% - 70px);
+}
+
+.rightArrow {
+    right: -1%;
+    top: calc(50% - 70px);
+}
+
+@media only screen and (min-width:350px) and (max-width:960px){
+    img {
+        width: 100%;
+    }
+
+    .leftArrow {
+        left: 0%;
+    }
+
+    .rightArrow {
+        right: 0%;
+    }
+}
