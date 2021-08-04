@@ -1,34 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <main>
+  <main class="container-fluid">
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Galería de Imágenes</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
+      <div class="introduccion mt-2">
+        <h1 class="text-center text-primary mb-4">Galería completa de mis vacaciones</h1>
+      </div>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
-
+    <section>
+      <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner fotos">
+          <div class="carousel-item active">
+            <img src="./images/1.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en la playa">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-success">Cody en la playa</h5>
+              <p class="text-justify">
+                Aquí estoy muy contento paseando con mi bicicleta por la playa 😄
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/2.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody acampando">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-danger">Cody acampando</h5>
+              <p class="text-justify">
+                Me he ido a una isla paradisiaca para descansar y disfrutar 🥰
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/3.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en una alberca">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-warning">Cody en una alberca</h5>
+              <p class="text-justify">
+                Y aquí disfrutando en la piscina 😊
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/4.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en la playa">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-success">Cody en la playa</h5>
+              <p class="text-justify">
+                Tomándome un rico aperitivo de verano en la playa 🤭
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/5.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en una alberca">
+            
+          </div>
+          <div class="carousel-item">
+            <img src="./images/6.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en una alberca">
+          </div>
+        </div>
+        <!--         <button class="carousel-control-prev" type="button" 
+          data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" 
+          data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
+    </section>
   </main>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

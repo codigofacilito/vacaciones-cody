@@ -6,38 +6,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <main>
+  <main class="container-fluid">
     <header>
-      <nav>
-        <a href="#">Inicio</a>
-        <a href="./fotos.html">Fotos</a>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./fotos.html">Galería de Imágenes</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero
-        compartirlo contigo.</p>
+      <div class="introduccion">
+        <h1 class="text-primary">Estas son mis Vacaciones</h1>
+        <p class="text-justify">
+          Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página
+          quiero
+          compartirlo contigo.
+        </p>
+      </div>
     </header>
 
     <section>
       <header>
-        <h2>Mis vacaciones Frontend</h2>
+        <h2 class="text-warning">Mis vacaciones Frontend</h2>
       </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve
-        aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías
-        frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
+      <p class="text-justify">
+        Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve
+        aprendiendo HTML, CSS, y JavaScript
+      </p>
+      <p class="text-justify"> 
+        Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis
+        habilidades en tecnologías
+        frontend, construyendo esta página 
+      </p>
+      <span class="sp_cursos text-white bg-success fw-bold">
+        Estos son los cursos que estuve tomando
+      </span>
+      <div class="cursos mt-3">
+        <button class="btn btn-warning fw-light">Curso profesional de Desarrollo Web</button>
+        <button class="btn btn-warning fw-light">Curso para crear mi primera página web</button>
       </div>
     </section>
 
@@ -46,7 +66,7 @@
         <h2>Ruta de aprendizaje 2021</h2>
         <p> También me propuse aprender nuevas tecnologías durante 2021</p>
       </header>
-      <ul>
+      <ul class="ruta-aprendizaje">
         <li> Flexbox, y Grid </li>
         <li> Animaciones con CSS y JavaScript </li>
         <li> AJAX </li>
@@ -103,6 +123,8 @@
     </section>
 
   </main>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
