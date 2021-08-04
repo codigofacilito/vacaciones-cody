@@ -83,8 +83,28 @@ section {
   box-shadow: 5px 5px 10px black;
 }
 
-@media screen and (max-width: 600px) {
+#canvasImg {
+  width: 600px;
+  height: 600px;
+}
+
+@media screen and (max-width: 500px) {
   .navMenu {
     display:none;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #canvasImg {
+    width: 100%;
+    height: auto;
+  }
+
+  #btnPostcard {
+    font-size: 13px;
   }
 }
