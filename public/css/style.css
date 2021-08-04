@@ -532,7 +532,7 @@ footer img{
     padding: 10px 20px;
 }
 
-.toggle-button{
+.toggle-button, #abrir-cerrar{
   display: none;
 }
  @media screen and (max-width: 1200px) {
