@@ -72,15 +72,17 @@ const moveSlider = (elemClassName) => {
   }, 1000);
 };
 
-const musicCodigoFacilito = () => {
+var promiseAudio = document.querySelector('audio').play();
+
+/*const musicCodigoFacilito = () => {
   let musicCody = document.querySelector('#musicCody');
   setTimeout(() => {
     musicCody.play();
   }, 2000)
-}
+}*/
 
 /* Events */
-window.onload = musicCodigoFacilito;
+// resetwindow.onload = musicCodigoFacilito;
 
 animateTabs("tabs__controller-1");
 animateTabs("tabs__controller-2");
