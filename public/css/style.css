@@ -110,24 +110,10 @@ section{
   margin-top: -2px;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-/* ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
+.post{
+  margin-bottom: 30px;
 }
 
-ol li{
-  text-align: left;
-} */
+.post img{
+  border-radius: 4px;
+}
