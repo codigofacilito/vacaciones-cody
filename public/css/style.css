@@ -1,38 +1,700 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=RocknRoll+One&display=swap');
+
+*{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #FFF;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #05AFF2;
+}
+
+/****** Header *****/
+.header{
+  position: relative;
+  height: auto;
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 60px;
+}
+
+.navbar{
+  width: 100%;
+  background: #048ABF;
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
-  gap:1em;
+  justify-content: flex-end;
 }
 
-main{
-  text-align: center;
-  max-width: 960px;
-  margin:0 auto;
-}
-
-section{
-  margin-top: 3rem;
-}
-
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
+.navbar > a{
+  text-decoration: none;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  padding: 20px;
+  transition: all 0.3s ease-in;
 }
-.fotos img{
+
+.navbar > a:hover{
+  background: #05aff2;
+}
+
+.text-container{
+  margin-left: 3.5rem;
+}
+
+.first, .second, .title{
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+.first{
+  font-size: 3.5rem;
+}
+
+.second{
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.header-img{
+  display: flex;
+  justify-content: center;
+}
+
+.header-img img{
+  width: 100%;
   max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
 }
 
-ol li{
-  text-align: left;
+.wave{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/****** Contenido Principal *****/
+/******** titulos y descriptciones ***********/
+.title, .description{
+  text-align: center;
+}
+
+.title{
+  font-size: 3rem;
+}
+
+.description{
+  font-size: 1.3rem;
+  margin: 20px 7% auto;
+}
+
+/******** Seccion: mis vacaciones **********/
+.my-vacations{
+  padding-top: 60px;
+  background: #F21D47;
+}
+
+.courses, .course{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.courses{
+  gap: 3.5rem;
+  margin: 70px auto;
+  position: relative;
+}
+
+.courses .course{
+  max-width: 300px;
+  position: relative;
+  padding-top: 15px;
+  border-radius: 5px;
+  background: #D91A40;
+  box-shadow: 3px 3px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.course .principal-img{
+  max-width: 250px;
+  max-height: 250px;
+  margin: auto;
+}
+
+.course p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  color: black;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  height: 50px;
+}
+
+/******** Seccion: ruta de aprendizaje *********/
+.learning-route{
+  overflow: hidden;
+  background: #7EF211;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 150px;
+}
+
+.learning-route .text-container{
+  margin-top: 0;
+  align-self: center;
+}
+
+.img-route-learning{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-route-learning img{
+  max-height: 650px;
+}
+
+/******** Seccion: mis fotos***********/
+.my-photos{
+  background: #F28D1D;
+  padding-top: 60px;
+}
+
+
+.my-photos .slider-container{
+  width: auto;
+  position: relative;
+  margin-top: 55px;
+}
+
+.my-slider{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.my-slider img{
+  min-width: 150px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.arrows img:hover{
+  background: #D9801A;
+}
+
+.arrows{
+  width: 70%;
+  margin: auto;
+  position: absolute;
+  top: calc(50% - 5rem);
+  left: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrows img{
+  width: 5rem;
+  height: 5rem;
+  padding: 10px;
+}
+
+.arrows img:hover{
+  cursor: pointer;
+}
+
+.points-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.point{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+.active{
+  background: #149be0;
+}
+
+.photos{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.gallery-desc{
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.photos a{
+  display: inline-block;
+  background: #D9801A;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  box-shadow: 0 1px 2px 0 hsla(143, 7%, 24%, 0.61);
+}
+
+.photos a:hover{
+  transform: scale(1.02);
+}
+
+/******** Seccion: beneficios vacaciones**********/
+.item1{ grid-area: mental;}
+.item2{ grid-area: motivation;}
+.item3{ grid-area: burnout;}
+.item4{ grid-area: creativity;}
+
+.vacations-benefits{
+  padding-top: 60px;
+  background: #1DB6F2;
+  padding-bottom: 50px;
+}
+
+.benefits-container{
+  display: grid;
+  grid-template-areas: 
+  ' mental motivation burnout'
+  '.  creativity .';
+  margin-top: 50px;
+  gap: 30px;
+  place-items: center;
+}
+
+.benefit .img-container span{
+  position: absolute;
+  margin-right: .6rem;
+  border-radius: 50%;
+  top: calc(50% - 2.5rem );
+  left: -2.5rem;
+  display: inline-block;
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 2rem;
+  padding: 0.9375rem;
+  background-color: #41e066;
+  color: #38403b;
+  box-shadow: 0 0 5px 0 hsla(143, 7%, 24%, 0.61);
+}
+
+.benefit img{
+  max-width: 230px;
+}
+
+.benefit .img-container{
+  display: flex;
+  justify-content: center;
+}
+
+.benefit p{
+  margin-top: 20px;
+  background: white;
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  padding: 0.725rem;
+  box-shadow: 0 0 5px 0 hsla(143, 7%, 24%, 0.61);
+}
+
+
+/******* Sección: Galeria de Fotos ********/
+.body-gallery{
+  background-image: url("../images/cloud-bg.png");
+  background-repeat: space;
+  background-position: center;
+  padding: 0 50px 60px 50px;
+}
+
+.my-photos-gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+  gap: 50px;
+}
+
+.my-photos-gallery .title{
+  grid-column: 1/-1;
+}
+
+.my-photos-gallery .img-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease-in;
+}
+
+.my-photos-gallery .photo{
+  min-width: 150px;
+  max-width: 800px;
+  width: 80%;
+  box-shadow: 0 5px 5px 0 hsla(143, 7%, 24%, 0.61);
+}
+
+.my-photos-gallery .img-container:hover{
+  transform: scale(1.02);
+}
+
+.img-container .pin{
+  position: absolute;
+  top: -1.25rem;
+  left: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.left-rot{
+  transform: rotate(-3deg);
+}
+
+.right-rot{
+  transform: rotate(3deg);
+}
+
+.go-up{
+  display: inline-block;
+  background: #37BD56;
+  padding: 25px;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  text-align: center;
+  box-shadow: -3px 0 5px 0 hsla(143, 7%, 24%, 0.61);
+}
+
+.go-up:hover{
+  transform: scale(1.1);
+}
+
+.btn-up{
+  width: 100%;
+  height: 100%;
+}
+
+/********** efectos/animaciones ***********/
+.hidden{
+  display: none;
+}
+
+.fade-top {
+  opacity: 0; 
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translate(10vh, 0vh);
+  transition: all 1s;
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translate(-10vh, 0vh);
+  transition: all 1s;
+}
+
+.fade{
+  animation: photo-transition 0.8s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@keyframes photo-transition {
+  from{clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);}
+  to{clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);}
+}
+
+
+/********** Media queries ***********/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html{
+    font-size: 10px;
+  }
+
+  .header{
+    align-content: center;
+  }
+
+  .navbar{
+    justify-content: center;
+  }
+
+
+  .navbar > a{
+    font-size: 1.2rem;
+  }
+
+  .text-container, .header-img{
+    grid-column: 1/-1;
+  }
+
+  .text-container{
+    text-align: center;
+    margin: 100px 5px 20px;
+  }
+
+  .header-img img{
+    width: 70%;
+    margin-bottom: 100px;
+  }
+
+  .title, .description {
+    padding: 3px;
+  }
+
+  .courses .course, .course .principal-img, .img-route-learning img{
+    width: 70%;
+    margin: auto;
+  }
+
+  .benefit .img-container span{
+    left: 0;
+ }
+
+  .learning-route .text-container, .img-route-learning{
+    grid-column: 1/-1;
+  }
+
+  .arrows{
+    width: 100%;
+    top: calc(50% - 5rem);
+    left: 0;
+  }
+
+  .arrows img{
+    width: auto;
+    padding: 5px;
+  }
+
+  .my-slider{
+    width: 60%;
+  }
+
+  .benefits-container{
+    grid-template-areas: 
+    'mental'
+    'motivation'
+    'burnout'
+    'creativity';
+  }
+
+  .benefit .img-container img{
+    width: 55%;
+  }
+
+  .my-photos-gallery .img-container{
+    grid-column: 1/-1;
+  }
+
+  .my-photos-gallery .photo{
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 601px and up) */
+@media only screen and (min-width: 601px) {
+  html{
+    font-size: 12px;
+  }
+
+  .header{
+    align-content: center;
+  }
+
+  .navbar{
+    justify-content: center;
+  }
+
+  .navbar > a{
+    font-size: 1.2rem;
+  }
+
+  .text-container, .header-img{
+    grid-column: 1/-1;
+  }
+
+  .text-container{
+    text-align: center;
+    margin: 100px 20px 20px;
+  }
+
+  .header-img img{
+    width: 70%;
+    margin-bottom: 110px;
+  }
+
+  .title{
+    margin: auto 15px;
+  }
+
+  .courses{
+    margin: 40px 20px;
+  }
+
+  .course .principal-img, .img-route-learning img{
+    width: 70%;
+    margin: auto;
+  }
+
+  .learning-route .text-container, .img-route-learning{
+    grid-column: 1/-1;
+  }
+
+  .arrows{
+    width: 100%;
+    top: calc(50% - 5rem);
+    left: 0;
+  }
+
+  .arrows img{
+    width: auto;
+    padding: 5px;
+  }
+
+  .my-slider{
+    width: 60%;
+  }
+
+  .benefits-container{
+    margin: 40px;
+    grid-template-areas: 
+    'mental motivation'
+    'burnout creativity';
+  }
+
+  .benefit .img-container img{
+    width: 60%;
+  }
+
+  .my-photos-gallery .img-container{
+    grid-column: 1/-1;
+  }
+
+  .my-photos-gallery .photo{
+    width: 85%;
+  }  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html{
+    font-size: 14px;
+  }
+
+  .header-img img{
+    width: 90%;
+  }
+
+  .my-slider{
+    width: 70%;
+    margin: auto;
+  } 
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html{
+    font-size: 16px;
+  }
+
+  .navbar{
+    justify-content: flex-end;
+  }
+
+  .text-container{
+    text-align: left;
+    margin-left: 3.5rem;
+  }
+
+  .text-container, .header-img, .learning-route .text-container, .img-route-learning, .my-photos-gallery .img-container{
+    grid-column: span 1;
+  }
+
+  .header-img img{
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .title, .description {
+    padding: 0;
+  }
+
+  .courses{
+    width: 100%;
+    margin: 70px auto;
+  }
+
+.course .principal-img, .img-route-learning img{
+    width: 80%;
+    margin: auto;
+  }
+
+  .benefit .img-container span{
+    top: calc(50% - 2.5rem );
+    left: -2.5rem;
+  }
+
+  .arrows img{
+    width: auto;
+    padding: 5px;
+  }
+
+  .benefits-container{
+    grid-template-areas: 
+    ' mental motivation burnout'
+    '.  creativity .';
+    margin: 80px 50px auto;
+  }
+
+  .benefit .img-container img{
+    width: 70%;
+  }
+
+  .my-photos-gallery .photo{
+    width: 90%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  html{
+    font-size: 16.5px;
+  }
+
+  .arrows{
+    width: 70%;
+    margin: auto;
+    top: calc(50% - 5rem);
+    left: 15%;
+  }
 }
