@@ -4,44 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/palmera.ico" type="image/x-icon">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>  
 
   <main>
     <header>
       <nav class="navbar">
-          <a class="navbar__brand" href="./index.html">
-            <svg class="brand__icon" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#363136" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <polyline points="7 8 3 12 7 16" />
-              <polyline points="17 8 21 12 17 16" />
-              <line x1="14" y1="4" x2="10" y2="20" />
-            </svg>
-            <h1 class="brand__text">Cody Dev</h1>
-          </a>
-        <div class="navbar__links">
-          <!-- <a class="links" href="./index.html">Inicio</a> -->
-          <a class="link" href="./perfil.html">Perfil</a>
-          <a class="link" href="./fotos.html">Fotos</a>
-          <button class="btn is-secondary">Ingresar</button>
+        <div class="wrapper">
+          <div class="navbar__content">
+            <a class="navbar__brand" href="./index.html">
+              <h1>Cody Dev</h1>
+            </a>
+            <div class="navbar__links">
+              <a class="link" href="./perfil.html">Perfil</a>
+              <a class="link" href="./fotos.html">Fotos</a>
+            </div>
+          </div>
         </div>
       </nav>
 
-        <div class="banner">
+        <div class="banner">  
           <div class="banner__hero">
-            <img class="rounded-none w-32 h-32" src="./images/cody-removebg-flip.png" alt="Cody Avatar">
-            <div class="banner__comment">
+            <div class="banner__comment text-white">
+              <p>¡Hola!</p>
               <h2 class="font-extrabold text-4xl">Estas son mis Vacaciones</h1>
               <p class="">Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
             </div>
+            <img class="banner__cody" src="./images/cody-large-removebg-preview (1).png" alt="Cody Avatar">
           </div>
-          <div class="banner__photos" style="background-image: url(./images/1.jpg);">
-          </div>
+          <!-- <div class="banner__photos" style="background-image: url(./images/1.jpg);">
+          </div> -->
         </div>
-      <!-- <a class="bg-summer-400 text-white p-2 rounded-b" href="#">¡Vamos!</a> -->
     </header>
+    
     <section>
       <header>
         <h2 class="">Mis vacaciones Frontend</h2>

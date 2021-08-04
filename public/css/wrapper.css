@@ -1,0 +1,11 @@
+.wrapper {
+    margin-inline-end: 24px;
+    margin-inline-start: 24px;
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        margin-inline-end: 80px;
+        margin-inline-start: 80px;
+    }
+}

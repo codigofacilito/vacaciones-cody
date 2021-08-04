@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Begin Navbar: brand & links */
+
+.navbar {
+    @apply flex justify-between;
+    @apply fixed top-0 w-full p-4;
+    @apply text-white tracking-widest font-semibold;
+    @apply backdrop-filter backdrop-blur-md;
+  }
+  
+  .navbar__brand {
+    @apply flex gap-2 items-center;
+  }
+  
+  .brand__icon {
+    @apply stroke-current;
+  }
+  
+  .brand__text {
+    @apply font-roboto text-2xl;
+  }
+  
+  .navbar__links {
+    @apply flex gap-14 items-center;
+  }
+  
+  .link {
+    @apply hidden lg:flex;
+  }
+  
+  .btn {
+    @apply px-4 py-1 text-summer-400 tracking-widest;
+    @apply rounded-full border-2 border-summer-400;
+    @apply focus:outline-none focus:ring-2 focus:ring-summer-400 focus:ring-offset-2;
+  }
+  
+  .is-secondary {
+    @apply bg-summer-400 text-white;
+  }
+  
+  /* End Navbar: brand & links */

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto+Slab&display=swap");
+/* @import url(./navbar.css); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,75 +13,30 @@
     @apply text-xl;
   }
   img {
-    @apply rounded-lg;
+    @apply w-max;
   }
 }
 
-/* Begin Navbar: brand & links */
 
-.navbar {
-  @apply flex justify-between;
-  @apply fixed w-full p-4;
-  @apply text-summer-400 shadow-lg;
-  @apply backdrop-filter backdrop-grayscale backdrop-blur-md backdrop-contrast-200;
+@layer components {
+  @import url(./navbar.css);
 }
-
-.navbar__brand {
-  @apply flex gap-2 items-center;
-}
-
-.brand__icon {
-  @apply stroke-current;
-}
-
-.brand__text {
-  @apply font-roboto text-2xl;
-}
-
-.navbar__links {
-  @apply flex gap-14 items-center;
-}
-
-.link {
-  @apply hidden lg:flex;
-}
-
-.btn {
-  @apply px-4 py-1 text-summer-400;
-  @apply rounded-full border-2 border-summer-400;
-  /* @apply hover:text-summer-400 hover:bg-white hover:border-transparent; */
-  @apply focus:outline-none focus:ring-2 focus:ring-summer-400 focus:ring-offset-2;
-}
-
-.is-secondary {
-  @apply bg-summer-400 text-white;
-}
-
-/* End Navbar: brand & links */
-
-/* .gradient {
-  @apply bg-gradient-to-t from-summer-400
-}
-
-.cover {
-  @apply flex h-52 p-5 items-stretch
-} */
 
 /* Begin Banner */
 
 .banner {
-  @apply h-screen bg-gradient-to-t from-summer-100 bg-local lg:p-12;
-  @apply flex flex-col lg:flex-row;
+  height: 100vh;
+  @apply bg-gradient-to-t from-summer-500 to-summer-400;
 }
 
 .banner__hero {
-  @apply mt-20;
-  @apply flex flex-col justify-end w-full lg:flex-1;
+  @apply h-full;
+  @apply flex;
+  padding-top: 10em; 
 }
 
 .banner__comment {
-  @apply flex flex-col gap-5;
-  @apply text-2xl p-8 bg-summer-300;
+  @apply text-2xl;
 }
 
 .banner__photos {

@@ -1,0 +1,35 @@
+.navbar {
+    padding-block: 1em;
+    background: rgba(0, 0, 255, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__brand {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navbar__brand h1 {
+    margin-block: 0;
+    font-family: var(--fontTitles);
+}
+
+.navbar__links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar__links a {
+    text-decoration: none;
+    font-family: var(--fontBase);
+    color: white;
+    letter-spacing: 2px;
+}

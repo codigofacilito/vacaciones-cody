@@ -13,7 +13,8 @@ module.exports = {
           100 : '#C400FF',
           200 : '#FF67E7',
           300 : '#FFF338',
-          400 : '#0CECDD'
+          400 : '#0CECDD',
+          500 : '#1bbc9b'
         },
         cian: {
           100 : '#1E5F74',
