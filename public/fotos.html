@@ -6,29 +6,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="https://img.icons8.com/fluency/96/000000/sun.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/photos.css">
 </head>
-
 <body>
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
+    <header class="header">
+      <div class="wrapper">
+        <nav>
+          <ul class="items">
+            <li class="item">
+              <a href="./index.html">Inicio</a>
+            </li>
+            <li class="item">
+              <a href="fotos.html">Fotos</a>
+            </li>
+          </ul>
+          <div class="mode-container">
+            <div class="mode-switch">
+              <div class="mode-circle" ></div>
+              <input type="checkbox" id="mode_check">
+            </div>
+          </div>
+        </nav>
+      </div>
       <h2>Galería completa de mis vacaciones</h2>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+    <div class="wrapper">
+      <div class="gridList">
+        <div class="gridList-container">
+          <button id="grid"></button>
+          <button id="list" class="active"></button>
+        </div>
+      </div>
+      <div class="photos list">
+        <img src="assets/images/1.jpg" alt="Cody en la playa" load="lazy">
+        <img src="assets/images/2.jpg" alt="Cody acampando" load="lazy">
+        <img src="assets/images/3.jpg" alt="Cody en una alberca" load="lazy">
+        <img src="assets/images/4.jpg" alt="Cody en una alberca" load="lazy">
+        <img src="assets/images/5.jpg" alt="Cody en una alberca" load="lazy">
+        <img src="assets/images/6.jpg" alt="Cody en una alberca" load="lazy">
+      </div>
     </div>
-
+    <div class="scroll">
+      <span class="sunMoon" id="sunMoon"></span>
+    </div>
   </main>
+  <script src="./script/main.js"></script>
+  <script src="./script/gridList.js"></script>
 </body>
 
 </html>
