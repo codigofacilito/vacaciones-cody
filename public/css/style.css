@@ -105,6 +105,70 @@ body {
     background: var(--white90);
 }
 
+
+/* header */
+
+.header {
+    position: sticky;
+    top: 0;
+    box-shadow: -3px 7px 15px -3px rgb(0 0 0 / 10%), -1px 5px 6px -2px rgb(0 0 0 / 5%);
+    /* box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%); */
+    z-index: 2;
+    background: var(--white90);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    block-size: 80px;
+    margin-inline: 51px;
+}
+
+.header-content img {
+    width: 100px;
+    padding-block-start: 6px;
+    cursor: pointer;
+}
+
+.header-content__button {
+    display: inline-block;
+}
+
+.header-content__button a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--black90);
+}
+
+.header-content__button a:first-of-type {
+    display: none;
+}
+
+.header-content__button a:hover {
+    font-weight: bold;
+    color: var(--green80);
+}
+
+@media screen and (min-width:960px) {
+    .header-content img {
+        width: 200px;
+    }
+    .header-content__button {
+        display: block;
+    }
+    .header-content__button a {
+        font-size: 18px;
+    }
+    .header-content__button a:first-of-type {
+        display: inline-block;
+        margin-inline-end: 20px;
+    }
+}
+
+
+/* Welcome */
+
 .welcome-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -184,14 +248,15 @@ body {
 
 .vacation-frontend__svg {
     display: block;
-    height: 150px;
+    height: 100%;
     background: linear-gradient(90deg, #4613E1 0%, #7F5AF0 100%);
 }
 
-.vacation-frontend__svg img {
-    width: 100%;
-    height: 150px;
-}
+
+/* .vacation-frontend__svg img {
+width: 100%;
+height: 150px;
+} */
 
 .vacation-frontend__content {
     background: linear-gradient(90deg, #4613E1 0%, #7F5AF0 100%);
@@ -438,6 +503,22 @@ body {
 
 .button-collaborate:hover {
     background: var(--pink70);
+}
+
+@media screen and (min-width:1024px) {
+    .section-absolute {
+        width: 100%;
+        position: absolute;
+        height: 800px;
+    }
+    .relative {
+        position: relative;
+    }
+    .section-background__icons {
+        height: 100%;
+        /* width: 100%; */
+        background: url(../images/vector-github.png) right 302px top 169px no-repeat, url(../images/vector-branch.png) left 215px top 169px no-repeat, url(../images/vector-desktop.png) right 352px bottom 55px no-repeat, url(../images/vector-disk.png) left 332px bottom 196px no-repeat;
+    }
 }
 
 
