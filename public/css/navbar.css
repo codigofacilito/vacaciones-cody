@@ -1,9 +1,10 @@
 .navbar {
-    padding-block: 1em;
-    background: rgba(0, 0, 255, 0.5);
+    padding-block: 1em; 
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
+    backdrop-filter: blur(10px);
 }
 
 .navbar__content {
@@ -24,6 +25,7 @@
 
 .navbar__links {
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -32,4 +34,14 @@
     font-family: var(--fontBase);
     color: white;
     letter-spacing: 2px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-media img {
+    width: 2rem;
 }

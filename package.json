@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/NiverMtz/vacaciones-cody#readme",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "tailwindcss": "^2.2.7"
   }
 }

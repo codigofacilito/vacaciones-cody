@@ -7,6 +7,9 @@
   --green10: #0CECDD;
   --green20: #1bbc9b;
 
+  --yellow10: #F9D423;
+  --yellow20: #E65C00;
+
   --white: white;
   --fontBase: 'DM Sans', sans-serif;
   --fontTitles: 'Roboto Slab', serif;
@@ -18,4 +21,8 @@ body {
 
 img {
   width: 100%;
+}
+
+.animate__animated.animate__pulse {
+  --animate-duration: 2.5s;
 }

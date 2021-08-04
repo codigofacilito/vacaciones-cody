@@ -8,6 +8,10 @@
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>  
 
@@ -22,25 +26,34 @@
             <div class="navbar__links">
               <a class="link" href="./perfil.html">Perfil</a>
               <a class="link" href="./fotos.html">Fotos</a>
+              <div class="social-media">
+                <a href="https://github.com/codigofacilito" target="_blank"><img src="./images/github-square-brands.svg" alt="GH"></a>
+                <a href="https://www.youtube.com/user/codigofacilito" target="_blank"><img src="./images/youtube-square-brands.svg" alt="YT"></a>
+                <a href="https://twitter.com/codigofacilito" target="_blank"><img src="./images/twitter-square-brands.svg" alt="TW"></a>
+              </div>
             </div>
           </div>
         </div>
       </nav>
 
-        <div class="banner">  
+        <div class="banner animate__animated animate__pulse">  
           <div class="banner__hero">
-            <div class="banner__comment text-white">
-              <p>¡Hola!</p>
-              <h2 class="font-extrabold text-4xl">Estas son mis Vacaciones</h1>
-              <p class="">Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+            <div class="wrapper">
+              <div class="banner__comment animate__animated animate__zoomInDown">
+                <!-- <div class="banner__hello">
+                  <p>¡Hola!</p>
+                </div> -->
+                <h2>Estas son mis Vacaciones</h1>
+                <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+              </div>
             </div>
-            <img class="banner__cody" src="./images/cody-large-removebg-preview (1).png" alt="Cody Avatar">
+            <img class="banner__cody animate__animated animate__slideInRight" src="./images/cody-large-removebg-preview (1).png" alt="Cody Avatar">
           </div>
           <!-- <div class="banner__photos" style="background-image: url(./images/1.jpg);">
           </div> -->
         </div>
     </header>
-    
+
     <section>
       <header>
         <h2 class="">Mis vacaciones Frontend</h2>
