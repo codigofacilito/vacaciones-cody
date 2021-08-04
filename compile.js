@@ -1,6 +1,7 @@
 const { readdir, lstatSync, writeFileSync } = require('fs')
 const { compileFile } = require('pug')
 const { join } = require('path')
+const sass = require('sass')
 
 const viewsDirectory = join(__dirname, 'views')
 const publicDirectory = join(__dirname, 'public')
@@ -17,4 +18,11 @@ readdir(viewsDirectory, (error, files) => {
     const compiledHTML = compiledFunction({ environment: 'Production' })
     writeFileSync(join(publicDirectory, `${name}.html`), compiledHTML)
   })
+})
+
+sass.render({
+  file: 'styles/index.scss',
+  outputStyle: 'compressed'
+}, (error, result) => {
+  if (!error) writeFileSync('public/index.css', result.css)
 })

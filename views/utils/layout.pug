@@ -15,7 +15,7 @@ html(lang='es')
     link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
     link(href='https://fonts.googleapis.com/css2?family=Open+Sans&display=swap' rel='stylesheet')
     //- Robot info
-    meta(content='Mis Vacaciones - LuisEnMarroquin' property='og:title')
+    meta(content='Mis Vacaciones LuisEnMarroquin' property='og:title')
     meta(content='Este verano domina HTML, CSS, JavaScript, React, Vue, y más' property='og:description')
     meta(name='description' content='Este verano domina HTML, CSS, JavaScript, React, Vue, y más')
     meta(content='Mis_Vacaciones' property='og:site_name')
@@ -41,10 +41,14 @@ html(lang='es')
     //- Material Icons
     link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
     //- App manifest
-    link(href='/manifest.json' rel='manifest')
-    //- Bootstrap CSS
-    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet')
+    link(href='manifest.json' rel='manifest')
   body
     block content
-    //- Bootstrap JS
-    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js')
+    script.
+      const useScroll = () => {
+        const navbar = document.querySelector('.siteNavbar')
+        if (window.scrollY === 0) navbar.setAttribute('down', false)
+        if (window.scrollY !== 0) navbar.setAttribute('down', true)
+      }
+      document.addEventListener("scroll", useScroll)
+      useScroll()

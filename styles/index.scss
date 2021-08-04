@@ -1,20 +1,9 @@
-* {
-  font-family: 'Open Sans', sans-serif;
-}
-
 body {
   margin: 0;
-}
-
-nav {
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap: 1em;
-}
-
-section {
-  margin-top: 3rem;
+  background-color: #f5f5f5;
+  * {
+    font-family: 'Open Sans', sans-serif;
+  }
 }
 
 .cursos div {
@@ -47,7 +36,7 @@ ol li {
 }
 
 footer {
-  background-image: url(/images/footer.svg);
+  background-image: url(images/footer.svg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,16 +49,43 @@ footer {
   text-align: center;
 }
 
-.navButton {
-  color: white;
-  border: none;
-  padding: 10px 30px;
-  border-radius: 20px;
-  background: #5CB3FF;
-  transition: all 500ms ease 0s;
-  &:hover {
+.siteNavbar {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  transition: all 200ms ease 0s;
+  &[down=true] {
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 5%);
+  }
+  section {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  span {
+    flex: 1;
+    vertical-align: middle;
+  }
+  a:nth-child(2) {
+    flex: 0 0 100px;
+    border-radius: 20px;
+  }
+  button {
+    width: 100%;
+    border: none;
+    padding: 10px;
     color: white;
-    background: #F66D65;
-    text-decoration: none;
+    cursor: pointer;
+    background: #5CB3FF;
+    border-radius: inherit;
+    transition: all 500ms ease 0s;
+    &:hover {
+      color: white;
+      background: #F66D65;
+      text-decoration: none;
+    }
   }
 }
