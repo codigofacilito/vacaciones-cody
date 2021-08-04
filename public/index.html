@@ -6,10 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
-  <script defer type="text/javascript" src="./js/nightmode.js"></script>
+  <script defer type="text/javascript" src="./js/master.js"></script>
 </head>
 <body id="body">
   <main>
+    <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" onclick="burguerButton()"/>
+    <label for="abrir-cerrar" class="toggle-button" id="toggle">
+        <span class="cerrar" title="Cerrar">Cerrar</span>
+        <span class="abrir" title="Abrir">Abrir</span>
+    </label>
     <nav id="navegador">
       <a href="index.html">
         <img src="images/sun.png" alt="Sun" id="sun" width="52px">

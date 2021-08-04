@@ -11,6 +11,7 @@ var ruta = document.getElementById("ruta");
 var vacations = document.getElementById("vacations");
 var footer = document.getElementById("footer");
 var content = document.getElementsByClassName("content");
+var toggle = document.getElementById("toggle");
 var background, colors, navBg, cursosBg, sunMoon, switchMode, checking;
 
 var switching = function() {
@@ -38,6 +39,7 @@ var switching = function() {
   footer.style.background = navBg;
   sun.alt = sunMoon;
   sun.src = `images/${sunMoon}.png`;
+  toggle.style.background = cursosBg;
   for (var j = 0; j < enfasis.length; j++) {
     enfasis[j].style.color = cursosBg;
   }
@@ -76,5 +78,15 @@ var switchFotos = function() {
   }
   for (var i = 0; i < content.length; i++) {
     content[i].style.background = background
+  }
+}
+
+var burguerButton = function() {
+  var burguerCheck = document.getElementById("abrir-cerrar").checked;
+  if (burguerCheck) {
+    nav.style.display = "flex"
+  }
+  else {
+    nav.style.display = "none"
   }
 }

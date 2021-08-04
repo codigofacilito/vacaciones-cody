@@ -7,12 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
-  <script defer type="text/javascript" src="./js/nightmode.js"></script>
+  <script defer type="text/javascript" src="./js/master.js"></script>
 </head>
 
 <body id="body">
   <main>
     <header>
+      <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" onclick="burguerButton()"/>
+      <label for="abrir-cerrar" class="toggle-button">
+          <span class="cerrar" title="Cerrar">Cerrar</span>
+          <span class="abrir" title="Abrir">Abrir</span>
+      </label>
       <nav id="navegador">
         <a href="index.html">
           <img src="images/sun.png" alt="Sun" id="sun" width="52px">
@@ -33,11 +38,10 @@
               <img src="images/1.jpg" alt="Cody en la playa">
           </div>
           <div class="content">
-              <h1>¡Hola a todos! | EDUCA2</h1>
+              <h1>Cody en la playa</h1>
               <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis facere, accusamus officiis optio, nesciunt mollitia
-                  officia praesentium alias minus iusto.
+                  Empezando mi viaje, fuí a Margarita a visitar a mi familia,
+                  así que aproveché la ocasión y tuve un agradable paseo por sus hermosas playas.
               </p>
           </div>
       </div>
@@ -46,11 +50,10 @@
               <img src="images/2.jpg" alt="Cody acampando">
           </div>
           <div class="content">
-              <h1>¡Hola a todos! | EDUCA2</h1>
+              <h1>Acampando en Tucacas</h1>
               <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis facere, accusamus officiis optio, nesciunt mollitia
-                  officia praesentium alias minus iusto.
+                  Ya en mi paso por Venezuela aproveché la oportunidad de acampar en una de sus hermosas playas, Tucacas.
+                  Lo único malo es que sigo sacando arena de los oidos.
               </p>
           </div>
       </div>
@@ -59,11 +62,9 @@
               <img src="images/3.jpg" alt="Cody en una alberca">
           </div>
           <div class="content">
-              <h1>¡Hola a todos! | EDUCA2</h1>
+                <h1>Mucha aventura...</h1>
               <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis facere, accusamus officiis optio, nesciunt mollitia
-                  officia praesentium alias minus iusto.
+                  Divertirse tanto es agotador, así que voy a tomar un pequeño descanso... Por ahora.
               </p>
           </div>
       </div>
@@ -72,11 +73,9 @@
               <img src="images/4.jpg" alt="Cody en una alberca">
           </div>
           <div class="content">
-              <h1>¡Hola a todos! | EDUCA2</h1>
+              <h1>Y aquí seguimos</h1>
               <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis facere, accusamus officiis optio, nesciunt mollitia
-                  officia praesentium alias minus iusto.
+                  Todavía estoy recargando energías para más aventura.
               </p>
           </div>
       </div>
@@ -85,11 +84,10 @@
               <img src="images/5.jpg" alt="Cody en una alberca">
           </div>
           <div class="content">
-              <h1>¡Hola a todos! | EDUCA2</h1>
+              <h1>Ahora sí</h1>
               <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis facere, accusamus officiis optio, nesciunt mollitia
-                  officia praesentium alias minus iusto.
+                  Después de mi corto (realmente largo) descanso, tomé las maletas y me aventuré hacía Cartagena, Colombia.
+                  Donde quedé maravillado con sus coloridas calles y la amabilidad de su gente.
               </p>
           </div>
       </div>
@@ -98,20 +96,13 @@
               <img src="images/6.jpg" alt="Cody en una alberca">
           </div>
           <div class="content">
-              <h1>¡Hola a todos! | EDUCA2</h1>
+              <h1>Hora de volver</h1>
               <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis facere, accusamus officiis optio, nesciunt mollitia
-                  officia praesentium alias minus iusto.
+                  No todo es para siempre, ya es hora de volver a trabajar de estas largas vacaciones...
+                  Pero la aerolínea perdió mi equipaje. Hasta aquí llegó mi estado de relajación.
               </p>
           </div>
       </div>
-      <!-- <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca"> -->
     </div>
     <footer id="footer">
       <p>Concurso #VeranoFrontend 2021 | Developed by <a href="https://github.com/jacuevasr" class="enfasis">Juan Andres Cuevas</a>.</p>
