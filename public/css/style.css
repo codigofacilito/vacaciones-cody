@@ -6,31 +6,30 @@
 }
 
 body {
+  background-image: url("/public/images/wave-4.svg");
+  background-repeat: no-repeat;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
-nav{
-  background-color: aliceblue;
-  padding: 15px;
+.navegacion {
+  padding: 25px;
   display: flex;
   gap:1em;
-  display: flex;
   justify-content: flex-end;
   padding-right: 80px;
-}
-
-
-
-.navegacion {
-  background-color: aquamarine;
+  position: -webkit-sticky;
+  top: 0; 
+  background-color: transparent;
 
 }
+
 
 a {
   text-decoration: none;
-  color:rgb(23, 24, 41);
+  color:rgb(255, 255, 255);
+  font-weight: 700;
 }
 
 h1 {
@@ -49,12 +48,12 @@ h1 {
 }
 
 .breve {
-  padding-top: 10px;
+  padding-top: 120px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row-reverse;
-  background-color: burlywood;
+  background-color: transparent;
 }
 
 .title {
