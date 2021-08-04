@@ -6,7 +6,7 @@
   "author": "stylessh <stylesshjs@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build:css": "postcss styles/tailwind.css -o styles/styles.css",
+    "build:css": "postcss ./src/styles/tailwind.css -o ./src/styles/styles.css",
     "watch:css": "watch `yarn run build:css` ./dist"
   },
   "dependencies": {

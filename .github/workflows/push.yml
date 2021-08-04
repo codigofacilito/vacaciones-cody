@@ -14,4 +14,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: public # The folder the action should deploy.
+          folder: src # The folder the action should 
