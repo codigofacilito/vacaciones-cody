@@ -44,3 +44,10 @@ nav ul a {
   padding: 20px;
   color: #2e4069;
 }
+.cajaTexto3 {
+  opacity: 0;
+  border-radius: 20px;
+  width: 100%;
+  padding: 20px;
+  color: #ff9800;
+}
