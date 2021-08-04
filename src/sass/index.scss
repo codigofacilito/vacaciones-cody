@@ -7,6 +7,7 @@
 @import './Section-Learning/learningPath';
 @import './Section-Collaborate/collaborate';
 @import './Section-Gallery/gallery.scss';
+@import './Section-IV/importantV';
 
 * {
 	margin: 0;
@@ -14,14 +15,15 @@
 	box-sizing: border-box;
 	font-family: $MainSource;
 
-	&::-webkit-scrollbar {
-		width: 10px;
-		background-color: $White;
-	}
+	@media (min-width: 62.5rem) {
+		&::-webkit-scrollbar {
+			width: 10px;
+			background-color: $White;
+		}
 
-	&::-webkit-scrollbar-thumb {
-		background-color: $LightGreen;
-		border-radius: 3.125rem;
+		&::-webkit-scrollbar-thumb {
+			background-color: $LightGreen;
+		}
 	}
 
 	&::selection {
@@ -69,24 +71,5 @@ body {
 }
 
 .svg {
-	margin-bottom: -5px;
-}
-
-iframe {
-	width: 100%;
-	height: 16.25rem;
-	margin-top: 1.25rem;
-	border-radius: 0.9375rem;
-
-	@media (min-width: 31.25rem) {
-		height: 25rem;
-	}
-
-	@media (min-width: 46.875rem) {
-		height: 500px;
-	}
-
-	@media (min-width: 58.125rem) {
-		height: 540px;
-	}
+	margin-bottom: -6px;
 }

@@ -1,17 +1,44 @@
 .learningPath {
-	.route {
+	.learningList {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(5, 3.75rem);
+		gap: 3.125rem;
+		margin-top: 4.375rem;
 		list-style: none;
 
 		li {
-			margin: 50px 0;
+			display: grid;
+			grid-template-columns: 3.75rem 1fr;
+			grid-template-rows: 3.75rem;
+			gap: 0.9375rem;
 
-			.listIcon {
-				margin-right: 10px;
-				padding: 15px;
-				font-size: 30px;
+			.containsIcon {
+				display: grid;
+				place-items: center;
 				background: $Gradiant1;
 				box-shadow: $Shadow1;
-				border-radius: 20px;
+				border-radius: 1.25rem;
+
+				.icon {
+					width: 55%;
+					opacity: 50%;
+					user-select: none;
+				}
+			}
+
+			.containsName {
+				display: flex;
+				justify-content: start;
+				align-items: center;
+
+				.tecno {
+					font-size: 1.375rem;
+
+					@media (min-width: 31.25rem) {
+						font-size: 1.875rem;
+					}
+				}
 			}
 
 			.listName {

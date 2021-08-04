@@ -1,0 +1,38 @@
+.importanceVacations {
+	ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, 2.5rem);
+		gap: 50px;
+		margin-top: 4.375rem;
+
+		@media (min-width: 31.25rem) {
+			gap: 1.875rem;
+		}
+
+		li {
+			display: grid;
+			grid-template-columns: 2.5rem 1fr;
+			gap: 1.25rem;
+			list-style: none;
+
+			.point {
+				width: 2.5rem;
+				height: 2.5rem;
+				background: $Gradiant1;
+				box-shadow: $Shadow1;
+				border-radius: 50%;
+			}
+
+			.advantage {
+				display: flex;
+				align-items: center;
+				font-size: 25px;
+
+				@media (min-width: 50rem) {
+					font-size: 1.875rem;
+				}
+			}
+		}
+	}
+}

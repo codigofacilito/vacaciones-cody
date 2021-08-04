@@ -8,13 +8,160 @@
 
 	background-color: $White;
 
-	transform: translateX(-100%);
+	transform: translateX(100%);
 	transition: transform 0.3s ease;
 
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 100%;
+		max-width: 93.75rem;
+		height: 6.25rem;
+		margin: auto;
+
+		background-color: transparent;
+
+		.navigation {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			width: 100%;
+			padding: 0 1.25rem;
+
+			background-color: transparent;
+
+			.title {
+				font-size: 30px;
+				color: $White;
+
+				@media (min-width: 500px) {
+					font-size: 50px;
+				}
+
+				@media (min-width: 1000px) {
+					font-size: 60px;
+				}
+			}
+
+			figure {
+				width: 50px;
+				cursor: pointer;
+				transition: transform 0.2s ease;
+
+				&:hover {
+					transform: scale(1.05);
+				}
+
+				&:active {
+					transform: scale(0.9);
+				}
+
+				@media (min-width: 500px) {
+					width: 60px;
+				}
+
+				@media (min-width: 1000px) {
+					width: 80px;
+				}
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
 	.boxScroll {
+		scroll-snap-type: y mandatory;
 		width: 100%;
 		height: 100vh;
 		overflow: auto;
+
+		.mainContainer {
+			scroll-snap-align: start;
+			width: 100%;
+			height: 100vh;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+
+			&:nth-child(1) {
+				background-image: url('../assets/images/3.jpg');
+			}
+
+			&:nth-child(2) {
+				background-image: url('../assets/images/2.jpg');
+			}
+
+			&:nth-child(3) {
+				background-image: url('../assets/images/1.jpg');
+			}
+
+			&:nth-child(4) {
+				background-image: url('../assets/images/4.jpg');
+			}
+
+			&:nth-child(5) {
+				background-image: url('../assets/images/5.jpg');
+			}
+
+			&:nth-child(6) {
+				background-image: url('../assets/images/6.jpg');
+			}
+
+			.darkContainer {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				width: 100%;
+				height: 100vh;
+				background: #000000d8;
+
+				.gridContainer {
+					display: grid;
+					grid-template-columns: 1fr;
+					grid-template-rows: repeat(2, 1fr);
+					height: 80%;
+					padding: 1.25rem;
+					gap: 1.875rem;
+
+					.messageContainer {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						// border: 5px solid red;
+
+						p {
+							color: $White;
+							font-size: 40px;
+							text-align: center;
+						}
+					}
+
+					.photoContainer {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						// border: 5px solid red;
+
+						img {
+							width: 100%;
+							max-width: 46.875rem;
+							border-radius: 0.625rem;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
