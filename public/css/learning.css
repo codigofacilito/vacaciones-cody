@@ -1,0 +1,8 @@
+.learning {
+    background: var(--yellow10);
+    padding-block: 5em;
+}
+
+.learning h2 {
+    margin-block: 0;
+}

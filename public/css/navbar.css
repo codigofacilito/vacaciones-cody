@@ -4,7 +4,7 @@
     top: 0;
     width: 100%;
     z-index: 2;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
 }
 
 .navbar__content {

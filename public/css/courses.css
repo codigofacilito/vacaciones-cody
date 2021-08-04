@@ -1,0 +1,20 @@
+.courses {
+    width: 100%;
+    background: linear-gradient(180deg, var(--yellow20), var(--yellow30));
+    border-radius: 30% 0% 0% 0%;
+    box-sizing: border-box;
+    color: var(--white);
+    padding-block: 5em;
+}
+
+.courses:hover,
+.courses:active {
+    box-shadow: 0 2px 5px black;
+    transform: translateY(-2px);
+    transition: 0.05s;
+    background: rgba(165, 42, 42, .8);
+}
+
+.courses h2 {
+    margin-block: 0;
+}

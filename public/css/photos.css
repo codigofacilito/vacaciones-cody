@@ -1,0 +1,8 @@
+.photos {
+    background-color: var(--yellow10);
+    padding-block: 5em;
+}
+
+.photos h2 {
+    margin-block: 0;
+}

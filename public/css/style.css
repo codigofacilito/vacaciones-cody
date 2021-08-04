@@ -2,6 +2,12 @@
 @import url(../css/wrapper.css);
 @import url(../css/navbar.css);
 @import url(../css/banner.css);
+@import url(../css/courses.css);
+@import url(../css/learning.css);
+@import url(../css/colaborate.css);
+@import url(../css/photos.css);
+@import url(../css/vacations.css);
+@import url(../css/footer.css);
 
 :root {
   --green10: #0CECDD;
@@ -9,6 +15,7 @@
 
   --yellow10: #F9D423;
   --yellow20: #E65C00;
+  --yellow30: brown;
 
   --white: white;
   --fontBase: 'DM Sans', sans-serif;
@@ -17,10 +24,15 @@
 
 body {
   font-family: var(--fontBase);
+  background: linear-gradient(135deg, var(--green10), var(--green20));
 }
 
 img {
   width: 100%;
+}
+
+section {
+  color: var(--white);
 }
 
 .animate__animated.animate__pulse {
