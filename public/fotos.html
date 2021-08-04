@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="shortcut icon" href="https://img.icons8.com/fluency/96/000000/sun.png" type="image/x-icon">
   <link rel="stylesheet" href="css/photos.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
         <nav>
           <ul class="items">
             <li class="item">
-              <a href="/">Inicio</a>
+              <a href="./index.html">Inicio</a>
             </li>
             <li class="item">
               <a href="fotos.html">Fotos</a>
@@ -31,13 +32,13 @@
       </div>
       <h2>Galería completa de mis vacaciones</h2>
     </header>
-    <div class="gridList">
-      <div class="gridList-container">
-        <button id="grid"></button>
-        <button id="grid"></button>
-      </div>
-    </div>
     <div class="wrapper">
+      <div class="gridList">
+        <div class="gridList-container">
+          <button id="grid"></button>
+          <button id="list" class="active"></button>
+        </div>
+      </div>
       <div class="photos list">
         <img src="assets/images/1.jpg" alt="Cody en la playa" load="lazy">
         <img src="assets/images/2.jpg" alt="Cody acampando" load="lazy">
@@ -52,6 +53,7 @@
     </div>
   </main>
   <script src="./script/main.js"></script>
+  <script src="./script/gridList.js"></script>
 </body>
 
 </html>

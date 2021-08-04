@@ -21,6 +21,49 @@ main {
   padding-bottom: 30px;
 }
 
+.gridList {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gridList-container {
+  width: 90px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gridList-container button {
+  width: 35px;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+}
+
+#grid {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAe0lEQVRoge3aQQqAIBQAUe3+t6rO9VsFoaK4KCaZt5QvOCtdmJKkKRFxxsBjduil2b08d26ERLlWbco5U2Zv22jDXxhCYwiNIVKfNzuNITSG0BhCs0yIaHyi0BhCYwiNITTLhIjGJwqNITSG0BhC0wo5Pj/FvOrDgKS+C3mM0MQ7CqrNAAAAAElFTkSuQmCC');
+}
+
+#list {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAs0lEQVRoge3VPQrCUBBF4TsWgotwQS7CMi7U6DrS2IhNWqtrJQTyAok4PtHzlfmBmceDIwEAarJ99lhbe67FCkvYtgfv97ZvU99V0NnePeeL4SKlBSMibK8l9ZI2mYf5gktEbCVpNfOHkFRc9FvMWiQi7pIOkq654yzSSWpGT223hXt4/Px8AFKZsldD2Sl7EsoO/DVT9mooO2VPMln2U+EeUnbg15iyV0PZKXsSyg4AeJsHlxupFBBg3zsAAAAASUVORK5CYII');
+}
+
+.gridList .gridList-container .active {
+  border: 2px solid var(--secondary-color);
+  width: 40px;
+  height: 40px;
+}
+
 .list {
   display: grid;
   grid-template-columns: 1fr;
