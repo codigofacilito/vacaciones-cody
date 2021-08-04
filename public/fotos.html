@@ -2,33 +2,108 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Galería Vacaciones Cody</title>
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
+    <main>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-end">
+                <div class="container">
+                    <a class="navbar-brand" href="https://codigofacilito.com/verano">
+                        <img src="images/logo-codigo-facilito.png" alt="logo codigo facilito" srcset="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="fotos.html">Galeria</a>
+                            </li>
 
-  </main>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section data-aos="fade-up" class="container-fluid bg-slider d-flex">
+            <h1 class="title white m-auto">Verano Cody</h1>
+
+        </section>
+        <section data-aos="fade-up" class="container py-5">
+            <div class="row">
+                <div class="col-12 col-lg-4 d-flex">
+                    <div class="my-auto">
+                        <h2 class="title">Estas son mis<br> vacaciones</h2>
+                        <p class="description gray">Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide gallery">
+                                <img src="images/1.jpg" class="img-slider" alt="Cody en la playa">
+                            </div>
+                            <div class="swiper-slide gallery">
+                                <img src="images/2.jpg" class="img-slider" alt="Cody acampando">
+                            </div>
+                            <div class="swiper-slide gallery">
+                                <img src="images/3.jpg" class="img-slider" alt="Cody en una alberca">
+                            </div>
+                            <div class="swiper-slide gallery">
+                                <img src="images/4.jpg" class="img-slider" alt="Cody en una alberca">
+                            </div>
+                            <div class="swiper-slide gallery">
+                                <img src="images/5.jpg" class="img-slider" alt="Cody en una alberca">
+                            </div>
+                            <div class="swiper-slide gallery">
+                                <img src="images/6.jpg" class="img-slider" alt="Cody en una alberca">
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container py-4 d-flex">
+        <a href="https://codigofacilito.com/verano" class="mx-auto">
+            <img src="images/logo-codigo-facilito.png" class="img-fluid" alt="logo codigo facilito" srcset="">
+        </a>
+
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

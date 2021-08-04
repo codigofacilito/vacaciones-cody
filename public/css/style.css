@@ -1,38 +1,138 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+.hero {
+    padding: 60px 0px 60px 120px;
 }
 
-main{
-  text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+.navbar-nav {
+    margin-left: auto;
 }
 
-section{
-  margin-top: 3rem;
+.title {
+    font-family: 'Poppins', sans-serif;
+    color: #262626;
+    font-weight: 600;
+    font-size: 2.5rem;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
+.description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
-ol li{
-  text-align: left;
+.main-button {
+    background-color: #f6511d;
+    font-size: 1.3rem;
+    color: #ffffff;
+    padding: 10px 30px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.main-button:hover {
+    background-color: #ffffff;
+    border: 1px solid #f6511d;
+    color: #f6511d;
+}
+
+.secondary-button {
+    color: #262626;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.arrow-right {
+    width: 6px;
+}
+
+
+/*swiper*/
+
+.swiper-slide {
+    width: 100%;
+}
+
+.bg-blue {
+    background-color: #0d2c54;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.gray {
+    color: #262626;
+}
+
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.card {
+    width: 250px;
+    background-color: #ffb400 !important;
+}
+
+.read-more-icon {
+    width: 8px;
+}
+
+.ruta-icon {
+    width: 28px;
+}
+
+.sub-ruta {
+    font-size: 1.2rem;
+}
+
+.border-right {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.br-1 {
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+}
+
+.heart-icon {
+    width: 32px;
+}
+
+@media (max-width: 767.98px) {
+    .title {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .description {
+        font-size: 0.9rem;
+        width: 100% !important;
+    }
+    .sub-ruta {
+        font-size: 0.9rem;
+    }
+    h3 {
+        font-size: 1.2rem !important;
+    }
+    .jus-left-m {
+        justify-content: left !important;
+    }
+    .bg-slider {
+        height: 300px !important;
+    }
+}
+
+.jus-left-m {
+    justify-content: center;
+}
+
+.bg-slider {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 580px;
+    background: linear-gradient(0deg, rgba(49, 49, 49, 0.3), rgba(31, 31, 31, 0.3)), url(../images/background-cody.jpg);
 }

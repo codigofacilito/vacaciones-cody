@@ -1,100 +1,242 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Vacaciones Cody</title>
 </head>
+
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
+    <main>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-end">
+                <div class="container">
+                    <a class="navbar-brand" href="https://codigofacilito.com/verano">
+                        <img src="images/logo-codigo-facilito.png" alt="logo codigo facilito" srcset="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="fotos.html">Galeria</a>
+                            </li>
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
-      </div>
-    </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+                        </ul>
 
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
-      </div>
-    </section>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
-  </main>
+
+        <section class="container hero" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-main">
+                        <h1 class="title">Estas son mis<br> vacaciones
+                        </h1>
+                        <p class="description gray">Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+                        <div class="d-flex py-3 align-items-center">
+                            <a href="fotos.html" class="main-button">Galeria</a>
+                            <a class="secondary-button mx-3" href="https://codigofacilito.com/verano">Ver dinámica
+                              <img src="images/arrow-right.svg" class="arrow-right" alt=""></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/img-slide-1.jpg" class="img-slider" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/img-slide-2.jpg" class="img-slider" alt="">
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="container-fluid bg-blue py-4" data-aos="fade-up">
+            <div class="container text-center">
+                <h2 class="subtitle white">Mis vacaciones Frontend</h2>
+                <p class="description white w-100 mx-auto">Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades
+                    en tecnologías frontend, construyendo esta página.</p>
+                <h3 class="white text-left">#VeranoFrontend</h3>
+            </div>
+
+
+        </section>
+        <section class="container-fluid py-4" data-aos="fade-up">
+            <h2 class="subtitle gray text-center">Estos son los cursos <br> que estuve tomando</h2>
+            <div class="cards py-5 d-flex justify-content-center">
+                <div class="card  mx-2">
+                    <div class="card-body ">
+                        <h3 class="white">Curso profesional de desarrollo web</h3>
+                        <div class="d-grid text-center">
+                            <a href=""><img src="images/birrete.png" alt="" srcset=""></a>
+                            <a href="https://codigofacilito.com/verano"> <img class="read-more-icon pt-2" src="images/arrow-right.svg" alt=""> </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card mx-2">
+                    <div class="card-body">
+                        <h3 class="white">Curso profesional de desarrollo web</h3>
+                        <div class="d-grid text-center">
+                            <a href=""><img src="images/birrete.png" alt="" srcset=""></a>
+                            <a href="https://codigofacilito.com/verano"> <img class="read-more-icon pt-2" src="images/arrow-right.svg" alt=""> </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="container py-4" data-aos="fade-up">
+            <h2 class="subtitle gray text-center">Ruta de aprendizaje</h2>
+            <p class="description gray w-100 mx-auto text-center">También me propuse aprender nuevas tecnologías durante 2021</p>
+
+            <div class="row py-4">
+                <div class="col col-xs-6 border-right">
+                    <div class="d-flex jus-left-m">
+                        <img src="images/CSS.svg" class="ruta-icon mx-2" alt="">
+                        <h4 class="gray sub-ruta">Flexbox, y Grid</h4>
+                    </div>
+                </div>
+                <div class="col col-xs-6 border-right">
+                    <div class="d-flex  jus-left-m">
+                        <img src="images/CSS.svg" class="ruta-icon mx-2" alt="">
+                        <h4 class="gray sub-ruta">Animaciones con CSS y JavaScript</h4>
+                    </div>
+                </div>
+                <div class="col col-xs-6 border-right">
+                    <div class="d-flex jus-left-m">
+                        <img src="images/CSS.svg" class="ruta-icon mx-2" alt="">
+                        <h4 class="gray sub-ruta">AJAX</h4>
+                    </div>
+                </div>
+                <div class="col col-xs-6 ">
+                    <div class="d-flex jus-left-m">
+                        <img src="images/CSS.svg" class="ruta-icon mx-2" alt="">
+                        <h4 class="gray sub-ruta">HTML semántico</h4>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="container py-4" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <img data-aos="fade-right" src="images/cody.jpg" class="img-fluid" alt="" srcset="">
+                </div>
+                <div class="col-lg-6 py-3">
+                    <h3 class="subtitle gray">Colabora en mi página</h3>
+                    <p class="description gray ">Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub</p>
+                    <p class="description gray ">Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request. Si nunca antes has colaborado</p>
+                    <p class="description gray ">con un repositorio, en Código Facilito hay un tutorial que lo explica Ir al tutorial.</p>
+                    <h3 class="gray text-left">#VeranoFrontend</h3>
+                    <div class="my-4">
+                        <a class=" main-button my-3" href="fotos.html">Galería</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="container py-4" data-aos="fade-up">
+            <h3 class="subtitle gray text-center">La importancia de las vacaciones</h3>
+            <p class="description gray text-center">Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente </p>
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <div class="content-im ">
+                        <figure class="bg-blue br-1 mx-auto d-flex justify-content-center">
+                            <img src="images/heart.svg" class="heart-icon" alt="">
+                        </figure>
+                        <p class="description gray text-center">Mejora la salud <br> mental.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="content-im ">
+                        <figure class="bg-blue br-1 mx-auto d-flex justify-content-center">
+                            <img src="images/heart.svg" class="heart-icon" alt="">
+                        </figure>
+                        <p class="description gray text-center">Incrementa la <br> motivación.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="content-im ">
+                        <figure class="bg-blue br-1 mx-auto d-flex justify-content-center">
+                            <img src="images/heart.svg" class="heart-icon" alt="">
+                        </figure>
+                        <p class="description gray text-center">Reduce el <br> burnout.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="content-im ">
+                        <figure class="bg-blue br-1 mx-auto d-flex justify-content-center">
+                            <img src="images/heart.svg" class="heart-icon" alt="">
+                        </figure>
+                        <p class="description gray text-center">Mejora tu productividad <br>y creatividad.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container py-4 d-flex">
+        <a href="https://codigofacilito.com/verano" class="mx-auto">
+            <img src="images/logo-codigo-facilito.png" class="img-fluid" alt="logo codigo facilito" srcset="">
+        </a>
+
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
