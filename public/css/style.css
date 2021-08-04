@@ -210,7 +210,7 @@ main{
 .cursos-bg{
   background: #04BF8A;
   color: white;
-  max-width: 200px;
+  width: 200px;
   display: inline-block;
   border-radius: 10px;
   box-shadow: 0px 0px 0px 3px #ffffff;
@@ -254,7 +254,7 @@ p a:hover{
   font-size: 1.25rem
 }
 #ruta{
-  max-width: 300px;
+  width: 300px;
 }
 
 .cont-colabora{
@@ -530,4 +530,83 @@ footer img{
     text-align: left;
     font-size: 15px;
     padding: 10px 20px;
+}
+ @media screen and (max-width: 1300px) {
+  #navegador{
+    border-radius: 0;
+    top: 0;
+    width: 100vw;
+    justify-content: space-around;
+    font-size: 2rem;
+   }
+   #concurso{
+     display: none;
+   }
+   .cont-vaca{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+   }
+   .cont-vaca img{
+     max-height: auto;
+     max-width: 70vw;
+   }
+   h2{
+     font-size: 3rem;
+   }
+   p{
+     font-size: 2rem;
+   }
+   li{
+     font-size: 1.5rem;
+   }
+   .cont-curso{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   .cont-curso, .cont-fotos, .cont-vacaciones{
+     padding: 0 5vw;
+   }
+   .cursos{
+     flex-direction: column;
+     align-items: center;
+     gap: 2rem;
+   }
+   .cursos-bg{
+     width: 50vw;
+   }
+   .cont-ruta{
+     margin: 2rem 5vw;
+     flex-direction: column;
+   }
+   .cont-ruta li:hover{
+     font-size: 1.75rem
+   }
+   #ruta{
+    margin-top: 30px;
+    width: 50vw;
+   }
+   .cont-colabora{
+     text-align: justify;
+   }
+   .cont-colabora p, .cont-fotos p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+  .cont-colabora p a, .cont-fotos p a{
+     font-size: 3rem;
+   }
+   .cont-vacaciones header{
+     padding: 0;
+   }
+   footer p{
+     font-size: 1rem;
+   }
+ }
+@media screen and (max-width: 550px) {
+  
 }
