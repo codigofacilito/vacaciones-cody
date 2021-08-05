@@ -14,7 +14,8 @@ var main = new Vue({
             {title:"Mis vacaciones Frontend", picture:"images/profile.jpg", content:[{message:"", emojis:""}]},
             {title:"Ruta de aprendizaje 2021", picture:"images/profile.jpg", content:[{message:"", emojis:""}]},
             {title:"Importancia de las vacaciones", picture:"images/profile.jpg", content:[{message:"", emojis:""}]},
-        ]
+        ],
+        story:null
     },
     mounted: function(){
 
@@ -22,6 +23,9 @@ var main = new Vue({
     methods:{
         seleccionarPost(post){
             this.post = post;
+        },
+        seleccionarStory(story){
+            this.story = story;
         }
     }
 });
