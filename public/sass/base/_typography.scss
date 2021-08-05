@@ -1,0 +1,201 @@
+// headings styles
+%heading-default {
+  font-family: $font-title;
+  font-weight: 700;
+}
+
+.heading-1 {
+  @extend %heading-default;
+  font-size: 6rem;
+}
+
+.heading-2 {
+  @extend %heading-default;
+  font-size: 4rem;
+}
+
+.heading-3 {
+  @extend %heading-default;
+  font-size: 2rem;
+}
+
+.heading-4 {
+  @extend %heading-default;
+  font-size: 1.6rem;
+}
+
+// title-sections-main
+%default-titleSection {
+  margin-top: 0;
+}
+%d-h2_border-image {
+  border-top: 6rem solid;
+  border-image-slice: 70;
+  border-image-repeat: round;
+  border-image-outset: 4rem;
+}
+
+.title-section-1 {
+  grid-column: 1 / -1;
+  @extend %default-titleSection;
+
+  padding-top: 4%;
+  text-align: center;
+  background-color: $color-sand;
+  margin-bottom: -5%;
+  margin-top: -7%;
+
+  background: linear-gradient(to bottom, transparent, rgba($color-sand, 1) 30%);
+
+  @include respond(phone) {
+    margin-bottom: -15%;
+    margin-top: 0%;
+  }
+
+  position: relative;
+
+  h2 {
+    margin-bottom: 0;
+    border-top: 6rem solid;
+    border-image-source: url("./../images/palm.png");
+    border-image-slice: 67;
+    border-image-repeat: round;
+    border-image-outset: 4rem;
+  }
+
+  .overlay {
+    height: 10rem;
+    background-color: $color-sand;
+  }
+}
+
+.title-section-2 {
+  grid-column: 1 / -1;
+
+  @extend %default-titleSection;
+
+  padding-top: 2rem;
+  text-align: center;
+  background-color: $color-sand;
+  border-top: 10rem solid;
+  border-image-source: url("./../images/tire-print.png");
+  border-image-slice: 170;
+  border-image-repeat: round;
+  margin-top: 10rem;
+
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 25%;
+  justify-items: center;
+  align-items: center;
+
+  @include respond(tablet-portrait) {
+    grid-template-columns: 1fr;
+  }
+
+  .description {
+    padding-left: 25%;
+
+    @include respond(tablet-portrait) {
+      padding-left: 0;
+    }
+
+    h2 {
+      margin-bottom: 0;
+      color: #000;
+    }
+
+    p {
+      margin-top: 4rem;
+      font-size: 2rem;
+      margin-bottom: 0;
+      font-style: italic;
+      color: rgba(0, 0, 0, 0.815);
+    }
+  }
+
+  .img {
+    justify-self: start;
+
+    @include respond(tablet-portrait) {
+      justify-self: center;
+      grid-row: 1;
+    }
+  }
+}
+
+.title-section-3 {
+  @extend %default-titleSection;
+
+  padding-top: 2%;
+  text-align: center;
+  background-color: $color-sand;
+  border-top: 6rem solid;
+  border-image-source: url("./../images/croco-footprint-Toleft.png");
+  border-image-slice: 70;
+  border-image-repeat: round;
+
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  align-items: center;
+
+  @include respond(tablet-portrait) {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    margin-bottom: 0;
+    padding-right: 25%;
+
+    @include respond(tablet-portrait) {
+      padding: 0;
+    }
+  }
+
+  .img {
+    justify-self: end;
+
+    @include respond(tablet-portrait) {
+      justify-self: center;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.title-section-4 {
+  grid-column: 1 / -1;
+  @extend %default-titleSection;
+
+  margin-top: 10rem;
+  padding-top: 4%;
+  text-align: center;
+  background-color: $color-sand;
+  border-top: 6rem solid;
+  border-image-source: url("./../images/croco-footprint.png");
+  border-image-slice: 70;
+  border-image-repeat: round;
+
+  position: relative;
+
+  .description-s4 {
+    margin: 0 5%;
+  }
+
+  h2 {
+    margin-bottom: $margin-small;
+  }
+  p {
+    font-size: 2rem;
+    font-weight: 400;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

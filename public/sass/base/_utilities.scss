@@ -1,0 +1,24 @@
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-hg {
+  margin-bottom: 8rem;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.sticky {
+  position: fixed;
+  background: rgb(151 151 151 / 90%);
+  padding: 0;
+  z-index: 100;
+  height: 6rem !important;
+}

@@ -1,0 +1,38 @@
+/* In this order the files must be imported */
+
+// @import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/variable";
+
+@import "./vendors/bootstrap.css";
+
+@import "./base/base";
+// @import "./base/animations";
+@import "./base/typography";
+@import "./base/utilities";
+
+@import "./layout/body-grid";
+// @import "./layout/header";
+@import "./layout/footer";
+// @import "./layout/navigation";
+
+@import "./components/header-parallax";
+@import "./components/button";
+@import "./components/learning-path";
+@import "./components/images";
+@import "./components/cards";
+@import "./components/waves";
+@import "./components/static-waves";
+@import "./components/img-viewer";
+// @import "./components/feature-box";
+// @import "./components/card";
+// @import "./components/story";
+// @import "./components/bg-video";
+// @import "./components/form";
+// @import "./components/popup";
+
+@import "./pages/home";
+@import "./pages/gallery";
+
+// @import 'themes/main-theme';
+// @import 'themes/admin';

@@ -1,0 +1,33 @@
+//- Indica que estamos usando html5
+doctype html
+//- Indicamos el lenguaje de nuestra pagina web
+html(lang="esp")
+  head
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Cody Vacations
+    link(rel="shortcut icon", href="./images/favicon.ico", type="image/x-icon")
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Source+Sans+Pro:ital@0;1&display=swap" rel="stylesheet">
+    link(rel="stylesheet", href="./sass/main.scss")
+    script(defer src="./script.js")
+  body.container-body
+    include ./../includes/header-parallax
+    include ./../includes/svg-wave-down
+    block title-section-1
+    include ./../includes/waves-up
+    include ./../includes/main
+    include ./../includes/static-wave-d
+    block title-section-2
+    include ./../includes/static-wave-u
+    include ./../includes/learning-path
+    include ./../includes/static-wave-d
+    block section-3
+    include ./../includes/static-wave-u
+    include ./../includes/img-viewer
+    include ./../includes/static-wave-d
+    block title-section-4
+    include ./../includes/static-wave-u
+    include ./../includes/cards
+    include ./../includes/waves-down
+    include ./../includes/footer

@@ -1,100 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+<html lang="esp">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cody Vacations</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Source+Sans+Pro:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/main.scss">
+    <script defer src="./script.js"></script>
+  </head>
+  <body class="container-body">
+    <header class="header" id="header">
+      <nav class="nav">
+        <ul class="nav__links">
+          <li class="nav__item"><a class="nav__link invisible" id="link-left" href="#header">Inicio</a></li>
+          <li class="nav__item"><a class="nav__link" href="./gallery.html">Fotos</a></li>
+        </ul>
       </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+      <div class="header__bg-video">
+        <video class="header__bg-video-content" autoplay="true" muted loop>
+          <source src="./images/beach-waves.mp4">Video not found!
+        </video>
+      </div>
+      <div class="header__description">
+        <h1 class="header__description-title heading-1">Estas son mis vacaciones</h1>
+        <p class="header__description-p"> Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+      </div>
+      <div class="header__overlay"></div>
     </header>
-
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+    <svg class="sand" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 280">
+      <defs>
+        <lineargradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:rgb(255, 255, 255);stop-opacity:0"></stop>
+          <stop offset="100%" style="stop-color:rgb(242, 222, 196);stop-opacity:0.5"></stop>
+        </lineargradient>
+      </defs>
+      <path fill="url(#grad2)" d="M0,128L48,144C96,160,192,192,288,176C384,160,480,96,576,85.3C672,75,768,117,864,138.7C960,160,1056,160,1152,149.3C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <div class="title-section-1">
+      <h2 class="heading-2">🌴 Mis vacaciones Frontend🌴</h2>
+      <div class="overlay"></div>
+    </div>
+    <div class="waves-container">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(15, 94, 156,0.7)"></use>
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(15, 94, 156,0.5)"></use>
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(15, 94, 156,0.3)"></use>
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(15, 94, 156,0.85)"></use>
+        </g>
+      </svg>
+    </div>
+    <main class="main-container">
+      <div class="main">
+        <div class="main__images"><img class="img-cody" src="./images/cody-left.png" alt="cody"><img class="img-surfTable" id="mainCodyImg" src="./images/surfTable.png" alt="sand"></div>
+        <div class="main__description">
+          <p class="main__description-p">Durante el verano de 2019, decidí comenzar a aprender<span> desarrollo frontend,</span> por lo que durante mi viaje, estuve aprendiendo<span> HTML</span>,<span> CSS</span>, y<span> JavaScript.</span></p>
+          <p class="main__description-p">Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en<span> tecnologías frontend,</span> construyendo esta página.<br><br>Estos son los cursos que estuve tomando:</p>
+          <div class="cursos">
+            <div class="cursos__wrapper">
+              <div class="cursos__element">
+                <h3 class="cursos__element-title heading-3">Curso Profesional de Desarrollo Web</h3>
+                <p class="cursos__element-p">Excelente curso para crear un panorama mas amplio de lo que es el proceso de crear un sitio web.</p>
+                <p class="cursos__element-ref">-<span> Cody</span></p><a class="cursos__element-link btn btn-main" href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank">Ir al sitio</a>
+              </div>
+            </div>
+            <div class="cursos__wrapper">
+              <div class="cursos__element">
+                <h3 class="cursos__element-title heading-3">Curso para crear mi primera pagina web</h3>
+                <p class="cursos__element-p">Excelente curso introductorio para aquellos que desean crear una pagina web sin conocimientos previos.</p>
+                <p class="cursos__element-ref">-<span> Cody</span></p><a class="cursos__element-link btn btn-main" href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank">Ir al sitio</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
+    </main>
+    <svg class="waves__statics" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 200">
+      <path id="wave1" d="M0,128L60,112C120,96,240,64,360,48C480,32,600,32,720,42.7C840,53,960,75,1080,80C1200,85,1320,75,1380,69.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      <path id="wave2" d="M0,96L60,106.7C120,117,240,139,360,138.7C480,139,600,117,720,133.3C840,149,960,203,1080,186.7C1200,171,1320,85,1380,42.7L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      <path id="wave3" d="M0,32L60,37.3C120,43,240,53,360,90.7C480,128,600,192,720,192C840,192,960,128,1080,117.3C1200,107,1320,149,1380,170.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+    <div class="title-section-2">
+      <div class="description">
+        <h2 class="heading-2">🦀 Ruta de aprendizaje 2021 🦀</h2>
+        <p>También me propuse aprender nuevas tecnologías durante 2021</p>
       </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+      <div class="img"><img src="./images/cody-cuatriMoto.png" alt="cody montando en una cuatri moto"></div>
+    </div>
+    <svg class="static__wave-up" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 200">
+      <path id="wave-up-1" d="M0,128L60,112C120,96,240,64,360,48C480,32,600,32,720,42.7C840,53,960,75,1080,80C1200,85,1320,75,1380,69.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      <path id="wave-up-2" d="M0,96L60,106.7C120,117,240,139,360,138.7C480,139,600,117,720,133.3C840,149,960,203,1080,186.7C1200,171,1320,85,1380,42.7L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      <path id="wave-up-3" d="M0,32L60,37.3C120,43,240,53,360,90.7C480,128,600,192,720,192C840,192,960,128,1080,117.3C1200,107,1320,149,1380,170.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+    <div class="container-fluid blue-bg">
+      <div class="container">
+        <!--first section-->
+        <div class="row align-items-center how-it-works">
+          <div class="col-2 text-center top init">
+            <div class="circle">🌴</div>
+          </div>
+          <div class="col-6">
+            <h3 class="heading-3">Flexbox y Grid</h3>
+            <p>Aprender las propiedades tanto del flex container y grid container, asi como las propiedades de los flex items y grid items. Tambien el uso que les podemos dar a este tipo de displays cuando usamos responsive design.</p>
+          </div>
+        </div>
+        <!--path between 1-2-->
+        <div class="row timeline">
+          <div class="col-2">
+            <div class="corner top-right"></div>
+          </div>
+          <div class="col-8">
+            <hr>
+          </div>
+          <div class="col-2">
+            <div class="corner left-bottom"></div>
+          </div>
+        </div>
+        <!--second section-->
+        <div class="row align-items-center justify-content-end how-it-works">
+          <div class="col-6 text-right">
+            <h3 class="heading-3">Animaciones con CSS y Javascript</h3>
+            <p>Aprender las formas y usos que le podemos dar a las animaciones usando tanto css como javascript.</p>
+          </div>
+          <div class="col-2 text-center full">
+            <div class="circle">🌴</div>
+          </div>
+        </div>
+        <!--path between 2-3-->
+        <div class="row timeline">
+          <div class="col-2">
+            <div class="corner right-bottom"></div>
+          </div>
+          <div class="col-8">
+            <hr>
+          </div>
+          <div class="col-2">
+            <div class="corner top-left"></div>
+          </div>
+        </div>
+        <!--third section-->
+        <div class="row align-items-center how-it-works">
+          <div class="col-2 text-center top">
+            <div class="circle">🌴</div>
+          </div>
+          <div class="col-6">
+            <h3 class="heading-3">AJAX</h3>
+            <p>Aprender las diferentes formas de hacer API request.</p>
+          </div>
+        </div>
+        <!--path between 3-4-->
+        <div class="row timeline">
+          <div class="col-2">
+            <div class="corner top-right"></div>
+          </div>
+          <div class="col-8">
+            <hr>
+          </div>
+          <div class="col-2">
+            <div class="corner left-bottom"></div>
+          </div>
+        </div>
+        <!--forth section-->
+        <div class="row align-items-center justify-content-end how-it-works">
+          <div class="col-6 text-right">
+            <h3 class="heading-3">HTML semantico</h3>
+            <p>Aprender a mequetar sitios web de una manera semantica para que asi sea mas intuitivo y facil entender.</p>
+          </div>
+          <div class="col-2 text-center full">
+            <div class="circle">🌴</div>
+          </div>
+        </div>
+        <!--path between 4-5-->
+        <div class="row timeline">
+          <div class="col-2">
+            <div class="corner right-bottom"></div>
+          </div>
+          <div class="col-8">
+            <hr>
+          </div>
+          <div class="col-2">
+            <div class="corner top-left"></div>
+          </div>
+        </div>
+        <!--fith section-->
+        <div class="row align-items-center how-it-works">
+          <div class="col-2 text-center top-end">
+            <div class="circle">🌴</div>
+          </div>
+          <div class="col-6">
+            <h3 class="heading-3">Entre otros......</h3>
+            <p>Pre-procesadores de CSS, Tailwind CSS, Bootstrap, Diseño de interfaces, React JS, Docker.....</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg class="waves__statics" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 200">
+      <path id="wave1" d="M0,128L60,112C120,96,240,64,360,48C480,32,600,32,720,42.7C840,53,960,75,1080,80C1200,85,1320,75,1380,69.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      <path id="wave2" d="M0,96L60,106.7C120,117,240,139,360,138.7C480,139,600,117,720,133.3C840,149,960,203,1080,186.7C1200,171,1320,85,1380,42.7L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      <path id="wave3" d="M0,32L60,37.3C120,43,240,53,360,90.7C480,128,600,192,720,192C840,192,960,128,1080,117.3C1200,107,1320,149,1380,170.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+    <div class="section-3">
+      <div class="title-section-3">
+        <div class="img"><img src="./images/cody-coder-2.png" alt="cody programador"></div>
+        <h2 class="heading-2">🌴👩‍💻 Colabora en mi página 👨‍💻🌴</h2>
+      </div>
+      <div class="collab__container">
+        <div class="collab__description">
+          <div class="collab__description-p">
+            <p>Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub.</p>
+            <p>Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.</p>
+            <p>Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica</p>
+          </div><a class="btn btn-main" href="https://vimeo.com/577246176" target="_blank">Ir al tutorial</a>
+        </div>
+      </div>
+    </div>
+    <svg class="static__wave-up" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 200">
+      <path id="wave-up-1" d="M0,128L60,112C120,96,240,64,360,48C480,32,600,32,720,42.7C840,53,960,75,1080,80C1200,85,1320,75,1380,69.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      <path id="wave-up-2" d="M0,96L60,106.7C120,117,240,139,360,138.7C480,139,600,117,720,133.3C840,149,960,203,1080,186.7C1200,171,1320,85,1380,42.7L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      <path id="wave-up-3" d="M0,32L60,37.3C120,43,240,53,360,90.7C480,128,600,192,720,192C840,192,960,128,1080,117.3C1200,107,1320,149,1380,170.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+    <div class="imgs-main-c">
+      <div class="imgs">
+        <div class="imgs__description">
+          <h2 class="heading-2">🏄‍♀️ Aquí te comparto algunas fotos de mis vacaciones 🏄‍♂️</h2>
+          <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+        </div>
+        <div class="imgs__photos">
+          <div class="imgs__photo"><img src="./images/cody-1.jpg" alt="En la playa andando en bici"></div>
+          <div class="imgs__photo"><img src="./images/cody-2.jpg" alt="Acamapano a orillas de la playa"></div>
+          <div class="imgs__photo"><img src="./images/cody-3.jpg" alt="Descansando en la piscina"></div>
+        </div>
+        <div class="imgs__more">
+          <p class="gallery">Puedes ver más, en la galería de fotos de mi página:</p><a class="btn btn-water" href="./gallery.html">Ir a la galeria</a>
+        </div>
+      </div>
+    </div>
+    <svg class="waves__statics" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 200">
+      <path id="wave1" d="M0,128L60,112C120,96,240,64,360,48C480,32,600,32,720,42.7C840,53,960,75,1080,80C1200,85,1320,75,1380,69.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      <path id="wave2" d="M0,96L60,106.7C120,117,240,139,360,138.7C480,139,600,117,720,133.3C840,149,960,203,1080,186.7C1200,171,1320,85,1380,42.7L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      <path id="wave3" d="M0,32L60,37.3C120,43,240,53,360,90.7C480,128,600,192,720,192C840,192,960,128,1080,117.3C1200,107,1320,149,1380,170.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+    <div class="title-section-4">
+      <div class="description-s4">
+        <h2 class="heading-2">🛫 La importancia de la vacaciones 🛬</h2>
+        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente.</p>
         <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
-  </main>
-</body>
+      </div>
+    </div>
+    <svg class="static__wave-up" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 200">
+      <path id="wave-up-1" d="M0,128L60,112C120,96,240,64,360,48C480,32,600,32,720,42.7C840,53,960,75,1080,80C1200,85,1320,75,1380,69.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      <path id="wave-up-2" d="M0,96L60,106.7C120,117,240,139,360,138.7C480,139,600,117,720,133.3C840,149,960,203,1080,186.7C1200,171,1320,85,1380,42.7L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      <path id="wave-up-3" d="M0,32L60,37.3C120,43,240,53,360,90.7C480,128,600,192,720,192C840,192,960,128,1080,117.3C1200,107,1320,149,1380,170.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+    <div class="container-card">
+      <div class="cards-container">
+        <div class="card-own"><span class="card__number">1</span>
+          <div class="card__img-container"><img src="./images/002-mental-health.png" alt="mental health"></div>
+          <p class="card__description">Mejora la salud mental</p>
+        </div>
+        <div class="card-own"><span class="card__number">2</span>
+          <div class="card__img-container"><img src="./images/003-business-idea.png" alt="mental health"></div>
+          <p class="card__description">Incrementa la motivacion</p>
+        </div>
+        <div class="card-own"><span class="card__number">3</span>
+          <div class="card__img-container"><img src="./images/001-decrease.png" alt="mental health"></div>
+          <p class="card__description">Reduce el burnout</p>
+        </div>
+        <div class="card-own"><span class="card__number">4</span>
+          <div class="card__img-container"><img src="./images/004-clock.png" alt="mental health"></div>
+          <p class="card__description">Mejora tu productividad y creatividad</p>
+        </div>
+      </div>
+    </div>
+    <div class="waves-container-down">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 24 150 28" preserveaspectratio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(15, 94, 156,0.7)"></use>
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(15, 94, 156,0.5)"></use>
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(15, 94, 156,0.3)"></use>
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(15, 94, 156,0.85)"></use>
+        </g>
+      </svg>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="footer__info">
+          <div class="footer__info-socials"><span class="linkedin"><a href="https://www.linkedin.com/in/jarf4321/" target="_blank"><img src="./images/004-linkedin.png" alt="logo linkedin"></a></span><span class="twitter"><a href="http://www.twitter.com/Jarf4321" target="_blank"><img src="./images/002-twitter.png" alt="logo twitter"></a></span><span class="facebook"><a href="http://www.facebook.com/jarf4321" target="_blank"><img src="./images/003-facebook.png" alt="logo facebook"></a></span><span class="instagram"><a href="http://www.instagram.com/jorberto.rofl/" target="_blank"><img src="./images/001-instagram.png" alt="logo instagram"></a></span></div>
+          <p class="footer__info-msg">Created by<span class="name">Jorge Rodriguez</span><span> 💙</span></p>
+        </div>
+        <p class="footer__copyright">Copyright ©2021<span class="name">Jorge Rodriguez</span>. All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>

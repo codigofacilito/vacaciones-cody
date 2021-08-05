@@ -1,0 +1,129 @@
+.header {
+  grid-column: 1 / -1;
+
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .nav {
+    width: 100%;
+    margin: 0 auto;
+    height: 9rem;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+
+    &__links {
+      list-style: none;
+      margin: 0;
+      width: 90%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__link {
+      font-size: 3rem;
+      display: inline-block;
+      color: white;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0.3rem;
+        background-color: #00a1f2;
+
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: all 0.2s;
+      }
+      &:hover::before {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 130%;
+    width: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      rgba($color-water, 0.6),
+      70%,
+      rgba($color-sand, 0.7)
+    );
+  }
+
+  &__bg-video {
+    // To fully display the video in the section
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 130%;
+    width: 100%;
+
+    // To display the video in the  background
+    z-index: -1;
+    opacity: 0.7;
+
+    &-content {
+      // to fit the content in the container
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+
+  &__description {
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+    text-align: center;
+    line-height: 1;
+    padding: 6rem 8rem;
+    margin-top: 30vh;
+    backdrop-filter: blur(10px);
+    z-index: 20;
+
+    @include respond(phone) {
+      width: 80%;
+      padding: 3rem 4rem;
+      margin-top: 17vh;
+    }
+
+    &-title {
+      text-align: center;
+      margin-bottom: $margin-medium;
+      letter-spacing: 5px;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    &-p {
+      font-weight: 300;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.4;
+      color: #666666;
+      font-style: italic;
+      letter-spacing: 0.5px;
+    }
+  }
+}

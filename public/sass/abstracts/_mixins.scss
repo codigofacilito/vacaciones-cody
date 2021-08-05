@@ -1,0 +1,59 @@
+// MEDIA QUERY MANAGER
+/*
+
+0 - 600: Phone
+600 - 900 : Tablet portrait
+900 - 1200 : Tablet landscape
+1200 - 1800 : normal
+1800 + : Big desktop
+
+$breakpoint arguement choices
+- phone
+- tablet-portrait
+- tablet-landscape
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+
+/* prettier-ignore */
+@mixin respond($breakpoint) {
+  // max-width
+  @if $breakpoint == tablet-landscape {
+    @media only screen and (max-width: 75em) {              // 1200px / 16 = 75em
+      @content;
+    }
+  }
+  @if $breakpoint == tablet-portrait {
+    @media only screen and (max-width: 56.25em) {           // 900px / 16 = 56.25em
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {            // 600px / 16 = 37.5
+      @content;
+    }
+  }
+
+  //min-wdith
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {          // 1800px / 16 = 112.5em
+      @content;
+    }
+  }
+}
+
+//----------------- others mixins
+
+@mixin bg-gradient-ocean {
+  background-image: linear-gradient(
+    to bottom,
+    $color-waves,
+    12%,
+    $color-water,
+    95%,
+    $color-waves
+  );
+}

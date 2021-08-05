@@ -1,0 +1,11 @@
+/* prettier-ignore */
+.example-grid {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 11rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.container-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}

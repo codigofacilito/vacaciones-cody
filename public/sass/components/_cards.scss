@@ -1,0 +1,112 @@
+.container-card {
+  grid-column: 1 / -1;
+  @include bg-gradient-ocean;
+}
+
+.cards-container {
+  padding: 0 4% 8rem 4%;
+  margin-top: -11rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 4rem; //if 1 value is specify would apply the same gap for both(row & column)
+
+  @include respond(tablet-landscape) {
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem 8rem;
+    grid-gap: 8rem;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem 2rem;
+    grid-gap: 2rem;
+
+    margin-top: -5rem;
+  }
+
+  .card-own {
+    border-radius: 1rem;
+    background-color: #fff;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: relative;
+    padding: 6rem 5% 4rem 5%;
+    background-image: linear-gradient(to bottom, #fff 0% 0%, #0078b4 69%);
+
+    @include respond(phone) {
+      padding: 6rem 5% 1rem 5%;
+    }
+
+    .card {
+      &__number {
+        display: inline-block;
+        background-color: rgba(#00a1f2, 0.8);
+        color: #fff;
+        font-size: 2rem;
+        line-height: normal;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 3%;
+        left: 5%;
+
+        @include respond(tablet-landscape) {
+          font-size: 3rem;
+          line-height: normal;
+          width: 6rem;
+          height: 6rem;
+        }
+
+        @include respond(phone) {
+          font-size: 2rem;
+          line-height: normal;
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+
+      &__img-container {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.788);
+        border-radius: 50%;
+        padding: 3rem;
+        border: 5px solid #00a1f2;
+
+        @include respond(phone) {
+          padding: 1rem 0;
+        }
+
+        img {
+          width: 80%;
+
+          @include respond(phone) {
+            width: 50%;
+          }
+        }
+      }
+
+      &__description {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #ffffff;
+        margin-top: 4rem;
+
+        @include respond(phone) {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
