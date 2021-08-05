@@ -128,17 +128,61 @@ body {
   min-height: 400px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 80px;
+  gap: 15px;
   justify-items: center;
   align-items: center;
 }
 
-.courses .courses__item {
-  text-align: left;
+.courses__card {
+  background: var(--majorelle-blue);
 }
-.courses .courses__item::marker {
-  content: "🚀";
+
+.card--head {
+  border-bottom: 1px solid var(--just-white);
 }
+
+.card--description {
+  color: var(--just-white);
+}
+
+.card--head {
+  padding: 10px 0;
+}
+
+.card--img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card--title {
+  color: var(--just-white);
+  font-size: 26px;
+  line-height: 1em;
+  font-weight: 500;
+}
+
+.card--description {
+  line-height: 1.3em;
+  font-weight: 400;
+  padding: 5px 5px;
+}
+
+.card--btn {
+  padding: 15px 30px;
+  margin: 10px 0px;
+  background: #14b8a6;
+  color: var(--just-white);
+  text-decoration: none;
+}
+
+.card--btn:hover {
+  background: var(--zomp);
+  color: var(--just-white);
+}
+
 .weight-700 {
   font-weight: 700;
   color: var(--zomp);
@@ -447,6 +491,11 @@ body {
   .presentation.container {
     padding-top: 10px;
     text-align: center;
+  }
+
+  .courses {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
   }
 
   .collague__grid {
