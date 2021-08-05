@@ -1,3 +1,8 @@
+body {
+  background-color: rgba(82, 202, 206, 3%);
+}
+
+
 nav {
   background-color: #01b99d;
   display: flex;
@@ -43,8 +48,15 @@ section {
 
 
 
+.fotos {
+
+}
+
+
+
 .fotos img {
-  max-width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
 }
 
 
