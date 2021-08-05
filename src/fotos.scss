@@ -1,0 +1,75 @@
+@import './modules/variables';
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: $negro2;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: rgb(91,204,133);
+  text-align: center;
+}
+
+.nav__container {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 2em;
+    align-items: center;
+    justify-content: end;
+    background-color: $negro1;
+    border-bottom: solid 2px #000;
+  }
+  .nav {
+    font-size: 1.3rem;
+    height: 80px;
+    display: flex;
+    .nav__link {
+      margin-top: 15%;
+      color: $verde;
+      text-decoration: none;
+      margin-right: 1rem;
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        .nav__container {
+          justify-content: center;
+        }
+    }
+}
