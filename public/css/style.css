@@ -134,7 +134,7 @@ body {
 }
 
 .courses__card {
-  background: var(--majorelle-blue);
+  background: var(--zomp);
 }
 
 .card--head {
@@ -173,14 +173,16 @@ body {
 .card--btn {
   padding: 15px 30px;
   margin: 10px 0px;
-  background: #14b8a6;
+  border-radius: 20px;
+  /* background: #14b8a6; */
+  background: #6bd091;
   color: var(--just-white);
   text-decoration: none;
 }
 
 .card--btn:hover {
-  background: var(--zomp);
-  color: var(--just-white);
+  background: var(--just-white);
+  color: var(--zomp);
 }
 
 .weight-700 {
