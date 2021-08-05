@@ -1,13 +1,85 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+
+
+.navegacion {
+
+  background: linear-gradient( #DD2476 20%, #FF512F);   
+  font-weight: 400;
+ padding: 80px 0 80px 0;
+ color: #ffffff;
+  padding: 25px;
   display: flex;
   gap:1em;
+  justify-content: flex-end;
+  padding-right: 80px;
+  top: 0; 
+  background-color: transparent;
+
+}
+
+a {
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 40px;
+  color:rgb(23, 24, 41);
+  padding-bottom: 40px;
+}
+
+.intro {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.cody {
+  border-radius: 100%;
+}
+
+.breve {
+  height: 600px;
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-color: transparent;
+}
+
+.title {
+  font-size: 20px;
+  color:rgb(23, 24, 41);
+}
+
+.subtitle {
+  font-size: 18px;
+  color:rgb(23, 24, 41);
+  padding-bottom: 40px;
+
+}
+
+.container-1 {
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e1eb75;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
 }
 
 main{
   text-align: center;
-  max-width: 960px;
+  max-width: 100%;
   margin:0 auto;
 }
 
@@ -15,17 +87,6 @@ section{
   margin-top: 3rem;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
 ul li{
   text-align: left;
 }
@@ -35,4 +96,158 @@ ul li::marker {
 
 ol li{
   text-align: left;
+}
+
+.cursos div {background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%)}
+.cursos div {
+  display: inline-block;
+   margin: 10px;
+   padding: 10px 40px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+ }
+
+ .cursos div:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .aprendizaje {
+   padding-top: 40px;
+ }
+
+ .ruta {
+   display: flex;
+   justify-content: space-evenly;
+   padding-bottom: 40px;
+ }
+
+ .subt {
+  font-size: 30px;
+  color:rgb(23, 24, 41);
+}
+
+.mysite {
+  background-color: #f8e1eb75;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.photos {
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.fotos {
+  position: relative;
+  width: 50%;
+  padding: 4px;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ac205fb9;
+}
+
+.fotos:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.galeria {
+  padding-top: 60px;
+}
+
+.link-galeria {
+  color: #DD2476;
+}
+
+.footer {
+  background: linear-gradient( #DD2476 20%, #FF512F);   
+  font-weight: 400;
+ padding: 80px 0 80px 0;
+ color: #ffffff;
+}
+
+.importante {
+  color:#ffffff;
+  font-size: 40px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.conclusion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.album {
+  padding-top: 60px;
+}
+
+.portada {
+  padding-top: 150px;
+}
+
+.final {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (max-width: 600px){
+  .navegacion {
+    background-color:#DD2476;
+    width: 100%; }
+
+    header {
+      align-items: center;
+    }
+
+    .container-1 {
+      margin: 40px;
+    }
 }
