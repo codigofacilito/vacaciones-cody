@@ -1,34 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | Mis Vacaciones</title>
+    <link rel="shortcut icon" href="images/cody.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
 </head>
+<body class="bodyyy">
+    <main>
+        <div class="slider">
 
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
+            <div class="slides">
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+              <input type="radio" name="radio-btn" id="radio5">
+              <input type="radio" name="radio-btn" id="radio6">
       
-    </div>
+              <div class="slide first">
+                <img src="images/1.jpg" alt="Vaciones de Cody" title="Paseando en bici">
+              </div>
+              <div class="slide">
+                <img src="images/2.jpg" alt="Vaciones de Cody" title="Acampando">
+              </div>
+              <div class="slide">
+                <img src="images/3.jpg" alt="Vaciones de Cody" title="Disfrutando la alberca">
+              </div>
+              <div class="slide">
+                <img src="images/4.jpg" alt="Vaciones de Cody" title="Tomando el sol">
+              </div>
+              <div class="slide">
+                <img src="images/5.jpg" alt="Vaciones de Cody" title="Por las calles de Roma">
+              </div>
+              <div class="slide">
+                <img src="images/6.jpg" alt="Vaciones de Cody" title="Esperando mi vuelo">
+              </div>
+      
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+              </div>
+      
+            </div>
+      
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+              <label for="radio5" class="manual-btn"></label>
+              <label for="radio6" class="manual-btn"></label>
+            </div>
+      
+          </div>
+      
+          <div class="caja-boton">
+            <a href="index.html" class="boton-galeriaa">
+              <i class="fas fa-arrow-left"></i>
+            </a>
+          </div>
 
-  </main>
+          <div class="burbujass">
+            <div class="burbujaa"></div>
+            <div class="burbujaa"></div>
+            <div class="burbujaa"></div>
+            <div class="burbujaa"></div>
+            <div class="burbujaa"></div>
+            <div class="burbujaa"></div>
+            <div class="burbujaa"></div>
+            <div class="burbujaa"></div>
+            <div class="burbujaa"></div>
+            <div class="burbujaa"></div>
+          </div>
+    </main>
 </body>
-
 </html>
