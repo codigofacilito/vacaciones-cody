@@ -1,0 +1,119 @@
+.Home__header img {
+    padding: 1px;
+    box-shadow: 0 15px 20px 5px #e7e7e7;
+    animation: MainPicture 1s linear infinite;
+}
+
+.Home__header div {
+    padding: 1rem 1rem 1rem 3rem;
+}
+
+.Home__header div div {
+    padding: 0;
+}
+
+.Home__button-vacations {
+    text-decoration: none;
+    background: var(--green-primary);
+    padding: .8rem 2rem;
+    text-align: center;
+    color: white;
+    border-radius: var(--rounded-radius);
+    box-shadow: 0 5px 10px 0 lightgrey;
+}
+
+.Home__button-vacations:hover {
+    box-shadow: 0 0 lightgrey;
+    transition: .5s;
+}
+
+.Home__container {
+    margin-top: 3rem;
+}
+
+.Home__container img {
+    width: 40%;
+}
+
+.Home__margin div {
+    margin-left: 3rem;
+}
+
+.Home__photos {
+    justify-content: space-between;
+}
+
+.Home__photos img {
+    padding: 1px;
+    margin: 1rem;
+    width: 40%;
+    box-shadow: 0 15px 20px 5px #e7e7e7;
+}
+
+.Home__advantages div {
+    display: flex;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    align-items: center;
+}
+.Home__advantages div p{
+    padding-left:1rem;
+}
+.Home__advantages div img {
+    width: 2rem;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    border-radius: var(--rounded-radius);
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles */
+    .Home__header {
+        flex-direction: column;
+    }
+
+    .Home__header img {
+        padding: 1px;
+        width: 100%;
+        box-shadow: 0 15px 20px 5px #e7e7e7;
+    }
+
+    .Home__header div {
+        padding: 1rem;
+    }
+
+    .Home__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Home__margin div {
+        margin-left: 0;
+    }
+
+    .Home__photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Home__photos img {
+        width: 70%;
+    }
+}
+
+
+@keyframes MainPicture {
+    0%, 100% {
+        transform: scale(.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(.9);
+    }
+}

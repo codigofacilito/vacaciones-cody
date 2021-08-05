@@ -1,0 +1,139 @@
+
+:root {
+
+    --rounded-radius: 2rem;
+    --green-primary: #42b983;
+    --blue-second: #2c3e50;
+
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+#nav {
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    background: #fffffffa;
+    border-bottom: solid 1px #e7e7e7;
+    z-index: 1;
+    top: 0px;
+    /*  border-bottom: solid 1px lightgrey; */
+}
+
+#nav a {
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #2c3e50;
+    margin: 0 .5rem 0 .5rem;
+    border: solid 1px #ffffff;
+}
+
+#nav a:hover {
+    /*background: #fcfcfc;*/
+    border-radius: 1rem;
+    border: solid 1px #e5e5e5;
+}
+
+#nav a.router-link-exact-active {
+    background: var(--green-primary);
+    border-radius: 1rem;
+    border: solid 1px #e5e5e5;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+    box-shadow: 0 3px 10px 0 lightgrey;
+}
+
+#nav a.router-link-exact-active:hover {
+    /*background: var(--blue-second);*/
+    box-shadow: 0 0 lightgrey;
+    transition: .5s;
+}
+
+
+.routes {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    padding: 3rem 10rem;
+}
+
+.avatar img {
+    width: 3rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    padding: 0.2rem;
+}
+
+h1, h2, p {
+    text-align: left;
+}
+
+.is-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.is-link {
+    color: var(--green-primary);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/*@media only screen and (max-width: 500px) {*/
+/*  .content {*/
+/*    padding-left: 2rem !important;*/
+/*    padding-right: 2rem !important;*/
+/*    padding-top: 3rem;*/
+/*  }*/
+/*}*/
+.footer{
+    background-color: whitesmoke;
+    padding: 3rem 5rem;
+}
+.footer-contet{
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .content {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+        padding-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .content {
+        padding-left: 7rem;
+        padding-right: 7rem;
+        padding-top: 3rem;
+    }
+}
