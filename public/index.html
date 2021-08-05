@@ -84,7 +84,7 @@
         <div class="col-md-12">
           <div class="stories">
             <div class="story" class="img-fluid" v-for="story in stories" @click="seleccionarStory(story);" data-toggle="modal" data-target="#modalViewStories">
-              <img v-bind:src="story.picture" width="70" height="70" class="img-fluid img-thumbnail rounded-circle">
+              <img v-bind:src="story.icon" width="70" height="70" class="img-fluid img-thumbnail rounded-circle">
               <p>{{story.title}}</p>
             </div>
           </div>
@@ -166,25 +166,21 @@
     </div>
 
     <!-- modal para las stories -->
-    <div class="modal" tabindex="-1" id="modalViewStories">
+    <div class="modal" tabindex="-1" id="modalViewStories" v-if="story != null">
       <div class="modal-dialog modal-dialog-centered modal-sm">
         <div class="modal-content modal-stories">
           <div class="modal-body d-flex justify-content-md-center">
             <div id="stories" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
-                <li data-target="#stories" data-slide-to="0" class="active"></li>
-                <li data-target="#stories" data-slide-to="1"></li>
+                <li data-target="#stories" data-slide-to="0" class="active" v-for="(story, id) in story.content" :class="{active: id==0}"></li>
               </ol>            
               <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <span>Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript
-                    <i class="em em-nerd_face" aria-role="presentation" aria-label="NERD FACE"></i>
-                  </span>
+                <div class="carousel-item" v-for="(story_data, id) in story.content" :class="{ active: id==0 }">
+                  <img v-bind:src="story_data.picture" class="d-block w-100">
+                  <div>{{story_data.message}}
+                    <span v-html="story_data.emojis"></span>
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <span>Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página
-                    <i class="em em-pencil2" aria-role="presentation" aria-label="PENCIL"></i>
-                  </span>
                 </div>
               </div>
               <a class="carousel-control-prev" href="#stories" role="button" data-slide="prev">

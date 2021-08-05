@@ -149,15 +149,12 @@ section{
   align-items: center;
 }
 
-.modal-stories .modal-body span{
+.modal-stories .modal-body div{
   text-align: center;
   font-size: 1.2rem;
   color: #ffffff;
 }
 
 .modal-stories .carousel-indicators{
-  top:-90%!important;
-}
-.modal-stories .carousel-indicators li{
-  width: 33%!important;
+  top:0!important;
 }
