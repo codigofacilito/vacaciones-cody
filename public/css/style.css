@@ -61,22 +61,20 @@ main{
 /* Seccion donde ubico los aprendisajes de cody y los distribuyo
 en un solo section, un h2 y dos h3 */
 .seccion-1-sobre-aprendisaje {
-  background-color: rgb(255, 244, 146);
+  background-color: rgb(255, 248, 188);
   display: grid;
-  grid-template-columns: repeat(2,2fr) ;
-  grid-template-rows: repeat(2,2fr);
+  grid-template-columns: 2 ;
+  grid-template-rows: 100px 240px;
 }
 .seccion_1_conocimientos-0 {
   grid-column-start: 1;
   grid-column-end: 3;
-  background-color: rgb(255, 239, 202);
 }
 .seccion-1-conocimientos-1{
-  margin: auto;
-  background-color: rgb(245, 215, 215);
+  margin: 0 auto;
 }
 .seccion-1-conocimientos-2{
-  background-color: rgb(253, 190, 190);
+  margin: 0 auto;
 }
 .cursos {
   color: rgb(0, 0, 0);
@@ -85,10 +83,24 @@ en un solo section, un h2 y dos h3 */
 }
 .cursos_1{
   max-width: 120px;
-  background-color: rgb(255, 149, 11);
+  background-color: rgb(255, 171, 61);
   border-radius: 8px;
   text-align: center;
-  margin: 10px auto;
+  margin: 20px auto;
+  padding: 9px;
+  box-shadow: 2px 2px 4px 0px #555
+}
+.seccion-1-conocimientos-2 header{
+  text-align: center;
+}
+.seccion-1-conocimientos-2 div{
+  margin: 20px auto;
+}
+.seccion-1-conocimientos-2 p{
+  margin: 20px;
+}
+.seccion-1-conocimientos-2 li{
+  margin: 6px;
 }
 
 /* visualizacion del contenido de los section de apredisaje */
