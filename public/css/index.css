@@ -510,7 +510,11 @@ span.number {
 }
 
 @media (max-width: 767px) {
-  .banner header.first-section {
+  .banner > header > p {
+    font-size: 1.5em;
+  }
+
+  .banner header {
     bottom: 5%;
   }
 
@@ -614,7 +618,8 @@ span.number {
   .banner > header {
     bottom: 5%;
     top: initial;
-    margin: 0;
+    left: initial;
+    transform: none;
   }
 
   .banner > header > p {
