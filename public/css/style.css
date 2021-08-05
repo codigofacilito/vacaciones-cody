@@ -97,7 +97,8 @@ section{
   margin-top: 20px;
   padding: 10px 1.5em;
 }
-hr {
+hr {  
+  border: 1px solid #000;
   margin: 20px 0 10px 0;
 }
 section > p, 
@@ -108,7 +109,7 @@ section > p,
 }
 
 .section__2019 {
-  height: 450px;
+  height: 550px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
@@ -142,6 +143,7 @@ section > p,
 }
 
 .tech-in-2021 li {
+  border-left: 2px solid var(--dark-green);
   height: 50px;
   text-align: center;
   list-style: none;
@@ -169,7 +171,16 @@ section > p,
   filter: drop-shadow(7px 7px 5px #000);
   color: #00aa43;
 }
+.section__vacation a {
+  text-decoration: underline;
+  color: #fff;
+  transition: all .3s ease-out;
+}
 
+.section__vacation a:hover {
+  color: var(--dark-green);
+  filter: drop-shadow(3px 0px 50px black);
+}
 .fotos {
   display: flex;
   flex-flow: row wrap;
@@ -240,7 +251,7 @@ ul li{
 .footer__links li {
   padding: 5px;
   border-left: 2px solid #fff;
-  transition: all .8s ease-out;
+  transition: all .3s ease-out;
 }
 
 .footer__links li:hover {
@@ -250,4 +261,30 @@ ul li{
 .footer__links a {
   text-decoration: none;
   color: #fff;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 700px) {
+  nav {
+    padding: 2px;
+  }
+  .nav__title p{
+
+    font-size: 15px;
+    background: transparent;
+  }
+  hr {
+    border: 2px solid #000;
+  }
+  .section__2021 .tech-in-2021{
+    display: block;
+    flex-flow: row wrap;
+  }
+  
+  .section__2021 .tech-in-2021 li {
+    border-left: 2px solid var(--dark-green);
+    padding: 5px;
+    margin: 15px;
+  }
 }
