@@ -1,0 +1,505 @@
+@import url(./main.css);
+
+.bar-fixed {
+  display: inline-block;
+}
+
+.bar-menu {
+  opacity: 1;
+  justify-content: initial;
+}
+
+main {
+  padding: 10px;
+  margin-bottom: 100vh;
+  padding-bottom: 10vh;
+  background-color: var(--primary-color);
+  transition: all 1s;
+}
+
+h1 {
+  color: var(--title-color);
+}
+
+a > i {
+  font-size: 2em;
+  margin-right: 20px;
+}
+
+a > i:hover {
+  color: gray;
+}
+
+.profile {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.profile > header {
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.user-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  gap: 25px;
+}
+
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.circle svg {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  fill: none;
+  stroke: url(#gradient);
+  stroke-linecap: round;
+  stroke-width: 2;
+  stroke-dasharray: 1;
+  cursor: pointer;
+}
+
+.loader-animation {
+  animation: loader-animation 3s ease-out alternate-reverse;
+}
+
+.profile img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.user {
+  margin-top: 20px;
+}
+
+.user-container h2,
+p {
+  font-size: 20px;
+  text-align: start;
+}
+
+.user-container p {
+  font-size: 14px;
+}
+
+.profile .btns-container {
+  margin-top: 20px;
+  display: flex;
+}
+
+.profile .follow-btn {
+  position: relative;
+  appearance: none;
+  outline: none;
+  font-size: 14px;
+  font-family: "Helvetica";
+  font-weight: 600;
+  height: 32px;
+  width: 120px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.follow-btn:after {
+  content: "Seguir";
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: unfollow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
+}
+
+.follow-btn:checked:after {
+  content: "Siguiendo";
+  animation: follow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
+}
+
+.profile .fa-ellipsis-h {
+  color: var(--title-color);
+}
+
+.profile .options-btn i:hover {
+  color: grey;
+}
+
+.profile .options-btn {
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  background: transparent;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 250ms;
+}
+
+.social-counts {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 5%;
+}
+
+.social-counts span {
+  color: var(--text-color);
+}
+
+.social-counts .count {
+  font-weight: 800;
+}
+
+.photos-grid {
+  max-width: 900px;
+  margin: auto;
+  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.photos-grid > div {
+  position: relative;
+}
+
+.photos-grid span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 5;
+  color: transparent;
+  font-size: 1.5em;
+  font-family: "Dancing Script", cursive;
+  padding: 10px;
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+.photos-grid img {
+  width: 100%;
+  height: 100%;
+}
+
+.photos-grid span:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: whitesmoke;
+}
+
+.photo-viewer {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-color: black;
+}
+
+.main-photo-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.main-photo-container > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.photo-container {
+  position: relative;
+  height: 100%;
+  width: 65%;
+  flex: none;
+}
+
+.photo {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.photo-viewer > img {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 15;
+}
+
+img.thumbnail {
+  width: 100%;
+  margin: 0;
+  z-index: -10;
+  filter: blur(12px);
+  opacity: 0.4;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 12;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  font-size: 1.5em;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.right-btn,
+.left-btn {
+  position: initial;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.parallax-efect {
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -10;
+  transition: opacity 250ms;
+}
+
+.parallax-efect p {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.parallax-efect > div {
+  max-height: 100vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.parallax-efect > div > img {
+  width: 100%;
+  max-height: 100vh;
+}
+
+.balloon {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: var(--border);
+  padding: var(--border);
+  --border: 1em;
+  font-family: sans-serif;
+  z-index: 1;
+  background-color: white;
+  filter: drop-shadow(0px 0px 1px black);
+  animation: 2000ms balloon-cody linear infinite;
+  animation-direction: alternate-reverse;
+}
+
+.balloon.size {
+  width: 150px;
+  height: 60px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.balloon::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: var(--tail);
+  height: var(--tail);
+}
+
+.balloon.left-bottom::before {
+  --tail: 50px;
+  left: 10px;
+  bottom: calc(var(--tail) / -1.5);
+  border-radius: 0 0 10em 0;
+  box-shadow: inset calc(var(--tail) / -3) calc(var(--tail) / 4) 0 0 white;
+}
+
+.disable {
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
+@media (max-width: 1100px) and (orientation: portrait) {
+  main {
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
+  .parallax-efect {
+    display: none;
+  }
+
+  .photos-grid {
+    padding-bottom: 10px;
+  }
+
+  .theme-float-btn {
+    display: inline-block;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile {
+    margin-top: 60px;
+  }
+
+  .profile .follow-btn {
+    width: 70px;
+  }
+
+  .photos-grid {
+    gap: 5px;
+  }
+
+  .photos-grid span {
+    font-size: 0.8em;
+  }
+
+  .user-container {
+    gap: 10px;
+  }
+
+  .profile img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle {
+    width: 160px;
+    height: 150px;
+  }
+
+  .circle svg {
+    width: 110px;
+  }
+
+  .profile .follow-btn {
+    padding: 0 10px;
+    margin-right: 0;
+  }
+
+  .btns-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+}
+
+@keyframes balloon-cody {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes loader-animation {
+  from {
+    stroke-dasharray: 1;
+  }
+  to {
+    transform: rotate(180deg);
+    stroke-dasharray: 6;
+  }
+}
+
+@keyframes follow-animation {
+  from {
+    background: white;
+    color: #166fe5;
+    border-color: #166fe5;
+    width: 80%;
+  }
+  to {
+    background: #1bbc9b;
+    border-color: #0b6855;
+    color: whitesmoke;
+    width: 100%;
+  }
+}
+
+@keyframes unfollow-animation {
+  from {
+    background: #2eb82e;
+    color: whitesmoke;
+    width: 100%;
+  }
+  to {
+    background: white;
+    border-color: #166fe5;
+    color: #166fe5;
+    width: 80%;
+  }
+}

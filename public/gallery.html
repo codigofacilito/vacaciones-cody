@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria vacaciones</title>
+    <link rel="icon" type="image/png" href="./images/cody.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <script
+      src="https://kit.fontawesome.com/0b4c8fc686.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="bar-fixed">
+      <div class="bar-menu">
+        <nav>
+          <a class="logo-nav-bar" href="javascript: history.go(-1)">
+            <i class="fas fa-arrow-circle-left"></i>
+          </a>
+        </nav>
+        <h1>Galería</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="profile">
+        <header>
+          <div class="user-container">
+            <div class="circle">
+              <img src="./images/cody-profile.jpg" alt="cody" />
+              <svg
+                class="loader-animation"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+                style="enable-background: new -580 439 577.9 194"
+                xml:space="preserve"
+              >
+                <defs>
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stop-color="#00bc9b" />
+                    <stop offset="100%" stop-color="#5eaefd" />
+                  </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="40" />
+              </svg>
+            </div>
+            <div class="user">
+              <h2>@CODY</h2>
+              <p>Me encanta la programación🧡</p>
+              <p>Aspirante a DEV💻</p>
+            </div>
+          </div>
+          <div class="btns-container">
+            <input type="checkbox" class="follow-btn" />
+            <button class="options-btn">
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </header>
+        <div class="social-counts">
+          <div>
+            <span class="count" id="post_counter"> 0 </span>
+            <span>Fotos</span>
+          </div>
+          <div>
+            <span class="count"> 1M </span>
+            <span>Seguidores</span>
+          </div>
+          <div>
+            <span class="count"> 6k </span>
+            <span>Seguidos</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="photos-grid">
+        <div id="0">
+          <img src="./images/1.jpg" alt="Cody en la playa" />
+          <span> Paseando ⛵</span>
+        </div>
+        <div id="1">
+          <img src="./images/2.jpg" alt="Cody acampando" />
+          <span>En alguna parte del mundo ✨</span>
+        </div>
+        <div id="2">
+          <img src="./images/3.jpg" alt="Cody en una alberca" />
+          <span> Relax en la alberca 🤿</span>
+        </div>
+        <div id="3">
+          <img src="./images/4.jpg" alt="Cody en la playa" />
+          <span>Descansando 🥥</span>
+        </div>
+        <div id="4">
+          <img src="./images/5.jpg" alt="Cody en un callejon" />
+          <span>Llegando a mi destino 🌊</span>
+        </div>
+        <div id="5">
+          <img src="./images/6.jpg" alt="Cody en el aeropuerto" />
+          <span>Vámonos 😎</span>
+        </div>
+      </div>
+
+      <div class="photo-viewer">
+        <div class="close-btn btn"><i class="fas fa-times"></i></div>
+        <div class="main-photo-container">
+          <div class="left-btn-container">
+            <div class="left-btn btn">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+          </div>
+          <div class="photo-container">
+            <img src="./images/4.jpg" alt="" id="photo" class="photo" />
+          </div>
+          <div class="right-btn-container">
+            <div class="right-btn btn">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <img src="./images/4.jpg" alt="" class="thumbnail" />
+      </div>
+    </main>
+
+    <div class="parallax-efect">
+      <div>
+        <img src="./images/3.jpg" alt="cody ciesta en la alberca" srcset="" />
+        <p class="balloon size left-bottom">Esas fueron mis vacaciones!</p>
+      </div>
+    </div>
+
+    <div class="theme-float-btn">
+      <label class="theme-btn" for="float-btn">
+        <input type="checkbox" id="float-btn" />
+        <div class="float-btn fas"></div>
+      </label>
+    </div>
+
+    <div class="page-loader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <script src="./js/gallery.js"></script>
+  </body>
+</html>
