@@ -1,5 +1,4 @@
 export default class Slider {
-
 	// emacscript 6 {busca elements, animationFunc dentro de la clase instanciada}
 	constructor({elements, animationFunc, speed}) {
 		this.elements = elements;
@@ -48,16 +47,6 @@ export default class Slider {
 	}
 
 	play() {
-		//
-		//this.interval = setInterval(function() { // function cambia contexto
- 		//	this.prev(); // este this no es el mismo que está afuera
-		//}, 1000)
-		//this.interval = setInterval(()=> { // los arrow solucionan el problema anterior
-		//	this.prev(); // el this de afuera y de adentro es el mosmo
-		//   }, 1000)
-		//
-		//solución 3 conservar el contexto con bind (3)
-
 		this.interval = setInterval(this.innerNext, this.speed);
 	}
 

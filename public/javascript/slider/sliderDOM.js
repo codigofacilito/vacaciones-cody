@@ -1,9 +1,6 @@
 import Slider from "./slider.js";
-//const Slider = require("./slider");
 import elements from "./elements.js";
-//const elements = require("./elements");
 import Preloader from "../preloader/preloader.js";
-// const Preloader = require("../preloader/preloader");
 
 let sliderText = document.querySelector("#slider-text");
 let sliderTitle = document.querySelector("#slider-title");

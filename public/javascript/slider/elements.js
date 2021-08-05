@@ -15,7 +15,7 @@ const elements = [
 		subtitle: "La importancia de las vacaciones",
 		title: "Calidad de vida",
 		image: "../public/images/undraw_healthy_lifestyle_6tyl.svg",
-		text: " Reduce el burnout"
+		text: "Reduce el burnout"
 	},
 	{
 		subtitle: "La importancia de las vacaciones",
@@ -26,4 +26,3 @@ const elements = [
 ];
 
 export default elements;
-// module.exports = elements;
