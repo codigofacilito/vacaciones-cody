@@ -20,9 +20,9 @@
     --yellow70: #FF9900;
     --yellow50: #F8CD5B;
     --brown80: #3F2F18;
-    --pink30: #F76779;
     --pink70: #a00037;
     --pink50: #e91e63;
+    --pink30: #F76779;
     --blue30: #4DD1FF;
     --margin-inline: 51px;
     --margin-block: 62px;
@@ -139,6 +139,7 @@ body {
     font-size: 14px;
     text-decoration: none;
     color: var(--black90);
+    font: var(--description-mobile);
 }
 
 .header-content__button a:first-of-type {
