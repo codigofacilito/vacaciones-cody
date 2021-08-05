@@ -44,6 +44,7 @@ h1 {
 }
 
 .breve {
+  height: 600px;
   padding-top: 120px;
   display: flex;
   justify-content: space-around;
@@ -211,10 +212,39 @@ ol li{
   color:#ffffff;
   font-size: 40px;
   font-weight: 200;
+  text-align: center;
 }
 
 .conclusion {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.album {
+  padding-top: 60px;
+}
+
+.portada {
+  padding-top: 150px;
+}
+
+.final {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (max-width: 600px){
+  .navegacion {
+    background-color:#DD2476;
+    width: 100%; }
+
+    header {
+      align-items: center;
+    }
+
+    .container-1 {
+      margin: 40px;
+    }
 }
