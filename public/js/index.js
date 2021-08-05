@@ -34,9 +34,14 @@ if (currentTheme) {
 window.addEventListener(
   "load",
   function () {
+    let isDarkTheme = currentTheme === "dark";
+
     setTimeout(() => {
       page_loader.style.display = "none";
     }, 1000);
+
+    float_btn.checked = isDarkTheme;
+    switchTheme.checked = isDarkTheme;
   },
   false
 );
