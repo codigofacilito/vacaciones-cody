@@ -1,0 +1,29 @@
+{
+  "name": "codi-vacations",
+  "version": "1.0.0",
+  "description": "Cody vacations landing pages and gallery photos",
+  "scripts": {
+    "pug:watch": "pug -w ./ -o ./ -P",
+    "parcel:serve": "parcel serve ./index.html",
+    "nra-dev": "npm-run-all --parallel pug:watch parcel:serve",
+    "pug:compile": "pug ./index.pug -P",
+    "parcel:build": "parcel build ./index.html",
+    "nra-build": "npm-run-all pug:compile parcel:build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.7.1",
+    "swiper": "^6.8.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.3.1",
+    "autoprefixer": "^10.2.6",
+    "gh-pages": "^3.2.3",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.0.0-beta.3.1",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

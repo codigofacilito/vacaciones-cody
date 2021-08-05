@@ -1,0 +1,158 @@
+.popup {
+  width: 100%;
+  height: 100vh;
+  background: rgba($color-black, 0.8);
+  z-index: 9999;
+  transition: all 0.3s;
+
+  @supports (-webkit-backdrop-filter: blur(10px)) or
+    (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba($color-black, 0.2);
+  }
+
+  // to hidde to popup
+  opacity: 0;
+  visibility: hidden;
+
+  // To covert all the viewport
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+
+    & .popup__content {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+
+      @include respond(tablet-landscape) {
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 4rem;
+      }
+
+      @include respond(tablet-portrait) {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 3rem;
+      }
+
+      @include respond(phone) {
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      display: inline-block;
+
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+
+      line-height: 1; // para que abarque solo los 3rem del font-size
+      color: $color-grey-dark;
+      font-size: 3rem;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    // to add a circle(aka border)
+    &::after {
+      content: "";
+      width: 3rem;
+      height: 3rem;
+      border: 0.2rem solid $color-grey-dark;
+      border-radius: 50%;
+      transition: all 0.2s;
+
+      // to position the circle in the center
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      transform: translateY(-0.1rem);
+      color: $color-primary;
+
+      &::after {
+        border-color: $color-primary;
+      }
+    }
+  }
+
+  &__content {
+    width: 75%;
+    background: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    border-radius: 0.3rem;
+    display: table;
+    overflow: hidden; // para esconder las esquinas que sobresalen de las imagenes
+    z-index: 100;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.25);
+
+    opacity: 0;
+    transition: all 0.5s 0.2s;
+
+    @include respond(phone) {
+      width: 85%;
+    }
+  }
+
+  &__left {
+    width: 33.33333%;
+    display: table-cell;
+
+    @include respond(tablet-portrait) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+  }
+  &__right {
+    width: 66.66667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+
+    @include respond(tablet-portrait) {
+      width: 100%;
+      text-align: center;
+    }
+
+    @include respond(phone) {
+      padding: 2rem 3rem;
+    }
+  }
+  &__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid $color-grey-dark-2;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid $color-grey-dark-2;
+
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+}

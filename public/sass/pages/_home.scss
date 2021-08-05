@@ -1,0 +1,242 @@
+svg {
+  grid-column: 1 / -1;
+  position: relative;
+  height: 100%;
+}
+
+.main-container {
+  grid-column: 1 / -1;
+
+  @include bg-gradient-ocean;
+
+  position: relative;
+  padding: 4rem 0 0 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-gap: 0 1rem; //if 1 value is specify would apply the same gap for both(row & column)
+  justify-items: center;
+  align-items: center;
+
+  @include respond(tablet-portrait) {
+    grid-template-columns: 1fr;
+  }
+
+  svg {
+    grid-column: 1 / -1;
+  }
+
+  &__images {
+    position: relative;
+    margin-bottom: 4%;
+
+    img {
+      width: 80%;
+      height: 80%;
+    }
+
+    .img-cody {
+      position: relative;
+      z-index: 20;
+    }
+
+    .img-surfTable {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 120%;
+      height: 80%;
+      z-index: 10;
+    }
+  }
+
+  &__description {
+    position: relative;
+    padding: 0 5%;
+
+    &-p {
+      margin: 1rem 0;
+      font-weight: 500;
+      color: #fff;
+      font-size: 1.8rem;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 40%;
+        height: 0.4rem;
+        background-color: #63caf2;
+      }
+
+      &:last-of-type {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      span {
+        font-weight: 600;
+        color: #94e4ff;
+      }
+    }
+
+    .cursos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+      grid-gap: 2rem; //if 1 value is specify would apply the same gap for both(row & column)
+
+      margin-bottom: $margin-medium;
+
+      &__wrapper {
+        background: linear-gradient(
+          to right bottom,
+          #00b9b2,
+          #e4feff 50%,
+          #00b9b2
+        );
+        border-radius: 10px;
+        padding: 6px;
+      }
+
+      &__element {
+        background-color: #fff;
+        text-align: center;
+        border-radius: 10px;
+        padding: 2rem 5rem;
+
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+          color: #05766e;
+          margin-bottom: 4rem;
+        }
+        &-p {
+          margin-bottom: 0;
+          font-style: italic;
+          position: relative;
+
+          &::before {
+            content: "\201C";
+            line-height: 0;
+            color: #666666;
+            font-weight: 700;
+            font-size: 8rem;
+            position: absolute;
+            top: 14%;
+            left: -2%;
+            opacity: 0.3;
+          }
+          &::after {
+            content: "\201D";
+            line-height: 0;
+            color: #666666;
+            font-weight: 700;
+            font-size: 8rem;
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+            opacity: 0.3;
+          }
+        }
+
+        &-ref {
+          text-align: start;
+          margin-bottom: 2.5rem;
+          padding-left: 2rem;
+          margin-bottom: 4rem;
+
+          span {
+            color: #05766e;
+            font-weight: 700;
+          }
+        }
+        &-link {
+          margin-top: auto;
+          margin-bottom: 1rem;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+.section-3 {
+  grid-column: 1 / -1;
+
+  background-color: $color-sand;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+
+  .collab__container {
+    border-radius: 1rem;
+    margin: $margin-small 5% 0 5%;
+    background-image: linear-gradient(
+        114deg,
+        rgb(255, 255, 255, 0.9) 50%,
+        transparent 50%
+      ),
+      url("./../images/programming-medium.jpg");
+    background-position: bottom right;
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    @include respond(tablet-portrait) {
+      margin-top: 4rem;
+      background-image: linear-gradient(
+          110deg,
+          rgb(255, 255, 255, 0.9) 50%,
+          transparent 50%
+        ),
+        url("./../images/programming-small.jpg");
+    }
+
+    @include respond(phone) {
+      background-image: url("./../images/programming-small.jpg");
+    }
+
+    .collab__description {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      width: 50%;
+      height: 100%;
+      padding: 4%;
+      font-weight: 500;
+
+      @include respond(phone) {
+        width: 100%;
+        padding: 10% 0;
+      }
+
+      &-p {
+        margin-bottom: $margin-medium;
+        color: #000;
+
+        br:not(:first-child) {
+          display: inline-block;
+          margin-top: 0.5rem;
+        }
+
+        @include respond(phone) {
+          padding: 4%;
+          background-color: rgba(#fff, 0.8);
+          backdrop-filter: blur(4px);
+        }
+      }
+
+      a {
+        display: inline-block;
+        align-self: center;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 5px 15px;
+      }
+    }
+  }
+}

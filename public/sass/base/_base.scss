@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box; /*Aplicar correctamente box-sizing*/
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%;
+
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  /*Aplicar correctamente box-sizing*/
+  box-sizing: inherit; /*Aplicar correctamente box-sizing*/
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 1.8rem;
+  font-family: $font-text;
+  font-weight: 500;
+  background-color: $color-sand;
+
+  overflow-x: hidden;
+}
+
+// svg.sand {
+//   path {
+//     fill: $color-sand;
+//   }
+// }
+
+html {
+  // max-width
+  @include respond(tablet-landscape) {
+    font-size: 56.25%; // 1rem = 9px -> 9/16 * 100 = 56.25.
+  }
+  @include respond(tablet-portrait) {
+    font-size: 50%; // 1rem = 8px -> 8/16 * 100 = 50.
+  }
+
+  // min-width
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12 -> 12/16 * 100 = 75.
+  }
+}
+
+// ::selection {
+//   background-color: $color-primary;
+//   color: $color-white;
+// }

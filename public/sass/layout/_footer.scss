@@ -1,0 +1,102 @@
+%default-logo-icon {
+  font-size: 3rem;
+  position: relative;
+  z-index: 10;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  grid-column: 1 / -1;
+
+  text-align: center;
+  background-color: $color-sand;
+  border-top: 6rem solid;
+  border-image-source: url("./../images/palm.png");
+  border-image-slice: 67;
+  border-image-repeat: round;
+  margin-top: 6rem;
+
+  .footer {
+    background-image: linear-gradient(to bottom, $color-sand, #00a1f2);
+    padding: 1rem 5%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+
+    @include respond(phone) {
+      display: block;
+      padding: 2rem 5%;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    &__info {
+      &-socials {
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        span {
+          display: inline-block;
+          line-height: 0;
+          width: 2rem;
+          transition: all 0.18s;
+
+          @include respond(phone) {
+            width: 2rem;
+          }
+
+          &:not(.twitter) {
+            background-color: #fff;
+          }
+
+          &:hover {
+            transform: translateY(-4px);
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      &-msg {
+        .name {
+          display: inline-block;
+          background: rgb(255, 255, 255);
+          background: linear-gradient(to right, #0022ff, rgba(0, 0, 0, 1));
+
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
+    &__copyright {
+      align-self: center;
+      margin-bottom: 0;
+
+      .name {
+        display: inline-block;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(to right, #0022ff, rgba(0, 0, 0, 0.8));
+
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}

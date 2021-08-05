@@ -1,0 +1,36 @@
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.2rem 1.5rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.btn-main {
+  background-color: #ffac31;
+  color: #fff;
+}
+
+.btn-water {
+  background-color: #00a1f2;
+  color: #f1fbff;
+
+  &:hover {
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+  }
+}

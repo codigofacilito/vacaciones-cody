@@ -1,0 +1,18 @@
+//- Indica que estamos usando html5
+doctype html
+//- Indicamos el lenguaje de nuestra pagina web
+html(lang="esp")
+  head
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Cody Vacations-Gallery
+    link(rel="shortcut icon", href="./images/favicon.ico", type="image/x-icon")
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Source+Sans+Pro:ital@0;1&display=swap" rel="stylesheet">
+    link(rel="stylesheet", href="./sass/main.scss")
+  body.b-gallery
+    include ./../includes/header-gallery
+    include ./../includes/waves-up
+    include ./../includes/gallery
+    include ./../includes/waves-down
+    include ./../includes/footer

@@ -1,0 +1,62 @@
+.b-gallery {
+  .h-gallery {
+    border-bottom: 6rem solid;
+    border-image-source: url("./../images/palm.png");
+    border-image-slice: 67;
+    border-image-repeat: round;
+
+    text-align: center;
+
+    .h-overlay {
+      background-image: linear-gradient(to top, $color-sand, #00a1f2);
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include respond(phone) {
+        gap: 1rem;
+      }
+
+      a {
+        display: inline-block;
+        margin-left: 5%;
+        font-size: 4rem;
+        transition: all 0.2s;
+
+        &:hover {
+          transform: translateX(-4px);
+        }
+      }
+
+      h1 {
+        padding: 3rem 0;
+        margin: 0 auto;
+        padding-right: calc(5% + 5rem);
+
+        @include respond(phone) {
+          padding-right: 5%;
+        }
+
+        span {
+          display: inline-block;
+          background: rgb(255, 255, 255);
+          background: linear-gradient(to top, #000000, #1100ff);
+
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+
+  .c-gallery {
+    display: flex;
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
+}

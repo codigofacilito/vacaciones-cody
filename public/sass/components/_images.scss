@@ -1,0 +1,44 @@
+.imgs-main-c {
+  grid-column: 1 / -1;
+  @include bg-gradient-ocean;
+}
+
+.imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+
+  .imgs__description {
+    color: #fff;
+
+    p {
+      margin: 4rem 0;
+    }
+  }
+
+  .imgs__photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 4rem; //if 1 value is specify would apply the same gap for both(row & column)
+    align-items: center;
+
+    margin: 0 5%;
+
+    .imgs__photo {
+      img {
+        border-radius: 20px;
+
+        border: 3px solid #00a1f2;
+        width: 100%;
+      }
+    }
+  }
+
+  .imgs-main-c {
+    a {
+      margin-bottom: 5rem;
+    }
+  }
+}

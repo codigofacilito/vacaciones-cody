@@ -1,0 +1,142 @@
+.container-fluid {
+  grid-column: 1 / -1;
+
+  height: min-content;
+
+  h3 {
+    color: #4df0ff;
+    letter-spacing: 1.5px;
+  }
+
+  margin-top: -11rem;
+
+  @include respond(tablet-landscape) {
+    margin-top: -5rem;
+  }
+  @include respond(tablet-landscape) {
+    margin-top: 0;
+  }
+}
+
+$color: #fff;
+
+.blue-bg {
+  background-image: linear-gradient(
+    to bottom,
+    rgba($color-waves, 1),
+    rgba($color-waves, 1)
+  );
+  color: $color;
+}
+
+.circle {
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 50%;
+
+  background-color: $color-sand;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works.row {
+  display: flex;
+  position: relative;
+
+  .col-2 {
+    display: inline-flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-left: 3px solid $color-waves;
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-left: 3px solid #9ed7fc;
+      z-index: 1;
+    }
+  }
+
+  .col-2.bottom {
+    &::after {
+      height: 50%;
+      left: 50%;
+      top: 50%;
+    }
+  }
+
+  .col-2.full {
+    &::after {
+      height: 100%;
+      left: calc(50% - 3px);
+    }
+  }
+  .col-2.top.init {
+    &::before {
+      height: 50%;
+      left: 50%;
+      top: 0;
+    }
+  }
+  .col-2.top {
+    &::after {
+      height: 100%;
+      left: 50%;
+      top: 0;
+    }
+
+    &-end {
+      &::after {
+        height: 50%;
+        left: 50%;
+        top: 0;
+      }
+    }
+  }
+}
+
+.timeline {
+  div {
+    padding: 0;
+    height: 40px;
+  }
+  hr {
+    border-top: 3px solid #9ed7fc;
+    margin: 0;
+    top: 17px;
+    position: relative;
+  }
+  .col-2 {
+    display: flex;
+    overflow: hidden;
+  }
+  .corner {
+    border: 3px solid #9ed7fc;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+  }
+  .top-right {
+    left: 50%;
+    top: -50%;
+  }
+  .left-bottom {
+    left: -50%;
+    top: calc(50% - 2.5px);
+  }
+  .top-left {
+    left: -50%;
+    top: -50%;
+  }
+  .right-bottom {
+    left: 50%;
+    top: calc(50% - 3px);
+  }
+}

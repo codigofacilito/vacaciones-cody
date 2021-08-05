@@ -1,0 +1,36 @@
+svg {
+  #wave1 {
+    fill: rgba($color-waves, 1);
+    position: relative;
+    z-index: 100;
+  }
+  #wave2 {
+    fill: rgba($color-waves, 0.9);
+    position: relative;
+    z-index: 90;
+  }
+  #wave3 {
+    fill: rgba($color-waves, 0.8);
+    position: relative;
+    z-index: 80;
+  }
+}
+.static__wave-up {
+  transform: rotate(180deg);
+
+  #wave-up-1 {
+    fill: rgba($color-waves, 1);
+    position: relative;
+    z-index: 100;
+  }
+  #wave-up-2 {
+    fill: rgba($color-waves, 0.9);
+    position: relative;
+    z-index: 90;
+  }
+  #wave-up-3 {
+    fill: rgba($color-waves, 0.8);
+    position: relative;
+    z-index: 80;
+  }
+}
