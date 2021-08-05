@@ -1,17 +1,26 @@
 name: Build and Deploy
-on: 
+
+on:
   push:
     branches:
       - main
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
-
+      - name: Environment 🛸
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - name: Dependencies 🌎
+        run: npm ci --no-optional
+      - name: Build 🔨
+        run: npm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: public # The folder the action should deploy.
+          branch: gh-pages
+          folder: public

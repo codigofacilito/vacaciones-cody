@@ -1,0 +1,68 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='format-detection', content='telephone=no')
+    meta(name='msapplication-tap-highlight', content='no')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(name='apple-mobile-web-app-capable' content='yes')
+    meta(content='website' property='og:type')
+    title Mis vacaciones
+    //- My styles
+    link(rel='stylesheet' href='styles.css')
+    //- Robot info
+    meta(content='Mis Vacaciones LuisEnMarroquin' property='og:title')
+    meta(content='Este verano domina HTML, CSS, JavaScript, React, Vue, y más' property='og:description')
+    meta(name='description' content='Este verano domina HTML, CSS, JavaScript, React, Vue, y más')
+    meta(content='Mis_Vacaciones' property='og:site_name')
+    meta(content='https://LuisEnMarroquin.github.io/vacaciones-cody/' property='og:url')
+    //- Thumb image
+    meta(content='icons/thumb.jpg' property='og:image')
+    meta(content='1200' property='og:image:width')
+    meta(content='600' property='og:image:height')
+    //- Site icons
+    link(rel='shortcut icon' type='image/x-icon' href='icons/favicon.ico')
+    link(rel="icon" type="image/png" href="icons/touch-icon-16x16.png" sizes="16x16")
+    link(rel="icon" type="image/png" href="icons/touch-icon-32x32.png" sizes="32x32")
+    link(rel='apple-touch-icon' type='image/png' href='icons/touch-icon.png')
+    link(rel='apple-touch-icon' type='image/png' href='icons/touch-icon-57x57.png' sizes='57x57')
+    link(rel='apple-touch-icon' type='image/png' href='icons/touch-icon-60x60.png' sizes='60x60')
+    link(rel='apple-touch-icon' type='image/png' href='icons/touch-icon-72x72.png' sizes='72x72')
+    link(rel='apple-touch-icon' type='image/png' href='icons/touch-icon-76x76.png' sizes='76x76')
+    link(rel='apple-touch-icon' type='image/png' href='icons/touch-icon-114x114.png' sizes='114x114')
+    link(rel='apple-touch-icon' type='image/png' href='icons/touch-icon-120x120.png' sizes='120x120')
+    link(rel='apple-touch-icon' type='image/png' href='icons/touch-icon-144x144.png' sizes='144x144')
+    link(rel='apple-touch-icon' type='image/png' href='icons/touch-icon-152x152.png' sizes='152x152')
+    link(rel='apple-touch-icon' type='image/png' href='icons/touch-icon-180x180.png' sizes='180x180')
+    //- Material Icons
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+    //- App manifest
+    link(href='manifest.json' rel='manifest')
+    //- Slider
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css')
+  body
+    block content
+    script.
+      const useScroll = () => {
+        const navbar = document.querySelector('.siteNavbar')
+        if (window.scrollY === 0) navbar.setAttribute('down', false)
+        if (window.scrollY !== 0) navbar.setAttribute('down', true)
+      }
+      document.addEventListener("scroll", useScroll)
+      useScroll()
+    //- Slider
+    script(src='https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js')
+    script.
+      window.addEventListener('load', function(){
+        new Glider(document.querySelector('.glider'), {
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          draggable: true,
+          dots: '.dots',
+          arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+          }
+        })
+      })

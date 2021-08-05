@@ -1,0 +1,129 @@
+@use './waves.scss';
+
+body {
+  margin: 0;
+  * {
+    font-family: "Lato", sans-serif;
+  }
+}
+
+ul li {
+  text-align: left;
+}
+
+ul li::marker {
+  content: "🚀";
+}
+
+ol li {
+  text-align: left;
+}
+
+.siteNavbar {
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  transition: all 200ms ease 0s;
+  &[down="true"] {
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 5%);
+  }
+  &[down="false"] {
+    @media (min-width: 768px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  .navItems {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  span {
+    flex: 1;
+    vertical-align: middle;
+  }
+  a:nth-child(2) {
+    flex: 0 0 100px;
+    border-radius: 20px;
+  }
+  button {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    background: #5cb3ff;
+    border-radius: inherit;
+    transition: all 500ms ease 0s;
+    &:hover {
+      color: white;
+      background: #f66d65;
+      text-decoration: none;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  @media (max-width: 768px) {
+    flex: 100%;
+  }
+}
+
+section {
+  margin: 0 auto;
+  width: 80%;
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+
+.grayBox {
+  margin: 10px 10%;
+  padding: 5px 15px;
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  @media (max-width: 768px) {
+    margin: 10px;
+  }
+}
+
+.sliderBox {
+  margin: 10px 10%;
+  padding: 5px 35px;
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  @media (max-width: 768px) {
+    margin: 10px;
+  }
+  img {
+    height: 500px;
+  }
+}
+
+.fotos {
+  height: calc(100vh - 100px);
+  padding-top: 100px;
+  background: linear-gradient(60deg, #543ab7 0%, #00acc1 100%);
+}

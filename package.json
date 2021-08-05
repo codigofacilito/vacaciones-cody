@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec \"npm run build && node server.js\"",
+    "build": "node compile.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2",
+    "sass": "^1.37.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "nodemonConfig": {
+    "delay": 500,
+    "ext": "pug, scss, js, png, svg, ico, jpg, jpeg",
+    "watch": [
+      "*.js",
+      "views",
+      "client"
+    ]
+  }
+}
