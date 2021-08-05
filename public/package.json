@@ -21,6 +21,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-beta.3.1",
     "autoprefixer": "^10.2.6",
+    "gh-pages": "^3.2.3",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.0.0-beta.3.1",
     "pug-cli": "^1.0.0-alpha6"
