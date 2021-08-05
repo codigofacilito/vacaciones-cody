@@ -1,38 +1,67 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
+nav {
+  background-color: #01b99d;
   display: flex;
   gap:1em;
 }
 
-main{
+
+
+.nav-link {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+
+
+header nav .disabled {
+  color: #026c67 !important;
+}
+
+
+
+main {
   text-align: center;
   max-width: 960px;
   margin:0 auto;
 }
 
-section{
+
+
+section {
   margin-top: 3rem;
 }
 
-.cursos div{
+
+
+.cursos div {
   background-color: black;
   color: white;
   max-width: 200px;
   display: inline-block;
   box-shadow: 5px 5px 10px black;
 }
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
+
+
+
+.fotos img {
+  max-width: 100%;
 }
-ul li{
+
+
+
+ul li {
   text-align: left;
 }
+
+
+
+
 ul li::marker {
   content: "🚀";
 }
 
-ol li{
+
+
+ol li {
   text-align: left;
 }
