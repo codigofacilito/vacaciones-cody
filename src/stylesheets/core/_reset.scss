@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: $fontMontserrat;
+  font-size: 0.9rem;
+}
+body {
+  height: 100vh;
+  background: $colorNoWhite;
+}
+#root {
+  height: 100vh;
+}

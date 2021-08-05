@@ -1,0 +1,22 @@
+.presentation {
+  padding: 200px 15% 50px;
+  &__title {
+    @include titles();
+    font-size: 2rem;
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    &-paragraph {
+      padding-right: 15px;
+      text-align: justify;
+      text-align: right;
+      line-height: 1.5rem;
+    }
+    &-image {
+      background: linear-gradient($colorPink $colorWhite);
+      width: 25%;
+      height: 25%;
+    }
+  }
+}

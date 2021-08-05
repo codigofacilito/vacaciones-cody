@@ -1,29 +1,66 @@
-# Las Vacaciones de Cody
-Cody está aprendiendo desarrollo Frontend, hizo su primer página, y ahora necesita de tu ayuda para mejorarla.
+# Cody's coding vacations 🐊
+## _A react development_
 
-Envía un pull request rediseñando por completo la página de este repo y participa en el concurso #VeranoFrontend de Código Facilito, las personas en los 5 primeros lugares ganan:
+¡Hola mundo!
 
-✅ Un año Premium
-✅ CSS Secrets, de Lea Verou
-✅ Pack de stickers hasta la puerta de tu casa
-✅ Diploma
-✅ Asesoría personalizada para mejorar tu CV, con un reclutador de TI
+I have been looking for projects because practice makes the master and [Código Facilito](https://codigofacilito.com/usuarios/mis_cursos) just made a Challenge called  #VeranoFrontEnd or Summer Front End where we were suposed to help Cody to code his website.
 
-Para más detalles del concurso, reglas, y consideraciones, visita: https://codigofacilito.com/verano/concurso
+For the Challenge I had to fork Cody's website and make changes to it 🐊.
+
+![image](https://user-images.githubusercontent.com/81619759/128363332-6254bf58-ec43-431a-9366-0d174887b566.png)
 
 
-# Pasos para participar
+## Initial Requirements 📋
 
-1. Haz un fork de este repo
-2. Implementa tus cambios
-3. Haz un pull request con tus cambios
+- Original code must be forked
+- All changes and ideas are welcomed
+- Javascript and CSS frameworks are welcome
+- Creativity is  up to the developer
+- Semantic use of HTML tags
 
-Es muy importante que al participar, habilites GitHub Actions y GitHub Pages en tu repositorio, así podremos ver tu página online, puedes consultar este vídeo para ver cómo participar: https://vimeo.com/577246176
+## My own requirements 🌟
 
-# Fechas importantes
-La fecha límite para enviar tu pull request es el 4 de Agosto, 11:59pm
+- Not to repeat unnecesary code
+- Use a package I never  used before
+- Use React as JS Framework
+- Use SASS as CSS Framework
+- Try a modern and minimalistic style that fits Cody
+- Clean console
 
-# Solución de problemas
+## Built with 🔨
+- Visual Code Studio: as code editor
+- SASS
+- React
+- Node
 
-**Mi página no se ve en GitHub Pages**
-Asegúrate de haber habilitado GitHub Actions y GitHub Pages, y que la rama de GitHub Pages sea gh-pages
+## Development ⌨️
+
+I started with a little hand drawing ✍️ of what  I thought could be a good layout this allowed me to be faster  as I already had an idea of what I wanted to do and also made it easier for me to prioritize the information.
+
+Then I went  in for all. As I worked with React I split the code in Components and ended up with 8 of them plus my App.js. I also added a data folder to save all my JSON files 📂. JSON files are one of my favorite things in this project as they allowed me to write less code as I can map them and render them easily but they also guarantee a 🚧 low maintenance code. 🚧
+
+![image](https://user-images.githubusercontent.com/81619759/128156381-f30c4bec-4035-4f10-8e20-83b460c0f8d0.png)![image](https://user-images.githubusercontent.com/81619759/128156434-e83e2a77-4c9a-4583-85b1-ac9ec070a02c.png)
+
+In my own requirements I decided I wanted  to used  a NPM package that  I  never used before- As the original website has some images of Cody's vacations I went on the search of an Image Gallery🖼️ and used this [React Image Gallery](https://www.npmjs.com/package/react-image-gallery) It was pretty simple  to use, it is responsive and I think the final result was great.
+
+I also used this 🍔[Burger Menu](https://www.npmjs.com/package/react-burger-menu) that I found when I was doing my portfolio and I love it because is pretty easy to customize and looks really cute. However this Menu doesn't have a funcionality that I think is really important and that is that, when the user choose a nav item it doesn't close, so I added a  little function to do that.
+
+There's a component that I personally love 💘 and that is the "Top.js". This component -that I think I'm gonna upload to NPM - is a "Scroll top" button that allows the user to...scroll up 🔝. It works really well, is visible only when the user start scrolling an disappears on top. 
+![Component go top gif](https://user-images.githubusercontent.com/81619759/128014253-a4d5a79c-0fc0-4d31-b0fc-ea4dd7a128e5.gif)
+
+For my styles I installed SASS and using BEM tried to make it look cute, fresh and Cody like.
+
+## Want to clone my repository? 🐑🐑
+
+Go for it! And if you make something pretty, please show me
+
+## Do you have any idea? ✏️
+
+I'm an student and as I stated before am learning a whole lot of Front End Developing, so, if  you have any idea that I could develope please tell me so and I will try to.
+
+## License
+
+MIT
+
+## Codefactor 
+[![CodeFactor](https://www.codefactor.io/repository/github/silviaespanagil/vacaciones-cody/badge)](https://www.codefactor.io/repository/github/silviaespanagil/vacaciones-cody)

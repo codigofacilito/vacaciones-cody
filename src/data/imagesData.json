@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Bici en la playa",
+    "description": "Este soy yo montando bicicleta en la playa ⛱️🌴. Recuerden utilizar  protector solar🌞",
+    "imgURL": "https://i.ibb.co/nBy6GSb/1.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Campamento  en las Cies",
+    "description": "Acampando en las Cies, ¡el agua está fría!❄️",
+    "imgURL": "https://i.ibb.co/wJbHty1/2.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Momento de relax en la piscina",
+    "description": "Nada como una siesta en la piscina 💤, ¿les gusta mi flotador?",
+    "imgURL": "https://i.ibb.co/NWQxmV8/3.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Atardecer en la playa",
+    "description": "Atardecer en la playa + agua de coco = 💗",
+    "imgURL": "https://i.ibb.co/q7rmJHW/4.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Vespa Tour",
+    "description": "Me  fui de Tour con la Vespa 🛵, ¡la pasé genial!",
+    "imgURL": "https://i.ibb.co/LtczDky/5.jpg"
+  },
+  {
+    "id": "6",
+    "name": "En el aeropuerto",
+    "description": "El tiempo vuela y yo también, ¡ese es mi avión!✈️🛫",
+    "imgURL": "https://i.ibb.co/W2VZj1v/6.jpg"
+  }
+]

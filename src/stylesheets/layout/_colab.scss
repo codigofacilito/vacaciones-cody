@@ -1,0 +1,18 @@
+.colab {
+  padding: 0 15% 30px;
+  box-shadow: 5px 5px 15px 5px rgba(209, 209, 209, 0.4);
+  &__title {
+    @include titles();
+    font-size: 1.5rem;
+  }
+  &__paragraph {
+    padding-bottom: 15px;
+    line-height: 1.5rem;
+    &-link {
+      color: $colorPink;
+      &:hover {
+        color: $colorPurple;
+      }
+    }
+  }
+}

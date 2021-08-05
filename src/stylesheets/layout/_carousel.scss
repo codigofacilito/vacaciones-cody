@@ -1,0 +1,16 @@
+.image-gallery {
+  margin: 20px auto;
+  @include tablet() {
+    width: 70%;
+  }
+  &-thumbnails-wrapper {
+    display: none;
+  }
+}
+.pictures {
+  &__title {
+    @include titles();
+    padding-top: 50px;
+    font-size: 1.2rem;
+  }
+}
