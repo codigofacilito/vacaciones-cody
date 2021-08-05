@@ -1,38 +1,265 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+*{
+  margin:0 ;
+  padding: 0; 
+  box-sizing: border-box;
 }
 
-main{
+body{
   text-align: center;
-  max-width: 960px;
   margin:0 auto;
+  font-family: 'DM Sans', sans-serif;
+  color: #051626;
 }
 
 section{
   margin-top: 3rem;
 }
+/*NAV MENU*/
+.nav{
+  padding: 30px 0 0 0;
+}
+.nav-menu{
+  float: left;
+  margin-left: 30px;
+}
+.nav-menu-item{
+  display: inline-block;
+  margin: 20px 0 0 0;
+  list-style: none;
+}
 
-.cursos div{
-  background-color: black;
+.nav a{
+  text-decoration: none;
   color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  padding:0.5rem 1rem;
+  transition: all 0.2s linear;
+  border-radius: 2px;
 }
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
+.nav a:hover{
+    background-color: rgba(70, 84, 95, 0.342);
+    color: #0ca78b;
 }
+/*BACKGROUND*/
+.header{
+  height: 720px;
+  width: 100%;
+  background: #283c86;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.wave{
+  position: absolute;
+  border-bottom: 100px;
+  width: 100%;
+}
+
+.letrasHead{
+  padding: 200px 0px 0 0;
+  color:#fff;
+  text-align: center;
+
+}
+
+
+.header p{
+  padding-top: 30px;
+
+}
+
+
+#codyV{    
+  width: 200px ;
+  margin:150px 0 0 0;
+  animation: cubic-bezier(0.215, 0.610, 0.355, 1) ease-in-out infinite;
+  -webkit-animation-name: tada;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  opacity: 80%;
+  cursor: pointer;
+}
+
+#codyV:hover{    
+  opacity: 100%; 
+}
+
+  @-webkit-keyframes tada {
+
+  
+  30%, 50%, 70%, 90% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  }
+  .tarjetas{
+    
+    display: inline-block;
+  }
+  .tarjetas section{
+    width: 350px;
+    max-width:100% ;
+    height: 480px;
+    border-radius: 40px;
+    padding: 20px;
+    margin:50px 50px 0 0;
+    float: left;
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: lavenderblush;box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transform: scale(1);
+    transition: transform 2s cubic-bezier(0, 1, 0, 1);
+  }
+  .tarjetas section:hover{
+    transform: scale(1.1); /* This adds a hover effect */
+    transition: transform .2s cubic-bezier(0, 0.75, 0, 1);
+  }
+  .tarjetas section:nth-child(2n) {
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 50px;
+  }
+  .tarjetas section:nth-child(3n){
+    background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    padding: 50px;
+  }
+  .tarjetas header{
+    padding-bottom: 15px;
+  }
+  .cursos a{
+    margin: 3px;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+
 ul li{
   text-align: left;
 }
+
 ul li::marker {
   content: "🚀";
 }
 
 ol li{
-  text-align: left;
+  text-align: center;
+}
+
+.h1{
+  font-family: IBM Plex Sans;
+  font-weight: 700;
+}
+.h4{
+  font-size: 18px;
+}
+.f-text-48 {
+  font-size: 48px !important;
+}
+.no-margin:not(.row) {
+  margin: 0 !important;
+}
+.rb-normal {
+  font-weight: 400 !important;
+}
+.f-grey-dark-text {
+  color: #486076;
+}
+.f-main-btn {
+  color: var(--color) !important;
+  background-color: var(--bg-color);
+  border: solid 1px var(--bg-color);
+}
+.f-main-btn {
+  border-radius: 20px;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5em;
+  --bg-color: #5BCC85;
+  --color: white;
+}
+.f-main-btn:hover {
+  color: var(--bg-color) !important;
+  background-color: var(--color);
+}
+img {
+  max-width: 100%;
+}
+a, a:visited, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.rb-normal {
+  font-weight: 400 !important;
+}
+
+.f-darker {
+  background-color: #051626;
+  color: #fff;
+}
+.f-padding-100-y {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.f-text-28 {
+  font-size: 28px !important;
+}
+.f-text-22 {
+  font-size: 22px !important;
+}
+.f-main-btn.verano-btn {
+  --bg-color: #FD585F;
+}
+.f-main-btn:hover {
+  color: var(--bg-color) !important;
+  background-color: var(--color);
+}
+.f-main-btn {
+  transition: .1s ease-in all;
+}
+.mySlides {
+  display:none;
+  height: 600px;
+  max-width: 100%;
+}
+.sliders{
+  padding:50px 0;
+}
+.imagenes{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+}
+.slider-inicio{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+  rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.importVac{
+  padding: 100px;
+}
+.importVac p{
+  font-size: 18px;
+  padding: 2px 0;
+}
+.importVac h2{
+  font-size: 40px;
+}
+.importVac ol {
+  padding: 10px ;
+  font-size: 26px;
 }
