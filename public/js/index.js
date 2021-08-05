@@ -11,7 +11,6 @@ const logo_icon = document.querySelector(".logo-nav-bar > img");
 const footer = document.querySelector("footer");
 const page_loader = document.querySelector(".page-loader");
 const float_btn = document.querySelector(".theme-float-btn");
-const theme_switch = document.querySelector(".theme-float-btn");
 const toggleSwitch = document.querySelector(
   '.theme-switch input[type="checkbox"]'
 );
@@ -40,8 +39,8 @@ window.addEventListener(
       page_loader.style.display = "none";
     }, 1000);
 
-    float_btn.checked = isDarkTheme;
-    switchTheme.checked = isDarkTheme;
+    toggleSwitch.checked = isDarkTheme;
+    togglefloat_btn.checked = isDarkTheme;
   },
   false
 );
