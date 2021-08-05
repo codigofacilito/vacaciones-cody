@@ -132,6 +132,7 @@ img {
 }
 
 .container-slide {
+  margin-top: 2rem;
   position: relative;
   max-width: 1000px;
   width: 85%;
@@ -338,6 +339,20 @@ input[id="6"]:checked ~ .pagination .pagination-item[for="6"] {
   100% {
     transform: translate3d(calc(-100% * 5), 0, 0);
   }
+}
+
+.frase {
+  width: auto;
+  margin-top: 2rem;
+  text-align: cneter;
+  font-size: 25px;
+}
+
+.autor {
+  max-width: 85%;
+  text-align: end;
+  margin-top: 1rem;
+  font-size: 20px;
 }
 
 .footer {
