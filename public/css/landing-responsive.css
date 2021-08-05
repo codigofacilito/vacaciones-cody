@@ -1,0 +1,117 @@
+/* Tablets: */
+
+@media screen and (min-width: 768px) {
+  /* Header */
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .info {
+    max-inline-size: 375px;
+  }
+
+  .cody {
+    inline-size: 40%;
+    block-size: 40%;
+    margin: 0;
+    transform: none;
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  /* Vacations section and footer */
+
+  body {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  footer {
+    justify-content: space-between;
+  }
+}
+
+/* Laptops: */
+
+@media screen and (min-width: 1024px) {
+  /* Header */
+
+  body {
+    padding-inline: 100px;
+  }
+
+  .sun {
+  display: block;
+  inset-inline-end: -8%;
+  inset-block-start: -25%;
+  inline-size: 30vw;
+  block-size: 30vw;
+  box-shadow: -10px 8px .5px rgba(234, 184, 57, .35);
+  }
+
+  .page {
+    font-size: 2.5vw;
+  }
+
+  .navbar {
+    justify-content: flex-start;
+    block-size: 17.5vh;
+    max-block-size: 130px;
+  }
+
+  .present,
+  .title {
+    margin-block: 15px;
+  }
+
+  .title {
+    font-size: 3vw;
+    margin-block-end: 30px;
+  }
+
+  .info {
+    font-size: 18px;
+    max-inline-size: 450px;
+    line-height: 35px;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+
+  .bird-1,
+  .bird-2 {
+    display: block;
+  }
+
+  /* Vacactions, goals and marketing sections */
+
+  body {
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .market-link {
+    display: block;
+  }
+
+  .flex-container-2 {
+    inline-size: 100%;
+  }
+
+  .curso {
+    inline-size: 45%;
+  }
+
+  .flex-container {
+    gap: 20px;
+  }
+}

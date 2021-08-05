@@ -6,24 +6,25 @@
 }
 
 .present {
-  font-size: 24px;
+  font-size: calc(.75vw + 12px);
 }
 
 .title {
-  font-size: 48px;
-  margin-bottom: 40px;
-  line-height: 60px;
+  font-size: calc(.74vw + 24px);
+  line-height: 25px;
 }
 
-.info {
-  max-inline-size: 375px;
-  margin-bottom: 20px;
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .cta-1,
 .cta-2 {
   text-decoration: none;
-  width: 100%;
+  inline-size: auto;
+  /* max-inline-size: 150px; */
   font-size: 14px;
   font-weight: 700;
   padding: 13px 24px;
@@ -43,7 +44,9 @@
 
 .container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  gap: 15px;
   padding: 5% 0;
 }
 
@@ -52,26 +55,29 @@
 }
 
 .bird-1 {
+  display: none;
   position: absolute;
-  inset-inline-end: -50px;
+  inset-inline-end: -65px;
   inset-block-end: 150px;
 }
 
 .bird-2 {
+  display: none;
   position: absolute;
-  inset-inline-end: 30px;
+  inset-inline-end: 15px;
   inset-block-end: 200px;
 }
 
 .cody {
-  inline-size: 30vw;
-  padding-top: 85px; 
+  margin-inline: 50%;
+  transform:translateX(-50%);
+  inline-size: 80%;
 }
 
 /* Vacactions, goals and marketing sections */
 
 .section-title {
-  font-size: 36px;
+  font-size: 20px;
   text-align: center;
   color: var(--primary);
   font-weight: 700;
@@ -80,22 +86,27 @@
 
 .cursos {
   display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 60px;
+  gap: 15px;
 }
 
 .curso {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 5px;
   text-decoration: none;
   font-size: 15px;
-  font-weight: 700;
   color: var(--white);
   max-inline-size: 300px;
   border: 3px solid black;
   border-radius: 15px;
   text-align: center;
   letter-spacing: .5px;
-  background-image: linear-gradient(75deg, var(--primary) 0%, var(--background) 30%);
+  /* background-image: linear-gradient(45deg, var(--background) 15%, var(--primary) 100%); */
 }
 
 .curso p {
@@ -114,12 +125,12 @@
 }
 
 .curso:hover {
-  background-image: linear-gradient(75deg, var(--primary) 0%, var(--primary) 60%);
+  /* background-image: linear-gradient(75deg, var(--primary) 0%, var(--primary) 60%); */
 }
 
 .list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 ul {
@@ -133,26 +144,36 @@ ul li::marker {
   content: "🚀";
 }
 
-.market {
-  inline-size: 375px;
-  background-color: var(--white);
-  border-radius: 15px;
-  padding: 25px 30px;
-}
-
 .market-link {
+  display: none;
   text-decoration: none;
   color: black;
+  inline-size: 30%;
+  max-inline-size: 300px;
+}
+
+.market {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 10px 15px;
+  block-size: 85vh;
+  max-block-size: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .logo,
 .coding {
   margin-inline: 50%;
   transform: translateX(-50%);
+  inline-size: 100%;
 }
 
 .market p {
-  margin-block-end: 0;
+  margin-block: 0;
+  font-size: 14px;
+  line-height: 25px;
 }
 
 .cta-market {
@@ -160,7 +181,7 @@ ul li::marker {
   color: white;
   border-radius: 30px;
   border: none;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   padding: 13px 24px;
   margin-block: 18px;
@@ -176,40 +197,68 @@ ul li::marker {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  margin: 16px 0;
 }
 
 .flex-container-2 {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 16px;
 }
 
+/* Vacations section and footer */
+
 .vacations {
-  margin-block: 60px;
+  margin-block: 16px;
 }
 
 .vacations img {
-  inline-size: 500px;
+  inline-size: 100%;
+  max-inline-size: 450px;
 }
 
-.vacations .flex-container {
-  justify-content: center;
+.flex-container-vacations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.flex-container ol {
+.flex-container-vacations ol {
   /* opacity: .35; */
   color: var(--primary);
   line-height: 35px;
-  margin-inline-start: 15%;
 }
 
-ol .active {
+/* ol .active {
   font-size: 20px;
-}
+} */
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-block-end: 10px;
+  gap: 15px;
+}
+
+.flex-container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex-container-footer p {
+  margin: 0;
+}
+
+.creator {
+  inline-size: 60px;
+}
+
+.flex-container-footer a {
+  inline-size: 45px;
+  block-size: 45px;
 }

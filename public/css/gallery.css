@@ -1,53 +1,57 @@
-img {
-  inline-size: 100%;
-  max-inline-size: 725px;
-}
-
-.description {
-  inline-size: 100%;
-  max-inline-size: 375px;
+body {
+  position: relative;
 }
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
-  align-items: center;
 }
 
-.container {
-  position: relative;
+.picture img {
+  inline-size: 100%;
+  max-inline-size: 500px;
+  margin: 0;
+}
+
+.description {
+  inline-size: 100%;
+  max-inline-size: 400px;
+  /* margin: 12px 50%;
+  transform: translateX(-50%) */
 }
 
 .location {
-  position: absolute;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  /* Fix it: */
-  inset-block-end: -175px;
-  inset-inline-start: 0;
 }
 
 .location img {
-  inline-size: 50px;
+  inline-size: 40px;
 }
 
 .location p {
-  font-size: 24px;
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: .15px;
   font-weight: bold;
 }
 
 .next {
   position: absolute;
+  inset-inline-end: 5%;
+  inset-block-end: -10px;
+  transform: translateY(100%);
+  inline-size: 60px;
+  block-size: 60px;
+  padding: 0;
   background-color: transparent;
   border: none;
-  inline-size: 60px;
-  inset-inline-end: 100px;
-  inset-block-start: calc(30vw - 30%);
   cursor: pointer;
-  z-index: 1;
 }
 
-.next:active {
-  transform: scale(.95);
+.next img {
+  inline-size: 100%;
 }

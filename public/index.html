@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width">
   <title>Mis vacaciones - Cody</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/landing.css">
+  <link rel="stylesheet" href="./css/landing-responsive.css">
 </head>
 <body>
   <div class="sun"></div>
   <header>
     <nav class="navbar">
-      <a href="index.html" class="current page">INICIO</a>
+      <a href="index.html" class="current-page page">INICIO</a>
       <a href="fotos.html" class="page">GALERÍA</a>
     </nav>
     <div class="container">
@@ -21,8 +23,10 @@
         <h1 class="title">Estas son mis Vacaciones</h1>
         <p class="info">En 2019 organicé un viaje para desestresarme del código y en esta página quiero compartirlo contigo.</p>
         <p class="info">Puedes ayudarme a mejorar mi página haciendo un fork y enviando un pull request. En Código Facilito hay un tutorial.</p>
-        <a class="cta-1" href="https://github.com/isaaleonardo/vacaciones-cody" target="_blank">IR AL REPOSITORIO</a>
-        <a class="cta-2" href="" target="_blank">VER TUTORIAL</a>
+        <div class="buttons">
+          <a class="cta-1" href="https://github.com/isaaleonardo/vacaciones-cody" target="_blank">IR AL REPOSITORIO</a>
+          <a class="cta-2" href="https://www.youtube.com/watch?v=xdCl0Wut-IA&pp=sAQA" target="_blank">VER TUTORIAL</a>
+        </div>
         <img src="./images/bird.png" class="bird-1">
         <img src="./images/bird.png" class="bird-2">
       </div>
@@ -40,13 +44,17 @@
           <div class="cursos">
             <a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank" class="curso">
               <p>Curso Profesional de Desarrollo Web</p>
-              <img src="./images/globe.png">
-              <img src="./images/globe.png" class="img-2">
+              <div class="images">
+                <img src="./images/globe.png">
+                <img src="./images/globe.png" class="img-2">
+              </div>
             </a>
             <a href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank" class="curso">
               <p>Curso para crear mi primera página web</p>
-              <img src="./images/computer.png">
-              <img src="./images/computer.png" class="img-2">
+              <div class="images">
+                <img src="./images/computer.png">
+                <img src="./images/computer.png" class="img-2">
+              </div>
             </a>
           </div>
         </section>
@@ -82,10 +90,8 @@
         <h2 class="section-title">La Importancia de las Vacaciones</h2>
       </header>
       <p>¡Bien! Sé que estás aquí por mis vacaciones, así que aquí te comparto algunas fotos que tomé y los distintos beneficios que puede generar el descanso del código:</p>
-      <div class="flex-container">
+      <div class="flex-container-vacations">
         <img src="images/1.jpg" alt="Cody en la playa">
-        <!-- <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca"> -->
         <ol>
           <li class="active">Mejora la salud mental</li>
           <li>Incrementa la motivación</li>
@@ -96,14 +102,14 @@
     </section>
   </main>
   <footer>
-    <div class="flex-container">
-      <img src="./images/profile-pic.png" alt="Creator picture">
+    <div class="flex-container-footer">
+      <img src="./images/profile-pic.png" alt="Creator picture" class="creator">
       <p>Hecho por Isaac Leonardo M.</p>
     </div>
-    <div class="flex-container">
+    <div class="flex-container-footer">
       <p>@isaaleonardo</p>
       <a href="https://twitter.com/isaaleonardo">
-        <img src="./images/twitter.png" alt="Twitter icon">
+        <img src="./images/twitter.png" alt="Twitter icon" class="twitter">
       </a>
     </div>
   </footer>

@@ -8,11 +8,12 @@ html {
 
 body {
   margin: 0;
-  padding: 0 100px;
+  padding: 0 5%;
   background-color: var(--background);
   font-family: Poppins, sans-serif;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  line-height: 20px;
   color: var(--white);
   overflow-x: hidden;
 }
@@ -20,7 +21,7 @@ body {
 .page {
   color: var(--white);
   text-decoration: none;
-  font-size: 2.5vw;
+  font-size: calc(2.5vw + 12px);
   font-weight: bold;
 }
 
@@ -28,29 +29,24 @@ body {
   background-color: #1BBC9B;
 } */
 
-.current {
+.current-page {
   color: var(--primary);
 }
 
 .navbar {
-  block-size: 17.5vh;
-  min-block-size: 65px;
-  max-block-size: 130px;
+  block-size: 65px;
   display: flex;
   align-items: center;
-  gap: 75px;
+  justify-content: center;
+  gap: 5%;
 }
 
 .sun {
+  display: none;
   background-color: #EAD839;
   position: absolute;
-  inset-inline-end: -8%;
-  inset-block-start: -17.5%;
-  inline-size: 30vw;
-  block-size: 30vw;
   max-inline-size: 400px;
   max-block-size: 400px;
   border-radius: 50%;
-  box-shadow: -18px 12px .5px rgba(234, 184, 57, .35);
   z-index: -9;
 }

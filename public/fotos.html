@@ -7,39 +7,33 @@
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/gallery-responsive.css">
 </head>
 <body>
   <div class="sun"></div>
-  <button class="next">
-    <img src="./images/next.png" alt="">
-  </button>
-  <main>
-    <header>
-      <nav class="navbar">
-        <a href="index.html" class="page">INICIO</a>
-        <a href="fotos.html" class="current page">GALERÍA</a>
-      </nav>
-      <h1 hidden>Galería completa de mis vacaciones</h1>
-    </header>
-    <div class="flex-container">
-      <div class="pictures">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <!-- <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <img src="images/4.jpg" alt="Cody en una alberca">
-        <img src="images/5.jpg" alt="Cody en una alberca">
-        <img src="images/6.jpg" alt="Cody en una alberca"> -->
-      </div>
-      <div class="container">
-        <p class="description">
-          Aquí me encuentro en una playa paradisiaca montando y manejando mi bicicleta. Cualquiera puede preguntarse por qué no me  bañaba en el mar, pero las personas se podían asustar si veían un cocodrilo como yo nadando cerca de ellos.
-        </p>
-        <div class="location">
-          <img src="./images/location.png" alt="Location Icon">
-          <p>Los Roques, Venezuela</p>
-        </div>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="page">INICIO</a>
+      <a href="fotos.html" class="current-page page">GALERÍA</a>
+    </nav>
+    <h1 hidden>Galería completa de mis vacaciones</h1>
+  </header>
+  <main class="flex-container">
+    <div class="picture">
+      <img src="images/1.jpg" alt="Cody en la playa">
+    </div>
+    <div class="container">
+      <p class="description">
+        Aquí me encuentro en una playa paradisiaca montando una bicicleta. Cualquiera puede preguntarse por qué no me  bañaba en el mar, pero es que las personas se podían asustar si veían un cocodrilo como yo nadando cerca de ellos.
+      </p>
+      <div class="location">
+        <img src="./images/location.png" alt="Location Icon">
+        <p>Los Roques, Venezuela</p>
       </div>
     </div>
+    <button class="next" title="Siguiente Foto">
+      <img src="./images/next.png" alt="next button">
+    </button>
   </main>
 </body>
 </html>
