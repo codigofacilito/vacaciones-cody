@@ -1,29 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <main>
-    <header>
+    <header class="hero">
+      <video autoplay loop muted>
+        <source src="./videos/bleach-cody.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-card">
+        <img class="card-palm d-none d-lg-block" src="./images/cody/palm-cody.png" alt="">
+        <div class="card-body">
+          <h1>Mis <br class="d-md-none"> vacaciones</h1>
+          <h2>¡Hola amigos!</h2>
+          <p>Soy Cody, un aspirante a Dev. En 2019, organicé un viaje para desestresarme del código, y en esta página
+            quiero
+            compartirlo contigo.</p>
+          <button>Mira mis FrontendVenturas <img src="./images/icons/arrow.svg" alt=""></button>
+        </div>
+        <img class="card-cody" src="./images/cody/cody-hero.png" alt="">
+      </div>
+    </header>
+
+    <section class="container-fluid my-learning">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+            <h3>Mi verano de <br> aprendizaje</h3>
+            <p>
+              Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje,
+              estuve
+              aprendiendo <strong>HTML</strong>, <strong>CSS</strong>, y <strong>JavaScript</strong>
+            </p>
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <img src="./images/cody/cody_teacnologias.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid my-adventures">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-column align-items-center">
+            <h3>Mis Frontendventuras en <br> Código Facilito</h3>
+            <p>
+              Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías
+              frontend,
+              construyendo esta página.
+              <br><br>
+              Estos son los cursos que estuve tomando:
+            </p>
+          </div>
+          <div class="col-12 d-flex justify-content-center devices-courses">
+            <article class="device d-lg-none">
+              <img src="./images/cody/mobile-cody.svg" alt="">
+              <section class="call-to-action">
+                <a class="btn-facilito" href="#">ir al curso <img src="./images/icons/arrow.svg" alt=""></a>
+                <a class="btn-facilito" href="#">ir al curso <img src="./images/icons/arrow.svg" alt=""></a>
+              </section>
+            </article>
+            <article class="device d-none d-lg-block">
+              <img src="./images/cody/desktop-cody.svg" alt="">
+              <section class="call-to-action">
+                <a class="btn-facilito" href="#">ir al curso <img src="./images/icons/arrow.svg" alt=""></a>
+                <a class="btn-facilito" href="#">ir al curso <img src="./images/icons/arrow.svg" alt=""></a>
+              </section>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid learning-path">
+      <div class="row">
+        <div class="col-12 d-flex flex-column align-items-center">
+          <h3>Ruta de <br> aprendizaje 2021</h3>
+          <p>También me propuse aprender nuevas tecnologías durante 2021</p>
+        </div>
+        <div class="col-12 paths">
+          <section class="topics">
+            <article class="topic">
+              <img src="./images/topics/01-topic.svg" alt="">
+              <p>Flexbox, y <br> Grid</p>
+            </article>
+            <article class="topic">
+              <img src="./images/topics/02-topic.svg" alt="">
+              <p>Animaciones <br> CSS y JavaScript</p>
+            </article>
+            <article class="topic">
+              <img src="./images/topics/03-topic.svg" alt="">
+              <p>AJAX</p>
+            </article>
+            <article class="topic">
+              <img src="./images/topics/04-topic.svg" alt="">
+              <p>HTML <br> semántico</p>
+            </article>
+            <article class="topic">
+              <img src="./images/topics/05-topic.svg" alt="">
+              <p>React</p>
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid collaborate-us">
+      <div class="row">
+        <div class="col-12">
+          <h3>Colabora en <br> mi página</h3>
+          <p>
+            Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a
+            GitHub
+          </p>
+        </div>
+        <div class="col-12 d-flex justify-content-center collaborate">
+          <article class="card-git-hub">
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+              <img src="./images/icons/git_github.svg" alt="">
+              <p class="text-center text-lg-start">Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y
+                enviando un
+                pull request.</p>
+            </div>
+            <p>
+              Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
+            </p>
+            <a href="#">Mira el tutorial <img src="./images/icons/arrow-green.svg" alt=""></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid important-vacations">
+      <div class="row">
+        <div class="col-12">
+          <h3>La importancia de <br> las vacaciones</h3>
+          <p>Durante mis vacaciones aprendí que existen <br> distintos beneficios de descansar:</p>
+        </div>
+        <div class="col-12 ">
+          <section class="items-important">
+            <article class="important">
+              <img src="./images/important/01-important.svg" alt="">
+              <p>Mejora la salud <br> mental</p>
+            </article>
+            <article class="important">
+              <p>Incrementa la <br> motivación</p>
+              <img src="./images/important/02-important.svg" alt="">
+            </article>
+            <article class="important">
+              <img src="./images/important/03-important.svg" alt="">
+              <p>Reduce el <br> burnout</p>
+            </article>
+            <article class="important">
+              <p>Mejora tu <br> creatividad</p>
+              <img src="./images/important/04-important.svg" alt="">
+            </article>
+          </section>
+        </div>
+        <div class="col-12">
+          <p>Aprender a programar y escribir código, puede ser estresante,<br> por eso es muy importante que
+            periódicamente
+            nos<br>
+            desconectemos y descansemos apropiadamente</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+
+        </div>
+        <div class="col-12">
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid footer">
+      <div class="row">
+        <div class="col-12">
+          <p>Hecho con ❤️ por Fernanda Palacios</p>
+          <h2>¡Arriba Chiapas!</h2>
+          <a href="#"><img src="./images/icons/github.svg" alt=""> @EveFer</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- <header>
       <nav>
         <a href="/">Inicio</a>
         <a href="fotos.html">Fotos</a>
       </nav>
       <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero
+        compartirlo contigo.</p>
     </header>
 
     <section>
       <header>
         <h2>Mis vacaciones Frontend</h2>
       </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve
+        aprendiendo HTML, CSS, y JavaScript </p>
+      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías
+        frontend, construyendo esta página </p>
       <p> Estos son los cursos que estuve tomando </p>
       <div class="cursos">
         <div>
@@ -60,7 +258,7 @@
       </p>
       <p>
         Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+        <a href="" target="_blank">Ir al tutorial</a>
 
       </p>
     </section>
@@ -83,7 +281,8 @@
     <section>
       <header>
         <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente
+          nos desconectemos y descansemos apropiadamente</p>
         <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
         <ol>
           <li>Mejora la salud mental</li>
@@ -92,9 +291,18 @@
           <li>Mejora tu productividad y creatividad</li>
         </ol>
       </header>
-      
-    </section>
-    
+
+    </section> -->
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
