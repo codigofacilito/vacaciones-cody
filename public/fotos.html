@@ -1,34 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
+  <title>Mis vacaciones - Galería</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <main>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+      <nav class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Mis vacaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="fotos.html">Fotos</a>
+          </li>
+        </ul>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
       
-    </div>
+    </header>
+    <div class="container text-center">
+      <h2 class="display-3">Galería completa de mis vacaciones</h2>
+      <div class="row">
+        <div class="  col-md-3 px-3 py-3 ">
+          <div class="card" >
+            <img src="images/1.jpg" class="card-img-top" alt="Cody en la playa">
+            <div class="card-body">
+              <h5 class="card-title">Cody en la playa</h5>
+              <button type="button" class="btn btn-success bg-green-2" data-bs-toggle="modal" data-bs-target="#Modal1">
+                Ver
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="  col-md-3 px-3 py-3 ">
+          <div class="card" >
+            <img src="images/2.jpg" class="card-img-top" alt="Cody acampando">
+            <div class="card-body">
+              <h5 class="card-title">Cody acampando</h5>
+              <button type="button" class="btn btn-success bg-green-2" data-bs-toggle="modal" data-bs-target="#Modal2">
+                Ver
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="  col-md-3 px-3 py-3 ">
+          <div class="card">
+            <img src="images/3.jpg" class="card-img-top" alt="Cody en la alberca">
+            <div class="card-body">
+              <h5 class="card-title">Cody en la alberca</h5>
+              <button type="button" class="btn btn-success bg-green-2" data-bs-toggle="modal" data-bs-target="#Modal3">
+                Ver
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="  col-md-3 px-3 py-3 ">
+          <div class="card">
+            <img src="images/4.jpg" class="card-img-top" alt="Cody tomando el sol">
+            <div class="card-body">
+              <h5 class="card-title">Cody tomando el sol</h5>
+              <button type="button" class="btn btn-success bg-green-2" data-bs-toggle="modal" data-bs-target="#Modal4">
+                Ver
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="  col-md-3 px-3 py-3 ">
+          <div class="card">
+            <img src="images/5.jpg" class="card-img-top" alt="Cody de paseo">
+            <div class="card-body">
+              <h5 class="card-title">Cody de paseo</h5>
+              <button type="button" class="btn btn-success bg-green-2" data-bs-toggle="modal" data-bs-target="#Modal5">
+                Ver
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="  col-md-3 px-3 py-3 px">
+          <div class="card">
+            <img src="images/6.jpg" class="card-img-top" alt="Cody en la oficina">
+            <div class="card-body">
+              <h5 class="card-title">Cody en la oficina</h5>
+              <button type="button" class="btn btn-success bg-green-2" data-bs-toggle="modal" data-bs-target="#Modal6">
+                Ver
+              </button>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+    <!-- Button trigger modal -->
 
+<!-- Modal -->
+<div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cody en la playa</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/1.jpg" class="img-fluid" alt="Cody en la playa">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cody acampando</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/2.jpg" class="img-fluid" alt="Cody acampando">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cody en la alberca</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/3.jpg" class="img-fluid" alt="Cody en la alberca">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cody tomando el sol</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/4.jpg" class="img-fluid" alt="Cody tomando el sol">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cody de paseo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/5.jpg" class="img-fluid" alt="Cody de paseo">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cody en la oficina</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/6.jpg" class="img-fluid" alt="Cody en la oficina">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   </main>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
