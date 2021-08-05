@@ -11,12 +11,43 @@ nav {
 nav ul a {
   color: #000;
 }
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  border-radius: 20px;
+}
+.carousel {
+  height: 900px !important;
+  top: -310px !important;
+}
+.carousel-item {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.carousel-item img {
+  width: auto !important;
+  height: 550px !important;
+}
 .brand-logo {
   margin-left: 1rem;
   width: 4.2rem;
 }
+.spacer {
+  margin-bottom: 300px;
+}
 .imgTitulo {
   border: 20px solid #ffffff;
+}
+.franja {
+  background-color: rgba(1, 87, 155, 1);
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
 }
 #app {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
@@ -27,11 +58,11 @@ nav ul a {
   width: 100%;
   text-align: center;
   padding: 20px;
-  color: #2e4069;
+  color: #ffffff;
 }
 .cajaTexto1 p {
   font-size: 20px;
-  color: #2e4069;
+  color: #ffffff;
   font-size: 1.75rem;
   font-weight: 400;
   line-height: 1.8;
@@ -41,8 +72,10 @@ nav ul a {
   opacity: 0;
   border-radius: 20px;
   width: 100%;
-  padding: 20px;
+  padding: 40px !important;
+  margin-top: 30px;
   color: #2e4069;
+  background-color: #00a6ff;
 }
 .cajaTexto3 {
   opacity: 0;

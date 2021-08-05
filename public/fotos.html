@@ -1,34 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mis fotos</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <main>
+      <header>
+        <div class="navbar-fixed">
+          <nav>
+            <div class="nav-wrapper container">
+              <a href="/" class="brand-logo"><img src="images/100.png" alt="" class="circle responsive-img" /></a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="/" class="btn-small waves-effect waves-yellow amber darken-3">Inicio</a></li>
+                <li><a href="fotos.html" class="btn-small waves-effect waves-yellow amber darken-3">Fotos</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
 
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="fotos.html">Fotos</a></li>
+        </ul>
+      </header>
+      <br />
+      <div class="franja"></div>
 
-  </main>
-</body>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center-align cajaTexto1">
+            <h2>Galería completa de mis vacaciones</h2>
+            <br />
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="carousel">
+        <a class="carousel-item" ><img src="images/1.jpg" alt="Cody en la playa" /></a>
+        <a class="carousel-item" ><img src="images/2.jpg" alt="Cody acampando" /></a>
+        <a class="carousel-item" ><img src="images/3.jpg" alt="Cody en una alberca" /></a>
+        <a class="carousel-item" ><img src="images/4.jpg" alt="Cody en una alberca" /></a>
+        <a class="carousel-item" ><img src="images/5.jpg" alt="Cody en una alberca" /></a>
+        <a class="carousel-item" ><img src="images/6.jpg" alt="Cody en una alberca" /></a>
+      </div>
+    </main>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="js/anime.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var elems = document.querySelectorAll(".carousel");
+      var instances = M.Carousel.init(elems,{
+        dist:-100
+      });
 
+    });
+  </script>
 </html>
