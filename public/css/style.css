@@ -2,7 +2,7 @@
 
 
 body {
-  background-image: url("/public/images/wave-4.svg");
+  background-image: url("images/wave-4.svg");
   background-repeat: no-repeat;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
