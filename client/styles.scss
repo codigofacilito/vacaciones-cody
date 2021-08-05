@@ -1,22 +1,10 @@
+@use './waves.scss';
+
 body {
   margin: 0;
-  background-color: #f5f5f5;
   * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Lato", sans-serif;
   }
-}
-
-.cursos div {
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-
-.fotos img {
-  max-width: 450px;
-  display: inline-block;
 }
 
 ul li {
@@ -31,34 +19,23 @@ ol li {
   text-align: left;
 }
 
-.top-space {
-  padding-top: 100px;
-}
-
-footer {
-  background-image: url(images/footer.svg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
 .siteNavbar {
   top: 0;
+  z-index: 1;
   width: 100%;
   position: fixed;
   transition: all 200ms ease 0s;
-  &[down=true] {
+  &[down="true"] {
     background-color: white;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 5%);
   }
-  section {
+  &[down="false"] {
+    @media (min-width: 768px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  .navItems {
     width: 90%;
     display: flex;
     margin: 0 auto;
@@ -79,13 +56,74 @@ footer {
     padding: 10px;
     color: white;
     cursor: pointer;
-    background: #5CB3FF;
+    background: #5cb3ff;
     border-radius: inherit;
     transition: all 500ms ease 0s;
     &:hover {
       color: white;
-      background: #F66D65;
+      background: #f66d65;
       text-decoration: none;
     }
   }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  @media (max-width: 768px) {
+    flex: 100%;
+  }
+}
+
+section {
+  margin: 0 auto;
+  width: 80%;
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+
+.grayBox {
+  margin: 10px 10%;
+  padding: 5px 15px;
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  @media (max-width: 768px) {
+    margin: 10px;
+  }
+}
+
+.sliderBox {
+  margin: 10px 10%;
+  padding: 5px 35px;
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  @media (max-width: 768px) {
+    margin: 10px;
+  }
+  img {
+    height: 500px;
+  }
+}
+
+.fotos {
+  height: calc(100vh - 100px);
+  padding-top: 100px;
+  background: linear-gradient(60deg, #543ab7 0%, #00acc1 100%);
 }

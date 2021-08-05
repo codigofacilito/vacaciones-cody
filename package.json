@@ -13,6 +13,7 @@
     "nodemon": "^2.0.12"
   },
   "nodemonConfig": {
+    "delay": 500,
     "ext": "pug, scss, js, png, svg, ico, jpg, jpeg",
     "watch": [
       "*.js",

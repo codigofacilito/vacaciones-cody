@@ -3,47 +3,59 @@ include ./utils/mixins
 
 block content
   +navbar('Fotos', '/vacaciones-cody/fotos.html')
-  header.top-space
-    h1 Estas son mis Vacacioness
-    p Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.
+  +waves
   section
-    header
-      h2 Mis vacaciones Frontend
-    p Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript
-    p Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página
-    p Estos son los cursos que estuve tomando
-    .cursos
-      div
-        p Curso profesional de Desarrollo Web
-      div
-        p Curso para crear mi primera página web
+    .row
+      .column
+        header
+          h2 Mis vacaciones Frontend
+        p Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript
+        p Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página
+        p Estos son los cursos que estuve tomando:
+        ul
+          li Curso profesional de Desarrollo Web
+          li Curso para crear mi primera página web
+      .column
+        header
+          h2 Ruta de aprendizaje 2021
+        p También me propuse aprender nuevas tecnologías durante 2021
+        ul
+          li Flexbox, y Grid
+          li Animaciones con CSS y JavaScript
+          li AJAX
+          li HTML semántico
+          li ReactJS y Redux
+          li CSS Modules
+          li TypeScript
+          li Webpack
   section
-    header
-      h2 Ruta de aprendizaje 2021
-      p También me propuse aprender nuevas tecnologías durante 2021
-    ul
-      li Flexbox, y Grid
-      li Animaciones con CSS y JavaScript
-      li AJAX
-      li HTML semántico
-      li Entre otros
-  section
-    header
-      h2 Colabora en mi página
-    p Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-    p Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-    p Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-      a(href='' target='_blank') Ir al tutorial
+    .grayBox
+      header
+        h2 Colabora en mi página
+      p Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
+      p Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+      p Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica:&nbsp;
+        a(href='https://docs.github.com/es/get-started' target='_blank') Ir al tutorial
   section
     header
       h2 Aquí te comparto algunas fotos de mis vacaciones
       p ¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:
-    .fotos
-      img(src='images/1.jpg' alt='Cody en la playa')
-      img(src='images/2.jpg' alt='Cody acampando')
-      img(src='images/3.jpg' alt='Cody en una alberca')
-      p Puedes ver más, en la galería de fotos de mi página
-        a(href='/fotos') Ir a la galería
+    .sliderBox
+      .glider-contain
+        .glider
+          div
+            img(src='images/1.jpg' alt='Cody en la playa')
+          div
+            img(src='images/2.jpg' alt='Cody acampando')
+          div
+            img(src='images/3.jpg' alt='Cody en una alberca')
+          div
+            p(style='padding-top: 25%;') Puedes ver más, en la galería de fotos de mi página
+              a(href='/vacaciones-cody/fotos.html') Ir a la galería
+        button.glider-prev(aria-label='Previous') &laquo;
+        button.glider-next(aria-label='Next') &raquo;
+        .dots(role='tablist')
+
   section
     header
       h2 La importancia de las vacaciones
@@ -54,4 +66,4 @@ block content
         li Incrementa la motivación
         li Reduce el burnout
         li Mejora tu productividad y creatividad
-  footer.container-fluid
+        li Reduce el estrés

@@ -1,8 +1,27 @@
 mixin navbar(pageName, pageHref)
   nav.siteNavbar
-    section
+    .navItems
       span
         a(href='#')
           img(src="images/navbar.png" alt="logo-not-found" height="40")
       a(href=pageHref)
         button= pageName
+
+mixin waves()
+  .header
+    .inner-header.flex
+      div.mainJumboPadding
+        img(src="images/coding.svg" alt="logo-not-found" height="250")
+        h1 Estas son mis Vacaciones
+        p.pageSubtitleWhite Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.
+    div
+      svg.waves(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 24 150 28' preserveaspectratio='none' shape-rendering='auto')
+        defs
+          path#gentle-wave(d='M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z')
+        g.parallax
+          use(xlink:href='#gentle-wave' x='48' y='0' fill='rgba(255,255,255,0.7')
+          use(xlink:href='#gentle-wave' x='48' y='3' fill='rgba(255,255,255,0.5)')
+          use(xlink:href='#gentle-wave' x='48' y='5' fill='rgba(255,255,255,0.3)')
+          use(xlink:href='#gentle-wave' x='48' y='7' fill='#fff')
+  .content.flex
+    p @LuisEnMarroquin | 2021 | #VeranoFrontend

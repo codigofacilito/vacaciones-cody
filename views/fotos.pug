@@ -3,12 +3,27 @@ include ./utils/mixins
 
 block content
   +navbar('Inicio', '/vacaciones-cody')
-  header
-    h2 Galería completa de mis vacaciones
   .fotos
-    img(src='images/1.jpg' alt='Cody en la playa')
-    img(src='images/2.jpg' alt='Cody acampando')
-    img(src='images/3.jpg' alt='Cody en una alberca')
-    img(src='images/4.jpg' alt='Cody en una alberca 2')
-    img(src='images/5.jpg' alt='Cody en una alberca 3')
-    img(src='images/6.jpg' alt='Cody en una alberca 4')
+    section
+      header
+        h2 Galería completa de mis vacaciones
+    div
+      section
+        .sliderBox
+          .glider-contain
+            .glider
+              div
+                img(src='images/1.jpg' alt='Cody en la playa')
+              div
+                img(src='images/2.jpg' alt='Cody acampando')
+              div
+                img(src='images/3.jpg' alt='Cody en una alberca')
+              div
+                img(src='images/4.jpg' alt='Cody en una alberca 2')
+              div
+                img(src='images/5.jpg' alt='Cody en una alberca 3')
+              div
+                img(src='images/6.jpg' alt='Cody en una alberca 4')
+            button.glider-prev(aria-label='Previous') &laquo;
+            button.glider-next(aria-label='Next') &raquo;
+            .dots(role='tablist')

@@ -9,11 +9,8 @@ html(lang='es')
     meta(name='apple-mobile-web-app-capable' content='yes')
     meta(content='website' property='og:type')
     title Mis vacaciones
-    //- Google Fonts
+    //- My styles
     link(rel='stylesheet' href='styles.css')
-    link(rel='preconnect' href='https://fonts.googleapis.com')
-    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
-    link(href='https://fonts.googleapis.com/css2?family=Open+Sans&display=swap' rel='stylesheet')
     //- Robot info
     meta(content='Mis Vacaciones LuisEnMarroquin' property='og:title')
     meta(content='Este verano domina HTML, CSS, JavaScript, React, Vue, y más' property='og:description')
@@ -42,6 +39,8 @@ html(lang='es')
     link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
     //- App manifest
     link(href='manifest.json' rel='manifest')
+    //- Slider
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css')
   body
     block content
     script.
@@ -52,3 +51,18 @@ html(lang='es')
       }
       document.addEventListener("scroll", useScroll)
       useScroll()
+    //- Slider
+    script(src='https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js')
+    script.
+      window.addEventListener('load', function(){
+        new Glider(document.querySelector('.glider'), {
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          draggable: true,
+          dots: '.dots',
+          arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+          }
+        })
+      })
