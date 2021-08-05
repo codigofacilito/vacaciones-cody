@@ -7,6 +7,9 @@ I have been looking for projects because practice makes the master and [Código 
 
 For the Challenge I had to fork Cody's website and make changes to it 🐊.
 
+![image](https://user-images.githubusercontent.com/81619759/128363332-6254bf58-ec43-431a-9366-0d174887b566.png)
+
+
 ## Initial Requirements 📋
 
 - Original code must be forked
