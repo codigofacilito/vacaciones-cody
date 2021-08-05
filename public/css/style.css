@@ -6,34 +6,49 @@
 .header_1 {
   display: grid;
   grid-template-rows: 40px 200px;
+  background-color: rgb(243, 159, 176);
+}
+.header_2 {
+  display: grid;
+  grid-template-rows: 40px 140px;
+  background-color: rgb(255, 242, 187);
 }
 nav{
   background-color:antiquewhite;
   text-align:right;
-  margin: 0px 50px 0px 0px;
 
 }
-.boton_header{
+.boton_header_1 {
   text-decoration: none;
   background-color: blueviolet;
-  margin: 0px 0px 0px 0px;
+  margin-right: 0px;
   padding: 11px 9px 11px 9px;
   border-radius: 100px;
   line-height: 90px;
 }
-.header-1-inicio{
-  text-align: center;
+.boton_header_2 {
+  text-decoration: none;
+  background-color: blueviolet;
+  margin-right: 60px;
+  padding: 11px 9px 11px 9px;
+  border-radius: 100px;
+  line-height: 90px;
+}
+.header-1-titulo-intro div{
   max-width: 460px;
-  margin: auto;
+  margin: 0px auto;
+
 }
-.header-1-inicio h1{
+.header-1-titulo-intro h1{
+  padding: 20px 0px 40px 0px;
   text-align: center;
-  margin: 20px;
+  background-color: rgb(212, 223, 243);
 }
-.header-1-inicio p{
+.header-1-titulo-intro p{
+  background-color: rgb(220, 242, 243);
   text-align: center;
-  margin: 20px;
 }
+
 /*
 main{
   text-align: center;
