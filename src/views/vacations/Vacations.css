@@ -1,0 +1,53 @@
+.Vacations__body{
+  margin-bottom: 4rem;
+}
+
+.Vacations__container{
+
+}
+.Vacations__container img{
+  width: 40%;
+}
+
+.Vacations__route-learn {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+  list-style-type: none;
+}
+
+.Vacations__route-learn li {
+  padding: 1rem 1rem;
+  border-radius: var(--rounded-radius);
+  background: whitesmoke;
+  text-align: left;
+  box-shadow: 0 3px 10px 0 lightgrey;
+}
+
+.Vacations__route-learn li div {
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.Vacations__route-learn li div img {
+  width: 2.5rem;
+  margin-right: .5rem;
+}
+
+.Vacations__courses {
+  background: whitesmoke;
+  border-radius: var(--rounded-radius);
+  padding: 1rem;
+}
+
+.Vacations__courses {
+
+}
+
+@media only screen and (max-width: 768px) {
+  .Vacations__container{
+    flex-direction: column;
+  }
+
+}

@@ -1,0 +1,47 @@
+.fotos {
+  display: grid;
+  padding: 2rem 0rem;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.fotos img {
+  width: 100%;
+  border: 1px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px 0 lightgrey;
+}
+
+.fotos div{
+border-radius: 15px;
+  box-shadow: 0 3px 10px 0 lightgrey;
+  padding: 0;
+}
+.fotos div p{
+  padding: 0rem 1rem;
+}
+
+.fotos .animation1 {
+  animation: translateImage 5s linear infinite;
+}
+
+.fotos .animation2 {
+  animation: translateImageReverse 5s linear infinite;
+}
+
+@keyframes translateImage {
+  0%, 100% {
+    transform: translate(0, -.5rem);
+  }
+  50% {
+    transform: translate(0, .5rem);
+  }
+}
+@keyframes translateImageReverse {
+  0%, 100% {
+    transform: translate(0, .5rem);
+  }
+  50% {
+    transform: translate(0, -.5rem);
+  }
+}
