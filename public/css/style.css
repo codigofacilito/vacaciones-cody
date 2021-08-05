@@ -7,6 +7,7 @@
     --button-text: bold 24px/18px var(--font);
     --button-text-mobile: bold 17px/18px var(--font);
     --background-body: #E5E5E5;
+    --progress-color: #ffcb01;
     --green80: #087146;
     --green70: #11956E;
     --green40: #33A677;
@@ -33,6 +34,16 @@ body {
     margin: 0;
     font-family: 'Roboto Slab', serif;
     background: var(--white90);
+}
+
+.progress-indicator {
+    background: linear-gradient(to right, var(--progress-color) var(--scroll), transparent 0);
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    top: 80px;
+    height: 5px;
+    z-index: 99999;
 }
 
 .z-index {
