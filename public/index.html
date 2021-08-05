@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
   <title>Mis vacaciones</title>
-
 </head>
 <body>
   <main>
@@ -14,7 +14,6 @@
       <nav class="navegacion">
         <a href="/">Inicio</a>
         <a href="fotos.html">Fotos</a>
-
       </nav>
       <div class="breve">
         <div class="colum-1">
@@ -29,7 +28,7 @@
 
     <section class="container-1">
       <header class="title">
-        <h2>Mis vacaciones Frontend</h2>
+        <h2 class="subt">Mis vacaciones Frontend<i class="em em-desert_island" aria-role="presentation" aria-label=""></i></h2>
       </header>
 
       <div class="content">
@@ -47,11 +46,12 @@
     </div>
     </section>
 
-    <section class="ruta">
+    <section class="aprendizaje">
       <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+        <h2 class="subt">Ruta de aprendizaje 2021</h2>
       </header>
+      <div class="ruta">
+        <p> También me propuse aprender nuevas tecnologías durante 2021 <i class="em em-arrow_right" aria-role="presentation" aria-label="BLACK RIGHTWARDS ARROW"></i></p>
       <ul>
         <li> Flexbox, y Grid </li>
         <li> Animaciones con CSS y JavaScript </li>
@@ -59,10 +59,12 @@
         <li> HTML semántico </li>
         <li> Entre otros </li>
       </ul>
+    </div>
+
     </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
+    <section class="mysite">
+      <header >
+        <h2 class="subt">Colabora en mi página</h2>
       </header>
       <p>
         Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
@@ -76,33 +78,57 @@
 
       </p>
     </section>
-    <section>
-      <header>
+    <section class="photos">
+      <header class="subtitle">
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
       </header>
+      <div class="contenedor">
       <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
+        <img class="img" src="images/1.jpg" alt="Cody en la playa">
+        <div class="overlay">
+          <div class="text">Una foto en la Playa</div>
+        </div>
       </div>
+
+      <div class="fotos">
+        <img class="img" src="images/2.jpg" alt="Cody acampando">
+        <div class="overlay">
+          <div class="text">Una de cuando acampé</div>
+        </div>
+      </div>
+
+      <div class="fotos">
+        <img class="img" src="images/3.jpg" alt="Cody en una alberca">
+        <div class="overlay">
+          <div class="text">Una foto en una alberca</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="galeria" >
+      <p>
+        Puedes ver más, en la galería de fotos de mi página
+        <a class="link-galeria" href="fotos.html">Ir a la galería <i class="em em-camera_with_flash" aria-role="presentation" aria-label="CAMERA WITH FLASH"></i></a>
+      </p>
+    </div>
     </section>
 
-    <section>
+    <section class="footer">
       <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+        <h2 class="importante">La importancia de las vacaciones</h2>
+        <div class="conclusion">
+          <div>
+        <p>Aprender a programar y escribir código, puede ser estresante, <br> por eso es muy importante que periódicamente <br> nos desconectemos y descansemos apropiadamente</p>
+        <p>Durante mis vacaciones aprendí <br> que existen distintos beneficios de descansar:</p>
+      </div>
         <ol>
           <li>Mejora la salud mental</li>
           <li>Incrementa la motivación</li>
           <li>Reduce el burnout</li>
           <li>Mejora tu productividad y creatividad</li>
         </ol>
+      </div>
       </header>
       
     </section>
