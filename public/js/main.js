@@ -9,7 +9,12 @@ var main = new Vue({
             {picture:"images/5.jpg", user:{name:"Cody", picture:"images/profile.jpg"}, description:"Modo incógnito", comments:0, likes:0, emojis:'<i class="em em-sleuth_or_spy" aria-role="presentation" aria-label=""></i>'},
             {picture:"images/6.jpg", user:{name:"Cody", picture:"images/profile.jpg"}, description:"Olvidé los audífonos en casa", comments:0, likes:0, emojis:'<i class="em em-face_with_symbols_on_mouth" aria-role="presentation" aria-label="SERIOUS FACE WITH SYMBOLS COVERING MOUTH"></i>'}
         ],
-        post:null
+        post:null,
+        stories:[
+            {title:"Mis vacaciones Frontend", picture:"images/profile.jpg", content:[{message:"", emojis:""}]},
+            {title:"Ruta de aprendizaje 2021", picture:"images/profile.jpg", content:[{message:"", emojis:""}]},
+            {title:"Importancia de las vacaciones", picture:"images/profile.jpg", content:[{message:"", emojis:""}]},
+        ]
     },
     mounted: function(){
 

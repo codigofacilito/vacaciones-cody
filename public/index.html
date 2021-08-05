@@ -83,17 +83,9 @@
       <div class="row">
         <div class="col-md-12">
           <div class="stories">
-            <div class="story" class="img-fluid" data-toggle="modal" data-target="#modalViewStories">
-              <img src="images/profile.jpg" width="70" height="70" class="img-fluid img-thumbnail rounded-circle">
-              <p>Mis vacaciones Frontend</p>
-            </div>
-            <div class="story">
-              <img src="images/profile.jpg" width="70" height="70" class="img-fluid img-thumbnail rounded-circle">
-              <p>Ruta de aprendizaje 2021</p>
-            </div>
-            <div class="story">
-              <img src="images/profile.jpg" width="70" height="70" class="img-fluid img-thumbnail rounded-circle">
-              <p>Importancia de las vacaciones</p>
+            <div class="story" class="img-fluid" v-for="story in stories" data-toggle="modal" data-target="#modalViewStories">
+              <img v-bind:src="story.picture" width="70" height="70" class="img-fluid img-thumbnail rounded-circle">
+              <p>{{story.title}}</p>
             </div>
           </div>
         </div>
