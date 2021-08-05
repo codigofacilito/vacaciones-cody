@@ -57,12 +57,41 @@ main{
 }
 */
 /* 4 secciones pertenecientes al main */
-.cursos div{
-  background-color: antiquewhite;
+
+/* Seccion donde ubico los aprendisajes de cody y los distribuyo
+en un solo section, un h2 y dos h3 */
+.seccion-1-sobre-aprendisaje {
+  background-color: rgb(255, 244, 146);
+  display: grid;
+  grid-template-columns: repeat(2,2fr) ;
+  grid-template-rows: repeat(2,2fr);
+}
+.seccion_1_conocimientos-0 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: rgb(255, 239, 202);
+}
+.seccion-1-conocimientos-1{
+  margin: auto;
+  background-color: rgb(245, 215, 215);
+}
+.seccion-1-conocimientos-2{
+  background-color: rgb(253, 190, 190);
+}
+.cursos {
   color: rgb(0, 0, 0);
   max-width: 200px;
-  display: inline-block;
+  margin: auto;
 }
+.cursos_1{
+  max-width: 120px;
+  background-color: rgb(255, 149, 11);
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+/* visualizacion del contenido de los section de apredisaje */
 
 .fotos_previsualizacion img{
   max-width: 300px;
@@ -78,7 +107,7 @@ main{
 ul li{
   text-align: left;
 }
- ul li::marker {
+ul li::marker {
   content: "🏖️";
 }
 
