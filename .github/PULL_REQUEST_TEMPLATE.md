@@ -7,7 +7,7 @@ Antes de enviar el pull request, lee estos detalles y completa tu información �
 
 ======================
 
-Además, completa tu información para poder contactarte, en caso de que necesitemos información adicional, o debamos informarte que has ganado alguno de los premios, coloca debajo tu: **Luis Sebastian Gonzalez Cordero**
+Además, completa tu información para poder contactarte, en caso de que necesitemos información adicional, o debamos informarte que has ganado alguno de los premios, coloca debajo tu:
 
 Nombre de usuario en codigofacilito.com: **SebastianDev**
 
