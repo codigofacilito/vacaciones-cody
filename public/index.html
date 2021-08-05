@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
@@ -13,118 +13,208 @@
 <body>
   <main class="container-fluid">
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./fotos.html">Galería de Imágenes</a>
-            </li>
-          </ul>
+      <div class="p-3 mb-2 bg-dark text-dark row">
+        <div class="col-12 col-md-4 mt-3">
+          <img class="img-fluid w-25" src="./images/cody.ico" alt="Icono de Cody" title="Icono de Cody">
         </div>
-      </nav>
-      <div class="introduccion">
-        <h1 class="text-primary">Estas son mis Vacaciones</h1>
-        <p class="text-justify">
-          Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página
-          quiero
-          compartirlo contigo.
-        </p>
+        <div class="col-12 col-md-4 mt-3">
+          <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./fotos.html">Galería de Imágenes</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="introduccion">
+            <h1 class="text-primary mt-2">Estas son mis Vacaciones</h1>
+            <p class="text-justify">
+              Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página
+              quiero
+              compartirlo contigo.
+            </p>
+          </div>
+        </div>
       </div>
     </header>
 
     <section>
-      <header>
-        <h2 class="text-warning">Mis vacaciones Frontend</h2>
-      </header>
+      <h2 class="text-warning">Mis vacaciones Frontend</h2>
       <p class="text-justify">
         Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve
         aprendiendo HTML, CSS, y JavaScript
       </p>
-      <p class="text-justify"> 
+      <p class="text-justify">
         Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis
         habilidades en tecnologías
-        frontend, construyendo esta página 
+        frontend, construyendo esta página
       </p>
       <span class="sp_cursos text-white bg-success fw-bold">
         Estos son los cursos que estuve tomando
       </span>
       <div class="cursos mt-3">
-        <button class="btn btn-warning fw-light">Curso profesional de Desarrollo Web</button>
-        <button class="btn btn-warning fw-light">Curso para crear mi primera página web</button>
+        <a class="btn btn-warning fw-light" href="https://codigofacilito.com/cursos/frontend-profesional" 
+          target="_blank" rel="noopener noreferrer">
+            Curso profesional de Desarrollo Web
+        </a>
+        <a class="btn btn-warning fw-light" href="https://codigofacilito.com/cursos/primera-pagina-2019" 
+          target="_blank" rel="noopener noreferrer">
+            Curso para crear mi primera página web
+        </a>
       </div>
     </section>
 
     <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul class="ruta-aprendizaje">
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank">Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
+      <div class="row justify-content-center">
+        <div class="col-10 col-md-7">
+          <h2 class="text-success">Ruta de aprendizaje 2021</h2>
+          <p class="text-justify">
+            También me propuse aprender nuevas tecnologías durante 2021
+          </p>
+          <ul class="ruta-aprendizaje list-group">
+            <li class="list-group-item list-group-item-success">🚀 Flexbox, y Grid </li>
+            <li class="list-group-item list-group-item-success">🚀 Animaciones con CSS y JavaScript </li>
+            <li class="list-group-item list-group-item-success">🚀 AJAX </li>
+            <li class="list-group-item list-group-item-success">🚀 HTML semántico </li>
+            <li class="list-group-item list-group-item-success">🚀 Entre otros </li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente
-          nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-
+      <div class="row justify-content-center">
+        <div class="col-10 col-md-7">
+          <h2 class="text-success">Colabora en mi página</h2>
+          <p class="text-justify">
+            Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, 
+            por lo que decidí subir mi código a GitHub
+          </p>
+          <p class="text-justify">
+            Puedes ayudarme a mejorar mi página, haciendo un fork del proyecto
+            y enviando una pull request.
+          </p>
+          <p class="text-justify">
+            Si nunca antes has colaborado con un repositorio, 
+            en Código Facilito hay un tutorial que lo explica
+            <a href="" target="_blank">Ir al tutorial</a>
+          </p>
+        </div>
+      </div>
     </section>
+
+    <section>
+      <div class="row justify-content-center">
+        <div class="col-10 col-md-10">
+          <h2 class="text-success">Aquí te comparto algunas fotos de mis vacaciones</h2>
+          <p class="text-justify">
+            ¡Bien! Sé que estás aquí por mis vacaciones, 
+            aquí te comparto algunas fotos que tomé:
+          </p>
+          <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner fotos">
+              <div class="carousel-item active">
+                <img src="./images/1.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en la playa">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-success">Cody en la playa</h5>
+                  <p class="text-justify">
+                    Aquí estoy muy contento paseando con mi bicicleta por la playa 😄
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/2.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody acampando">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-danger">Cody acampando</h5>
+                  <p class="text-justify">
+                    Me he ido a una isla paradisiaca para descansar y disfrutar 🥰
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/3.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en una alberca">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-warning">Cody en una alberca</h5>
+                  <p class="text-justify">
+                    Y aquí disfrutando en la piscina 😊
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-justify mt-4">
+            Puedes ver más, en la galería de fotos de mi página
+          </p>
+          <a class="btn btn-success text-decoration-none" href="./fotos.html">
+            Ir a la galería
+          </a>
+        </div> 
+      </div>
+    </section>
+
+    <section>
+      <div class="row justify-content-center">
+        <div class="col-10 col-md-10">
+          <h2 class="text-success">La importancia de las vacaciones</h2>
+          <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente
+            nos desconectemos y descansemos apropiadamente</p>
+          <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+          <ol class="list-group">
+            <li class="list-group-item">Mejora la salud mental</li>
+            <li class="list-group-item">Incrementa la motivación</li>
+            <li class="list-group-item">Reduce el burnout</li>
+            <li class="list-group-item">Mejora tu productividad y creatividad</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="p-3 mt-5 bg-dark text-dark row">
+        <div class="col-12 mt-2">
+          <p class="text-justify text-center text-light">
+            Página diseñada por Manuel Jesús Ojeda © 2021
+          </p>
+        </div>
+        <div class="col-12">
+          <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+              <a href="https://github.com/mjesusoj" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github iconGithub p-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://twitter.com/mjesusoj" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter iconTwitter p-2"></i>
+              </a>   
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
   </main>
 
   <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/acdf8e9705.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

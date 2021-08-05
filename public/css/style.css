@@ -11,7 +11,7 @@ nav {
 
 main {
   text-align: center;
-  max-width: 960px;
+/*   max-width: 960px; */
   margin: 0 auto;
 }
 
@@ -50,18 +50,29 @@ section {
 } */
 
 .fotos img {
-  /* max-width: 450px; */
   display: inline-block;
 }
 
-.ruta-aprendizaje li {
+.ruta-aprendizaje li, ol li {
   text-align: left;
 }
 
-.ruta-aprendizaje li::marker {
-  content: "🚀";
+.iconGithub, .iconTwitter {
+  font-size: 2em;
 }
 
-ol li {
-  text-align: left;
+.iconGithub {
+  color: white;
+}
+
+.iconGithub:hover {
+  color: #b9b9b9;
+}
+
+.iconTwitter {
+  color: #7cb5d5;
+}
+
+.iconTwitter:hover {
+  color: #1589cc;
 }
