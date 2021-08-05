@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon --exec \"npm run build && node server.js\"",
     "build": "node compile.js"
   },
   "dependencies": {
@@ -17,7 +17,7 @@
     "watch": [
       "*.js",
       "views",
-      "styles"
+      "client"
     ]
   }
 }
