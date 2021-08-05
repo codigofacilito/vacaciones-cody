@@ -1,34 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis vacaciones</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <main>
+  <body>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+      <nav class="nav">
+        <h3 class="nav__logo">Codely</h3>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="fotos.html" class="nav__link">Fotos</a>
+          </li>
+        </ul>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+    <div class="fotos__wrapper">
+      <main class="main">
+        <section class="section section--no-padding">
+          <header>
+            <h2>Galería completa de mis vacaciones</h2>
+          </header>
+          <div class="gallery">
+            <img src="images/1.jpg" alt="Cody en la playa" />
+            <img src="images/2.jpg" alt="Cody acampando" />
+            <img src="images/3.jpg" alt="Cody en una alberca" />
+            <img src="images/4.jpg" alt="Cody en una alberca" />
+            <img src="images/5.jpg" alt="Cody en una alberca" />
+            <img src="images/6.jpg" alt="Cody en una alberca" />
+          </div>
+        </section>
+      </main>
     </div>
-
-  </main>
-</body>
-
+  </body>
 </html>
