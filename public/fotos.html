@@ -7,115 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis vacaciones</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .grid-photo {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: 20px;
-            justify-content: center;
-        }
-        
-        .card-photo {
-            position: relative;
-        }
-        
-        .card__overlay:hover {
-            opacity: 0;
-        }
-        
-        .card__overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0.7;
-            visibility: none;
-            transition: .5s ease;
-            background-color: #272a2d;
-        }
-        
-        .card_text {
-            height: 100%;
-            width: 100%;
-            color: white;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding-block: 40px;
-            padding-inline: 40px;
-            font-weight: bold;
-            font-size: 18px;
-        }
-        
-        .card_text h3,
-        .card_text p {
-            margin-block: 0;
-        }
-        
-        .card-photo img {
-            height: 100%;
-        }
-        
-        .img-photo {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-        }
-        
-        @media screen and (min-width:760px) {
-            .grid-photo {
-                display: grid;
-                grid-template: repeat(4, 150px) / repeat(3, 150px);
-                grid-gap: 20px;
-                justify-content: center;
-            }
-            .card-photo:first-of-type {
-                grid-column: 1 / -1;
-            }
-            .card-photo:nth-of-type(2) {
-                grid-column: 1 / 3;
-            }
-            .card-photo:nth-of-type(3) {
-                grid-column: 3 / 3;
-                grid-row: 2 / 4;
-            }
-            .card-photo:nth-of-type(4) {
-                grid-column: 1 / 1;
-                grid-row: 3 / -1;
-            }
-            .card-photo:nth-of-type(6) {
-                grid-column: 2 / -1;
-            }
-            .photo-1 {
-                object-position: 50% 60%;
-            }
-            .photo-2 {
-                object-position: 0 70%;
-            }
-            .photo-3 {
-                object-position: 38% 0;
-            }
-            .photo-4 {
-                object-position: 4% 0;
-            }
-            .photo-6 {
-                object-position: 0 96%;
-            }
-        }
-        
-        @media screen and (min-width:960px) {
-            .grid-photo {
-                display: grid;
-                grid-template: repeat(4, 350px) / repeat(3, 350px);
-                grid-gap: 20px;
-                justify-content: center;
-            }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -178,7 +73,7 @@
                         <img class="img-photo" src="images/6.jpg" alt="Cody en el aereopuerto">
                         <div class="card__overlay">
                             <div class="card_text">
-                                <p>Cody en el aereopuerto</p>
+                                <p>Cody molesto en el aereopuerto</p>
                             </div>
                         </div>
                     </div>
