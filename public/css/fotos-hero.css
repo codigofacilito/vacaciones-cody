@@ -1,0 +1,16 @@
+.hero-fotos{
+    color: var(--blanco);
+    margin-block: 120px;
+    margin-inline: auto;
+    text-align: center;
+}
+.hero-fotos .desc{
+    margin-block-end: 64px;
+}
+.hero-fotos .desc h1{
+    margin-block-end: 32px;
+}
+.hero-fotos .flecha{
+    margin-inline: auto;
+    max-inline-size: 200px;
+}

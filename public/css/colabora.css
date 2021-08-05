@@ -1,0 +1,20 @@
+.colabora{
+    margin-block: 120px;
+    color: var(--negro);
+}
+.colabora-desc{
+    max-inline-size: 1000px;
+    margin-inline: auto;
+    text-align: center;
+    border: 1px solid var(--gris);
+    border-radius: 8px;
+    padding: 40px;
+}
+.colabora-desc p{
+    font-weight: 700;
+    font-size: 18px;
+    margin-block-end: 16px;
+}
+.colabora-desc .btn{
+    margin-block-start: 32px;
+}

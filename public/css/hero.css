@@ -1,0 +1,26 @@
+.hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--blanco);
+    margin-block: 120px;
+    margin-inline: auto;
+}
+.hero .desc{
+    max-inline-size: 600px;
+}
+.hero .desc h3{
+    margin-block-end: 16px;
+}
+.hero .desc h1{
+    margin-block-end: 16px;
+}
+.hero .desc p{
+    display: block;
+    font-size: 24px;
+    margin-block-end: 32px;
+}
+.hero .foto{
+    inline-size: 400px;
+    transform: scaleX(-1)
+}

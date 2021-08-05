@@ -1,0 +1,53 @@
+/* Foto */
+.foto{
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+}
+.foto:hover .hover{
+    opacity: 1;
+    transform: translateY(0);
+}
+.foto .hover{
+    background: rgba(0, 0, 0, .8);
+    color: var(--gris-claro);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-inline: 32px;
+    padding-block: 32px;
+
+    opacity: 0;
+    transform: translateY(15%);
+    transition: .4s transform, .4s opacity;
+}
+.foto .hover p{
+    text-align: start;
+    font-size: 16px;
+    line-height: 27px;
+    max-inline-size: 300px;
+    position: absolute;
+    inset-inline-start: 40px;
+    inset-block-end: 40px;
+}
+.foto .hover i{
+    font-size: 48px;
+    color: var(--gris);
+    transition: .3s color;
+}
+.foto .hover .btn-zoom{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.foto .hover i:hover{
+    color: var(--gris-claro);
+}

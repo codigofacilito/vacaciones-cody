@@ -1,0 +1,13 @@
+.header{
+    background-color: var(--verde);
+    position: relative;
+    block-size: 95vh;
+}
+
+.header .shape{
+    position: absolute;
+    font-size: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

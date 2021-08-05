@@ -1,0 +1,17 @@
+.row-up{
+    inline-size: 56px;
+    block-size: 56px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--negro);
+    position: fixed;
+    inset-block-end: 96px;
+    inset-inline-end: 64px;
+    z-index: 1;
+}
+.row-up i{
+    color: var(--blanco);
+    font-size: 18px;
+}

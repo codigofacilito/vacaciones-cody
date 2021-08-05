@@ -1,34 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Fotos | Cody - Mis vacaciones</title>
+
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+  <!-- Estilos generales -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/bases.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/foto.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/row-up.css">
+  
+  <!-- Estilos personalizados de la pagina -->
+  <link rel="stylesheet" href="./css/fotos-hero.css">
+  <link rel="stylesheet" href="./css/fotos-galeria.css">
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
 
+  <div id="header" class="header">
+    <div class="wrapper">
+      <header>
+        <div class="navbar">
+          <a class="logo" href="./index.html">CODY</a>
+          <nav class="navbar-menu">
+            <ul>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a class="active" href="./fotos.html">Fotos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hero-fotos">
+          <div class="desc">
+            <h1>Mi Galería</h1>
+            <h3 class="saludo">Galería completa de mis vacaciones</h3>
+          </div>
+          <div class="flecha">
+            <img src="./images/arrow-down.png" alt="Icono de flecha hacia abajo" title="Icono de flecha hacia abajo">
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="shape">
+      <img src="./images/shape-lg.png" alt="Forma de cocodrilo" class="Forma que simula la cola de un cocodrilo">
+    </div>
+  </div>
+
+
+  <main>
+    <a class="row-up" href="#header"><i class="fas fa-arrow-up"></i></a>
+
+    <div class="wrapper">
+      <section class="section galeria">
+        <div class="galeria-contenedor">
+          <div class="foto full-start">
+            <img src="images/1.jpg" alt="Cody en la playa con bicicleta" title="Cody en la playa con bicicleta">
+            <div class="hover">
+              <button class="btn-zoom"><i class="fas fa-search-plus"></i></button>
+              <p>Dando un paseo por la playa con bicicleta.</p>
+            </div>
+          </div>
+          <div class="foto">
+            <img src="images/2.jpg" alt="Cody acampando en la Playa" title="Cody acampando en la Playa">
+            <div class="hover">
+              <button class="btn-zoom"><i class="fas fa-search-plus"></i></button>
+              <p>Acampando en la playa.</p>
+            </div>
+          </div>
+          <div class="foto">
+            <img src="images/3.jpg" alt="Cody disfrutando una bebida en una alberca" title="Cody disfrutando una bebida en una alberca">
+            <div class="hover">
+              <button class="btn-zoom"><i class="fas fa-search-plus"></i></button>
+              <p>Disfrutando una bebida en una alberca.</p>
+            </div>
+          </div>
+          <div class="foto">
+            <img src="images/4.jpg" alt="Cody tomando el sol disfrutando de un coco" title="Cody tomando el sol disfrutando de un coco">
+            <div class="hover">
+              <button class="btn-zoom"><i class="fas fa-search-plus"></i></button>
+              <p>Tomando el sol disfrutando de un coco.</p>
+            </div>
+          </div>
+          <div class="foto">
+            <img src="images/5.jpg" alt="Cody caminando por las calles de Guanajuato" title="Cody caminando por las calles de Guanajuato">
+            <div class="hover">
+              <button class="btn-zoom"><i class="fas fa-search-plus"></i></button>
+              <p>Caminando por las calles de Guanajuato.</p>
+            </div>
+          </div>
+          <div class="foto full-end">
+            <img src="images/6.jpg" alt="Cody en el aeropuerto esperando su vuelo de regreso a casa" title="Cody en el aeropuerto esperando su vuelo de regreso a casa">
+            <div class="hover">
+              <button class="btn-zoom"><i class="fas fa-search-plus"></i></button>
+              <p>En el aeropuerto esperando mi vuelo de regreso a casa.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
+
+  <div class="footer">
+    <div class="shape">
+      <img src="./images/shape-lg.png" alt="Forma que simula la cola de un cocodrilo" class="Forma que simula la cola de un cocodrilo">
+    </div>
+    <div class="wrapper">
+      <footer class="footer-content">
+          <a class="logo" href="./index.html">CODY</a>
+          <p class="hecho-por">Hecho con el<span><i class="fas fa-heart"></i></span>de Cody. Copyright 2021 - Todos los derechos reservados.</p> 
+          <div class="social-media">
+            <a class="button-icon" target="_blank" href="https://twitter.com/codigofacilito">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="button-icon" target="_blank" href="https://www.instagram.com/codigofacilito">
+              <i class="fab fa-instagram"></i>           
+            </a>
+            <a class="button-icon" target="_blank" href="https://github.com/codigofacilito">
+              <i class="fab fa-github"></i>
+            </a>
+        </div>
+      </footer>
+    </div>
+  </div>
+
 </body>
 
 </html>

@@ -1,0 +1,99 @@
+.vaciones-frontend{
+    color: var(--negro);
+    padding-block-start: 120px;
+    margin-block-end: 120px;
+}
+
+
+.contenedor-cursos{
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.curso{
+    display: flex;
+    align-items: center;
+    inline-size: 600px;
+    block-size: 160px;
+    border-radius: 16px;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .2);
+}
+.curso:visited{
+    color: unset;
+}
+/* IMG */
+.curso .img-contendor{
+    background-color: var(--azul);
+    min-inline-size: 240px;
+    block-size: 100%;
+    border-start-start-radius: 16px;
+    border-end-start-radius: 16px;
+    overflow: hidden;
+}
+
+.curso .img-contendor .img{
+    background: linear-gradient(to top, #0544A4cc, #0544A4cc ), url('../images/curso1.png');
+    background-repeat: no-repeat;
+    background-position: left -25px top 10px;
+    background-size: 210px;
+    inline-size: 100%;
+    block-size: 100%;
+    position: relative;
+}
+.curso .img-contendor .img img{
+    inline-size: 99px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.curso:last-of-type .img-contendor{
+    background-color: var(--morado);
+}
+.curso:last-of-type .img-contendor .img{
+    background: linear-gradient(to top, #3F00FFcc, #3F00FFcc ), url('../images/curso2.png');
+    background-repeat: no-repeat;
+    background-position: left -25px top 10px;
+    background-size: 210px;
+}
+
+/* DESC */
+.curso .curso-desc{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-block: 16px;
+  padding-inline: 16px;
+  border-block: 0.5px solid var(--gris-claro);
+  border-inline-end: 0.5px solid var(--gris-claro);
+  block-size: 100%;
+  border-start-end-radius: 16px;
+  border-end-end-radius: 16px;
+}
+.curso .curso-desc .curso-title{
+    font-weight: 700;
+    font-size: 18px;
+}
+.curso .curso-desc .instructor{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.curso .curso-desc .instructor .contenedor-avatar{
+    max-inline-size: 24px;
+    max-block-size: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.curso .curso-desc .instructor p{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gris);
+}
+.curso .curso-desc .intro{
+    color: var(--gris);
+    font-size: 12px;
+    line-height: 18px;
+}

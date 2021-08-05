@@ -1,0 +1,85 @@
+.ruta-aprendizaje{
+    background: var(--gris-claro);
+    padding-block: 120px;
+    color: var(--negro);
+}
+.ruta-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ruta-title{
+    display: inline-block;
+    max-inline-size: 280px;
+    background: var(--amarillo-claro);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--blanco);
+    text-align: center;
+    border-radius: 4px;
+    padding-block: 4px;
+    padding-inline: 16px;
+    margin-block-end: 40px;
+    z-index: 1;
+}
+.ruta-lista{
+    padding-inline-start: 0;
+    position: relative;
+}
+
+.ruta-lista::before{
+    content: '';
+    inline-size: 2px;
+    block-size: 110%;
+    margin-inline-start: 50%;
+    margin-block-start: -70px;
+    background: var(--gris);
+    position: absolute;
+}
+
+.ruta-lista .ruta-item .item img{
+    max-inline-size: 40px;
+}
+.ruta-lista .ruta-item:nth-child(3) .item img{
+    max-inline-size: 88px;
+}
+
+.ruta-lista .ruta-item .item .item-nombre{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.ruta-lista .ruta-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 24px;
+    margin-block-end: 50px;
+}
+.ruta-lista .ruta-item:nth-child(even) .item{
+    justify-content: flex-start;
+    grid-column: 2/3;
+}
+
+.ruta-lista .ruta-item .item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-inline-size: 300px;
+    text-align: end;
+    gap: 8px;
+}
+.ruta-lista .ruta-item:nth-child(odd) .item img{
+    order: 2;
+}
+
+/* Entre otros */
+.ruta-lista .ruta-item:last-of-type .item{
+    grid-column: 1/3;
+    margin-inline: auto;
+}
+.ruta-lista .ruta-item:last-of-type{
+    margin-block-end: 0;
+}
+

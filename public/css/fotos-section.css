@@ -1,0 +1,21 @@
+.fotos-section{
+    background: var(--gris-claro);
+    padding-block: 120px;
+    color: var(--negro);
+}
+.fotos-contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+
+
+/*Fotos footer */
+.fotos-footer{
+    margin-block-start: 40px;
+    text-align: center;
+}
+.section .fotos-footer .subtitle{
+    margin-block-end: 32px;
+}

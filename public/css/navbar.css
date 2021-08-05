@@ -1,0 +1,34 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 32px;
+}
+.navbar a{
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+.logo{
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.navbar-menu ul{
+    display: flex;
+    gap: 32px;
+}
+.navbar-menu ul a{
+    color: var(--gris-claro);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.navbar ul a:hover{
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.navbar ul a.active{
+    color: var(--blanco);
+    font-weight: bold;
+}
