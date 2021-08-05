@@ -1,38 +1,32 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
-}
-
-main{
-  text-align: center;
-  max-width: 960px;
-  margin:0 auto;
-}
-
-section{
-  margin-top: 3rem;
-}
-
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
+.lista>ul>li{
   text-align: left;
 }
-ul li::marker {
+.lista>ul>li::marker {
   content: "🚀";
 }
-
-ol li{
+  
+.lista>ol>li{
   text-align: left;
+}
+.bg-green {
+  background-color:#1bbc9b;
+}
+.bg-yellow{
+  background-color: #f7cb18;
+}
+.tex-circle {
+  height: 50px;
+  width: 50px;
+  margin-left: 45%;
+  margin-bottom: 2rem;
+}
+p{
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.nav-link{
+  color: #1bbc9b;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: #1bbc9b;
 }
