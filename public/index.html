@@ -137,27 +137,28 @@
     </section>
 
     <!-- modal de imagenes -->
-    <div class="modal" tabindex="-1" id="modalViewPost">
+    <div class="modal" tabindex="-1" id="modalViewPost" v-if="post != null">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-body">
             <div class="row">
               <div class="col-md-8">
-                <img src="images/1.jpg" class="img-fluid">
+                <img v-bind:src="post.picture" class="img-fluid">
               </div>
               <div class="col-md-4">
                 <img src="images/profile.jpg" width="50" class="img-fluid img-thumbnail rounded-circle">
-                <b>Cody</b>
-                <p>Dando una vuelta en bicicleta en la playa!
+                <b>{{post.user.name}}</b>
+                <p>{{post.description}}
+                  <span v-html="post.emojis"></span>
                 </p>
                 <div class="community d-flex">
                   <div class="item">
                     <i class="mdi mdi-comment-text"></i>
-                    <span>13</span>
+                    <span>{{post.comments}}</span>
                   </div>
                   <div class="item">
                     <i class="mdi mdi-heart"></i>
-                    <span>126</span>
+                    <span>{{post.likes}}</span>
                   </div>
                 </div>
                 <form>
