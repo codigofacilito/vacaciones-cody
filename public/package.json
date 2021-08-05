@@ -8,7 +8,8 @@
     "nra-dev": "npm-run-all --parallel pug:watch parcel:serve",
     "pug:compile": "pug ./index.pug -P",
     "parcel:build": "parcel build ./index.html",
-    "nra-build": "npm-run-all pug:compile parcel:build"
+    "nra-build": "npm-run-all pug:compile parcel:build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
