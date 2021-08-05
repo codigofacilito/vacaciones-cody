@@ -7,6 +7,10 @@
   --cody-white: #262b34;
 }
 
+body {
+  font-family: "Schoolbell", cursive;
+}
+
 nav {
   background-color: aliceblue;
   padding: 15px;
