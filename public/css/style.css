@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
 :root {
-  --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+  --background: linear-gradient(135deg, #2ca08796 0%, #2ca08796 100%);
   --majorelle-blue: #6e57fc;
   --yellow-pantone: #fce100;
   --lavender-blue: #d1cafe;
   --black: #000000;
   --just-white: #ffffff;
   --zomp: #2ca087;
-  --zomp-hover: rgba(44, 160, 135, 0.589);
+  --zomp-hover: #2ca08796;
 }
 
 html,
