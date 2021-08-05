@@ -1,26 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+
+body{
+  text-align: center;
+  background-color: rgb(36, 35, 36);
+  background: linear-gradient(120deg, rgb(168, 226, 236), rgb(138, 183, 212) );
+  font-family: 'Times New Roman', Times, serif;
+}
+
 nav{
-  background-color: aliceblue;
-  padding: 15px;
+  background-color: rgb(97, 117, 117);/*rgb(168, 162, 243);*/
+  padding: 20px;
   display: flex;
+  margin: 5px;
   gap:1em;
+  border-radius: 5px;
+}
+
+nav > a{
+  
+  color: rgb(253, 250, 32);
+  text-decoration: none;
+  font-size: 18px;
 }
 
 main{
-  text-align: center;
+  background-color: rgb(255, 255, 255);
   max-width: 960px;
-  margin:0 auto;
+  margin:15px auto;
+  padding: 15px;
+  margin-bottom: 100px;
 }
 
 section{
   margin-top: 3rem;
 }
 
+p{
+  
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+}
+
+h1{
+  font-size: 36px;
+  font-family: 'Georama', sans-serif;
+  /*box-shadow: 10px 13px 12px 10px rgba(black, black, black, 1);*/
+}
+
+.titulo{
+  background-color: rgb(97, 117, 117);
+  padding: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  color: rgb(253, 250, 32);
+  text-align: center;
+}
+.titulo > p{
+  color: rgb(245, 243, 117);
+}
+
+h2{
+  font-size: 28px;
+  color: rgb(68, 84, 106);
+}
+
 .cursos div{
-  background-color: black;
-  color: white;
+  background-color: rgb(97, 117, 117);
+  color: rgb(253, 250, 32);;
   max-width: 200px;
   display: inline-block;
   box-shadow: 5px 5px 10px black;
+  margin-inline-end: 10px;
+}
+.cursos div > p{
+  text-align: center;
 }
 .fotos img{
   max-width: 450px;
