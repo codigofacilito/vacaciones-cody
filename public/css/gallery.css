@@ -1,13 +1,13 @@
 .gallery {
   min-height: 100vh;
-  padding: 5%; }
+  padding: 4%; }
   .gallery h1 {
     font-size: 3rem;
     color: var(--blue);
     display: flex;
     align-items: center;
     text-align: center;
-    padding-bottom: 4%; }
+    padding-bottom: 2%; }
     @media screen and (max-width: 600px) {
       .gallery h1 {
         font-size: 2rem; } }
