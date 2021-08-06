@@ -201,4 +201,7 @@ ol li{
   .cursos div {
     width: 50%;
   }
+  .ventana:target{
+    visibility: hidden;
+  }
 }
