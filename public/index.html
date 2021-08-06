@@ -2,99 +2,298 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =====TITULO===== -->
+  <title>Vacaciones Cody</title>
+  <link rel="shortcut icon" href="images/cody.png" type="image/x-icon">
+
+  <!-- =====css===== -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/config.css">
+
+  <!-- =====ICONOS===== -->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
-      </div>
-    </section>
+  <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+  <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">CodigoFacilito</a>
+                </div>
 
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
-      </div>
-    </section>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Inicio</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Vacaciones</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Ruta</a></li>
+                        <li class="nav__item"><a href="#imagenes" class="nav__link">Fotos</a></li>
+                        <li class="nav__item"><a href="#importancia" class="nav__link">Importancia</a></li>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
-  </main>
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+         <main class="l-main">
+
+          <!--===== PRINCIPAL =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>Soy <span class="home__title-color">CodigoFacilito</span><br> Estoy de Vacaciones</h1>
+
+                    <a href="https://codigofacilito.com/cursos" class="button" target="_blank">Ver Pagina</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.youtube.com/user/codigofacilito" class="home__social-icon" target="_blank"><i class='bx bxl-youtube'></i></a>
+                
+                    <a href="https://github.com/codigofacilito" class="home__social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img image">    
+                    <img src="images/1.jpg" alt="">
+                </div>
+
+
+            </section>
+
+            <!--OJOS-->
+          <section>
+            <div class="box">
+              <div class="eye"></div>
+              <div class="eye"></div>
+            </div>
+          </section>
+
+              <!--===== MIS VACACIONES =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">Mis vacaciones Frontend</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img image">
+                        <img src="images/6.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Mis Vacaciones</h2>
+                        <p class="about__text">Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript <br>
+
+                        <br> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página <br>
+
+                        <br>Estos son los cursos que estuve tomando.</p>           
+                    </div>   
+                    
+                        <a class="btn" href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Curso profesional de Desarrollo Web
+                        </a>    
+                        <a class="btn" href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Curso para crear mi primera página web
+                        </a>
+                                                
+                </div>
+            </section>
+
+
+      <!--===== RUTA APRENDIZAJE O SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Ruta de aprendizaje 2021</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Lo que se Propuso Cody</h2>
+                        <p class="skills__text">También me propuse aprender nuevas tecnologías durante 2021, hasta alcanzar un nivel considerable como podemos ver lo que se propuso CODY</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="image">              
+                        <img src="images/codyprincipal.png" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+
+      <!--===== COLABORAR =======-->
+            <section class="app section bd-container">
+                <div class="colabora__container ad-grid">
+                    <div class="colabora__data">
+                        
+                        <h2 class="titulo">Colabora en mi página</h2>
+                        <p class="colabora__description">Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request. Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica</p>
+                        <a href="https://codigofacilito.com/verano/concurso" target="_blank" class="button">Ir a Tutorial</a>
+                    </div>
+
+                    <img src="images/cody.png" alt="" class="ap__img">
+                </div>
+            </section>
+
+             
+
+             <!-- SECCION IMAGENES-->
+          <section class="imagenes contenedor1" id="imagenes">
+                
+                <div>
+                    <h2 class="section-title">Aquí te comparto algunas <br> fotos de mis vacaciones</h2>
+            <h2 class="skills__text">¡Bien! Sé que estás aquí por mis <br> vacaciones, aquí te comparto <br>algunas fotos que tomé:</h2>
+            <div class="container">
+                
+              <ul class="thumb">  
+                <li onmouseover="changeImageSrc('images/2.jpg')"><img src="images/2.jpg"></li>
+                <li onmouseover="changeImageSrc('images/3.jpg')"><img src="images/3.jpg"></li>
+                <li onmouseover="changeImageSrc('images/4.jpg')"><img src="images/4.jpg"></li>
+              </ul>
+              <div class="imgBox">
+                <h2 >IMAGENES</h2>
+                <img src="images/5.jpg" class="shoesss">
+                <ul class="size">
+                  <span>Califica</span>
+                  <li>7</li>
+                  <li>8</li>
+                  <li>9</li>
+                  <li>10</li>
+                </ul>
+                <a href="fotos.html" target="_blank" class="btn">Ver Mas</a>
+              </div>
+            </div>
+                </div>
+          </section>
+
+            <!--===== IMPORTANCIA DE LAS VACACIONES=======-->  
+            <section class="importancia-vacaciones" id="importancia">
+            <div class="home__data contenedor">
+                <h2 class="titulo">La importancia de las vacaciones</h2>
+                <div class="importancia-cont">
+                    <div class="importancia-ind">
+                        <img src="images/salud mental.png" alt="">
+                        <h3>Mejora la salud mental</h3>
+                        
+                    </div>
+
+                    <div class="importancia-ind">
+                        <img src="images/motivacion.jpg" alt="">
+                        <h3>Incrementa la motivación</h3>
+                       
+                    </div>
+
+                    <div class="importancia-ind">
+                        <img src="images/burnout.jpg" alt="">
+                        <h3>Reduce el burnout</h3>
+                    
+                    </div>
+
+                    <div class="importancia-ind">
+                        <img src="images/productividad.jpg" alt="">
+                        <h3>Mejora tu productividad y creatividad</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <!--===== COMENTARIOS =======-->    
+          <section class="clientes contenedor">
+              <h2 class="titulo">Que dicen las personas sobre las Vacaciones</h2>
+              <div class="cards">
+                  <div class="card">
+                      <img src="images/face2.jpg" alt="">
+                      <div class="contenido-texto-card">
+                          <h4>Lorena</h4>
+                          <p>La vacaciones nos ayuda a despejar nuestra mente.</p>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="images/img4.jpg" alt="">
+                      <div class="contenido-texto-card">
+                          <h4>Marta</h4>
+                          <p>Las vacaciones ayudan a evitar el estres, y el cuerpo lo necesita para estar saludable</p>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </main>
+
+      <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Manfredo Pérez</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 20201 derechos reservados a Mi el creador "Jajaja"</p>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="js/main.js"></script
 </body>
 </html>
