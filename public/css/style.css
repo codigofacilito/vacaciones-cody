@@ -1,38 +1,412 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+html {
+    height: 100%;
 }
 
-main{
-  text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+body {
+    min-height: 100%;
+    font-family: "Oswald";
+    font-size: 25px;
 }
 
-section{
-  margin-top: 3rem;
+.main {
+    margin-bottom: 100px;
+    margin-left: 0px;
+    margin-right: 200px;
+    margin-top: 0px;
+    padding: 0px;
+    text-align: justify;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
+.main h2 {
+    font-family: "Pacifico";
+    margin-left: -150px;
+    line-height: 50px;
+    padding-bottom: 40px;
+    color: #62AD45;
+    text-shadow: 1px 1px #000;
 }
 
-ol li{
-  text-align: left;
+.main p {
+    margin-left: -180px;
+    margin-right: -180px;
+}
+
+.navbar {
+    background-color:#C7DB00;
+    list-style: none;
+    padding: 0px;
+}
+
+.navbar div {
+    width: 0px;
+}
+
+.logo {
+    padding:5px 5px;
+    position: absolute;
+    width: 40px;
+}
+
+.navbar a {
+    color: #000;
+    font-family: 'Oswald';
+    font-size: 20px;
+    line-height: 40px;
+    padding: 6px 20px 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    list-style:none;
+    line-height: 50px;
+}
+
+.navbar li {
+    float: right;
+    position: static;
+    list-style: none;
+}
+
+.navbar li:hover > a {
+    color:#ea2454;
+}
+
+.navbar ul {
+    list-style: none;
+    display: none;
+    background-color:#C7DB00;
+    min-width: 130px;
+    text-align: center;
+}
+
+.navbar li:hover > ul {
+    position: absolute;
+    display: grid;
+    text-align: center;
+}
+
+h1.encabezado {
+    color: #62AD45;
+    font-family: 'Pacifico';
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 5px 7px #000;
+}
+
+h2.encabezado {
+    border-top: 5px solid #000;
+    color: #000;
+    font-family:'Oswald';
+    font-size: 50px;
+    line-height: 0em;
+    margin: 20px 150px 20px;
+    text-align: center;
+}
+
+h2.encabezado span {
+    background: #fff;
+    padding:0 10px; 
+}
+
+.sidebar nav {
+    position: sticky;
+    top: 200px;
+    width: 40px;
+    margin-top: 100%;
+    transition: all 0.3s linear;
+}
+
+.sidebar nav ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+.sidebar nav li {
+    height: 45px;
+    position:relative;
+}
+
+.sidebar nav li a {
+    color:#62ad45;
+    font-family: "Oswald";
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 45px;
+    padding-left: 30%;
+    transition: all .3s linear;
+    text-decoration: none;
+    padding-top:10px;
+    text-shadow: 1px 1px #000;
+}
+
+.sidebar nav li a i {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    font-size: 15px;
+}
+
+.sidebar ul li a span {
+    display: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: none;
+}
+
+.sidebar a:hover {
+    z-index: 1;
+    width: 150px;
+}
+
+.sidebar ul li:hover a span {
+    padding-left: 30%;
+    display: block;
+    font-size: 15px;
+}
+
+.footer {
+    background-color: #fcb813;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.footer p {
+    font-family: "Pacifico";
+    color: #62AD45;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 18px;
+}
+
+#mar {
+    height: 100px;
+    background-image: linear-gradient(to top, #78ffd6, #007991);
+}
+
+.cody {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 300px;
+    z-index: 1;
+    background:cover;
+}
+
+.main {
+    padding: 200px;
+}
+
+/* Fotos página index */
+.carrusel {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: slid 30s linear infinite;
+    margin-left: 25%;
+    margin-top: 50px;
+    margin-bottom: 250px;
+}
+  
+.carrusel span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 120deg)) translateZ(200px);
+}
+
+.carrusel span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 2s;
+    border:solid 12px #fff;
+    background:#fff;
+    box-shadow:0 0 15px 0px #555;
+    top:50px;
+}
+
+.carrusel span:hover img {
+    transform: translateY(-50px) scale(1.7);
+}
+
+@keyframes slid {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+/* Fotos de la galería */
+.fotos {
+    font-family: 'Pacifico';
+    font-size: 30px;
+    width: 100px;
+}
+
+.fotos ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.fotos li {
+    text-align:center;
+    display:inline-block;
+    list-style:none;
+    position:relative;
+    border:solid 12px #fff;
+    background:#fff;
+    box-shadow:0 0 15px 0px #555;
+    transition:all 1s ease;
+    -o-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -webkit-transition:all 1s ease;
+    top:150px;
+    opacity: 0.7;
+}
+  
+.fotos li:hover {
+    top:80px;
+    opacity:1;
+}
+  
+.fotos li:nth-child(1) {
+    transform:rotate(10deg);
+}
+  
+.fotos li:nth-child(2) {
+    transform:rotate(0deg);
+}
+  
+.fotos li:nth-child(3) {
+    transform:rotate(-10deg);
+}
+  
+.fotos li:nth-child(4) {
+    transform:rotate(10deg);
+}
+
+.fotos li:nth-child(5) {
+    transform:rotate(0deg);
+}
+
+.fotos li:nth-child(6) {
+    transform:rotate(-10deg);
+}
+  
+.fotos p {
+    margin:-15px 0 0 0;
+    text-align: center;
+}
+  
+.fotos .light {
+    border-radius:50%;
+    position:relative;
+    left:0;
+    right:0;
+    width:700px;
+    height:300px;
+    background:#fff;
+    filter:blur(100px);
+    opacity:0.3;
+    pointer-events:none;
+}
+
+#ruta ul li::marker {
+    content: "🚀";
+}
+
+.bio_foto {
+    transform:rotate(-20deg);
+    position: absolute;
+    width:250px;
+    border:ridge 24px #ea2454;
+    background:#fff;
+    box-shadow:0 0 15px 0px #555;
+    top: 490px;
+    left: 250px;
+}
+
+#biografia .parrafo_bio {
+    padding-left: 420px;
+    margin-top: 0px;
+    position: relative;
+}
+
+.barco {
+    position: relative;
+    animation-duration: 20s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    bottom: 250px;
+    margin-bottom:-190px;
+    z-index: 1;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 500%;
+        position:relative;
+    }
+
+    to {
+        margin-left: 30%;
+      }
+}
+
+.formulario {
+    background:#fcb813;
+    padding: 30px;
+    border-radius:4px;
+    min-width: 600px;
+    max-width: 600px;
+    margin-bottom: 800px;
+    font-family: "Oswald";
+    position: absolute;
+}
+
+.formulario h3 {
+    font-size: 25px;
+    text-align: center;
+    bottom: 10px;
+}
+
+.datos {
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.texto {
+    font-size: 20px;
+    text-align: center;
+    min-width: 600px;
+    height: 300px;
+}
+
+.boton {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+#contactame {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#colaborame {
+    margin-top: 700px;
 }
