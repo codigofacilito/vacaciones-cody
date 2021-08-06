@@ -12,23 +12,40 @@
 <body>
   <main>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
+      <nav class="menu">
+        <span class="nav-menu-titulo">Vacaciones Cody</span>
+        <div class="menu-toggle">
+          <i></i>
+        </div>
+        <ul class="nav-menu-opciones" id="nav-menu-opciones">
+          <a href="index.html" class="nav-menu-opcion">Inicio</a>
+          <a href="fotos.html" class="nav-menu-opcion">Fotos</a>
+        </ul>
       
-    </div>
-
+      </nav>
+      <div class="baner baner-fotos">
+        <h1>Galería completa de mis vacaciones</h1>
+      </div>    
+    </header>
+    <section class="seccion-vaciones">
+      <div class="fotos ">
+        <img src="images/1.jpg" alt="Cody en la playa" class="foto-vaciones">
+        <img src="images/2.jpg" alt="Cody acampando" class="foto-vaciones">
+        <img src="images/3.jpg" alt="Cody en una alberca" class="foto-vaciones">
+        <img src="images/4.jpg" alt="Cody en una alberca" class="foto-vaciones">
+        <img src="images/5.jpg" alt="Cody en una alberca" class="foto-vaciones">
+        <img src="images/6.jpg" alt="Cody en una alberca" class="foto-vaciones">
+        
+      </div>
+    </section>
+  
+    <footer>
+      <p>&copy; 2021 cody</p>
+    </footer>
   </main>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

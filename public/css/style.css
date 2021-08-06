@@ -1,31 +1,202 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+:root {
+  --color-primario: #5BCC85;
+  --color-secundario: #F8CD5B;
+  --color-especial:#fd585f;
+  --tamanio-fuente-movil: 1.66em;
+  --tamanio-fuente-tablet: 1.44em;
+  --tamanio-fuente-desktop: 1.33em;
+  --color-fuente-contenido : #257b6c;
+}
+html {
+  font-family: "Lucida Sans", sans-serif;
+  font-size:var(--tamanio-fuente-movil);
+  color: var(--color-primario); 
+  min-height: 100%;
+  position: relative;
+}
+
+body{
+  padding: 0px; 
+  margin: 0px;
+}
+
+.baner{
+  background-image: url('/public/images/beach-832346.jpg');
+  background-size :cover;
+  width: 100%;
+  border-top: solid 1px transparent;;
+}
+
+.baner h1 {  
+  color: var(--color-primario); 
+  text-shadow:
+ -1px -1px 0 var(--color-secundario),  
+  1px -1px 0 var(--color-secundario),
+ -1px 1px 0 var(--color-secundario),
+  1px 1px 0 var(--color-secundario);
+}
+
+.baner p {  
+  color: var(--color-secundario); 
+  text-shadow:
+ -1px -1px 0 var(--color-primario),  
+  1px -1px 0 var(--color-primario),
+ -1px 1px 0 var(--color-primario),
+  1px 1px 0 var(--color-primario);
+  padding: 10px 20px 25px 20px;
+  margin-bottom: 0px;
+}
+.baner-fotos{
+  padding-bottom: 15px;
+}
+
+nav.menu{   
+  display: block;
+  background-color: var(--color-primario);
+   line-height: 55px; 
+}
+
+
+
+.menu-toggle {
+  position: absolute;
+  right: 0; 
+	height: 32px;
+  margin-top: 10px;
+  margin-right: 10px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+	width: 40px;
+  display: inline;
+}
+.menu-toggle:hover {
+	color: var(--color-especial);
+
+}
+
+.menu-toggle i,
+.menu-toggle i:after,
+.menu-toggle i:before {
+	display: block;
+	position: absolute;
+	height: 3.5px;
+	width: 40px;
+	right: 0;
+	background: var(--color-secundario);
+	border-radius: 2px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+
+.menu-toggle i:after,
+.menu-toggle i:before {
+	content: '';
+}
+.menu-toggle i:after {
+	top: -32px;
+}
+.menu-toggle i:before {
+	top: -16px;
+}
+.menu-toggle i {
+	top: 32px;
+}
+
+.menu-toggle.open i:after {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: -22px;
+}
+.menu-toggle.open i:before {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: -22px;
+}
+
+ul.nav-menu-opciones{
+/* border: solid 1px #fd585f; */
+padding-inline-start: 0px;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.7s linear;
+	margin:0 0 0 0 ; 
+ 
+}
+
+ul.menu-visible{
+  max-height: 250px;
+  overflow-y: hidden; 
+
+}
+
+.nav-menu-opcion{
+  display: block;
+  color: var(--color-secundario);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  /* border: solid 1px #fd585f;  */
+}
+
+.nav-menu-titulo{
+  color: #fff;
+  /* border: solid 1px #fd585f; */
+  display: inline;
 }
 
 main{
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+  max-width: 100%;
+  margin:0;
+  margin-bottom: 80px;
 }
 
-section{
-  margin-top: 3rem;
+.header-introduccion{
+  margin: 20px 15px 20px 15px;
 }
+
+.parrafo-introduccion{
+   color: var(--color-fuente-contenido );
+  text-align: center;
+  margin: 50px 15px;
+}
+
+/* section{
+  margin-top: 3rem;
+} */
 
 .cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
+  background-color: var(--color-especial);
+  color: #fff;
+  max-width: 100%;
   display: inline-block;
   box-shadow: 5px 5px 10px black;
+  padding: 15px;
+  margin: 15px 10px;
 }
-.fotos img{
+
+/* .fotos img{
   max-width: 450px;
   display: inline-block;
-}
+} */
+
+
 ul li{
   text-align: left;
 }
@@ -36,3 +207,233 @@ ul li::marker {
 ol li{
   text-align: left;
 }
+
+.seccion-introduccion{
+  border-top: solid 1px transparent; 
+background-color: rgba(248, 205, 91, 0.5) ;
+}
+
+.seccion-ruta{
+  padding: 20px 15px;
+  background-color: rgba(248, 205, 91, 0.5) ;
+}
+
+.ruta-objetivo{
+  color: var(--color-fuente-contenido );
+}
+.seccion-colaboracion{
+  border-top: solid 1px transparent; 
+  background-color: rgba(248, 205, 91, 0.5) ;
+  background-image: url("/public/images/colaborar-sin-fondo.png");
+  background-size: contain;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+
+}
+.enlace-exterior{
+  border-top: solid 1px transparent; 
+  color: var(--color-especial);
+}
+.espacio-fondo-colaboracion{
+  margin-bottom: 150px;
+}
+
+.seccion-vaciones{
+  background-color: rgba(91, 204, 133, 0.3) ;
+  border-top: solid 1px transparent; 
+  padding: 20px 15px;
+  padding-bottom: 15px;
+}
+
+.parrafo-final{
+  margin-bottom: 0px;
+  padding-bottom: 25px;
+}
+.header-vacaciones{
+  color: var(--color-fuente-contenido);
+}
+.parrafo-vacaciones{
+  color: var(--color-fuente-contenido);
+}
+.foto-vaciones{
+  width: 100%;
+}
+
+footer {
+  background-color: var(--color-primario);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  color: white;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size:var(--tamanio-fuente-tablet);
+  }
+
+  .espacio-fondo-colaboracion{
+    margin-bottom: 0;
+  }
+
+  .seccion-colaboracion{  
+   background-size: 0;  
+  }
+
+  .cursos div{
+    background-color: var(--color-especial);
+    color: #fff;
+    max-width: 100%;
+    display: block;
+    box-shadow: 5px 5px 10px black;
+    padding: 15px;
+    margin: 15px 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+ 
+  html {
+    font-size:var(--tamanio-fuente-desktop);
+  }
+
+  header{
+    width: auto;
+  }
+
+  footer {
+    background-color: var(--color-primario);
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    height: 80px;
+    color: white;
+    width: 960px;  
+  }
+  .baner{
+    background-image: url('/public/images/beach-832346.jpg');
+    background-size :cover;
+    width: 100%;
+    border-top: solid 1px transparent;
+    min-height: 500px;
+  }
+
+  .seccion-colaboracion{
+    border-top: solid 1px transparent; 
+    background-color: rgba(248, 205, 91, 0.5) ;
+   background-size: 0;
+  
+  }
+
+  .espacio-fondo-colaboracion{
+    margin-bottom: 0;
+  }
+
+  .baner p {  
+    color: var(--color-secundario); 
+    text-shadow:
+   -1px -1px 0 var(--color-primario),  
+    1px -1px 0 var(--color-primario),
+   -1px 1px 0 var(--color-primario),
+    1px 1px 0 var(--color-primario);
+    padding: 10px 20px 25px 20px;
+    margin-bottom: 0px;
+    margin-top: 90px;
+  }
+  .baner h1 {  
+    color: var(--color-primario); 
+    text-shadow:
+   -1px -1px 0 var(--color-secundario),  
+    1px -1px 0 var(--color-secundario),
+   -1px 1px 0 var(--color-secundario),
+    1px 1px 0 var(--color-secundario);
+    margin-top: 200px;
+  }
+
+  nav.menu{
+    background-color: var(--color-primario);
+    padding: 20px;
+    display: flex;
+    gap:1em;
+  }
+
+  .nav-menu-titulo{
+    color: #fff;
+    /* border: solid 1px #fd585f; */
+    display: none;
+  }
+  .menu-toggle{
+    display: none;
+  }
+
+
+  main{
+    text-align: center;
+    max-width: 960px;
+    margin:0 auto;
+    margin-bottom: 80px;
+  }
+  
+  ul.nav-menu-opciones{
+    padding-inline-start: 0px;
+	  margin:0 0 0 0 ; 
+    max-height: 50px;
+
+  }
+
+  .nav-menu-opcion{
+    display: inline;
+    color: var(--color-secundario);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* border: solid 1px #fd585f;  */
+  }
+
+  .cursos div{
+    background-color: var(--color-especial);
+    color: white;
+    max-width: 200px;
+    display: inline-flex;
+    box-shadow: 5px 5px 10px black;
+    height: 120px;
+    vertical-align: middle;
+  }
+
+  .fotos img{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  ul li{
+    text-align: left;
+  }
+  ul li::marker {
+    content: "🚀";
+  }
+
+  ol li{
+    text-align: left;
+  }
+ 
+
+  .menu-opcion{
+    display: block;
+  }
+
+  .foto-vaciones{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
