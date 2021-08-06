@@ -113,19 +113,23 @@ body {
     display: inline-block;
 }
 
-.header-content__button a {
-    font-size: 14px;
-    text-decoration: none;
-    color: var(--black90);
-    font: var(--description-mobile);
+.header-content__button li {
+    list-style: none;
+    display: inline-block;
+    font-weight: bold;
 }
 
-.header-content__button a:first-of-type {
+.header-content__button li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--black50);
+}
+
+.header-content__button li:first-of-type {
     display: none;
 }
 
 .header-content__button a:hover {
-    font-weight: bold;
     color: var(--green80);
 }
 
@@ -411,6 +415,7 @@ body {
 
 .vacation-photo__card {
     text-align: center;
+    margin-block-end: 40px;
 }
 
 .vacation-photo__card-content {
@@ -421,6 +426,7 @@ body {
     box-sizing: border-box;
     border: 4px solid #4caf50;
     padding: 4px;
+    margin-block-end: 20px;
 }
 
 .vacation-photo__card-content .vacation-photo__img {
@@ -441,9 +447,10 @@ body {
     transition: all .2s ease-in-out;
 }
 
-.vacation-img:hover {
-    transform: scale(1.05);
+.vacation-photo__card-content .vacation-img:hover {
+    transform: scale(1.1);
     /* filter: brightness(1); */
+    border: none;
     opacity: 1;
     box-shadow: 0 10px 18px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
@@ -656,13 +663,7 @@ body {
     .header-content img {
         width: 200px;
     }
-    .header-content__button {
-        display: block;
-    }
-    .header-content__button a {
-        font-size: 18px;
-    }
-    .header-content__button a:first-of-type {
+    .header-content__button li:first-of-type {
         display: inline-block;
         margin-inline-end: 20px;
     }
