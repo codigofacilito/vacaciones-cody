@@ -1,7 +1,7 @@
 import { Slider } from "./modules/slider.js";
 
 async function traerImagenes() {
-  const url = `http://${window.location.host}/public/js/json/images.json`;
+  const url = `http://${window.location.host}/vacaciones-cody/js/json/images.json`;
   console.log(url);
   const res = await fetch(url);
   const json = await res.json();
