@@ -136,6 +136,23 @@ section{
   margin: 0;
 }
 
+.button5 {
+  text-decoration: none;
+  background-color: #f77867;
+  color: white;
+  max-width: 200px;
+  height: 74px;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgb(82, 80, 78);
+  margin: 4px;
+  margin-right: 10px;
+}
+
+.button5:hover{
+  background: #db5846;
+}
+/*
 .cursos div{
   background-color: #f77867;
   color: white;
@@ -150,7 +167,7 @@ section{
 
 .cursos div:hover{
   background: #db5846;
-}
+}*/
 
 .fotos img{
   max-width: 450px;
