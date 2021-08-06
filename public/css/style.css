@@ -1,5 +1,18 @@
+body {
+  background-color: #1bbc9b;
+  background-image: url('../images/pattern.jpg');
+  background-repeat: repeat;
+  background-size: 80%;
+}
+
+header {
+  background-color: #221527;
+  padding: 3em;
+  color: White;
+}
+
 nav{
-  background-color: aliceblue;
+  background-color: #ffe60d;
   padding: 15px;
   display: flex;
   gap:1em;
@@ -16,11 +29,9 @@ section{
 }
 
 .cursos div{
-  background-color: black;
   color: white;
   max-width: 200px;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
 }
 .fotos img{
   max-width: 450px;
@@ -35,4 +46,14 @@ ul li::marker {
 
 ol li{
   text-align: left;
+}
+
+.boton-rojo {
+  background-color: #f55650;
+  border: #221527 20px solid;
+}
+
+.boton-azul {
+  background-color: #1091e5;
+  border: #221527 20px solid;
 }
