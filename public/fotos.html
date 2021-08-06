@@ -1,34 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
+  <title>Mis vacaciones | Fotos</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Roboto+Slab:wght@300;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
   <main>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+      <nav class="navbar navbar-expand-lg position-fixed overflow-hidden col-12 justify-content-center">
+        <a href="index.html" class="link-menu">Inicio</a>
+        <a href="#" class="link-menu active">Fotos</a>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+
+    <div class="parallaxFotos">
+      <div class="contenedor">
+        <h1>Galeria de fotos</h1>
+      </div>
     </div>
 
+    <div class="container mt-5 mb-5 overflow-hidden">
+      <h2>Galería completa de mis vacaciones</h2>
+      <div class="row mt-5 mb-5" data-aos="zoom-out-up">
+        <div class="col-lg-4 col-md-6">
+          <img src="images/1.jpg" class="w-100 mb-3" alt="Cody en la playa">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="images/2.jpg" class="w-100 mb-3" alt="Cody acampando">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="images/3.jpg" class="w-100 mb-3" alt="Cody en una alberca">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="images/4.jpg" class="w-100 mb-3" alt="Cody en una alberca">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="images/5.jpg" class="w-100 mb-3" alt="Cody en una alberca">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="images/6.jpg" class="w-100 mb-3" alt="Cody en una alberca">
+        </div>
+      </div>
+    </div>
   </main>
-</body>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
 </html>

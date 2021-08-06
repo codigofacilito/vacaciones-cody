@@ -1,26 +1,48 @@
 nav{
-  background-color: aliceblue;
   padding: 15px;
-  display: flex;
-  gap:1em;
+  gap:2em;
+  z-index: 1000;
 }
 
 main{
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+  font-family: 'Roboto Slab', serif;
+  background: #f8f8f8;
 }
 
-section{
-  margin-top: 3rem;
+hr{
+  background: rgba(0, 0, 0, .2);
+}
+
+p{
+  font-weight: 300;
+  font-size: 18px;
+}
+
+h2{
+  font-weight: 700;
+}
+
+.link-menu{
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 3px;
+}
+
+.link-menu:hover{
+  color: rgba(0, 0, 0, 0.692);
+}
+
+.active{
+  color: rgba(0, 0, 0, 0.692);
 }
 
 .cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  background-color: #e40487;
+  margin-right: 15px;
+  color: #fff;
 }
 .fotos img{
   max-width: 450px;
@@ -28,6 +50,7 @@ section{
 }
 ul li{
   text-align: left;
+  margin-left: 8px;
 }
 ul li::marker {
   content: "🚀";
@@ -35,4 +58,80 @@ ul li::marker {
 
 ol li{
   text-align: left;
+}
+
+.bg-black{
+  background: #000;
+}
+
+.parallax{
+  height: 100vh;
+  background: url('../images/fondoparallax.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax .contenedor,
+.parallaxFotos .contenedor{
+  width: 50%;
+  margin: auto;
+  color: #000;
+}
+
+.parallax .contenedor h1{
+  font-family: 'MonteCarlo', cursive;
+  font-weight: bold;
+  font-size: 4em;
+  margin-bottom: 8px;
+}
+
+
+
+.parallaxColor{
+  color: #fff;
+  padding: 15px;
+  /*background: linear-gradient(to top, #ff7cae,#a950a1, #5a4894, #2d3a54);*/
+  background: linear-gradient(to top, #ff2f7f,#aa36a0, #4d3c85, #243658);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 5em;
+}
+
+.parallaxFotos{
+  height: 100vh;
+  background: linear-gradient(rgba(255, 90, 192, 0.541), rgba(255, 90, 192, 0.3)) ,url('../images/1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallaxFotos .contenedor h1{
+  font-family: 'MonteCarlo', cursive;
+  font-weight: bold;
+  font-size: 4em;
+  margin-bottom: 8px;
+}
+
+.parallax-link{
+  color: #fff;
+  font-weight: bold;
+}
+
+.parallax-link:hover{
+  color: #e4e4e4;
+}
+
+.link-bg-white{
+  color: #000;
+}
+
+.link-bg-white:hover{
+  color: #141414;
 }
