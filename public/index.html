@@ -1,89 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CDN de Bootstrap 4.5.3-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,200&display=swap"
+    rel="stylesheet">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
+  <!-- Inicio de menú de navegación -->
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../public/images/laIzZnh.png" width="70" height="70" alt="logo">cody
+        </a>
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#cursos">CURSOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ruta">RUTAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#boletin">BOLETIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#vacaciones">VACACIONES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Fin de menú de navagación -->
+  <!-- Inicio del header -->
+  <header>
+    <div id="inicio" class="hero-section">
+      <h1>
+        <p>Vacaciones con cody</p>
+      </h1>
+      <h2 class="subtitulo">
+        <p>Aprendizaje, eventos y concursos</p>
+      </h2>
+    </div>
+  </header>
+  <div class="container">
+    <!-- Fin del header -->
+    <!-- Inicio del Carrousel -->
+    <div id="carouselExampleIndicators" class="carousel slide d-none d-sm-none d-md-block mt-4" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="container-fluid carousel-item active my-3">
+          <div class="row">
+            <div class="col-3">
+              <img class="d-block w-100 images" src="../public/images/1.jpg" alt="First slide">
+            </div>
+            <div class="col-3">
+              <img class="d-block w-100 images" src="../public/images/2.jpg" alt="First slide">
+            </div>
+            <div class="col-3">
+              <img class="d-block w-100 images" src="../public/images/3.jpg" alt="First slide">
+            </div>
+            <div class="col-3">
+              <img class="d-block w-100 images" src="../public/images/4.jpg" alt="First slide">
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid carousel-item my-3">
+          <div class="row">
+            <div class="col-3">
+              <img class="d-block w-100 images" src="../public/images/6.jpg" alt="Second slide">
+            </div>
+            <div class="col-3">
+              <img class="d-block w-100 images" src="../public/images/5.jpg" alt="Second slide">
+            </div>
+            <div class="col-3">
+              <img class="d-block w-100 images" src="../public/images/4.jpg" alt="Second slide">
+            </div>
+            <div class="col-3">
+              <img class="d-block w-100 images" src="../public/images/3.jpg" alt="Second slide">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin del Carrousel -->
+
+
+
+  <!-- Inicio de section 1 -->
+  <div class="section-bg my-4">
+    <div class="container">
+      <h4 class="title">Vacaciones con Cody</h4>
+      <hr>
+      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero
+        compartirlo contigo.</p>
+    </div>
+  </div>
+  <!-- Fin de section 1 -->
+
+  <!-- Inicio de section 2 -->
+  <div>
+    <div class="container">
+
+      <h4 class="title" id="cursos">Mis vacaciones Frontend</h4>
+      <hr>
+      <p>Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve
+        aprendiendo HTML, CSS, y JavaScript.</p>
+      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías
+        frontend, construyendo esta página </p>
       <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
+      <div class="cursos text-center">
+        <a type="button" class="btn btn-outline-success" href="https://codigofacilito.com/cursos/javascript-profesional"
+          target="_blank">Curso Profesional de Javascript</a>
+        <a type="button" class="btn btn-outline-success" href="https://codigofacilito.com/cursos/primera-pagina-2019"
+          target="_blank">Curso para crear mi primera página web</a>
         <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+  <!-- Fin de section 2 -->
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+  <!-- Inicio de section 3 -->
+  <div class="section-bg">
 
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
-      </div>
-    </section>
+    <div class="container">
+      <h4 class="title" id="ruta">Ruta de aprendizaje 2021</h4>
+      <hr>
+      <section>
+        <ul class="nav nav-tabs" id="myTab" role="tablist" style="background-color: #f7f7f7;">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="ruta1-tab" data-toggle="tab" href="#ruta1" role="tab" aria-controls="ruta1"
+              aria-selected="true">Ruta 1</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="ruta2-tab" data-toggle="tab" href="#ruta2" role="tab" aria-controls="ruta2"
+              aria-selected="false">Ruta 2</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="ruta3-tab" data-toggle="tab" href="#ruta3" role="tab" aria-controls="ruta3"
+              aria-selected="false">Ruta 3</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="ruta1" role="tabpanel" aria-labelledby="ruta1-tab">
+            <div>
+              <ul class="py-2">
+                <li>Flexbox, y Grid</li>
+                <li>Animaciones con CSS y JavaScript</li>
+                <li>AJAX</li>
+                <li>HTML semántico</li>
+                <li>Entre otros</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="ruta2" role="tabpanel" aria-labelledby="ruta2-tab">
+            <div>
+              <ul class="py-2">
+                <li>ruta2</li>
+                <li>ruta2</li>
+                <li>ruta2</li>
+                <li>ruta2</li>
+                <li>ruta2</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="ruta3" role="tabpanel" aria-labelledby="ruta3-tab">
+            <div>
+              <ul class="py-2">
+                <li>ruta3</li>
+                <li>ruta3</li>
+                <li>ruta3</li>
+                <li>ruta3</li>
+                <li>ruta3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+  <!-- Fin de section 3 -->
+  <!-- Inicio de section 4 -->
+  <div class="container" id="boletin>
+    <!-- Inicio de Formulario -->
+    <section " class="container py-3">
+      <h2 class="my-2 h5 text-center">Subscribete a nuestro boletín de noticias</h2>
+      <form>
+        <div class="form-row">
+          <div class="col-12 col-md-6 col-sm-3 form-group">
+
+            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+          </div>
+          <div class="col-12 col-md-6 col-sm-3 form-group">
+
+            <input type="email" class="form-control" id="inputEmail" placeholder="Correo Electrónico">
+          </div>
+
+          <button id="enviarCorreo" type="submit" class="btn btn-primary text-dark mx-auto" data-toggle="tooltip"
+            data-placement="bottom" title="Presiona para enviar a tu correo">Enviar</button>
+        </div>
+      </form>
+
+    </section>
+    <!-- Fin de Formulario -->
+  </div>
+  <!-- Fin de section 4 -->
+
+  <!-- Inicio de section 5 -->
+  <div class="section-bg">
+    <div class="container">
+      <section>
+        <h4 class="title" id="vacaciones">La importancia de las vacaciones</h4>
+        <hr>
+        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente
+          nos
+          desconectemos y descansemos apropiadamente</p>
         <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
         <ol>
           <li>Mejora la salud mental</li>
@@ -91,10 +252,34 @@
           <li>Reduce el burnout</li>
           <li>Mejora tu productividad y creatividad</li>
         </ol>
-      </header>
-      
-    </section>
-    
-  </main>
+      </section>
+    </div>
+  </div>
+  <!-- Fin de section 5 -->
+
+  <footer id="contacto" class="oscuro">
+    <a href="https://github.com"><i class="fab fa-github-square fa-5x"></i></a>
+    <a href="https://twitter.com"><i class="fab fa-twitter-square fa-5x"></i></a>
+    <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-5x"></i></a>
+    <p>Vacaciones con Cody 2021. Todos los derechos reservados.</p>
+  </footer>
+
+
+  <!--jQuery 3.5.1 sin slim-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+  <!--Popper JS 1.16.1-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+
+  <!--Bootstrap JS 4.2.1-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
