@@ -2,21 +2,8 @@
 
 @media screen and (min-width: 768px) {
   .flex-container {
-    gap: 15px;
+    gap: 5px;
     align-items: center;
-  }
-
-  .picture {
-    inline-size: 50%;
-  }
-
-  .container {
-    inline-size: 35%;
-  }
-
-  .location {
-    margin-block-start: 15%;
-    justify-content: flex-start;
   }
 }
 
@@ -55,6 +42,7 @@
   }
 
   .description {
+    /* inline-size: 35%; */
     max-inline-size: 320px;
     font-size: 14px;
     line-height: 20px;
@@ -62,6 +50,8 @@
 
   .flex-container {
     position: relative;
+    flex-direction: row;
+    gap: 15px;
   }
 
   .location {
@@ -80,6 +70,8 @@
     inset-block-end: 80%;
     inset-inline-end: 0;
     padding: 10px;
+    border-radius: 50%;
+    transition: background-color .8s;
   }
 
   .next:active img {
@@ -88,6 +80,5 @@
 
   .next:hover {
     background-color: rgba(255, 255, 255, 1);
-    border-radius: 50%;
   }
 }

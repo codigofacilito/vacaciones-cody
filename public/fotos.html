@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
+  <title>Galeria - Mis vacaciones con Cody</title>
+  <link rel="icon" href="./images/cody.png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="css/gallery-responsive.css">
+  <link rel="stylesheet" href="css/transitions.css">
 </head>
 <body>
+  <div class="transition is-active"></div>
   <div class="sun"></div>
   <header>
     <nav class="navbar">
@@ -20,20 +23,47 @@
   </header>
   <main class="flex-container">
     <div class="picture">
-      <img src="images/1.jpg" alt="Cody en la playa">
+      <img src="images/1.jpg" alt="Cody en la playa" id='firstPic'>
+      <img src="images/2.jpg" alt="Cody" id='secondPic'>
+      <img src="images/3.jpg" alt="Cody" id='thirdPic'>
+      <img src="images/4.jpg" alt="Cody" id='fourthPic'>
+      <img src="images/5.jpg" alt="Cody" id='fifthPic'>
+      <img src="images/6.jpg" alt="Cody" id='sixthPic'>
     </div>
     <div class="container">
-      <p class="description">
+      <p class="description" id="firstDesc">
         Aquí me encuentro en una playa paradisiaca montando una bicicleta. Cualquiera puede preguntarse por qué no me  bañaba en el mar, pero es que las personas se podían asustar si veían un cocodrilo como yo nadando cerca de ellos.
+      </p>
+      <p class="description" id='secondDesc'>
+        Acampando en toda la orilla de esta isla me llegué a conseguir con otras especies que no conocía y me sentía sorprendido. Pero creo que las sorprendidas eran ellas. Me veían de forma extraña, tal cual un humano cuando me ve.
+      </p>
+      <p class="description" id="thirdDesc">
+        Cansado de los sitios poco civilizados decidí irme a un hotel lujoso. Me atendieron excelente durante todo mi transcurso allí. Claro, al principio no creían que pudiera ser un huesped hasta que les dije que era programador, y pensaron que era millonario.
+      </p>
+      <p class="description" id='fourthDesc'>
+        Me relajé, busqué dónde acomodarme, me senté y disfruté del atardecer. En esta ocasión no debía esconderme de nadie, porque la playa estaba totalmente sola. Diría que todo esto se trató de una fortuna caimana, la cual agradezco.
+      </p>
+      <p class="description" id='fifthDesc'>
+        Quise venir a Venecia por su belleza e historia. Pero también porque está rodeada de agua en todos los rinconces, lo que significó que no necesité pagar hospedaje en ningún sitio, ya que los cocodrilos podemos vivir en el agua.
+      </p>
+      <p class="description" id='sixthDesc'>
+        En mi viaje de regreso a casa no me permitieron llevar en el equipaje todo lo que quería entregar a mi familia. Denuncié que todo se trataba de racismo contra un cocodrilo, pero me no dejé que unas cuantas personas arruinaran las vacaciones.
       </p>
       <div class="location">
         <img src="./images/location.png" alt="Location Icon">
-        <p>Los Roques, Venezuela</p>
+        <p id="firstLocation">Los Roques, Venezuela</p>
+        <p id='secondLocation'>Las Bahamas</p>
+        <p id='thirdLocation'>Miami, USA</p>
+        <p id='fourthLocation'>Acapulco, México</p>
+        <p id='fifthLocation'>Venecia, Italia</p>
+        <p id='sixthLocation'>Aeropuerto de Berlín</p>
       </div>
     </div>
-    <button class="next" title="Siguiente Foto">
+    <button class="next" title="Siguiente Foto" id='next'>
       <img src="./images/next.png" alt="next button">
     </button>
   </main>
+  <script src="./js/gallery.js"></script>
+  <script src="./js/transition.js"></script>
 </body>
 </html>

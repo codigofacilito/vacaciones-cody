@@ -30,6 +30,10 @@
     line-height: 25px;
   }
 
+  #active {
+    font-size: 18px;
+  }
+
   footer {
     justify-content: space-between;
   }
@@ -113,5 +117,20 @@
 
   .flex-container {
     gap: 20px;
+  }
+
+  .flex-container-vacations {
+    position: relative;
+    flex-wrap: nowrap;
+  }
+
+  #active {
+    font-size: 20px;
+  }
+
+  .next {
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-end: 0;
   }
 }

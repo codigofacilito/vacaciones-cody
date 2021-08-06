@@ -5,12 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta name="viewport" content="width=device-width">
-  <title>Mis vacaciones - Cody</title>
+  <link rel="icon" href="./images/cody.png">
+  <title>Inicio - Mis vacaciones con Cody</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/landing.css">
   <link rel="stylesheet" href="./css/landing-responsive.css">
+  <link rel="stylesheet" href="./css/transitions.css">
 </head>
 <body>
+  <div class="transition is-active"></div>
   <div class="sun"></div>
   <header>
     <nav class="navbar">
@@ -91,13 +94,21 @@
       </header>
       <p>¡Bien! Sé que estás aquí por mis vacaciones, así que aquí te comparto algunas fotos que tomé y los distintos beneficios que puede generar el descanso del código:</p>
       <div class="flex-container-vacations">
-        <img src="images/1.jpg" alt="Cody en la playa">
+        <div class="picture">
+          <img src="images/1.jpg" alt="Cody en la playa" class='image' id="active">
+          <img src="images/2.jpg" alt="Cody en la playa" class='image'>
+          <img src="images/3.jpg" alt="Cody en la playa" class='image'>
+          <img src="images/4.jpg" alt="Cody en la playa" class='image'>
+        </div>
         <ol>
-          <li class="active">Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
+          <li class="listElement" id='active'>Mejora la salud mental</li>
+          <li class="listElement">Incrementa la motivación</li>
+          <li class="listElement">Reduce el burnout</li>
+          <li class="listElement">Mejora tu productividad y creatividad</li>
         </ol>
+        <button class="next" id="button">
+          Siguiente Imagen
+        </button>
       </div>
     </section>
   </main>
@@ -108,10 +119,12 @@
     </div>
     <div class="flex-container-footer">
       <p>@isaaleonardo</p>
-      <a href="https://twitter.com/isaaleonardo">
+      <a href="https://twitter.com/isaaleonardo" target="_blank">
         <img src="./images/twitter.png" alt="Twitter icon" class="twitter">
       </a>
     </div>
   </footer>
+  <script src="./js/index.js"></script>
+  <script src="./js/transition.js"></script>
 </body>
 </html>
