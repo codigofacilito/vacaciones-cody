@@ -355,6 +355,10 @@ ul.slider li:target {
 
 @media screen and (max-width:500px){
 
+  div img{
+    width:360px;
+  }
+  
   .codyrelax{
     scale: 0.5;
   }
@@ -364,16 +368,28 @@ ul.slider li:target {
   }
 
   .puesta ul li{
-    left: 3rem;
+    left: 1rem;
   }
 
   .sea ol li{
-    left: 3rem;
+    left: 1rem;
   }
 
+  ul.slider{
+    width: 360px;
+  }
+
+  ul.slider li img{
+    transform: scale(1,1);
+   /* width: 300px;*/
+  }
 }
 
 @media screen and (max-width:300px){
+
+  div img{
+    max-width: 300px;
+  }
 
   .puesta ul li{
     left: 5rem;

@@ -172,14 +172,21 @@ ul.slider li:target {
   background-color: #3f3825;
 }
 
-/*  RESPONSIVE SIZE 
+/*  RESPONSIVE SIZE */
 @media screen and (max-width:900px ){
 
 }
 
 @media screen and (max-width:500px){
 
+  ul.slider{
+    width: 360px;
+  }
 
+  ul.slider li img{
+    transform: scale(1,1);
+   /* width: 300px;*/
+  }
 
 }
 
@@ -187,4 +194,4 @@ ul.slider li:target {
 
 
 
-}*/
+}
