@@ -1,9 +1,37 @@
+:root {
+	--mirojo: rgb(245,0,87);
+	--mirojo-bg: rgb(255, 102, 156);
+}
+
+html,body {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0px;
+}
+
+img {
+	max-width: 100%;
+}
+
 nav{
-  background-color: aliceblue;
+  background-color: var(--mirojo);
   padding: 15px;
   display: flex;
-  gap:1em;
+	gap:1em;
 }
+
+nav a {
+	color: white;
+}
+
+nav a:hover {
+	color: hotpink;
+}
+
+.cajas {
+	border-right: 2px solid blue;
+	border-bottom: 2px solid blue;
+}
+
 
 main{
   text-align: center;
@@ -16,16 +44,24 @@ section{
 }
 
 .cursos div{
-  background-color: black;
+	/*background-color: black;*/
+	background-color: var(--mirojo);
   color: white;
   max-width: 200px;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px var(--mirojo-bg);
 }
+
+.fotos {
+	box-sizing: border-box;
+}
+
 .fotos img{
-  max-width: 450px;
+	max-width: 450px;
+	/*max-width: 300px;*/
   display: inline-block;
 }
+
 ul li{
   text-align: left;
 }
@@ -35,4 +71,242 @@ ul li::marker {
 
 ol li{
   text-align: left;
+}
+
+.punto {
+	text-align: left;
+}
+.punto::before {
+	content: "\2022";
+  color: blue;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+	margin-left: -1em;
+}
+
+.vacaciones-col {
+	float: left;
+	width: 50%;
+}
+
+/*.vacaciones-row {
+	margin: auto 25px;
+}*/
+
+.vacaciones-row:after {
+	content: "";
+  display: table;
+  clear: both;
+}
+
+.vacaciones-polaroid {
+  width: 80%;
+  background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: auto;
+}
+
+.vacaciones-container {
+	padding: 10px 20px;
+}
+
+.card img {
+	width: 150px;
+	height: 200px;
+}
+
+.responsive {
+	padding: 0 6px;
+  float: left;
+	/*width: 24.99999%;*/
+	width: 30%;
+}
+
+.gallery {
+	padding: 0px 0px;
+	margin: 0px 0px;
+	border: 1px solid var(--mirojo);
+}
+
+.gallery:hover {
+	border: 5px solid var(--mirojo-bg);
+	box-shadow: 5px 5px 10px var(--mirojo);
+}
+
+.gallery img {
+	display: grid;
+  width: 100%;
+	height: auto;
+}
+
+.destacar {
+	padding: 10px 15px;
+	position: relative;
+	color: #000 !important;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	box-sizing: border-box;
+}
+
+.destacar:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	bottom: 0px;
+	height: 40%;
+	z-index: -1;
+	background-color: var(--mirojo-bg);
+	transition: all 0.15s ease-out;
+}
+
+.destacar:hover::before {
+	height: 100%;
+}
+
+.grid-main-area {
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	/*grid-template-areas: ". title title image image image image image ." pantalla escritorio*/
+	grid-template-areas: "title title title title title title title title title"
+	"image image image image image image image image image";
+
+}
+
+.grid-main-area .text {
+	grid-area: title;
+	font-weight: 200;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+.main-text {
+	/*grid-column: 2 / 5;*/
+	grid-area: title;
+	font-weight: 200;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+.main-text h1 {
+	font-weight: inherit; /* hereda del padre el valor*/
+	font-size: 48px;
+	letter-spacing: 0.3em;
+	line-height: 1.5em;
+}
+
+.main-image {
+	/*
+	grid-column-start: 5;
+	grid-column-end: 12;*/
+	grid-area: image;
+}
+
+.slider .controls {
+	text-align: right;
+	margin-bottom: 10px;
+	padding-right: 2em;
+	display: none;
+}
+
+.slider .controls .right-arrow, .left-arrow {
+	height: 40px;
+	transition: all 0.6s ease-out;
+	transition-duration: 0.15s;
+	cursor: pointer;
+}
+
+.slider .controls .right-arrow:hover, .left-arrow:hover {
+	opacity: 0.2;
+}
+
+.slider .controls .left-arrow {
+	margin-right: 1.5em;
+	transform: rotate(180deg); /* -> la rota <-*/
+}
+
+.slider .image {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.slider header {
+	transform: translateY(100px); /* en celular efecto en Y*/
+	background-color: var(--mirojo-bg); /* #2C3E50*/
+	color: #fff;
+	padding: 10px 15px;
+	width: 55%;
+	box-sizing: border-box;
+	margin: 0 auto;
+	z-index: 10;
+	position: relative;
+}
+
+.slider header h2 {
+	margin: 0px;
+}
+
+.slider header .separator {
+	text-align: right;
+	padding-right: 150px;
+	position: relative;
+	color: #fff;
+}
+
+.slider header .separator::after {
+	position: absolute;
+	content: "";
+	height: 3px;
+	width: 140px;
+	background-color: currentColor; /* variable css(currentColor) hereda el color del padre*/
+	top:0.7em;
+	right: 0px;
+}
+
+#slider-text-content {
+	transition: all 0.6s ease-out;
+}
+
+#slider-text-content:hide {
+	opacity: 0;
+	transform: translateX(100px);
+}
+
+#slider-image {
+	position: absolute;
+	width: 600px;
+	height: 400px;
+	transition: all 0.6s ease-out;
+}
+
+#slider-image:hide {
+	opacity: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
 }
