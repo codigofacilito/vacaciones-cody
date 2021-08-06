@@ -55,7 +55,9 @@ ul {
   height: auto;
 }
 
-/* override bt styling */
+/* override bootstrap styling */
+
+
 .btn-primary {
   background-color:rgb(43, 226, 186);
   border: 1px solid rgb(43, 226, 186);
@@ -89,8 +91,8 @@ border-color: #2c3e50;
 }
 
 .divider-custom-icon {
-  font-size: 2rem;
-  padding: 1em;
+  font-size: 1rem;
+  padding: .7em;
 }
 
 /* Icon wrapper */
