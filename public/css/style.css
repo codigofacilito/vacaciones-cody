@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,700&display=swap');
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
 }
+
 /* botones de redireccion a inicio y galeria + Introduccion */
 .header_1 {
+  font-family: 'DM Sans', sans-serif;
   display: grid;
   grid-template-rows: 40px 200px;
   
@@ -19,17 +21,19 @@ nav{
 
 }
 .boton_header_1 {
+  background-color: #ee702d;
   text-decoration: none;
   margin-right: 0px;
-  padding: 11px 9px 11px 9px;
-  border-radius: 50%;
+  padding: 10px 9px 10px 9px;
+  border-radius: 100px;
   line-height: 90px;
 }
 .boton_header_2 {
+  background-color: #e9651d;
   text-decoration: none;
   margin-right: 60px;
-  padding: 11px 9px 11px 9px;
-  border-radius: 50%;
+  padding: 10px 9px 10px 9px;
+  border-radius: 100px;
   line-height: 90px;
 }
 .header-1-titulo-intro div{
@@ -43,6 +47,8 @@ nav{
   
 }
 .header-1-titulo-intro p{
+  font-family: 'Roboto', sans-serif;
+  color: #575757;
   text-align: center;
 }
 
@@ -60,16 +66,24 @@ en un solo section, un h2 y dos h3 */
   grid-column-end: 3;
 }
 .seccion_1_conocimientos-0 p{
+  font-family: 'Roboto', sans-serif;
+  color: #575757;
   margin-bottom: 5px;
 }
 .seccion_1_conocimientos-0 h2{
+  font-size: 24px;
+  font-family: 'DM Sans', sans-serif;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 .seccion-1-conocimientos-1{
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
   margin: 0 auto;
 }
 .seccion-1-conocimientos-2{
+  font-family: 'Roboto', sans-serif;
+  color: rgb(0, 0, 0);
   margin: 0 auto;
 }
 .cursos {
@@ -78,15 +92,19 @@ en un solo section, un h2 y dos h3 */
   margin: auto;
 }
 .cursos_1{
-  max-width: 120px;
-  background-color: #cd8b59;
+  font-size: 14px ;
+  color: #fff4e3;
+  max-width: 140px;
+  background-color: #ee702d;
   border-radius: 8px;
   text-align: center;
-  margin: 20px auto;
+  margin: 28px auto;
   padding: 9px;
-  box-shadow: 2px 2px 4px 0px #925632
+  box-shadow: 4px 4px 4px 0px #e4d2b7;
 }
 .seccion-1-conocimientos-2 header{
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
   text-align: center;
 }
 .seccion-1-conocimientos-2 div{
@@ -105,19 +123,25 @@ ul li{
 ul li::marker {
   content: "🏖️";
 }
-ol li{
-  text-align: left;
-}
+
 
 /* seccion para invitar a colaborar en la web de cody + tutorial */
 .seccion_2_colaboracion_en_git{
+  margin-bottom: 60px;
+  margin-top: 50px;
+  background-image: url(/public/images/imagen3333.PNG);
+  box-shadow: 4px 4px 4px 2px #e4d2b7;
   height: 200px;
 }
 .seccion_2_colaboracion_en_git h2{
-  margin-top: 0px;
+  font-size: 18px;
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 .seccion_2_colaboracion_en_git p{
+  font-family: 'Roboto', sans-serif;
+  color: #575757;
   margin-bottom: 5px;
 }
 /* previsualizacion de las foto con direccion a la pagina de la galeria */
@@ -142,7 +166,15 @@ ol li{
 
 }
 /* Galeria */
-.fotos_galeria{
+.seccion-3-previsualizacion h2{
+  font-family: 'DM Sans', sans-serif;
+}
+.seccion-3-previsualizacion p{
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.fotos_galeria {
   max-width: 1000px;
 }
 .fotos_galeria img{
@@ -157,23 +189,35 @@ ol li{
   height: 400px;
 }
 .seccion-4-beneficios h2{
+  font-family: 'DM Sans', sans-serif;
   margin-bottom: 40px;
 }
 .seccion-4-beneficios p{
+  font-family: 'Roboto', sans-serif;
+  color: #575757;
   margin-bottom: 5px;
 }
 body{
+  margin-left: 40px;
+  margin-right: 40px;
   background-color: #fff2df;
+  max-width: 1920px;
+  max-height: 1080px;
   z-index: -1;
 }
-
+ol li{
+  font-family: 'Roboto', sans-serif;
+  color: #575757;
+  text-align: left;
+  margin-bottom:6px;
+}
 /* efecto ola 
 
 .envoltura{
   position: relative;
 }
 
-.algo{
+.wave0{
   content:"";
   width: 100%;
   height: 100%;
