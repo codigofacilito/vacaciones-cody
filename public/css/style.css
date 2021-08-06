@@ -67,9 +67,9 @@ section{
 }
 
 .story img{
-  border: transparent;
-  background: rgb(233,13,217);
-  background: linear-gradient(90deg, rgba(233,13,217,1) 0%, rgba(240,255,54,1) 100%);
+  background-color: #f2f2f2;
+  border: 2px solid #0626b0 ;
+  padding: 3px;
 }
 
 .story p{
