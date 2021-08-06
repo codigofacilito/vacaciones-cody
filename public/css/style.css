@@ -9,18 +9,53 @@
 }
 /* coloco colores para identificar elementos 
  */
-body{
-  background-color: chartreuse;
+ 
+ body{
+  /* background-color: chartreuse; */
+  font-family: 'Open Sans',sans-serif;
+  color: #184e77;
+
+
 }
 header{
-  position: block;
+  position: static;
   height: 10vh;
+  background-color: coral;
 }
-header nav{
-  background-color: aqua;
+
+header .fixed{
+  position: fixed;
+  background-color: #d9ed92;
   height: 10vh;
   width: 100%;
-  position: fixed;
+  padding: 3px 50px ;
+}
+header h1{
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header nav{
+  display: inline-block;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30000;
+}
+header nav ul li{
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px;
+  transition: all 1s;
+  
+}
+header nav ul li:hover{
+  font-size: 25px;
+
+  transition: all 1s;
 }
 main{
   background-color: blueviolet;
@@ -31,11 +66,30 @@ footer{
 }
 section{
   display: block;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   margin-top: 0;
   height: 90vh;
-}
-section:nth-child(1){
-background-color: chocolate;
+  padding-left:50px ;
 }
 
+
+.animacion{
+ display: block;
+ z-index: 100;
+  
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.1s; /* don't forget to set a duration! */
+}
+
+.nover{
+  visibility: collapse;
+}
+
+.active{
+  font-size: 25px;
+
+  transition: all 0.1;
+}
+section:nth-child(1){
+  visibility: visible;
+}
