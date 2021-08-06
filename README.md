@@ -23,7 +23,6 @@ Es muy importante que al participar, habilites GitHub Actions y GitHub Pages en 
 # Fechas importantes
 La fecha límite para enviar tu pull request es el 6 de Agosto, 11:59pm
 
-# Solución de problemas
+# Demo
 
-**Mi página no se ve en GitHub Pages**
-Asegúrate de haber habilitado GitHub Actions y GitHub Pages, y que la rama de GitHub Pages sea gh-pages
+https://ph81.github.io/vacaciones-cody/
