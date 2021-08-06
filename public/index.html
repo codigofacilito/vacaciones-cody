@@ -1,100 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
+	<meta charset="UTF-8">
+	<title>Verano con Cody</title>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/967af241c0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/JavaScript" src="js/index.js"></script>
 </head>
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
-
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
+<div class="container-fluid p-0 m-0 vh-100 vw-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container">
+        <nav class="navbar navbar-light">
+          <a class="navbar-brand text-white" id="menu" href="#">
+            <div class="d-flex">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_bknKi1.json"  background="transparent"  speed="1"  style="width: 30px; height: 30px;"  loop  autoplay></lottie-player>
+              Verano con Cody
+            </div>
+          </a>
+        </nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" id="home" href="/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" id="photo" href="fotos.html">Fotos</a>
+          </li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </nav>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
+  <div class="header">
+    <div class="inner-header d-flex flex-row">
+      <div class="container w-100 h-100 justify-content-center align-items-center d-flex m-5">
+        <div class="row row-cols-1 w-100 text-superior">
+          <div class="col text-center">
+              <h1 class="display-1 text-white">Verano con Cody</h1>
+              <h2 class="display-6 text-white">¡Hola, soy Cody!</h2>
+              <p class="text-white">Soy un aspirante a Dev, en 2019 organicé un viaje para desestresarme del código.</p>
+              <p class="text-white">¡Te lo mostratré en esta página!</p>
+              <a role="button" href="fotos.html" class="btn flare btn-primary">¡Disfruta mis fotos!</a>
+          </div>
+        </div>
+    </div>
+  </div>
     
-  </main>
+      <div class="padre">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="padre parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+      </div>
+    </div>
+    <div class="hijo">
+      <img src="images/cody2.png" alt="Imagen de Cody" style="width: 20rem; object-fit: cover"/>
+    </div>
+</div>
+
+
+    <div class="container-fluid vh-100 vw-100 m-0 p-0 sky">
+      <div class="row sky-part">
+        <div class="col-6 p-5 my-5" style="width: 40%">
+         <h1 class="mb-3">Mis vacaciones frontend</h1>
+        </div>
+        <div class="col-6">
+          <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_trr3kzyu.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px; position: absolute; right: 0%;"  loop  autoplay></lottie-player>
+        </div>
+      </div>
+      <div class="row sky-part m-2 p-3">
+        <div>
+          <br/>
+          <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
+          <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+          <p> Estos son los cursos que estuve tomando </p>
+          <p>
+        </div>
+        <div class="row cursos d-flex justify-content-evenly">
+          <div class="big-circle">
+            <div class="little-circle p-3 text-center">
+              <p>Curso profesional de Desarrollo Web</p>
+            </div>
+          </div>
+          <div class="big-circle">
+            <div class="little-circle p-3 text-center">
+              <p>Curso para crear mi primera página web</p>
+            </div>
+          </div>
+      </div>
+      </div>
+      <div class="row sky-part">
+        <div class="sand">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ece2c6" fill-opacity="1" d="M0,128L60,160C120,192,240,256,360,277.3C480,299,600,277,720,261.3C840,245,960,235,1080,213.3C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        </div>
+      </div>
+
+      <div class="padre">
+        <div class="hijo">
+          <img src="images/sombrilla.png" alt="sombrilla" style="width: 15rem;"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid vw-100 vh-100 ocean">
+      <div class="row p-5" style="height: 100%;">
+        <div class="col-12 p-5">
+          <div class="row">
+          <h1>Ruta de Aprendizaje 2021</h1>
+          <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+          <ul class="umbrella">
+            <li> Flexbox, y Grid </li>
+            <li> Animaciones con CSS y JavaScript </li>
+            <li> AJAX </li>
+            <li> HTML semántico </li>
+            <li> Entre otros </li>
+          </ul>
+        </div>
+        <div class="row">
+          <img src="images/cangrejo.png" alt="Cangrejo" style="height:  8rem; object-fit: contain;" />
+        </div>
+        </div>
+      </div>  
+    </div >
+
+    <div class="container-fluid vw-100 vh-100 grass p-5">
+      <div class="row justify-content-center align-items-center" style="height: 16.66%">
+        <h1>Mis fotos</h1>
+      </div>
+        <base href="images">
+        <div id="carousel">
+          <figure id="spinner">
+            <img src="images/1.jpg" alt="Cody en bicicleta"/>
+            <img src="images/2.jpg" alt="Cody acampando"/>
+            <img src="images/3.jpg" alt="Cody en alberca">
+            <img src="images/4.jpg" alt="Cody en la playa">
+            <img src="images/5.jpg" alt="Cody en moto">
+            <img src="images/6.jpg" alt="Cody en el aeropuerto">
+          </figure>
+        </div>
+        <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+        <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      $(window).scroll(function(){
+          if($("#menu").offset().top>200){
+              $("#menu").removeClass("text-white");
+              $("#menu").addClass("dummy");
+              $("#home").removeClass("text-white");
+              $("#home").addClass("dummy");
+              $("#photo").removeClass("text-white");
+              $("#photo").addClass("dummy");
+          }else{
+              $("#menu").addClass("text-white");
+              $("#menu").removeClass("dummy");
+              $("#home").addClass("text-white");
+              $("#home").removeClass("dummy");
+              $("#photo").addClass("text-white");
+              $("#photo").removeClass("dummy");
+          }
+      });
+  </script>
+  <footer>
+    <ul>
+      <li>Christopher Enrique Ortiz</li>
+      <li>Honduras</li>
+      <li>Todos los derechos reservados</li>
+    </ul>
+  </footer>
 </body>
 </html>
