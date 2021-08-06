@@ -1,34 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
+  <link rel="shortcut icon" href="images/cody.png">
+  <title>Cody - fotos</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+  <header class="header">
+    <div class="containerh logo-nav-container">
+        <a class="logoh" href="#"><img src="images/logocodigofacilito.svg" width="150" alt=""></a>
+        <span class="menu-icon"><img src="images/menu-gris.svg" width="50" alt=""></span>
+        <div class="navigation"> 
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="fotos.html">Galeria</a></li> 
+          </ul>
+        </div>
+        
     </div>
+</header>
 
-  </main>
+    <main class="container">
+      <div class="row">
+           <div class="col s12 center-align">
+                <h1 class="titulo">Mi galeria</h1>
+           </div>
+      </div>
+
+      <div class="row galeria">
+           <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                     <img src="images/1.jpg" alt="" class="responsive-img materialboxed" data-caption="Cody en bici.">
+                </div>
+           </div>
+           
+           <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                     <img src="images/2.jpg" alt="" class="responsive-img materialboxed" data-caption="Cody acampando.">
+                </div>
+           </div>
+           
+           <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                  <img src="images/3.jpg" alt="" class="responsive-img materialboxed" data-caption="Cody en la piscina.">
+                </div>
+           </div>
+           
+           <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                  <img src="images/4.jpg" alt="" class="responsive-img materialboxed" data-caption="Cody en la playa.">
+                </div>
+           </div>
+           
+           <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                  <img src="images/5.jpg" alt="" class="responsive-img materialboxed" data-caption="Cody en un pueblo magico.">
+                </div>
+           </div>
+           
+           <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                  <img src="images/cody-china.png" alt="" class="responsive-img materialboxed" data-caption="Cody y la muralla china.">
+                </div>
+           </div>
+           
+           <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                  <img src="images/cody-egip.png" alt="" class="responsive-img materialboxed" data-caption="Cody en egipto.">
+                </div>
+           </div>
+           
+           <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                  <img src="images/cody-espacio.png" alt="" class="responsive-img materialboxed" data-caption="Cody en el espacio.">
+                </div>
+           </div>
+           
+           <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                  <img src="images/cody-google.png" alt="" class="responsive-img materialboxed" data-caption="Cody aprendiendo en google.">
+                </div>
+           </div>
+           
+           <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                  <img src="images/cody-japon.png" alt="" class="responsive-img materialboxed" data-caption="Cody y japon.">
+                </div>
+           </div>
+           
+           <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                  <img src="images/cody-teo.png" alt="" class="responsive-img materialboxed" data-caption="Cody visitando las piramides de Teotihuacan.">
+                </div>
+           </div>
+           
+           <div class="col s12 m4 l3">
+                <div class="material-placeholder">
+                  <img src="images/6.jpg" alt="" class="responsive-img materialboxed" data-caption="Cody de regreso :(">
+                </div>
+           </div>
+      </div>
+ </main>
+  
+  <script src="script/main.js"></script>
+
 </body>
 
 </html>

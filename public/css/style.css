@@ -1,38 +1,444 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap');
+
+:root{
+    --color-amarillo: #FFC93C;
+    --color-azulclaro1: #DBF6E9;
+    --color-azulclaro2: #9DDFD3;
+    --color-moradoazul: #31326F;
 }
 
-main{
-  text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+*{
+  margin: 0;
+  padding: 0;
 }
+
+body{
+  font-family: 'Nunito', sans-serif;
+  background-image: url("images/fondo.png");
+}
+
+/* I R  A R R I B A */
+.irarriba{
+  display: none;
+  padding: 0;
+  background: var(--color-amarillo);
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+/* B A N N E R */
+.header{
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: var(--color-amarillo);
+  padding: 15px;
+}
+
+          .containerh{  
+            margin: 0 200px;
+        }
+
+        .header a{
+            color: var(--color-moradoazul);
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .logo-nav-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .menu-icon{
+            display: none;
+        }
+
+        .navigation{
+            align-items: center;
+            margin-left: 100px;
+        }
+
+        .navigation ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .navigation ul li{
+            display: inline-block;
+        }
+
+        .navigation ul li a{
+            display: block;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+        }
+
+        .navigation ul a:hover{
+            background-color: var(--color-moradoazul);
+            color: var(--color-azulclaro1);
+        }
 
 section{
+  text-align: center;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(20px, auto);
+  grid-template-columns: minmax(10px, auto);
   margin-top: 3rem;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
+.inicio{
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px 0;
+  align-items: center;
 }
 
-ol li{
-  text-align: left;
+        .inicio img{
+          margin-right: 200px;
+        }
+
+        .inicio .inicio-texto{
+          text-align: left;
+          margin-left: 200px;
+        }
+
+        .inicio .inicio-texto h1{
+          font-weight: bold;
+          font-size: 36px;
+        }
+
+        .inicio .inicio-texto p{
+          font-size: 24px;
+          padding-top: 2em;
+        }
+
+.misvacaciones{
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px 0;
+  align-items: center;
+}
+
+        .misvacaciones img{
+          margin-left: 200px;
+        }
+
+        .misvacaciones .vacaciones-texto{
+          text-align: right;
+          margin-right: 200px;
+        }
+
+        .misvacaciones .vacaciones-texto h1{
+          font-weight: bold;
+          font-size: 36px;
+        }
+
+        .misvacaciones .vacaciones-texto p{
+          font-size: 24px;
+          margin-top: 2em;
+        }
+
+.cursos{
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px 0;
+  align-items: center;
+}
+
+        .cursos img{
+          transform: scaleX(-1);
+          margin-left: 200px;
+        }
+
+        .cursos .cursos-texto{
+          text-align: right;
+          margin-right: 200px;
+        }
+
+        .cursos .cursos-texto h1{
+          font-weight: bold;
+          font-size: 36px;
+        }
+
+        .cursos-texto .cursos-button div{
+          display: block;
+          margin: 50px 0;
+        }
+
+        .cursos-texto .curso-dweb p a{
+          font-size: 18px;
+          text-decoration: none;
+          background: var(--color-moradoazul);
+          color: var(--color-azulclaro1);
+          padding: 10px;
+          border-radius: 5px;
+          margin-bottom: 1em;
+        }
+
+        .cursos-texto .curso-prweb p a{
+          font-size: 18px;
+          text-decoration: none;
+          background: var(--color-moradoazul);
+          color: var(--color-azulclaro1);
+          padding: 10px;
+          border-radius: 5px;
+          margin-top: 50px;
+          }
+
+        .cursos .cursos-texto a:hover{
+          color: var(--color-moradoazul);
+          background: var(--color-amarillo);
+        }
+
+.ruta{
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px 0;
+  align-items: center;
+}
+
+        .ruta img{
+          margin-right: 200px;
+        }
+
+        .ruta .ruta-texto{
+          text-align: left;
+          margin-left: 200px;
+        }
+
+        .ruta .ruta-texto h2{
+          font-weight: bold;
+          font-size: 36px;
+        }
+
+        .ruta .ruta-texto p{
+          font-size: 24px;
+          margin-top: 2em;
+        }
+
+        .ruta-texto ul{
+          margin-top: 1em;
+          padding-left: 4 0px;
+          font-size: 24px;
+        }
+
+.colabora{
+  text-align: center;
+  margin: 0 200px;
+}
+
+    .colabora h2{
+      font-weight: bold;
+      font-size: 36px;
+      margin-bottom: 1em;
+    }
+
+    .colabora p{
+      font-size: 24px;
+    }
+
+
+.fotos-texto{
+  grid-column: 1/4;
+  text-align: center;
+  margin: 50px 200px;
+}
+
+      .fotos-texto h2{
+        font-size: 36px;
+        font-weight: bold;
+      }
+
+      .fotos-texto p{
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+      }
+
+      .fotos{
+        display: grid;
+        grid-column: 1/4;
+        padding: 0;
+        margin: 0 200px;
+        grid-template-columns: repeat(3, 1fr);
+        
+      }
+
+      .fotos img{
+        width: 300px;
+      }
+
+      .fotos-texto2{
+        grid-column: 1/4;
+        text-align: center;
+        margin: 50px 200px;
+        font-size: 24px;
+      }
+
+        .fotos-texto2 .button{
+          margin: 50px 0;
+        }
+
+        .fotos-texto2 .button a{
+          text-align: center;
+          color: var(--color-azulclaro1);
+          background: var(--color-moradoazul);
+          padding: 15px;
+          border-radius: 5px;
+          text-decoration: none;
+        }
+
+        .fotos-texto2 .button a:hover{
+          background: var(--color-azulclaro2);
+          color: var(--color-moradoazul);
+        }
+
+
+.importancia{
+  grid-template-columns: repeat(1, 1fr);
+}
+  
+        .importancia .imp-text2{
+          text-align: center;
+          margin: 0 200px;
+        }
+
+        .importancia .imp-text2 h2{
+          font-size: 36px;
+        }
+
+        .importancia .imp-text2 p{
+          font-size: 24px;
+        }
+
+        .importancia .imp-lista{
+          font-size: 24px;
+          margin: 0 200px;
+          text-align: left;
+          padding: 55px;
+        }
+
+        .importancia .imp-lista ol{
+          padding-top: 10px;
+          padding-left: 30px;
+        }
+
+.footer{
+  text-align: center;
+  margin: 0 200px;
+}
+
+/*GALERIA*/
+.galeria img {
+  box-shadow: 0 8px 10px -4px rgba(0,0,0,.4);
+  border-radius: 3px;
+}
+
+.materialbox-caption {
+  bottom: 30px;
+  right: 0;
+  width: 40%;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  background: #000;
+  box-shadow: 5px 5px #fff;
+  font-size: 20px;
+  color: #fff;
+  line-height: 28px;
+}
+
+.galeria .col {
+  margin-bottom: 20px;
+}
+
+.container{
+  margin-bottom: 100px;
+}
+
+
+/* S C R O L L  P E R S O N A L I Z A D O */
+body::-webkit-scrollbar{
+  width: 6px;
+  height: .1px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: var(--color-moradoazul);
+  border-radius: 4px;
+}
+
+
+/*RESPONSIVE GALERIA*/
+@media screen and (max-width: 700px){
+  .materialbox-caption {
+       width: 90%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .materialbox-caption {
+       width: 70%;
+  }
+}
+
+/* RESPONSIVE MENU*/
+@media only screen and (max-width: 874px){
+    
+  .menu-icon{
+      display: block;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+  }
+
+  .navigation{
+      width: 100%;
+      margin-top: 1rem;
+  }
+
+  .navigation ul{
+      display: none;
+
+  }
+
+  .navigation ul.show{
+      display: block;
+      
+  }
+
+  .navigation ul li{
+      display: block;
+  }
+  
+  .navigation ul li a{
+      display: block;
+      padding: 0.5rem 0;
+      border-radius: 6px;
+  }
+  
+  .navigation ul a:hover{
+      background-color:var(--color-amarillo);
+      color: var(--color-azulclaro1);   
+  }
+}
+
+/*RESPONSIVE INDEX*/
+@media screen and (max-width: 768px){
+  main{
+    width: 80%;
+    
+  }
 }
