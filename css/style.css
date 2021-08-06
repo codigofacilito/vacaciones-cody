@@ -156,6 +156,37 @@ nav .menu .menu-link:not(:last-child) {
   margin-right: 10px;
 }
 
+nav.sticky-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-radius: 0;
+  background-color: rgb(var(--dark-blue), 10%);
+  z-index: 1;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 20px rgb(var(--dark-blue), 10%);
+  padding-left: 6rem;
+  padding-right: 6rem;
+  transition: var(--base-transition);
+}
+
+.fadeInDown {
+  animation: fadeInDown .5s forwards ease-in-out;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    top: -100%;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0%;
+  }
+}
+
 .page-title {
   margin-top: 30px;
 }
@@ -291,6 +322,23 @@ section h2 {
   counter-increment: css-counter 1;
   display: flex;
   align-items: center;
+  color: #FFF;
+}
+
+.metal-health li:nth-child(1) {
+  background-color: var(--green-200);
+}
+
+.metal-health li:nth-child(2) {
+  background-color: #0F52BA;
+}
+
+.metal-health li:nth-child(3) {
+  background-color: #F9AE28;
+}
+
+.metal-health li:nth-child(4) {
+  background-color: #BDBDBD;
 }
 
 .metal-health li::before {
@@ -307,4 +355,22 @@ section h2 {
   color: #FFF;
   background-color: royalblue;
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .metal-health, .fotos {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .cursos {
+    flex-wrap: wrap;
+  }
+  .cursos div:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .text-information {
+    width: 90%;
+  }
+
 }
