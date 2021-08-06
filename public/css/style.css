@@ -43,7 +43,9 @@ nav{
 
 }
 .header-1-titulo-intro h1{
-  padding: 20px 0px 40px 0px;
+  margin-top: 32px;
+  padding: 5px 0px 10px 0px;
+  margin-bottom: 20px;
   text-align: center;
   
 }
@@ -57,13 +59,17 @@ nav{
 /* Seccion donde ubico los aprendisajes de cody y los distribuyo
 en un solo section, un h2 y dos h3 */
 .seccion-1-sobre-aprendisaje {
+  background-color: #0099ff57;
   margin-left: 40px;
   margin-right: 40px;
   display: grid;
   grid-template-columns: 2 ;
   grid-template-rows: 200px 240px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 0px #e4d2b7;
 }
 .seccion_1_conocimientos-0 {
+
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -83,11 +89,13 @@ en un solo section, un h2 y dos h3 */
   font-size: 14px;
   font-family: 'DM Sans', sans-serif;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 .seccion-1-conocimientos-2{
   font-family: 'Roboto', sans-serif;
   color: rgb(0, 0, 0);
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 .cursos {
   color: rgb(0, 0, 0);
@@ -127,7 +135,6 @@ ul li::marker {
   content: "🏖️";
 }
 
-
 /* seccion para invitar a colaborar en la web de cody + tutorial */
 .seccion_2_colaboracion_en_git{
   margin-left: 40px;
@@ -137,6 +144,7 @@ ul li::marker {
   background-image: url(/public/images/imagen3333.PNG);
   box-shadow: 4px 4px 4px 2px #e4d2b7;
   height: 200px;
+  border-radius: 10px;
 }
 .seccion_2_colaboracion_en_git h2{
   font-size: 18px;
@@ -219,7 +227,7 @@ body{
   /*background-color: #fff2df; */
   background: linear-gradient(
     90deg,
-    #fce7c7 1%,
+    #f7d7a8 1%,
     #fff2df 100%
   );
   max-width: 1920px;
@@ -248,7 +256,7 @@ footer div{
   grid-column-end: 5;
   text-align: center;
 }
-/*efecto ola 
+efecto ola 
 
 .envoltura{
   position: relative;
@@ -262,7 +270,7 @@ footer div{
   background-color: #0099FF;
   position: fixed;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  animation: show 2.6s linear forwards;
+  animation: show 1.4s linear forwards;
 }
 @keyframes show{
   to{
@@ -276,14 +284,14 @@ footer div{
   height:120px;
   left: 0;
   margin-top: 100px;
-  animation: w1 2.3s linear  forwards;
+  animation: w1 1.3s linear  forwards;
   background-position: bottom;
 }
 @keyframes w1 {
   0%{
     margin-left: 0px;
   }
-  100%{ margin-left: -1200px;
+  100%{ margin-left: -1100px;
     transform: translateY(890px);
   }
 
@@ -295,7 +303,7 @@ footer div{
   height:140px;
   left: 0;
   margin-top: 100px;
-  animation: w2 2.3s linear  forwards;
+  animation: w2 1.3s linear  forwards;
   background-position: bottom;
 }
 @keyframes w2 {
@@ -307,4 +315,3 @@ footer div{
   }
 
 }
-*/
