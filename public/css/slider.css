@@ -1,0 +1,122 @@
+body{
+    width: 100%;
+    height: 100%;
+    background: ghostwhite;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  
+  }
+  *{
+   box-sizing: border-box;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+    }
+
+  .carousel-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .carousel{
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 1px 1px 10px black;
+  }
+
+  @media screen and (max-width:431px) {
+    .carousel{
+      width: 600px;
+      height: 200px;
+    }
+  }
+  .carousel-controler{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(0,0,0,.1);
+    z-index: 60000;
+    top: 40%;
+    padding: .5em;
+    font-size: 1.5em;
+    text-align: center;
+    align-items: center;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  @media screen and (max-width:768px){
+    .carousel-controler{
+      opacity: .2;
+    }
+  }
+
+  
+  .left{
+    left: 1em;
+  }
+  .right{
+    right: 1em;
+  }
+  .carousel>ul{
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    display: flex;
+    transition: left 1s;
+  
+  }
+  
+  .carousel-item{
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    flex-shrink:0;
+  }
+  .carousel-item.selected{
+    z-index: 1000;
+  }
+ 
+  @keyframes animacarousel  {
+    0%{left: 0;}
+    50%{left: -600px;}
+    100%{left: -1200px;}
+  
+  }
+  
+  /**extra**/
+  
+  .carousel-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: var(--descriptionText);
+  
+  }
+
+  .bg-image {
+    background-image: url("../assets/img/4.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+  
+    /* Full height */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
+
+  
+ 

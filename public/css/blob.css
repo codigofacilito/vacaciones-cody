@@ -1,0 +1,48 @@
+.header-content{
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+grid-gap: 18px;
+align-items: center;
+}
+
+.blob{
+    position: relative;
+    float: right;
+    margin-top: 0px;
+}
+
+.blob2{
+  position: relative;
+  float: center;
+  margin-top: 0px;
+  margin-bottom: 85px;
+}
+
+.image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 400px;
+   
+  }
+  .image2 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 300px;
+    
+  }  
+
+  .text-header{
+    font:  var(--fontBase);
+    font-size: 30px;
+  }
+
+  @media screen and (min-width:375px){
+    .image2 {
+      position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 300px;
+      }
+  }

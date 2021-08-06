@@ -1,0 +1,27 @@
+.typing{
+    width: 11ch;
+    animation: typing 3s steps(11), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font: var(--headLine2);
+    font-size: 50px;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .wrapper-typing{
+        margin-top: 25px;
+    }
+}

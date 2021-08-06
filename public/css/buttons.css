@@ -1,0 +1,30 @@
+.btn-ver{
+    background: var(--secondaryColor);
+    font: var(--buttonText);
+    border:  solid var(--secondaryColor);
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 13px;
+    padding-block-end: 13px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 8px;
+    width: 300px;
+}
+.btn-tutorial{
+    background: var(--secondaryColor);
+    font: var(--buttonText);
+    border:  solid var(--secondaryColor);
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 13px;
+    padding-block-end: 13px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.btn-ver:hover{
+    color: var(--tertiaryColor);
+}

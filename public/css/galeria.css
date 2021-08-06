@@ -1,0 +1,114 @@
+body{
+  font-family: 'Droid Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+  }
+  
+  .instagram-card{
+      background: #ffffff;
+      border: 1px solid #f2f2f2;
+      border-radius: 3px;
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      margin-top: 28px;
+  }
+  
+  .instagram-card-header{
+      padding: 20px;
+      height: 40px;
+      margin-bottom: 30px;
+  }
+
+  .social{
+    padding-block-end: 24px;
+    display: flex;
+    gap: 16px;
+  }
+  
+  .licosend img{
+    width: 28px;
+  }
+
+  .instagram-card-user-image{
+      border: 3px solid #f06948 ;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+      
+  }
+
+  #is-liked {
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto;      
+  }
+
+  #last{
+    margin-bottom: 68px;
+  }
+  .instagram-card-time{
+      float: right;
+      width: 80px;
+      padding-top:10px;
+      text-align: right;
+      color: #999;
+  }
+  
+  .instagram-user-name{
+      margin-left:20px;
+      font-weight:bold;
+    color: #262626;
+  }
+  
+  .instagram-card-content{
+    padding: 10px;
+  }
+  
+  .likes{
+    font-weight: bold;
+  }
+  
+  .instagram-card-content-user{
+    font-weight: bold;
+    color: #262626;
+  }
+  
+  .hashtag{
+    color: #003569;
+  }
+  
+  .comments{
+    color:#999;
+  }
+  
+  .user-comment{
+    color: #003569;
+  }
+  
+  .instagram-card-footer{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  hr{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-top: 30px;
+    margin-bottom: 0px;
+   
+  }
+  
+  
+  .footer-action-icons{
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .comments-input{
+    border: none;
+    margin-left: 10px;
+    width: 100%;
+  }
