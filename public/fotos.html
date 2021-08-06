@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Fotos</title>
+    <title>Fotos de mis Vacaciones!</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
@@ -21,8 +21,8 @@
       <header class="hero">
         <div class="nav__container">
           <nav class="nav">
-            <a class="nav__link" href="./index.html">Inicio</a>
-            <a class="nav__link active" href="fotos.html">Fotos</a>
+            <a class="nav__link" href="../index.html">Inicio</a>
+            <a class="nav__link active" href="./fotos.html">Fotos</a>
             <a class="nav__link" href="./codyGame.html">Juego</a>
           </nav>
         </div>
@@ -32,22 +32,22 @@
         <div class="swiper-container mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./images/1.jpg" />
+              <img src="./images/1.jpg" alt="Cody dando un paseo en bicicleta en la playa" />
             </div>
             <div class="swiper-slide">
-              <img src="./images/2.jpg" />
+              <img src="./images/2.jpg" alt="Cody acampando en la orilla de una playa" />
             </div>
             <div class="swiper-slide">
-              <img src="./images/3.jpg" />
+              <img src="./images/3.jpg" alt="Cody relajandose en una alberca con un refresco y un flotador" />
             </div>
             <div class="swiper-slide">
-              <img src="./images/4.jpg" />
+              <img src="./images/4.jpg" alt="Cody tomando un refresco sentado en la orilla de la playa" />
             </div>
             <div class="swiper-slide">
-              <img src="./images/5.jpg" />
+              <img src="./images/5.jpg" alt="Cody posando al lado de una motocicleta" />
             </div>
             <div class="swiper-slide">
-              <img src="./images/6.jpg" />
+              <img src="./images/6.jpg" alt="Cody enojado esperando al avión en el aeropuerto" />
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -57,25 +57,6 @@
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
-    </script>
+    <script src="../src/javascript/Swiper.js"></script>
   </body>
 </html>

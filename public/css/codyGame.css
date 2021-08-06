@@ -49,7 +49,7 @@ body{
     background-color: #aca8c7;
 }
 
-.dino {
+.cody {
     width: 84px;
     height: 84px;
 
@@ -62,10 +62,6 @@ body{
     background-size: 84px 84px;
     background-position-x: 0px;
 
-}
-
-.dino-estrellado {
-    background-position-x: -252px;
 }
 
 .suelo {
@@ -119,7 +115,7 @@ body{
     right: 15px;
     z-index: 10;
 
-    color: #d48871;
+    color: #5bcc85;
     font-family: Verdana;
     font-size: 30px;
     font-weight: bold;
@@ -134,9 +130,8 @@ body{
 
 
     text-align: center;
-    color: #7e928b;
+    color: #5bcc85;
     font-size: 30px;
     font-family: Verdana;
     font-weight: 700;
 }
-

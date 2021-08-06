@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./public/css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
@@ -17,20 +17,20 @@
       <div class="nav__container">
         <nav class="nav">
           <a class="nav__link active" href="./index.html">Inicio</a>
-          <a class="nav__link" href="fotos.html">Fotos</a>
-          <a class="nav__link" href="./codyGame.html">Juego</a>
+          <a class="nav__link" href="./public/fotos.html">Fotos</a>
+          <a class="nav__link" href="./public/codyGame.html">Juego</a>
         </nav>
       </div>
       <section class="hero__main container">
         <div class="hero__texts">
           <h1>Estas son mis Vacaciones .<span>&#160</span></h1>
           <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-          <a href="./codyGame.html" class="cta">Jugar con Cody!</a>
+          <a href="./public/codyGame.html" class="cta">Jugar con Cody!</a>
         </div>
-        <img src="./images/cody-hi.png" alt="">
+        <img src="./public/images/cody-hi.png" alt="Cody saltando y sonriendo">
       </section>
     </header>
-    <div style="height: 160px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C134.59,135.69 288.09,-44.89 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #18191a;"></path></svg></div>
+    <div class="wave-svg" style="height: 160px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C134.59,135.69 288.09,-44.89 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #18191a;"></path></svg></div>
     <section class="container animate">
       <header>
         <h2>Mis vacaciones Frontend</h2>
@@ -94,9 +94,9 @@
       </header>
       <div class="slider">
         <div class="slider-container">
-            <img src="./images/1.jpg" alt="">
-            <img src="./images/2.jpg" alt="">
-            <img src="./images/3.jpg" alt="">
+            <img src="./public/images/1.jpg" alt="Cody dando un paseo en bicicleta en la playa">
+            <img src="./public/images/2.jpg" alt="Cody acampando en la orilla de una playa">
+            <img src="./public/images/3.jpg" alt="Cody relajandose en una alberca con un refresco y un flotador">
         </div> 
         <div class="controls">
           <ul>
@@ -106,7 +106,7 @@
       </div>
       <p class="black-text">
         Puedes ver más, en la galería de fotos de mi página
-        <a href="fotos.html">Ir a la galería</a>
+        <a href="./public/fotos.html">Ir a la galería</a>
       </p>
     </section>
 
@@ -134,7 +134,7 @@
     </section>
     
   </main>
-  <script src="../src/javascript/Slider.js"></script>
-  <script src="../src/javascript/animate.js"></script>
+  <script src="./src/javascript/Slider.js"></script>
+  <script src="./src/javascript/animate.js"></script>
 </body>
 </html>

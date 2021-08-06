@@ -104,6 +104,9 @@
           border-radius: $borde;
         }
       }
+      img {
+        width: 500px;
+      }
     }
   }
 
@@ -275,6 +278,7 @@
     content: '🚀';
     }
 
+
   @media (max-width: 768px) {
     
     .hero {
@@ -283,7 +287,16 @@
       }
       .hero__main {
         grid-template-columns: 1fr;
-        margin-left: 15%;
+        margin: 0 15%;
+
+        & .hero__texts {
+          h1 {
+            font-size: 1.8rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
       }
       img {
         display: none;
@@ -292,6 +305,13 @@
 
 
     .container {
+
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
 
       .courses-container {
         display: inline-grid;
@@ -320,5 +340,9 @@
 
     .slider {
       width: 90%;
+    }
+
+    .wave-svg {
+      display: none;
     }
   }

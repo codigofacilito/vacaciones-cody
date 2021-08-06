@@ -76,11 +76,6 @@
   border-left: solid 2px #fff;
   animation: write 4s infinite alternate steps(24);
 }
-
-.hero .hero__main img {
-  width: 500px;
-}
-
 @keyframes write {
   from {
     width: 100%;
@@ -104,6 +99,9 @@
   padding: 15px 45px;
   color: #18191a;
   border-radius: 15px;
+}
+.hero .hero__main img {
+  width: 500px;
 }
 
 .container {
@@ -274,12 +272,24 @@ ul li::marker {
   }
   .hero .hero__main {
     grid-template-columns: 1fr;
-    margin-left: 15%;
+    margin: 0 15%;
+  }
+  .hero .hero__main .hero__texts h1 {
+    font-size: 1.8rem;
+  }
+  .hero .hero__main .hero__texts p {
+    font-size: 1.4rem;
   }
   .hero img {
     display: none;
   }
 
+  .container h2 {
+    font-size: 2rem;
+  }
+  .container p {
+    font-size: 1rem;
+  }
   .container .courses-container {
     display: inline-grid;
     grid-template-columns: repeat(1, 20rem);
@@ -301,6 +311,10 @@ ul li::marker {
 
   .slider {
     width: 90%;
+  }
+
+  .wave-svg {
+    display: none;
   }
 }
 

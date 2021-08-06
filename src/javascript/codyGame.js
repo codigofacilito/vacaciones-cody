@@ -20,15 +20,13 @@ function Loop() {
     requestAnimationFrame(Loop);
 }
 
-//****** GAME LOGIC ********//
-
 var sueloY = 22;
 var velY = 0;
 var impulso = 900;
 var gravedad = 2500;
 
-var dinoPosX = 42;
-var dinoPosY = sueloY; 
+var codyPosX = 42;
+var codyPosY = sueloY; 
 
 var sueloX = 0;
 var velEscenario = 1280/3;
@@ -53,7 +51,7 @@ var nubes = [];
 var velNube = 0.5;
 
 var contenedor;
-var dino;
+var cody;
 var textoScore;
 var suelo;
 var gameOver;
@@ -63,7 +61,7 @@ function Start() {
     suelo = document.querySelector(".suelo");
     contenedor = document.querySelector(".contenedor");
     textoScore = document.querySelector(".score");
-    dino = document.querySelector(".dino");
+    cody = document.querySelector(".cody");
     document.addEventListener("keydown", HandleKeyDown);
     document.addEventListener('click', Saltar);
 }
@@ -71,7 +69,7 @@ function Start() {
 function Update() {
     if(parado) return;
     
-    MoverDinosaurio();
+    MoverCody();
     MoverSuelo();
     DecidirCrearObstaculos();
     DecidirCrearNubes();
@@ -89,27 +87,26 @@ function HandleKeyDown(ev){
 }
 
 function Saltar(){
-    if(dinoPosY === sueloY){
+    if(codyPosY === sueloY){
         saltando = true;
         velY = impulso;
-        dino.classList.remove("dino-corriendo");
     }
 }
 
-function MoverDinosaurio() {
-    dinoPosY += velY * deltaTime;
-    if(dinoPosY < sueloY){
+function MoverCody() {
+    codyPosY += velY * deltaTime;
+    if(codyPosY < sueloY){
         
         TocarSuelo();
     }
-    dino.style.bottom = dinoPosY+"px";
+    cody.style.bottom = codyPosY+"px";
 }
 
 function TocarSuelo() {
-    dinoPosY = sueloY;
+    codyPosY = sueloY;
     velY = 0;
     if(saltando){
-        dino.classList.add("dino-corriendo");
+        return;
     }
     saltando = false;
 }
@@ -124,8 +121,6 @@ function CalcularDesplazamiento() {
 }
 
 function Estrellarse() {
-    dino.classList.remove("dino-corriendo");
-    dino.classList.add("dino-estrellado");
     parado = true;
 }
 
@@ -215,11 +210,11 @@ function GameOver() {
 
 function DetectarColision() {
     for (var i = 0; i < obstaculos.length; i++) {
-        if(obstaculos[i].posX > dinoPosX + dino.clientWidth) {
-            //EVADE
-            break; //al estar en orden, no puede chocar con más
+        if(obstaculos[i].posX > codyPosX + cody.clientWidth) {
+            
+            break; 
         }else{
-            if(IsCollision(dino, obstaculos[i], 10, 30, 15, 20)) {
+            if(IsCollision(cody, obstaculos[i], 10, 30, 15, 20)) {
                 GameOver();
             }
         }

@@ -13,8 +13,9 @@ body {
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #5bcc85;
+  text-decoration: underline;
   text-align: center;
 }
 
