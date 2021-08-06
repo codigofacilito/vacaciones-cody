@@ -354,7 +354,7 @@ h3 {
   position: relative;
   width: 100%;
   height: calc(100vh - 60px);
-  background: url("../../images/4.jpg");
+  background: url("../images/4.jpg");
   background-size: cover;
   white-space: normal;
   padding-top: 0; }
