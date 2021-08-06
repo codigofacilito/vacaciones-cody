@@ -11,6 +11,12 @@ nav {
 
 
 
+nav img {
+  padding-left: 1rem;
+}
+
+
+
 .nav-link {
   color: #fff;
   font-size: 1.5rem;
@@ -18,8 +24,27 @@ nav {
 
 
 
+.nav-link:hover {
+  color: #000;
+}
+
+
+
 header nav .disabled {
   color: #026c67 !important;
+  padding-left: 0;
+}
+
+
+
+#header .container img {
+  max-width: 100%;
+}
+
+
+.tarjetita {
+  width: 90rem;
+  height: 18rem;
 }
 
 
