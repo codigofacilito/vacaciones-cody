@@ -2,52 +2,51 @@ body {
   background-color: rgba(82, 202, 206, 3%);
 }
 
-
 nav {
   background-color: #01b99d;
   display: flex;
   gap:1em;
 }
 
-
-
 nav img {
   padding-left: 1rem;
 }
-
-
 
 .nav-link {
   color: #fff;
   font-size: 1.5rem;
 }
 
-
-
 .nav-link:hover {
   color: #000;
 }
-
-
 
 header nav .disabled {
   color: #026c67 !important;
   padding-left: 0;
 }
 
-
+#first_img {
+  height: 17rem;
+  background-color: rgba(255, 204, 28, 80%);
+  border-right: 0.3rem solid rgba(2,108,103,0.8);
+}
 
 #header .container img {
   max-width: 100%;
 }
 
-
 .tarjetita {
-  width: 90rem;
+  margin-top: 2rem;
+  width: 55rem;
   height: 18rem;
+  border: 0.5rem solid rgba(2,108,103,0.8);
+  border-radius: 0.9rem;
 }
 
-
+header .tarjetita .row {
+  height: 17.95rem;
+}
 
 main {
   text-align: center;
@@ -55,13 +54,9 @@ main {
   margin:0 auto;
 }
 
-
-
 section {
   margin-top: 3rem;
 }
-
-
 
 .cursos div {
   background-color: black;
@@ -71,33 +66,22 @@ section {
   box-shadow: 5px 5px 10px black;
 }
 
-
-
 .fotos {
 
 }
-
-
 
 .fotos img {
   max-height: 80vh;
   object-fit: cover;
 }
 
-
-
 ul li {
   text-align: left;
 }
 
-
-
-
-ul li::marker {
-  content: "🚀";
+.ruta_aprendizaje {
+  list-style-image: url(cody.png)
 }
-
-
 
 ol li {
   text-align: left;
