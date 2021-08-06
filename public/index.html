@@ -5,18 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
+  <nav class="nav container">
+    <ul class="nav__container">
+      <li class="nav__item">
+        <a href="index.html">Inicio</a>
+      </li>
+      <li class="nav__item">
         <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
+      </li>
+    </ul>
+  </nav>
+  <header class="header">
+    <div class="header__info container">
+      <h1 class="header__title">Estas son mis Vacaciones</h1>
+      <p class="header__subtitle">Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+    </div>
+    <div class="images">
+      <img src="images/isla.png" alt="imagen de una isla" class="images__isla">
+      <img src="images/img-cody-summer.png" alt="cody en un flotador" class="images__cody-summer">
+      <img src="images/Vector (1).png" alt="" class="images__wave">
+    </div>
+  </header>
+
+  <main class="main">
 
     <section>
       <header>
@@ -69,7 +84,7 @@
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
       </header>
-      <div class="fotos">
+      <!-- <div class="fotos">
         <img src="images/1.jpg" alt="Cody en la playa">
         <img src="images/2.jpg" alt="Cody acampando">
         <img src="images/3.jpg" alt="Cody en una alberca">
@@ -77,7 +92,7 @@
           Puedes ver más, en la galería de fotos de mi página
           <a href="fotos.html">Ir a la galería</a>
         </p>
-      </div>
+      </div> -->
     </section>
 
     <section>

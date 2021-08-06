@@ -1,38 +1,214 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* custom properties */
+:root{
+  /* font */
+  --font: 'Roboto', sans-serif;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+  --black: 900;
+  /* colors */
+  --white: #ffffff;
+  --gray: #E5E5E5;
+  --headings: #040328;
+  --subtitle: #4A5B63;
+  --texts: #616164;
+  --blue: #004968;
+  --green: #3ED219;
+  /* border-radius */
+  --border-radius: 5px;
+  --border-radius2: 10px;
+}
+/* generales */
+html{ 
+  font-size: 62.5%; 
+  overflow-x: hidden;
+}
+body{ 
+  background-color: var(--white);
+  font-family: var(--font);
+}
+.container{
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+/* nav */
+.nav{
   display: flex;
-  gap:1em;
+  justify-content: flex-end;
+  margin-top: 1rem;
 }
-
-main{
+.nav__container{
+  display: flex;
+}
+.nav__item{
+  list-style: none;
+}
+.nav__item a{
+  font-size: 2.2rem;
+  font-weight: var(--medium);
+  margin-left: 3rem;
+  position: relative;
+  text-decoration: none;
+}
+.nav__item a::after{
+  background-color: var(--green);
+  border-radius: .5rem;
+  bottom: -.1rem;
+  content: "";
+  left: 0;
+  opacity: .3;
+  padding: .6rem;
+  position: absolute;
+  right: 0;
+  transition: opacity .3s;
+  z-index: -1;
+}
+.nav__item a:hover:after{
+  opacity: .6;
+}
+@media (min-width: 1440px) {
+  .nav{
+    margin-top: 3rem;
+  }
+  .nav__item a{
+    font-size: 3.2rem;
+  }
+    
+}
+/* header */
+.header{
+  background: linear-gradient(0.55deg, #48C7E3 0.5%, rgba(72, 199, 227, 0.366616) 86.07%, rgba(72, 199, 227, 0) 99.56%);
+  height: calc(100vh - 4rem);
+  position: relative;
+}
+.header::after{
+  background: radial-gradient(50% 50% at 50% 50%, #D1F109 0%, rgba(210, 153, 6, 0.817708) 45.31%, rgba(239, 119, 32, 0.584077) 73.44%, rgba(234, 10, 10, 0.03) 100%);
+  content: "";
+  height: 30rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30rem;
+  border-radius: 50%;
+  transform: translate(-50%,-55%);
+}
+.header__info{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 10rem);
+  justify-content: center;
+}
+.header__title{
+  color: var(--headings);
+  font-weight: var(--black);
+  font-size: 4rem;
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+}
+.header__subtitle{
+  color: var(--subtitle);
+  font-size: 2.4rem;
+  font-weight: var(--medium);
+  text-align: center;
+  max-width: 80.5rem;
+}
+.images{
+  bottom: -13rem;
+  position: absolute;
 }
 
-section{
-  margin-top: 3rem;
+.images__wave{
+  height: 18rem;
+  width: 100vw;
+  z-index: -1;
+}
+.images__isla{
+  height: 16rem;
+  margin: 0 5%;
+  position: relative;
+  top: 3rem;
+  z-index: 10;
+}
+.images__cody-summer{
+  height: 7rem;
+  position: relative;
+  top: 2rem;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+/* @media (min-width: 500px) {
+  .images__wave{
+    height: 16rem;
+  }
+}  */
+@media (min-width: 728px) {
+  .images__isla{
+    height: 22rem;
+  }
+  .images__cody-summer{
+    height: 12rem;
+  
 }
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
 }
-ul li{
-  text-align: left;
+@media (min-width: 1200px) {
+  .header::after{
+    content: "";
+    height: 52rem;
+    width: 52rem;
+  }
+  .header__title{
+    font-size: 4.5rem;
+  }
+  .header__subtitle{
+    font-size: 2.4rem;
+  }
+  .images{
+    bottom: -15rem;
+  }
+  .images__isla{
+    height: 22rem;
+  }
+  .images__cody-summer{
+    height: 10rem;
+  }
+  .images__wave{
+    height: 20rem;
+  }
 }
-ul li::marker {
-  content: "🚀";
+@media (min-width: 1440px) {
+  .header::after{
+    height: 65.8rem;
+    width: 65.8rem;
+  }
+  .header__info{
+    height: calc(100% - 20rem);
+  }
+  .images{
+    bottom: -14.4rem;
+  }
+  .images__wave{
+    height: 27rem;
+  }
+  .images__isla{
+    height: 38.5rem;
+    top: 7rem;
+  }
+  .images__cody-summer{
+    height: 18.6rem;
+    top: 4rem;
+  }
+  .header__title{
+    font-size: 5.5rem;
+  }
+  .header__subtitle{
+    font-size: 3.2rem;
+  }
 }
-
-ol li{
-  text-align: left;
+/*  */
+.main{
+  margin-top: 50rem;
 }
