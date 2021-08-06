@@ -1,11 +1,27 @@
 import { Slider } from "./modules/slider.js";
 
 async function traerImagenes() {
-  const url = `http://${window.location.host}/vacaciones-cody/js/json/images.json`;
-  console.log(url);
-  const res = await fetch(url);
-  const json = await res.json();
-  mostarImagenes(json);
+  // const url = `/vacaciones-cody/js/json/images.json`;
+  // console.log(url);
+  // const res = await fetch(url);
+  // const json = await res.json();
+
+  /* LA IDEA ERA TRAER LAS IMAGES SIMULANDO LA CONEXION UNA API, PERO ME TIRA ESTE ERROR:
+   gallery.js:6 Mixed Content: The page at 'https://pepinogttv.github.io/vacaciones-cody/galeria.html' was loaded over HTTPS,
+   but requested an insecure resource 'http://pepinogttv.github.io/public/js/json/images.json'. 
+   This request has been blocked; the content must be served over HTTPS.
+  */
+
+  const images = [
+    { src: "./images/1.jpg" },
+    { src: "./images/2.jpg" },
+    { src: "./images/3.jpg" },
+    { src: "./images/4.jpg" },
+    { src: "./images/5.jpg" },
+    { src: "./images/6.jpg" },
+  ];
+
+  mostarImagenes(images);
 }
 function mostarImagenes(arrayOfImages) {
   const container_images = document.querySelector(".gallery__images");
