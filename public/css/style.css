@@ -1,3 +1,5 @@
+/* Colores */
+/* https://coolors.co/palettes/trending */
 /* Reseteo css */
 *{
   margin: 0;
@@ -13,7 +15,7 @@
  body{
   /* background-color: chartreuse; */
   font-family: 'Open Sans',sans-serif;
-  color: #184e77;
+  color: #007f5f;
 
 
 }
@@ -25,7 +27,8 @@ header{
 
 header .fixed{
   position: fixed;
-  background-color: #d9ed92;
+  z-index: 300;
+  background-color: #ffff3f;
   height: 10vh;
   width: 100%;
   padding: 3px 50px ;
@@ -96,6 +99,34 @@ section:nth-child(5){
 
   transition: all 0.1;
 }
-section:nth-child(1){
-  visibility: visible;
-}
+ #cont1{
+  background-image: url('../images/1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: bottom;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+ }
+ #cont1 h1{
+   background-color: #80b918;
+   opacity: 90%;
+   position: absolute;
+   z-index: 0;
+   bottom: 140px;
+   text-align: center;
+   float: left;
+   height: 70px;
+   width: 70%;
+   padding: 15px 0 ;
+   border-radius: 25px;
+ }
+ #cont1 p{
+  position: absolute;
+  z-index: 0;
+  bottom: 70px;
+  right: 0;
+   background-color: red;
+   text-align: right;
+   float: right;
+ }
