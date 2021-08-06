@@ -27,6 +27,7 @@ nav{
   padding: 10px 9px 10px 9px;
   border-radius: 100px;
   line-height: 90px;
+  box-shadow: 2px 2px 2px 0px #e4d2b7;
 }
 .boton_header_2 {
   background-color: #e9651d;
@@ -35,6 +36,7 @@ nav{
   padding: 10px 9px 10px 9px;
   border-radius: 100px;
   line-height: 90px;
+  box-shadow: 2px 2px 2px 0px #e4d2b7;
 }
 .header-1-titulo-intro div{
   max-width: 460px;
@@ -57,6 +59,8 @@ nav{
 /* Seccion donde ubico los aprendisajes de cody y los distribuyo
 en un solo section, un h2 y dos h3 */
 .seccion-1-sobre-aprendisaje {
+  margin-left: 40px;
+  margin-right: 40px;
   display: grid;
   grid-template-columns: 2 ;
   grid-template-rows: 200px 240px;
@@ -66,6 +70,7 @@ en un solo section, un h2 y dos h3 */
   grid-column-end: 3;
 }
 .seccion_1_conocimientos-0 p{
+  
   font-family: 'Roboto', sans-serif;
   color: #575757;
   margin-bottom: 5px;
@@ -127,6 +132,8 @@ ul li::marker {
 
 /* seccion para invitar a colaborar en la web de cody + tutorial */
 .seccion_2_colaboracion_en_git{
+  margin-left: 40px;
+  margin-right: 40px;
   margin-bottom: 60px;
   margin-top: 50px;
   background-image: url(/public/images/imagen3333.PNG);
@@ -167,25 +174,38 @@ ul li::marker {
 }
 /* Galeria */
 .seccion-3-previsualizacion h2{
+  margin-left: 40px;
+  margin-right: 40px;
   font-family: 'DM Sans', sans-serif;
 }
 .seccion-3-previsualizacion p{
+  margin-left: 40px;
+  margin-right: 40px;
   font-family: 'Roboto', sans-serif;
   
 }
 
 .fotos_galeria {
-  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1800px;
 }
 .fotos_galeria img{
 
-  max-width: 420px;
+  max-width: 500px;
   display: inline-block;
 }
 
 /* seccion sobre la importancia de las vacaciones con items */
 
 .seccion-4-beneficios{
+  margin-left: 40px;
+  margin-right: 40px;
+  background: linear-gradient(
+    90deg,
+    #fae2bf 20%,
+    #ffeccf 80%
+  );
   height: 400px;
 }
 .seccion-4-beneficios h2{
@@ -198,9 +218,12 @@ ul li::marker {
   margin-bottom: 5px;
 }
 body{
-  margin-left: 40px;
-  margin-right: 40px;
-  background-color: #fff2df;
+  /*background-color: #fff2df; */
+  background: linear-gradient(
+    90deg,
+    #fae2bf 20%,
+    #fff2df 80%
+  );
   max-width: 1920px;
   max-height: 1080px;
   z-index: -1;
@@ -211,7 +234,11 @@ ol li{
   text-align: left;
   margin-bottom:6px;
 }
-/* efecto ola 
+footer{
+  height: 60px;
+  background-color: #220c02;
+}
+/*efecto ola 
 
 .envoltura{
   position: relative;
@@ -232,7 +259,6 @@ ol li{
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
   }
 }
-
 .wave{
   background-image: url(../images/wave.svg);
   position:fixed;
