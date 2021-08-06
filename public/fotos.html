@@ -6,29 +6,101 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
+  <main class="gallery-cody">
+    <nav class="navbar-codigo" id="navbar">
+      <div class='navbar-logo'>
+        <a href="/public/index.html">
+          <img src="./images/logo/logo.png" alt='logo codigo' />
+        </a>
+      </div>
+      <div class='navbar-content-desktop d-none d-lg-block'>
+        <ul class='navbar-content-options'>
+          <li><a>Frontendventuras</a></li>
+          <li><a>Ruta Frontend</a></li>
+          <li><a>Mis fotos</a></li>
+        </ul>
+      </div>
+      <div class='navbar-menu-hamburger d-lg-none'>
+        <ul class="hamburger-options">
+          <li><a>Frontendventuras</a></li>
+          <li><a>Ruta Frontend</a></li>
+          <li><a>Mis fotos</a></li>
+        </ul>
+        <img src="./images/icons/hamburger.svg" alt='icon' class="icon-hamburger" id="icon-hamburger" />
+      </div>
+    </nav>
+    <section class="photos">
+      <section class="swiper-container mySwiper">
+        <div class="swiper-wrapper" role="slider">
+          <div class="swiper-slide">
+            <h2 class="text-center">Aquí Palenquiando</h2>
+            <img src="./images/photos/desktop/01-ruins-cody.jpeg" alt="Cody en Palenque, Chiapas"
+              class="d-none d-lg-block" />
+            <img src="./images/photos/mobile/01-ruins-cody.jpeg" alt="Cody en Palenque, Chiapas" class="d-lg-none" />
+          </div>
+          <div class="swiper-slide">
+            <h2 class="text-center">Difrustando de los lagos de Montebello</h2>
+            <img src="./images/photos/desktop/02-lake-cody.jpeg" alt="Caody en Lagos de Montebello, Chiapas"
+              class="d-none d-lg-block" />
+            <img src="./images/photos/mobile/02-lake-cody.jpeg" alt="Caody en Lagos de Montebello, Chiapas"
+              class="d-lg-none" />
+          </div>
+          <div class="swiper-slide">
+            <h2 class="text-center">Danzando con la Marimba</h2>
+            <img src="./images/photos/desktop/03-marimba-cody.jpeg" alt="Cody en el Parque de la Marimba, Chiapas"
+              class="d-none d-lg-block" />
+            <img src="./images/photos/mobile/03-marimba-cody.jpeg" alt="Cody en el Parque de la Marimba, Chiapas"
+              class="d-lg-none" />
+          </div>
+          <div class="swiper-slide">
+            <h2 class="text-center">Arrechiando en la Pila</h2>
+            <img src="./images/photos/desktop/04-chiapa-cody.jpeg" alt="Cody en Chiapa de Corzo"
+              class="d-none d-lg-block" />
+            <img src="./images/photos/mobile/04-chiapa-cody.jpeg" alt="Cody en Chiapa de Corzo" class="d-lg-none" />
+          </div>
+          <div class="swiper-slide">
+            <h2 class="text-center">Con los Turulos en la Playa</h2>
+            <img src="./images/photos/desktop/05-bleach-cody.jpeg" alt="Cody en Playa Sol, Chiapas"
+              class="d-none d-lg-block" />
+            <img src="./images/photos/mobile/05-bleach-cody.jpeg" alt="Cody en Playa Sol, Chiapas" class="d-lg-none" />
+          </div>
+          <div class="swiper-slide">
+            <h2 class="text-center">Rumbo a un cafecito en el Arco</h2>
+            <img src="./images/photos/desktop/06-sancris-cody.jpeg" alt="Cody en San Cristóbal de las Casas, Chiapas"
+              class="d-none d-lg-block" />
+            <img src="./images/photos/mobile/06-sancris-cody.jpeg" alt="Cody en San Cristóbal de las Casas, Chiapas"
+              class="d-lg-none" />
+          </div>
+          <div class="swiper-slide">
+            <h2 class="text-center">Coviviendo en la "Convivencia"</h2>
+            <img src="./images/photos/desktop/07-tuxtla-cody.jpeg" alt="Cody en Tuxtla Gutiérrez, Chiapas"
+              class="d-none d-lg-block" />
+            <img src="./images/photos/mobile/07-tuxtla-cody.jpeg" alt="Cody en Tuxtla Gutiérrez, Chiapas"
+              class="d-lg-none" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+
+    </section>
 
   </main>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/carrousel.js"></script>
+  <script src="js/navbar.js"></script>
 </body>
 
 </html>

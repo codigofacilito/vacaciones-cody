@@ -20,24 +20,24 @@
   <main>
     <header class="hero">
       <img src="./images/cody/sun.svg" alt="" class="sun d-none d-lg-block">
-      <nav class="navbar-codigo" id="navbar">
+      <nav class="navbar-codigo" id="navbar" role="navigation">
         <div class='navbar-logo'>
           <a href="/public/index.html">
-            <img src="./images/logo/logo.png" alt='logo codigo' />
+            <img src="./images/logo/logo.png" alt='Logo de Códigofacilito' />
           </a>
         </div>
         <div class='navbar-content-desktop d-none d-lg-block'>
           <ul class='navbar-content-options'>
-            <li><a>Frontendventuras</a></li>
-            <li><a>Ruta Frontend</a></li>
-            <li><a>Mis fotos</a></li>
+            <li><a role="link" href="#my-adventures">Frontendventuras</a></li>
+            <li><a role="link" href="#learning-path">Ruta Frontend</a></li>
+            <li><a role="link" href="/public/fotos.html">Mis fotos</a></li>
           </ul>
         </div>
         <div class='navbar-menu-hamburger d-lg-none'>
           <ul class="hamburger-options">
-            <li><a>Frontendventuras</a></li>
-            <li><a>Ruta Frontend</a></li>
-            <li><a>Mis fotos</a></li>
+            <li><a role="link" href="#my-adventures">Frontendventuras</a></li>
+            <li><a role="link" href="#learning-path">Ruta Frontend</a></li>
+            <li><a role="link" href="/public/fotos.html">Mis fotos</a></li>
           </ul>
           <img src="./images/icons/hamburger.svg" alt='icon' class="icon-hamburger" id="icon-hamburger" />
         </div>
@@ -49,16 +49,18 @@
         Your browser does not support the video tag.
       </video>
       <div class="hero-card">
-        <img class="card-palm d-none d-lg-block" src="./images/cody/palm-cody.png" alt="">
+        <img class="card-palm d-none d-lg-block" src="./images/cody/palm-cody.png" alt="Palma de playa">
         <div class="card-body">
-          <h1>Mis <br class="d-md-none"> vacaciones</h1>
+          <h1>Mis <br class="d-md-none"> vacaciones con Codigofacilito</h1>
           <h2>¡Hola amigos!</h2>
-          <p>Soy Cody, un aspirante a Dev. En 2019, organicé un viaje para desestresarme del código, y en esta página
+          <p tabindex="1">Soy Cody, un aspirante a Dev. En 2019, organicé un viaje para desestresarme del código, y en
+            esta página
             quiero
             compartirlo contigo.</p>
-          <a href="#">Mira mis FrontendVenturas <img src="./images/icons/arrow.svg" alt=""></a>
+          <a role="link" aria-label="Ir hacia la sección de Mis Frontendventuras" href=" #my-adventures">Mira mis
+            FrontendVenturas <img src="./images/icons/arrow.svg" alt="icono de flecha hacia la derecha"></a>
         </div>
-        <img class="card-cody" src="./images/cody/cody-hero.png" alt="">
+        <img class="card-cody" src="./images/cody/cody-hero.png" alt="Cody en un salvavidas">
       </div>
     </header>
 
@@ -74,13 +76,13 @@
             </p>
           </div>
           <div class="col-12 col-md-6 d-flex justify-content-center">
-            <img src="./images/cody/cody_teacnologias.svg" alt="">
+            <img src="./images/cody/cody_teacnologias.svg" alt="Cody con Tecnologías Frontend: HTML, CSS, JavaScript" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container-fluid my-adventures">
+    <section id="my-adventures" class="container-fluid my-adventures">
       <div class="container">
         <div class="row">
           <div class="col-12 d-flex flex-column align-items-center">
@@ -95,17 +97,24 @@
           </div>
           <div class="col-12 d-flex justify-content-center devices-courses">
             <article class="device d-lg-none">
-              <img src="./images/cody/mobile-cody.svg" alt="">
+              <img src="./images/cody/mobile-cody.svg" alt="Mockup de Dispositivo Mobile">
               <section class="call-to-action">
-                <a class="btn-facilito" href="#">ir al curso <img src="./images/icons/arrow.svg" alt=""></a>
-                <a class="btn-facilito" href="#">ir al curso <img src="./images/icons/arrow.svg" alt=""></a>
+                <a rel="noopener noreferrer" class="btn-facilito"
+                  href="https://codigofacilito.com/cursos/crear-pagina-web" target="_blank">ir al
+                  curso <img src="./images/icons/arrow.svg" alt=""></a>
+                <a class="btn-facilito" href="https://codigofacilito.com/cursos/frontend-profesional">ir al curso <img
+                    src="./images/icons/arrow.svg" alt="Icono de flecha hacia la derecha"></a>
               </section>
             </article>
             <article class="device d-none d-lg-block">
-              <img src="./images/cody/desktop-cody.svg" alt="">
+              <img src="./images/cody/desktop-cody.svg" alt="Mockup de PC en Desktop">
               <section class="call-to-action">
-                <a class="btn-facilito" href="#">ir al curso <img src="./images/icons/arrow.svg" alt=""></a>
-                <a class="btn-facilito" href="#">ir al curso <img src="./images/icons/arrow.svg" alt=""></a>
+                <a class="btn-facilito" rel="noopener noreferrer"
+                  href="https://codigofacilito.com/cursos/crear-pagina-web">ir al curso <img
+                    src="./images/icons/arrow.svg" alt="Icono de flecha hacia la derecha"></a>
+                <a class="btn-facilito" rel="noopener noreferrer"
+                  href="https://codigofacilito.com/cursos/frontend-profesional">ir al curso <img
+                    src="./images/icons/arrow.svg" alt="Icono de flecha hacia la derecha"></a>
               </section>
             </article>
           </div>
@@ -113,32 +122,32 @@
       </div>
     </section>
 
-    <section class="container-fluid learning-path">
+    <section class="container-fluid learning-path" id="learning-path">
       <div class="row">
         <div class="col-12 d-flex flex-column align-items-center">
           <h3>Ruta de <br> aprendizaje 2021</h3>
           <p>También me propuse aprender nuevas tecnologías durante 2021</p>
         </div>
         <div class="col-12 paths">
-          <section class="topics">
+          <section class="topics" role="slider">
             <article class="topic">
-              <img src="./images/topics/01-topic.svg" alt="">
-              <p>Flexbox, y <br> Grid</p>
-            </article>
-            <article class="topic">
-              <img src="./images/topics/02-topic.svg" alt="">
-              <p>Animaciones <br> CSS y JavaScript</p>
-            </article>
-            <article class="topic">
-              <img src="./images/topics/03-topic.svg" alt="">
-              <p>AJAX</p>
-            </article>
-            <article class="topic">
-              <img src="./images/topics/04-topic.svg" alt="">
+              <img src="./images/topics/04-topic.svg" alt="Paso 1: HTML Semántico">
               <p>HTML <br> semántico</p>
             </article>
             <article class="topic">
-              <img src="./images/topics/05-topic.svg" alt="">
+              <img src="./images/topics/01-topic.svg" alt="Paso 2: Flexbox y Grid">
+              <p>Flexbox, y <br> Grid</p>
+            </article>
+            <article class="topic">
+              <img src="./images/topics/02-topic.svg" alt="Paso 3: Animacione CSS y JavaScript">
+              <p>Animaciones <br> CSS y JavaScript</p>
+            </article>
+            <article class="topic">
+              <img src="./images/topics/03-topic.svg" alt="Paso 4: Aprender AJAX">
+              <p>AJAX</p>
+            </article>
+            <article class="topic">
+              <img src="./images/topics/05-topic.svg" alt="Paso 5: React">
               <p>React</p>
             </article>
           </section>
@@ -158,7 +167,7 @@
         <div class="col-12 d-flex justify-content-center collaborate">
           <article class="card-git-hub">
             <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-              <img src="./images/icons/git_github.svg" alt="">
+              <img src="./images/icons/git_github.svg" alt="Iconos de Git y Github">
               <p class="text-center text-lg-start">Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y
                 enviando un
                 pull request.</p>
@@ -166,7 +175,9 @@
             <p>
               Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
             </p>
-            <a href="#">Mira el tutorial <img src="./images/icons/arrow-green.svg" alt=""></a>
+            <a rel="noopener noreferrer" href="https://github.com/codigofacilito/vacaciones-cody" target="_blank">Mira
+              el tutorial
+              <img src="./images/icons/arrow-green.svg" alt="Icono de flecha hacia la derecha"></a>
           </article>
         </div>
       </div>
@@ -179,22 +190,22 @@
           <p>Durante mis vacaciones aprendí que existen <br> distintos beneficios de descansar:</p>
         </div>
         <div class="col-12 ">
-          <section class="items-important">
+          <section class="items-important" role="slider">
             <article class="important">
-              <img src="./images/important/01-important.svg" alt="">
+              <img src="./images/important/01-important.svg" alt="Imagen referente a: Mejora la salud mental">
               <p>Mejora la salud <br> mental</p>
             </article>
             <article class="important">
               <p>Incrementa la <br> motivación</p>
-              <img src="./images/important/02-important.svg" alt="">
+              <img src="./images/important/02-important.svg" alt="Imagen referente a: Incremento de Motivación">
             </article>
             <article class="important">
-              <img src="./images/important/03-important.svg" alt="">
+              <img src="./images/important/03-important.svg" alt="Imagen referente a: Reduce el estrés">
               <p>Reduce el <br> burnout</p>
             </article>
             <article class="important">
               <p>Mejora tu <br> creatividad</p>
-              <img src="./images/important/04-important.svg" alt="">
+              <img src="./images/important/04-important.svg" alt="Imagen referente a: Mejorar la creatividad">
             </article>
           </section>
         </div>
@@ -219,16 +230,16 @@
         <div class="col-12 gallery-photos">
           <h2>Mi Frontend verano en <br class="d-md-none"> Chiapas</h2>
 
-          <section class="wrapper-gallery">
+          <section class="wrapper-gallery" role="">
             <div class="d-md-none photo">
-              <img src="./images/photos/mobile/01-ruins-cody.jpeg" alt="">
+              <img src="./images/photos/mobile/01-ruins-cody.jpeg" alt="Cody en Palenque, Chiapas">
               <div class="show-gallery">
                 <p>Puedes ver como me diverti en <br> mis Frontendventuras ...</p>
                 <a href="/public/fotos.html">Ir a mi Galleria</a>
               </div>
             </div>
             <div class=" d-none d-md-block photo">
-              <img src="./images/photos/desktop/01-ruins-cody.jpeg" alt="">
+              <img src="./images/photos/desktop/01-ruins-cody.jpeg" alt="Cody en Palenque, Chiapas">
               <div class="show-gallery">
                 <p>Puedes ver como me diverti en <br> mis Frontendventuras ...</p>
                 <a href="/public/fotos.html">Ir a mi Galleria</a>
@@ -244,7 +255,9 @@
         <div class="col-12">
           <p>Hecho con ❤️ por Fernanda Palacios</p>
           <h2>¡Arriba Chiapas!</h2>
-          <a href="#"><img src="./images/icons/github.svg" alt=""> @EveFer</a>
+          <a rel="noopener noreferrer" href="https://github.com/EveFer" target="_blank"><img
+              src="./images/icons/github.svg" alt="Logo de Github">
+            @EveFer</a>
         </div>
       </div>
     </footer>

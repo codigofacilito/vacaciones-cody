@@ -23,6 +23,10 @@ body {
   font-family: var(--main-font);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-style: normal;
   font-weight: bold;
@@ -557,6 +561,46 @@ button, a {
   text-transform: unset;
 }
 
+/* page - gallery cody */
+
+  .gallery-cody {
+    height: 100vh;
+    background-image: url('../images/brackground/bg-phonos.jpeg');
+    background-repeat: no-repeat;
+    background-position:  center;
+    position: relative;
+  }
+
+  .gallery-cody .photos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+  }
+
+  .swiper-slide h2 {
+    line-height: 25px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
 
 /* Medium */
 @media only screen and (min-width: 768px) {
@@ -614,6 +658,8 @@ button, a {
   .gallery-section .gallery-photos h2 {
     font-size: 40px;;
   }
+
+  
 
 }
 
