@@ -5,6 +5,12 @@ nav{
   gap:1em;
 }
 
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 15px 10px;
+}
+
 .menu {
   color: #021F3C;
   visibility: visible;
@@ -29,6 +35,7 @@ a.navbar-brand {
   background-color: #f7f7f7;
   width: 100%;
   height: 35vh;
+  margin: 0 auto;
 }
 
 .images {
@@ -64,20 +71,20 @@ img:hover {
 
 hr {
   height: 4px;
-    width: 48px;
-    background: #FDC40A;
-    text-align: left;
-    display: inline-block;
-    margin: 7px 0 16px 0;
-    border-top: 0;
-    display: block;
+  width: 48px;
+  background: #FDC40A;
+  text-align: center;
+  margin: 0 50% 0 50%;
+  
+  
 }
 
 .title {
   padding-top: 50px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 200;
-  text-align: left;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 main{
@@ -91,7 +98,7 @@ section{
 }
 
 .cursos div{
-  background-color: black;
+  
   color: white;
   max-width: 200px;
   display: inline-block;

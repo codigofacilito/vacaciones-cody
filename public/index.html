@@ -11,6 +11,7 @@
   <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Lobster&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,200&display=swap" rel="stylesheet">
   <!--Font Awesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -21,9 +22,11 @@
 <body>
   <!-- Inicio de menú de navegación -->
   <div>
-    <nav class="navbar cabeza navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#" width="137" height="46">VACACIONES CON CODY</a>
+        <a class="navbar-brand" href="#" >
+          <img src="../public/images/laIzZnh.png" width="70" height="70" alt="logo">cody
+        </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,6 +41,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#nosotros">QUÉ HACER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">GALERIA</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contacto">CONTACTO</a>
@@ -108,38 +114,35 @@
 
   
   <!-- Inicio de section 1 -->
-  <div class="section-bg my-5">
+  <div class="section-bg my-4">
     <div class="container">
-      <h2 class="title">Vacaciones con Cody</h2>
+      <h4 class="title">Vacaciones con Cody</h4>
     <hr>
-    <p>Estas son mis Vacaciones</p>
-
     <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero
-      compartirlo contigo</p>
+      compartirlo contigo.</p>
     </div>
   </div>
   <!-- Fin de section 1 -->
 
   <!-- Inicio de section 2 -->
-  <div class="container">
-    <section>
+  <div>
+    <div class="container">
     
-      <h2>Mis vacaciones Frontend</h2>
-    
-    <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve
-      aprendiendo HTML, CSS, y JavaScript </p>
+      <h4 class="title">Mis vacaciones Frontend</h4>
+    <hr>
+    <p>Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve
+      aprendiendo HTML, CSS, y JavaScript.</p> 
     <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías
       frontend, construyendo esta página </p>
     <p> Estos son los cursos que estuve tomando </p>
-    <div class="cursos">
+    <div class="cursos text-center">
+      <a type="button" class="btn btn-outline-success" href="https://codigofacilito.com/cursos/javascript-profesional" target="_blank">Curso Profesional de Javascript</a>
+      <a type="button" class="btn btn-outline-success" href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank">Curso para crear mi primera página web</a>
       <div>
-        <p>Curso profesional de Desarrollo Web</p>
-      </div>
-      <div>
-        <p>Curso para crear mi primera página web</p>
+        
       </div>
     </div>
-  </section>
+  </div>
   </div>
   <!-- Fin de section 2 -->
 
@@ -147,7 +150,7 @@
   <div class="section-bg">
     <div class="container">
       <section>
-        <header>
+        <!-- <header>
           <h2>Ruta de aprendizaje 2021</h2>
           <p> También me propuse aprender nuevas tecnologías durante 2021</p>
         </header>
@@ -157,7 +160,21 @@
           <li> AJAX </li>
           <li> HTML semántico </li>
           <li> Entre otros </li>
-        </ul>
+        </ul> -->
+       
+        <div class="container">
+          <br>
+          <div class="row">
+            <div class="col-md-5">
+              <div role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation"><a href="#"></a></li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </div>
