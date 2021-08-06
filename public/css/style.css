@@ -306,6 +306,9 @@ section .row {
   h4 {
     font-size: 18px;
   }
+  h5 {
+    font-size: 12px;
+  }
   .cody {
     width: 300px;
     height: auto;
@@ -318,6 +321,14 @@ section .row {
   }
   .selfcare-list {
     font-size: 16px;
+  }
+
+  .note {
+    float: left;
+    padding: .5em;
+    width: 200px;
+    min-height: 10px;
+    margin-top: 5px;
   }
   
 }
