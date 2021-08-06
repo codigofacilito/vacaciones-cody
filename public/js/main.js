@@ -166,10 +166,10 @@ var main = new Vue({
 
     },
     methods:{
-        seleccionarPost(post){
+        selectPost(post){
             this.post = post;
         },
-        seleccionarStory(story){
+        selectStory(story){
             this.story = story;
         }
     }
