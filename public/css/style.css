@@ -1,0 +1,138 @@
+main {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+h1,h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+a { 
+  text-decoration: underline;
+  color: white;
+  text-transform: uppercase;
+}
+
+.cursos div {
+  margin: 20px 10px 0px 10px ; 
+  display: inline-flex;
+  
+}
+.fotos img {
+  max-width: 450px;
+  display: inline-block;
+}
+
+.nav--item {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  padding: 15px;
+  background-color: #ffffff47;
+  border-radius: 15%;
+  font-size: 1.4rem;
+  border: #ffffff63 solid 1px;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  cursor: pointer;
+  /* letter-spacing: 0.15em; */
+}
+
+.nav--item:hover {
+  transform: scale(1.1);
+  opacity: 87%;
+}
+
+.main--header {
+  background-image: url("../images/main__background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100vw;
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.main--header nav { 
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 50px;
+}
+
+.main--header p {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.main--header__title  {
+  margin-bottom: 1%;
+}
+
+.main--header__title:after {    
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.main--header__title:hover:after { 
+  width: 90%; 
+  left: 5%;
+}
+
+section { 
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+}
+
+section p {
+  color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.section--cursos { 
+  background-image: url("../images/landscape-tropical-difum.jpg");
+}
+.section--ruta {
+  background-image: url("../images//beautiful-tropical-background.jpg");
+}
+.section--colabora { 
+  background-image: url("../images/beautiful-tropical-coconut-palm-background.jpg");
+}
+.section--images { 
+  background-image: url("../images/beautiful-tropical-beach-sea-ocean-background.jpg");
+}
+.section--importancia { 
+  background-image: url("../images/aerial-view-of-container-cargo-ship-in-sea.jpg");
+}
+
+.section--content { 
+  padding: 15px;
+  background-color: #ffffff38;
+  border-radius: 2px;
+  border: #ffffff63 solid 1px;
+}
+
+.list--item { 
+  list-style: none;
+  width: 80%;
+  height: 10vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
