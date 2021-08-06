@@ -294,7 +294,7 @@ section .row {
 }
 
 /* Mobile & tablets tweaks */
-@media screen and (min-width: 460px) {
+@media only screen and (min-width: 800px) {
   h1 {
     font-size: 42px;
   }
