@@ -44,6 +44,7 @@ section p {
   height: 40px;
   padding: 0 4%;
   width: 100vw;
+  top: 0;
 }
 
 #button-menu {
@@ -281,6 +282,11 @@ section p {
   min-width: 230px;
   max-width: 400px;
   width: 55%;
+}
+
+/*Pagina fotos*/
+.section-galeria {
+  margin-top: 60px;
 }
 
 @media (min-width: 576px) { 
