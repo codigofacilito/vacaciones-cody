@@ -66,10 +66,16 @@ footer{
 }
 section{
   display: block;
+  clear: both;
   /* background-color: cadetblue; */
   margin-top: 0;
   height: 90vh;
   padding-left:50px ;
+}
+section:nth-child(5){
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
 }
 
 

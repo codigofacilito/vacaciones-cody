@@ -33,20 +33,22 @@ window.addEventListener("DOMContentLoaded", (event) => {
       });
     }
   }
+  scroll({
+    behavior: "smooth"
 
+  })
   function Observador(entries) {
     entries.map((e, index) => {
       
       if (e.isIntersecting == true &&e.intersectionRatio>0.32 ) {
         setTimeout(()=>{
-            e.target.classList.remove("nover");
+            e.target.classList.remove("animacion");
             e.target.classList.add("animacion");
         },100)
         //   observer.unobserve(e.target)
       }else{
         setTimeout(()=>{
             e.target.classList.remove("animacion");
-            e.target.classList.add("nover");
         },100)
       }
     });
