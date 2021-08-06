@@ -1,0 +1,9 @@
+ul{
+    list-style: none;
+    font: var(--fontBase);
+}
+
+#li-item::before{
+    content: "🐊 ";
+    width: 25px;
+}

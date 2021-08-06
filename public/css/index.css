@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+@import "./header.css";
+@import "./cards.css";
+@import "./slider.css";
+@import "./buttons.css";
+@import "./galeria.css";
+@import "./blob.css";
+@import "./road.css";
+@import "./typing.css";
+@import "./salud.css";
+
+:root{
+    --fontBase: 'Tajawal', sans-serif;
+    --bodyText:var(--colorFont) 16px/14px var(--fontBase);
+    --descriptionText: 12px/18px var(--fontBase);
+    --headLine1: bold 54px/68px  'Caveat', cursive;
+    --headLine2: bold 52px var(--fontBase);      
+    --headLine3: bold 24px/29px var(--fontBase);
+    --buttonText: bold 14px/22px  var(--fontBase);
+    --bgHeader: var(--primaryColor);
+    --bgColor: #ffffff;
+    --bgCards: #c4c4c4;
+    --colorFont: #000000;
+    --priorityColor: #C05746;
+    --primaryColor: #1bbc9b;
+    --secondaryColor: #f7cb18;
+    --tertiaryColor: #ba9912;
+}
+
+body{
+    font:  var(--fontBase);
+    color: var(--colorFont);
+    min-block-size: 100vh;
+    margin: 0;
+    background-color: #ffdf0e;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%231bbc9b' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+.wrapper {
+    max-inline-size: 1158px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
+    margin: auto;
+  }
+
+h1{
+    font: var(--headLine1);
+    color: var(--colorFont);
+    margin-top: 50px;
+}
+h2{
+    font: var(--headLine2);
+    margin-top: 50px;
+}
+h3{
+    font: var(--headLine3);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    font:  var(--fontBase);
+    color: var(--colorFont);
+}
+footer{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 10px ;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    background-color: var(--primaryColor);
+    padding: 5px;
+}
+ 
+@media screen and (max-width: 768px) {
+    footer{
+        z-index: 80;
+        max-width: 800px;
+        margin-bottom: 40px;
+        block-size: 40px;
+        width: auto;
+      border-top-right-radius: 55px;
+      border-top-left-radius: 55px;
+      
+    }
+  }

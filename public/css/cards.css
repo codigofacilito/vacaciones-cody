@@ -1,0 +1,80 @@
+.card{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 28px;
+    margin-top: 24px;
+    text-align: left;
+    border-radius: 1rem;
+    position: relative;
+    width: 280px;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+    padding: 8px;
+    padding-top: 25px;
+
+}
+
+.card:hover{
+    width: 300px;
+    
+}
+   
+
+.wrapper-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card img{
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.card a{
+    text-decoration: none;
+    
+}
+
+.title-card{
+    margin: auto;
+    text-align: center;
+}
+
+.tutorial{
+    margin-top: 20px;
+    text-align: right;
+}
+
+@media screen and (max-width: 767px ){
+    .content{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 767px ){
+    .wrapper-flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    .colaboration{
+        position: relative;
+        align-items: flex-start;
+        float: left;
+    }
+
+    .text-card{
+        padding-left: 200px;
+    }
+
+  
+    .card.is-colaboration{
+        width: 750px;
+    }
+}
