@@ -13,6 +13,9 @@
     
     --verde2: #00c973;
   }
+  *{
+    box-sizing: border-box;
+  }
   html{
     scroll-behavior: smooth;
   }
@@ -23,13 +26,13 @@
     inline-size: 100%;
   }
   h1{
-    font-size: 72px;
+    font-size: 64px;
   }
   h2{
-    font-size: 48px;
+    font-size: 36px;
   }
   h3{
-    font-size: 32px;
+    font-size: 24px;
   }
   h4{
     font-size: 22px;
@@ -41,8 +44,8 @@
     text-decoration: none;
   }
   p{
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 27px;
   }
   
   .wrapper{
@@ -50,12 +53,15 @@
     inline-size: 90%;
     margin-inline: auto;
   }
+
+
+
+
   .btn{
-    display: inline-block;
+    display: block;
     background: var(--amarillo-claro);
     color: var(--blanco);
     font-weight: 700;
-    font-size: 20px;
     padding-block: 16px;
     padding-inline: 24px;
     border-radius: 4px;
@@ -69,19 +75,54 @@
   .btn:active{
     transform: scale(.98);
   }
+
+  @media screen and (min-width: 769px) {
+    .btn{
+      display: inline-block;
+      font-size: 20px;
+    }  
+  }
+  
+
+
+
+
   .section .title{
     text-align: center;
-    margin-block-end: 40px;
+    margin-block-end: 24px;
   }
   .section .subtitle{
     text-align: center;
     font-weight: 700;
-    margin-block-end: 40px;
+    margin-block-start: 24px;
+    margin-block-end: 32px;
   }
   .section .desc{
     text-align: center;
     max-inline-size: 1090px;
     margin-inline: auto;
-    margin-block-end: 64px;
+    margin-block-end: 24px;
   }
-  
+
+
+
+  @media screen and (min-width: 768px) {
+    h3{
+      font-size: 32px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 32px;
+    }
+    .section .title{
+      font-size: 48px;
+      margin-block-end: 40px;
+    }
+    .section .subtitle{
+      margin-block: 40px;
+    }
+    .section .desc{
+      margin-block-end: 64px;
+      font-size: 18px;
+    }
+  }

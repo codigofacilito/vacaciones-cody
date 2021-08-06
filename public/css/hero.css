@@ -1,26 +1,92 @@
 .hero{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+
     color: var(--blanco);
-    margin-block: 120px;
+    padding-block: 40px;
     margin-inline: auto;
 }
-.hero .desc{
-    max-inline-size: 600px;
+.hero .foto{
+    inline-size: 200px;
+    margin-block-end: 24px;
 }
+
 .hero .desc h3{
-    margin-block-end: 16px;
+    margin-block-end: 8px;
 }
 .hero .desc h1{
     margin-block-end: 16px;
 }
 .hero .desc p{
     display: block;
-    font-size: 24px;
     margin-block-end: 32px;
 }
-.hero .foto{
-    inline-size: 400px;
-    transform: scaleX(-1)
+
+
+
+@media screen and (min-width: 480px) {
+    .hero{
+        padding-block: 64px;
+        max-inline-size: 600px;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    .hero{
+        max-inline-size: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        padding-block: 120px;
+
+    }
+    .hero .foto{
+        min-inline-size: 300px;
+        transform: scaleX(-1);
+        order: 2;
+    }
+    .hero .desc{
+        max-inline-size: 560px;
+        order: 1;
+    }
+    .hero .desc h3{
+        margin-block-end: 16px;
+    }
+}
+
+
+@media screen and (min-width: 960px) {
+    .hero .foto{
+        min-inline-size: 340px;
+    }
+    .hero .desc{
+        max-inline-size: 600px;
+    }
+    .hero .desc h1{
+        font-size: 72px;
+    }
+    .hero .desc h3{
+        font-size: 32px;
+    }
+    .hero .desc p{
+        font-size: 22px;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    .hero{
+        gap: 80px;
+        /* padding-block: 160px; */
+    }
+    .hero .foto{
+        min-inline-size: 400px;
+    }
+    .hero .desc{
+        max-inline-size: 650px;
+    }
+    .hero .desc p{
+        font-size: 22px;
+    }    
 }

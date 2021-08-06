@@ -1,35 +1,41 @@
 .vaciones-frontend{
     color: var(--negro);
-    padding-block-start: 120px;
-    margin-block-end: 120px;
+    padding-block-start: 64px;
+    margin-block-end: 64px;
+    
 }
 
-
+/* CURSOS */
 .contenedor-cursos{
     margin-inline: auto;
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 32px;
     flex-wrap: wrap;
 }
 .curso{
     display: flex;
     align-items: center;
-    inline-size: 600px;
-    block-size: 160px;
+    flex-direction: column;
+    max-inline-size: 500px;
+    block-size: 360px;
     border-radius: 16px;
     box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .2);
+}
+.contenedor-cursos .curso:last-of-type{
+    max-inline-size: 500px;
 }
 .curso:visited{
     color: unset;
 }
-/* IMG */
+
+/* CURSO-IMG */
 .curso .img-contendor{
     background-color: var(--azul);
-    min-inline-size: 240px;
+    inline-size: 100%;
     block-size: 100%;
     border-start-start-radius: 16px;
-    border-end-start-radius: 16px;
+    border-start-end-radius: 16px;
     overflow: hidden;
 }
 
@@ -48,6 +54,11 @@
     right: 0;
     top: 0;
 }
+
+
+.curso:last-of-type{
+    max-inline-size: 600px;
+}
 .curso:last-of-type .img-contendor{
     background-color: var(--morado);
 }
@@ -58,7 +69,7 @@
     background-size: 210px;
 }
 
-/* DESC */
+/* CURSO-DESC */
 .curso .curso-desc{
   box-sizing: border-box;
   display: flex;
@@ -96,4 +107,32 @@
     color: var(--gris);
     font-size: 12px;
     line-height: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    .vaciones-frontend{
+        padding-block-start: 120px;
+        margin-block-end: 120px;
+    }
+
+}
+
+@media screen and (min-width: 670px) {
+    .curso{
+        flex-direction: row;
+        block-size: 160px;
+        max-inline-size: 600px;
+    }
+    .contenedor-cursos .curso:last-of-type{
+        max-inline-size: 600px;
+    }
+    /* IMG */
+    .curso .img-contendor{
+        min-inline-size: 240px;
+        max-inline-size: 240px;
+        border-start-end-radius: 0;
+        border-start-start-radius: 16px;
+        border-end-start-radius: 16px;
+    }
+    
 }

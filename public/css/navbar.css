@@ -2,25 +2,41 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 32px;
-}
-.navbar a{
-    color: var(--blanco);
-    text-transform: uppercase;
+    padding-block-start: 16px;
+    overflow: hidden;
 }
 .logo{
     font-weight: 900;
     font-size: 24px;
 }
-
+.navbar a{
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+.navbar-menu{
+    /* display: none; */
+    position: fixed;
+    inset-block: 0;
+    inset-inline: 0;
+    background-color: rgba(0, 0, 0, .93);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    transform: translateX(100%);
+    transition: .4s transform;
+}
 .navbar-menu ul{
     display: flex;
-    gap: 32px;
+    flex-direction: column;
+    padding-inline-start: 0;
+    gap: 40px;
 }
 .navbar-menu ul a{
     color: var(--gris-claro);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .navbar ul a:hover{
@@ -31,4 +47,59 @@
 .navbar ul a.active{
     color: var(--blanco);
     font-weight: bold;
+}
+
+.navbar .menu-icon{
+    font-size: 32px;
+    color: var(--blanco);
+}
+.menu-cerrar{
+    font-size: 32px;
+    color: var(--blanco);
+    position: absolute;
+    inset-inline-end: 24px;
+    inset-block-start: 16px;
+}
+
+.navbar-menu.menu-visible{
+    transform: translateX(0);
+}
+
+@media screen and (min-width: 600px) {
+    .navbar{
+        padding-block-start: 32px;
+    }
+    .navbar-menu ul a{
+        font-size: 32px;
+    }
+    .menu-cerrar{
+        inset-inline-end: 32px;
+        inset-block-start: 32px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .navbar{
+        padding-block: 32px;
+    }
+    .navbar-menu{
+        display: block;
+        position: static;
+        background: none;
+        transform: translateX(0);
+    }
+    .navbar-menu ul{
+        flex-direction: row;
+        gap: 32px;
+    }
+    .navbar .menu-icon{
+        display: none;
+    }
+    .navbar .menu-cerrar{
+        display: none;
+    }
+    .navbar-menu ul a{
+        font-size: 18px;
+    }
 }

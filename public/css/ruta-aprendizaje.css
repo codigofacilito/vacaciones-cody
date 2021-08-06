@@ -1,6 +1,6 @@
 .ruta-aprendizaje{
     background: var(--gris-claro);
-    padding-block: 120px;
+    padding-block: 64px;
     color: var(--negro);
 }
 .ruta-contenedor{
@@ -13,7 +13,7 @@
     max-inline-size: 280px;
     background: var(--amarillo-claro);
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--blanco);
     text-align: center;
@@ -46,7 +46,7 @@
 }
 
 .ruta-lista .ruta-item .item .item-nombre{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
 }
 
@@ -57,18 +57,20 @@
     gap: 24px;
     margin-block-end: 50px;
 }
-.ruta-lista .ruta-item:nth-child(even) .item{
-    justify-content: flex-start;
-    grid-column: 2/3;
-}
+
 
 .ruta-lista .ruta-item .item{
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    flex-direction: column-reverse;
+    align-items: flex-end;
     max-inline-size: 300px;
     text-align: end;
     gap: 8px;
+}
+.ruta-lista .ruta-item:nth-child(even) .item{
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: 2/3;
 }
 .ruta-lista .ruta-item:nth-child(odd) .item img{
     order: 2;
@@ -83,3 +85,27 @@
     margin-block-end: 0;
 }
 
+@media screen and (min-width: 480px) {
+    .ruta-lista .ruta-item .item{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .ruta-lista .ruta-item:nth-child(even) .item{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .ruta-aprendizaje{
+        padding-block: 120px;
+    }
+    .ruta-title{
+        font-size: 20px;
+    }
+    .ruta-lista .ruta-item .item .item-nombre{
+        font-size: 18px;
+    }
+    
+}

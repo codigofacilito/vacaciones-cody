@@ -38,25 +38,31 @@
 <body>
   <div id="header" class="header">
     <div class="wrapper">
-          <header>
+          <header class="header-content">
             <div class="navbar">
               <a class="logo" href="./index.html">CODY</a>
               <nav class="navbar-menu">
+                <div class="menu-cerrar menu-toggle">
+                  <i class="far fa-window-close"></i>
+                </div>
                  <ul>
                     <li><a class="active" href="./index.html">Inicio</a></li>
                     <li><a href="./fotos.html">Fotos</a></li>
                   </ul>
               </nav>
+              <div class="menu-icon menu-toggle">
+                <i class="fas fa-bars"></i>
+              </div>
             </div>
             <div class="hero">
+              <div class="foto">
+                <img src="./images/cody-hero.png" alt="Foto de cody" title="Foto de las vacaciones de Cody">
+              </div>
               <div class="desc">
                 <h3 class="saludo">¡Hola a todos!</h3>
                 <h1>Soy Cody</h1>
                 <p>Un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
                 <a href="#mis-vacaciones" class="btn">Estas son mis Vacaciones</a>
-              </div>
-              <div class="foto">
-                <img src="./images/cody-hero.png" alt="Foto de cody" title="Foto de las vacaciones de Cody">
               </div>
             </div>
           </header>
@@ -73,14 +79,14 @@
       <section id="mis-vacaciones" class="section vaciones-frontend">
         <h2 class="title">Mis vacaciones Frontend</h2>
         <div class="desc">
-          <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript. 
+          <p> Durante el verano de 2019, decidí comenzar a aprender <strong>desarrollo frontend</strong>, por lo que durante mi viaje, estuve aprendiendo <strong>HTML, CSS, y JavaScript</strong>. 
             Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página. </p>
         </div>
         <div class="cursos">
           <h4 class="subtitle"> Estos son los cursos que estuve tomando: </h4>
           <div class="contenedor-cursos">
   
-            <a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank" class="curso">
+            <a class="curso" href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank">
               <div class="img-contendor">
                 <div class="img">
                   <img src="./images/curso1.png" alt="Icono del curso profesional de Desarrollo Web de Código Facilito" title="Icono del curso profesional de Desarrollo Web de Código Facilito">
@@ -98,7 +104,7 @@
               </div>
             </a>
   
-            <a href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank" class="curso">
+            <a class="curso" href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank">
               <div class="img-contendor">
                 <div class="img">
                   <img src="./images/curso2.png" alt="Icono del curso para crear mi primera página web de Código Facilito" title="Icono del curso para crear mi primera página web de Código Facilito">
@@ -207,7 +213,7 @@
               </div>
             </div>
             <div class="fotos-footer">
-              <p class="subtitle">Puedes ver más, en la galería de fotos de mi página.</p>
+              <p class="subtitle">Puedes ver más en la galería de fotos de mi página.</p>
               <a class="btn" href="./fotos.html">Ir a la galería</a>
             </div>
         </section>
@@ -217,7 +223,7 @@
     <div class="wrapper">
       <section class="section importacia-vacaciones">
           <h2 class="title">La importancia de las vacaciones</h2>
-          <p class="importancia-desc">Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+          <p class="importancia-desc">Aprender a programar y escribir código, puede ser estresante, por eso <strong>es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</strong></p>
           <p class="importancia-desc">Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
           
           <ol class="beneficios">
@@ -256,21 +262,24 @@
     </div>
     <div class="wrapper">
       <footer class="footer-content">
-          <a class="logo" href="./index.html">CODY</a>
-          <p class="hecho-por">Hecho con el<span><i class="fas fa-heart"></i></span>de Cody. Copyright 2021 - Todos los derechos reservados.</p> 
-          <div class="social-media">
-            <a class="button-icon" target="_blank" href="https://twitter.com/codigofacilito">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a class="button-icon" target="_blank" href="https://www.instagram.com/codigofacilito">
-              <i class="fab fa-instagram"></i>           
-            </a>
-            <a class="button-icon" target="_blank" href="https://github.com/codigofacilito">
-              <i class="fab fa-github"></i>
-            </a>
+        <a class="logo" href="./index.html">CODY</a>
+        <div class="social-media">
+          <a class="button-icon" target="_blank" href="https://twitter.com/codigofacilito">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="button-icon" target="_blank" href="https://www.instagram.com/codigofacilito">
+            <i class="fab fa-instagram"></i>           
+          </a>
+          <a class="button-icon" target="_blank" href="https://github.com/codigofacilito">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
+        <p class="hecho-por">Hecho con el<span><i class="fas fa-heart"></i></span>de Cody. Copyright 2021 - Todos los derechos reservados.</p> 
       </footer>
     </div>
   </div>
+
+
+  <script src="./js/index.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 .colabora{
-    margin-block: 120px;
+    margin-block: 64px;
     color: var(--negro);
 }
 .colabora-desc{
@@ -8,7 +8,7 @@
     text-align: center;
     border: 1px solid var(--gris);
     border-radius: 8px;
-    padding: 40px;
+    padding: 24px;
 }
 .colabora-desc p{
     font-weight: 700;
@@ -17,4 +17,13 @@
 }
 .colabora-desc .btn{
     margin-block-start: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .colabora{
+        margin-block: 120px;
+    }
+    .colabora-desc{
+        padding: 40px;
+    }
 }
