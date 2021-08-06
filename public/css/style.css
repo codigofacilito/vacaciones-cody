@@ -34,7 +34,7 @@ a.navbar-brand {
 .section-bg {
   background-color: #f7f7f7;
   width: 100%;
-  height: 35vh;
+  height: 45vh;
   margin: 0 auto;
 }
 
@@ -111,9 +111,7 @@ section{
 ul li{
   text-align: left;
 }
-/* ul li::marker {
-  content: "🚀";
-} */
+
 
 ol li{
   text-align: left;
