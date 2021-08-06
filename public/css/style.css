@@ -1,38 +1,461 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+body{
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  background-image: url(../images/fondomain2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
+
 
 main{
   text-align: center;
-  max-width: 960px;
+  max-width: 940px;
   margin:0 auto;
+  margin-top: 100px;
+  background-color: rgba(255, 255, 255, .55);
+  border-radius: 20px;
 }
 
 section{
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
-.cursos div{
-  background-color: black;
+h1, h2{
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/*NAVBAR*/
+
+.codynav{
+  height: 90px;
+  margin-left: 5px;
+}
+
+.nav{
+  z-index: 1;
+  margin-top: -100px;
+  margin-bottom: 40px;
+  height: 92px;
+  width: 100%;
+  border-radius: 40px;
+  position: fixed;
+  background-color: rgba(255, 173, 184, .96);
+  /*6060f1*/
+}
+
+.ini{
+  margin-right: -85px; 
+  margin-left: 45px; 
+}
+
+.nav-link{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: #5fbfcd;
+  box-shadow: 2px 2px 4px gray;
+}
+
+.next{
+  transition: all .5s ease-in-out;
+  background-color: teal!important;
   color: white;
-  max-width: 200px;
+  box-shadow: 2px 2px 4px black;
+  margin-left: 110px;
+}
+
+.next:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all .5s ease-in-out;
+  background-color: #5fbfcd!important;
+  box-shadow: none;
+  color: rgb(233, 233, 80);
+  font-weight: 600;
+}
+
+.nav-item img{
+  padding-bottom: 4px;
+  margin-right: 10px;
+  height: 45px;
+}
+
+li:before{
+  content: none!important;
+}
+
+.inif{
+  margin-left: -60px!important;
+  margin-right: 30px;
+}
+
+/*--------------------------------------------*/
+
+/*BOTONES*/
+
+.cursos button{
+  background-color: #5fbfcd!important;
+  color: white;
+  max-width: 250px;
   display: inline-block;
   box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
+  border-radius: 10px;
+  padding: 10px ;
+  margin-top: 10px;
+  transition: all .5s ease-in-out;
 }
 
-ol li{
-  text-align: left;
+button:hover{
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  transition: all .5s ease-in-out;
+  box-shadow: none;
+  color:rgb(233, 233, 80);
 }
+
+button a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  display: block;
+  transition: all .2s ease-in-out;
+}
+
+button a:hover{
+  transition: all .2s ease-in-out;
+  color:rgb(233, 233, 80);
+  
+}
+
+.desaweb{
+  margin-right: 100px;
+}
+
+/*-----------------------------------------------*/
+
+/*SECCION BOTONES*/
+
+#vacacurso, #colab{
+  padding: 20px 0 30px 0;
+  border: 15px dashed rgba(255, 173, 184, .96);
+  border-radius: 20px;
+
+}
+
+#rutaprend{
+  padding-bottom: 20px;
+}
+
+#vacacurso{
+  padding-bottom: 40px;
+}
+
+.galeria {
+  padding: 20px!important;
+  padding-left: 30px!important;
+  padding-right: 30px!important;
+}
+
+
+/*-----------------------------------------------*/
+
+/*SECCION RUTA APRENDIZAJE*/
+
+.codystudy{
+  height: 320px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  margin-left: -10px;
+
+}
+
+.newtech{
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 0px!important;
+}
+
+.newtech a{
+  background-color:teal;
+  box-shadow: 2px 2px 4px black;
+  padding: 10px;
+  padding-right: 25px;
+  border-radius: 20px;
+  transition: all .5s ease-in-out;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  display: block;
+}
+
+.newtech li{
+  margin-top: 10px;
+}
+
+.newtech a:hover{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all .5s ease-in-out;
+  box-shadow: none;
+  color:rgb(233, 233, 80);
+  background-color: #5fbfcd;
+}
+
+.newtech a img{
+  height: 50px;
+  margin-right: 20px;
+}
+
+ul li{
+  text-align: left;
+  list-style: none;
+}
+
+/*-----------------------------------------------*/
+
+/*SECCION FOTOS*/
+
+#fotitos{
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.fotos{
+  margin-right: 0px!important;
+}
+
+.fotos img{
+  max-width: 300px;
+  display: inline-block;
+  transition: all .5s ease-in-out;
+}
+
+.fotos img:hover{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all .5s ease-in-out;
+}
+
+/*-----------------------------------------------*/
+
+/*SECCION IMPORTANCIA VACAS*/
+
+#vacaciones{
+  background-color: rgb(255, 173, 184,.4);
+  padding-top: 30px;
+  border-radius: 20px;
+}
+
+.codyvac{
+  height: 500px;
+  margin-right: -12px;
+  margin-left: 5px;
+}
+
+.vacas{
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 0px!important;
+}
+
+.vacas a{
+  box-shadow: 2px 2px 4px black;
+  padding: 10px;
+  padding-right: 25px;
+  border-radius: 20px;
+  transition: all .5s ease-in-out;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  display: block;
+}
+
+.mente{
+  background-color: rgba(232, 112, 210, 1);
+}
+
+.motiv{
+  background-color: #15956e ;
+}
+
+.burn{
+  background-color: #f7ca17;
+}
+
+.produc{
+  background-color: #70cffb;
+}
+
+.happy{
+  background-color: #ff7f27;
+}
+
+.vacas li{
+  margin-top: 10px;
+}
+
+.vacas a:hover{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all .5s ease-in-out;
+  box-shadow: none;
+  color:yellow;
+  background-color: rgb(255, 173, 184);
+}
+
+.vacas a img{
+  height: 50px;
+  margin-right: 20px;
+}
+
+ul li{
+  text-align: left;
+  list-style: none;
+}
+
+/*-------------------------------------------------*/
+
+/*SECCION FOOTER*/
+
+footer {
+  background-color: rgb(255, 173, 184);
+  padding: 30px;
+  color: black;
+  padding-bottom: 20px;
+}
+
+i {
+  font-size: 25px;
+  border: solid 2px black;
+  padding: 10px 11px;
+  border-radius: 30px;
+}
+
+#facebook {
+  padding: 10px 15px;
+  background: linear-gradient(rgb(255, 173, 184) 49%, #3b5998 5%);
+  background-size: 1px 100px;
+  transition: all .9s;
+}
+
+#facebook:hover{
+  color: white;
+  background-position: 0 -50px;
+  transition: all .9s;
+}
+
+/*las gradientes no se pueden animar, por lo que movemos el fondo para simular una transicion*/
+#insta {
+  background: linear-gradient(rgb(255, 173, 184) 49%, rgba(81,91,212,1) 5%, rgba(238,47,121,1) 65%, rgba(249,237,50,1) 95%);
+  background-size: 1px 100px;
+  transition: all .9s;
+}
+
+#insta:hover {
+  color: white;
+  background-position: 0 -50px;
+  transition: all .9s;
+}
+
+#sobre {
+  background: linear-gradient(rgb(255, 173, 184) 49%, #29a9ed 5%);
+  background-size: 1px 100px;
+  transition: all .9s;
+}
+
+#sobre:hover{
+  color: white;
+  background-position: 0 -50px;
+  transition: all .9s;
+}
+
+footer hr{
+  margin: 5px 0px;
+}
+
+#subscribe{
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-weight: 500;
+  background-color: rgba(128, 128, 128, 0.2);
+  color: white;
+  transition: .5s;
+}
+
+#subscribe:focus-visible{
+  outline: none;
+  background-color: white;
+  color: black;
+  transition: .5s;
+}
+
+.botenvi{
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 7px;
+  border-color: black;
+  color: black;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover{
+  color: gray;
+}
+
+footer ul li::marker{
+  content: "";
+}
+
+footer ul li:before{
+  padding-left: 0px;
+}
+
+/*-----------------------------------------------*/
+
+/*PAGINA FOTOS*/
+
+.carousel{
+  margin-left: 85px;
+  margin-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 1px;
+  width: 85%;
+  z-index: 0;
+  }
+
+.galeria{
+  background-color: #5fbfcd!important;
+  border-radius: 10px;
+  padding: 10px ;
+  box-shadow: 5px 5px 10px black;
+  transition: all .5s ease-in-out;
+}
+
+.carousel-item img {
+  border-radius: 20px;
+}
+
+#galle{
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+

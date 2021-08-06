@@ -1,0 +1,191 @@
+body:before{
+    filter: blur(.4px);
+    content: "";
+    position: absolute;
+    height: 117px; 
+    width: 245px;
+    background-image: url(../images/fondoprese.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transform: none;
+    transform-origin:0%;
+    -webkit-transform: scale(5);
+    -webkit-transform-origin: top left;
+}
+
+body{
+    font-family: 'Mali', cursive;
+    font-weight: 600;
+}
+
+h1{
+    background-color: yellow;
+    color: blueviolet;
+    text-align: center;
+    display: inline;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+header{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+section{
+    margin-left: 50px;
+}
+
+.pelota{
+    animation: bounce 1.5s infinite alternate;
+    -webkit-animation: bounce 1.5s infinite alternate;
+    height: 100px;
+    position: relative;
+    bottom: 75px;
+    left: 1050px;
+    filter: blur(2px);
+}
+
+
+@keyframes bounce {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: -200px;
+    }
+}
+
+.flotad{
+  animation: floaty 1.5s infinite alternate;
+  -webkit-animation: floaty 1.5s infinite alternate;
+  height: 165px;
+  width: 280px;
+  position: relative;
+  filter: blur(2px);
+}
+
+@keyframes floaty {
+  from {
+      margin-top: 0px;
+  }
+  to {
+      margin-top: -5px;
+  }
+}
+
+
+/*CODY HABLA*/
+
+.cody{
+    height: 400px;
+    top: 181px;
+    position: relative;
+    z-index: 99999;
+}
+  
+  /*BURBUJA*/
+  .comentarios{
+    width: 430px;
+    display: inline-block;
+}
+  
+  .comentarios .comentario{
+    width: 125%;
+    margin-bottom: 20px;
+  }
+  
+  .comentarios .comentario p{
+    margin: 0 0 10px 0;
+}
+  
+  .burbuja{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding: 35px 50px;
+    font-size: 18px;
+    color: #222;
+    text-align: center;
+    border: 8px solid #ed1556;
+    border-top-left-radius: 240px 140px;
+    border-top-right-radius: 240px 140px; 
+    border-bottom-right-radius: 240px 140px; 
+    border-bottom-left-radius: 240px 140px;
+    border-radius: 240px / 140px;
+    margin-left: 0px;
+    top: 60px;
+}
+  
+  /*El after/before son pseudoclases que te permite agregar contenido después del elemento; no es posible subrayarlo pero si seleccionarlo cen el modo Inpeccionar/creador del navegador*/
+  .burbuja:before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    bottom: -20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border: 8px solid #ed1556;
+    background: #fff;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    display: block;
+}
+  
+  .burbuja:after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    bottom: -30px;
+    right: -5px;
+    width: 35px;
+    height: 35px;
+    border: 7px solid #ed1556;
+    background: #fff;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    display: block;
+
+  }
+
+  .animate__animated.animate__fadeIn {
+    --animate-duration: 1.5s;
+  }
+  
+  
+/*---------------------------------------------*/
+
+/*BOTON*/
+
+.vamos{
+    background-color: #5fbfcd!important;
+    color: white;
+    font-size: 20px;
+    max-width: 200px;
+    display: inline-block;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    padding: 10px ;
+    margin-top: 10px;
+    transition: all .5s ease-in-out;
+  }
+
+  .vamos:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    transition: all .5s ease-in-out;
+    box-shadow: none;
+    color:rgb(233, 233, 80);
+  }
+    
+  button a:hover{
+    color:rgb(233, 233, 80);
+  }
