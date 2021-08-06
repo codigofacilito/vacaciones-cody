@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis recomendaciones</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/cody-verano.png" />
+    <!--Función para llamar al navbar-->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+      $.get("base.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <div id="nav-placeholder"></div>
+        <section>
+          <div class="container">
+            <div class="banner">
+              <img src="images/adventure.jpg" alt="Header Cody" />
+            </div>
+            <p>
+              Aprender a programar y escribir código, puede ser estresante, por
+              eso es muy importante que periódicamente nos desconectemos y
+              descansemos apropiadamente
+            </p>
+             <div class="d-flex justify-content-center">
+              <img src="images/sol.png" alt="Palm" />
+            </div>
+            <h4>
+              Durante mis vacaciones aprendí que existen distintos beneficios de
+              descansar:
+            </h4>
+            <div class="d-flex justify-content-center">
+              <ul class="nav nav-pills">
+                <li class="active">
+                  <a data-toggle="pill" href="#home"
+                    ><i class="fas fa-life-ring fa-spin fa-5x"></i
+                  ></a>
+                </li>
+                <li>
+                  <a data-toggle="pill" href="#menu1"
+                    ><i class="fas fa-life-ring fa-spin fa-5x"></i
+                  ></a>
+                </li>
+                <li>
+                  <a data-toggle="pill" href="#menu2"
+                    ><i class="fas fa-life-ring fa-spin fa-5x"></i
+                  ></a>
+                </li>
+                <li>
+                  <a data-toggle="pill" href="#menu3"
+                    ><i class="fas fa-life-ring fa-spin fa-5x"></i
+                  ></a>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade in active ">
+                  <h3>¿Por qué tomar vacaciones?</h3>
+                  <p>Mejora la salud mental</p>
+                  <i class="fa fa-heart-o fa-pulse fa-2x"></i>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <h3>Respira</h3>
+                  <p>Incrementa la motivación</p>
+                  <i class="fa fa-child"></i>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <h3>Concentrate</h3>
+                  <p>Reduce el burnout</p>
+                  <i class="fa fa-battery-full fa-spin fa-2x"></i>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                  <h3>Sonrie</h3>
+                  <p>Mejora tu productividad y creatividad</p>
+                  <i class="fa fa-gift fa-spin fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+    </main>
+    <!-- Inicio Footer -->
+    <footer class="bg-dark text-center text-white mt-3">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.facebook.com/codigofacilito"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://twitter.com/codigofacilito"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Youtube -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.youtube.com/user/codigofacilito"
+            role="button"
+            ><i class="fab fa-youtube"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.instagram.com/codigofacilito/"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021Givenchi
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

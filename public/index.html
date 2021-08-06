@@ -6,95 +6,187 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/cody-verano.png">
+  
+      <!--Función para llamar al navbar-->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+      $.get("base.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+    </script>
 </head>
+
 <body>
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
+ <!--Navigation bar-->
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
+        <div id="nav-placeholder"></div>
+<div class="banner">
+  <img src="images/h_cody.jpg" alt="Header Cody">
+     </div> 
+    
+
+ <!-- ======= Detalles Section (2) columnas ======= -->
+    <div class="container">
+  <div class="row">
+    <div class="col">
+        <section>
+        <header>
+             <h2>Mis vacaciones Frontend</h2>
+      </header>  
+       <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
       <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
+      <h4> Estos son los cursos que estuve tomando </h4>
       <div class="cursos">
         <div>
-          <p>Curso profesional de Desarrollo Web</p>
+        <i class='fas fa-life-ring fa-spin fa-5x'></i>
+        <a href="https://codigofacilito.com/cursos/frontend-profesional" class="btn btn-dark btn-sm"> Curso profesional de Desarrollo Web</a>
         </div>
         <div>
-          <p>Curso para crear mi primera página web</p>
+        <i class='fas fa-life-ring fa-spin fa-5x'></i>
+       <a href="https://codigofacilito.com/cursos/primera_pagina" class="btn btn-dark btn-sm"> Curso para crear mi primera página web</a>
         </div>
       </div>
     </section>
-
-    <section>
+    </div>
+   
+    <div class="col">
+       <section>
       <header>
         <h2>Ruta de aprendizaje 2021</h2>
         <p> También me propuse aprender nuevas tecnologías durante 2021</p>
       </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
 
-      </p>
+      <div class="main-container">
+        <div class="text-wrapper left">
+             <div class="content">
+                <h3>Flexbox, y Grid</h3>
+              </div>
+        </div>
+
+        <div class="text-wrapper right">
+                 <div class="content">
+                <h3>Animaciones con CSS y JavaScript</h3>
+                 </div>
+        </div>
+    
+        <div class="text-wrapper left">
+               <div class="content ">
+                <h3>AJAX</h3>
+            </div>
+        </div>
+  
+        <div class="text-wrapper right">
+             <div class="content leaf">
+                <h3>HTML semántico</h3>
+            </div>
+        </div>
+    </div>
+
     </section>
+    </div>
+  </div>
+</div>
+<!-- ======= Fin Details Section ======= -->
+
+<div class="container puk">
+  <div class="row">
+    <div class="col">
+      <h2 id="pink">F O T I T O S</h2>
+         <div class="holder">
+         <i class="fas fa-camera"></i>
+  <div class="news">Estas son algunas fotos mis vacaciones</div>
+</div>
+    </div>
+    </div>
+    </div>
+  <!-- ======= Section vacaciones ======= -->
     <section>
       <header>
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
       </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
+<div class="container">
+<div id="carouselExampleFade" class="carousel slide carousel-fade portfolio-details-container" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item justify-content-center active">
+      <img class="d-block w-100" src="images/1.jpg" alt="Cody en la playa">
+    </div>
+    <div class="carousel-item justify-content-center">
+      <img class="d-block w-100" src="images/2.jpg" alt="Cody acampando">
+    </div>
+    <div class="carousel-item justify-content-center">
+      <img class="d-block w-100" src="images/3.jpg" alt="Cody en una alberca">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+</div>
         <p>
           Puedes ver más, en la galería de fotos de mi página
           <a href="fotos.html">Ir a la galería</a>
         </p>
       </div>
     </section>
+     <!-- ======= Fin Section vacaciones ======= -->
+   </main>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
+<!-- Inicio Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/codigofacilito" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/codigofacilito" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Youtube -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/user/codigofacilito" role="button"
+        ><i class="fab fa-youtube"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/codigofacilito/" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
     </section>
-    
-  </main>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021Givenchi
+  </div>
+  <!-- Copyright -->
+</footer><!-- End Footer -->
+
+     <!-- Font Awesome -->
+     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/v4-shims.js"></script> 
+<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/fontawesome.js"> </script>
+<!-- Font Awesome -->
+     <!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!--Fin Bootstrap -->
 </body>
 </html>

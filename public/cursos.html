@@ -1,0 +1,102 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis recomendaciones</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/cody-verano.png" />
+    <!--Función para llamar al navbar-->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+      $.get("base.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+    </script>
+  </head>
+
+  <body>
+  
+   <!--Navigation bar-->
+
+        <div id="nav-placeholder"></div>
+  
+  <div class="container">
+            <div class="banner">
+              <img src="images/cursito.jpg" alt="Header Cody" />
+            </div>
+  
+    <section>
+ 
+
+      <header>
+        <h2>Colabora en mi página</h2>
+      </header>
+      <p>
+        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
+      </p>
+      <p>
+        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+      </p>
+      <p>
+        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
+        <a href="" target="_blank" >Ir al tutorial</a>
+
+      </p>
+
+       <div class="d-flex justify-content-center">
+              <img src="images/palm.png" alt="Palm" />
+            </div>
+    </section>
+        <!-- Inicio Footer -->
+    <footer class="bg-dark text-center text-white mt-3">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.facebook.com/codigofacilito"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://twitter.com/codigofacilito"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Youtube -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.youtube.com/user/codigofacilito"
+            role="button"
+            ><i class="fab fa-youtube"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.instagram.com/codigofacilito/"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021Givenchi
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

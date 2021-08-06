@@ -1,34 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi galeria</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/cody-verano.png" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <!--Función para llamar al navbar-->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+      $.get("base.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+      $('.carousel').carousel({
+  interval: 1000 * 10
+});
+    </script>
+  </head>
 
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
+  <body>
+    <main>
+      <header>
+        <!--Navigation bar-->
+
+        <div id="nav-placeholder"></div>
+        <div class="banner">
+              <img src="images/b_fotos.jpg" alt="Header fotos" />
+            </div>
+            <div class="container puk">
+  <div class="row">
+    <div class="col">
+      <h2 id="pink">F O T I T O S</h2>
+       <i class="fas fa-camera"></i>
+</div>
+</div>
+      </header>
+      <div class="col-sm-12">
+        <div class="d-flex justify-content-center">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="images/1.jpg"
+                  alt="Montando bici"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="images/2.jpg"
+                  alt="Acampando en la playa"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="images/3.jpg"
+                  alt="En la piscina"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="images/4.jpg"
+                  alt="Agua de coco"
+                />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/5.jpg" alt="En Italia" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="images/6.jpg"
+                  alt="Aeropuerto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
+    </main>
+    <!-- Inicio Footer -->
+<footer class="bg-dark text-center text-white mt-3">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/codigofacilito" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
 
-  </main>
-</body>
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/codigofacilito" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
 
+      <!-- Youtube -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/user/codigofacilito" role="button"
+        ><i class="fab fa-youtube"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/codigofacilito/" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021Givenchi
+  </div>
+  <!-- Copyright -->
+</footer><!-- End Footer -->
+    <!--end of Navigation bar-->
+  </body>
 </html>
