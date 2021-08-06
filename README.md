@@ -21,7 +21,7 @@ Para más detalles del concurso, reglas, y consideraciones, visita: https://codi
 Es muy importante que al participar, habilites GitHub Actions y GitHub Pages en tu repositorio, así podremos ver tu página online, puedes consultar este vídeo para ver cómo participar: https://vimeo.com/577246176
 
 # Fechas importantes
-La fecha límite para enviar tu pull request es el 4 de Agosto, 11:59pm
+La fecha límite para enviar tu pull request es el 6 de Agosto, 11:59pm
 
 # Solución de problemas
 
