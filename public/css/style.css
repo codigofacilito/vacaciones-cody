@@ -1,13 +1,152 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+nav.navbar{
+  background-color: #C25E8D;
+  height: 100%;
+  width: 100%;
+}
+
+nav.navbar{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.navbar-light .navbar-brand{
+  color: white !important;
+}
+.nav-link {
+  color: white !important;
+}
+/*--------------------------------------------------------------
+# Banner
+--------------------------------------------------------------*/
+.banner img{
+  max-width: 100%;
+  height: auto;
+}
+/*--------------------------------------------------------------
+# Titulo vacaciones
+--------------------------------------------------------------*/
+#pink{
+background-color: #C25E8D;
+color: white;
+}
+/*--------------------------------------------------------------
+# Holder
+--------------------------------------------------------------*/
+.holder {
+  background:#ccc;
+  padding:0.5rem;
+  overflow: hidden;
+}
+.news {
+  animation : slide 10s linear infinite;
+  
+}
+
+@keyframes slide {
+  0% {
+    transform: translatex(0%)
+  }
+
+  100% {
+    transform: translatex(100%)
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Salvavidas ring
+--------------------------------------------------------------*/
+.fa-life-ring{
+  color: tomato;
+}
+/*--------------------------------------------------------------
+# Cursos
+--------------------------------------------------------------*/
+.cursos div{
+  max-width: 200px;
+  display: inline-block;
+  margin-right: 2em;
+  box-shadow: 5px 5px 10px gray;
+  border-radius: 10px;
+}
+/*--------------------------------------------------------------
+# Línea con forma de palmera 
+--------------------------------------------------------------*/
+.main-container{
+  position: relative;
+  width: 500px;
+ 
+}
+/*creating line for timeline*/
+.main-container::after{
+  content: '';
+  position: absolute;
+  width: 50px;
+  background-color: #FFBC85;
+  border-right:8px solid #F5A96C;
+  top:0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+/*Adjusting box of all content*/
+.text-wrapper{
+  padding: 10px 40px;
+  position: relative;
+  width:51%;
+  box-sizing: border-box;
+  margin: 50px 0;
+}
+.text-wrapper::after{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 15px;
+  right: -50px;
+  background-color:#CE9875;
+  top:15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/*for left events*/
+.left{
+  left: 0;
+}
+/*for right events*/
+.right{
+  left:50%;
+}
+.right::after{
+  left:-10px;
+}
+/*content box colour padding and radius for circular corner*/
+.content{
+  padding: 15px 15px 15px 17px;
+  background-color: #CCF49F;
+  border-top:5px solid #B3E59F;
+  border-radius: 5px 300px 3px 300px;
+}
+/*setting text property of event heading*/
+.content h3{
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #212121;
+  letter-spacing:1px;
+}
+/*setting text property of event content*/
+.content p{
+  color: #616161;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 2px;
 }
 
 main{
   text-align: center;
-  max-width: 960px;
+  max-width: 100%;
   margin:0 auto;
 }
 
@@ -15,24 +154,7 @@ section{
   margin-top: 3rem;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
-}
 
-ol li{
-  text-align: left;
-}
+
+
+
