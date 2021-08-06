@@ -1,0 +1,10 @@
+/* Dark Mode Settings */
+body.dark {
+    background: #212529;
+    color: #fff;
+}
+
+body.dark .list-group li {
+    background: #4C9071;
+    color: #000;
+}
