@@ -22,7 +22,8 @@ main{
 }
 
 header{
-  padding: 1rem;
+  justify-content: center;
+  padding: 2rem;
 }
 
 p,a {
@@ -46,19 +47,8 @@ h1{
   font-weight: bold;
 }
 
-h2{
-  font-family: IBM Plex Sans;
-  font-weight: 700;
-  display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
 nav{
+  justify-content: center;
   margin-bottom: 2rem;
   display: flex;
   gap:1em;
@@ -81,20 +71,31 @@ nav{
   margin-block-start: 0em;
 }
 
-ul, li {
-  text-align: center;
-    list-style-type: disc;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+li {
+  /*text-align: center;
+  list-style-type: disc;*/
+  padding-top: 200px;
+  top: 500px;
+  padding-bottom: 0px;
+  margin: 0;
+  /*list-style: none;*/
 }
 
-ul.slider{
+ul{
+  text-align: center;
+  list-style-type: disc;
+  padding-bottom: 0px;
+  margin: 0;
+  list-style: none;
+}
+
+.slider{
   position: relative;
   width: 800px;
-  height: 330px;
-  padding: 10px;
+  height: 100px;
+  margin-top: 15px;
   top: 50%;
+  bottom: 0px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -102,10 +103,9 @@ ul.slider{
 ul.slider li {
     position: absolute;
     left: 0px;
-    top: 0px;
     opacity: 0;
     /*width: inherit; height: inherit;*/
-    top: 100%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-size: contain;
@@ -137,7 +137,6 @@ ul.slider li:target {
 .menu li{
   display: inline-block;
   text-align: center;
-  margin-right: 5px;
 }
 
 .menu li a{
@@ -173,53 +172,19 @@ ul.slider li:target {
   background-color: #3f3825;
 }
 
-/*  RESPONSIVE SIZE */
+/*  RESPONSIVE SIZE 
 @media screen and (max-width:900px ){
-  .codyrelax{
-    transform: scale(0.1, 0,1);
-  }
-  .puesta ul li{
-    left: 11rem;
-  }
-  
-  .sea ol li{
-    left: 11rem;
-  }
+
 }
 
 @media screen and (max-width:500px){
 
-  .codyrelax{
-    scale: 0.5;
-  }
 
-  .puesta li{
-    width: 20rem;
-  }
-
-  .puesta ul li{
-    left: 3rem;
-  }
-
-  .sea ol li{
-    left: 3rem;
-  }
 
 }
 
 @media screen and (max-width:300px){
 
-  .puesta ul li{
-    left: 5rem;
-  }
 
-  .sea ol{
-    left: 1rem;
-  }
-  .sea li{
-    text-align: center;
-    width: 20rem;
-    left: 0;
-  }
 
-}
+}*/
