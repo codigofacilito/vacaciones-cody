@@ -7,27 +7,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <main>
+  <main  class="playa" style="height: 800px; margin-top: 6rem;">
     <header>
       <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+        <a href="index.html" class="button">Inicio</a>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
+      <h1>Galería completa de mis vacaciones</h1>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
 
+    <section>
+      <div class="container">
+        <ul class="slider">
+          <li id="slide1">
+            <img src="images/1.jpg" alt="Cody en la playa">
+          </li>
+          <li id="slide2">
+            <img src="images/2.jpg" alt="Cody acampando">
+          </li>
+          <li id="slide3">
+            <img src="images/3.jpg" alt="Cody en una alberca">
+          </li>
+          <li id="slide4">
+            <img src="images/4.jpg" alt="Cody en una alberca">
+          </li>
+          <li id="slide5">
+            <img src="images/5.jpg" alt="Cody en una alberca">
+          </li>
+          <li id="slide6">
+            <img src="images/6.jpg" alt="Cody en una alberca">
+          </li>
+        </ul>
+
+        <ul class="menu">
+          <li>
+            <a href="#slide1"> 1 </a>
+          </li>
+          <li>
+            <a href="#slide2"> 2 </a>
+          </li>
+          <li>
+            <a href="#slide3">3</a>
+          </li>
+          <li>
+            <a href="#slide4">4</a>
+          </li>
+          <li>
+            <a href="#slide5">5</a>
+          </li>
+          <li>
+            <a href="#slide6">6</a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 </body>
 

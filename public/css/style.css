@@ -1,8 +1,24 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body { 
+  margin: 0; 
+  margin: 0; 
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient( #5ba4df 1%, #64b3f4 16%, #E5E5BE 33.7%, #023e8a 28.4%, #023e8a 72.5%, #ece2c6 20.66%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0px;
 }
 
 main{
@@ -11,28 +27,365 @@ main{
   margin:0 auto;
 }
 
+div img{
+  max-width: 960px;
+}
+
+header{
+  padding: 1rem;
+}
+
+p,a {
+  font-family: dm sans,sans-serif;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h1{
+  font-family: IBM Plex Sans;
+  font-weight: 700;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h2{
+  font-family: IBM Plex Sans;
+  font-weight: 700;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+nav{
+  margin-bottom: 2rem;
+  display: flex;
+  gap:1em;
+}
+
+.button {
+  background-color: #023E8A;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover{
+  background: #092c58;
+}
+
+.button2 {
+  background-color: #f73a44;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button2:hover{
+  background: #a0282e;
+}
+
+.button3 {
+  background-color: #dfd337;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button3:hover{
+  background: #b6ad36;
+}
+
 section{
-  margin-top: 3rem;
+  margin: 0;
 }
 
 .cursos div{
-  background-color: black;
+  background-color: #f77867;
   color: white;
   max-width: 200px;
+  height: 120;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgb(82, 80, 78);
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
+
+.cursos div:hover{
+  background: #db5846;
+}
+
 .fotos img{
   max-width: 450px;
   display: inline-block;
 }
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
+
+/*  PUESTA DE SOL */
+.puesta{
+  background: #c2e59c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #5ba4df, #64b3f4, #E5E5BE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #5ba4df, #64b3f4, #E5E5BE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-ol li{
+.puesta{
+  padding: 20px;
+  color: white;
+}
+
+.puesta ul li{
   text-align: left;
+  font-family: dm sans,sans-serif;
+  position: relative;
+  left: 23em;
+  font-weight: 700;
+}
+
+.puesta ul li::marker {
+  content: "🚀   ";
+}
+
+.puesta ol li{
+  text-align: left;
+}
+
+.puesta img{
+  max-width: 960px;
+}
+
+/*  MAR */
+.sea{
+  background-color:  #023e8a;
+}
+
+.sea div img{
+  max-width: 960px;
+}
+
+.codyrelax{
+  position: flex; right: 30rem; top: 46rem;
+  height: auto;
+  width: auto;
+  animation: bounce1 .5s alternate infinite ease-in;
+  
+}
+
+@keyframes bounce1{
+  0%{ transform: translateY(-2%);}
+  100%{ transform: translateY(0%);}
+}
+
+.sea p {
+  font-family: dm sans,sans-serif;
+  color: white;
+  
+}
+.sea h2{
+  font-family: IBM Plex Sans;
+  font-weight: 700;
+  color: white;
+  margin-block-start: 0em;
+}
+
+.sea ol li{
+  display: list-item;
+  list-style-type: decimal;
+  text-align: left;
+  position: relative;
+  left: 23rem;
+  color: white;
+  font-family: dm sans,sans-serif;
+  font-weight: 700;
+}
+
+/*  SECTION PLAYA */
+.playa{
+  background-color: #ece2c6; 
+  padding-bottom: 2rem;
+}
+
+.playa .container{
+  margin: auto; 
+  max-width: 800px;
+}
+
+.playa h2{
+  font-family: IBM Plex Sans;
+  font-weight: 700;
+  margin-block-start: 0em;
+}
+
+ul, li {
+  text-align: center;
+    list-style-type: disc;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 330px;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    /*width: inherit; height: inherit;*/
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: contain;
+    transition: opacity .5s; 
+}
+
+ul.slider li img{
+  background-size: contain;
+  margin: 10px auto 10px;
+  display: block;
+  max-width: 450px;
+  height: 330px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; 
+}
+
+ul.slider li:target {
+    opacity: 1; 
+}
+
+.menu{
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.menu li a{
+  color: white;
+  text-decoration: none;
+  background-color: #746848;
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+.menu li a:hover{
+  background-color: #3f3825;
+}
+
+.button4{
+  background-color: #3f3825;
+  display: inline-block;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button4:hover{
+  background-color: #3f3825;
+}
+
+/*  RESPONSIVE SIZE */
+@media screen and (max-width:900px ){
+  .codyrelax{
+    transform: scale(0.1, 0,1);
+  }
+  .puesta ul li{
+    left: 11rem;
+  }
+  
+  .sea ol li{
+    left: 11rem;
+  }
+}
+
+@media screen and (max-width:500px){
+
+  .codyrelax{
+    scale: 0.5;
+  }
+
+  .puesta li{
+    width: 20rem;
+  }
+
+  .puesta ul li{
+    left: 3rem;
+  }
+
+  .sea ol li{
+    left: 3rem;
+  }
+
+}
+
+@media screen and (max-width:300px){
+
+  .puesta ul li{
+    left: 5rem;
+  }
+
+  .sea ol{
+    left: 1rem;
+  }
+  .sea li{
+    text-align: center;
+    width: 20rem;
+    left: 0;
+  }
+
 }
