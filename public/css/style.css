@@ -43,19 +43,13 @@ nav{
   padding: 20px 0px 40px 0px;
   text-align: center;
   background-color: rgb(212, 223, 243);
+  
 }
 .header-1-titulo-intro p{
-  background-color: rgb(220, 242, 243);
+  background-color: rgb(200, 252, 255);
   text-align: center;
 }
 
-/*
-main{
-  text-align: center;
-  max-width: 960px;
-  margin:0 auto;
-}
-*/
 /* 4 secciones pertenecientes al main */
 
 /* Seccion donde ubico los aprendisajes de cody y los distribuyo
@@ -64,11 +58,18 @@ en un solo section, un h2 y dos h3 */
   background-color: rgb(255, 248, 188);
   display: grid;
   grid-template-columns: 2 ;
-  grid-template-rows: 100px 240px;
+  grid-template-rows: 200px 240px;
 }
 .seccion_1_conocimientos-0 {
   grid-column-start: 1;
   grid-column-end: 3;
+}
+.seccion_1_conocimientos-0 p{
+  margin-bottom: 5px;
+}
+.seccion_1_conocimientos-0 h2{
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .seccion-1-conocimientos-1{
   margin: 0 auto;
@@ -94,10 +95,11 @@ en un solo section, un h2 y dos h3 */
   text-align: center;
 }
 .seccion-1-conocimientos-2 div{
-  margin: 20px auto;
+  margin: 0px auto;
 }
 .seccion-1-conocimientos-2 p{
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .seccion-1-conocimientos-2 li{
   margin: 6px;
@@ -114,15 +116,52 @@ en un solo section, un h2 y dos h3 */
   max-width: 400px;
   display: inline-block;
 }
-
-
 ul li{
   text-align: left;
 }
 ul li::marker {
   content: "🏖️";
 }
-
 ol li{
   text-align: left;
 }
+/* seccion para invitar a colaborar en la web de cody + tutorial */
+.seccion_2_colaboracion_en_git{
+  background-color: antiquewhite;
+}
+.seccion_2_colaboracion_en_git h2{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.seccion_2_colaboracion_en_git p{
+  margin-bottom: 5px;
+}
+/* previsualizacion de las foto con direccion a la pagina de la galeria */
+.seccion-3-previsualizacion{
+  background-color: rgb(183, 147, 218);
+}
+.seccion-3-previsualizacion h2{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.seccion-3-previsualizacion p{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.fotos_previsualizacion{
+  margin-top: 100px;
+  text-align: center;
+}
+/* seccion sobre la importancia de las vacaciones con items */
+
+.seccion-4-beneficios{
+  background-color: rgb(194, 216, 255);
+  height: 400px;
+}
+.seccion-4-beneficios h2{
+  margin-bottom: 40px;
+}
+.seccion-4-beneficios p{
+  margin-bottom: 5px;
+}
+
