@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/icon_cody.PNG" type="image/x-icon">  
   <title>Mis vacaciones</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -14,22 +15,78 @@
   <main>
     <header>
       <nav class="nav p-1 align-items-center">
-        <img class="p-0" src="images/cody.png" alt="" width="90" height="85">
+        <img class="p-0" src="images/cody.png" alt="Cody saludando" width="90" height="85">
         <a class="nav-link disabled">Hola Soy Cody!!!</a>
         <a class="p-2 nav-link active" aria-current="page" href="index.html">Inicio</a>
         <a class="p-2 nav-link" href="fotos.html">Fotos</a>
       </nav>
 
-      <h2>Galería completa de mis vacaciones</h2>
+      <span class="badge rounded-pill bg-galeria m-4"><h2 class="m-0">Galería completa de mis vacaciones</h2>
+      </span>
+
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en la orilla del mar">
-      <img src="images/5.jpg" alt="Cody de paseo">
-      <img src="images/6.jpg" alt="Cody en el aereopuerto">
-      
+    <div class="container fotos">
+      <div class="row">
+        <div class="col-6">
+          <div class="card mb-3">
+            <img src="images/1.jpg" class="card-img-top" alt="Cody montando bici">
+            <div class="card-body">
+              <h5 class="card-title">Mazunte</h5>
+              <p class="card-text">Aquí decidí dar un pequeño paseo y disfrutar de esta hermosa vista que nos brinda este Pueblo Mágico.</p>
+              <a href="https://www.gob.mx/sectur/articulos/mazunte-oaxaca" class="btn btn-cards">Pulsa aquí para mas información del lugar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-3">
+            <img src="images/2.jpg" class="card-img-top" alt="Cody acampando">
+            <div class="card-body">
+              <h5 class="card-title">La Escobilla</h5>
+              <p class="card-text">En esta foto estoy acampando tranquilamente en esta hermosa playa, gracias a que no hay mucha marea pude quedarme aquí, aunque para mi mala suerte no pude ver el <abbr title="Evento donde miles de tortugas desovan en la playa">arribazón</abbr> :(</p>
+              <a href="https://www.oaxaca-mio.com/puertoescondido/playaescobilla.htm" class="btn btn-cards">Pulsa aquí para mas información del lugar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-3">
+            <img src="images/3.jpg" class="card-img-top" alt="Cody en una alberca">
+            <div class="card-body">
+              <h5 class="card-title">Relajado</h5>
+              <p class="card-text">Aquí estoy yo disfrutando del sol después de un hermoso día recorriendo las playas y el mar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-3">
+            <img src="images/4.jpg" class="card-img-top" alt="Cody en la orilla del mar">
+            <div class="card-body">
+              <h5 class="card-title">Playa el Venado</h5>
+              <p class="card-text">Aquí estoy tomando tranquilamente el sol en la playa "El Venado" .</p>
+              <a href="https://www.turimexico.com/playa-el-venado-en-oaxaca/" class="btn btn-cards">Pulsa aquí para mas información del lugar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-3">
+            <img src="images/5.jpg" class="card-img-top" alt="Cody de paseo">
+            <div class="card-body">
+              <h5 class="card-title">Oaxaca de Juárez</h5>
+              <p class="card-text">Luego de pasar algunos días visitanto y admirando las hermosas playas de Oaxaca decidí que sería bueno ir a conocer el centro de ese estado <3.</p>
+              <a href="https://www.tripadvisor.com.mx/Attractions-g150801-Activities-Oaxaca_Southern_Mexico.html" class="btn btn-cards">Pulsa aquí para mas información del lugar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-3">
+            <img src="images/6.jpg" class="card-img-top" alt="Cody en el aereopuerto">
+            <div class="card-body">
+              <h5 class="card-title">El Aereopuerto</h5>
+              <p class="card-text">Si bien hubo un pequeño incidente no previsto la espera valió la pena por toda experiencia.</p>
+              <a href="https://www.oaxaca.gob.mx/sectur/rutas-turisticas/" class="btn btn-cards">Pulsa aquí para mas información del lugar</a>
+            </div>
+          </div>  
+        </div>
+      </div>  
     </div>
 
   </main>

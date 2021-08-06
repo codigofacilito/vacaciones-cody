@@ -67,10 +67,12 @@ section {
 }
 
 .fotos {
-
 }
 
-.fotos img {
+.carousel img {
+  border: 5px solid rgba(68,104,107,0.8);
+  border-radius: 20px;
+
   max-height: 80vh;
   object-fit: cover;
 }
@@ -80,9 +82,36 @@ ul li {
 }
 
 .ruta_aprendizaje {
-  list-style-image: url(cody.png)
+  list-style-image: url(cody.png);
 }
 
 ol li {
   text-align: left;
+}
+
+
+
+.bg-galeria {
+  padding: 1rem;
+  
+  background-color: rgb(255, 204, 28);
+}
+
+.card {
+  border: 5px solid rgba(68,104,107,0.9);
+  border-radius: 1.3rem;
+}
+
+.fotos .card img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.btn-cards {
+  background-color: rgba(1, 185, 157, 10%);
+  border: 0.3rem double #026c67;
+  border-radius: 0.6rem;
+}
+.btn-cards:hover {
+  background-color: rgba(1, 185, 157, 40%);
 }
