@@ -1,26 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+body{
+  margin: 0;
+  background-image: url(https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);/*Fuente: https://www.pexels.com/es-es/foto/mar-paisaje-naturaleza-playa-533923/*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Rajdhani', sans-serif;
+  color: #DB4C4C;
+}
+
+header>p{
+  padding: 0 100px;
+}
+
 nav{
-  background-color: aliceblue;
-  padding: 15px;
   display: flex;
-  gap:1em;
+  background-color: #06505d;
+  border-bottom: solid white;
+  height: 50px;
+}
+
+nav>a{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+}
+
+nav>a:hover{
+  background-color: #1B93A8;
+}
+
+nav>a:hover{
+  background-color: #05444f;
 }
 
 main{
+  color: white;
   text-align: center;
   max-width: 960px;
   margin:0 auto;
+  background-color: #06505d;
+  box-shadow: 0px 0px 50px black;
+  padding-bottom: 30px;
 }
+
+  .main-content{
+    padding: 0 100px;
+  }
+
+  .vacations-courses-section{
+    padding: 0 100px;
+  }
+
+  main section a{
+    text-decoration: none;
+    color: #A87D1B;
+  }
 
 section{
   margin-top: 3rem;
 }
 
 .cursos div{
-  background-color: black;
+  background-color: #06505d;
   color: white;
   max-width: 200px;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 1px 2px 5px white;
+  margin: 5px;
+  border: solid white;
 }
 .fotos img{
   max-width: 450px;
@@ -30,9 +86,24 @@ ul li{
   text-align: left;
 }
 ul li::marker {
-  content: "🚀";
+  content: "🐠";
 }
 
 ol li{
   text-align: left;
+}
+
+@media(max-width: 480px){
+  .main-content{
+    padding: 0 28px;
+  }
+
+  header>p{
+    padding: 0 28px;
+  }
+
+  .fotos img{
+    width: 100%;
+    display: inline-block;
+  }
 }
