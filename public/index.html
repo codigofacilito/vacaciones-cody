@@ -5,42 +5,72 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet"> 
 </head>
 <body>
   <main>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
+      <div class="container">
+        <nav class = "nav-main">
+          <img src="images/Coco.png" alt="logo coco" class="nav-brand" >
+          <ul class="nav-menu">
+            <li>
+          <a href="/">Inicio</a>
+        </li>
+        <li>
+          <a href="fotos.html">Fotos</a>
+        </li>
+        </ul>
+        </nav>
+        <hr color="black"/>
+      <header class="showcase">
       <h1>Estas son mis Vacaciones</h1>
       <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
     </header>
+    </header>
+  </div>
 
     <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
+      <header class="container">
+        <h2 class="main">Mis vacaciones Frontend</h2>
+      
       <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
       <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
+      <p> Estos son los cursos que estuve tomando: </p>
+    </header>
+  </section>
+
+
+      <div class="container-all">
+        <div class="container-box">
+        <div class="box box">
+          <i class="far fa-sun icon"></i>
+          <h4 class="title">Desarrollo web</h4>
           <p>Curso profesional de Desarrollo Web</p>
+          <div class="background-hover"></div>
         </div>
-        <div>
+
+        <div class="box box1">
+          <i class="fas fa-laptop icon1"></i>
+          <h4 class="title">Mi primera web</h4>
           <p>Curso para crear mi primera página web</p>
+          <div class="background-hover"></div>
         </div>
+        </div>
+        
       </div>
-    </section>
+      
 
     <section>
       <header>
         <h2>Ruta de aprendizaje 2021</h2>
         <p> También me propuse aprender nuevas tecnologías durante 2021</p>
       </header>
-      <ul>
+      <ul class="lista">
         <li> Flexbox, y Grid </li>
         <li> Animaciones con CSS y JavaScript </li>
         <li> AJAX </li>
@@ -48,7 +78,7 @@
         <li> Entre otros </li>
       </ul>
     </section>
-    <section>
+    <section class="tutorial">
       <header>
         <h2>Colabora en mi página</h2>
       </header>
@@ -70,9 +100,12 @@
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
       </header>
       <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
+        <img class="RotarDer" src="images/1.jpg" width="400" height="400" alt="Cody en la playa">
+        <img class="centro" src="images/2.jpg" width="400" height="400" alt="Cody acampando">
+        <img class="RotarIzq" src="images/3.jpg" width="400" height="400" alt="Cody en una alberca">
+      </div>
+
+      <div>
         <p>
           Puedes ver más, en la galería de fotos de mi página
           <a href="fotos.html">Ir a la galería</a>
@@ -85,7 +118,7 @@
         <h2>La importancia de las vacaciones</h2>
         <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
         <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
+        <ol class="lista1">
           <li>Mejora la salud mental</li>
           <li>Incrementa la motivación</li>
           <li>Reduce el burnout</li>
@@ -94,7 +127,6 @@
       </header>
       
     </section>
-    
   </main>
 </body>
 </html>
