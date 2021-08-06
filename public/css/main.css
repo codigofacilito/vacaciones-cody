@@ -121,6 +121,7 @@ a {
   align-items: center;
   gap: 10px;
   font-size: 0.8em;
+  cursor: pointer;
 }
 
 .logo-nav-bar > img {

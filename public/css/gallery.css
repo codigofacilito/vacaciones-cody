@@ -318,7 +318,7 @@ img.thumbnail {
   left: 0;
   right: 0;
   z-index: -10;
-  transition: opacity 250ms;
+  transition: opacity 500ms;
 }
 
 .parallax-efect p {

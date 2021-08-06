@@ -64,7 +64,11 @@ window.addEventListener(
     var scrollTop = document.documentElement.scrollTop;
     var opacity = scrollTop / scrollHeight;
 
-    parallax.style.opacity = clamp(opacity, MIN, MAX);
+    if (opacity >= 0.5) {
+      parallax.style.opacity = clamp(opacity, MIN, MAX);
+    } else {
+      parallax.style.opacity = 0;
+    }
 
     if (scrollTop >= hiddeNav) {
       bar_menu.style.visibility = "hidden";
