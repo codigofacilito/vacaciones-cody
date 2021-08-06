@@ -10,7 +10,12 @@ main {
   margin: 0 auto;
 }
 
+header {
+  font-family: 'Roboto', sans-serif;
+}
+
 section {
+  font-family: 'Roboto', sans-serif;
   margin-top: 3em;
 }
 
@@ -92,10 +97,7 @@ section {
   text-align: left;
 }
 
-.iconGithub, .iconTwitter {
-  font-size: 2em;
-}
-
+/* Settings for icons 💡 */
 .iconGithub {
   color: white;
 }

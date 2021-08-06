@@ -5,10 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="📙 Estas viendo la página de Cody, aspirante a Dev, 
+  en la que he creado un carousel, con todas las fotos de mis vacaciones de 2021 🚀">
   <link rel="shortcut icon" href="./images/cody.ico" type="image/x-icon">
   <title>🥇 Mis vacaciones | Galería de fotos</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/fontGoogle.min.css">
+  <link rel="stylesheet" href="./css/darkmode.min.css">
+  <link rel="stylesheet" href="./css/index.min.css">
 </head>
 
 <body>
@@ -21,33 +25,37 @@
         </div>
         <div class="col-12 col-md-8 mt-3">
           <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarInitial"
+              aria-controls="navbarInitial" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarInitial">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="./">🏠 Inicio</a>
+                  <a class="nav-link" href="./" title="Inicio">🏠 Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page"href="#">
-                    🎞 Galería de Imágenes
+                  <a class="nav-link active" aria-current="page" href="#" title="Galería de Imágenes">
+                    <i class="fas fa-images"></i> Galería de Imágenes
                   </a>
                 </li>
               </ul>
             </div>
+            <button class="switch" id="switch">
+              <span>💡</span>
+              <span>🌑</span>
+            </button>
           </nav>
         </div>
       </div>
       <div class="introduccion mt-2">
-        <h2 class="text-center text-warning mb-4">Galería completa de mis vacaciones</h2>
+        <h1 class="h2 text-center text-warning mb-4">Galería completa de mis vacaciones</h1>
       </div>
     </header>
-    
+
     <section>
       <div class="row justify-content-center">
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-10 col-lg-7 col-xl-8 col-xxl-9">
           <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -60,59 +68,66 @@
             </div>
             <div class="carousel-inner fotos">
               <div class="carousel-item active">
-                <img src="./images/1.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en la playa">
+                <img src="./images/1.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en la playa"
+                  title="Cody en la playa">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="text-success">Cody en la playa</h5>
+                  <h2 class="h5 text-success">Cody en la playa</h2>
                   <p class="text-justify">
                     Aquí estoy muy contento paseando con mi bicicleta por la playa 😄
                   </p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./images/2.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody acampando">
+                <img src="./images/2.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody acampando"
+                  title="Cody acampando">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="text-danger">Cody acampando</h5>
+                  <h2 class="h5 text-danger">Cody acampando</h2>
                   <p class="text-justify">
                     Me he ido a una isla paradisiaca para descansar y disfrutar 🥰
                   </p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./images/3.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en una alberca">
+                <img src="./images/3.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en una alberca"
+                  title="Cody en una alberca">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="text-warning">Cody en una alberca</h5>
+                  <h2 class="h5 text-danger">Cody en una alberca</h2>
                   <p class="text-justify">
                     Y aquí disfrutando en la piscina 😊
                   </p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./images/4.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en la playa">
+                <img src="./images/4.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en la playa"
+                  title="Cody en la playa">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="text-success">Cody en la playa</h5>
+                  <h2 class="h5 text-success">Cody en la playa</h2>
                   <p class="text-justify">
                     Tomándome un rico aperitivo de verano en la playa 🤭
                   </p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./images/5.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en una alberca">
-                
+                <img src="./images/5.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en el pueblo"
+                  title="Cody en el pueblo">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="h5 text-success">Cody en el pueblo</h2>
+                  <p class="text-justify">
+                    Estoy visitando uno de los pueblos más bonitos 😍
+                  </p>
+                </div>
               </div>
               <div class="carousel-item">
-                <img src="./images/6.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en una alberca">
+                <img src="./images/6.jpg" class="d-block rounded mx-auto d-block w-75" alt="Cody en el aeropuerto"
+                  title="Cody en el aeropuerto">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="h5 text-success">Cody en el aeropuerto</h2>
+                  <p class="text-justify">
+                    Esperando para subir al avión que me lleva a mis vacaciones 🚀🏖
+                  </p>
+                </div>
               </div>
             </div>
-            <!--         <button class="carousel-control-prev" type="button" 
-              data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" 
-              data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button> -->
           </div>
         </div>
       </div>
@@ -128,14 +143,15 @@
         <div class="col-12">
           <ul class="nav nav-pills justify-content-center">
             <li class="nav-item">
-              <a href="https://github.com/mjesusoj" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github iconGithub p-2"></i>
+              <a href="https://github.com/mjesusoj" title="Ir a mi GitHub" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github iconGithub fs-2 p-2"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a href="https://twitter.com/mjesusoj" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-twitter iconTwitter p-2"></i>
-              </a>   
+              <a href="https://twitter.com/mjesusoj" title="Ir a mi cuenta de Twitter" target="_blank" 
+                rel="noopener noreferrer">
+                <i class="fab fa-twitter iconTwitter fs-2 p-2"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -144,8 +160,10 @@
 
   </main>
 
+  <script src="./js/jquery-3.6.0.slim.min.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/acdf8e9705.js" crossorigin="anonymous"></script>
+  <script src="./js/fontawesome.min.js"></script>
+  <script src="./js/darkmode.js"></script>
 </body>
 
 </html>
