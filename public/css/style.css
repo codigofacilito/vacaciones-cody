@@ -177,7 +177,12 @@ section h2 {
   font-family: 'Baloo Chettan 2';
 }
 
-section-content {
+section .row {
+  margin-top: 10px;
+}
+
+
+.section-content {
   width: 60vw;
   display: flex;
   flex-direction: column;
@@ -186,16 +191,17 @@ section-content {
 }
 
 
-section-content p {
+.section-text {
   display: flex;
   line-height: 1.7;
   margin-top: 10px;
-  justify-content: center;
+  align-items: center;
 }
 
-section .row {
-  margin-top: 10px;
+.section-list {
+  font-size: inherit;
 }
+
 
 
 .section-rows {
@@ -299,4 +305,8 @@ section .row {
     width: 300px;
     height: auto;
   }
+  .section-list {
+    font-size: 14px;
+  }
+  
 }
