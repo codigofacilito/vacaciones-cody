@@ -10,7 +10,7 @@ Antes de enviar el pull request, lee estos detalles y completa tu información �
 
 Además, completa tu información para poder contactarte, en caso de que necesitemos información adicional, o debamos informarte que has ganado alguno de los premios, coloca debajo tu:
 
-Nombre de usuario en codigofacilito.com: Mmarianajennirodriguez
+Nombre de usuario en codigofacilito.com: marianajennirodriguez
 
 Finalmente, aquí debajo, cuéntanos un poco sobre tu proyecto, qué es lo más interesante en tu código, o que destacarías de tu implementación: 👇
 
