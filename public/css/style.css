@@ -20,6 +20,11 @@ nav .navbar-profile{
 section{
   margin-top: 3rem;
 }
+
+.icon-profile{
+  background: rgb(6,38,176);
+  background: linear-gradient(111deg, rgba(6,38,176,1) 0%, rgba(190,5,167,1) 100%);
+}
 .user-account{
   align-items: center;
 }
