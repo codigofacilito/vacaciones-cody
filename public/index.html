@@ -1,100 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis vacaciones</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Vacaciones de Cody" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Enterate de como la paso Cody en sus vacaciones" />
+    <meta property="og:url" content="https://cesarchoqueskater.github.io/vacaciones-cody/" />
+    <meta property="og:image" content="https://cesarchoqueskater.github.io/vacaciones-cody/images/cody-hi.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
+    <main>
+        <header class="header">
+            <div class="wrapper">
+                <div class="header-content">
+                    <a href="/">
+                        <img src="./images/codigo-facilito.png" alt="codigo-facilito-logo">
+                    </a>
+                    <div class="header-content__button">
+                        <ul>
+                            <li>
+                                <a href="/">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="fotos.html">Ver Fotos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="progress-indicator"></div>
+        <section class="welcome">
+            <div class="wrapper">
+                <div class="section-content">
+                    <div class="welcome-content">
+                        <div class="welcome-content-wrapper">
+                            <h1 class="welcome__title title">Estas son <span> <br> mis Vacaciones</span></h1>
+                            <div class="welcome-description description">
+                                <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+                                <div class="button-content">
+                                    <a class="button button-green" href="fotos.html">Fotos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="welcome__image">
+                            <img src="./images/cody-hi.png" alt="cody-image-welcome">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="vacation-frontend__section">
+            <div class="vacation-frontend__svg">
+                <svg viewBox="0 0 1900 461" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1089.96 237.02C879.397 210.516 819.375 221.5 639.606 269.026C561.778 289.601 486.463 328.213 413.976 365.375C262.712 442.924 123.764 514.159 0 402V0H1900C1787.65 7.51324 1755.99 45.7144 1713.29 97.2428C1679.27 138.301 1638.23 187.821 1543.78 237.02C1434.2 294.091 1222.79 258.828 1127.12 242.871L1127.12 242.87C1111.18 240.213 1098.46 238.091 1089.96 237.02Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <section class="vacation-frontend__content content-flex">
+                <div class="section-content z-index">
+                    <div class="section__description">
+                        <h2 class="title">Mis vacaciones Frontend</h2>
+                        <div class="description">
+                            <p>Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
+                            <p>Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+                            <p>Estos son los cursos que estuve tomando </p>
+                        </div>
+                        <div class="vacation-frontend__card-details">
+                            <div class="vacation-frontend__card card-red">
+                                <div class="vacation-frontend__card-img">
+                                    <img src="./images/curso-desarrollo-web-img.png " alt="curso-desarrollo-web-img">
+                                </div>
+                                <div class="vacation-frontend__card-description ">
+                                    <p>Curso profesional de Desarrollo Web</p>
+                                </div>
+                            </div>
+                            <div class="vacation-frontend__card card-blue">
+                                <div class="vacation-frontend__card-img">
+                                    <img src="./images/curso-primera-pagina-web-img.png" alt="curso-primera-pagina-web-img">
+                                </div>
+                                <div class="vacation-frontend__card-description">
+                                    <p>Curso para crear mi primera página web</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vacation-frontend__img">
+                    <img class="vacation-frontend__img-cody" src="./images/cody-greet-file.png" alt="cody-greet">
+                </div>
+            </section>
+        </section>
+        <section class="learning-path__section">
+            <div class="wrapper">
+                <div class="section-content">
+                    <div class="learning-path__description">
+                        <h2 class="learning-path__title title">Ruta de <br>aprendizaje <span>2021</span></h2>
+                        <div class="learning-path__info description">
+                            <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+                            <ul>
+                                <li>
+                                    <div class="circle circle-one">
+                                        <span>1</span>
+                                    </div>
+                                    <p>Flexbox, y Grid</p>
+                                </li>
+                                <li>
+                                    <div class="circle circle-two">
+                                        <span>2</span>
+                                    </div>
+                                    <p>Animaciones con CSS y JavaScript</p>
+                                </li>
+                                <li>
+                                    <div class="circle circle-three">
+                                        <span>3</span>
+                                    </div>
+                                    <p>AJAX</p>
+                                </li>
+                                <li>
+                                    <div class="circle circle-four">
+                                        <span>4</span>
+                                    </div>
+                                    <p>HTML semántico</p>
+                                </li>
+                                <li>
+                                    <div class="circle circle-five">
+                                        <span>5</span>
+                                    </div>
+                                    <p>Entre otros</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="collaborate-page__section">
+            <div class="collaborate-page__svg">
+                <svg viewBox="0 0 1920 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 324L64 318C128 312 256 300 384 252C512 204 640 120 768 96C896 72 1024 108 1152 126C1280 144 1408 144 1536 126C1664 108 1792 72 1856 54L1920 36V0H1856C1792 0 1664 0 1536 0C1408 0 1280 0 1152 0C1024 0 896 0 768 0C640 0 512 0 384 0C256 0 128 0 64 0H0V324Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <section class="collaborate-page__content content-flex">
+                <div class="section-absolute">
+                    <div class="section-background__icons"></div>
+                </div>
+                <div class="section-content relative">
+                    <div class="section__description padding-bottom">
+                        <h2 class="title">Colabora en mi página</h2>
+                        <div class="description">
+                            <p>
+                                Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
+                            </p>
+                            <p>
+                                Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+                            </p>
+                            <p>
+                                Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica.
+                            </p>
+                        </div>
+                        <div class="button-center">
+                            <div class="button-content">
+                                <a class="button button-collaborate" href="https://www.youtube.com/watch?v=xdCl0Wut-IA" target="_blank">Ir al tutorial</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__svg">
+                    <svg viewBox="0 0 1920 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 38.7858L64 25.2042C128 11.6225 256 -15.5407 384 11.6225C512 38.7858 640 120.276 768 133.857C896 147.439 1024 93.1123 1152 72.7399C1280 52.3674 1408 65.9491 1536 106.694C1664 147.439 1792 215.347 1856 249.301L1920 283.255V324H1856C1792 324 1664 324 1536 324C1408 324 1280 324 1152 324C1024 324 896 324 768 324C640 324 512 324 384 324C256 324 128 324 64 324H0V38.7858Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </section>
+        </section>
+        <section class="vacation-photo__section">
+            <div class="wrapper">
+                <div class="section-content">
+                    <div class="vacation-photo__description">
+                        <h2 class="vacation-photo__title title">Aquí te comparto algunas fotos de mis vacaciones</h2>
+                        <div class="vacation-photo__info description">
+                            <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+                            <div class="vacation-photo__list-image">
+                                <div class="vacation-photo__card">
+                                    <div class="vacation-photo__card-content">
+                                        <div class="vacation-photo__img">
+                                            <img class="vacation-img vacation-picture-1" src="./images/1.jpg" alt="Cody en la playa">
+                                        </div>
+                                    </div>
+                                    <p>Cody en la playa</p>
+                                </div>
+                                <div class="vacation-photo__card">
+                                    <div class="vacation-photo__card-content">
+                                        <div class="vacation-photo__img">
+                                            <img class="vacation-img vacation-picture-2" src="./images/2.jpg" alt="Cody acampando">
+                                        </div>
+                                    </div>
+                                    <p>Cody acampando</p>
+                                </div>
+                                <div class="vacation-photo__card">
+                                    <div class="vacation-photo__card-content">
+                                        <div class="vacation-photo__img">
+                                            <img class="vacation-img vacation-picture-3" src="./images/3.jpg" alt="Cody en una alberca">
+                                        </div>
+                                    </div>
+                                    <p>Cody en una alberca</p>
+                                </div>
+                            </div>
+                            <p>
+                                Puedes ver más, en la galería de fotos de mi página
+                            </p>
+                            <div class="button-content">
+                                <a class="button button-green" href="fotos.html">Ir a la galería</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="vacation-important__section">
+            <div class="section__svg">
+                <svg viewBox="0 0 1920 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 135.408L46.4 180.544C91.2 225.68 182.4 315.952 273.6 323.474C366.4 330.997 457.6 255.77 548.8 225.68C640 195.589 731.2 210.634 822.4 240.725C913.6 270.816 1006.4 315.952 1097.6 315.952C1188.8 315.952 1280 270.816 1371.2 248.248C1462.4 225.68 1553.6 225.68 1646.4 188.067C1737.6 150.453 1828.8 75.2266 1873.6 37.6133L1920 0V0H1873.6C1828.8 0 1737.6 0 1646.4 0C1553.6 0 1462.4 0 1371.2 0C1280 0 1188.8 0 1097.6 0C1006.4 0 913.6 0 822.4 0C731.2 0 640 0 548.8 0C457.6 0 366.4 0 273.6 0C182.4 0 91.2 0 46.4 0H0V135.408Z"
+                        fill="#FFF" />
+                </svg>
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
-      </div>
-    </section>
+            </div>
+            <section class="vacation-important__content content-flex">
+                <div class="section-content z-index">
+                    <div class="section__description">
+                        <h2 class="title">La importancia de las vacaciones</h2>
+                        <div class="description">
+                            <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+                            <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+                            <ol class="description-ol">
+                                <li>Mejora la salud mental</li>
+                                <li>Incrementa la motivación</li>
+                                <li>Reduce el burnout</li>
+                                <li>Mejora tu productividad y creatividad</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="vacation-important__img">
+                    <img class="vacation-important__img-cody" src="./images/cody-glasses.png" alt="cody-glasses">
+                </div>
+            </section>
+        </section>
+        <section class="thank">
+            <p>Hecho con el ❤️ por César - Concurso #VeranoFrontend.</p>
+            <p>Copyright 2021</p>
+        </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
-  </main>
+    </main>
+    <script type="application/javascript" src="./js/main.js"></script>
 </body>
+
 </html>

@@ -1,34 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis vacaciones</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Vacaciones de Cody" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Ven a revisar todas las fotos que se tomo Cody en sus vacaciones" />
+    <meta property="og:url" content="https://cesarchoqueskater.github.io/vacaciones-cody/" />
+    <meta property="og:image" content="https://cesarchoqueskater.github.io/vacaciones-cody/images/cody-hi.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
-
-  </main>
+    <main>
+        <header class="header">
+            <div class="wrapper">
+                <div class="header-content">
+                    <a href="/">
+                        <img src="./images/codigo-facilito.png" alt="codigo-facilito-logo">
+                    </a>
+                    <div class="header-content__button">
+                        <ul>
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="fotos.html">Ver Fotos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="progress-indicator"></div>
+        <div class="wrapper">
+            <div class="section-content">
+                <div class="presentation">
+                    <p class="description">
+                        Te presento alguna de las fotos que me tome en mis vacaciones.
+                    </p>
+                </div>
+                <div class="grid-photo">
+                    <div class="card-photo">
+                        <img class="img-photo photo-1" src="images/1.jpg" alt="Cody en la playa">
+                        <div class="card__overlay">
+                            <div class="card_text">
+                                <p>Cody en la playa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-photo">
+                        <img class="img-photo photo-2" src="images/2.jpg" alt="Cody acampando">
+                        <div class="card__overlay">
+                            <div class="card_text">
+                                <p>Cody acampando</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-photo">
+                        <img class="img-photo photo-3" src="images/3.jpg" alt="Cody en una alberca">
+                        <div class="card__overlay">
+                            <div class="card_text">
+                                <p>Cody en una alberca</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-photo">
+                        <img class="img-photo photo-4" src="images/4.jpg" alt="Cody en la Playa">
+                        <div class="card__overlay">
+                            <div class="card_text">
+                                <p>Cody en la Playa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-photo">
+                        <img class="img-photo" src="images/5.jpg" alt="Cody de turista">
+                        <div class="card__overlay">
+                            <div class="card_text">
+                                <p>Cody de turista</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-photo">
+                        <img class="img-photo" src="images/6.jpg" alt="Cody en el aereopuerto">
+                        <div class="card__overlay">
+                            <div class="card_text">
+                                <p>Cody molesto en el aereopuerto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="thank">
+            <p>Hecho con el ❤️ por César - Concurso #VeranoFrontend.</p>
+            <p>Copyright 2021</p>
+        </section>
+    </main>
+    <script type="application/javascript" src="./js/main.js"></script>
 </body>
 
 </html>
