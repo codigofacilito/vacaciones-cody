@@ -1,38 +1,238 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin:0;
 }
 
-main{
-  text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+.row{
+  --bs-gutter-x: 0rem;
 }
 
-section{
-  margin-top: 3rem;
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  color: #333333;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
 ul li{
   text-align: left;
-}
-ul li::marker {
-  content: "🚀";
+  margin: 10px;
 }
 
-ol li{
-  text-align: left;
+.umbrella li::marker {
+  content: "⛱️";
+} 
+
+.bg-dark{
+  transition: all 1s ease;
+}
+
+.dummy{
+  transition: all 1s ease;
+}
+
+.sky {
+  background-color: #ade4f1;
+}
+
+.sand {
+  position: absolute;
+  bottom: 0%;
+}
+
+.sky-part {
+  position: relative;
+  height: 33.333%;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  color:white;
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.big-circle {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 9rem;
+  background-color: rgb(75, 137, 231);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.little-circle {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 12vw;
+  background-color: #f4f4f4;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+}
+
+.flare {
+  background: linear-gradient(to right, #f12711, #f5af19);
+  border-radius: 25px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+.padre {
+  position:relative;
+  background-color: transparent;
+}
+
+.hijo{
+  position:absolute;
+  right: 0%;
+  bottom: 0%;
+  background-color: transparent;
+}
+
+.ocean {
+  background-color: #ece2c6;
+}
+
+.grass {
+  background-color: #92bc86;
+}
+
+footer {
+  position:relative;
+  background-color: #333333;
+}
+
+.row2 {
+  margin: 15px
+}
+
+footer ul li{
+  list-style: none;
+  color: white;
+  text-align: center;
+}
+
+div#carousel { 
+  perspective: 1200px; 
+  background-color: transparent;
+  padding-top: 10%; 
+  font-size:0; 
+  margin-bottom: 3rem; 
+  overflow: hidden; 
+}
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 300px; 
+  transform-origin: 50% 50% -500px; 
+  transition: 1s; 
+} 
+figure#spinner img { 
+  width: 40%; max-width: 425px; 
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-60deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-120deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-180deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-240deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-300deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-360deg); }
+
+div#carousel ~ span { 
+  color: #fff; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  position: relative; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
 }

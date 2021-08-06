@@ -1,34 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mis Fotos</title>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/967af241c0.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
+	<div class="container-fluid vh-100 vw-100">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<div class="container">
+				<nav class="navbar navbar-light">
+				  <a class="navbar-brand text-white" id="menu" href="#">
+					<div class="d-flex">
+					  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+					  <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_bknKi1.json"  background="transparent"  speed="1"  style="width: 30px; height: 30px;"  loop  autoplay></lottie-player>
+					  Verano con Cody
+					</div>
+				  </a>
+				</nav>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+				  <li class="nav-item active">
+					<a class="nav-link text-white" id="home" href="/public/index.html">Inicio</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link text-white" id="photo" href="/public/fotos.html">Fotos</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		   
+		  </nav>
 
-  </main>
+	<main class="gallery pt-5 mt-5">
+		<h1 class="text-white">Mis fotos</h1>
+		<div class="gallery-item">
+			<img src="images/1.jpg"/>
+		</div>
+		<div class="gallery-item">
+			<img src="images/2.jpg"/>
+		</div>
+		<div class="gallery-item">
+			<img src="images/3.jpg"/>
+		</div>
+		<div class="gallery-item">
+			<img src="images/4.jpg"/>
+		</div>
+		<div class="gallery-item">
+			<img src="images/5.jpg"/>
+		</div>
+		<div class="gallery-item">
+			<img src="images/6.jpg"/>
+		</div>
+	</main>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<footer>
+		<ul>
+		  <li>Christopher Enrique Ortiz</li>
+		  <li>Honduras</li>
+		  <li>Todos los derechos reservados</li>
+		</ul>
+	  </footer>
 </body>
-
 </html>
