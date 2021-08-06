@@ -78,6 +78,14 @@ section {
   object-fit: cover;
 }
 
+#overlay¿ {
+  color: #000;
+}
+
+.link3 {
+  color: whitesmoke;
+}
+
 ul li {
   text-align: left;
 }
