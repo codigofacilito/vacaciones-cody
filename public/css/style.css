@@ -1,38 +1,56 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+:root {
+  --primary: rgb(110, 88, 252);
+  --secondary: rgb(207, 252, 63);
+  --tertiary: rgb(252, 206, 114);
+  --four: rgb(76, 146, 252);
+  --five: rgb(204, 101, 252);
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
 }
 
-main{
+* {
+  /* font-family: "Poppins", sans-serif; */
+  margin: 0;
+  padding-right: 1000;
+}
+
+nav {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+main {
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+  max-width: 100%;
 }
 
-section{
-  margin-top: 3rem;
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+.bg-tertiary {
+  background-color: var(--tertiary) !important;
+}
+.bg-four {
+  background-color: var(--four) !important;
+}
+.bg-five {
+  background-color: var(--five) !important;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
+ul li {
   text-align: left;
 }
 ul li::marker {
-  content: "🚀";
+  content: none;
 }
 
-ol li{
+ol li {
   text-align: left;
+}
+
+ol li::marker {
+  content: none;
 }
