@@ -139,8 +139,8 @@ section{
 }
 
 .modal-stories{
-  background: rgb(233,13,217);
-  background: linear-gradient(90deg, rgba(233,13,217,1) 0%, rgba(240,255,54,1) 100%);
+  background: rgb(176,6,164);
+  background: linear-gradient(4deg, rgba(176,6,164,1) 0%, rgba(176,190,5,1) 100%);
   border: 1px solid #ffffff;
 }
 
