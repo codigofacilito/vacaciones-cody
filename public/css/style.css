@@ -1,38 +1,26 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
-} 
-
-main{
-  text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+#body{
+	background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
+	color: white;
+}
+#footer{
+	border-left: auto;
+    border-right: auto;
+    text-align: left;
+    background-color: #122436;
+}
+#text-image{
+	color: skyblue;
+}
+a{
+	text-decoration: none;
+	color: white;
+    text-decoration: underline;
 }
 
-section{
-  margin-top: 3rem;
+.carousel-inner{
+	background-size: cover!important;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
-}
-
-ol li{
-  text-align: left;
+.rounded float-start{
+	max-width: 60%;
 }
