@@ -1,100 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Roboto+Slab:wght@300;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
   <main>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+      <nav class="navbar navbar-expand-lg position-fixed col-12 justify-content-center">
+        <a href="#" class="link-menu active">Inicio</a>
+        <a href="fotos.html" class="link-menu">Fotos</a>
       </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
     </header>
+    
+    <div class="parallax">
+      <div class="contenedor">
+        <h1>Estas son mis Vacaciones</h1>
+        <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página
+          quiero compartirlo contigo.</p>
+      </div>
+    </div>
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+    <div class="container col-lg-8 mt-5 mb-5 p-3 shadow p-3 mb-5 bg-body rounded" data-aos="zoom-in-down">
+      <h2>Mis vacaciones Frontend</h2>
+      <hr>
+      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve
+        aprendiendo HTML, CSS, y JavaScript </p>
+      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías
+        frontend, construyendo esta página </p>
       <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+      <div class="row justify-content-center cursos">
+        <div class="card col-lg-3 mb-5 shadow rounded" style="width: 300px;">
+          <div class="card-body">
+            <p>Curso profesional de Desarrollo Web</p>
+          </div>
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+        <div class="card col-lg-3 mb-5 shadow rounded" style="width: 300px;">
+          <div class="card-body">
+            <p>Curso para crear mi primera página web</p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+    <div class="container-fluid mb-5">
+      <div class="row col-lg-12 overflow-hidden">
+        <div class="container col-lg-5 shadow p-3 mb-5 bg-body rounded" data-aos="fade-right" data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+          <h2>Ruta de aprendizaje 2021</h2>
+          <hr>
+          <p class="text-align-center"> También me propuse aprender nuevas tecnologías durante 2021</p>
+          <ul>
+            <li> Flexbox, y Grid </li>
+            <li> Animaciones con CSS y JavaScript </li>
+            <li> AJAX </li>
+            <li> HTML semántico </li>
+            <li> Entre otros </li>
+          </ul>
+        </div>
+        <div class="container col-lg-5 shadow p-3 mb-5 bg-body rounded" data-aos="fade-left" data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+          <h2>Colabora en mi página</h2>
+          <hr>
+          <p>
+            Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a
+            GitHub
+          </p>
+          <p>
+            Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+          </p>
+          <p>
+            Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
+            <a href="" class="link-bg-white" target="_blank">Ir al tutorial</a>
 
-      </p>
-    </section>
-    <section>
-      <header>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallaxColor">
+      <div class="container-fluid">
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+              <img src="images/1.jpg" class="w-100" alt="Cody en la playa">
+            </div>
+            <div class="col-lg-4 mt-5 mb-5 col-md-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+              <img src="images/2.jpg" class="w-100" alt="Cody acampando">
+            </div>
+            <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+              <img src="images/3.jpg" class="w-100" alt="Cody en una alberca">
+            </div>
+          </div>
+        </div>
         <p>
           Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
+          <a href="fotos.html" class="parallax-link">Ir a la galería</a>
         </p>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
+    <div class="container p-5 col-lg-8 shadow p-3 mb-5 bg-body rounded" data-aos="zoom-in-down">
+      <h2>La importancia de las vacaciones</h2>
+      <hr>
+      <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente
+        nos desconectemos y descansemos apropiadamente</p>
+      <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+      <ol>
+        <li>Mejora la salud mental</li>
+        <li>Incrementa la motivación</li>
+        <li>Reduce el burnout</li>
+        <li>Mejora tu productividad y creatividad</li>
+      </ol>
+    </div>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
