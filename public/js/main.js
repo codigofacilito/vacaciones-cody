@@ -73,7 +73,7 @@ var main = new Vue({
         stories:[
             {
                 title: "Mis vacaciones Frontend",
-                icon:"images/profile.jpg",
+                icon:"images/geek.png",
                 content: [
                   {
                     picture: "https://cdn.pixabay.com/photo/2018/06/21/14/00/swimming-pool-3488634__340.jpg",
@@ -89,7 +89,7 @@ var main = new Vue({
               },
               {
                 title: "Ruta de aprendizaje 2021",
-                icon:"images/profile.jpg",
+                icon:"images/dev.png",
                 content: [
                   { 
                     picture: "https://cdn.pixabay.com/photo/2016/03/09/09/17/desktop-1245714__340.jpg",
@@ -125,7 +125,7 @@ var main = new Vue({
               },
               {
                 title: "Importancia de las vacaciones",
-                icon:"images/profile.jpg",
+                icon:"images/vacation.png",
                 content: [
                   {
                     picture: "https://cdn.pixabay.com/photo/2020/01/24/12/29/konigssee-4790116__340.jpg",
