@@ -136,3 +136,25 @@ section p {
   font-size: 1.8rem;
   font-weight: 600;
 }
+
+.border--light {
+  border: solid white 0.5px;
+  border-radius: 10px;
+}
+
+.red-container {
+  background-color: rgb(219, 29, 29);
+  margin-top: 5px;
+}
+.yellow-container {
+  background-color: rgb(233, 236, 24);
+  margin-top: 5px;
+}
+.orange-container {
+  background-color: rgb(241, 100, 18);
+  margin-top: 5px;
+}
+.green-container {
+  background-color: rgb(61, 238, 16);
+  margin-top: 5px;
+}
