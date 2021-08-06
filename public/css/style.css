@@ -497,7 +497,7 @@ body {
 }
 
 .description-ol li {
-    line-height: 54px;
+    line-height: 27px;
 }
 
 .thank {
@@ -755,6 +755,9 @@ body {
         grid-template: repeat(4, 350px) / repeat(3, 350px);
         grid-gap: 20px;
         justify-content: center;
+    }
+    .description-ol li {
+        line-height: 50px;
     }
 }
 
