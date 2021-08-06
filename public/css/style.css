@@ -1,50 +1,143 @@
 * {
   margin: 0;
-  background: aliceblue;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(0, 0, 136);
 }
-
+body {
+  background: rgb(238, 235, 235);
+}
+.fondoD{
+  filter: blur(0.2rem);
+}
 nav{
-  background: blue;
+  background: linear-gradient(to top left, rgb(2, 13, 37), rgb(10, 79, 228));
   display: flex;
-  padding: 0.8rem;
+  padding: 1rem;
   gap: 2.5em;
+  margin-bottom: 1rem;
 }
-
+#logo {
+  width: 15%;
+  height: 15%;
+  margin-right: 1rem;
+}
+#logoMini{
+  display: none;
+}
 a {
-  background: blue;
-  color: cornsilk;
+  color: black;
   cursor: pointer;
   text-decoration: none;
   font-weight: 600;
+  padding-top: 0.4rem;
 }
-
-#Galeria {
-  padding-left: 1.2rem;
-  margin: 1.8rem 0;
+a:hover {
+  font-weight: 900;
+  color: rgb(209, 209, 209);
+  padding-top: 0.2rem;
 }
-
+main {
+  background: rgb(238, 235, 235);
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 1.2rem;
+}
 section{
-  margin-top: 3rem;
+  width: 90%;
+  background: rgb(250, 248, 248);
+  margin-top: 1.4rem;
+  border-radius: 0.4rem;
+  padding-bottom: 0.6rem;
 }
-
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+header {
+  margin-bottom: 0.4rem;
 }
-
-.fotos {
-  padding: auto;
-  justify-content: space-around;
+.titulos{
+  padding: 0.6rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background: rgb(1, 207, 207);
+  color: rgb(2, 13, 37);
+  text-shadow: 0.1rem 0.1rem 0.1rem rgb(2, 13, 37);
 }
-.fotos img{
-  max-width: 30%;
+p{
   padding: 0.6rem;
 }
+.cursos {
+  display: flex;
+  justify-content: center;
+  margin: 0.4rem;
+}
+.cursos div{
+  width: 30%;
+  background-color: rgb(2, 13, 37);
+  box-shadow: 5px 5px 5px rgb(2, 13, 37);
+  border-radius: 0.3rem;
+  margin: 0.4rem;
+  padding: 0.2rem;
+}
+.cursos a {
+  color: rgb(214, 236, 255);
+  font-weight: 400;
+}
+div.fotos{
+  padding: 1rem;
+}
+a > img {
+  width: 30%;
+  border-radius: 0.8rem;
+  flex-wrap: wrap;
+  padding: 0.4rem;
+}
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > div {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.4rem 0.8rem 0.8rem 0.8rem;
+  background: white;
+  border-radius: 1rem;
+}
+.modal-window div > img {
+  border-radius: 0.6rem;
+}
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+.modal-close:hover {
+  color: black;
+}
+.tiTex:hover{
+  color: rgba(0, 0, 0, 0.767);
+  font-weight: 600;
+}
+
 ul li{
   text-align: left;
 }
@@ -56,8 +149,27 @@ ol li{
   text-align: left;
 }
 
-@media (max-width: 400px){
+#Galeria {
+  padding-left: 1.2rem;
+  margin: 1.4rem 0;
+}
+
+@media (max-width: 500px){
+  #logo {
+    display: none;
+  }
+  #logoMini {
+    display: block;
+    width: 2rem;
+    margin-bottom: 0.2rem;
+  }
+  main {
+    width: 85%;
+  }
   .fotos img {
     width: 96%;
+  }
+  .cursos{
+    font-size: 0.6rem;
   }
 }
