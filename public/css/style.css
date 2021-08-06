@@ -1,37 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 /* botones de redireccion a inicio y galeria + Introduccion */
 .header_1 {
   display: grid;
   grid-template-rows: 40px 200px;
-  background-color: rgb(243, 159, 176);
+  
 }
 .header_2 {
   display: grid;
   grid-template-rows: 40px 140px;
-  background-color: rgb(255, 242, 187);
 }
 nav{
-  background-color:antiquewhite;
   text-align:right;
 
 }
 .boton_header_1 {
   text-decoration: none;
-  background-color: blueviolet;
   margin-right: 0px;
   padding: 11px 9px 11px 9px;
-  border-radius: 100px;
+  border-radius: 50%;
   line-height: 90px;
 }
 .boton_header_2 {
   text-decoration: none;
-  background-color: blueviolet;
   margin-right: 60px;
   padding: 11px 9px 11px 9px;
-  border-radius: 100px;
+  border-radius: 50%;
   line-height: 90px;
 }
 .header-1-titulo-intro div{
@@ -42,11 +40,9 @@ nav{
 .header-1-titulo-intro h1{
   padding: 20px 0px 40px 0px;
   text-align: center;
-  background-color: rgb(212, 223, 243);
   
 }
 .header-1-titulo-intro p{
-  background-color: rgb(200, 252, 255);
   text-align: center;
 }
 
@@ -55,7 +51,6 @@ nav{
 /* Seccion donde ubico los aprendisajes de cody y los distribuyo
 en un solo section, un h2 y dos h3 */
 .seccion-1-sobre-aprendisaje {
-  background-color: rgb(255, 248, 188);
   display: grid;
   grid-template-columns: 2 ;
   grid-template-rows: 200px 240px;
@@ -84,12 +79,12 @@ en un solo section, un h2 y dos h3 */
 }
 .cursos_1{
   max-width: 120px;
-  background-color: rgb(255, 171, 61);
+  background-color: #cd8b59;
   border-radius: 8px;
   text-align: center;
   margin: 20px auto;
   padding: 9px;
-  box-shadow: 2px 2px 4px 0px #555
+  box-shadow: 2px 2px 4px 0px #925632
 }
 .seccion-1-conocimientos-2 header{
   text-align: center;
@@ -104,18 +99,6 @@ en un solo section, un h2 y dos h3 */
 .seccion-1-conocimientos-2 li{
   margin: 6px;
 }
-
-/* visualizacion del contenido de los section de apredisaje */
-
-.fotos_previsualizacion img{
-  max-width: 300px;
-  display: inline-block;
-
-}
-.fotos_galeria img{
-  max-width: 400px;
-  display: inline-block;
-}
 ul li{
   text-align: left;
 }
@@ -125,23 +108,24 @@ ul li::marker {
 ol li{
   text-align: left;
 }
+
 /* seccion para invitar a colaborar en la web de cody + tutorial */
 .seccion_2_colaboracion_en_git{
-  background-color: antiquewhite;
+  height: 200px;
 }
 .seccion_2_colaboracion_en_git h2{
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 40px;
 }
 .seccion_2_colaboracion_en_git p{
   margin-bottom: 5px;
 }
 /* previsualizacion de las foto con direccion a la pagina de la galeria */
 .seccion-3-previsualizacion{
-  background-color: rgb(183, 147, 218);
+  height: 500px;
 }
 .seccion-3-previsualizacion h2{
-  margin-top: 40px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 .seccion-3-previsualizacion p{
@@ -152,10 +136,24 @@ ol li{
   margin-top: 100px;
   text-align: center;
 }
+.fotos_previsualizacion img{
+  max-width: 300px;
+  display: inline-block;
+
+}
+/* Galeria */
+.fotos_galeria{
+  max-width: 1000px;
+}
+.fotos_galeria img{
+
+  max-width: 420px;
+  display: inline-block;
+}
+
 /* seccion sobre la importancia de las vacaciones con items */
 
 .seccion-4-beneficios{
-  background-color: rgb(194, 216, 255);
   height: 400px;
 }
 .seccion-4-beneficios h2{
@@ -164,4 +162,69 @@ ol li{
 .seccion-4-beneficios p{
   margin-bottom: 5px;
 }
+body{
+  background-color: #fff2df;
+  z-index: -1;
+}
 
+/* efecto ola 
+
+.envoltura{
+  position: relative;
+}
+
+.algo{
+  content:"";
+  width: 100%;
+  height: 100%;
+  margin-top: 220px;
+  background-color: #0099FF;
+  position: fixed;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  animation: show 2.6s linear forwards;
+}
+@keyframes show{
+  to{
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+}
+
+.wave{
+  background-image: url(../images/wave.svg);
+  position:fixed;
+  width: 300%;
+  height:120px;
+  left: 0;
+  margin-top: 100px;
+  animation: w1 2.3s linear  forwards;
+  background-position: bottom;
+}
+@keyframes w1 {
+  0%{
+    margin-left: 0px;
+  }
+  100%{ margin-left: -1200px;
+    transform: translateY(890px);
+  }
+
+}
+.wave1{
+  background-image: url(../images/waved.svg);
+  position:fixed;
+  width: 300%;
+  height:140px;
+  left: 0;
+  margin-top: 100px;
+  animation: w2 2.3s linear  forwards;
+  background-position: bottom;
+}
+@keyframes w2 {
+  0%{
+    margin-left: 0px;
+  }
+  100%{ margin-left: -2200px;
+    transform: translateY(900px);
+  }
+
+}
+*/
