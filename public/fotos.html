@@ -5,30 +5,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
+  <title>Mis vacaciones | Galería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
+    <section>
+      <header class="header">
+        <img id="button-menu" src="images/icons/menu.svg" alt="Menu">
+        <div class="contenedor-nav deactivate-nav">
+          <div class="container-button-nav">
+            <img src="images/icons/close.svg" alt="Close" id="button-close">
+          </div>
+          <nav>
+            <a class="nav-item" href="index.html">Inicio</a>
+            <a class="nav-item" href="">Fotos</a>
+          </nav>
+        </div>
+      </header>
+    </section>
+
+    <section class="section-galeria">
+      <div class="fotos">
+        <img class="item-foto" src="images/galeria/1.jpg" alt="Cody en la playa">
+        <img class="item-foto" src="images/galeria/2.jpg" alt="Cody acampando">
+        <img class="item-foto" src="images/galeria/3.jpg" alt="Cody en una alberca">
+        <img class="item-foto" src="images/galeria/4.jpg" alt="Cody en una alberca">
+        <img class="item-foto" src="images/galeria/5.jpg" alt="Cody en una alberca">
+        <img class="item-foto" src="images/galeria/6.jpg" alt="Cody en una alberca">
+      </div>
+    </section>
 
   </main>
+  <script src="./js/logica-menu.js"></script>
 </body>
 
 </html>
