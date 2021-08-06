@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="m-bg-image m-bg-image--blur"></div>
@@ -15,7 +19,7 @@
       <div class="todo__sin_navbar">
         <header class="header">
           <div class="logo"><a href="/vacaciones-cody/">Cody Page</a></div>
-          <div class="a-burger a-burger--white" onclick="openMenu(this)">
+          <div class="a-burger a-burger--white" onclick="openMenu()">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -23,20 +27,42 @@
         </header>
         <main class="gallery">
           <header>
-            <h1 data-aos="fade-down">
-              Galería completa de mis vacaciones &nbsp;<i
-                class="fas fa-images"
-              ></i>
-            </h1>
+            <h1 data-aos="zoom-in-down">Galeria completa de mis vacaciones</h1>
           </header>
-          <div class="gallery__images">
-            
+          <img src="./images/peces.svg" alt="" class="pez" data-aos="zoom-in-down"/>
+          <div
+            class="swiper-container mySwiper"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/5.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/6.jpg" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
+          <img src="./images/tortuga.svg" alt=""/>
         </main>
         <footer>
-          <div class="copy">
-            &copy;2021.Todos los derechos reservados. Política de privacidad.
-          </div>
+          <div class="copy">&copy;2021.Todos los derechos reservados.</div>
         </footer>
       </div>
       <div class="todo__navbar">
@@ -75,5 +101,28 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/index.js"></script>
     <script type="module" src="./js/gallery.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

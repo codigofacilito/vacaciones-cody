@@ -154,6 +154,7 @@ h3 {
     width: 100%;
     display: inline-block;
     overflow-y: scroll;
+    position: relative;
     overflow-x: hidden;
     scroll-snap-align: center;
     scroll-behavior: smooth; }
@@ -498,22 +499,19 @@ h3 {
   padding: 5%;
   color: var(--whitesmoke);
   min-height: 50vh;
-  height: auto; }
+  height: auto;
+  position: relative; }
   .colabora__text h2 {
     font-size: 2.7rem;
     margin-bottom: 4%; }
   .colabora__text p {
     margin-bottom: 4%; }
   .colabora__text img {
-    width: 250px;
-    float: left;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
     margin-right: 2%;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
     border-radius: .4rem; }
-    @media screen and (max-width: 600px) {
-      .colabora__text img {
-        width: 200px;
-        margin-top: 2%; } }
   .colabora__btn {
     display: flex;
     justify-content: flex-start;
@@ -617,36 +615,37 @@ h3 {
   padding-inline: 5%;
   color: whitesmoke; }
   .salud h2 {
-    margin-bottom: 2%; }
+    margin-bottom: 1.5rem; }
   .salud p {
-    margin-bottom: 2%; }
+    margin-bottom: 1.5rem; }
   .salud ol {
-    padding: 3%; }
+    padding: 1.5rem; }
     .salud ol li {
       font-size: 1.2rem;
       margin-bottom: .5rem; }
 
-footer ul {
-  display: flex;
-  width: 100%;
-  flex-flow: row wrap;
-  list-style: none;
-  justify-content: space-around;
-  padding-block: 1rem;
-  font-size: 1.2rem;
-  background-color: var(--dark-blue); }
-  footer ul li {
-    margin-right: .5rem;
-    margin-bottom: .5rem; }
-  footer ul a {
-    color: var(--whitesmoke); }
-
-footer .copy {
-  background-color: var(--dark-blue);
-  border-top: 1px solid var(--white);
-  color: var(--whitesmoke);
-  padding-block: .5rem;
-  text-align: center; }
+footer {
+  width: 100%; }
+  footer ul {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: space-around;
+    padding-block: 1rem;
+    font-size: 1.2rem;
+    background-color: var(--dark-blue); }
+    footer ul li {
+      margin-right: .5rem;
+      margin-bottom: .5rem; }
+    footer ul a {
+      color: var(--whitesmoke); }
+  footer .copy {
+    background-color: var(--dark-blue);
+    border-top: 1px solid var(--white);
+    color: var(--whitesmoke);
+    padding-block: .5rem;
+    text-align: center; }
 
 .section {
   padding-top: 80px; }
