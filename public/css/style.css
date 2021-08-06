@@ -158,3 +158,11 @@ section p {
   background-color: rgb(61, 238, 16);
   margin-top: 5px;
 }
+
+.section--flex {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
