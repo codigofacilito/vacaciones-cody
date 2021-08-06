@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+  </head>
+  <body>
+    <div class="m-bg-image m-bg-image--blur"></div>
+    <div class="todo">
+      <div class="todo__sin_navbar">
+        <header class="header">
+          <div class="logo"><a href="/public/">Cody Page</a></div>
+          <div class="a-burger a-burger--white" onclick="openMenu(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </header>
+        <main class="gallery">
+          <header>
+            <h1 data-aos="fade-down">
+              Galería completa de mis vacaciones &nbsp;<i
+                class="fas fa-images"
+              ></i>
+            </h1>
+          </header>
+          <div class="gallery__images">
+            
+          </div>
+        </main>
+        <footer>
+          <div class="copy">
+            &copy;2021.Todos los derechos reservados. Política de privacidad.
+          </div>
+        </footer>
+      </div>
+      <div class="todo__navbar">
+        <nav class="navbar">
+          <div class="logo navbar__logo"><a href="/public/">Cody Page</a></div>
+          <div class="navbar__list">
+            <a href="/public/">
+              <li class="navbar__list__item">
+                <i class="fas fa-home"></i> Inicio
+              </li>
+            </a>
+            <a href="/public/galeria.html">
+              <li class="navbar__list__item">
+                <i class="fas fa-images"></i> Fotos de vacaciones
+              </li>
+            </a>
+            <a href="https://codigofacilito.com/" target="_blank">
+              <li class="navbar__list__item">
+                <i class="fas fa-graduation-cap"></i> Mis profes
+              </li>
+            </a>
+          </div>
+          <div class="navbar__image">
+            <img
+              src="https://codigofacilito.com/assets/svg/cody-coding-ef9af241f33474b860d615215899c87d406c52dd90148b9d32f5436d92b848ca.svg"
+              alt=""
+            />
+          </div>
+        </nav>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/57d52ad1ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/index.js"></script>
+    <script type="module" src="./js/gallery.js"></script>
+  </body>
+</html>
