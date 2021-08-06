@@ -3,32 +3,90 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="title" content="Mis vacaciones">
+  <meta name="description" content="Fotos de mis vacaciones ">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Catamaran:wght@100;400;600;700;800&display=swap" rel="stylesheet">
   <title>Mis vacaciones</title>
+  <script src="https://kit.fontawesome.com/0b3077f9bb.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <main>
-    <header>
+  <header>
+    <div class="contenedor d-flex justify-content-between"> 
+      <h1 class="logotipo"><i class="fas fa-crow"></i> VACACIONES</h1>
       <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+        <a href="index.html" class="nav_item">Inicio</a>
+        <a href="fotos.html" class="nav_item activo">Fotos</a>
+      </nav>  
+    </div> 
+  </header>
+  <main>
+    <section id="superior" class="d-flex justify-content-center align-items-center">
+      <div class="content">
+        <h2 class="titulo-foto subrayado"><i class="fas fa-folder-open"></i> Estas son mis Fotos</h1>
+      </div>
+    </section>
+    
+    <div class="contenedor">
+      <h2 class="text-center titulo-foto">Galería completa de mis vacaciones</h2>
+      <div class="accordian">
+        <ul>
+          <li>
+            <div class="image_title">
+              <div class="texto-footer"><span>Paseando</span></div>
+            </div>
+            <a href="#">
+              <img src="images/1.jpg"/>
+            </a>
+          </li>
+          <li>
+            <div class="image_title">
+              <div class="texto-footer"><span>Acampando</span></div>
+            </div>
+            <a href="#">
+              <img src="images/2.jpg"/>
+            </a>
+          </li>
+          <li>
+            <div class="image_title">
+              <div class="texto-footer"><span>Tomando sol</span></div>
+            </div>
+            <a href="#">
+              <img src="images/3.jpg"/>
+            </a>
+          </li>
+          <li>
+            <div class="image_title">
+              <div class="texto-footer"><span>Refrescante atardecer</span></div>
+            </div>
+            <a href="#">
+              <img src="images/4.jpg"/>
+            </a>
+          </li>
+          <li>
+            <div class="image_title">
+              <div class="texto-footer"><span>En la ciudad</span></div>
+            </div>
+            <a href="#">
+              <img src="images/5.jpg"/>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-
   </main>
+  <footer>
+    <div class="contenedor">
+      <div class="d-flex justify-content-between align-items-center c-verde">
+        <div class="logotipo-footer"><i class="fas fa-crow"></i> VACACIONES</div>
+        <span>Todos los derechos reservado Copyright © 2021</span>
+      </div>      
+    </div>    
+  </footer>
 </body>
 
 </html>
