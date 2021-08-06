@@ -20,7 +20,7 @@ a {
   
 }
 .fotos img {
-  max-width: 320px;
+  max-width: 450px;
   display: inline-block;
 }
 
@@ -165,14 +165,4 @@ section p {
   flex-direction: column;
   justify-content: space-around;
 
-}
-
-.imagen--cody { 
-  max-width: 320px;
-}
-
-@media (min-width: 700px ) {
-  .imagen--cody {
-    max-width: 450px;
-  }
 }
