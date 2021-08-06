@@ -8,6 +8,7 @@
   --gray-400: #F8F8F8;
   --blue-700: #051626;
   --white: #FFFFFF;
+  --purple: #6E57FC;
 }
 
 /* generals */
@@ -299,11 +300,27 @@ button, a {
   left: 50%;
   transform: translateX(-50%) translateY(-100%)
 }
+.devices-courses .device .call-to-action a:first-of-type:hover {
+  background-color: var(--purple);
+  filter: drop-shadow(0px 6px 24px rgba(0, 0, 0, 0.24));
+}
+.devices-courses .device .call-to-action a:first-of-type:active {
+  background-color: var(--purple);
+  filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.24));
+}
 .devices-courses .device .call-to-action a:last-of-type {
   position: absolute;
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%)
+}
+.devices-courses .device .call-to-action a:last-of-type:hover {
+  background-color: var(--blue-700);
+  filter: drop-shadow(0px 6px 24px rgba(255, 255, 255, 0.24));
+}
+.devices-courses .device .call-to-action a:last-of-type:hover {
+  background-color: var(--blue-700);
+  filter: drop-shadow(0px 10px 32px rgba(255, 255, 255, 0.24));
 }
 
 /* learning-path */
@@ -324,6 +341,7 @@ button, a {
   overflow-y: scroll;
   height: 300px;
   padding-left: 20%;
+  transition: all 0.5s ease;
 }
 
 .learning-path .topics .topic {
@@ -334,7 +352,15 @@ button, a {
   background-color: var(--gray-400);
   margin: 0 30px;
   filter: drop-shadow(0px 29px 24px rgba(0, 0, 0, 0.08));
+  transition: all 0.9s ease;
 }
+
+.learning-path .topics .topic:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0px 29px 24px rgba(104, 47, 47, 0.1));
+  border: 1px solid var(--main-color);
+}
+
 .learning-path .topics .topic p {
   color: var(--main-color);
   text-align: center;
@@ -360,6 +386,11 @@ button, a {
   border-radius: 24px;
   padding: 24px 16px;
   filter: drop-shadow(0px 40px 56px rgba(0, 0, 0, 0.12));
+  transition: all 0.8s ease;
+}
+
+.collaborate-us .collaborate .card-git-hub:hover {
+  transform: scale(1.1);
 }
 
 .collaborate-us .collaborate .card-git-hub img {
@@ -386,6 +417,19 @@ button, a {
   margin: 0 auto;
   padding: 10px 16px;
   text-decoration: none;
+  transition: all 0.8s ease;
+}
+
+.collaborate-us .collaborate .card-git-hub a:hover {
+  background-color: var(--main-color);
+  color: var(--white);
+  filter: drop-shadow(0px 6px 24px rgba(0, 0, 0, 0.24));
+}
+
+.collaborate-us .collaborate .card-git-hub a:active {
+  background-color: var(--main-color);
+  color: var(--white);
+  filter: drop-shadow(0px 10px 32px rgba(255, 255, 255, 0.24));
 }
 
 
@@ -409,11 +453,17 @@ button, a {
   display: flex;
   overflow-y: scroll;
   padding-left: 20%;
+  height: 250px;
 }
 
 .important-vacations .items-important .important {
   text-align: center;
   margin: 0 42px;
+  transition: all 0.8s ease;
+}
+
+.important-vacations .items-important .important:hover {
+  transform: scale(1.05);
 }
 
 .important-vacations .items-important .important p {
@@ -445,15 +495,47 @@ button, a {
 }
 
 .gallery-section .gallery-photos h2 {
+  line-height: 29px;
+  text-align: center;
+  margin: 24px 0;
+  font-size: 24px;
+}
 
+.gallery-section .gallery-photos .photo {
+  width: 250px;
+  position: relative;
+}
+.gallery-section .gallery-photos .show-gallery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.gallery-section .gallery-photos .show-gallery p{
+  color: var(--white);
+  margin: 12px 0;
+}
+.gallery-section .gallery-photos .show-gallery a{
+  color: var(--white);
+  padding: 11px 16px;
+  transition: all 0.5s ease;
+}
+
+.gallery-section .gallery-photos .show-gallery a:hover {
+  transform: scale(1.1);
 }
 
 .gallery-section .gallery-photos img {
-  width: 800px;
+  width: 100%;
   box-shadow: 0px 10px 56px 24px rgba(0, 0, 0, 0.48);
 }
-
-
 
 /* footer */
 .footer {
@@ -478,6 +560,10 @@ button, a {
 
 /* Medium */
 @media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 40px;
+  }
+
   /* hero */
   .hero video {
     min-width: 100%;
@@ -515,6 +601,20 @@ button, a {
   .learning-path .topics {
     padding-left: 35%;
   }
+
+  /* collaborate-us */
+
+  /* important-vacations */
+
+  /* gallery-section */
+  .gallery-section .gallery-photos .photo {
+    width: 700px;
+  }
+
+  .gallery-section .gallery-photos h2 {
+    font-size: 40px;;
+  }
+
 }
 
 /* Large */
@@ -603,6 +703,11 @@ button, a {
   .important-vacations .items-important {
     padding-left: 0;
     justify-content: space-around;
+  }
+
+  /* gallery-section */
+  .gallery-section .gallery-photos .photo {
+    width: 800px;
   }
 
 }

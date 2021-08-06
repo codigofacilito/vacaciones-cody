@@ -12,7 +12,7 @@ iconHamburger.addEventListener('click', () => {
 const navbar = document.getElementById('navbar')
 
 window.onscroll = function (e) {
-    if(document.body.scrollTop > 56 || document.documentElement.scrollTop > 56) {
+    if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         navbar.classList.add('scrolled')
     }else {
         navbar.classList.remove('scrolled')
