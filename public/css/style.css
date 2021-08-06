@@ -5,6 +5,88 @@ nav{
   gap:1em;
 }
 
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 15px 10px;
+}
+
+.menu {
+  color: #021F3C;
+  visibility: visible;
+  font-size: 10px;
+  font-weight: 200;
+  width: 40%;
+  text-align: center;
+}
+
+a.navbar-brand {
+  width: 137px;
+  height: 46px;
+  font-size: 37px;
+  font-family: "Lobster", cursive;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+.section-bg {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 45vh;
+  margin: 0 auto;
+}
+
+.images {
+  transition: all 500 ms ease;
+  border-radius: 5px;
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.hero-section {
+  text-align: right;
+  background-image: url("../images/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-shadow: 0.125em 0.25em 0.125em #707070;
+  padding: 6.25rem 3.125rem;
+}
+
+.carousel-indicators li { 
+  width: 14px; height: 14px; border-radius: 100%;
+}
+.carousel-indicators li { 
+  
+  background-color: rgb(29, 22, 22);
+}
+.carousel-indicators {
+  bottom: -40px;
+}
+
+hr {
+  height: 4px;
+  width: 48px;
+  background: #FDC40A;
+  text-align: center;
+  margin: 0 50% 0 50%;
+  
+  
+}
+
+.title {
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 main{
   text-align: center;
   max-width: 960px;
@@ -16,7 +98,7 @@ section{
 }
 
 .cursos div{
-  background-color: black;
+  
   color: white;
   max-width: 200px;
   display: inline-block;
@@ -29,10 +111,28 @@ section{
 ul li{
   text-align: left;
 }
-ul li::marker {
-  content: "🚀";
-}
+
 
 ol li{
   text-align: left;
+}
+
+.oscuro {
+  background: #000f08;
+  color: #ffffff;
+  text-align: center;
+}
+
+.oscuro a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer i {
+  margin: 0 0.25em 0.5em 0.25em;
+}
+
+footer {
+  margin-top: 2.5rem;
+  padding: 1.125rem;
 }
