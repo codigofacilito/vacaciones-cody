@@ -6,29 +6,102 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <main>
-    <header>
+  <header>
+    <div class="nav-container">
       <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+
+        <ul class="mobile-nav">
+          <li>
+            <div class="menu-icon-container">
+                <div class="menu-icon">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                </div>
+            </div>
+          </li>
+          <li>
+              <a href="#" class="link-logo"></a>
+          </li>
+        </ul>
+
+        <ul class="desktop-nav">
+          <li class="logo-nav link-open">
+            <a href="#" class="link-logo"></a>
+          </li>
+          <li class="menu-nav">
+            <a href="index.html">Inicio</a>
+          </li>
+          <li class="menu-nav">
+            <a href="fotos.html">Fotos</a>
+          </li>
+        </ul>
+
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+
+      <div class="open-container hide">
+        <div class="link-open"></div>
+        <div class="open-bar">
+          <p>Gracias por visitar mi página web</p>
+        </div>
+        <div class="link-close"><i class="fas fa-times"></i></div>
+      </div>
+
     </div>
 
-  </main>
-</body>
+    <div class="overlay"></div>
 
+    <div class="hero-galery">
+      <h2>Galería completa de mis vacaciones</h2>
+    </div>
+  </header>
+
+  <main>
+    <div class="sections">
+      <div class="fotos">
+        <div class="img">
+          <img src="images/1.jpg" alt="Cody en la playa">
+          <h3 class="img-title">Cody en la playa</h3>
+        </div>
+        <div class="img">
+          <img src="images/2.jpg" alt="Cody acampando">
+          <h3 class="img-title">Cody acampando</h3>
+        </div>
+        <div class="img">
+          <img src="images/3.jpg" alt="Cody en una alberca">
+          <h3 class="img-title">Cody en una alberca</h3>
+        </div>
+        <div class="img">
+          <img src="images/4.jpg" alt="Cody bronceandose">
+          <h3 class="img-title">Cody bronceandose</h3>
+        </div>
+        <div class="img">
+          <img src="images/5.jpg" alt="Cody en la ciudad">
+          <h3 class="img-title">Cody en la ciudad</h3>
+        </div>
+        <div class="img">
+          <img src="images/6.jpg" alt="Cody en el aeropuerto">
+          <h3 class="img-title">Cody en el aeropuerto</h3>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2021 - <a href="#">Kehul & Cody</a> All Right Reserved</p>
+    <div>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+  
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
 </html>
