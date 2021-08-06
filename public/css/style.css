@@ -7,6 +7,10 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container_all {
   position: relative;
   right: 0;
@@ -920,8 +924,42 @@ i {
   color: #ff7a5a;
 }
 
+@media (max-width: 992px) {
+  .cards-container {
+    margin: 20px auto auto auto;
+    display: flex;
+  }
 
-@media (max-width: 760px) {
+  .cards-container .card {
+    margin: 20px;
+  }
+
+  .new-tecnology-gallery {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-height: none;
+  }
+
+  .new-tecnology-gallery label {
+    left: auto;
+    order: 2;
+    width: 100%;
+  }
+
+  .new-tecnology-gallery .image {
+    order: 1;
+    padding-top: 2%;
+    position: relative;
+    top: -20px;
+    width: 100%;
+    
+  }
+
+}
+
+
+@media (max-width: 768px) {
   .container__nav {
     display: flex;
     justify-content: center;
@@ -1034,6 +1072,18 @@ i {
 }
 
 @media (max-width: 576px) {
+  header .logo img {
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+  
+  }
+
+  .btn__menu {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
   
   .cover h1 {
     font-size: 25px;
