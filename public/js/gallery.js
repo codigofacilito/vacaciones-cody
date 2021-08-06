@@ -23,16 +23,8 @@ const togglefloat_btn = document.querySelector(
 const MIN = 0;
 const MAX = 1;
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
-const currentTheme = localStorage.getItem("theme");
-const isFollowing = localStorage.getItem("following");
 
-if (currentTheme) {
-  changeMode(currentTheme === "dark");
-}
-
-if (isFollowing) {
-  follow_btn.checked = isFollowing === "true";
-}
+init();
 
 window.addEventListener(
   "load",
@@ -44,14 +36,13 @@ window.addEventListener(
     }, 1000);
 
     post_counter.innerHTML = photos.length;
+    circle.classList.add("loader-animation");
 
-    if (!result) {
+    if (isNaN(result) || result == -1 || result >= 6) {
       return;
     }
 
     openPhotoViewer(result);
-
-    circle.classList.add("loader-animation");
   },
   false
 );
@@ -151,6 +142,7 @@ close_btn.addEventListener(
     photo_viewer.classList.remove("active");
     right_btn.classList.remove("disable");
     left_btn.classList.remove("disable");
+    circle.classList.add("loader-animation");
   },
   false
 );
@@ -162,11 +154,11 @@ function getQueryVariable(variable) {
   for (var i = 0; i < vars.length; i++) {
     var pair = vars[i].split("=");
     if (pair[0] == variable) {
-      return pair[1];
+      return parseInt(pair[1]);
     }
   }
 
-  return false;
+  return -1;
 }
 
 function openPhotoViewer(photoId) {
@@ -217,4 +209,17 @@ function changeMode(isChecked = false) {
   }
 
   togglefloat_btn.checked = isChecked;
+}
+
+function init() {
+  const currentTheme = localStorage.getItem("theme");
+  const isFollowing = localStorage.getItem("following");
+
+  if (currentTheme) {
+    changeMode(currentTheme === "dark");
+  }
+
+  if (isFollowing) {
+    follow_btn.checked = isFollowing === "true";
+  }
 }
