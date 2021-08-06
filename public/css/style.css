@@ -69,7 +69,7 @@ nav .desktop-nav .logo-nav a:hover {
 }
 
 .link-logo {
-  background: url('../images/cody.png');
+  background: url('../images/Cody.png');
   display: block;
   background-position: center;
   background-size: cover;
@@ -412,7 +412,7 @@ nav .desktop-nav .logo-nav a:hover {
 }
 
 .hero-container:before {
-  background-image: url(../images/cody.png);
+  background-image: url(../images/Cody.png);
   background-position: bottom right;
   background-repeat: no-repeat;
   content:'';
