@@ -470,6 +470,10 @@ body {
 
 /* Vacation Important */
 
+.section__svg svg {
+    display: block;
+}
+
 .vacation-important__section {
     background: #1256b6;
     color: var(--white90);
@@ -490,6 +494,10 @@ body {
 .vacation-important__img-cody {
     position: absolute;
     bottom: 0;
+}
+
+.description-ol li {
+    line-height: 54px;
 }
 
 .thank {
