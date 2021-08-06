@@ -11,6 +11,16 @@ function inThisPagePosition() {
     }
   });
 }
+todo__sin_navbar.addEventListener("scroll", () => {
+  const currentScroll =
+    todo__sin_navbar.scrollTop + todo__sin_navbar.offsetHeight;
+  if (currentScroll > document.getElementById("salud").offsetTop) {
+    const img_container = document.querySelector(".img-container-cody-bici");
+    const img = document.querySelector(".img-container-cody-bici img");
+    img_container.style.animation = "shake 2s ease-in-out normal";
+    img.style.animation = "bici 2s linear forwards normal";
+  }
+});
 
 function crearSlider() {
   const scrolleable = document.querySelector(".container_slide__fotos");
