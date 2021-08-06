@@ -5,96 +5,214 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main>
-    <header>
+  <header>
+    <div class="nav-container">
       <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+        <ul class="mobile-nav">
+          <li>
+            <div class="menu-icon-container">
+                <div class="menu-icon">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                </div>
+            </div>
+          </li>
+          <li>
+              <a href="#" class="link-logo"></a>
+          </li>
+        </ul>
+
+        <ul class="desktop-nav">
+          <li class="logo-nav link-open">
+            <a href="#" class="link-logo"></a>
+          </li>
+          <li class="menu-nav">
+            <a href="index.html">Inicio</a>
+          </li>
+          <li class="menu-nav">
+            <a href="fotos.html">Fotos</a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="open-container hide">
+        <div class="link-open"></div>
+        <div class="open-bar">
+          <p>Gracias por visitar mi página web</p>
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+        <div class="link-close"><i class="fas fa-times"></i></div>
+      </div>
+
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="hero-container">
+      <div class="child-hero">
+          <h1>Estas son mis Vacaciones</h1>
+          <div class="text-hero">
+              <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="s1">
+      <div class="sections">
+        <header>
+          <h2>Mis vacaciones Frontend</h2>
+        </header>
+        <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
+        <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+        <p> Estos son los cursos que estuve tomando:</p>
+        <div class="cursos">
+          <div class="button-section">
+            <p>Curso profesional de Desarrollo Web</p>
+            <img src="./images/c1.png" alt="Desarrollo web">
+          </div>
+          <div class="button-section">
+            <p>Curso para crear mi primera página web</p>
+            <img src="./images/c2.png" alt="Página web">
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
+    <section class="s2">
+      <div class="sections">
+        <header>
+          <h2>Ruta de aprendizaje 2021</h2>
+          <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+        </header>
+        <div class="list-s2">
+          <div class="item">
+            <p class="num"><i class="fas fa-th-large"></i></p>
+            <p> Flexbox, y Grid </p>
+          </div>
+          <div class="item">
+            <p class="num"><i class="fab fa-css3-alt"></i></p>
+            <p> Animaciones con CSS y JavaScript </p>
+          </div>
+          <div class="item">
+            <p class="num"><i class="fas fa-code"></i></p>
+            <p> AJAX </p>
+          </div>
+          <div class="item">
+            <p class="num"><i class="fab fa-html5"></i></p>
+            <p> HTML semántico </p>
+          </div>
+          <div class="item">
+            <p class="num"><i class="fas fa-book"></i></p>
+            <p> Entre otros </p>
+          </div>
+        </div>
+        <div class="img-cody">
+          <img src="./images/Cody.png" alt="Cody">
+        </div>
+      </div>
     </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
 
-      </p>
+    <section class="s3">
+      <div class="sections">
+        <header>
+          <h2>Colabora en mi página</h2>
+        </header>
+        <p>
+          Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
+        </p>
+        <p>
+          Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+        </p>
+        <p>
+          Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
+        </p>
+        <div class="button-section">
+          <a href="" target="_blank" >Ir al tutorial</a>
+        </div>
+      </div>
     </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
+
+    <section class="s4">
+      <div class="sections">
+        <header>
+          <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
+          <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+        </header>
+        <div class="images">
+          <div class="img">
+            <img src="images/1.jpg" alt="Cody en la playa">
+            <h3 class="img-title">Cody en la playa</h3>
+          </div>
+          <div class="img">
+            <img src="images/2.jpg" alt="Cody acampando">
+            <h3 class="img-title">Cody acampando</h3>
+          </div>
+          <div class="img">
+            <img src="images/3.jpg" alt="Cody en una alberca">
+            <h3 class="img-title">Cody en una alberca</h3>
+          </div>
+        </div>
         <p>
           Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
         </p>
+        <div class="button-section">
+          <a href="fotos.html">Ir a la galería</a>
+        </div>
       </div>
     </section>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
+    <section class="s5">
+      <div class="sections">
+        <header>
+          <h2>La importancia de las vacaciones</h2>
+          <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+          <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+          <div class="list-s5">
+            <div class="item">
+              <p class="num">01</p>
+              <p>Mejora la salud mental</p>
+            </div>
+            <div class="item">
+              <p class="num">02</p>
+              <p>Incrementa la motivación</p>
+            </div>
+            <div class="item">
+              <p class="num">03</p>
+              <p>Reduce el burnout</p>
+            </div>
+            <div class="item">
+              <p class="num">04</p>
+              <p>Mejora tu productividad y creatividad</p>
+            </div>
+          </div>
+        </header>
+        <div class="img-cody">
+          <img src="./images/Cody.png" alt="Cody">
+        </div>
+      </div>
     </section>
-    
+
   </main>
+
+  <footer>
+    <p>© 2021 - <a href="#">Kehul & Cody</a> All Right Reserved</p>
+    <div>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+  
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
