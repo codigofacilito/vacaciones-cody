@@ -18,24 +18,23 @@
 }
 nav{
   text-align:right;
+  position: fixed;
+  margin-left: 93%;
+  margin-top: 3%;
 
 }
 .boton_header_1 {
   background-color: #ee702d;
-  text-decoration: none;
-  margin-right: 0px;
   padding: 10px 9px 10px 9px;
   border-radius: 100px;
-  line-height: 90px;
+  line-height: 0px;
   box-shadow: 2px 2px 2px 0px #e4d2b7;
 }
 .boton_header_2 {
   background-color: #e9651d;
-  text-decoration: none;
-  margin-right: 60px;
   padding: 10px 9px 10px 9px;
   border-radius: 100px;
-  line-height: 90px;
+  line-height: 0px;
   box-shadow: 2px 2px 2px 0px #e4d2b7;
 }
 .header-1-titulo-intro div{
@@ -53,7 +52,6 @@ nav{
   color: #575757;
   text-align: center;
 }
-
 /* 4 secciones pertenecientes al main */
 
 /* Seccion donde ubico los aprendisajes de cody y los distribuyo
@@ -221,8 +219,8 @@ body{
   /*background-color: #fff2df; */
   background: linear-gradient(
     90deg,
-    #fae2bf 20%,
-    #fff2df 80%
+    #fce7c7 1%,
+    #fff2df 100%
   );
   max-width: 1920px;
   max-height: 1080px;
@@ -234,9 +232,21 @@ ol li{
   text-align: left;
   margin-bottom:6px;
 }
+/* footer */
 footer{
-  height: 60px;
-  background-color: #220c02;
+  display:grid;
+  grid-template-columns: repeat(6,1fr);
+  height: 50px;
+  background-color: #000000;
+}
+footer img{
+  border-radius: 50%;
+}
+footer div{
+  margin-top: 10px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  text-align: center;
 }
 /*efecto ola 
 
