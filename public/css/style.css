@@ -30,6 +30,7 @@ header nav .disabled {
   height: 17rem;
   background-color: rgba(255, 204, 28, 80%);
   border-right: 0.3rem solid rgba(2,108,103,0.8);
+  border-radius: 0.2rem;
 }
 
 #header .container img {
@@ -93,7 +94,6 @@ ol li {
 
 .bg-galeria {
   padding: 1rem;
-  
   background-color: rgb(255, 204, 28);
 }
 
