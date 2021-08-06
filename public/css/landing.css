@@ -1,0 +1,282 @@
+.present,
+.title {
+  color: var(--primary);
+  font-weight: 700;
+  margin: 0;
+}
+
+.present {
+  font-size: calc(.75vw + 12px);
+}
+
+.title {
+  font-size: calc(.74vw + 24px);
+  line-height: 25px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cta-1,
+.cta-2,
+.next {
+  text-decoration: none;
+  inline-size: auto;
+  /* max-inline-size: 150px; */
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cta-1,
+.next {
+  color: var(--background);
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.cta-2 {
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.container {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  gap: 15px;
+  padding: 5% 0;
+}
+
+.hero {
+  position: relative;
+}
+
+.bird-1 {
+  display: none;
+  position: absolute;
+  inset-inline-end: -65px;
+  inset-block-end: 150px;
+}
+
+.bird-2 {
+  display: none;
+  position: absolute;
+  inset-inline-end: 15px;
+  inset-block-end: 200px;
+}
+
+.cody {
+  margin-inline: 50%;
+  transform:translateX(-50%);
+  inline-size: 80%;
+}
+
+/* Vacactions, goals and marketing sections */
+
+.section-title {
+  font-size: 20px;
+  text-align: center;
+  color: var(--primary);
+  font-weight: 700;
+  margin: 0;
+}
+
+.cursos {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.curso {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--white);
+  max-inline-size: 300px;
+  border: 3px solid black;
+  border-radius: 15px;
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+.curso p {
+  padding: 0;
+  margin: 0;
+  max-inline-size: 290px;
+}
+
+.curso img {
+  margin-top: 5px;
+}
+
+.curso .img-2 {
+  inline-size: 60px;
+  margin-inline-start: 40px;
+}
+
+.list {
+  display: flex;
+}
+
+ul {
+  margin: 0;
+}
+
+ul li{
+  line-height: 30px;
+}
+ul li::marker {
+  content: "🚀";
+}
+
+.market-link {
+  display: none;
+  text-decoration: none;
+  color: black;
+  inline-size: 30%;
+  max-inline-size: 300px;
+}
+
+.market {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 10px 15px;
+  block-size: 85vh;
+  max-block-size: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.logo,
+.coding {
+  margin-inline: 50%;
+  transform: translateX(-50%);
+  inline-size: 100%;
+}
+
+.market p {
+  margin-block: 0;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.cta-market {
+  background-color: #5BCC85;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 13px 24px;
+  margin-block: 18px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.flex-container-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Vacations section and footer */
+
+.vacations {
+  margin-block: 16px;
+}
+
+.vacations img {
+  inline-size: 100%;
+  max-inline-size: 450px;
+}
+
+.flex-container-vacations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-container-vacations ol {
+  color: var(--primary);
+  line-height: 35px;
+}
+
+.flex-container-vacations img {
+  display: none;
+}
+
+.picture #active {
+  display: block;
+}
+
+#active {
+  font-size: 15px;
+  transition: .5s
+}
+
+.next a {
+  text-decoration: none;
+}
+
+.next a:active {
+  color: var(--background)
+}
+
+.next:active {
+  transform: scale(.95)
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-block-end: 10px;
+  gap: 15px;
+}
+
+.flex-container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex-container-footer p {
+  margin: 0;
+}
+
+.creator {
+  inline-size: 60px;
+}
+
+.flex-container-footer a {
+  inline-size: 45px;
+  block-size: 45px;
+}
