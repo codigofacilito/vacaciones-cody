@@ -128,8 +128,41 @@ section p {
 .list--item { 
   list-style: none;
   width: 80%;
-  background-color: aqua;
-  border: solid black 1px;
   height: 10vh;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.border--light {
+  border: solid white 0.5px;
+  border-radius: 10px;
+}
+
+.red-container {
+  background-color: rgb(219, 29, 29);
+  margin-top: 5px;
+}
+.yellow-container {
+  background-color: rgb(233, 236, 24);
+  margin-top: 5px;
+}
+.orange-container {
+  background-color: rgb(241, 100, 18);
+  margin-top: 5px;
+}
+.green-container {
+  background-color: rgb(61, 238, 16);
+  margin-top: 5px;
+}
+
+.section--flex {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
 }
