@@ -145,7 +145,7 @@ header ul > li > a {
 }
 
 header a > i {
-  color: var(--text-color);
+  color: var(--title-color);
 }
 
 span.indicator-nav {
@@ -155,7 +155,7 @@ span.indicator-nav {
 }
 
 header span.indicator-nav {
-  color: var(--text-color);
+  color: var(--title-color);
 }
 
 span.indicator-nav:after {
