@@ -278,6 +278,23 @@
     content: '🚀';
     }
 
+    .animate {
+      opacity: 0;
+      transition: all .8s;
+  }
+  
+  .animateUp {
+      animation: showUp 1s;
+  }
+  
+  @keyframes showUp {
+      0% {
+          transform: translateY(100px);
+      }
+      100% {
+          transform: translateY(0);
+      }
+  }
 
   @media (max-width: 768px) {
     
