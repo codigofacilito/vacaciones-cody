@@ -43,7 +43,7 @@ a {
   margin: 0;
   min-height: 100vh;
   background: var(--cody-green);
-  background-image: url("images/4.jpg");
+  background-image: url("../images/4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -136,7 +136,7 @@ h2 {
   align-items: center;
   height: 100%;
   background-color: var(--cody-green);
-  background-image: url("/public/images/2.jpg");
+  background-image: url("../images/2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -177,7 +177,7 @@ h2 {
   justify-content: center;
   background-color: var(--cody-green);
   color: white;
-  background-image: url("/public/images/1.jpg");
+  background-image: url("../images/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -199,7 +199,7 @@ ul li::marker {
 }
 
 #colaborar .section-content {
-  background-image: url("/public/images/3.jpg");
+  background-image: url("../images/3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -261,7 +261,7 @@ ul li::marker {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-image: url("/public/images/4.jpg");
+  background-image: url("../images/4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -366,7 +366,7 @@ ol li {
   top: 0;
   height: 100vh;
   width: 100%;
-  background-image: url("/public/images/4.jpg");
+  background-image: url("../images/4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
