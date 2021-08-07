@@ -6,28 +6,108 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script defer type="text/javascript" src="./js/master.min.js"></script>
 </head>
 
-<body>
+<body id="body">
   <main>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
+      <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" onclick="burguerButton()"/>
+      <label for="abrir-cerrar" class="toggle-button">
+          <span class="cerrar" title="Cerrar">Cerrar</span>
+          <span class="abrir" title="Abrir">Abrir</span>
+      </label>
+      <nav id="navegador">
+        <a href="index.html">
+          <img src="images/sun.png" alt="Sun" id="sun" width="52px">
+        </a>
+        <a href="index.html">Inicio</a>
         <a href="fotos.html">Fotos</a>
+        <label class="switchBtn" id="switchBtn" onclick="switching(); switchFotos()">
+          <input type="checkbox" id="check-in">
+          <div class="slide round" id="switch-button">Day Mode</div>
+        </label>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
+      <p id="concurso">Concurso <span>#VeranoFrontend</span></p>
+      <h2 class="galeria">Galería completa de mis <span class="enfasis">vacaciones</span></h2>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+    <div class="fotos contenedor">
+      <div class="card">
+          <div class="image">
+              <img src="images/1.jpg" alt="Cody en la playa">
+          </div>
+          <div class="content">
+              <h1>Cody en la playa</h1>
+              <p>
+                  Empezando mi viaje, fuí a Margarita a visitar a mi familia,
+                  así que aproveché la ocasión y tuve un agradable paseo por sus hermosas playas.
+              </p>
+          </div>
+      </div>
+      <div class="card">
+          <div class="image">
+              <img src="images/2.jpg" alt="Cody acampando">
+          </div>
+          <div class="content">
+              <h1>Acampando en Tucacas</h1>
+              <p>
+                  Ya en mi paso por Venezuela aproveché la oportunidad de acampar en una de sus hermosas playas, Tucacas.
+                  Lo único malo es que sigo sacando arena de los oidos.
+              </p>
+          </div>
+      </div>
+      <div class="card">
+          <div class="image">
+              <img src="images/3.jpg" alt="Cody en una alberca">
+          </div>
+          <div class="content">
+                <h1>Mucha aventura...</h1>
+              <p>
+                  Divertirse tanto es agotador, así que voy a tomar un pequeño descanso... Por ahora.
+              </p>
+          </div>
+      </div>
+      <div class="card">
+          <div class="image">
+              <img src="images/4.jpg" alt="Cody en una alberca">
+          </div>
+          <div class="content">
+              <h1>Y aquí seguimos</h1>
+              <p>
+                  Todavía estoy recargando energías para más aventura.
+              </p>
+          </div>
+      </div>
+      <div class="card">
+          <div class="image">
+              <img src="images/5.jpg" alt="Cody en una alberca">
+          </div>
+          <div class="content">
+              <h1>Ahora sí</h1>
+              <p>
+                  Después de mi corto (realmente largo) descanso, tomé las maletas y me aventuré hacía Cartagena, Colombia.
+                  Donde quedé maravillado con sus coloridas calles y la amabilidad de su gente.
+              </p>
+          </div>
+      </div>
+      <div class="card">
+          <div class="image">
+              <img src="images/6.jpg" alt="Cody en una alberca">
+          </div>
+          <div class="content">
+              <h1>Hora de volver</h1>
+              <p>
+                  No todo es para siempre, ya es hora de volver a trabajar de estas largas vacaciones...
+                  Pero la aerolínea perdió mi equipaje. Hasta aquí llegó mi estado de relajación.
+              </p>
+          </div>
+      </div>
     </div>
-
+    <footer id="footer">
+      <p>Concurso #VeranoFrontend 2021 | Developed by <a href="https://github.com/jacuevasr" class="enfasis">Juan Andres Cuevas</a>.</p>
+      <img src="images/cody-vacaciones.png" alt="Cody de Vacaciones">
+    </footer>
   </main>
 </body>
 
