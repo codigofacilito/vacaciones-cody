@@ -1,100 +1,187 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
-
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body id="body">
+    <div class="uk-section-default uk-background-blend-darken welcome uk-background-fixed uk-background-cover " id="Inicio">
+        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+            <nav class="uk-navbar-container" uk-navbar>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                      <li class="uk-active alte-bold "><a href="index.html" class="inline uk-heading-primary"><img src="images/codylogo.png" alt="icono" class="icono"></a></li>
+                    </ul>
+                </div>
+                  <div class="uk-navbar-right ">
+                          <ul class="uk-navbar-nav">
+                              <li class="uk-active"><a class="bar-menu" href="index.html">Inicio</a></li>
+                              <li class="uk-active"><a class="bar-menu" href="#aboutme">Sobre mi</a></li>
+                              <li class="uk-active"><a class="bar-menu" href="#hola">Mis vacaciones</a></li>
+                              <li class="uk-active"><a class="bar-menu" href="#fotos">Fotos</a></li>
+                              <li class="uk-active"><a class="bar-menu" href="#abril">Acerca de</a></li>
+                          </ul>
+                  </div>
+            </nav>
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+
+        <div class=" uk-text-center " id="aboutme">
+
+            <div class="uk-grid-match uk-child-width-1-1@m mens-welcome" uk-grid>
+                <div>
+                    <h2 class="text-white alte-bold" tabindex="1">¡Hola, soy Cody!</h2>
+                    <p class="alte-bold" tabindex="2">Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+                </div>
+            </div>
+            <div class="container-offset">
+                <div>
+                    <img src="images/cody.png" alt="imagen de cody">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+<!--seccion de sus vacaciones frontend -->
+    <div class="uk-section about"id="hola">
+      <div class="uk-container" >
+
+        <h1 class="uk-heading-bullet" tabindex="3">Mis vacaciones Frontend</h1>
+
+        <div class="uk-text-justify"  uk-grid>
+          <div class="uk-width-1-1@m" tabindex="3">
+              <p>Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript.</p>
+              <p>Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página. Estos son los cursos que estuve tomando</p>
+              <ul>
+                <li tabindex="4">Curso profesional de Desarrollo Web</li>
+                <li tabindex="5">Curso para crear mi primera página web</li>
+              </ul>
+          </div>
+        </div>
+
+        </div>
+    </div>
+<!-- seccion de salud mental -->
+<div class="uk-container">
+  <h1 class="uk-heading-bullet" tabindex="5">La importancia de las vacaciones</h1>
+  <p tabindex="6">Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+  <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+  <br>
+  <br>
+</div>
+      <!--intento de tarjetas  uk-child-width-expand@s -->
+      <div class="uk-grid-match uk-child-width-1-4@m uk-grid-small uk-text-center uk-margin-left uk-margin-right uk-child-width-expand@s" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500" uk-grid  aria-label="es un carrusel de imagenes con las vacaciones de cody" >
+          <div>
+              <div class="uk-card uk-card-default uk-card-body" id="contenedor1">
+                  <h2 class="uk-align-center" tabindex="7">Mejora la salud mental</h2>
+                  <img src="images/yoga.png" alt="imagen de cody haciendo yoga" id="imgcaract">
+              </div>
+          </div>
+          <div>
+              <div class="uk-card uk-card-default uk-card-body" id="contenedor1">
+                 <h2 class="uk-align-center" tabindex="8">Incrementa la motivación</h2>
+                  <img src="images/car3.png" alt="imagen de cody haciendo arte" id="imgcaract">
+              </div>
+          </div>
+          <div>
+              <div class="uk-card uk-card-default uk-card-body" id="contenedor1">
+                    <h2 class="uk-align-center" tabindex="9">Reduce el burnout</h2>
+                    <img src="images/car2.png" alt="imagen de cody con una persona con burnout" id="imgcaract3">
+              </div>
+          </div>
+          <div> <!-- "font-size: 200%;"-->
+              <div class="uk-card uk-card-default uk-card-body" id="contenedor1">
+                  <h2 class="uk-align-center" tabindex="10">Mejora tu productividad y creatividad</h2>
+                  <img src="images/car1.png" alt="imagen de cody motivandote" id="imgcaract">
+              </div>
+          </div>
+     </div>
+          <br>
+          <br>
+    <!--seccion de metas--->
+    <div class="uk-section-default multiplataforma" >
+      <div class="uk-container">
+        <div class="uk-text-justify" uk-grid>
+            <div class="uk-width-1-2">
+              <img src="images/learn.png" alt="">
+            </div>
+            <div class="uk-width-1-2">
+              <h1 class="uk-heading-bullet">Ruta de aprendizaje 2021</h1>
+                <p>También me propuse aprender nuevas tecnologías durante 2021</p>
+                <ul class="uk-list">
+                    <li><span uk-icon="icon: code"></span> Flexbox, y Grid</li>
+                    <li><span uk-icon="icon: code"></span> Animaciones con CSS y JavaScript</li>
+                    <li><span uk-icon="icon: code"></span> AJAX</li>
+                    <li><span uk-icon="icon: code"></span> HTML semántico </li>
+                    <li><span uk-icon="icon: code"></span> Entre otros</li>
+                </ul>
+            </div>
         </div>
       </div>
-    </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+    </div>
+    <!-- slider 
+    <div class="uk-section-default  uk-background-fixed uk-background-center-center areas uk-text-center " >-->
+<div class="uk-container">
+  <h1>Unas fotos de mis vacaciones</h1>
+<div uk-slideshow="min-height: 300; max-height: 500; animation: push" id="fotos">
 
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+        <ul class="uk-slideshow-items" uk-height-viewport="min-height: 300">
+            <li>
+                <img src="images/1.jpg" alt="" height="imagen de la vacacion de cody" uk-cover>
+            </li>
+            <li>
+                <img src="images/2.jpg" alt="" height="imagen de la vacacion de cody" uk-cover>
+            </li>
+            <li>
+                <img src="images/3.jpg" alt="" height="imagen de la vacacion de cody"  uk-cover>
+            </li>
+            <li>
+                <img src="images/4.jpg" alt="" height="imagen de la vacacion de cody"  uk-cover>
+            </li>
+            <li>
+                <img src="images/5.jpg" alt="" height="imagen de la vacacion de cody"  uk-cover>
+            </li>
+            <li>
+                <img src="images/6.jpg" alt="" height="imagen de la vacacion de cody"  uk-cover>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+    </div>
+
+    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+</div>
+
+
+  <!--seccion desarrollado por -->
+    <div class="uk-section-default uk-background-fixed uk-background-bottom-center footer" id="abril">
+      <div class="uk-container uk-text-center" >
+        <h1 class=" text-white">Concurso de Front-end (Codigo Facilito)</h1>
+        <p>Desarrollado por: </p>
+        <div class="" uk-grid>
+            <div class="uk-width-1-1">
+              <a href="https://github.com/abrildur">Abril Ureña<br><img src="images/pikachu.png" alt="imagen de pikachu"></a>
+            </div>
+        </div>
       </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
-  </main>
-</body>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
 </html>
