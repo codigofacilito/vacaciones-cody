@@ -8,18 +8,18 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   
-  <title>Mis vacaciones</title>
+  <title >Mis vacaciones</title>
 </head>
 <body id="body">
-  <nav id="inicio" class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav  class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#inicio">Inicio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" href="#frontend">Fronted</a>
+          <a class="nav-link" href="#body">Inicio</a>
+          <a class="nav-link" href="#frontend">Frontend</a>
           <a class="nav-link" href="#ruta">Ruta</a>
           <a class="nav-link" href="#colabora">Colabora</a>
           <a class="nav-link" href="#importancia">Importancia</a>
@@ -76,10 +76,8 @@
                   <h1>Estas son mis 
                     Vacaciones
                   </h1>
-                  <p class="d-none d-md-block">
-                    Soy Cody, un aspirante a Dev, en 2019,
-                    organicé un viaje para desestresarme del código,
-                    y en esta página quiero compartirlo contigo.
+                  <p>
+                    Soy Cody, un aspirante a Dev, en 2019,organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.
                   </p>
                 </div>
               </div>
@@ -87,115 +85,116 @@
           </div>
         </div>
       </div>
-      
     </header>
   </main>
+  <br>
+  <section id="place-time">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col pl-0 pr-0">
+          <img src="images/4.jpg" class="rounded float-end img-fluid" alt="Cody acampando">
+          <header class="">
+            <h2 id="frontend">Mis vacaciones Frontend</h2>
+          </header>
+          <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
+          <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
+          <p> Estos son los cursos que estuve tomando </p>
+          <div class="cursos">
+            <div>
+              <a id="link" href="https://codigofacilito.com/cursos/frontend-profesional">Curso profesional de Desarrollo Web</a>
+            </div>
+            <div>
+              <a id="link" href="https://codigofacilito.com/cursos/primera_pagina">Curso para crear mi primera página web</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <img src="images/5.jpg" class="rounded float-start img-fluid" alt="Cody en la alberca">
+      </div>
+      <div class="col">
+        <section>
+          <header>
+            <h2 id="ruta">Ruta de aprendizaje 2021</h2>
+            <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+          </header>
+          <ul>
+            <li> Flexbox, y Grid </li>
+            <li> Animaciones con CSS y JavaScript </li>
+            <li> AJAX </li>
+            <li> HTML semántico </li>
+            <li> Entre otros </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <img src="images/3.jpg" class="rounded float-end img-fluid" alt="Cody en la alberca">
+        <section>
+          <header>
+            <h2 id="colabora">Colabora en mi página</h2>
+          </header>
+          <p>
+            Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
+          </p>
+          <p>
+            Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+          </p>
+          <p>
+            Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
+            <a>Ir al tutorial</a>
+          </p>
+        </section>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <img src="images/6.jpg" class="rounded float-start img-fluid" alt="Cody en la alberca">
+      </div>
+      <div class="col">
+        <section id="section">
+          <header>
+            <h2 id="importancia">La importancia de las vacaciones</h2>
+            
+            <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+            <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+            <ol>
+              <li>Mejora la salud mental</li>
+              <li>Incrementa la motivación</li>
+              <li>Reduce el burnout</li>
+              <li>Mejora tu productividad y creatividad</li>
+            </ol>
+          </header>
+        </section>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <footer id="footer">
     <div class="container">
       <div class="row">
         <div class="col">
-          <img src="images/4.jpg" class="rounded float-end img-fluid" alt="Cody acampando">
-          <section>
-            <header>
-              <h2 id="frontend">Mis vacaciones Frontend</h2>
-            </header>
-            <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-            <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-            <p> Estos son los cursos que estuve tomando </p>
-            <div class="cursos">
-              <div>
-                <p>Curso profesional de Desarrollo Web</p>
-              </div>
-              <div>
-                <p>Curso para crear mi primera página web</p>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img src="images/5.jpg" class="rounded float-start img-fluid" alt="Cody en la alberca">
+          <a id="link" href="#"> Que lugares visite</a>
         </div>
         <div class="col">
-          <section>
-            <header>
-              <h2 id="ruta">Ruta de aprendizaje 2021</h2>
-              <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-            </header>
-            <ul>
-              <li> Flexbox, y Grid </li>
-              <li> Animaciones con CSS y JavaScript </li>
-              <li> AJAX </li>
-              <li> HTML semántico </li>
-              <li> Entre otros </li>
-            </ul>
-          </section>
+          <a id="link" href=""> Cuales son mi recomendaciones</a>            
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <img src="images/3.jpg" class="rounded float-end img-fluid" alt="Cody en la alberca">
-          <section>
-            <header>
-              <h2 id="colabora">Colabora en mi página</h2>
-            </header>
-            <p>
-              Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-            </p>
-            <p>
-              Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-            </p>
-            <p>
-              Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-              <a>Ir al tutorial</a>
-            </p>
-          </section>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <img src="images/6.jpg" class="rounded float-start img-fluid" alt="Cody en la alberca">
+        <div class="col">   
+          <a id="link" href="">Lugares top para ir con familia</a>
         </div>
         <div class="col">
-          <section>
-            <header>
-              <h2 id="importancia">La importancia de las vacaciones</h2>
-              
-              <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-              <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-              <ol>
-                <li>Mejora la salud mental</li>
-                <li>Incrementa la motivación</li>
-                <li>Reduce el burnout</li>
-                <li>Mejora tu productividad y creatividad</li>
-              </ol>
-            </header>
-          </section>
+          <a id="link" href="">Lugares top para ir si eres soltero</a>
         </div>
       </div>
     </div>
-
-
-    <footer id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <a class="a" href="#"> Que lugares visite</a>
-          </div>
-          <div class="col">
-            <a class="a" href=""> Cuales son mi recomendaciones</a>            
-          </div>
-          <div class="col">   
-            <a class="a" href="">Lugares top para ir con familia</a>
-          </div>
-          <div class="col">
-            <a class="a" href="">Lugares top para ir si eres soltero</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  
+  </footer>
 </body>
 </html>

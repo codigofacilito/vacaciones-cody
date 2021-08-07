@@ -2,7 +2,7 @@
 	background: linear-gradient(150deg,#1c3643 35%,#273b47 55%,#1e5372);
 	color: white;
 }
-#main img{
+img{
 	max-height: 70vh;
 	object-fit: cover;
 }
@@ -28,7 +28,7 @@
 }
 
 #footer{
-
+	align-items: center;
     text-align: center;
     background-color: #122436;
 }
@@ -37,7 +37,7 @@
 	color: #33b1ff;
 }
 
-a{
+#link{
 	text-decoration: none;
 	color: white;
     text-decoration: underline;
@@ -45,4 +45,9 @@ a{
 
 .rounded float-start{
 	max-width: 60%;
+}
+
+#section{
+	
+	align-items: s;
 }
