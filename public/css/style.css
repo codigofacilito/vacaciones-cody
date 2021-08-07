@@ -234,6 +234,7 @@ ul li::marker {
 
 #fotos .section-content {
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .fotos {
@@ -261,6 +262,8 @@ ul li::marker {
   align-items: center;
   height: 100%;
   background-image: url("/public/images/4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #vacaciones-importancia .section-content {
@@ -280,4 +283,66 @@ ol li {
   text-align: left;
   margin: 1.5em 0;
   font-size: 1.8em;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-content {
+    flex-direction: column;
+  }
+
+  .paragraph {
+    width: 80%;
+    margin: 1em;
+  }
+
+  .cursos {
+    width: 100%;
+    height: auto;
+  }
+
+  #ruta-de-aprendizaje .section-content {
+    flex-direction: column-reverse;
+  }
+
+  .herramientas {
+    width: 100%;
+    height: auto;
+  }
+
+  #colaborar {
+    margin-top: 2em;
+  }
+
+  .como-colaborar {
+    flex-direction: column;
+  }
+
+  .como-colaborar-card {
+    padding: 0 1em;
+  }
+
+  #fotos header {
+    margin-top: 0;
+  }
+
+  #fotos .paragraph {
+    margin-top: 0;
+  }
+
+  .fotos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fotos img {
+    max-width: 80%;
+  }
+
+  .vermas {
+    width: 80%;
+  }
+
+  .beneficios {
+    width: 100%;
+  }
 }
