@@ -1,38 +1,262 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+/* Colores */
+/* https://coolors.co/palettes/trending */
+/* Reseteo css */
+*{
+  margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+/* coloco colores para identificar elementos 
+ */
+ 
+ body{
+  /* background-color: chartreuse; */
+  font-family: 'Open Sans',sans-serif;
+  color: #007f5f;
+
+
+}
+header{
+  position: static;
+  height: 10vh;
+  background-color: coral;
 }
 
+header .fixed{
+  position: fixed;
+  z-index: 300;
+  background-color: #ffff3f;
+  height: 10vh;
+  width: 100%;
+  padding: 3px 50px ;
+}
+header h1{
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header nav{
+  display: inline-block;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30000;
+}
+header nav ul li{
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px;
+  transition: all 1s;
+  
+}
+header nav ul li:hover{
+  font-size: 25px;
+
+  transition: all 1s;
+}
 main{
+  background-color: blueviolet;
+  width: 100%;
+}
+footer{
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+  background-color: #007f5f;
+  color: #ffff3f;
 }
-
 section{
-  margin-top: 3rem;
+  display: block;
+  clear: both;
+  /* background-color: cadetblue; */
+  margin-top: 0;
+  height: 90vh;
+  padding-left:50px ;
+}
+section:nth-child(5){
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
+
+.animacion{
+ display: block;
+ z-index: 100;
+  
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.1s; /* don't forget to set a duration! */
 }
 
-ol li{
+.nover{
+  visibility: collapse;
+}
+
+.active{
+  font-size: 25px;
+
+  transition: all 0.1;
+}
+ #cont1{
+  background-image: url('../images/1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: bottom;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+ }
+ #cont1 h1{
+   background-color: #80b918;
+   position: absolute;
+   z-index: 0;
+   bottom: 140px;
+   text-align: center;
+   float: left;
+   height: 70px;
+   width: 70%;
+   padding: 15px 0 ;
+   border-radius: 25px 0 25px 0;
+ }
+ #cont1 .p{
+  background-color: #80b918;
+
+  position: absolute;
+  z-index: 0;
+  bottom: 30px;
+  text-align: center;
+  float: left;
+  height: 100px;
+  width: 70%;
+  padding: 15px 0 ;
+  border-radius: 0 25px 0 25px;
+  
+ }
+ #cont2{
+  background-image: url('../images/2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: bottom;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+ }
+ .conte2{
+   margin: 0 auto;
+  background-color: #80b918;
+  z-index: 0;
+  bottom: 30px;
+  text-align: center;
+  width: 70%;
+  padding: 15px 0 ;
+  border-radius: 0 25px 0 25px;
+ }
+ #cont3{
+  background-image: url('../images/3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: bottom;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+ }
+ .conte3{
+  margin: 0 auto;
+ background-color: #80b918;
+ z-index: 0;
+ bottom: 30px;
+ text-align: center;
+ width: 70%;
+ padding: 15px 0 ;
+ border-radius: 0 25px 0 25px;
+}
+.conte3 ul{
   text-align: left;
+  padding-left: 30%;
+  font-weight: bold;
+}
+.conte3 ul li{
+  text-align: left;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 1s all;
+}
+.conte3 ul li:hover{
+  font-weight: bold;
+  background-color: rgba(255, 255, 63, 0.9);
+  border-radius: 0 25px 0 25px;
+  font-size: 30px;
+  color: #2b9348;
+  transition: 1s all;
+  cursor: pointer;
+}
+#cont4{
+  background-image: url('../images/4.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: bottom;
+  align-items: left;
+  text-align: center;
+  padding: 10px;
+  
+ }
+ .conte4{
+  margin: 0 auto;
+ background-color: #80b918;
+  transform: translateY(50vh);
+ z-index: 0;
+ text-align: left;
+ width: 70%;
+ padding: 15px 0 ;
+ padding-left: 15px;
+ border-radius: 0 25px 0 25px;
+}
+.conte4 h2{
+  font-size: 30px;
+}
+#cont5{
+  /* background-image: url('../images/5.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: bottom; */
+  background-color:#55a630;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+ }
+ .conte5{
+ display: inline-block;
+}
+.conte5 .textfotos{
+  background-color: #aacc00;
+  
+  display: inline-block;
+ border-radius: 0 25px 0 25px;
+
+}
+.contenedor-producto2{
+  display: inline-block;
+}
+#cont6{
+  background-image: url('../images/6.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: bottom;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+ }
+ .conte6{
+  margin: 0 auto;
+ background-color: #80b918;
+ z-index: 0;
+ bottom: 30px;
+ text-align: center;
+ width: 70%;
+ padding: 15px 0 ;
+ border-radius: 0 25px 0 25px;
 }
