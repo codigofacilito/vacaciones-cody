@@ -1,3 +1,7 @@
+html {
+  background: none;
+  color: white;
+}
 .parallax {
   height: 100vh;
 }

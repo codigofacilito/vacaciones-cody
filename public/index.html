@@ -16,24 +16,21 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <div class="parallax">
-      <div
-        id="test-filter"
-        class="uk-height-1-1 uk-background-cover uk-overflow-hidden uk-flex uk-flex-top"
-        uk-parallax="sepia: 100;"
-        style="background-image: url('images/1.jpg');"
-      >
-        <h1
-          class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical"
-          uk-parallax="target: #test-filter; blur: 0,10;"
-        >
-          Headline
-        </h1>
-      </div>
-    </div>
+  <body uk-parallax="background-color: #051626,#5bcc85; viewport: 1.0">
     <main>
       <header>
+        <div class="uk-position-relative">
+          <div class="uk-position-top">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+              <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                  <li class="uk-active"><a href="#">Inicio</a></li>
+                  <li><a href="#">Fotos</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
         <nav>
           <a href="/">Inicio</a>
           <a href="fotos.html">Fotos</a>
