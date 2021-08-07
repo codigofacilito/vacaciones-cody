@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background: #242526;
+    display: flex;
+    align-items: center;
+}
+
+.actions {
+    position: absolute;
+    top: 0;
+    margin: 2rem;
+}
+
+.actions__btn {
+    margin: 0 1rem 0 0;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #5bcc85;
+    color: #fff;
+}
+
+.contenedor {
+    width: 920px;
+    height: 280px;
+    margin: 0 auto;    
+    position: relative;
+    border: solid 3px #5bcc85;
+    background: linear-gradient(#b7d6c7, transparent) #ffe2d1;
+    transition: background-color 1s linear;
+    overflow: hidden;
+}
+
+.mediodia {
+    background-color: #ffdcf3;
+}
+
+.tarde {
+    background-color: #ffadad;
+}
+
+.noche {
+    background-color: #aca8c7;
+}
+
+.cody {
+    width: 84px;
+    height: 84px;
+
+    position: absolute;
+    bottom: 22px;
+    left: 42px;
+    z-index: 2;
+
+    background: url(../images/codyGame.png) repeat-x 0px 0px;
+    background-size: 84px 84px;
+    background-position-x: 0px;
+
+}
+
+.suelo {
+    width: 200%;
+    height: 42px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background: url(../images/suelo.png) repeat-x 0px 0px;
+    background-size: 50% 42px;
+
+}
+
+.cactus{
+    width: 46px;
+    height: 96px;
+
+    position: absolute;
+    bottom: 16px;
+    left: 600px;
+    z-index: 1;
+
+    background: url(../images/cactus1.png) no-repeat;
+}
+.cactus2{
+    width: 98px;
+    height: 66px;
+
+    background: url(../images/cactus2.png) no-repeat;
+}
+
+.nube{
+    width: 92px;
+    height: 26px;
+
+    position: absolute;
+    z-index: 0;
+
+    background: url(../images/nube.png) no-repeat;
+    background-size: 92px 26px;
+}
+
+.score{
+    width: 100px;
+    height: 30px;
+
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 10;
+
+    color: #5bcc85;
+    font-family: Verdana;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.game-over{
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    color: #5bcc85;
+    font-size: 30px;
+    font-family: Verdana;
+    font-weight: 700;
+}
+
+.you-win{
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    color: #5bcc85;
+    font-size: 30px;
+    font-family: Verdana;
+    font-weight: 700;
+}
