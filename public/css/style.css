@@ -90,6 +90,7 @@ background-size: cover;
   border-radius: 12px;
 }
 .fotos img{
-  max-width: 450px;
+  max-width: 300px;
   display: inline-block;
+  border-radius: 2rem;
 }
