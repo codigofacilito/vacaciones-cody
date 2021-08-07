@@ -59,6 +59,26 @@ section {
   margin-top: 3rem;
 }
 
+.carousel-title {
+  margin-left: 4.8rem;
+  margin-right: 4.8rem;
+  margin-top: ;
+  margin-bottom: 2rem;
+}
+
+.decoration {
+  width: 4.2rem;
+  height: 5.7rem;
+}
+
+.decoration-rigth {
+  align-items: left;
+}
+
+.decoration-left {
+  align-items: right;
+}
+
 .cursos div {
   background-color: #30a377;
   color: white;
@@ -73,6 +93,15 @@ section {
 
   max-height: 80vh;
   object-fit: cover;
+}
+.colab {
+  background-color: rgba(255, 204, 28, 10%);
+  border: 0.2rem solid #ffcc3a;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(1, 185, 157, 50%);
+  color: whitesmoke;
 }
 
 #overlay¿ {
