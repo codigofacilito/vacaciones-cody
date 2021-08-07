@@ -33,8 +33,8 @@ Los cambios cuando los subi, los hice desde mi cuenta alterna ya que no se como 
 
 # Pagina principal de Cody
 
-![imagen1](.public/images/Captura1.PNG)
-![imagen2](.public/images/Captura2.PNG)
+![imagen1](./public/images/Captura1.PNG)
+![imagen2](./public/images/Captura2.PNG)
 
 #Ruta de aprendizaje
 ![imagen3](.public/images/Captura3.PNG)
