@@ -1,100 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="css/style.css" />
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
+    <!-- font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/2c8a6c6d16.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Vacaciones Frontend Cody</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark background-nav sticky-top" id="menu-navegacion">
+      <div class="container my-1">
+          <a href="index.html" class="navbar-bran">
+              <img src="img/digitalArt.png" alt="" class="img-fluid">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a href="#bienvenido" class="nav-link">Bienvenido</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#historia" class="nav-link">Historia</a>
+                </li>
+                  <li class="nav-item">
+                      <a href="#aprendizaje" class="nav-link">Ruta de aprendizaje</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#colabora" class="nav-link">Colabora en mi página</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#galeria" class="nav-link">Galería</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#importancia" class="nav-link">Importancia</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#footer" class="nav-link">Contacto</a>
+                  </li>
+              </ul>
+          </div>
       </div>
-    </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+    </nav>
 
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
+    <!-- portada -->
+    <section id="bienvenido" class="text-center">
+      <div class="jumbotron pb-5">
+        <h1 class="display-4">
+          <strong>Estas son mis Vacaciones</strong>
+        </h1>
+        <p class="lead">Soy Cody, un aspirante a Dev, en 2019, 
+          organicé un viaje para desestresarme del código, y en
+           esta página quiero compartirlo contigo.
         </p>
       </div>
     </section>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
+
+    <section id= "historia">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h2 class="mt-5">Mis vacaciones Frontend</h2>
+          <p class="mt-5">
+            Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript. Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página.
+          </p>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <img class="img-fluid img-center" src="images/cody-rest.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aprendizaje">
+      <div class="container">
+        <h1 class="text-center mt-5">Rutas de aprendizaje 2021</h1>
+        <p class="text-center"> También me propuse aprender nuevas tecnologías durante 2021</p>
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm-12 col-md-4 text-center">
+          <h2 class="mt-5" ><i class="fa fa-html5"><br>AJAX</h2>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center">
+          <h2 class="mt-5" ><i class="fa fa-html5"><br>AJAX</h2>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center">
+          <h2 class="mt-5" ><i class="fa fa-html5"><br>AJAX</h2>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center">
+          <h2 class="mt-5" ><i class="fa fa-html5"><br>AJAX</h2>
+        </div>
+      </div>
     </section>
     
-  </main>
-</body>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
