@@ -1,0 +1,29 @@
+.gallery {
+  padding-bottom: 10rem; }
+  .gallery h1 {
+    font-size: 3rem;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem; }
+    @media screen and (max-width: 600px) {
+      .gallery h1 {
+        font-size: 2rem; } }
+  .gallery .pez {
+    position: absolute;
+    right: 0; }
+  .gallery .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .gallery .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    max-width: 900px;
+    height: auto;
+    /* overflow: auto; */ }
+  .gallery .swiper-slide img {
+    display: block;
+    width: 100%; }
