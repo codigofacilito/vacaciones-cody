@@ -37,8 +37,8 @@ Los cambios cuando los subi, los hice desde mi cuenta alterna ya que no se como 
 ![imagen2](./public/images/Captura2.PNG)
 
 #Ruta de aprendizaje
-![imagen3](.public/images/Captura3.PNG)
+![imagen3](./public/images/Captura3.PNG)
 #Slideshow de las fotos de las vacaciones de Cody
-![imagen4](.public/images/Captura4.PNG)
+![imagen4](./public/images/Captura4.PNG)
 #Creditos de la pagina
-![imagen5](.public/images/Captura5.PNG)
+![imagen5](./public/images/Captura5.PNG)
