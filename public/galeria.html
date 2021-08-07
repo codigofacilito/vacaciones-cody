@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/estilos.css">
+  <link rel="stylesheet" href="./assets/lightbox.css">
+
+  <title>Galeria - Cody de vacaciones</title>
+</head>
+<body>
+  <aside id="sidemenu" class="menu-cerrado">
+    <button href="#" id="menu-btn" class="menu"><img src="./assets/icons/menu.png" alt="menu"></button>
+    <div class="contenedor-elementos">
+      <div id="profile" class="perfil">
+        <img src="./assets/icons/Cody.png" alt="Cody de perfil">
+        <h3>Soy Cody</h3>
+        <p>Aspirante a Dev.</p>
+      </div>
+      <div id="menu-items" class="navegacion">
+        <a href="index.html" class="navegacion-item inicio">
+          <img src="./assets/icons/icon-home.png" alt="icono inicio">
+          <h4>Inicio</h4>
+        </a>
+        <a href="galeria.html" class="navegacion-item galeria">
+          <img src="./assets/icons/icon-gallery.png" alt="icono galeria">
+          <h4>Galería</h4>
+        </a>
+      </div>
+      <div class="social">
+        <a href="#"><img src="./assets/icons/face.png" alt="enlace a facebook de Cody"></a>
+        <a href="#"><img src="./assets/icons/insta.png" alt="enlace a instagram de Cody"></a>
+        <a href="#"><img src="./assets/icons/Link.png" alt="enlace a LinkedIn de Cody"></a>
+        <a href="#"><img src="./assets/icons/Twitter.png" alt="enlace a Twitter de Cody"></a>
+      </div>
+    </div>
+  </aside>
+
+  <header class="hero hero-gallery">
+    <h1>Mi galería de fotos</h1>
+    <p>Un viaje para recordar, por siempre...</p>
+  </header>
+
+  <section class="fotos m-gallery">
+    <header><h2>Fotos de mis vacaciones</h2></header>
+    <p class="subtitulo">¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+    
+    <div class="grid-galeria">
+      <a class="item-galeria" href="./assets/galeria/1.jpg" data-lightbox="roadtrip">
+        <img class="" src="./assets/galeria/1pequena.png" alt="en bici en la playa">
+      </a>
+      <a class="item-galeria" href="./assets/galeria/2.jpg" data-lightbox="roadtrip">
+        <img class="" src="./assets/galeria/2pequena.png" alt="en la piscina">
+      </a>
+      <a class="item-galeria" href="./assets/galeria/3.jpg" data-lightbox="roadtrip">
+        <img class="" src="./assets/galeria/3pequena.png" alt="en bici en la playa">
+      </a>
+      <a class="item-galeria" href="./assets/galeria/4.jpg" data-lightbox="roadtrip">
+        <img class="" src="./assets/galeria/4pequena.png" alt="en bici en la playa">
+      </a>
+      <a class="item-galeria" href="./assets/galeria/5.jpg" data-lightbox="roadtrip">
+        <img class="" src="./assets/galeria/5pequena.png" alt="en bici en la playa">
+      </a>
+      <a class="item-galeria" href="./assets/galeria/6.jpg" data-lightbox="roadtrip">
+        <img class="" src="./assets/galeria/6pequena.png" alt="en bici en la playa">
+      </a>
+    </div>
+  </section>
+
+  <footer>Diseñado y desarrollado por: <a href="mailto:emanuelovares@gmail.com">emanuelovares@gmai.com</a></footer>
+  <script>
+    var boton = document.getElementById('menu-btn');
+    var AbiertoCerrado = document.getElementById('sidemenu');
+    boton.addEventListener('click', cambiarClases);
+
+    function cambiarClases (){
+      console.log(AbiertoCerrado.className);
+      if(AbiertoCerrado.className === 'menu-cerrado'){
+        AbiertoCerrado.className = 'menu-abierto';
+      }else{
+        AbiertoCerrado.className = 'menu-cerrado';
+      }
+      
+    }
+  </script>
+  <script type="text/javascript" src="./assets/lightbox-plus-jquery.js"></script>
+</body>
+</html>

@@ -1,100 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./assets/estilos.css">
+  <link rel="stylesheet" href="./assets/lightbox.css">
+  <title>Cody de vacaciones</title>
 </head>
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
-
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
-        </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
-        </div>
+  <aside id="sidemenu" class="menu-cerrado">
+    <button href="#" id="menu-btn" class="menu"><img src="./assets/icons/menu.png" alt="menu"></button>
+    <div class="contenedor-elementos">
+      <div id="profile" class="perfil">
+        <img src="./assets/icons/Cody.png" alt="Cody de perfil">
+        <h3>Soy Cody</h3>
+        <p>Aspirante a Dev.</p>
       </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
+      <div id="menu-items" class="navegacion">
+        <a href="index.html" class="navegacion-item inicio">
+          <img src="./assets/icons/icon-home.png" alt="icono inicio">
+          <h4>Inicio</h4>
+        </a>
+        <a href="galeria.html" class="navegacion-item galeria">
+          <img src="./assets/icons/icon-gallery.png" alt="icono galeria">
+          <h4>Galería</h4>
+        </a>
       </div>
-    </section>
+      <div class="social">
+        <a href="#"><img src="./assets/icons/face.png" alt="enlace a facebook de Cody"></a>
+        <a href="#"><img src="./assets/icons/insta.png" alt="enlace a instagram de Cody"></a>
+        <a href="#"><img src="./assets/icons/Link.png" alt="enlace a LinkedIn de Cody"></a>
+        <a href="#"><img src="./assets/icons/Twitter.png" alt="enlace a Twitter de Cody"></a>
+      </div>
+    </div>
+  </aside>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
+  <header class="hero hero-index">
+    <h1>Mis vacaciones Frontend</h1>
+    <p>En 2019 organicé un viaje para desestresarme un poco y quería compartirlo contigo</p>
+    <a class="btn red" href="#ruta">Ver más</a>
+  </header>
+
+  <section class="cursos">
+    <header><h2>Cursos en vacaciones</h2></header>
+    <p class="subtitulo">Durante las tardes, estuve aprendiendo con 2 grandes cursos</p>
+    <div  class="contenedor-cursos">
+      <a href="https://codigofacilito.com/cursos/frontend-profesional" class="curso-item">
+        <img src="./assets/icons/desarrollo.png" alt="icono del curso profesional de desarrollo web">
+        <p>Curso profesional de Desarrollo Web</p>
+      </a>
+      <a href="https://codigofacilito.com/cursos/primera-pagina-2019" class="curso-item">
+        <img src="./assets/icons/primera-pagina.png" alt="icono del curso profesional de desarrollo web">
+        <p>Curso para crear mi primera página web</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="ruta" class="ruta">
+    <header><h2>Ruta 2021</h2></header>
+    <p class="subtitulo">También, decidí seguir la siguiente ruta de aprendizaje:</p>
+
+    <div class="grid-ruta">
+      <div class="item-ruta">
+        <img src="./assets/icons/grid.png" alt="icono css grid">
+        <p>Flexbox y Grid</p>
+      </div>
+      <div class="item-ruta">
+        <img src="./assets/icons/css3.png" alt="icono css3">
+        <p>Animaciones con CSS y JavaScript</p>
+      </div>
+      <div class="item-ruta">
+        <img src="./assets/icons/ajax.png" alt="icono ajax">
+        <p>AJAX</p>
+      </div>
+      <div class="item-ruta">
+        <img src="./assets/icons/htmlef.png" alt="icono html5">
+        <p>Curso de controles y efectos Frontend</p>
+      </div>
+      <div class="item-ruta">
+        <img src="./assets/icons/html5.png" alt="icono efectos html5">
+        <p>HTML semántico</p>
+      </div>
+    </div>
+
+  </section>
+  
+  <section class="git">
+    <header><h2>Git y github</h2></header>
+    <p class="subtitulo">Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub</p>
+
+    <div class="git-contenedor">
+      <div class="git-item">
+        <p>Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.</p>
+        <a class="btn white" href="https://github.com/codigofacilito/vacaciones-cody/">Ir a mi github</a>
+      </div>
+      <div class="git-item">
+        <p>Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica.</p>
+        <a class="btn white" href="https://www.youtube.com/watch?v=xdCl0Wut-IA">Ir al tutorial</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="fotos">
+    <header><h2>Fotos de mis vacaciones</h2></header>
+    <p class="subtitulo">¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
     
-  </main>
+    <div class="grid-galeria">
+      <a class="item-galeria" href="./assets/galeria/1.jpg" data-lightbox="roadtrip">
+        <img class="" src="./assets/galeria/1pequena.png" alt="en bici en la playa">
+      </a>
+      <a class="item-galeria" href="./assets/galeria/2.jpg" data-lightbox="roadtrip">
+        <img class="" src="./assets/galeria/2pequena.png" alt="en la piscina">
+      </a>
+      <a class="item-galeria" href="./assets/galeria/3.jpg" data-lightbox="roadtrip">
+        <img class="" src="./assets/galeria/3pequena.png" alt="en bici en la playa">
+      </a>
+    </div>
+
+    <div class="ver-mas">
+      <a class="btn red" href="./galeria.html">Ver galería de fotos</a>
+    </div>
+  </section>
+
+  <section class="importancia">
+    <header><h2>La importancia de las vacaciones</h2></header>
+    <p class="subtitulo">Es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+
+    <p class="subtitulo">Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+
+    <div class="grid-importancia">
+      <div class="importancia-item">
+        <img src="./assets/icons/health.png" alt="icono cruz">
+        <h3>Mejora la salud</h3>
+      </div>
+      <div class="importancia-item">
+        <img src="./assets/icons/motivate.png" alt="icono motivacion">
+        <h3>Incrementa la motivación</h3>
+      </div>
+      <div class="importancia-item">
+        <img src="./assets/icons/fire.png" alt="icono burnout">
+        <h3>Reduce el burnout</h3>
+      </div>
+      <div class="importancia-item">
+        <img src="./assets/icons/creatividad.png" alt="icono creatividad">
+        <h3>Mejora tu productividad y creatividad</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>Diseñado y desarrollado por: <a href="mailto:emanuelovares@gmail.com">emanuelovares@gmai.com</a></footer>
+
+  <script>
+    var boton = document.getElementById('menu-btn');
+    var AbiertoCerrado = document.getElementById('sidemenu');
+    boton.addEventListener('click', cambiarClases);
+
+    function cambiarClases (){
+      console.log(AbiertoCerrado.className);
+      if(AbiertoCerrado.className === 'menu-cerrado'){
+        AbiertoCerrado.className = 'menu-abierto';
+      }else{
+        AbiertoCerrado.className = 'menu-cerrado';
+      }
+      
+    }
+  </script>
+  <script type="text/javascript" src="./assets/lightbox-plus-jquery.js"></script>
 </body>
 </html>

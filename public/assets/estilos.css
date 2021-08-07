@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+*, html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  font-size: 16px;
+} 
+
+body{
+  margin-left: 5rem;
+  background-color: var(--background-white);
+}
+
+:root{
+  --main-color: #E71D36;
+  --secondary-color: #FF9F1C;
+  --third-color: #1BB998;
+
+  --background: #011627;
+  --background-white: #E6EFEF;
+}
+
+img{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+}
+
+a.btn{
+  padding: .2rem 1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  transition: all .3s;
+}
+a.btn:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(207, 27, 49, .7);
+}
+.red{
+  background-color: var(--main-color);
+  color: var(--background-white);
+}
+.white{
+  background-color: var(--background-white);
+  color: var(--secondary-color);
+}
+a.white{
+  background-color: var(--background-white);
+  color: var(--main-color);
+}
+section.ruta, section.git, .contenedor-cursos, section.fotos{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+section h2{
+  color: var(--main-color);
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 5rem;
+
+}
+section p.subtitulo{
+  color: var(--background);
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+
+/* INICIO DE MENU abierto*/
+
+aside.menu-abierto{
+  background-color: var(--background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  max-width: 300px;
+  z-index: 1;
+}
+aside.menu-abierto .contenedor-elementos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+aside.menu-abierto .menu{
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+
+}
+aside.menu-abierto .perfil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+aside.menu-abierto .perfil img{
+  width: 90%;
+  max-width: 100px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  transition: all 2s;
+}
+aside.menu-abierto .perfil img:hover{
+  transform: rotate(360deg);
+}
+aside.menu-abierto .perfil h3{
+  color: var(--secondary-color);
+  font-size: 1.4rem;  
+}
+aside.menu-abierto .perfil p{
+  color: var(--background-white);
+  font-size: .8rem;
+  margin-bottom: 4rem;
+}
+aside.menu-abierto .navegacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+aside.menu-abierto .navegacion .navegacion-item{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+aside.menu-abierto .navegacion img{
+  height: 20px;
+  width: 20px;
+  margin-right: 1rem;
+}
+aside.menu-abierto .navegacion h4{
+  font-size: 1.4rem;
+  color: var(--background-white);
+  font-weight: 200;
+}
+aside.menu-abierto .navegacion .navegacion-item{
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 1rem;
+}
+aside.menu-abierto .navegacion .navegacion-item.inicio{
+  border-bottom: 3px solid #0B273F;
+}
+aside.menu-abierto .contenedor-elementos .social{
+  display: flex;
+  gap: 2rem;
+}
+aside.menu-abierto .contenedor-elementos .social img{
+  width: 1.3rem;
+}
+
+/* FIN DE MENU abierto*/
+/* INICIO DE MENU cerrado*/
+
+aside.menu-cerrado{
+  background-color: var(--background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 5rem;
+  overflow-y: auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+aside.menu-cerrado .contenedor-elementos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+aside.menu-cerrado button.menu{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  background-color: transparent;
+  border: none;
+}
+aside.menu-cerrado .perfil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+aside.menu-cerrado .perfil img{
+  width: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+aside.menu-cerrado .perfil h3{
+  display: none;
+}
+aside.menu-cerrado .perfil p{
+  display: none;
+}
+aside.menu-cerrado .navegacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+aside.menu-cerrado .navegacion .navegacion-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+aside.menu-cerrado .navegacion img{
+  height: 20px;
+  width: 20px;
+}
+aside.menu-cerrado .navegacion h4{
+  display: none;
+}
+aside.menu-cerrado .navegacion .navegacion-item{
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 1rem;
+}
+aside.menu-cerrado .navegacion .navegacion-item.inicio{
+  border-bottom: 3px solid #0B273F;
+}
+aside.menu-cerrado .contenedor-elementos .social{
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 2rem;
+}
+aside.menu-cerrado .contenedor-elementos .social img{
+  width: 1rem;
+}
+
+/* FIN DE MENU cerrado*/
+
+/***********
+ header hero
+ **********/
+
+header.hero{
+  background-position: bottom;
+  background-size: cover;
+  background-color: var(--main-color);
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header.hero-index{
+  background-image: url(../assets/galeria/hero.png);
+}
+header.hero-gallery{
+  background-image: url(../assets/galeria/hero-gallery.png);
+}
+.m-gallery{
+  margin-bottom: 8rem;
+}
+header.hero h1{
+  font-size: 2.1875rem;
+  color: var(--background-white);
+  padding-bottom: 1rem;
+  text-align: center;
+}
+header.hero p{
+  font-size: 1.5625rem;
+  color: var(--background-white);
+  max-width: 600px;
+  text-align: center;
+  padding-bottom: 1rem;
+  line-height: 1.7rem;
+}
+/***********
+ fin header hero
+ **********/
+
+ /***********
+ cursos vacaciones
+ **********/
+
+.cursos .contenedor-cursos{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.cursos .contenedor-cursos .curso-item{
+  background-color: var(--main-color);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all .3s;
+  padding: 1rem;
+}
+.cursos .contenedor-cursos .curso-item:hover{
+  transform: scale(1.1) translateY(-20px);
+  box-shadow: 5px 15px 15px rgba(207, 27, 49, .2);
+}
+.cursos .contenedor-cursos .curso-item p{
+  color: var(--background-white);
+  text-decoration: none;
+}
+.cursos .contenedor-cursos img{
+  width: 5rem;
+}
+ /***********
+ fin cursos vacaciones
+ **********/
+ /***********
+  ruta
+ **********/
+ 
+ section.ruta .grid-ruta{
+   gap: 2rem;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+ }
+ section.ruta .grid-ruta .item-ruta{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ section.ruta .grid-ruta .item-ruta p{
+   margin-top: 1rem;
+   text-align: center;
+ }
+ section.ruta .grid-ruta img{
+   height: 6rem;
+   width: auto;
+ }
+ section.ruta .grid-ruta img:hover{
+  filter: saturate(200%);
+ }
+
+ /***********
+  fin ruta
+ **********/
+ /***********
+  git y github
+ **********/
+ section.git .git-contenedor{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 2rem;
+ }
+ section.git .git-contenedor .git-item{
+   background-color: var(--main-color);
+   width: 100%;
+   max-width: 500px;
+   padding: 2rem;
+   border-radius: 1rem;
+   margin-left: auto;
+   margin-right: auto;
+   transition: all .3s;
+ }
+ section.git .git-contenedor .git-item:hover{
+   transform: translateY(-20px) scale(1.2);
+   box-shadow: 5px 5px 30px rgba(207, 27, 49, .7);
+ }
+ section.git .git-contenedor .git-item p{
+   color: var(--background-white);
+   margin-bottom: 2rem;
+   text-align: center;
+ }
+ section.git .git-contenedor .git-item a{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+ }
+ /***********
+  fin git y github
+ **********/
+ /***********
+  fotos
+ **********/
+ section.fotos .grid-galeria{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2rem;
+   margin-bottom: 2rem;
+ }
+ section.fotos .grid-galeria .item-galeria{
+   transition: all .3s;
+ }
+ section.fotos .grid-galeria .item-galeria:hover{
+   transform: scale(1.1);
+   /* box-shadow: 5px 5px 30px rgba(207, 27, 49, .7); */
+   filter: drop-shadow(0 5px 15px rgba(207, 27, 49, .2));
+ }
+ section.fotos .ver-mas{
+   display: flex;
+   justify-content: center;
+ }
+ /***********
+  fin fotos
+ **********/
+
+
+ section.importancia .grid-importancia{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 4rem;
+ }
+ section.importancia .grid-importancia .importancia-item{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ section.importancia .grid-importancia img{
+   height: 2rem;
+   width: auto;
+   margin-bottom: 2rem;
+   transition: all .5s;
+ }
+ section.importancia .grid-importancia img:hover{
+   transform: rotate(360deg) scale(1.2);
+ }
+ section.importancia .grid-importancia h3{
+   text-align: center;
+ }
+
+ @media (max-width: 992px) {
+  .cursos .contenedor-cursos{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.ruta .grid-ruta{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section.git .git-contenedor{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.fotos .grid-galeria{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section.importancia .grid-importancia{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  section.fotos .grid-galeria{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+ @media (max-width: 576px) {
+}
+
+footer{
+  width: 100%;
+  background-color: var(--background);
+  color: white;
+}
+footer a{
+  color: var(--main-color);
+}
