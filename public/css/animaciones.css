@@ -1,0 +1,51 @@
+.traslation{
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.traslation-fast{
+    animation-name: trasladar;
+    animation-duration: .5s;
+    animation-delay: .2s;
+    animation-fill-mode: both;
+}
+.traslation-medium{
+    animation-name: trasladar;
+    animation-duration: .7s;
+    animation-delay: .2s;
+    animation-fill-mode: both;
+}
+.traslation-slow{
+    animation-name: trasladar;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-fill-mode: both;
+}
+@keyframes trasladar{
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 
+
+@keyframes flotar{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+@keyframes flotar-lg{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(30px);
+    }
+}
+

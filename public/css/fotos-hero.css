@@ -1,0 +1,39 @@
+.hero-fotos{
+    background-color: var(--verde);
+    color: var(--blanco);
+    padding-block: 64px;
+    margin-inline: auto;
+    text-align: center;
+
+}
+.hero-fotos .desc{
+    margin-block-end: 64px;
+}
+.hero-fotos .desc h1{
+    font-size: 48px;
+    margin-block-end: 32px;
+}
+.hero-fotos .flecha{
+    margin-inline: auto;
+    max-inline-size: 96px;
+
+    animation-name: flotar-lg;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-fotos{
+        padding-block: 120px;
+    }
+    .hero-fotos .desc h1{
+        margin-block-end: 32px;
+        font-size: 72px;
+    }
+    .hero-fotos .flecha{
+        max-inline-size: 200px;
+    }
+}

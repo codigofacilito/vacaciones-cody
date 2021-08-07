@@ -1,0 +1,50 @@
+.importacia-vacaciones{
+    color: var(--negro);
+    margin-block: 64px;
+}
+.importancia-desc{
+    text-align: center;
+    margin-inline: auto;
+    max-inline-size: 900px;
+    margin-block-end: 16px;
+}
+.beneficios{
+    padding-inline-start: 0;
+    margin-block-start: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+.beneficio{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    font-weight: 700;
+}
+.beneficio .beneficio-img{
+    max-inline-size: 120px;
+    block-size: 110px;
+    overflow: hidden;
+}
+.beneficio p{
+    line-height: 22px;
+}
+
+@media screen and (min-width: 540px) {
+    .beneficios{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .importacia-vacaciones{
+        margin-block: 120px;
+    }
+    .beneficios{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

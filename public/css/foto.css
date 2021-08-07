@@ -1,0 +1,101 @@
+/* Foto */
+.foto{
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+}
+.foto:hover .hover{
+    opacity: 1;
+    transform: translateY(0);
+}
+.foto .hover{
+    background: rgba(0, 0, 0, .8);
+    color: var(--gris-claro);
+    position: absolute;
+    inset-inline: 0;
+    inset-block: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-inline: 32px;
+    padding-block: 32px;
+
+    opacity: 0;
+    transform: translateY(15%);
+    transition: .4s transform, .4s opacity;
+}
+.foto .hover p{
+    text-align: start;
+    font-size: 16px;
+    line-height: 27px;
+    max-inline-size: 300px;
+    position: absolute;
+    inset-inline-start: 40px;
+    inset-block-end: 40px;
+}
+.foto .hover i{
+    font-size: 48px;
+    color: var(--gris);
+    transition: .3s color;
+}
+.foto .hover .btn-zoom{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.foto .hover i:hover{
+    color: var(--gris-claro);
+}
+
+
+/* Overlay - Foto completa */
+.overlay{
+    position: fixed;
+    inset-inline: 0;
+    inset-block: 0;
+    background-color: rgba(0, 0, 0, .5);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+.overlay img{
+    max-inline-size: 1040px;
+    inline-size: 90%;
+}
+
+.btn-cerrar{
+    margin-block-start: -64px;
+    block-size: 48px;
+    inline-size: 48px;
+    border-radius: 50%;
+    background: var(--negro);
+    color: var(--blanco);
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    display: none;
+}
+.btn-cerrar:active{
+    transform: scale(.95);
+}
+
+.fijar-body{
+    overflow: hidden;
+}
+
+@media screen and (min-width: 960px) {
+    .btn-cerrar{
+        display: grid;
+        place-items: center;
+        block-size: 56px;
+        inline-size: 56px;
+        margin-block-start: -96px;
+    }
+}
