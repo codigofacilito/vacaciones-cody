@@ -1,38 +1,224 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: cursive;
 }
 
-main{
+.contenedor{
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulo{
+  color: #010c03;
+  font-size: 30px;
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+  margin-bottom: 60px;
 }
 
-section{
-  margin-top: 3rem;
+/* Header */
+
+header{
+  width: 100%;
+  height: 600px;
+  background: #12c2e9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, hsla(170, 77%, 31%, 0.678), hsla(231, 93%, 17%, 0.671), hsla(332, 86%, 26%, 0.671)),url(../images/flux.jpg); 
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,  hsla(170, 77%, 31%, 0.678),hsla(231, 93%, 17%, 0.671), hsla(332, 86%, 26%, 0.671)),url(../images/flux.jpg); 
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+nav{
+  text-align: right;
+  padding: 30px 50px 0 0;
 }
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
+
+nav > a{
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 10px;
+
 }
-ul li{
-  text-align: left;
+nav > a:hover{
+  text-decoration: underline;
 }
-ul li::marker {
-  content: "🚀";
+
+.textos-header  p {
+  font-family: cursive;
+  font-weight: 600;
+  font-size: 17px;
+  color: #fff;
+
+}
+
+header .textos-header{
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center
+
+}
+
+.textos-header h1{
+  font-size: 50px;
+  color: #fff;
+}
+
+/* main */
+
+.section-top {
+  margin-top: 4%;
+}
+
+section {
+  padding-bottom: 60px ;
+}
+
+main {
+  text-align: center;
+}
+
+h2 {
+  color: #000000;
+}
+
+p {
+  font-size: 16px;
+  line-height: 50px;
+  color: rgb(68, 61, 61);
+}
+
+.duo  {
+  width: 100%;
+  text-align: center;
+}
+
+.duo  a{
+  border-radius: 40px 5px;
+  padding: 1.3%;
+  background-color: rgb(77, 112, 7);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.duo a:hover{
+  border-radius: 40px 5px;
+  background-color: rgb(46, 94, 49);
+  color: rgb(211, 240, 218);
+  transition: 0.8s;
+}
+
+.back {
+  background-color: rgb(243, 237, 237);
+}
+
+.back li{
+  display: flex;
+  flex-direction: column;
+}
+
+.back a {
+  text-decoration: none;
+  color: rgb(15, 102, 66);
+}
+
+.back a:hover {
+  text-decoration: underline;
+  color: #879709;
+  transition: 0.4s;
+}
+
+.boxImg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.boxImg div img {
+  width: 400px;
+  height: 280px;
+  border-radius: 10%;
+  opacity: .8;
+}
+
+.boxImg div img:hover {
+  opacity: 1;
+  filter: brightness(50%);
+  transition: 1s;
+}
+
+.boxImg-row {
+  display: flex;
+  gap: 2rem;
+}
+
+.boxImg-link a {
+  color: rgb(31, 31, 99);
+  text-decoration: none;
+}
+
+.boxImg-link a:hover {
+  text-decoration: underline;
+}
+
+.back-1 {
+  background-color: rgb(225, 235, 241);
+}
+
+.back-1 h2 {
+  margin-bottom: 3%;
 }
 
 ol li{
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+ol li a{
+  text-decoration: none;
+  line-height: 35px;
+  color: rgb(47, 90, 72);
+}
+
+/* footer*/
+
+.cont-footer{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.cont-footer p {
+  color: #5BCC85;
+}
+
+
+footer h2 {
+  color: #fff;
+  font-size: 15px;
+}
+
+footer{
+  padding-top: 30 px;
+  background: #031e36;
+  height: 15vh;
+  text-align: center;
+  color: #fff;
 }
