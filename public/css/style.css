@@ -1,19 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+  /* margin: 0;
+  padding: 0; */
+}
+:root{
+  --corners: 10px;
+}
+
+body{
+  background-image: url("../images/bg.jpg");
+  background-position: center; /* Center the image */
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px) */
+  background-attachment: fixed;
+  font-family: "Montserrat";
+}
+
+.hero{
+  height: calc(100vh - 130px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero--child{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2{
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+h1{
+  color: whitesmoke;
+  font-size: 6em;
+  line-height: 0.8em;
+  text-transform: uppercase;
+}
+.subheader{
+  font-family: "Poppins";
+  color: rgb(16, 40, 54);
+  margin-top: 20px;
+  /* background-color: rgba(68, 119, 108, 0.623); */
+  max-width: 500px;
+  /* text-transform: uppercase; */
+}
+
 nav{
-  background-color: aliceblue;
+  /* background-color: rgb(207, 245, 235); */
+  
+  border-radius: var(--corners);
   padding: 15px;
   display: flex;
   gap:1em;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+nav a{
+  color: aquamarine;
+  text-decoration: none;
 }
 
 main{
   text-align: center;
   max-width: 960px;
   margin:0 auto;
+  
 }
 
 section{
   margin-top: 3rem;
+  padding-top: 100px;
 }
+
+section{
+  background-color: rgba(130, 187, 184, 0.685);
+  border-radius: var(--corners);
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba(5, 48, 44, 0.452);
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 30px;
+}
+
+
 
 .cursos div{
   background-color: black;
@@ -22,9 +102,15 @@ section{
   display: inline-block;
   box-shadow: 5px 5px 10px black;
 }
+.fotos{
+  display: flex;
+  flex-direction: row;
+}
+
 .fotos img{
-  max-width: 450px;
-  display: inline-block;
+  max-width: 250px;
+  display: flex;
+  
 }
 ul li{
   text-align: left;
@@ -35,4 +121,8 @@ ul li::marker {
 
 ol li{
   text-align: left;
+}
+
+footer{
+  padding: 30px;
 }
