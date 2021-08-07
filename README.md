@@ -7,8 +7,9 @@ Este reto consistió en vestir una sencilla página proporcionada como base. Se 
 
 ## Puntos destacables:
 
-· Desarrollo realizado en 4 horas. 
-· Implementación de control de versiones de Git desde terminal en local, conexión a repositorio remoto.
-· Este proyecto usa CSS puro, no contiene ninguna dependencia.
+* Desarrollo realizado en 4 horas. 
+* Implementación de control de versiones de Git desde terminal en local, conexión a repositorio remoto.
+* Este proyecto usa CSS puro, no contiene ninguna dependencia.
 
-Come frutas y verduras
+
+*Come frutas y verduras*
