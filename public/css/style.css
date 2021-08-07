@@ -1,38 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* botones de redireccion a inicio y galeria + Introduccion */
+.header_1 {
+  font-family: 'DM Sans', sans-serif;
+  display: grid;
+  grid-template-rows: 40px 200px;
+  
+}
+.header_2 {
+  display: grid;
+  grid-template-rows: 40px 140px;
+}
 nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
-}
+  text-align:right;
+  position: fixed;
+  margin-left: 93%;
+  margin-top: 3%;
 
-main{
+}
+.boton_header_1 {
+  background-color: #ee702d;
+  padding: 10px 9px 10px 9px;
+  border-radius: 100px;
+  line-height: 0px;
+  box-shadow: 2px 2px 2px 0px #e4d2b7;
+}
+.boton_header_2 {
+  background-color: #e9651d;
+  padding: 10px 9px 10px 9px;
+  border-radius: 100px;
+  line-height: 0px;
+  box-shadow: 2px 2px 2px 0px #e4d2b7;
+}
+.header-1-titulo-intro div{
+  max-width: 1260px;
+  margin: 0px auto;
+
+}
+.header-1-titulo-intro h1{
+  font-size: 50px;
+  margin-top: 40px;
+  padding: 5px 0px 10px 0px;
+  margin-bottom: 20px;
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+  
 }
-
-section{
-  margin-top: 3rem;
+.header-1-titulo-intro p{
+  font-family: 'Roboto', sans-serif;
+  color: #575757;
+  text-align: center;
 }
+/* 4 secciones pertenecientes al main */
 
-.cursos div{
-  background-color: black;
-  color: white;
+/* Seccion donde ubico los aprendisajes de cody y los distribuyo
+en un solo section, un h2 y dos h3 */
+.seccion-1-sobre-aprendisaje {
+  background-color: #0099ff57;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: grid;
+  grid-template-columns: 2 ;
+  grid-template-rows: 200px 240px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 0px #e4d2b7;
+}
+.seccion_1_conocimientos-0 {
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.seccion_1_conocimientos-0 p{
+  
+  font-family: 'Roboto', sans-serif;
+  color: #575757;
+  margin-bottom: 5px;
+}
+.seccion_1_conocimientos-0 h2{
+  font-size: 24px;
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.seccion-1-conocimientos-1{
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.seccion-1-conocimientos-2{
+  font-family: 'Roboto', sans-serif;
+  color: rgb(0, 0, 0);
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.cursos {
+  color: rgb(0, 0, 0);
   max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  margin: auto;
 }
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
+.cursos_1{
+  font-size: 14px ;
+  color: #fff4e3;
+  max-width: 140px;
+  background-color: #ee702d;
+  border-radius: 8px;
+  text-align: center;
+  margin: 28px auto;
+  padding: 9px;
+  box-shadow: 4px 4px 4px 0px #e4d2b7;
+}
+.seccion-1-conocimientos-2 header{
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  text-align: center;
+}
+.seccion-1-conocimientos-2 div{
+  margin: 0px auto;
+}
+.seccion-1-conocimientos-2 p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.seccion-1-conocimientos-2 li{
+  margin: 6px;
 }
 ul li{
   text-align: left;
 }
 ul li::marker {
-  content: "🚀";
+  content: "🏖️";
 }
 
+/* seccion para invitar a colaborar en la web de cody + tutorial */
+.seccion_2_colaboracion_en_git{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 60px;
+  margin-top: 50px;
+  background-image: url(/public/images/imagen3333.PNG);
+  box-shadow: 4px 4px 4px 2px #e4d2b7;
+  height: 200px;
+  border-radius: 10px;
+}
+.seccion_2_colaboracion_en_git h2{
+  font-size: 18px;
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.seccion_2_colaboracion_en_git p{
+  font-family: 'Roboto', sans-serif;
+  color: #575757;
+  margin-bottom: 5px;
+}
+/* previsualizacion de las foto con direccion a la pagina de la galeria */
+.seccion-3-previsualizacion{
+  height: 500px;
+}
+.seccion-3-previsualizacion h2{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.seccion-3-previsualizacion p{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.fotos_previsualizacion{
+  margin-top: 100px;
+  text-align: center;
+}
+.fotos_previsualizacion img{
+  max-width: 400px;
+  display: inline-block;
+
+}
+/* Galeria */
+.seccion-3-previsualizacion h2{
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: 'DM Sans', sans-serif;
+}
+.seccion-3-previsualizacion p{
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.fotos_galeria {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1800px;
+}
+.fotos_galeria img{
+
+  max-width: 500px;
+  display: inline-block;
+}
+
+/* seccion sobre la importancia de las vacaciones con items */
+
+.seccion-4-beneficios{
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #0099ff57;
+  border-radius: 10px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.seccion-4-beneficios h2{
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 40px;
+}
+.seccion-4-beneficios p{
+  margin-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #575757;
+  margin-bottom: 10px;
+}
+body{
+  /*background-color: #fff2df; */
+  background: linear-gradient(
+    90deg,
+    #ffcd83 1%,
+    #fff2df 100%
+  );
+  max-width: 1920px;
+  max-height: 1080px;
+  z-index: -1;
+}
 ol li{
+  margin-left:70px;  
+  font-family: 'Roboto', sans-serif;
+  color: #575757;
   text-align: left;
+  margin-bottom:6px;
+}
+/* footer */
+footer{
+  display:grid;
+  grid-template-columns: repeat(6,1fr);
+  height: 50px;
+  background-color: #000000;
+}
+footer img{
+  border-radius: 50%;
+}
+footer div{
+  margin-top: 10px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  text-align: center;
+}
+/*efecto ola */
+
+.envoltura{
+  position: relative;
+}
+
+.wave0{
+  content:"";
+  width: 100%;
+  height: 100%;
+  margin-top: 220px;
+  background-color: #0099FF;
+  position: fixed;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  animation: show 1.4s linear forwards;
+}
+@keyframes show{
+  to{
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+}
+.wave{
+  background-image: url(../images/wave.svg);
+  position:fixed;
+  width: 300%;
+  height:120px;
+  left: 0;
+  margin-top: 100px;
+  animation: w1 1.3s linear  forwards;
+  background-position: bottom;
+}
+@keyframes w1 {
+  0%{
+    margin-left: 0px;
+  }
+  100%{ margin-left: -1100px;
+    transform: translateY(890px);
+  }
+
+}
+.wave1{
+  background-image: url(../images/waved.svg);
+  position:fixed;
+  width: 300%;
+  height:140px;
+  left: 0;
+  margin-top: 100px;
+  animation: w2 1.3s linear  forwards;
+  background-position: bottom;
+}
+@keyframes w2 {
+  0%{
+    margin-left: 0px;
+  }
+  100%{ margin-left: -2200px;
+    transform: translateY(900px);
+  }
 }
