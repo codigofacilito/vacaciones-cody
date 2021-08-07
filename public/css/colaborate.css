@@ -6,3 +6,24 @@
 .colaborate header h2 {
     margin-block: 0;
 }
+
+.colaborate__content {
+    display: flex;
+    gap: 3em;
+    padding-block: 5em;
+}
+
+.colaborate__content--video {
+    flex: 1;
+}
+
+.colaborate__content--description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.colaborate__content--description .button{
+    max-width: 100%;
+}

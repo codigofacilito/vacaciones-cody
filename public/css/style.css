@@ -24,6 +24,8 @@
   --white: white;
   --fontBase: 'DM Sans', sans-serif;
   --fontTitles: 'Roboto Slab', serif;
+
+  --animate-delay: 2s;
 }
 
 html {
@@ -45,4 +47,9 @@ section {
 
 .animate__animated.animate__pulse {
   --animate-duration: 2.5s;
+}
+
+.title_photos {
+  margin-block-start: 10rem;
+  color: var(--white);
 }

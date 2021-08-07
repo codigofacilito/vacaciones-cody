@@ -6,6 +6,7 @@
 .courses__content {
     display: flex;
     gap: 5em;
+    margin-block: 5em;
 }
 
 .courses__content--cards {

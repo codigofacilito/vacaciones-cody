@@ -6,8 +6,9 @@
 }
 
 .card img {
-    border-radius: 1rem 0rem 0rem 1rem;
+    border-radius: 0rem 1rem 1rem 0rem;
     width: 40%;
+    order: 2;
 }
 
 .card__description {

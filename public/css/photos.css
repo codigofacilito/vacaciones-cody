@@ -6,3 +6,64 @@
 .photos h2 {
     margin-block: 0;
 }
+
+.photos__content {
+    padding-block: 5em;
+    display: flex;
+}
+
+.photos__content--description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.photos__content--description > p{
+    font-style: italic;
+}
+
+.photos__content--slider {
+    flex: 1;
+    width: 500px;
+    height: 500px;
+    background: url(../images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-animation: slider 8s infinite linear;
+    animation: slider 3s infinite linear;
+}
+
+@keyframes slider {
+    0% {
+      background-image: url(../images/1.jpg);
+    }
+  
+    25% {
+      background-image: url(../images/1.jpg);
+    }
+  
+    26% {
+      background-image: url(../images/2.jpg);
+    }
+  
+    50% {
+      background-image: url(../images/2.jpg);
+    }
+  
+    51% {
+      background-image: url(../images/3.jpg);
+    }
+  
+    75% {
+      background-image: url(../images/3.jpg);
+    }
+  
+    76% {
+      background-image: url(../images/4.jpg);
+    }
+  
+    100% {
+      background-image: url(../images/4.jpg);
+    }
+  }

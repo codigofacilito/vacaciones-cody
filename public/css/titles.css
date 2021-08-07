@@ -1,6 +1,7 @@
 .titles h2 {
     font-family: var(--fontTitles);
     font-size: 1.8em;
+    margin: 0;
 }
 
 .titles p {
