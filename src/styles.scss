@@ -1,0 +1,423 @@
+@import './modules/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    h2 {
+      color: $green;
+      margin: $normal 0;
+      font-family: 'Playfair Display', serif;
+    }
+    a {
+      text-decoration: none;
+      color: $green;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }   
+    p {
+      font-family: 'Noto Sans JP', sans-serif;
+    } 
+  }
+
+  .hero {
+    background-color: $dark-bg;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+
+    & .nav__container {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: max-content max-content;
+      gap: 2em;
+      align-items: center;
+      justify-content: end;
+      background-color: $nav-bg;
+      border-bottom: solid 2px #000;
+    }
+    & .nav {
+      font-size: 1.3rem;
+      height: 80px;
+      display: flex;
+
+      & .nav__link {
+        margin-top: 15%;
+        color: $green;
+        text-decoration: none;
+        margin-right: 1rem;
+
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    & .hero__main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+      align-items: center;
+      padding: 0;
+
+      & .hero__texts {
+        color: $green;
+
+        & h1 {
+          font-family: 'Playfair Display', serif;
+          font-size: $grande;
+          position: relative;
+          display: inline;
+
+          & span {
+            position: absolute;
+            right: 0%;
+            width: 0;
+            background-color: $dark-bg;
+            border-left: solid 2px #fff;
+            animation: write 4s infinite alternate steps(24);
+          }
+        }
+        p {
+          text-align: inherit;
+          font-size: $normal;
+          width: 70%;
+          line-height: 1.5;
+          margin-top: 10px;
+          margin-bottom: 15px;
+        }
+        .cta {
+          background-color: $green;
+          text-decoration: none;
+          display: inline-block;
+          padding: 15px 45px;
+          color: $dark-bg;
+          border-radius: $borde;
+        }
+      }
+      & img {
+        width: 500px;
+        animation: cody 3s infinite alternate-reverse;
+      }
+    }
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1200px;
+    padding: 0;
+    margin-bottom: $big-margin;
+    display: grid;
+
+    h2 {
+      position: relative;
+      font-size: $grande;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      font-size: $normal;
+    }
+    p a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .courses-container {
+      display: inline-grid;
+      grid-template-columns: repeat(2, 20rem);
+      grid-gap: 0.9rem;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      .course-item {
+        justify-content: center;
+        margin-top: 2rem;
+        cursor: pointer;
+        padding: .3rem;
+        position: relative;
+        width: 80%;
+
+      & p {
+        text-align: center;
+        color: $dark-bg;
+        margin-left: 0;
+      }
+      & a {
+        text-decoration: none;
+      }
+      &::before {
+        content: '';
+        background-color: $green;
+        height: 10%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .8s ease;
+      }
+      &:hover::before {
+        height: 100%;
+      }
+      }
+    }
+    .card-container {
+      display: inline-grid;
+      grid-template-columns: repeat(2, 35%);
+      grid-gap: 0.9rem;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0;
+
+      & .card-item {
+        justify-content: center;
+        margin-top: .5rem;
+        background-color: #3a3b3c;
+        box-shadow: -5px 3px 10px rgba(0, 0, 0, .5);
+        border-radius: 3px;
+        cursor: pointer;
+        padding: .3rem;
+        position: relative;
+
+        &.item5:last-child {
+          left: 50%;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          display: block;
+          width: 0;
+          height: 3px;
+          background-color: $green;
+          transition: all .6s ease-in-out;
+          border-radius: 25px;
+      }
+      &:hover::before {
+        left: 0;
+        width: 100%;
+      }
+      & p {
+        text-align: center;
+        color: $green;
+        margin-left: 0;
+      }
+      }
+    }
+  }
+
+  .slider{
+    margin: 3rem auto;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    border: solid 3px rgb(91,204,133);
+    border-radius: 15px;
+
+    & img{
+      width: 100%;
+      display: inline-block;
+      margin-right: -4px;
+    }  
+    & .slider-container{
+      white-space: nowrap;
+      position: relative;
+      transition: all 0.3s;
+      left: 0px;
+
+      & * {
+        white-space: normal;
+      }
+    }
+    & .controls ul{
+      padding: 0px;
+      text-align: center;
+      position: absolute;
+      bottom: 1rem;
+      margin: 0px;
+      width: 100%;
+      z-index: 5;
+
+      & li{
+        list-style-type: none;
+        background-color: $dark-bg;
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+        margin-right: 5px;
+        display: inline-block;
+        cursor: pointer;
+
+        &.active {
+          background-color: $green;
+        }
+      }
+    }
+  }
+
+  ul li::marker {
+    content: '🚀';
+  }
+
+  .animate {
+      opacity: 0;
+      transition: all .8s;
+  }
+  
+  .animateUp {
+      animation: showUp 1s;
+  }
+  
+  @keyframes write {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+
+  @keyframes showUp {
+      0% {
+          transform: translateY(100px);
+      }
+      100% {
+          transform: translateY(0);
+      }
+  }
+
+  @keyframes cody {
+    0% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(15deg);
+    }
+  }
+
+  .footer { 
+    width: 100%;
+    padding: 0px;
+    background-size: cover;  
+    background-color: $dark-bg;
+    text-align: center;
+
+    & .footer__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1200px;
+      margin: auto;
+
+      & .box__footer{
+          display: flex;
+          flex-direction: row;
+          padding: 1.8rem;
+
+          & .terms{
+            margin-top: $large-margin;
+            font-weight: 500;
+            color: $green;
+            font-size: 18px;
+          }
+      }
+    }
+    .box__copyright{
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+      padding: 0.625rem 2.5rem;
+
+      & p{
+        margin-top: $large-margin;
+        color: $green;
+      }
+      & hr{
+        border: none;
+        height: 1px;
+        background-color: $green;
+      }
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    
+    .hero {
+      .nav__container {
+        justify-content: center;
+      }
+      .hero__main {
+        grid-template-columns: 1fr;
+        margin: 0 15%;
+
+        & .hero__texts {
+          h1 {
+            font-size: 1.8rem;
+          }
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      img {
+        display: none;
+      }
+    }
+
+
+    .container {
+
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+
+      .courses-container {
+        display: inline-grid;
+        grid-template-columns: repeat(1, 20rem);
+        grid-gap: 0.9rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center; 
+        
+        .course-item {
+          margin-left: 10%;
+        }
+      }
+
+      .card-container {
+        display: inline-grid;
+        grid-template-columns: repeat(1, 80%);
+
+        .card-item {
+          &.item5:last-child {
+            left: 0;
+          }
+        }
+      }
+    }
+
+    .slider {
+      width: 90%;
+    }
+
+    .wave-svg {
+      display: none;
+    }
+  }

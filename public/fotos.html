@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fotos de mis Vacaciones!</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./images/cody.ico">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../public/css/fotos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <main>
+      <header class="hero">
+        <div class="nav__container">
+          <nav class="nav">
+            <a class="nav__link" href="../index.html">Inicio</a>
+            <a class="nav__link active" href="./fotos.html">Fotos</a>
+            <a class="nav__link" href="./codyGame.html">Cody_404</a>
+          </nav>
+        </div>
+        <h1>Galería completa de mis vacaciones</h1>
+      </header>
+      <section>
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h2>⭐Paseando en bicicleta por la playa!</h2>
+              <img src="./images/1.jpg" alt="Cody dando un paseo en bicicleta en la playa" />
+            </div>
+            <div class="swiper-slide">
+              <h2>🤗Acampando en la orilla de la playa</h2>
+              <img src="./images/2.jpg" alt="Cody acampando en la orilla de una playa" />
+            </div>
+            <div class="swiper-slide">
+              <h2>🍹Tomando un refresco en la alberca</h2>
+              <img src="./images/3.jpg" alt="Cody relajandose en una alberca con un refresco y un flotador" />
+            </div>
+            <div class="swiper-slide">
+              <h2>🌞Disfrutando del sol en la playa</h2>
+              <img src="./images/4.jpg" alt="Cody tomando un refresco sentado en la orilla de la playa" />
+            </div>
+            <div class="swiper-slide">
+              <h2>😎Posando al lado de una motocicleta</h2>
+              <img src="./images/5.jpg" alt="Cody posando al lado de una motocicleta" />
+            </div>
+            <div class="swiper-slide">
+              <h2>😡Cody enojado en el aeropuerto</h2>
+              <img src="./images/6.jpg" alt="Cody enojado esperando al avión en el aeropuerto" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
 
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
-
-  </main>
-</body>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../src/javascript/Swiper.js"></script>
+  </body>
 </html>
