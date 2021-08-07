@@ -1,0 +1,316 @@
+/*Normalizacion*/
+
+html {
+    font-size: 62.5%
+}
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    padding: 0
+}
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif
+}
+p {
+    font-size: var(--eParrafo);
+    margin: 0.5rem 0.5rem
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    width: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+h1 {
+    font-size: 2.4rem;
+    margin: 0.5rem 0.5rem;
+    height: 3rem
+}
+li {
+    list-style: none;
+    margin-top: 0.5rem
+}
+
+/*variables*/
+:root {
+    --elemntsInside: 2.4rem;
+    --eParrafo: 1.4rem;
+    --eMainDiv-paddingH: 6rem;
+    --eMainDiv-paddingH-Glr: 3rem;
+    --eMainDiv-paddingV: 1.5rem;
+    --eArticle-paddingH: 4rem;
+    --eArticle-paddingV: 2rem;
+    --cHeader: #0097a8;
+    --navBottom: #5352ed;
+    --cFooter: transparent
+}
+
+/*Cabecera*/
+
+.hero {
+    display: flex
+}
+.hero_lineas {
+    width: 400px
+}
+.boxShadowcuerpo {
+    display: inline-block;
+    width: 300px;
+    height: 20px;
+    background: blue;
+    margin: 100px auto;
+    box-shadow: -20px 25px 0px 0px yellow, -40px 50px 0px 0px green, -60px 75px 0px 0px red
+}
+.boxShadowpunta {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: blue;
+    margin: 100px auto;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: -20px 25px 0px 0px yellow, -40px 50px 0px 0px green, -60px 75px 0px 0px red
+}
+.hero_background {
+    background-image: url('../imgWeb/hero_fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 85%;
+    background-size: cover;
+    width: 100%;
+    height: 24rem;
+    cursor: pointer
+}
+.foot_background {
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+    background-image: url('../imgWeb/foot_fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px
+}
+.main_background {
+    min-width: 300px;
+    min-height: 400px;
+    background: -webkit-linear-gradient(to bottom, #0097a8, transparent);
+    background: linear-gradient(to bottom, #0097a8, transparent)
+}
+.hero_codyPortada {
+    display: block;
+    width: auto;
+    max-width: 400px;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    overflow: hidden
+}
+.hero_figImg img {
+    vertical-align: top;
+    width: 100%;
+    height: auto
+}
+.puntaPerfil {
+    width: 15rem;
+    height: 12rem;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-image: url('../imgWeb/marco.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 70%;
+    vertical-align: top
+}
+.marcoPerfil {
+    width: 30rem;
+    height: 12rem;
+    background-image: url('../imgWeb/marco.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: top
+}
+.fotoPerfil {
+    position: absolute;
+    top: 1rem;
+    right: 17rem;
+    width: 20rem;
+    height: 10rem;
+    display: block;
+    border-radius: 50%;
+    border: 0.3rem solid;
+    overflow: hidden;
+    background-color: black;
+    border-top-color: black;
+    border-bottom-color: white
+}
+.fotoPerfil img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%
+}
+.fotoPerfil img:hover {
+    height: unset
+}
+
+/*Barra NAV*/
+.header-nav {
+    width: 100%;
+    height: 3.2rem;
+    display: flex;
+    background-image: linear-gradient(to right, #0097a8, #59a8c2, #8cbad5, #b6cce4, #dae0f0, #fff, #fff, #fff, #fff, #fff, #dae0f0, #59a8c2, #0097a8)
+}
+
+button[type="submit"] {
+    background: var(--navBottom);
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border: 2px solid #3742fa;
+    outline: none;
+    font-size: 1.6rem;
+    color: white;
+    border-radius: 15px;
+    transition: 0.4s;
+    cursor: pointer
+}
+button[type="submit"]:hover {
+    background: #fff;
+    color: var(--navBottom)
+}
+.bottonGaleria{
+    background: var(--navBottom);
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    border: 2px solid #3742fa;
+    outline: none;
+    font-size: 1.6rem;
+    color: white;
+    border-radius: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.bottonGaleria:hover {
+    background: #fff;
+    color: var(--navBottom)
+}
+
+
+input[type="text"] {
+    display: block;
+    outline: none;
+    font-size: 1.6rem;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    border: none;
+    background: none;
+    color: #e1e1e1;
+    transition: 0.5s
+}
+.nav_form_ikono {
+    width: 20px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 1rem
+}
+.ikono_search {
+    width: 20px
+}
+input[type="text"]:focus {
+    width: 100%;
+    outline: none;
+    font-size: 2.5rem;
+    transition: 0.5s;
+    color: #808a8a
+}
+input[type="text"]:focus::placeholder {
+    font-size: 2.5rem;
+    transition: 1.2s;
+    color: #e1e1e1
+}
+
+/*/////////////////////////////////////////////////////////////////////////////*
+/*Post*/
+
+.article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border-radius: 35px;
+    padding: var(--eArticle-paddingV) var(--eArticle-paddingH);
+    margin: var(--eMainDiv-paddingV) 0;
+    box-shadow: 6px 5px 12px rgba(0, 0, 0, 0.4);
+    position: relative
+}
+.hero_headertex {
+    position: relative;
+    top: 1rem;
+    right: 0rem;
+    display: flex;
+    width: 30rem;
+    min-width: 12rem;
+    padding: 1rem 0.5rem
+}
+.heroTitle {
+    font-size: 3.2rem
+}
+.texComunidad {
+    font-family: 'Happy Monkey';
+    font-size: 4rem;
+    color: #fff
+}
+.texCody {
+    font-family: 'Happy Monkey';
+    font-size: 5rem;
+    color: #fff
+}
+main {
+    height: 100%
+}
+.main-div_content {
+    padding: var(--eMainDiv-paddingV) var(--eMainDiv-paddingH);
+    height: 100%
+}
+
+.main-div_content-galeria{
+    padding: var(--eMainDiv-paddingV) var(--eMainDiv-paddingH-Glr);
+    height: 100%
+}
+article aside {
+    height: var(--elemntsInside);
+    display: flex
+}
+a .imgPerfil {
+    border-radius: 50%;
+    border: 0.2rem solid blue;
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: var(--elemntsInside);
+    height: var(--elemntsInside);
+    cursor: pointer
+}
+a .imgPerfil img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%
+}
+address {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    margin: auto 0,
+}
+
