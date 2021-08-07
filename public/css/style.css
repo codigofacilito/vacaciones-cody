@@ -17,25 +17,30 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(0,0,0,0.5);
-	color: white;
+	background-color: rgba(0,0,0,0.05);
+	color: white ;
 }
+
+#carousel .overlay{
+	height:100%;
+	z-index: 1;
+	top: 20vh;
+}
+
 #footer{
 
     text-align: center;
     background-color: #122436;
 }
 #text-image{
-	color: skyblue;
+
+	color: #33b1ff;
 }
+
 a{
 	text-decoration: none;
 	color: white;
     text-decoration: underline;
-}
-
-.carousel-inner{
-	background-size: cover!important;
 }
 
 .rounded float-start{
