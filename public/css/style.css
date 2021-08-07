@@ -85,10 +85,25 @@ section {
 
 .bg-verde_claro {
   background-color: #01b99d;
+  border-radius: 1.4rem;
 }
 
 .bg-verde_obscuro {
   background-color: #026c67;
+}
+
+.vacaciones_front .container {
+  background-color: #026c67;
+  width: 92%;
+  border-radius: 4rem;
+  padding: 2rem;
+  color: #fff;
+}
+
+.ruta {
+  background-color: rgba(82, 202, 206, 4%);
+  border-radius: 3rem;
+  padding-bottom: 1rem;
 }
 
 .ruta .rutaAp a {
@@ -129,4 +144,7 @@ ol li {
 }
 .btn-cards:hover {
   background-color: rgba(1, 185, 157, 40%);
+}
+header {
+  background-colr: #005652;
 }
