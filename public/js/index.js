@@ -162,6 +162,7 @@ function changeMode(isChecked = false) {
       "--sun-secondary-color",
       "#D7DBD7"
     );
+    document.documentElement.style.setProperty("--sea-opacity", "0.2");
     document.documentElement.style.setProperty("--opacity", "0.6");
     document.documentElement.style.setProperty("--text-color", "whitesmoke");
     document.documentElement.style.setProperty("--title-color", "whitesmoke");
@@ -178,6 +179,7 @@ function changeMode(isChecked = false) {
       "--sun-secondary-color",
       "yellow"
     );
+    document.documentElement.style.setProperty("--sea-opacity", "1");
     document.documentElement.style.setProperty("--opacity", "1");
     document.documentElement.style.setProperty(
       "--text-color",
