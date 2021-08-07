@@ -145,12 +145,6 @@ section {
   text-align:center;
 }
 
-ol li {
-  text-align: left;
-}
-
-
-
 .bg-amarillo {
   padding: 1rem;
   background-color: rgb(255, 204, 28);
@@ -174,6 +168,40 @@ ol li {
 .btn-cards:hover {
   background-color: rgba(1, 185, 157, 40%);
 }
-header {
-  background-colr: #005652;
+
+.importancia {
+  
+}
+
+.ventajas-titulo {
+  border-top: 8px solid rgba(255,204,58, 1);
+  border-left: 8px solid rgba(255,204,58, 1);
+  border-right: 8px solid rgba(255,204,58, 1);
+  border-radius: 20px 20px 0px 0px;
+  background-color: #026c67;
+  color: whitesmoke;
+  padding: 1rem;
+}
+
+.ventajas-texto {
+  background-color: rgba(255, 203, 14, 20%);
+  padding: 1rem;
+  border-left: 8px solid rgba(2,108,103, 1);
+  border-right: 8px solid rgba(2,108,103, 1);
+}
+
+.ventajas {
+  background-color: #005652;
+  padding: 1rem;
+  border-bottom: 8px solid rgba(255,204,58, 1);
+  border-left: 8px solid rgba(255,204,58, 1);
+  border-right: 8px solid rgba(255,204,58, 1);
+  border-radius: 0px 0px 20px 20px;
+}
+
+.ventajas ul li {
+  list-style: none;
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 1.2rem;
 }
