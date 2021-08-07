@@ -8,26 +8,27 @@
     padding-block-start: 16px;
     overflow: hidden;
 }
-
 .logo{
     font-weight: 900;
     font-size: 24px;
-}
-.navbar .wrapper a{
     color: var(--blanco);
+}
+.navbar .wrapper a.logo{
+    color: var(--blanco);
+}
+.navbar .wrapper .navbar-menu a{
+    color: var(--negro);
     text-transform: uppercase;
 }
 .navbar-menu{
-    /* display: none; */
     position: fixed;
     inset-block: 0;
     inset-inline: 0;
-    background-color: rgba(0, 0, 0, .93);
+    background-color: rgba(255, 255, 255, .93);
     z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
     transform: translateX(100%);
     transition: .4s transform;
 }
@@ -37,19 +38,19 @@
     padding-inline-start: 0;
     gap: 40px;
 }
-.navbar-menu ul a{
-    color: var(--gris-claro);
+.navbar-menu ul li a{
+    color: var(--negro);
     font-weight: 400;
     font-size: 24px;
 }
 
 .navbar ul a:hover{
-    color: var(--blanco);
+    color: var(--negro);
     font-weight: bold;
 }
 
 .navbar ul a.active{
-    color: var(--blanco);
+    color: var(--negro);
     font-weight: bold;
 }
 
@@ -59,7 +60,7 @@
 }
 .menu-cerrar{
     font-size: 32px;
-    color: var(--blanco);
+    color: var(--negro);
     position: absolute;
     inset-inline-end: 24px;
     inset-block-start: 16px;
@@ -68,7 +69,6 @@
 .navbar-menu.menu-visible{
     transform: translateX(0);
 }
-
 
 
 /* Menu sticky */
@@ -88,14 +88,17 @@
     color: (--negro);
     padding-block-start: 0;
 }
+.navbar-sticky .wrapper a.logo{
+    color: var(--negro);
+}
 .navbar-sticky .wrapper a{
     color: var(--negro);
 }
 .navbar-sticky .wrapper ul a{
-    color: var(--gris-claro);
+    color: var(--negro);
 }
 .navbar-sticky .wrapper ul a.active{
-    color: var(--blanco);
+    color: var(--negro);
 }
 .navbar-sticky .menu-icon{
     color: var(--negro);
@@ -142,7 +145,12 @@
     .navbar-menu ul a{
         font-size: 18px;
     }
-
+    .navbar .wrapper .navbar-menu a{
+        color: var(--blanco);
+    }
+    .navbar ul a.active{
+        color: var(--blanco);
+    }
     /* Menu sticky */
     .navbar-sticky{
         padding-block: 16px;
@@ -150,7 +158,11 @@
     .navbar-sticky .wrapper ul a{
         color: var(--negro);
     }
+    .navbar-sticky .wrapper .navbar-menu a{
+        color: var(--negro);
+    }
     .navbar-sticky .wrapper ul a.active{
         color: var(--negro);
     }
+
 }

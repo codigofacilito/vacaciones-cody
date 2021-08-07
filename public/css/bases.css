@@ -66,10 +66,11 @@
     padding-inline: 24px;
     border-radius: 4px;
     text-transform: uppercase;
-    transition: .2s background, .3s color;
+    transition: .2s background, .3s color, .3s transform;
     text-align: center;
   }
   .btn:hover{
+    transform: scale(1.03);
     background: var(--amarillo);
   }
   .btn:active{
@@ -126,3 +127,6 @@
       font-size: 18px;
     }
   }
+
+
+

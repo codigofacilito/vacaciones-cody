@@ -21,6 +21,10 @@
     block-size: 360px;
     border-radius: 16px;
     box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .2);
+    transition: .3s transform;
+}
+.curso:hover{
+    transform: scale(1.03);
 }
 .contenedor-cursos .curso:last-of-type{
     max-inline-size: 500px;
@@ -51,8 +55,8 @@
 .curso .img-contendor .img img{
     inline-size: 99px;
     position: absolute;
-    right: 0;
-    top: 0;
+    inset-inline-end: 0;
+    inset-block-start: 0;
 }
 
 

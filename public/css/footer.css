@@ -44,6 +44,9 @@
     display: flex;
     gap: 18px;
 }
+.social-media a i:hover{
+    transform: scale(1.1);
+}
 
 
 

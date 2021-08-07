@@ -9,6 +9,13 @@
 .hero .foto{
     inline-size: 200px;
     margin-block-end: 24px;
+
+    animation-name: flotar;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
 .hero .desc h3{
@@ -44,8 +51,10 @@
     }
     .hero .foto{
         min-inline-size: 300px;
-        transform: scaleX(-1);
         order: 2;
+    }
+    .hero .foto img{
+        transform: scaleX(-1);
     }
     .hero .desc{
         max-inline-size: 560px;

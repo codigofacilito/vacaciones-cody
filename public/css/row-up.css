@@ -13,6 +13,13 @@
     opacity: 0;
     transition: .5s opacity;
 }
+.row-up:hover{
+    background-color: #222222;
+
+}
+.row-up:active{
+    transform: scale(.95);
+}
 .row-up i{
     color: var(--blanco);
     font-size: 18px;

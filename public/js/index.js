@@ -7,9 +7,9 @@ const navbar = document.querySelector('.navbar');
 const hero = document.querySelector('.hero-content');
 
 const rowUp = document.querySelector('.row-up');
-
-
 const btnsVerFoto = document.querySelectorAll('.btn-zoom');
+
+
 
 btnsVerFoto.forEach( btnVerFoto =>{
     btnVerFoto.addEventListener('click', ()=>{
@@ -17,8 +17,6 @@ btnsVerFoto.forEach( btnVerFoto =>{
         mostrarFoto(foto);
     });
 } );
-
-
 
 // Menu responsive
 menuIcons.forEach( menuIcon =>{
@@ -33,9 +31,14 @@ rowUp.addEventListener('click', ()=>{
 });
 
 
-// Escuchando al Scroll
-document.addEventListener('scroll', ()=>{
+
+
+
+window.addEventListener('scroll', ()=>{
     navbarSticky();
+    animationFade('fast');
+    animationFade('medium');
+    animationFade('slow');
 });
 
 // Navbar fijo
@@ -86,3 +89,17 @@ function mostrarFoto(e){
     body.classList.add('fijar-body');
 }
 
+// Animaciones
+const animationFade = ( speed )=>{
+    const elements = document.querySelectorAll(`.animation-${speed}`);
+
+    elements.forEach(element => {        
+        const screenHeight = window.innerHeight;
+        const distancia = element.getBoundingClientRect().top;
+        element.classList.add('traslation');
+    
+        if( distancia <= screenHeight ){
+            element.classList.add(`traslation-${speed}`);
+        }
+    });
+}
