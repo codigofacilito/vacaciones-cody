@@ -1,38 +1,207 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
+body {
+  background-color: rgba(82, 202, 206, 3%);
+}
+
+nav {
+  background-color: #01b99d;
   display: flex;
   gap:1em;
 }
 
-main{
+nav img {
+  padding-left: 1rem;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+header nav .disabled {
+  color: #026c67 !important;
+  padding-left: 0;
+}
+
+#first_img {
+  height: 17rem;
+  background-color: rgba(255, 204, 28, 80%);
+  border-right: 0.3rem solid rgba(2,108,103,0.8);
+  border-radius: 0.2rem;
+}
+
+#header .container img {
+  max-width: 100%;
+}
+
+.tarjetita {
+  margin-top: 2rem;
+  width: 55rem;
+  height: 18rem;
+  border: 0.5rem solid rgba(2,108,103,0.8);
+  border-radius: 0.9rem;
+}
+
+header .tarjetita .row {
+  height: 17.95rem;
+}
+
+main {
   text-align: center;
   max-width: 960px;
   margin:0 auto;
 }
 
-section{
+section {
   margin-top: 3rem;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
+.carousel-title {
+  margin-left: 4.8rem;
+  margin-right: 4.8rem;
+  margin-top: ;
+  margin-bottom: 2rem;
 }
 
-ol li{
-  text-align: left;
+.decoration {
+  width: 4.2rem;
+  height: 5.7rem;
+}
+
+.decoration-rigth {
+  align-items: left;
+}
+
+.decoration-left {
+  align-items: right;
+}
+
+.cursos div {
+  background-color: #30a377;
+  color: white;
+  max-width: 10rem;
+  display: inline-block;
+  border-radius: 1rem;
+}
+
+.carousel img {
+  border: 5px solid rgba(68,104,107,0.8);
+  border-radius: 20px;
+
+  max-height: 80vh;
+  object-fit: cover;
+}
+.colab {
+  background-color: rgba(255, 204, 28, 10%);
+  border: 0.2rem solid #ffcc3a;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(1, 185, 157, 50%);
+  color: whitesmoke;
+}
+
+#overlay¿ {
+  color: #000;
+}
+
+.link3 {
+  color: whitesmoke;
+}
+
+.bg-verde_claro {
+  background-color: #01b99d;
+  border-radius: 1.4rem;
+}
+
+.bg-verde_obscuro {
+  background-color: #026c67;
+}
+
+.vacaciones_front .container {
+  background-color: #026c67;
+  width: 92%;
+  border-radius: 4rem;
+  padding: 2rem;
+  color: #fff;
+}
+
+.ruta {
+  background-color: rgba(82, 202, 206, 4%);
+  border-radius: 3rem;
+  padding-bottom: 1rem;
+}
+
+.ruta .rutaAp a {
+  background-color: #16b6a9;
+  margin: 0.1rem;
+  color: #FFFEFC;
+}
+
+.rutaAp {
+  text-align:center;
+}
+
+.bg-amarillo {
+  padding: 1rem;
+  background-color: rgb(255, 204, 28);
+}
+
+.card {
+  border: 5px solid rgba(68,104,107,0.9);
+  border-radius: 1.3rem;
+}
+
+.fotos .card img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.btn-cards {
+  background-color: rgba(1, 185, 157, 10%);
+  border: 0.3rem double #026c67;
+  border-radius: 0.6rem;
+}
+.btn-cards:hover {
+  background-color: rgba(1, 185, 157, 40%);
+}
+
+.importancia {
+  
+}
+
+.ventajas-titulo {
+  border-top: 8px solid rgba(255,204,58, 1);
+  border-left: 8px solid rgba(255,204,58, 1);
+  border-right: 8px solid rgba(255,204,58, 1);
+  border-radius: 20px 20px 0px 0px;
+  background-color: #026c67;
+  color: whitesmoke;
+  padding: 1rem;
+}
+
+.ventajas-texto {
+  background-color: rgba(255, 203, 14, 20%);
+  padding: 1rem;
+  border-left: 8px solid rgba(2,108,103, 1);
+  border-right: 8px solid rgba(2,108,103, 1);
+}
+
+.ventajas {
+  background-color: #005652;
+  padding: 1rem;
+  border-bottom: 8px solid rgba(255,204,58, 1);
+  border-left: 8px solid rgba(255,204,58, 1);
+  border-right: 8px solid rgba(255,204,58, 1);
+  border-radius: 0px 0px 20px 20px;
+}
+
+.ventajas ul li {
+  list-style: none;
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 1.2rem;
 }
