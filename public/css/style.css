@@ -1,38 +1,403 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
+/* Color Palette */
+:root {
+  --cody-green: #1bbc9b;
+  --cody-blue: #262b34;
+  --cody-red: #a84626;
+  --cody-yellow: #e39d10;
+  --cody-white: #ffffff;
+}
+
+body {
+  font-family: "Schoolbell", cursive;
+  font-size: 16px;
+  color: var(--cody-blue);
+  margin: 0;
+}
+
+nav {
+  background-color: var(--cody-blue);
+  padding: 10px 15px;
   display: flex;
-  gap:1em;
+  justify-content: flex-end;
+  gap: 1em;
+  margin: 0;
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 3;
 }
 
-main{
+nav a {
+  color: var(--cody-white);
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  background: var(--cody-green);
+  background-image: url("../images/4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  font-size: x-large;
+  max-width: 70%;
+  z-index: 1;
+}
+
+.card-background {
+  position: absolute;
+  width: 100%;
+  height: 105%;
+  inset: 0;
+  margin: auto;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.card img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+h1 {
+  color: var(--cody-yellow);
+  font-size: 2em;
+  margin: 0.5em;
+}
+
+main {
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+  margin: 0 auto;
+  width: 100%;
 }
 
-section{
-  margin-top: 3rem;
+section {
+  display: flex;
+  justify-content: center;
+  min-height: 95vh;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
+span {
+  color: var(--cody-yellow);
+  font-weight: bold;
+}
+
+.section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+}
+
+.paragraph {
+  width: 60%;
+  margin: 3em;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.paragraph header,
+.colaborar-card header {
+  color: var(--cody-green);
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Schoolbell", cursive;
+}
+
+.mis-vacaciones-p {
+  text-align: right;
+}
+
+.cursos {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: var(--cody-green);
+  background-image: url("../images/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.glass-background {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.curso {
+  border-radius: 12px;
   max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  padding: 1em;
+  font-size: 2em;
 }
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
+
+#ruta-de-aprendizaje .paragraph {
+  display: flex;
+  align-items: flex-end;
 }
-ul li{
-  text-align: left;
+
+.herramientas {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cody-green);
+  color: white;
+  background-image: url("../images/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  padding: 0 1em;
+  color: initial;
+  margin: 0;
+}
+ul li {
+  text-align: center;
+  padding: 1em;
+  margin: 0.5em 0;
+  border-radius: 12px;
+  font-size: 1.8em;
 }
 ul li::marker {
-  content: "🚀";
+  content: "";
 }
 
-ol li{
+#colaborar .section-content {
+  background-image: url("../images/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  flex-direction: column;
+}
+
+.colaborar-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: inherit;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  height: 100%;
+}
+
+.como-colaborar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.8em;
+}
+
+.como-colaborar-card {
+  margin: 15px;
+  padding: 1.5em;
+  text-align: justify;
+}
+
+#fotos .section-content {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.fotos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+#fotos .paragraph {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.fotos img {
+  max-width: 30%;
+  display: inline-block;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.beneficios {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-image: url("../images/4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#vacaciones-importancia .section-content {
+  background: var(--cody-green);
+}
+
+#vacaciones-importancia header {
   text-align: left;
+  color: var(--cody-white);
+}
+
+ol {
+  max-width: 80%;
+}
+
+ol li {
+  text-align: left;
+  margin: 1.5em 0;
+  font-size: 1.8em;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-content {
+    flex-direction: column;
+  }
+
+  .paragraph {
+    width: 80%;
+    margin: 1em;
+  }
+
+  .cursos {
+    width: 100%;
+    height: auto;
+  }
+
+  #ruta-de-aprendizaje .section-content {
+    flex-direction: column-reverse;
+  }
+
+  .herramientas {
+    width: 100%;
+    height: auto;
+  }
+
+  #colaborar {
+    margin-top: 2em;
+  }
+
+  .como-colaborar {
+    flex-direction: column;
+  }
+
+  .como-colaborar-card {
+    padding: 0 1em;
+  }
+
+  #fotos header {
+    margin-top: 0;
+  }
+
+  #fotos .paragraph {
+    margin-top: 0;
+  }
+
+  .fotos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fotos img {
+    max-width: 80%;
+  }
+
+  .vermas {
+    width: 80%;
+  }
+
+  .beneficios {
+    width: 100%;
+  }
+}
+
+.fotos-content {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.fotos-content h2 {
+  font-size: 2em;
+  color: var(--cody-green);
+  margin-top: 2em;
+}
+
+.fotos-background {
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotos-img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.fotos-img img {
+  transition: transform 0.5s ease-in-out;
+  max-width: 30%;
+  display: inline-block;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.fotos-img img:hover {
+  transform: scale(1.2) rotate(-25deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .fotos-img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fotos-img img {
+    max-width: 80%;
+    margin: 1em 0;
+  }
 }
