@@ -1,13 +1,27 @@
 :root {
   --fonts: "Raleway", sans-serif;
   --color_btn: #049e42;
+  --color_card: #28a159;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--fonts);
   font-size: 18px;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+img {
+  width: 100%;
+}
+
+::after,
+::before {
+  box-sizing: border-box;
 }
 
 h1,
@@ -31,17 +45,26 @@ a {
 /* Hero Image */
 .hero {
   height: 100vh;
-  width: 100%;
-  /* border: 1px solid red; */
+  /* width: 100%; */
   text-align: center;
+  /* display: flex;
+  /* flex-direction: column; */
+  /* align-items: center;
+  justify-content: center; */
+  /* position: relative; */
+  display: grid;
+  /* gap: 10px; */
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  /* position: relative; */
+}
+
+.hero__item {
+  /* border: 3px solid orange; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
-}
-
-.hero__content {
-  padding: 0 10px;
+  align-items: center;
+  padding: 20px;
 }
 
 .hero__title {
@@ -51,13 +74,13 @@ a {
 
 .hero__ilustration {
   /* border: 2px solid purple; */
-  margin: auto;
-  width: 400px;
+  /* margin: auto; */
+  width: 100%;
 }
 
 .hero__btn {
   display: inline-block;
-  margin: auto;
+  /* margin: auto; */
   padding: 20px;
   border: none;
   font-family: var(--fonts);
@@ -74,4 +97,122 @@ a {
   background-color: transparent;
   border: 2px solid var(--color_btn);
   color: black;
+}
+
+/* Navigator Bar */
+
+.container-navigator {
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  /* border: 2px solid orange; */
+  /* width: 100%; */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navigator-bar {
+  /* width: 100%; */
+  /* border: 2px solid red; */
+  box-shadow: 0px 0px 10px gray;
+  background-color: white;
+  margin-left: 15px;
+  border-radius: 5px;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.5s all ease-in-out;
+}
+
+.navigator-bar__icon {
+  width: 30px;
+  padding: 4px;
+}
+
+.btn-bar {
+  display: block;
+  /* border: 2px solid green; */
+  margin: 15px;
+  box-shadow: 0px 0px 10px gray;
+  /* margin: 0 10px; */
+  border: none;
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-image: url("../images/bx-menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Cursos */
+
+.cursos__card {
+  border: 5px solid var(--color_card);
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Utily */
+
+.fotos {
+  margin-top: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+}
+
+.title {
+  font-family: var(--fonts);
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.title::before {
+  content: " ";
+  position: absolute;
+  border-top: 0.5rem solid black;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+}
+
+.subtitle {
+  font-family: var(--fonts);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.active-navbar {
+  opacity: 1;
+}
+
+.active-btn {
+  background-image: url("../images/bx-x.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
 }

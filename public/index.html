@@ -15,39 +15,52 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <section class="hero">
-      <div class="hero__content">
+    <div class="hero">
+      <div class="hero__item">
         <img
           src="./images/undraw_aircraft_fbvl.svg"
           alt=""
-          class="hero__ilustration hidden"
+          class="hero__ilustration"
         />
+      </div>
+      <div class="hero__item">
         <h1 class="hero__title">Estas son mis Vacaciones</h1>
         <p class="hero_text">
           Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para
           desestresarme del código, y en esta página quiero compartirlo contigo.
         </p>
         <a
-          href="#"
+          href="#started"
           class="hero__btn"
           name="Hora de Viajar"
           aria-label="Hora de Viajar"
           >Hora de viajar</a
         >
       </div>
-    </section>
+    </div>
 
-    <!-- <nav class="navigator-bar navigator-bar--fixed">
-      <a href="/"><img src="./images/home-regular-24.png" alt="" /></a>
-      <a href="fotos.html"
-        ><img src="./images/photo-album-solid-24.png" alt=""
-      /></a>
-    </nav> -->
+    <div class="container-navigator fixed">
+      <nav class="navigator-bar hidden">
+        <a href="./index.html"
+          ><img src="./images/bxs-home.svg" alt="" class="navigator-bar__icon"
+        /></a>
+        <a href="fotos.html"
+          ><img
+            src="./images/bxs-photo-album.svg"
+            alt=""
+            class="navigator-bar__icon"
+        /></a>
+      </nav>
+      <button class="btn-bar"></button>
+      <!-- <button class="btn-bar--close hidden">
+        <img src="./images/bx-menu.svg" alt="" />
+      </button> -->
+    </div>
 
-    <main>
-      <section>
+    <main class="content paragraph">
+      <section id="started">
         <header>
-          <h2>Mis vacaciones Frontend</h2>
+          <h2 class="title">Mis vacaciones Frontend</h2>
         </header>
         <p>
           Durante el verano de 2019, decidí comenzar a aprender desarrollo
@@ -60,11 +73,11 @@
           página
         </p>
         <p>Estos son los cursos que estuve tomando</p>
-        <div class="cursos">
-          <div>
+        <div class="cursos grid-container">
+          <div class="cursos__card" class="cursos__card">
             <p>Curso profesional de Desarrollo Web</p>
           </div>
-          <div>
+          <div class="cursos__card">
             <p>Curso para crear mi primera página web</p>
           </div>
         </div>
@@ -72,7 +85,7 @@
 
       <section>
         <header>
-          <h2>Ruta de aprendizaje 2021</h2>
+          <h2 class="subtitle">Ruta de aprendizaje 2021</h2>
           <p>También me propuse aprender nuevas tecnologías durante 2021</p>
         </header>
         <ul>
@@ -83,9 +96,10 @@
           <li>Entre otros</li>
         </ul>
       </section>
+
       <section>
         <header>
-          <h2>Colabora en mi página</h2>
+          <h2 class="subtitle">Colabora en mi página</h2>
         </header>
         <p>
           Como parte de mi formación Frontend, aprendí acerca de Git y GitHub,
@@ -101,28 +115,31 @@
           <a href="" target="_blank">Ir al tutorial</a>
         </p>
       </section>
+
       <section>
         <header>
-          <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
+          <h2 class="subtitle">
+            Aquí te comparto algunas fotos de mis vacaciones
+          </h2>
           <p>
             ¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto
             algunas fotos que tomé:
           </p>
         </header>
-        <div class="fotos">
+        <div class="grid-container">
           <img src="images/1.jpg" alt="Cody en la playa" />
           <img src="images/2.jpg" alt="Cody acampando" />
           <img src="images/3.jpg" alt="Cody en una alberca" />
-          <p>
-            Puedes ver más, en la galería de fotos de mi página
-            <a href="fotos.html">Ir a la galería</a>
-          </p>
         </div>
+        <p>
+          Puedes ver más, en la galería de fotos de mi página
+          <a href="fotos.html">Ir a la galería</a>
+        </p>
       </section>
 
       <section>
         <header>
-          <h2>La importancia de las vacaciones</h2>
+          <h2 class="title">La importancia de las vacaciones</h2>
           <p>
             Aprender a programar y escribir código, puede ser estresante, por
             eso es muy importante que periódicamente nos desconectemos y
@@ -141,5 +158,7 @@
         </header>
       </section>
     </main>
+
+    <script src="main.js"></script>
   </body>
 </html>

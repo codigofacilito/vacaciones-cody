@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis vacaciones</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+  <body>
+    <div class="container-navigator fixed">
+      <nav class="navigator-bar hidden">
+        <a href="./index.html"
+          ><img src="./images/bxs-home.svg" alt="" class="navigator-bar__icon"
+        /></a>
+        <a href="fotos.html"
+          ><img
+            src="./images/bxs-photo-album.svg"
+            alt=""
+            class="navigator-bar__icon"
+        /></a>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+      <button class="btn-bar"></button>
+      <!-- <button class="btn-bar--close hidden">
+        <img src="./images/bx-menu.svg" alt="" />
+      </button> -->
     </div>
 
-  </main>
-</body>
+    <main>
+      <header>
+        <h2 class="title">Galería completa de mis vacaciones</h2>
+      </header>
+      <div class="fotos grid-container">
+        <img src="images/1.jpg" alt="Cody en la playa" />
+        <img src="images/2.jpg" alt="Cody acampando" />
+        <img src="images/3.jpg" alt="Cody en una alberca" />
+        <img src="images/4.jpg" alt="Cody en una alberca" />
+        <img src="images/5.jpg" alt="Cody en una alberca" />
+        <img src="images/6.jpg" alt="Cody en una alberca" />
+      </div>
+    </main>
 
+    <script src="./main.js"></script>
+  </body>
 </html>
