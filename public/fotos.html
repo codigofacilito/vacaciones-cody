@@ -1,34 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis vacaciones</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+  <body>
+    <main>
+      <nav class="nav">
+        <a class="nav__items--picture" href="./index.html">Inicio</a>
+        <a class="nav__items--picture" href="./fotos.html">Fotos</a>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
-    </div>
+      <h2 class="subtitle">Galería completa de mis vacaciones</h2>
 
-  </main>
-</body>
+      <div class="picture">
+        <div class="picture--item">
+          <img src="images/1.jpg" alt="Cody en la playa" />
+          <div class="picture--action">
+            <a class="picture--link" href="#"
+              >Instagram
+              <i class="picture--icon fab fa-instagram picture__icon"></i>
+            </a>
+          </div>
+        </div>
 
+        <div class="picture--item">
+          <img src="images/2.jpg" alt="Cody acampando" />
+          <div class="picture--action">
+            <a class="picture--link" href="#"
+              >Instagram
+              <i class="picture--icon fab fa-instagram picture__icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="picture--item">
+          <img src="images/3.jpg" alt="Cody en una alberca" />
+          <div class="picture--action">
+            <a class="picture--link" href="#"
+              >Instagram
+              <i class="picture--icon fab fa-instagram picture__icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="picture--item">
+          <img src="images/4.jpg" alt="Cody en una alberca" />
+          <div class="picture--action">
+            <a class="picture--link" href="#"
+              >Instagram
+              <i class="picture--icon fab fa-instagram picture__icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="picture--item">
+          <img src="images/5.jpg" alt="Cody en una alberca" />
+          <div class="picture--action">
+            <a class="picture--link" href="#"
+              >Instagram
+              <i class="picture--icon fab fa-instagram picture__icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="picture--item">
+          <img src="images/6.jpg" alt="Cody en una alberca" />
+          <div class="picture--action">
+            <a class="picture--link" href="#"
+              >Instagram
+              <i class="picture--icon fab fa-instagram picture__icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/5593a0ff38.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,4 +1,4 @@
-# Las Vacaciones de Cody
+# Las Vacaciones de Cody Foo
 Cody está aprendiendo desarrollo Frontend, hizo su primer página, y ahora necesita de tu ayuda para mejorarla.
 
 Envía un pull request rediseñando por completo la página de este repo y participa en el concurso #VeranoFrontend de Código Facilito, las personas en los 5 primeros lugares ganan:
