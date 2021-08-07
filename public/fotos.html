@@ -7,28 +7,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+  <!-- ------- -->
 </head>
 
 <body>
   <main>
-    <header>
+    <header class="mb">
       <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+        <a href="./index.html" class="link">Inicio</a>
+        <a href="fotos.html" class="link">Fotos</a>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
+      <h1>Galería completa de mis vacaciones</h1>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+
+    <div id="galeria" class="displays">
+
+      <div class="polaroidContenedor ">
+        <img class="pictures" src="images/1.jpg" alt="Cody en la playa">
+        <span class="textoPolaroid">Cody en la playa</span>
+      </div>
+      <div class="polaroidContenedor ">
+        <img class="pictures" src="images/2.jpg" alt="Cody en la playa">
+        <span class="textoPolaroid">Cody acampando</span>
+      </div>
+      <div class="polaroidContenedor ">
+        <img class="pictures" src="images/3.jpg" alt="Cody en la playa">
+        <span class="textoPolaroid">Cody en una alberca</span>
+      </div>
+      <div class="polaroidContenedor ">
+        <img class="pictures" src="images/4.jpg" alt="Cody en la playa">
+        <span class="textoPolaroid">Cody en la playa</span>
+      </div>
+      <div class="polaroidContenedor ">
+        <img class="pictures" src="images/5.jpg" alt="Cody en la playa">
+        <span class="textoPolaroid">Cody en Francia</span>
+      </div>
+      <div class="polaroidContenedor ">
+        <img class="pictures" src="images/6.jpg" alt="Cody en la playa">
+        <span class="textoPolaroid">Cody en el Areopuerto</span>
+      </div>
+
     </div>
 
   </main>
+  <script src="./fotos.js"></script>
 </body>
 
 </html>
