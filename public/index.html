@@ -3,55 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"  content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/descarga.jpg"/>
 </head>
 <body>
+  <!-- burbujas --> 
+  <div class="princ">
+    <div class="burbujas">
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+    </div>
+    <!-- nav --> 
+  <nav>
+    <img src="images/descarga.jpg" class="imagenP fadeInDown">
+    <div class="navv fadeInDown">
+      <a href="/">🔅Inicio</a>
+      <a href="fotos.html">📷Fotos</a>
+    </div>
+  </nav>
+  <br>
+ <!-- Wave --> 
+  <div class="mancha Wave">
+  </div>
+</div>
   <main>
+    <!-- Titulo principal --> 
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
+      <h1 class="fadeInDown">°•Estas son mis <b>Vacaciones</b>•°</h1>
+      <br>
+      <div class="txt fadeInDown">
       <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+    </div>
     </header>
-
+    
     <section>
       <header>
-        <h2>Mis vacaciones Frontend</h2>
+        <h2 class="vacaciones-frontend">Mis <b>Vacaciones</b> Frontend</h2>
       </header>
+      <br>
+      <br>
+      <div class="txt2">
       <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
       <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
       <p> Estos son los cursos que estuve tomando </p>
+    </div>
+    <br>
+    <hr class="line">
+    <br>
       <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+        <div id="uno">
+          <p><h2>Curso profesional de Desarrollo Web</h2><br><img src="images/desa2.png"></p>
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+        <div id="dos">
+          <p><h2>Curso para crear mi primera página web</p></h2><br><img src="images/web.png"></p>
         </div>
       </div>
     </section>
-
+    <!-- ruta --> 
     <section>
-      <header>
+      <header class="t3">
         <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+        <br>
+        <p>También me propuse aprender nuevas tecnologías durante 2021</p>
       </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
+      <br>
+      <ul id="UL">
+        <li>  <img src="images/grid.png" id="grid"><br>Flexbox, y Grid </li>
+        <li>  <img src="images/css.png" id="animacion"><br>Animaciones con CSS y JavaScript </li>
+        <li>  <img src="images/ajax.png" id="ajax"><br>AJAX </li>
+        <li>  <img src="images/html4.png" id="html"><br>HTML semántico </li>
+        <li>  <img src="images/mas.png" id="mas"><br>Entre otros </li>
       </ul>
     </section>
-    <section>
+    <!-- github --> 
+    <section class="sectontx">
       <header>
         <h2>Colabora en mi página</h2>
+        <img src="images/github.png"><br>
       </header>
+      <br>
       <p>
         Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
       </p>
@@ -59,42 +99,87 @@
         Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
       </p>
       <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
+        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica<br>
+        <br>
         <a href="" target="_blank" >Ir al tutorial</a>
 
       </p>
     </section>
     <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
+      <header class="txt4">
+        <h2>Aquí te comparto algunas fotos de mis <b>Vacaciones</b></h2>
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
       </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
+      <br>
+      <div class="img-slider">
+        <div class="slide active">
+          <img src="images/1.jpg" alt="">
+          <div class="info">
+            <h2>Foto 1</h2>
+           
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/2.jpg" alt="">
+          <div class="info">
+            <h2>Foto 2</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/3.jpg" alt="">
+          <div class="info">
+            <h2>Foto 3</h2>
+          </div>
+        </div>
+        </div>
+        <div class="navigation">
+          <div class="btn active"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        <p class="txxt">
+          Puedes ver más, en la galería de fotos de mi página<br>
+          <br>
           <a href="fotos.html">Ir a la galería</a>
         </p>
       </div>
     </section>
 
-    <section>
+    <section class="ruta">
       <header>
-        <h2>La importancia de las vacaciones</h2>
+        <h2>La importancia de las <b>Vacaciones</b></h2>
+        <br>
         <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
         <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
+        <br>
+        <br>
+        <ol id="ruta-aprendizaje">
+          <li><img src="images/mental-health.png" alt="salud-ental"><br>Mejora la salud mental</li>
+          <li><img src="images/moti.png" alt="motivacion"><br>Incrementa la motivación</li>
+          <li><img src="images/EX.png" alt="burnout"><br>Reduce el burnout</li>
+          <li><img src="images/cre.png"><br>Mejora tu productividad y creatividad</li>
         </ol>
       </header>
       
     </section>
-    
+      <footer>
+        <div class="redes">
+        <img src="images/twitter.png">
+        <img src="images/github.png">
+        <h1>Creado por Breyner Rojano</h1>
+        </div>
+        
+      </footer>
   </main>
+  <script src="scrollreveal.js"></script>
+  <script src="funct.js"></script>
 </body>
 </html>
