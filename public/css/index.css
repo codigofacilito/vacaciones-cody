@@ -613,7 +613,20 @@ h3 {
   padding-bottom: 2rem;
   margin-top: -30px;
   padding-inline: 5%;
+  position: relative;
   color: whitesmoke; }
+  .salud .background-image {
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    position: absolute;
+    filter: invert(1) brightness(0.2);
+    object-fit: cover; }
+  .salud img {
+    filter: brightness(0.7); }
+  .salud .text {
+    position: relative; }
   .salud h2 {
     margin-bottom: 1.5rem; }
   .salud p {
@@ -624,12 +637,11 @@ h3 {
       font-size: 1.2rem;
       margin-bottom: 0.5rem; }
 
-
 @keyframes bici {
   from {
     transform: translateX(600%); }
   to {
-    transform: translateX(0%); } }
+    transform: translateX(-200%); } }
 
 @keyframes shake {
   0% {
@@ -673,7 +685,6 @@ footer {
       color: var(--whitesmoke); }
   footer .copy {
     background-color: var(--dark-blue);
-    border-top: 1px solid var(--white);
     color: var(--whitesmoke);
     padding-block: .5rem;
     text-align: center; }

@@ -11,14 +11,17 @@ function inThisPagePosition() {
     }
   });
 }
+
 todo__sin_navbar.addEventListener("scroll", () => {
-  const currentScroll =
-    todo__sin_navbar.scrollTop + todo__sin_navbar.offsetHeight;
+  const currentScroll = todo__sin_navbar.scrollTop + todo__sin_navbar.offsetHeight;
+  const img_container = document.querySelector(".img-container-cody-bici");
+  const img = document.querySelector(".img-container-cody-bici img");
   if (currentScroll > document.getElementById("salud").offsetTop) {
-    const img_container = document.querySelector(".img-container-cody-bici");
-    const img = document.querySelector(".img-container-cody-bici img");
-    img_container.style.animation = "shake 2s ease-in-out normal";
-    img.style.animation = "bici 2s linear forwards normal";
+    img_container.style.animation = "shake 6s ease-in-out normal";
+    img.style.animation = "bici 6s linear forwards normal";
+  } else {
+    img_container.style.animation = "none";
+    img.style.animation = "none";
   }
 });
 
@@ -31,8 +34,8 @@ function crearSlider() {
   const arrowPrevious = document.querySelector(".arrow.back");
   const slider = new Slider(scrolleable, images.length, 0);
 
-  arrowNext.addEventListener('click', () => slider.next());
-  arrowPrevious.addEventListener('click', () => slider.previous())
+  arrowNext.addEventListener("click", () => slider.next());
+  arrowPrevious.addEventListener("click", () => slider.previous());
 }
 
 crearSlider();
