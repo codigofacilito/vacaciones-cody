@@ -85,6 +85,21 @@
       
     }
   </script>
+  <script>
+    var boton = document.getElementById('menu-btn-2');
+    var AbiertoCerrado = document.getElementById('sidemenu');
+    boton.addEventListener('click', cambiarClases);
+
+    function cambiarClases (){
+      console.log(AbiertoCerrado.className);
+      if(AbiertoCerrado.className === 'menu-cerrado'){
+        AbiertoCerrado.className = 'menu-abierto';
+      }else{
+        AbiertoCerrado.className = 'menu-cerrado';
+      }
+      
+    }
+  </script>
   <script type="text/javascript" src="./assets/lightbox-plus-jquery.js"></script>
 </body>
 </html>
