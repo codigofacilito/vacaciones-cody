@@ -31,14 +31,14 @@ Asegúrate de haber habilitado GitHub Actions y GitHub Pages, y que la rama de G
 ## Cambios implementados
 Los cambios cuando los subi, los hice desde mi cuenta alterna ya que no se como hacer logout de esa cuenta en mi laptop :'c
 
-#Pagina principal de Cody
+# Pagina principal de Cody
 
-![imagen1](./images/Captura1.PNG)
-![imagen2](./images/Captura2.PNG)
+![imagen1](.public/images/Captura1.PNG)
+![imagen2](.public/images/Captura2.PNG)
 
 #Ruta de aprendizaje
-![imagen3](./images/Captura3.PNG)
+![imagen3](.public/images/Captura3.PNG)
 #Slideshow de las fotos de las vacaciones de Cody
-![imagen4](./images/Captura4.PNG)
+![imagen4](.public/images/Captura4.PNG)
 #Creditos de la pagina
-![imagen5](./images/Captura5.PNG)
+![imagen5](.public/images/Captura5.PNG)
