@@ -51,9 +51,7 @@ a {
   /* flex-direction: column; */
   /* align-items: center;
   justify-content: center; */
-  /* position: relative; */
   display: grid;
-  /* gap: 10px; */
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   /* position: relative; */
 }
@@ -65,17 +63,12 @@ a {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  /* width: 100%; */
 }
 
 .hero__title {
   font-weight: 700;
   font-size: 2rem;
-}
-
-.hero__ilustration {
-  /* border: 2px solid purple; */
-  /* margin: auto; */
-  width: 100%;
 }
 
 .hero__btn {
