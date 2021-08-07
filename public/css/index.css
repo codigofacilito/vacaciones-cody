@@ -1,0 +1,409 @@
+/*************************************************/
+/************ DISEÑOS CLASES GENERALES ************/
+/*************************************************/
+.white_title {
+  color: var(--white-title-font-color);
+}
+
+.white_paragraph {
+  color: var(--white-paragraph-font-color);
+}
+
+.black_title {
+  color: var(--black-title-font-color);
+}
+
+.black_paragraph {
+  color: var(--black-paragraph-font-color);
+}
+
+.componente {
+  min-height: min(600px, 70vh);
+  padding: 1rem;
+  margin-bottom: 5rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.componente > * {
+  width: min(500px, 100%);
+  padding: 1rem;
+  box-sizing: border-box;
+  font-size: max(20px, 1rem);
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.componente > div > img {
+  width: 100%;
+}
+
+.boton {
+  background-color: var(--backcolor-button);
+  padding: 1rem;
+  width: 100%;
+  margin: 0.5rem;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 7px #bfbfbf;
+  
+  background-image: linear-gradient(#fbfafa64, #fbfafa64);
+  background-repeat: no-repeat;
+  background-size: 10% 100%;
+  background-position-x: 111%;
+  
+  color: #fff;
+  text-decoration: none;
+}
+
+.boton:hover {
+  font-weight: bold;
+  box-shadow: none;
+  transition: 1s;
+
+  animation-name:  relucir;
+  animation-duration: 0.3s;
+}
+
+@keyframes relucir {
+  to {
+    background-position-x: -10%;
+  }
+}
+
+
+
+
+
+/************************************************/
+/****** SECCION "Estas son mis vacaciones" ******/
+/************************************************/
+.inicio {
+  background-color: var(--backcolor-header-inicio);
+}
+
+.inicio__info {
+  padding-top: 0;
+}
+
+.inicio__imagen img {
+  max-width: min(300px, 80%);
+  --border-shadow-cody: 3px;
+  
+  filter: drop-shadow(var(--border-shadow-cody) 0px 0 white)
+  drop-shadow(calc(var(--border-shadow-cody) * -1) 0px 0 white)
+  drop-shadow(0px var(--border-shadow-cody) 0 white)
+  drop-shadow(0px calc(var(--border-shadow-cody) * -1) 0 white);
+
+  -webkit-filter: drop-shadow(var(--border-shadow-cody) 0px 0 white)
+  drop-shadow(calc(var(--border-shadow-cody) * -1) 0px 0 white)
+  drop-shadow(0px var(--border-shadow-cody) 0 white)
+  drop-shadow(0px calc(var(--border-shadow-cody) * -1) 0 white);
+}
+
+.inicio__flecha_siguiente_seccion a {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin: 0;
+  height: auto;
+  width: 50%;
+  background-color: #ffffff05;
+
+  display: flex;
+  justify-content: center;
+}
+
+.inicio__flecha_siguiente_seccion a img {
+  width: 2.5rem;
+  color: white;
+}
+
+.inicio__flecha_siguiente_seccion a:active {
+  background-color: none;
+}
+
+
+
+
+/************************************************/
+/****** SECCION "Mis vacaciones frontend" ******/
+/************************************************/
+.cursos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+
+/************************************************/
+/****** SECCION "Ruta de aprendizaje 2021" ******/
+/************************************************/
+.lista_tecnologias li {
+  width: 100%;
+  min-height: 3rem;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.lista_tecnologias li a {
+  width: 100%;
+  height: 100%;
+  
+  box-sizing: border-box;
+  padding: 0.5rem;
+  text-decoration: none;
+  text-align: left;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background-image: linear-gradient(#333, #333);
+  background-repeat: no-repeat;
+  background-size: 0% 0.2rem;
+  background-position-y: bottom;
+  
+  color: #606060;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.lista_tecnologias li a:hover {
+  transition: 1s;
+  background-size: 100% 0.2rem;
+}
+
+.lista_tecnologias li img {
+  width: 30px;
+  background-color: blue;
+  border-radius: 100%;
+  padding: 0.7rem;
+}
+
+.lista_tecnologias li img[src*="flex-grid"] {
+  background-color: #2175FF;
+}
+
+.lista_tecnologias li img[src*="animaciones"] {
+  background-color: #5CB3FF;
+}
+
+.lista_tecnologias li img[src*="ajax"] {
+  background-color: #6051D2;
+}
+
+.lista_tecnologias li img[src*="html5"] {
+  background-color: #273195;
+}
+
+.lista_tecnologias li img[src*=isotipo] {
+  width: calc(50px);
+  padding: 0;
+}
+
+
+
+
+/*******************************************************/
+/*********** SECCION "Colabora en mi pagina" ***********/
+/*******************************************************/
+.tarjeta_repositorio_cody {
+  --height-component: 80px;
+
+  background-color: #fff;
+  box-shadow: 2px 2px 5px #c7c7c7;
+  height: var(--height-component);
+  width: 100%;
+  margin: 40px 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-rows: var(--height-component);
+  grid-template-columns: 100px 1fr;
+}
+
+.tarjeta_repositorio_cody__avatar {
+  height: 100%;
+}
+
+.tarjeta_repositorio_cody__info {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta_repositorio_cody__info p {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.tarjeta_repositorio_cody__info a {
+  color: #757575;
+}
+
+.tarjeta_codyrepositorio__info a:visited {
+  color: #9d9d9d;
+}
+
+
+
+
+/*******************************************************/
+/****** SECCION "Algunas fotos de mis vacaciones" ******/
+/*******************************************************/
+.seccion_fotos_info {
+  width: 100%;
+}
+
+.seccion_fotos_imagenes {
+  width: 100%;
+
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 430px));
+}
+
+.seccion_fotos_imagenes > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+
+  box-shadow: 1px 1px 3px #c2c2c2b3;
+}
+
+.seccion_fotos_imagenes img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.seccion_fotos_imagenes div div {
+  background-color: white;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 58%;
+  left: 53%;
+  padding: 10px;
+  box-sizing: border-box;
+  transform: rotate(-45deg);
+}
+
+.seccion_fotos_imagenes div div p {
+  font-weight: bold;
+  color: #333;
+  filter: opacity(0.7);
+  text-align: center;
+}
+
+
+
+
+/********************************************************/
+/****** SECCION "La importancia de las vacaciones" ******/
+/********************************************************/
+.beneficios_descansar {
+  height: 500px;
+  width: 100%;
+
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.beneficios_descansar li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.beneficios_descansar li p {
+  text-align: left;
+  margin: 0;
+
+  font-weight: bold;
+  color: var(--black-paragraph-font-color);
+}
+
+.beneficios_descansar li div {
+  width: 50px;
+  height: 50px;
+  background-color: var(--backcolor-header-inicio);
+  border-radius: 100%;
+  padding: 0.7rem;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beneficios_descansar li div svg {
+  height: 30px;
+  width: 30px;
+}
+
+
+
+
+
+
+/********************************************************/
+/******************** MEDIA QUERIES *********************/
+/********************************************************/
+@media (max-width: 1065px) {
+  .componente_invertido > :first-child {
+    order: 1;
+  }
+
+  .lista_tecnologias li a,
+  .boton {
+    box-shadow: 3px 3px 10px rgba(51, 51, 51, 0.231);
+  }
+
+  .lista_tecnologias li a {
+    border-radius: 5px;
+  }
+
+  .seccion_fotos_imagenes div div {
+    transform: rotate(0deg);
+    top: 80%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+  }
+  
+  .seccion_fotos_imagenes div div p {
+    font-size: medium;
+    height: 100%;
+    padding: min(1rem, 1%);
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* MENU HAMBURGUESA */
+}

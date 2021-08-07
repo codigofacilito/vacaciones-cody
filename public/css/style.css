@@ -2,6 +2,7 @@
   --backcolor-main: #fff;
   --backcolor-nav: #fff;
   --backcolor-header-inicio: #000839;
+  --backcolor-header-inicio: #00275a;
 
   --backcolor-button: #FFA41B;
 
@@ -20,12 +21,6 @@
 
 
 
-
-
-
-
-
-
 /******* SETEO DE ESTILOS ELEMENTOS PRINCIPALES *******/
 * { 
   margin: 0;
@@ -34,7 +29,11 @@
   cursor: url(./../images/puntero.png), auto;
 }
 
-a {
+a,
+a *,
+.fotos__tarjeta_foto,
+.fotos__tarjeta_foto *,
+.modal__componente-info-loved label svg {
   cursor: url(./../images/puntero_selecting.png), auto;
 }
 
@@ -62,108 +61,14 @@ main {
 
 
 
-
-
-
-
-/*************************************************/
-/************ DISEÑOS CLASES GENRALES ************/
-/*************************************************/
-.white_title {
-  color: var(--white-title-font-color);
-}
-
-.white_paragraph {
-  color: var(--white-paragraph-font-color);
-}
-
-.black_title {
-  color: var(--black-title-font-color);
-}
-
-.black_paragraph {
-  color: var(--black-paragraph-font-color);
-}
-
-.componente {
-  /* border: 2px solid red; */
-  min-height: min(600px, 70vh);
-  padding: 1rem;
-  margin-bottom: 5rem;
-
-  display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.componente > * {
-  /* border: 2px solid goldenrod; */
-  width: min(500px, 100%);
-  padding: 1rem;
-  box-sizing: border-box;
-  font-size: max(20px, 1rem);
-
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.componente > div > img {
-  width: 100%;
-}
-
-.boton {
-  background-color: var(--backcolor-button);
-  padding: 1rem;
-  width: 100%;
-  margin: 0.5rem;
-  border-radius: 8px;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 7px #bfbfbf;
-  
-  background-image: linear-gradient(#fbfafa64, #fbfafa64);
-  background-repeat: no-repeat;
-  background-size: 10% 100%;
-  background-position-x: 111%;
-}
-
-.boton a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.boton:hover {
-  font-weight: bold;
-  box-shadow: none;
-  transition: 1s;
-
-  animation-name:  relucir;
-  animation-duration: 0.3s;
-}
-
-@keyframes relucir {
-  to {
-    background-position-x: -10%;
-  }
-}
-
-
-
-
-
-
-
 /************************************************/
 /*************** SECCION NAVIGATOR **************/
 /************************************************/
 .navegacion {
   background-color: var(--backcolor-nav);
   padding: 1rem;
+  height: 70px;
+  box-sizing: border-box;
   
   display: flex;
   justify-content: space-between;
@@ -190,8 +95,64 @@ main {
 .menu {
   display: flex;
   justify-content: space-between;
-  width: 170px;
+  min-width: 170px;
   padding: 0 1% 0 0;
+  /* border: 1px solid red; */
+}
+
+
+/* MENU HAMBURGUESA */
+.menu__checkbox {
+  display: none;
+}
+
+.menu__icono_checkbox {
+  width: 40px;
+  height: 40px;
+  color: black;
+  display: none;
+}
+
+.menu__icono_checkbox img {
+  width: 100%;
+  height: 100%;
+}
+
+/* QUERY DE MENU HAMBURGUESA */
+@media (max-width: 1064px) {
+  .menu {
+    min-width: 0;
+  }
+
+  .menu__icono_checkbox {
+    display: block;
+  }
+
+  .menu__items {
+    background-color: #f3f3f3;
+
+    position: fixed;
+    width: 50vw;
+    height: calc(100vh - 70px);
+    bottom: 0;
+    right: -50vw;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+
+  .menu__items a {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    background-image: none;
+  }
+
+  .menu__checkbox:checked ~ .menu__items {
+    right: 0;
+  }
 }
 
 
@@ -218,7 +179,6 @@ main {
 
 .menu__enlace:hover {
   background-image: linear-gradient(var(--backcolor-header-inicio), var(--backcolor-header-inicio));
-  /* background-color: #fff; */
   transition: 0.3s;
   background-size:  100% 10%;
 }
@@ -226,201 +186,114 @@ main {
 
 
 
-
-
-
-
-
-
-/************************************************/
-/****** SECCION "Estas son mis vacaciones" ******/
-/************************************************/
-.inicio {
+/********************************************************/
+/**************** SECCION "Pie de pagina" ***************/
+/********************************************************/
+.pie_pagina {
   background-color: var(--backcolor-header-inicio);
-}
-
-.inicio__info {
-  padding-top: 0;
-}
-
-.inicio__imagen img {
-  max-width: min(300px, 80%);
-  --border-shadow-cody: 3px;
-  
-  filter: drop-shadow(var(--border-shadow-cody) 0px 0 white)
-  drop-shadow(calc(var(--border-shadow-cody) * -1) 0px 0 white)
-  drop-shadow(0px var(--border-shadow-cody) 0 white)
-  drop-shadow(0px calc(var(--border-shadow-cody) * -1) 0 white);
-
-  -webkit-filter: drop-shadow(var(--border-shadow-cody) 0px 0 white)
-  drop-shadow(calc(var(--border-shadow-cody) * -1) 0px 0 white)
-  drop-shadow(0px var(--border-shadow-cody) 0 white)
-  drop-shadow(0px calc(var(--border-shadow-cody) * -1) 0 white);
-}
-
-.inicio__flecha_siguiente_seccion a {
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
-  margin: 0;
-  height: auto;
-  width: 50%;
-  background-color: #ffffff05;
-
-  display: flex;
-  justify-content: center;
-}
-
-.inicio__flecha_siguiente_seccion a img {
-  width: 2.5rem;
-  /* height: 100%; */
-  /* border: 1px solid red; */
+  margin-bottom: 0;
   color: white;
+  padding-top: 0.3rem;
 }
 
-.inicio__flecha_siguiente_seccion a:active {
-  /* background-color: #ffffff10; */
-  background-color: none;
-}
-
-
-
-
-
-
-
-
-
-/************************************************/
-/****** SECCION "Mis vacaciones frontend" ******/
-/************************************************/
-.cursos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-
-
-
-
-
-
-
-
-
-
-/************************************************/
-/****** SECCION "Ruta de aprendizaje 2021" ******/
-/************************************************/
-.lista_tecnologias {
-  /* border: 1px solid rebeccapurple; */
-}
-
-.lista_tecnologias li {
-  /* border: 1px solid black; */
-  width: 100%;
-  min-height: 3rem;
-  margin-bottom: 1rem;
-  list-style: none;
-}
-
-.lista_tecnologias li a {
-  width: 100%;
-  height: 100%;
-  
-  box-sizing: border-box;
-  padding: 0.5rem;
-  text-decoration: none;
-  /* border: 1px solid red; */
-  text-align: left;
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-  background-image: linear-gradient(#333, #333);
-  background-repeat: no-repeat;
-  background-size: 0% 0.2rem;
-  background-position-y: bottom;
-  
-  color: #606060;
-  font-family: sans-serif;
-  font-weight: bold;
-}
-
-.lista_tecnologias li a:hover {
-  transition: 1s;
-  background-size: 100% 0.2rem;
-}
-
-.lista_tecnologias li img {
-  width: 30px;
-  background-color: blue;
-  border-radius: 100%;
-  padding: 0.7rem;
-}
-
-.lista_tecnologias li img[src*="flex-grid"] {
-  background-color: #2175FF;
-}
-
-.lista_tecnologias li img[src*="animaciones"] {
-  background-color: #5CB3FF;
-}
-
-.lista_tecnologias li img[src*="ajax"] {
-  background-color: #6051D2;
-}
-
-.lista_tecnologias li img[src*="html5"] {
-  background-color: #273195;
-}
-
-.lista_tecnologias li img[src*=isotipo] {
-  width: calc(50px);
-  padding: 0;
-}
-
-
-
-
-
-
-
-
-
-/************************************************/
-/****** SECCION "Colabora ccon mi pagina" ******/
-/************************************************/
-
-
-
-
-
-
-.fotos img {
-  max-width: 90%;
+.pie_pagina > *:not(.pie_pagina__develop_by) {
   display: inline-block;
 }
 
+.pie_pagina__develop_by {
+  width: 100%;
+  height: 1rem;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pie_pagina__develop_by p {
+  margin: 0;
+  text-align: center;
+}
 
 
+.pie_pagina__developers,
+.pie_pagina__creditos,
+.pie_pagina__agradecimiento {
+  width: min(400px, 100%);
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.pie_pagina__developers-card_gabriel,
+.pie_pagina__developers-card_cody {
+  /* min-height: 120px; */
+  width: min(350px, 100%);
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px #001939;
+  margin-bottom: 20px;
+
+  background-color: #fff;
+  color: #333;
+
+  display: flex;
+}
+
+.pie_pagina__developers-card_gabriel img,
+.pie_pagina__developers-card_cody img {
+  height: 100%;
+  width: min(100px, 38%);
+  box-sizing: border-box;
+  border-radius: 0 0 500px 0;
+}
+
+.pie_pagina__developers-card_gabriel > address,
+.pie_pagina__developers-card_cody > address {
+  padding: 10px;
+  text-align: left;
+  box-sizing: border-box;
+  width: max(7rem, 60%);
+  width: 60%;
+}
+
+.pie_pagina__developers-card_gabriel > address > h2,
+.pie_pagina__developers-card_cody > address > h2 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
+
+.pie_pagina__developers-card_gabriel > address > p,
+.pie_pagina__developers-card_cody > address > p {
+  font-size: 11px;
+  margin: 0;
+  word-wrap: break-word !important;
+  box-sizing: border-box;
+  max-width: max(100%);
+  margin-bottom: 2px;
+  color: gray;
+} 
 
 
+.pie_pagina__developers-card_gabriel > address > [class*="redes"],
+.pie_pagina__developers-card_cody > address > [class*="redes"] {
+  display: flex;
+  margin-top: 10px;
+}
 
+.pie_pagina__developers-card_gabriel > address > [class*="redes"] > a,
+.pie_pagina__developers-card_cody > address > [class*="redes"] > a {
+  color: #000839;
+  font-size: 10px;
+  
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  text-decoration: none;
 
-
-
-/* MEDIA QUERIES */
-@media (max-width: 1065px) {
-  .componente_invertido > :first-child {
-    order: 1;
-  }
-
-  .lista_tecnologias li a {
-    box-shadow: 3px 3px 10px rgba(51, 51, 51, 0.231);
-    border-radius: 5px;
-  }
-
-  /* MENU HAMBURGUESA */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,0 +1,170 @@
+/***********************************/
+/********* SECCION "FOTOS" *********/
+/***********************************/
+header {
+    padding: 15px;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.fotos {
+    padding: min(3rem, 3%);
+    box-sizing: border-box;
+    margin-bottom: 50px;
+
+
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.fotos__tarjeta_foto {
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+
+
+
+
+/***************************************/
+/******* SECCION "Modal de Foto" *******/
+/***************************************/
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+
+    background-color: #33333366;
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__componente {
+    width: 80vw;
+    height: 80vh;
+    border: 3px solid white;
+    background-color: #fff;
+    border-radius: 5px;
+
+    display: flex;
+}
+
+.modal__componente-foto {
+    width: 70%;
+    height: 100%;
+
+    /* border: 1px solid blue; */
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__componente-foto img {
+    width: 100%;
+}
+
+.modal__componente-info {
+    background-color: transparent;
+    width: 30%;
+    padding: 1rem;
+    position: relative;
+}
+
+.modal__componente-info * {
+    padding: 0.5rem;
+}
+
+.modal__componente-info-titulo {
+    color: rgb(76, 76, 76);
+}
+
+.modal__componente-info-descripcion {
+    color: #5d5d5d;
+}
+
+.modal__componente-info-ubicacion {
+    color: #b8b8b8;
+}
+
+.modal__componente-info-loved {
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Reaccion me encanta (Corazon) */
+.modal__componente-info-loved {
+    /* border: 2px solid red; */
+    padding: 0;
+}
+
+.modal__componente-info-loved input[type="checkbox"] {
+    /* display: none; */
+}
+
+.modal__componente-info-loved label {
+    /* border: 1px solid red; */
+    padding: 0;
+}
+
+.modal__componente-info-loved label svg {
+    /* border: 1px solid red; */
+    width: 30px;
+}
+
+.modal__componente-info-loved input {
+    display: none;
+}
+
+.modal__componente-info-loved input[type="checkbox"]:checked ~ label svg[id*="empty"],
+.modal__componente-info-loved input[type="checkbox"]:not(input:checked) ~ label svg[id*="full"]  {
+    display: none;
+}
+
+
+
+
+
+/***************************************/
+/************ MEDIA QUERIES ************/
+/***************************************/
+@media (max-width: 900px) {
+    .modal__componente {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal__componente-foto,
+    .modal__componente-info {
+        height: 50%;
+        width: 100%;
+    }
+
+    .modal__componente-info {
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .modal__componente-info p {
+        font-size: 12px;
+    }
+}
