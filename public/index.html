@@ -5,96 +5,184 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+  
+  <header class="cabecera">
+    <div class="contenedor">
+      <nav class="nav">
+        <a href="index.html" class="nav__item">Inicio</a>
+        <a href="fotos.html" class="nav__item">Galería</a>
       </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
-
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+      <section class="cabecera__contenedor">
+        <div class="cabecera__texto">
+          <h1 class="cabecera_titulo">Estas son mis Vacaciones</h1>
+          <p class="cabecera_parrafos">Soy Cody, un aspirante a Dev, en 2021, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+      </section>
+    </div>         
+    <div class="cabecera_wave" style="overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+  </header>
+  <main>  
+    <section class="vacaciones_frontend contenedor">
+      <h2 class="subtitulo">Mis vacaciones Frontend</h2>
+      <div class="sobre_vacaciones">
+        <div class="sobre_contenedor">
+          <p class="parrafos"> Durante el verano de 2021, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript. Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página.
+        </div>  
+        <div class="sobre_cursos">
+          <h3 class=" subtitulo3"> Estos son los cursos que estuve tomando</h3>
+          <div class="curso">
+            <p>Curso profesional de Desarrollo Web</p>
+          </div>
+          <div class="curso curso--derecha">
+            <p>Curso para crear mi primera página web</p>
         </div>
       </div>
     </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+    <section class="aprendizaje">
+      <div class="contenedor">
+        <h2 class="subtitulo">Ruta de aprendizaje 2021</h2>
+        <p class="parrafos"> También me propuse aprender nuevas tecnologías durante 2021</p>
+        <div class="card_contenedor">
+          <div class="card_item">
+            <figure class="card_img">
+              <img src="images/grid.svg" alt="Flexbox y Grid" class="card_picture">
+            </figure>
+            <h3 class="card_title">Flexbox y Grid</h3>
+          </div>
 
-      </p>
+          <div class="card_item">
+            <figure class="card_img">
+              <img src="images/javascript.svg" alt="JavaScript" class="card_picture">
+            </figure>
+            <h3 class="card_title">Animaciones con CSS y JavaScript</h3>
+          </div>
+
+          <div class="card_item">
+            <figure class="card_img">
+              <img src="images/ajax.svg" alt="AJAX" class="card_picture">
+            </figure>
+            <h3 class="card_title">AJAX</h3>
+          </div>
+
+          <div class="card_item">
+            <figure class="card_img">
+              <img src="images/html.svg" alt="HTML semántico" class="card_picture">
+            </figure>
+            <h3 class="card_title">HTML semántico</h3>
+          </div>
+
+          <div class="card_item">
+            <figure class="card_img">
+              <img src="images/otros.svg" alt="Otras tecnolagías" class="card_picture">
+            </figure>
+            <h3 class="card_title">Entre otros</h3>
+          </div>
+        </div>
+      </div>
     </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
+    <section class="colaborar contenedor">
+      <div class="cola_text">
+        <h2 class="subtitulo">Colabora en mi página</h2>      
+        <p class="parrafos">
+          Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub. Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+        </p>
+        <p class="parrafos"> 
+          Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica:
         </p>
       </div>
+      <div class="btn">
+        <a href="https://codigofacilito.com/verano/curso" target="_blank" class="btn_copy" >Ir al tutorial</a>
+      </div>
     </section>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
+    <section class="vacaciones">
+      <div class="vaciones_foto contenedor">
+        <h2 class="subtitulo">Aquí te comparto algunas fotos de mis vacaciones</h2>
+        <p class="parrafos">¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:
+        </p>
+        
+        <div class="galery_grid">
+
+          <article class="galery_item">
+            <img src="images/1.jpg" alt="Recorriendo la playa" class="galery_img">
+            <div class="galery_hover">
+              <h2 class="galery_titulo">Recorriendo la playa</h2>
+            </div>
+          </article>
+
+          <article class="galery_item">
+            <img src="images/2.jpg" alt="Acampando en la playa" class="galery_img">
+            <div class="galery_hover">
+              <h2 class="galery_titulo">Acampando en la playa</h2>
+            </div>
+          </article>
+
+          <article class="galery_item">
+            <img src="images/3.jpg" alt="Descansando en la piscina" class="galery_img">
+            <div class="galery_hover">
+              <h2 class="galery_titulo">Descansando en la piscina</h2>
+              <i class="far fan-file-alt galery_icon"></i>
+            </div>
+          </article>       
+        </div>
+
+        <div class="enlece_galery">
+          <p class="parrafos">Puedes ver más, en la galería de fotos de mi página</p>
+          <a href="fotos.html" class="btn_copy --btn">Ir a la galería</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="importancia contenedor">
+        <h2 class="subtitulo">La importancia de las vacaciones</h2>
+        <p class="parrafos">Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+        <div class="importancia_text">
+          <p class="parrafos --impot-parrafo">Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+          <ul class="lista">
+            <li class="listas uno">Mejora la salud mental</li>
+            <li class="listas dos">Incrementa la motivación</li>
+            <li class="listas tres">Reduce el burnout</li>
+            <li class="listas cuatro">Mejora tu productividad y creatividad</li>
+          </ul>
+        </div>     
     </section>
     
   </main>
+  
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer_texto">
+        <h2 class="subtitulo">Contactame</h2>
+        <p class="parrafos --footer_parrafo">Me puedes contactar en cualquier de mis redes sociales</p>
+
+        <div class="footer_social">
+          <a href="#" class="footer_link">
+            <img src="images/bxl-facebook.svg" alt="Facebook" class="footer_icon">
+          </a>
+          <a href="#" class="footer_link">
+            <img src="images/bxl-twitter.svg" alt="Twitter" class="footer_icon">
+          </a>        
+          <a href="#" class="footer_link">
+            <img src="images/bxl-instagram.svg" alt="WhatsApp" class="footer_icon">
+          </a>        
+          <a href="#" class="footer_link">
+            <img src="images/bxl-youtube.svg" alt="LinKedln" class="footer_icon">
+          </a>
+          <a href="#" class="footer_link">
+            <img src="images/bxl-instagram.svg" alt="GitHub" class="footer_icon">
+          </a>
+        </div>
+        
+      </div>
+      <p class="footer_copy">
+        Sitio Web creado por &copy; Magdiel Andrés Castellanos : 
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,38 +1,481 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+:root {
+  --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+  --color-primary: #667eea;
+  --color-secundary: #764ba2;
+  --boton-padding: 20px 40px;
 }
-
-main{
+body {
+  font-family: 'Raleway', 'sans-serif';  
+}
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px 0 40px 0;
+  max-width: 1200px;
+}
+.subtitulo {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  margin-bottom: 0 35px;
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+}
+.cabecera {
+  height: 100vh;
+  background-image: var(--background), url('../images/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+.cabecera .contenedor {
+  padding: 0;
+}
+/*Menú de navegación nav*/
+.nav {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  font-weight: 700;
+}
+.nav__item {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 10px 15px;
+  font-weight: inherit;
+  border-radius: 5px 0;
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 2px 2px grey;
+  }
+  .nav__item:hover {
+    opacity: .6;
+  }
+/*cabecera contenedor*/
+.cabecera__contenedor {
+  display: flex;
+  height: calc(100vh - 70px);
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  color: #fff;
 }
 
-section{
-  margin-top: 3rem;
+.cabecera__texto {
+  width: 80%;
+  margin-bottom: 50px;
+}
+.cabecera_titulo {
+  font-size: 3.2rem;
+  text-shadow: 2px 2px 2px #102324;
+}
+.cabecera_parrafos{
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 15px 0;
+}
+.cabecera_wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  
+}
+/*sobre las vaciones*/
+.vacaciones_frontend {
+  border-bottom: 2px solid #ccc;
+}
+.sobre_vacaciones {
+  padding-top: 0;
+  display: flex;
+  
+}
+.sobre_contenedor {
+  width: 60%;
+  margin-right: 20px;
+}
+.parrafos{
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 15px 0;
+  text-align: justify;
+}
+.sobre_cursos{
+  width: 40%;
+  margin: 15px;
+  text-align: center;
+  margin-left: 20px;
+}
+.subtitulo3 {
+  font-size: 2rem;
+  color: var(--color-secundary);
+  padding-bottom: 20px;
+}
+.curso {
+  font-size: 1.2rem;
+  font-weight: 300;
+  float: left;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-left: 20px;
+  background-color: var(--color-secundary);
+  color: #fff;
+  border-radius: 5px 0;
+  box-shadow: 2px 2px 2px 2px grey;
+
+}
+.curso--derecha{
+  text-align: right;
+  float: right;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+/*Ruta de aprendizaje*/
+.aprendizaje {
+  background-color: #b5cfa6a2;
+  box-shadow: 0 0 8px rgba(156, 47, 47, 0.5);
+  margin-top: 10px;
 }
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
+.card_contenedor {
+  width: 99%;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  grid-template-areas: 
+  "card5 .     card4 "
+  "card5 card3 card4"
+  "card2 card3 card1"
+  "card2 .     card1";
+  
 }
-ul li{
-  text-align: left;
+.card_item {
+  padding: 20px;
+  background: #fff;
+  border-top: 5px solid var(--color-primary);
+  box-shadow: 0 0 3px rgba(156, 47, 47, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-ul li::marker {
-  content: "🚀";
+.card_img {
+  background: var(--color-primary);
+  box-shadow: 0 0 8px rgba(156, 47, 47, 0.5);
+  margin: 20px 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card_picture {
+  width: 50px;
+}
+.card_title {
+  font-size: 1rem;
+  color: var(--color-primary);
 }
 
-ol li{
-  text-align: left;
+.card_item:nth-last-of-type(1) {
+  grid-area: card1;
 }
+.card_item:nth-last-of-type(2) {
+  grid-area: card2;
+}
+.card_item:nth-last-of-type(3) {
+  grid-area: card3;
+}
+.card_item:nth-last-of-type(4) {
+  grid-area: card4;
+}
+.card_item:nth-last-of-type(5) {
+  grid-area: card5;
+}
+
+/*colaborar página*/
+.colaborar {
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+.cola_text {
+  justify-content: center;
+  margin-bottom: 45px;
+}
+.btn{
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+.btn_copy {
+  text-decoration: none;
+  border-radius: 10px 0;
+  border: 2px solid var(--color-primary);
+  box-shadow: 2px 2px 2px 2px grey;
+  padding: var(--boton-padding);
+  color: var(--color-secundary);  
+}
+.btn_copy:hover {
+  opacity: .6;
+  background-color: var(--color-primary);
+  color: #fff;
+  border: 2px solid var(--color-secundary) ;
+}
+
+/* fotos de la vacaciones*/
+.vacaciones{
+  background-color: #b5cfa6a2;
+  box-shadow: 0 0 8px rgba(156, 47, 47, 0.5);
+  margin-top: 0;
+  padding-top: 0;
+}
+.vaciones_foto {
+  display: flex;
+  flex-direction: column;
+}
+.text{  
+  margin-bottom: 20px;
+}
+.card_foto {
+  padding: 20px;
+    background: #fff;
+    border-top: 5px solid #667eea;
+    box-shadow: 0 0 3px rgb(0 0 0 / 50%);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.card_pictures {
+  background: var(--color-primary);
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+}
+.enlece_galery{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+/* Galery*/
+.galery_grid {
+  display: grid;
+  height: 550px;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "img1 img3 img3"
+  "img2 img3 img3";
+  gap: 10px;
+}
+.galery_item:nth-last-of-type(1){
+  grid-area: img1;
+}
+.galery_item:nth-last-of-type(2){
+  grid-area: img2;
+}
+.galery_item:nth-last-of-type(3){
+  grid-area: img3;
+}
+.galery_item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px;
+  box-shadow: 0 0 8px rgba(156, 47, 47, 0.5);
+}
+.galery_img {
+  width: 100%;
+  height: 100%;
+  object-fit: over;
+  cursor: pointer;
+}
+.galery_hover {
+  position: absolute;
+  background: #dc143c8c;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ transform: translateX(100%);
+ cursor: pointer;
+ transition: tranform .3s ease-in-out;
+}
+.galery_item:hover .galery_hover{
+  transform: translateX(0%);
+}
+
+.--btn {
+  font-weight: 700;;
+}
+/*seccion importancia*/
+.importancia {  
+  padding-top: 20px;
+}
+.importancia_text {
+  display: flex;
+}
+.--impot-parrafo {
+  color: var(--color-secundary);
+  font-weight: 700;
+  width: 35%;
+  margin: auto;
+}
+.lista {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+.listas {
+  font-size: 1.2rem;
+  font-weight: 300;
+  float: left;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: var(--color-secundary);
+  color: #fff;
+  border-radius: 5px 0;
+  box-shadow: 2px 2px 2px 2px grey;
+  text-align: center;
+}
+.uno {
+  margin-right: 260px;
+}
+.dos {
+ margin-left: 50px;
+ margin-right: 195px;
+ 
+}
+.tres {
+  margin-left: 100px;
+  margin-right: 200px;
+ }
+ .cuatro {
+  margin-left: 150px;
+  margin-right: 40px;
+ }
+
+/*
+Galería de fotos de mis vacaciones
+*/
+.galery_cabecera {
+  background-image: var(--background), url('../images/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  height: 134px;
+}
+.galery_wave {
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+.contenedor_nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.--subtitulo_nav {
+  margin: 20px 0;
+  color: #fff;
+  text-shadow: 2px 2px 2px #102324;
+}
+/* Galería */
+.galerias_grid {
+  display: grid;
+  height: 550px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: 
+  "img1 img2 img3"
+  "img1 img2 img3"
+  "img1 img2 img3"
+  "img4 img5 img6"
+  "img4 img5 img6"
+  "img4 img5 img6";
+  gap: 10px;
+}
+.galery_item:nth-last-of-type(1){
+  grid-area: img1;
+}
+.galery_item:nth-last-of-type(2){
+  grid-area: img2;
+}
+.ggalery_item:nth-last-of-type(3){
+  grid-area: img3;
+}
+.galery_item:nth-last-of-type(4){
+  grid-area: img4;
+}
+.galery_item:nth-last-of-type(5){
+  grid-area: img5;
+}
+.galery_item:nth-last-of-type(6){
+  grid-area: img6;
+}
+
+/*
+*footer
+*/
+.footer {
+  background-color: #b5cfa6a2;
+  box-shadow: 0 0 8px rgba(156, 47, 47, 0.5);
+  padding: 24px 0 9px;
+  margin-top: 20px;
+  position: relative;
+  
+  }
+
+.footer_texto {
+  margin-bottom: 13px;
+  border-bottom: 3px solid rgb(199, 185, 185);
+}
+
+.--footer_parrafo {
+  text-align: center;
+  margin: 38px 0;
+}
+.footer_social {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  color: aliceblue;
+}
+.footer_link {
+  width: 60px;
+  height: 60px;
+  margin-left: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.footer_icon {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.footer_copy {
+  font-size: 1rem;
+  text-align: center;
+  margin: 1px 0;
+}
+.footer_copy::after{
+  content: "magdiel.vampire@gmail.com";
+}
+
