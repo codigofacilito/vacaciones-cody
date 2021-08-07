@@ -1,38 +1,53 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+#body{
+	background: linear-gradient(150deg,#1c3643 35%,#273b47 55%,#1e5372);
+	color: white;
+}
+img{
+	max-height: 70vh;
+	object-fit: cover;
 }
 
-main{
-  text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+#carousel{
+	position: relative;
 }
 
-section{
-  margin-top: 3rem;
+#carousel .overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.05);
+	color: white ;
 }
 
-.cursos div{
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
+#carousel .overlay{
+	height:100%;
+	z-index: 1;
+	top: 20vh;
 }
 
-ol li{
-  text-align: left;
+#footer{
+	align-items: center;
+    text-align: center;
+    background-color: #122436;
+}
+#text-image{
+
+	color: #33b1ff;
+}
+
+#link{
+	text-decoration: none;
+	color: white;
+    text-decoration: underline;
+}
+
+.rounded float-start{
+	max-width: 60%;
+}
+
+#section{
+	
+	align-items: s;
 }
