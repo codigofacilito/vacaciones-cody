@@ -1,0 +1,144 @@
+.fotos {
+    height: 300px;
+    padding: 0;
+    margin:0;
+    list-style: none;
+    position: relative;
+}
+
+.fotos li {
+    position: absolute;
+    filter: blur(1px);
+    transition: all 1s ease-in-out;
+    width: 234px;
+    height: 172px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+li.viendo {
+    width: 300px;
+    height: 220px;
+    z-index:10;
+    transition: all 1s ease-in-out;
+    filter: blur(0px);
+}
+
+li.siguiente{
+    transition: all 1s  ease-in-out;
+    transform: translatex(115%) rotate(0);
+    filter: blur(0.1px); 
+    z-index:7;
+}
+
+.fotos li img {
+    height: inherit;
+    border: 10px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+
+.btn {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+@keyframes siguiente {
+    0% {transform:translatex(0) rotate(0);filter: blur(0px); z-index:10;}
+    100%   {transform: translatex(115%) rotate(0); filter: blur(0.1px); z-index:7}
+    
+}
+
+@keyframes enviarAdelante {
+    0%   {transform: translatex(-115%) rotate(0);}
+    50%  {transform:translatex(-130%) rotate(30deg);}
+    100% {transform:translatex(0) rotate(0);filter: blur(0.1px); z-index:10}
+}
+
+
+@keyframes enviarAtras {
+    0%   {transform:translatex(0) rotate(0);filter: blur(0.1px); z-index:10;}
+    50%  {transform:translatex(130%) rotate(30deg); z-index: 10;}
+    100% {transform: translatex(-115%) rotate(0); z-index:0;}
+}
+li.atras {
+    animation: enviarAtras 1s forwards ease-in-out;
+    transform: translatex(-115%) rotate(0);
+}
+
+
+@media screen and (min-width: 500px){
+    
+    .fotos {
+        height: 450px;
+    }
+
+    li.viendo, .fotos li {
+        width: 320px;
+        height: 260px;
+    }
+
+
+    @keyframes siguiente {
+        0% {transform:translatex(0) rotate(0);filter: blur(0px); z-index:10;}
+        100%   {transform:translatex(20%) rotate(9.05deg); filter: blur(0.1px); z-index:7}
+        
+    }
+
+    @keyframes enviarAdelante {
+        0%   {transform:translatex(-20%) rotate(-9.05deg)}
+        50%  {transform:translatex(-130%) rotate(30deg);}
+        100% {transform:translatex(0) rotate(0);filter: blur(0.1px); z-index:10}
+    }
+
+
+    @keyframes enviarAtras {
+        0%   {transform:translatex(0) rotate(0);filter: blur(0.1px); z-index:10;}
+        50%  {transform:translatex(130%) rotate(30deg); z-index: 10;}
+        100% {transform:translatex(-20%) rotate(-9.05deg); z-index:0;}
+    }
+
+
+    li.viendo {
+        transform: translatex(0) rotate(0);
+    }
+
+    li.siguiente{
+        transform:translatex(20%) rotate(9.05deg);
+    }
+
+    li.atras {
+        animation: enviarAtras 1s forwards ease-in-out;
+        z-index: 10
+    }
+}
+
+@media only screen and (min-width: 630px) {
+
+
+    li.viendo, .fotos li {
+        width: 420px;
+        height: 300px;
+    }
+
+    .fotos li img {
+        border: 15px solid #FFFFFF;
+    }
+    
+}
+
+@media only screen and (min-width: 868px) {
+    .fotos li {  
+        width: 550px;
+        height: 400px;  
+    }
+}
+
