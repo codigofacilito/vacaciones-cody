@@ -1,0 +1,30 @@
+.fotos {
+  background-color: #221527;
+  padding: .5em;;
+}
+
+figure .azul {
+  border: 1em solid #1091e5;
+}
+
+figure .amarillo {
+  border: 1em solid #ffe60d;
+}
+
+figure .rojo {
+  border: 1em solid #f55650;
+}
+
+figure img:hover {
+  
+}
+
+.twitter-share-button {
+  color: White;
+  padding: .5em;
+  text-decoration: none;
+}
+
+.twitter-share-button:hover {
+  transform: rotate(2deg);
+}
