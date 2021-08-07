@@ -6,7 +6,7 @@
 }
 * h2 {
   color: #5bcc85;
-  margin: 1.5rem 0;
+  margin: 1.4rem 0;
   font-family: "Playfair Display", serif;
 }
 * a {
@@ -64,7 +64,7 @@
 }
 .hero .hero__main .hero__texts h1 {
   font-family: "Playfair Display", serif;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   position: relative;
   display: inline;
 }
@@ -76,17 +76,9 @@
   border-left: solid 2px #fff;
   animation: write 4s infinite alternate steps(24);
 }
-@keyframes write {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0%;
-  }
-}
 .hero .hero__main .hero__texts p {
   text-align: inherit;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   width: 70%;
   line-height: 1.5;
   margin-top: 10px;
@@ -98,10 +90,11 @@
   display: inline-block;
   padding: 15px 45px;
   color: #18191a;
-  border-radius: 15px;
+  border-radius: 7px;
 }
 .hero .hero__main img {
   width: 500px;
+  animation: cody 3s infinite alternate-reverse;
 }
 
 .container {
@@ -110,17 +103,17 @@
   overflow: hidden;
   max-width: 1200px;
   padding: 0;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
   display: grid;
 }
 .container h2 {
   position: relative;
-  font-size: 45px;
+  font-size: 2.5rem;
   text-align: center;
 }
 .container p {
   text-align: center;
-  font-size: 23px;
+  font-size: 1.4rem;
 }
 .container p a {
   text-decoration: none;
@@ -218,7 +211,20 @@
   border: solid 3px #5bcc85;
   border-radius: 15px;
 }
-
+.slider img {
+  width: 100%;
+  display: inline-block;
+  margin-right: -4px;
+}
+.slider .slider-container {
+  white-space: nowrap;
+  position: relative;
+  transition: all 0.3s;
+  left: 0px;
+}
+.slider .slider-container * {
+  white-space: normal;
+}
 .slider .controls ul {
   padding: 0px;
   text-align: center;
@@ -228,10 +234,9 @@
   width: 100%;
   z-index: 5;
 }
-
-.slider .controls li {
+.slider .controls ul li {
   list-style-type: none;
-  background-color: #242526;
+  background-color: #18191a;
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 50%;
@@ -240,26 +245,8 @@
   display: inline-block;
   cursor: pointer;
 }
-
-.slider .controls li.active {
+.slider .controls ul li.active {
   background-color: #5bcc85;
-}
-
-.slider .slider-container {
-  white-space: nowrap;
-  position: relative;
-  transition: all 0.3s;
-  left: 0px;
-}
-
-.slider .slider-container * {
-  white-space: normal;
-}
-
-.slider img {
-  width: 100%;
-  display: inline-block;
-  margin-right: -4px;
 }
 
 ul li::marker {
@@ -275,6 +262,14 @@ ul li::marker {
   animation: showUp 1s;
 }
 
+@keyframes write {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
 @keyframes showUp {
   0% {
     transform: translateY(100px);
@@ -283,6 +278,55 @@ ul li::marker {
     transform: translateY(0);
   }
 }
+@keyframes cody {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+.footer {
+  width: 100%;
+  padding: 0px;
+  background-size: cover;
+  background-color: #18191a;
+  text-align: center;
+}
+.footer .footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer .footer__container .box__footer {
+  display: flex;
+  flex-direction: row;
+  padding: 1.8rem;
+}
+.footer .footer__container .box__footer .terms {
+  margin-top: 1.3rem;
+  font-weight: 500;
+  color: #5bcc85;
+  font-size: 18px;
+}
+.footer .box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0.625rem 2.5rem;
+}
+.footer .box__copyright p {
+  margin-top: 1.3rem;
+  color: #5bcc85;
+}
+.footer .box__copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #5bcc85;
+}
+
 @media (max-width: 768px) {
   .hero .nav__container {
     justify-content: center;
@@ -295,7 +339,7 @@ ul li::marker {
     font-size: 1.8rem;
   }
   .hero .hero__main .hero__texts p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .hero img {
     display: none;

@@ -58,6 +58,7 @@ var gameOver;
 
 function Start() {
     gameOver = document.querySelector(".game-over");
+    youWin = document.querySelector('.you-win');
     suelo = document.querySelector(".suelo");
     contenedor = document.querySelector(".contenedor");
     textoScore = document.querySelector(".score");
@@ -199,6 +200,8 @@ function GanarPuntos() {
     } else if(score == 20) {
         gameVel = 3;
         contenedor.classList.add("noche");
+    } else if(score == 404) {
+        YouWin();
     }
     suelo.style.animationDuration = (3/gameVel)+"s";
 }
@@ -208,6 +211,11 @@ function GameOver() {
     gameOver.style.display = "block";
 }
 
+function YouWin() {
+    Estrellarse();
+    youWin.style.display = 'block';
+}
+
 function DetectarColision() {
     for (var i = 0; i < obstaculos.length; i++) {
         if(obstaculos[i].posX > codyPosX + cody.clientWidth) {
@@ -215,7 +223,8 @@ function DetectarColision() {
             break; 
         }else{
             if(IsCollision(cody, obstaculos[i], 10, 30, 15, 20)) {
-                GameOver();
+                Estrellarse();
+                gameOver.style.display = "block";
             }
         }
     }

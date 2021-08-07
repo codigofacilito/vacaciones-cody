@@ -21,7 +21,7 @@ body{
     text-decoration: none;
     padding: .5rem .75rem;
     font-size: 20px;
-    border-radius: 16px;
+    border-radius: 5px;
     background-color: #5bcc85;
     color: #fff;
 }
@@ -124,11 +124,21 @@ body{
 
 .game-over{
     display: none;
-
     position: absolute;
     width: 100%;
+    z-index: 10;
+    text-align: center;
+    color: #5bcc85;
+    font-size: 30px;
+    font-family: Verdana;
+    font-weight: 700;
+}
 
-
+.you-win{
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
     text-align: center;
     color: #5bcc85;
     font-size: 30px;
