@@ -11,14 +11,27 @@
   <title>Mis vacaciones</title>
 </head>
 <body id="body">
-  <main>
+  <nav id="inicio" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#inicio">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#frontend">Fronted</a>
+          <a class="nav-link" href="#ruta">Ruta</a>
+          <a class="nav-link" href="#colabora">Colabora</a>
+          <a class="nav-link" href="#importancia">Importancia</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main id="main">
     <header>
-      <h1 class="text-center">Estas son mis Vacaciones</h1>
-      <h4 class="text-center">Soy Cody, un aspirante a Dev, en 2019,<br>
-       organicé un viaje para desestresarme del código,
-        y en esta página quiero compartirlo contigo.</h4>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+      <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-pause="false">
         <div class="carousel-inner">
           <div class="carousel-item img-fluid active">
             <img src="images/1.jpg" class="d-block w-100" alt="Cody en la playa">
@@ -56,24 +69,28 @@
               <h2>Cody de regreso</h2>
             </div>
           </div>
+          <div class="overlay">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h1 class="text-center">Estas son mis Vacaciones</h1>
+                <!--   <p class="text-center">Soy Cody, un aspirante a Dev, en 2019,organicé un viaje para desestresarme del código,y en esta página quiero compartirlo contigo.</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
+      
     </header>
+  </main>
     <div class="container">
       <div class="row">
         <div class="col">
-          <img src="images/4.jpg" class="rounded float-end" alt="Cody acampando">
+          <img src="images/4.jpg" class="rounded float-end img-fluid" alt="Cody acampando">
           <section>
             <header>
-              <h2>Mis vacaciones Frontend</h2>
+              <h2 id="frontend">Mis vacaciones Frontend</h2>
             </header>
             <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
             <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
@@ -91,12 +108,12 @@
       </div>
       <div class="row">
         <div class="col">
-          <img src="images/5.jpg" class="rounded float-start" alt="Cody en la alberca">
+          <img src="images/5.jpg" class="rounded float-start img-fluid" alt="Cody en la alberca">
         </div>
         <div class="col">
           <section>
             <header>
-              <h2>Ruta de aprendizaje 2021</h2>
+              <h2 id="ruta">Ruta de aprendizaje 2021</h2>
               <p> También me propuse aprender nuevas tecnologías durante 2021</p>
             </header>
             <ul>
@@ -112,10 +129,10 @@
 
       <div class="row">
         <div class="col">
-          <img src="images/3.jpg" class="rounded float-end" alt="Cody en la alberca">
+          <img src="images/3.jpg" class="rounded float-end img-fluid" alt="Cody en la alberca">
           <section>
             <header>
-              <h2>Colabora en mi página</h2>
+              <h2 id="colabora">Colabora en mi página</h2>
             </header>
             <p>
               Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
@@ -133,12 +150,12 @@
 
       <div class="row">
         <div class="col">
-          <img src="images/6.jpg" class="rounded float-start" alt="Cody en la alberca">
+          <img src="images/6.jpg" class="rounded float-start img-fluid" alt="Cody en la alberca">
         </div>
         <div class="col">
           <section>
             <header>
-              <h2>La importancia de las vacaciones</h2>
+              <h2 id="importancia">La importancia de las vacaciones</h2>
               
               <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
               <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
@@ -173,6 +190,6 @@
         </div>
       </div>
     </footer>
-  </main>
+  
 </body>
 </html>

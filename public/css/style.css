@@ -1,11 +1,28 @@
 #body{
-	background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
+	background: linear-gradient(150deg,#1c3643 35%,#273b47 55%,#1e5372);
+	color: white;
+}
+#main img{
+	max-height: 70vh;
+	object-fit: cover;
+}
+
+#carousel{
+	position: relative;
+}
+
+#carousel .overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
 	color: white;
 }
 #footer{
-	border-left: auto;
-    border-right: auto;
-    text-align: left;
+
+    text-align: center;
     background-color: #122436;
 }
 #text-image{
