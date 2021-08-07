@@ -4,97 +4,212 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
+  <title>Red social | Cody vacaciones</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://codigofacilito.com/assets/favicon-071127db4fd0e68c96ad5bd709841ec874ecb210db0ed389b7e393945c0f499b.ico"/>
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
-
+  <header>
+    <!-- barra de navegación  -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="http://codigofacilito.com/assets/logo-cbf2a784ebee5d642aa7b8182df3e388d4feba0a23577eed1d2747fa05861f73.png" width="200">
+      </a>
+      <div class="d-flex">
+        <ul>
+          <li>
+            <i class="mdi mdi-home-variant"></i>
+          </li>
+          <li>
+            <i class="mdi mdi-send"></i>
+          </li>
+          <li>
+            <i class="mdi mdi-compass"></i>
+          </li>
+          <li>
+            <i class="mdi mdi-cards-heart"></i>
+          </li>
+        </ul>
+        <img src="images/profile.jpg" width="35" class="rounded-circle icon-profile-mini">
+      </div>
+    </nav>
+  </header>
+  <div class="container" id="main">
+    <!-- informacion de la cuenta de perfil  -->
     <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="images/profile.jpg" width="250" height="250" class="img-fluid rounded-circle img-thumbnail icon-profile">
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+        <div class="col-md-9">
+          <div class="user-account d-flex justify-content-start">
+            <h2>Cody 
+              <i class="mdi mdi-check-decagram text-primary"></i></h2>
+            <button class="btn btn-light">Editar perfil</button>
+            <i class="mdi mdi-cog icon-settings"></i>
+          </div>
+          <ul class="user-data d-flex justify-content-start">
+            <li>
+              <b>6</b>
+              <span>publicaciones</span>
+            </li>
+            <li>
+              <b>8M</b>
+              <span>seguidores</span>
+            </li>
+            <li>
+              <b>21</b>
+              <span>siguiendo</span>
+            </li>
+          </ul>
+          <div class="user-description">
+            <p>Soy <b>Cody </b>, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.
+              <i class="em em-fire" aria-role="presentation" aria-label="FIRE"></i>
+              <i class="em em-dragon_face" aria-role="presentation" aria-label="DRAGON FACE"></i>
+            </p>
+            <span>
+              <i class="em em-mortar_board" aria-role="presentation" aria-label="GRADUATION CAP"></i>
+              Cursos que he tomado:</span>
+            <a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank">Curso profesional de Desarrollo Web</a>
+            <a href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank">Curso para crear mi primera página web</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- historias destacadas -->
+    <section>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="stories">
+            <div class="story" class="img-fluid" v-for="story in stories" @click="selectStory(story);" data-toggle="modal" data-target="#modalViewStories">
+              <img v-bind:src="story.icon" width="70" height="70" class="img-fluid img-thumbnail rounded-circle">
+              <p>{{story.title}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- seccion de publicaciones -->
+    <section>
+      <div class="row">
+        <!-- barra de navegacion de los posts -->
+        <div class="col-md-12">
+          <nav>
+            <ul class="posts-navigation d-flex justify-content-center">
+              <li>
+                <a href="javascript:void(0);" class="active">
+                  <i class="mdi mdi-grid"></i>
+                  Posts</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  <i class="mdi mdi-television-classic"></i>
+                  Igtv</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  <i class="mdi mdi-bookmark-outline"></i>
+                  Guardados</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  <i class="mdi mdi-account-child-outline"></i>
+                  Etiquetadas</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="post col-md-4" v-for="post in posts">
+          <img v-bind:src="post.picture" class="img-fluid" @click="selectPost(post);" data-toggle="modal" data-target="#modalViewPost">
         </div>
       </div>
     </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
+    <!-- modal de imagenes -->
+    <div class="modal" tabindex="-1" id="modalViewPost" v-if="post != null">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8">
+                <img v-bind:src="post.picture" class="img-fluid">
+              </div>
+              <div class="col-md-4">
+                <img src="images/profile.jpg" width="50" class="img-fluid img-thumbnail rounded-circle icon-profile-mini">
+                <b>{{post.user.name}}</b>
+                <p>{{post.description}}
+                  <span v-html="post.emojis"></span>
+                </p>
+                <div class="community d-flex">
+                  <div class="item">
+                    <i class="mdi mdi-comment-text"></i>
+                    <span>{{post.comments}}</span>
+                  </div>
+                  <div class="item">
+                    <i class="mdi mdi-heart"></i>
+                    <span>{{post.likes}}</span>
+                  </div>
+                </div>
+                <form>
+                  <div class="form-group mb-2">
+                    <input type="text" class="form-control rounded-pill" placeholder="Comentar...">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
-      
-    </section>
-    
-  </main>
+    <!-- modal para las stories -->
+    <div class="modal" tabindex="-1" id="modalViewStories" v-if="story != null">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content modal-stories">
+          <div class="modal-body d-flex justify-content-md-center">
+            <div id="stories" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#stories" data-slide-to="0" class="active" v-for="(story, id) in story.content" :class="{active: id==0}"></li>
+              </ol>            
+              <div class="carousel-inner">
+                <div class="carousel-item" v-for="(story_data, id) in story.content" :class="{ active: id==0 }">
+                  <img v-bind:src="story_data.picture" class="d-block w-100">
+                  <div>{{story_data.message}}
+                    <span v-html="story_data.emojis"></span>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#stories" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#stories" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <small class="">Desarrollado por <a href="https://github.com/Xibalsba" target="_blank">Julio López (<i>Xibalsba</i>)</a></small>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
 </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="js/main.js"></script>
 </html>
