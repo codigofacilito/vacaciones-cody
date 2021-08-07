@@ -1,90 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mis vacaciones</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <main>
-    <header>
+    <header class="header__nav">
+      <div class="logo">
+        <a href="#">
+          <p>#VeranoFrontend</p>
+        </a>
+      </div>
+
       <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+        <a href="#">Inicio</a>
+        <a href="#vacaciones">Vacaciones</a>
+        <a href="#aprendizaje">Aprendizaje</a>
+        <a href="#colaboracion">Colaboración</a>
+        <a href="#importancia__vacaciones">Importancia de las vacaciones</a>
+        <a href="#galeria">Galeria</a>
       </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+
+      <div class="linea menu">
+        <div class="linea1"></div>
+        <div class="linea2"></div>
+        <div class="linea3"></div>
+      </div>
     </header>
 
-    <section>
+    <div class="hero">
+      <div class="info">
+        <h1>Estas son mis Vacaciones</h1>
+        <p>
+          <span>Soy Cody, un aspirante a Dev</span>, en 2019, organicé un viaje para
+          desestresarme del código, y en esta página quiero compartirlo
+          contigo.
+        </p>
+      </div>
+    </div>
+
+    <section class="vacaciones" id="vacaciones">
       <header>
         <h2>Mis vacaciones Frontend</h2>
       </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
+      <p>
+        Durante el verano de 2019, decidí comenzar a aprender desarrollo
+        frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y
+        JavaScript
+      </p>
+      <p>
+        Cada tarde, después de conocer nuevos lugares en mis vacaciones,
+        practicaba mis habilidades en tecnologías frontend, construyendo esta
+        página
+      </p>
+      <p>Estos son los cursos que estuve tomando</p>
       <div class="cursos">
         <div>
+          <img src="./images/frontend-2018.png" alt="">
           <p>Curso profesional de Desarrollo Web</p>
+          <a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank">Ver Curso</a>
         </div>
         <div>
+          <img src="./images/pagina-2019.png" alt="">
           <p>Curso para crear mi primera página web</p>
+          <a href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank">Ver Curso</a>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="aprendizaje" id="aprendizaje">
       <header>
         <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
+        <p>También me propuse aprender nuevas tecnologías durante 2021</p>
       </header>
       <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
+        <li>Flexbox, y Grid</li>
+        <li>Animaciones con CSS y JavaScript</li>
+        <li>AJAX</li>
+        <li>HTML semántico</li>
+        <li>Entre otros</li>
       </ul>
+
+      <div class="tecnologias">
+        <div class="tecnologias__icon" title="Lenguaje de marcas de hipertexto">
+          <h3>HTML5</h3>
+          <img src="./images/tecnologias/html.svg" alt="icon-html">
+        </div>
+
+        <div class="tecnologias__icon" title="Hoja de estilo en cascada">
+          <h3>Css 3</h3>
+          <img src="./images/tecnologias/css.svg" alt="icon-css">
+        </div>
+
+        <div class="tecnologias__icon" title="Lenguaje de programación interpretado">
+          <h3>JavaScript</h3>
+          <img src="./images/tecnologias/javascript.svg" alt="icon-javascript">
+        </div>
+
+        <div class="tecnologias__icon" title="Plataforma de desarrollo colaborativo de software para alojar proyectos">
+          <h3>GitHub</h3>
+          <img src="./images/tecnologias/github.svg" alt="icon-github">
+        </div>
+
+      </div>
     </section>
-    <section>
+
+    <section class="colaboracion" id="colaboracion">
       <header>
         <h2>Colabora en mi página</h2>
       </header>
       <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
+        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub,
+        por lo que decidí subir mi código a GitHub
       </p>
       <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y
+        enviando un pull request.
       </p>
       <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
-
+        Si nunca antes has colaborado con un repositorio, en Código Facilito
+        hay un tutorial que lo explica
+        <a href="https://www.youtube.com/watch?v=xdCl0Wut-IA&t=2s" target="_blank">Ir al tutorial</a>
       </p>
     </section>
-    <section>
+
+    <section class="fotos__vacaciones">
       <header>
         <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
+        <p>
+          ¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto
+          algunas fotos que tomé:
+        </p>
       </header>
       <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
+        <img src="images/1.jpg" alt="Cody en la playa" />
+        <img src="images/2.jpg" alt="Cody acampando" />
+        <img src="images/3.jpg" alt="Cody en una alberca" />
+
       </div>
     </section>
 
-    <section>
+    <section class="importancia__vacaciones" id="importancia__vacaciones">
       <header>
         <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
+        <p>
+          Aprender a programar y escribir código, puede ser estresante, por
+          eso es muy importante que periódicamente nos desconectemos y
+          descansemos apropiadamente
+        </p>
+        <p>
+          Durante mis vacaciones aprendí que existen distintos beneficios de
+          descansar:
+        </p>
         <ol>
           <li>Mejora la salud mental</li>
           <li>Incrementa la motivación</li>
@@ -92,9 +165,60 @@
           <li>Mejora tu productividad y creatividad</li>
         </ol>
       </header>
-      
     </section>
-    
+
+    <div class="color__tema">
+      <svg height="60" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M4.5 22c-1.614 0-2.597.884-3.04 1.867C1.013 24.85 1 25.915 1 26.5c0 .497-.114 1.14-.285 1.664-.113.418-.305.796-.463.902-.445.256-.263.935.25.934H4c1.415 0 2.457-.728 3.09-1.568.632-.84.91-1.76.91-2.432 0-.525-.01-1.48-.467-2.36C7.076 22.756 6.093 22 4.5 22zm0 1c1.307 0 1.826.485 2.144 1.1.318.614.356 1.408.356 1.9 0 .345-.22 1.175-.71 1.83C5.795 28.485 5.083 29 4 29H1.44c.077-.17.16-.332.224-.525.203-.62.336-1.332.336-1.975 0-.555.04-1.49.37-2.223C2.703 23.545 3.216 23 4.5 23zM29.424.002c-.102-.006-.182.006-.263.02-.162.033-.33.09-.533.167-.404.155-.93.4-1.566.732-1.272.66-2.983 1.658-4.91 2.902-3.857 2.49-8.574 5.962-12.305 9.694-1.31 1.31-1.857 2.706-1.845 3.972.012 1.267.57 2.378 1.35 3.16.783.783 1.883 1.338 3.15 1.35 1.267.012 2.673-.533 3.983-1.844 3.732-3.73 7.204-8.448 9.693-12.304 1.245-1.928 2.24-3.64 2.903-4.913.33-.637.576-1.163.73-1.567.08-.202.135-.37.167-.533.016-.082.027-.162.02-.264-.004-.102-.022-.254-.17-.402-.15-.15-.3-.166-.403-.172zm-.642 1.217c-.138.33-.315.728-.59 1.26-.64 1.232-1.625 2.923-2.855 4.83-2.46 3.81-5.908 8.487-9.56 12.14-1.16 1.16-2.298 1.56-3.277 1.55-.98-.01-1.826-.44-2.442-1.057-.616-.615-1.05-1.484-1.058-2.463-.01-.978.39-2.095 1.552-3.255 3.653-3.653 8.328-7.1 12.14-9.56 1.906-1.23 3.597-2.216 4.83-2.856.53-.277.927-.453 1.26-.59z" />
+      </svg>
+    </div>
+
+    <section id="galeria" class="galeria">
+      <div class="slider__container">
+
+        <div class="slider">
+          <div class="slider__img">
+            <img src="images/1.jpg" alt="Cody en la playa">
+          </div>
+
+          <div class="slider__img">
+            <img src="images/2.jpg" alt="Cody acampando">
+          </div>
+
+          <div class="slider__img">
+            <img src="images/3.jpg" alt="Cody en una alberca">
+          </div>
+
+          <div class="slider__img">
+            <img src="images/4.jpg" alt="Cody en una alberca">
+          </div>
+
+          <div class="slider__img">
+            <img src="images/5.jpg" alt="Cody en una alberca">
+          </div>
+
+          <div class="slider__img">
+            <img src="images/6.jpg" alt="Cody en una alberca">
+          </div>
+
+        </div>
+
+        <div class="buttons">
+          <input class="next" type="button" value="&#62;">
+          <input class="previus" type="button" value="&#60;">
+
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
+
+
+
+  <script src="js/index.js" type="module"></script>
 </body>
+
 </html>
