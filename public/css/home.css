@@ -2,7 +2,6 @@
     padding: 20px;
     margin: 0 auto;
     text-align: left;
-    /*width: 321px;*/
     width: 80%;
     min-height: 367px;
     margin-bottom: 108px;
@@ -20,7 +19,6 @@
 
 .contenedor-card .card {
     transform: rotate(7.02deg);
-    /*width: 75%;*/
 }
 
 .contenedor-card:last-child .card{
