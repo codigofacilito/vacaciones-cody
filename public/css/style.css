@@ -1,38 +1,299 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+:root {
+  --backcolor-main: #fff;
+  --backcolor-nav: #fff;
+  --backcolor-header-inicio: #000839;
+  --backcolor-header-inicio: #00275a;
+
+  --backcolor-button: #FFA41B;
+
+  --title-font-family: Helvetica;
+  --title-font-weight: bold;
+  
+  --paragraph-font-family: arial;
+  --paragraph-font-weight: lighter;
+  
+  --white-title-font-color: #fff;
+  --white-paragraph-font-color: #ffffffc6;
+  --black-title-font-color: #333;
+  --black-paragraph-font-color: #333333c6;
 }
 
-main{
+
+
+
+/******* SETEO DE ESTILOS ELEMENTOS PRINCIPALES *******/
+* { 
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  cursor: url(./../images/puntero.png), auto;
+}
+
+a,
+a *,
+.fotos__tarjeta_foto,
+.fotos__tarjeta_foto *,
+.modal__componente-info-loved label svg {
+  cursor: url(./../images/puntero_selecting.png), auto;
+}
+
+h1, h2 {
+  font-family: var(--title-font-family);
+  color: var(--title-font-color);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: var(--paragraph-font-family);
+  color: var(--paragraph-font-color);
+  font-weight: lighter;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+main {
+  background-color: var(--backcolor-main);
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
 }
 
-section{
-  margin-top: 3rem;
+
+
+
+
+/************************************************/
+/*************** SECCION NAVIGATOR **************/
+/************************************************/
+.navegacion {
+  background-color: var(--backcolor-nav);
+  padding: 1rem;
+  height: 70px;
+  box-sizing: border-box;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 20px #c4c4c4;
 }
 
-.cursos div{
-  background-color: black;
+.navegacion__isotipoCF {
+  width: min(200px, 50%);
+}
+
+.navegacion__isotipoCF img {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  min-width: 170px;
+  padding: 0 1% 0 0;
+  /* border: 1px solid red; */
+}
+
+
+/* MENU HAMBURGUESA */
+.menu__checkbox {
+  display: none;
+}
+
+.menu__icono_checkbox {
+  width: 40px;
+  height: 40px;
+  color: black;
+  display: none;
+}
+
+.menu__icono_checkbox img {
+  width: 100%;
+  height: 100%;
+}
+
+/* QUERY DE MENU HAMBURGUESA */
+@media (max-width: 1064px) {
+  .menu {
+    min-width: 0;
+  }
+
+  .menu__icono_checkbox {
+    display: block;
+  }
+
+  .menu__items {
+    background-color: #f3f3f3;
+
+    position: fixed;
+    width: 50vw;
+    height: calc(100vh - 70px);
+    bottom: 0;
+    right: -50vw;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+
+  .menu__items a {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    background-image: none;
+  }
+
+  .menu__checkbox:checked ~ .menu__items {
+    right: 0;
+  }
+}
+
+
+.menu__enlace {
+  font-family: var(--title-font-family);
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  text-decoration: none;
+  min-width: 4rem;
+  position: relative;
+  border-radius: 4px;
+  color: #333;
+  
+  background-image: linear-gradient(#dadada, #dadada);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size:  0% 10%;
+}
+
+.menu__enlace--seleccionado {
+  background-size: 100% 10% !important;
+}
+
+.menu__enlace:hover {
+  background-image: linear-gradient(var(--backcolor-header-inicio), var(--backcolor-header-inicio));
+  transition: 0.3s;
+  background-size:  100% 10%;
+}
+
+
+
+
+/********************************************************/
+/**************** SECCION "Pie de pagina" ***************/
+/********************************************************/
+.pie_pagina {
+  background-color: var(--backcolor-header-inicio);
+  margin-bottom: 0;
   color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
+  padding-top: 0.3rem;
 }
 
-ol li{
+.pie_pagina > *:not(.pie_pagina__develop_by) {
+  display: inline-block;
+}
+
+.pie_pagina__develop_by {
+  width: 100%;
+  height: 1rem;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pie_pagina__develop_by p {
+  margin: 0;
+  text-align: center;
+}
+
+
+.pie_pagina__developers,
+.pie_pagina__creditos,
+.pie_pagina__agradecimiento {
+  width: min(400px, 100%);
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.pie_pagina__developers-card_gabriel,
+.pie_pagina__developers-card_cody {
+  /* min-height: 120px; */
+  width: min(350px, 100%);
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px #001939;
+  margin-bottom: 20px;
+
+  background-color: #fff;
+  color: #333;
+
+  display: flex;
+}
+
+.pie_pagina__developers-card_gabriel img,
+.pie_pagina__developers-card_cody img {
+  height: 100%;
+  width: min(100px, 38%);
+  box-sizing: border-box;
+  border-radius: 0 0 500px 0;
+}
+
+.pie_pagina__developers-card_gabriel > address,
+.pie_pagina__developers-card_cody > address {
+  padding: 10px;
   text-align: left;
+  box-sizing: border-box;
+  width: max(7rem, 60%);
+  width: 60%;
+}
+
+.pie_pagina__developers-card_gabriel > address > h2,
+.pie_pagina__developers-card_cody > address > h2 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
+
+.pie_pagina__developers-card_gabriel > address > p,
+.pie_pagina__developers-card_cody > address > p {
+  font-size: 11px;
+  margin: 0;
+  word-wrap: break-word !important;
+  box-sizing: border-box;
+  max-width: max(100%);
+  margin-bottom: 2px;
+  color: gray;
+} 
+
+
+.pie_pagina__developers-card_gabriel > address > [class*="redes"],
+.pie_pagina__developers-card_cody > address > [class*="redes"] {
+  display: flex;
+  margin-top: 10px;
+}
+
+.pie_pagina__developers-card_gabriel > address > [class*="redes"] > a,
+.pie_pagina__developers-card_cody > address > [class*="redes"] > a {
+  color: #000839;
+  font-size: 10px;
+  
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
