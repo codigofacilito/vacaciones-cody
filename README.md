@@ -29,13 +29,11 @@ La fecha límite para enviar tu pull request es el 4 de Agosto, 11:59pm
 Asegúrate de haber habilitado GitHub Actions y GitHub Pages, y que la rama de GitHub Pages sea gh-pages
 /***************************************************************************************************************************************************************************/
 # Nombre de usuario en codigofacilito: abrildaniu
+Los cambios cuando los subi, los hice desde mi cuenta alterna de GitHub ya que no se como hacer logout de esa cuenta en mi laptop :'c
+
 ## Cambios implementados
 
 Hice esta pagina con Uikit, HTML y CSS. Me gusto el fondo que hice en el inicio de la pagina.
-Los cambios cuando los subi, los hice desde mi cuenta alterna ya que no se como hacer logout de esa cuenta en mi laptop :'c
-
-Los commit los subi desde una cuenta antigua que tenia ya en github (no se como hacer logout de esa cuenta en mi computadora :c )
-
 
 # Pagina principal de Cody
 
