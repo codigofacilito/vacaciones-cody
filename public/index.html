@@ -4,97 +4,373 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!--favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+   <!-- SEO -->
+  <meta property="og:title" content="Vacaciones Cody">
+  <meta name="author" content="Vacaciones Cody">
+  <meta property="og:locale" content="en_US">
+  <meta name="description" content="Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.">
+  <meta property="og:description" content="Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.">
+  <link rel="canonical" href="https://junix7.github.io/vacaciones-cody">
+  <meta property="og:url" content="https://junix7.github.io/vacaciones-cody">
+  <meta property="og:site_name" content="Vacaciones Cody">
+  <meta property="og:image" content="https://junix7.github.io/vacaciones-cody/images/cody1.png">
+
+
   <title>Mis vacaciones</title>
+
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"      rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"      rel="stylesheet"/>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- AnimateCSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- STYLES -->
   <link rel="stylesheet" href="css/style.css">
+
+
+
 </head>
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+  <main class="lead">
+    <header id="home">
+
+  <!--  ======================= NAVIGATION =============================  -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" data-aos="fade-down" data-aos-delay="300" data-aos-duration="2000">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarCenteredExample"
+            aria-controls="navbarCenteredExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Collapsible wrapper -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarCenteredExample"
+          >
+            <!-- Left links -->
+            <ul class="navbar-nav mb-2 mb-lg-0 lead">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ruta">Ruta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-sun text-warning"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#colabora">Colabora</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fotos">Fotos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7" data-aos="fade-down" data-aos-delay="300" data-aos-duration="2000">
+            <h1 class="display-2">Estas son mis Vacaciones <i class="fas fa-umbrella-beach text5"></i></h1>
+            <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+            <a class="btn btn-lg m-3" href="#ruta"><i class="fas fa-code-branch"></i> 
+            Mi ruta</a>
+            <a class="btn btn-lg m-3" href="#fotos"><i class="fas fa-camera"></i> Mis Fotos</a>
+          </div>  
+          <div class="col-md-5" data-aos="fade-down" data-aos-delay="300" data-aos-duration="2000">
+            <img src="images/cody1.png" class="img-fluid animate__animated animate__shakeY animate__infinite infinite animate__slower">
+          </div>
+        </div>
+      </div>
+
     </header>
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
-      </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+    <section class="container-fluid p-0">
+      <!--svg wave-->
+      <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #073E8A;"></path></svg>
+      </div>
+
+      <div class="row align-items-center m-0 back">
+        <div class="col-md-4 p-5" data-aos="fade-left" data-aos-delay="300" data-aos-duration="2000">
+          <img src="images/cody2.png" class="img-fluid">
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+        <div class="col-md-8 p-5" data-aos="fade-right" data-aos-delay="300" data-aos-duration="2000">
+          <h2 class="display-5">Mis vacaciones <span class="text1">Frontend</span></h2>
+          <p class="text-white"> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript</p>
+          <p class="text-white"> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
         </div>
       </div>
+
+      <div class="back text-white pb-5">
+        <div class="text-center">
+          <h2>Estos son los cursos que estuve tomando</h2>
+        </div>
+        <div class="row align-items-center mx-5">
+          <div class="col-md-6">
+            
+            <div class="row  hover-shadow border m-3" data-aos="flip-up" data-aos-delay="300" data-aos-duration="2000">
+
+              <div class="col-md-4 p-0">
+                <img src="images/curso1.jpeg" class="imgcard">
+              </div>
+              <div class="col-md-8 align-self-center">
+              <a href="#"><h5 class="text5">Curso profesional de Desarrollo Web</h5></a>
+                <p>Aprende a crear tu primera página web desde 0, sin conocimientos previos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row  hover-shadow border m-3" data-aos="flip-up" data-aos-delay="300" data-aos-duration="2000">
+
+              <div class="col-md-4 p-0">
+                <img src="images/curso2.jpeg" class="imgcard">
+              </div>
+              <div class="col-md-8 align-self-center">
+              <a href="#"><h5 class="text5">Curso crear mi primera pagina Web</h5></a>
+                <p>Cada día se vuelve más importante que todo el mundo aprenda desarrollo web.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--svg wave-->
+      <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 271.49,-50.00 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #073E8A;"></path></svg>
+      </div>
+
     </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
+    <section class="container my-md-4 p-5 shadow rounded bg-light" id="ruta">
+      <h2 class="display-5 text-center">Ruta de aprendizaje <span class="text5">2021</span>
+      </h2>
+      <hr>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          
+          <i data-aos="flip-up" data-aos-delay="300" data-aos-duration="2000" data-mdb-toggle="tooltip" title="HTML" class="skill fab fa-html5"></i>
+          <i data-aos="flip-up" data-aos-delay="300" data-aos-duration="2000" data-mdb-toggle="tooltip" title="CSS" class="skill fab fa-css3-alt"></i>
+          <i data-aos="flip-up" data-aos-delay="300" data-aos-duration="2000" data-mdb-toggle="tooltip" title="Javascript" class="skill fab fa-js-square"></i>
+          <i data-aos="flip-up" data-aos-delay="300" data-aos-duration="2000" data-mdb-toggle="tooltip" title="Bootstrap" class="skill fab fa-bootstrap"> </i>
+          <i data-aos="flip-up" data-aos-delay="300" data-aos-duration="2000" data-mdb-toggle="tooltip" title="Sass" class="skill fab fa-sass"> </i>
+          <i data-aos="flip-up" data-aos-delay="300" data-aos-duration="2000" data-mdb-toggle="tooltip" title="Git" class="skill fab fa-git"> </i>
+          <i data-aos="flip-up" data-aos-delay="300" data-aos-duration="2000" data-mdb-toggle="tooltip" title="VueJS" class="skill fab fa-vuejs"> </i>
+         
+        </div>
+        <div class="col-md-6">
+          <img src="images/cody3.svg" class="img-fluid">
+        </div>
+      </div>
+      <hr>
     </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+    <section class="container-fluid my-5 py-5 mx-0 px-0" id="colabora">
 
-      </p>
+      <!-- Background image -->
+      <div data-aos="fade-up" data-aos-duration="3000" id="intro-example" class="text-center bg-image" style="background-image: url('images/1.jpg');">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white lead">
+              <h1  class="mb-3 display-1  animate__animated animate__bounce animate__infinite   infinite">Colabora en mi página</h1>
+              <p>
+                Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
+              </p>
+              <p>
+                Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
+              </p>
+              <p>
+                Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
+              </p>
+                <a href="" target="_blank" class="btn btn-lg m-3"><b><i class="fab fa-github"></i> Tutorial</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Background image -->
+  
     </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
+
+    <section class="container" id="fotos">
+
+      <header class="text-center">
+        <h2 class="display-5">Fotos de mis vacaciones</h2>
         <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
       </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
+        <div class="carousel-indicators">
+        <button
+          type="button"
+          data-mdb-target="#carouselExampleIndicators"
+          data-mdb-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-mdb-target="#carouselExampleIndicators"
+          data-mdb-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-mdb-target="#carouselExampleIndicators"
+          data-mdb-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/3.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-mdb-target="#carouselExampleIndicators"
+        data-mdb-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-mdb-target="#carouselExampleIndicators"
+        data-mdb-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+      
+      
     </section>
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
+    <section class="container">
+
+        <h2 class="display-5 text-center mb-3">La <span class="text5">importancia</span> de las vacaciones</h2>
+        <p class="bg-light shadow p-4 mb-3">Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
+       
+        <div class="row mb-4">
+          <div class="col-md-3" data-aos="flip-up" data-aos-delay="300" data-aos-duration="2000">
+            <div class="card text-center ">
+              <div class="card-body">
+                <h5 class="card-title skill"><i class="fas fa-brain"></i></h5>
+                <p class="card-text">
+                  Mejora la salud mental
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" data-aos="flip-up" data-aos-delay="300" data-aos-duration="2000">
+            <div class="card text-center ">
+              <div class="card-body">
+                <h5 class="card-title skill"><i class="fas fa-running"></i></h5>
+                <p class="card-text">
+                  Incrementa la motivación
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" data-aos="flip-up" data-aos-delay="300" data-aos-duration="2000">
+            <div class="card text-center ">
+              <div class="card-body">
+                <h5 class="card-title skill"><i class="fas fa-fire-alt"></i></h5>
+                <p class="card-text">
+                  Reduce el burnout
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" data-aos="flip-up" data-aos-delay="300" data-aos-duration="2000">
+            <div class="card text-center ">
+              <div class="card-body">
+                <h5 class="card-title skill"><i class="fas fa-laptop-code"></i></h5>
+                <p class="card-text">
+                  Mejora tu productividad
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       
     </section>
     
+    <!--FOOTER-->
+    <div class="container-fluid text-center p-0 m-0" style="overflow: hidden;">
+      
+       <!--svg wave-->
+      <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #073E8A;"></path></svg>
+      </div>
+
+      <div class="back text1 m-0 p-3">
+        <p>Copyright ©  <script>document.write( new Date().getFullYear())</script> 
+        Junix. All rights reserved.
+        </p>
+        <p>Made it with love 💚️ from Ecuador 🇪🇨️</p>
+      </div>
+
+    </div>
+
   </main>
 </body>
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery.3.4.1.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+  <!--  AOS  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- JS -->
+  <script type="text/javascript" src="js/app.js"></script>
+
 </html>
