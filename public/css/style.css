@@ -1,3 +1,8 @@
+body {
+color: rgb(230, 224, 224);
+background: linear-gradient(to bottom, rgb(151, 40, 155), white);
+}
+
 nav{
   background-color: aliceblue;
   padding: 15px;
@@ -16,11 +21,9 @@ section{
 }
 
 .cursos div{
-  background-color: black;
   color: white;
   max-width: 200px;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
 }
 .fotos img{
   max-width: 450px;
@@ -35,4 +38,77 @@ ul li::marker {
 
 ol li{
   text-align: left;
+}
+
+.botones {
+  color: rgb(226, 216, 222);
+  background-color: rgb(83, 22, 58);
+}
+
+.efecto-1 {
+
+background-color: rgb(221, 88, 192);
+padding: 20px;
+
+}
+
+
+
+ .efecto-2 {
+
+
+  background-color: rgb(144, 62, 221);
+  padding: 20px;
+
+ }
+
+
+
+ .efecto-3 {
+  background-color: rgb(76, 146, 226);
+  padding: 20px;
+ }
+
+
+ .efecto-4 {
+  background-color: rgb(76, 146, 226);
+  padding: 20px;
+ }
+
+footer {
+  background-color: rgb(207, 150, 240);
+}
+
+.efecto-5 {
+color: rgb(50, 5, 59);
+
+}
+
+img:hover {
+  transform: rotate(2deg);
+}
+
+
+.enlace-1 {
+  background-color: rgb(219, 22, 193);
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.enlace-1:hover {
+background-color: rgb(155, 7, 135);
+}
+
+.enlace-2 {
+  background-color: rgb(76, 146, 226);
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.enlace-2:hover {
+ background-color: rgb(11, 71, 139);
 }
