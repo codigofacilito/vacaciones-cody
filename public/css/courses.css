@@ -1,0 +1,24 @@
+.courses {
+    padding-block: 5em;
+    background: var(--yellow10);
+}
+
+.courses__content {
+    display: flex;
+    gap: 5em;
+    margin-block: 5em;
+}
+
+.courses__content--cards {
+    flex: 1;
+}
+
+.courses__content--text {
+    flex: 1;
+}
+
+.courses__content--cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

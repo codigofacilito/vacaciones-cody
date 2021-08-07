@@ -1,0 +1,39 @@
+.banner {
+    background: url(../images/rsz_palmera.png), url(../images/arena.png), linear-gradient(to bottom, var(--yellow20), var(--yellow10));
+    background-repeat: no-repeat;
+    background-position: center bottom, center center;
+    height: 100vh;
+}
+
+.banner__hero {
+    padding-block-start: 5rem;
+    width: 45%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.banner__comment {
+    align-self: center;
+    color: var(--white);
+}
+
+.banner__comment p {
+    margin-block: 0;
+}
+
+.banner__comment h2 {
+    font-size: 2.6rem;
+}
+
+.banner__comment p:last-of-type {
+    font-size: 1.8rem;
+}
+
+.banner__cody {
+    width: 35em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

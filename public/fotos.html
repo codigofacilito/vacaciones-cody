@@ -5,29 +5,70 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/palmera.ico" type="image/x-icon">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
 </head>
 
 <body>
   <main>
     <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+      <nav class="navbar">
+        <div class="wrapper">
+          <div class="navbar__content">
+            <a class="navbar__brand" href="./index.html">
+              <h1>Cody Dev</h1>
+            </a>
+            <div class="navbar__links">
+              <a class="link" href="./perfil.html">Perfil</a>
+              <a class="link" href="./fotos.html">Fotos</a>
+              <div class="social-media">
+                <a href="https://github.com/codigofacilito" target="_blank"><img src="./images/github-square-brands.svg" alt="GH"></a>
+                <a href="https://www.youtube.com/user/codigofacilito" target="_blank"><img src="./images/youtube-square-brands.svg" alt="YT"></a>
+                <a href="https://twitter.com/codigofacilito" target="_blank"><img src="./images/twitter-square-brands.svg" alt="TW"></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
+      <div class="wrapper title_photos">
+        <h2>Estas son mis Vacaciones</h1>
+        <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+      </div>
     </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+    <div class="fotos titles">
+      <div class="wrapper">
+        <div class="photos__content">
+          <!-- <div class="photos__content--description">
+            <header>
+              <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
+              <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé.</p>
+            </header>
+            <p>
+              Puedes ver más, en la galería de fotos de mi página
+            </p>
+            <a class="button" href="fotos.html">Ir a la galería</a>
+          </div> -->
+          <div class="photos__content--slider">
+            <!-- <img src="images/1.jpg" alt="Cody en la playa">
+            <img src="images/2.jpg" alt="Cody acampando">
+            <img src="images/3.jpg" alt="Cody en una alberca"> -->
+          </div>
+        </div>
+        <!-- <img src="images/1.jpg" alt="Cody en la playa">
+        <img src="images/2.jpg" alt="Cody acampando">
+        <img src="images/3.jpg" alt="Cody en una alberca">
+        <img src="images/4.jpg" alt="Cody en una alberca">
+        <img src="images/5.jpg" alt="Cody en una alberca">
+        <img src="images/6.jpg" alt="Cody en una alberca"> -->
+      </div>
     </div>
-
   </main>
 </body>
 

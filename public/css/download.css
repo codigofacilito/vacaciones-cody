@@ -1,0 +1,50 @@
+
+.download{
+    width: 100%;
+    /* background:url(../images/planta-acuatica.png), linear-gradient(180deg, var(--yellow20), var(--yellow30)); */
+    background:url(../images/planta-acuatica.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 80% top;
+    border-radius: 40% 0% 0% 0%;
+    box-sizing: border-box;
+    color: var(--green20);
+    padding-block: 5em;
+}
+
+.download__content {
+    margin: auto;
+    /* max-inline-size: 80%; */
+    display: flex;
+    gap: 5em;
+}
+
+.download__content--image {
+    width: 20%;
+    order: -1;
+}
+
+.download__content--text{
+    width: 60%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1rem;
+}
+
+.download__content--text h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 2em;
+}
+
+.download__content--text p {
+    font-family: var(--fontBase);
+    font-size: 20px;
+    margin: 0;
+}
+
+.download__content--text .button {
+    margin-block-start: 2em;
+}
