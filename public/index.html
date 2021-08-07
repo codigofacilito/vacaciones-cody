@@ -6,94 +6,299 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis vacaciones</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/album.css">
+  <link rel="stylesheet" href="icomoon/style.css">
 </head>
 <body>
   <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
-      </nav>
-      <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
-    </header>
+<!-------------------------section inicio------------------------------------------->
 
-    <section>
-      <header>
-        <h2>Mis vacaciones Frontend</h2>
+    <section class="sections section-inicio" id="inicio">
+
+      <header class="header header-inicio">
+        <h1>Mis Vacaciones</h1>
+
+        <div class="mensaje-inicio">
+            <p class="saludo">
+                HOLA!! soy Cody, un aspirante a Dev, en 2019 organicé un viaje para desestresarme 
+                del código y en esta página quiero compartirlo contigo.
+            </p>
+
+            <div class="container-cody">
+                <img src="images/cody2.png" class="cody" alt="Cody saludando">
+            </div>    
+        </div>  
+
       </header>
-      <p> Durante el verano de 2019, decidí comenzar a aprender desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript </p>
-      <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página </p>
-      <p> Estos son los cursos que estuve tomando </p>
-      <div class="cursos">
-        <div>
-          <p>Curso profesional de Desarrollo Web</p>
+
+
+        <div class="container-btn">
+          <a href="#cursos" class="btn-inicio">Comenzemos</a>
+        </div> 
+   
+    </section>
+
+<!--------------------------section cursos----------------------------------------->
+
+
+    <section class="sections section-cursos" id="cursos">
+
+            <header class="header header-cursos">
+              <h2>Mis Cursos</h2>  
+            </header>
+
+        <div class="container-cursos">
+
+            <div class="div-cursos">
+
+                <a href="https://codigofacilito.com/cursos/frontend-profesional" target="_blank" title="Click para ir al Curso">
+                  <img src="images/curso1.png" class="cursos" alt="Curso de desarrollo web - codigo facilito">
+                </a>
+                <a href="https://codigofacilito.com/cursos/primera-pagina-2019" target="_blank" title="Click para ir al Curso">
+                  <img src="images/curso2.png" class="cursos" alt="Curso para crear tu primera pagina web - codigo facilito">
+                  </a>
+            </div>
+
+            <div class="mensaje-inicio mensaje-cursos">
+                  <p class="saludo mensaje-escritorio"> Durante el verano de 2019, decidí comenzar a  aprender     desarrollo frontend, por lo que durante mi viaje, estuve aprendiendo HTML, CSS, y JavaScript y obiamente con los cursos de Codigo Facilito que son los mejores!
+                      Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis habilidades en tecnologías frontend, construyendo esta página<br>
+                      Estos son los cursos que estuve tomando </p>
+                      <p class="saludo mensaje-movil"> Durante el verano de 2019, decidí aprender desarrollo frontend y que mejor que con los cursos de Codigo Facilito!!<br>
+                        Estos son los cursos que estuve tomando </p>
+
+                  <div class="container-cody">
+                      <img src="images/cody2.png" class="cody" alt="Cody">
+                  </div>
+
+            </div> 
+
         </div>
-        <div>
-          <p>Curso para crear mi primera página web</p>
+
+            <div class="container-btn btn-secundario">
+              <a href="#aprendisaje" class="btn-inicio">siguiente</a>
+            </div>   
+
+    </section>
+
+    <!------------------------section mi aprendisaje-------------------------------------->
+
+    <section class="sections section-aprendisaje" id="aprendisaje">
+
+        <header class="header header-aprendisaje">
+          <h2>Mi Aprendizaje</h2>   
+        </header>
+        <div class="container-cursos">
+
+            <div class="tecnologias">
+             <article class="article-iconos">
+               <img src="images/ico-html.svg" alt="icono HTML" class="icono-tecnologia">
+               <p>Con HTML5 aprendi como se construye la estructura de una pagina web</p>
+             </article>
+
+             <article class="article-iconos">
+              <img src="images/ico-css.svg" alt="icono Css" class="icono-tecnologia">
+              <p>Con CSS aprendi a darle forma y color a mis paginas, luego aprendi algunas animaciones y fue genial,
+                Muy divertido!!
+              </p>
+            </article>
+
+            <article class="article-iconos">
+              <img src="images/ico-js.svg" alt="icono JavasCript" class="icono-tecnologia">
+              <p>Con JavasCript aprendi como hacer mis paginas web dinamicas, agregandole eventos, 
+                ventanas de mensajes y mas animaciones entre muchas otras cosas.
+                </p>
+            </article>
+
+            <article class="article-iconos">
+              <img src="images/ajax.png" alt="icono JavasCript" class="icono-tecnologia">
+              <img src="images/wordpress.svg" alt="icono JavasCript" class="icono-tecnologia">
+              <img src="images/boot.svg" alt="icono JavasCript" class="icono-tecnologia">
+              <p>Tambien Aprendi estas tecnologias, nuevas para mi.
+                </p>
+            </article>
+            </div>
+
+            <div class="mensaje-inicio mensaje-cursos mensaje-aprendisaje">
+
+                <p class="saludo saludo-aprendisaje">También me propuse aprender nuevas 
+                                  tecnologías durante 2021.<br>
+                                  Esta fue mi ruta de aprendisaje
+                </p>
+
+                <div class="container-cody">
+                    <img src="images/cody2.png" class="cody" alt="Cody">
+                </div>
+
+            </div>   
+
         </div>
-      </div>
+
+        <div class="container-btn btn-secundario">
+            <a href="#galeria" class="btn-inicio">siguiente</a>
+        </div> 
+
     </section>
 
-    <section>
-      <header>
-        <h2>Ruta de aprendizaje 2021</h2>
-        <p> También me propuse aprender nuevas tecnologías durante 2021</p>
-      </header>
-      <ul>
-        <li> Flexbox, y Grid </li>
-        <li> Animaciones con CSS y JavaScript </li>
-        <li> AJAX </li>
-        <li> HTML semántico </li>
-        <li> Entre otros </li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Colabora en mi página</h2>
-      </header>
-      <p>
-        Como parte de mi formación Frontend, aprendí acerca de Git y GitHub, por lo que decidí subir mi código a GitHub
-      </p>
-      <p>
-        Puedes ayudarme a mejorar mi página, haciendo un fork de mi página, y enviando un pull request.
-      </p>
-      <p>
-        Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-        <a href="" target="_blank" >Ir al tutorial</a>
+<!-------------------------------section galeria------------------------------------>
 
-      </p>
-    </section>
-    <section>
-      <header>
-        <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
-        <p>¡Bien! Sé que estás aquí por mis vacaciones, aquí te comparto algunas fotos que tomé:</p>
-      </header>
-      <div class="fotos">
-        <img src="images/1.jpg" alt="Cody en la playa">
-        <img src="images/2.jpg" alt="Cody acampando">
-        <img src="images/3.jpg" alt="Cody en una alberca">
-        <p>
-          Puedes ver más, en la galería de fotos de mi página
-          <a href="fotos.html">Ir a la galería</a>
-        </p>
-      </div>
-    </section>
+    <section class="sections galeria" id="galeria">
+      <header class="header header-galeria">
+        <h2>Mis Fotos</h2> 
+      </header> 
 
-    <section>
-      <header>
-        <h2>La importancia de las vacaciones</h2>
-        <p>Aprender a programar y escribir código, puede ser estresante, por eso es muy importante que periódicamente nos desconectemos y descansemos apropiadamente</p>
-        <p>Durante mis vacaciones aprendí que existen distintos beneficios de descansar:</p>
-        <ol>
-          <li>Mejora la salud mental</li>
-          <li>Incrementa la motivación</li>
-          <li>Reduce el burnout</li>
-          <li>Mejora tu productividad y creatividad</li>
-        </ol>
-      </header>
+
+
+
+
+
+
+      <div class="container-cards" id="container-cards">
       
-    </section>
+        <label for="card-uno" class="label label1">en el aeropuerto</label>
+        <input type="radio" name="card" id="card-uno">
+
+        <label for="card-dos" class="label label2">visitando un amigo</label>
+        <input type="radio" name="card" id="card-dos">
+
+        <label for="card-tres" class="label label3">acampando en la playa</label>
+        <input type="radio" name="card" id="card-tres">
+
+        <label for="card-cuatro" class="label label4">de paseo por la playa</label>
+        <input type="radio" name="card" id="card-cuatro">
+
+        <label for="card-cinco" class="label label5">en el hotel</label>
+        <input type="radio" name="card" id="card-cinco">
+
+
+
+  
+        <div class="ec-card1 card-position card" id="card1">
+            <img src="images/6.jpg" alt="cody en el aeropuerto" class="ec-img-card">
+        </div>
+
+        <div class="ec-card2 card-position card" id="card2">
+            <img src="images/5.jpg" alt="cody visitando un amigo" class="ec-img-card">
+        </div>
+
+        <div class="ec-card3 card-position card" id="card3">
+            <img src="images/2.jpg" alt="cody acampando en la playa" class="ec-img-card">
+        </div>
+
+        <div class="ec-card4 card-position card" id="card4">
+          <img src="images/1.jpg" alt="cody de paseo en bicicleta" class="ec-img-card">
+        </div>
+
+        <div class="ec-card5 card-position card" id="card5">
+            <img src="images/3.jpg" alt="cody en el hotel" class="ec-img-card">
+        </div>
+
+        <div class="ec-card6 card-position card" id="card6">
+          <span class="icon-spinner2 cargando"></span>
+        </div>
+
+        <div class="ec-card7 portada-album card-position card" id="card7">
+           <h3>mi album</h3>   
+        </div>
+
+        <p class="saludo mensaje-album enojado">Aqui estoy en el aeropuerto esperando mi vuelo.<br>
+        y como ya te habras dado cuenta... ODIO ESPERAR!!! </p>
+
+        <p class="saludo mensaje-album anteojos">Llegando al hotel decidi tomarme la mañana para
+          descanzar despues del largo viaje.<br>Asi que me meti a la picina
+        a refrescarme y tomar mi Juguito... </p>
+
+        <p class="saludo mensaje-album bicicleta">Luego decidi alquilar una bicicleta para recorrer la playa<br>
+          fue un paseo hermoso y neseario para quitarme el estres y poder hacer algo de ejercicio </p>
+
+        <p class="saludo mensaje-album busito">Otro dia fui a visitar un amigo. El es desarrollador web y fue el que me animo a empezar 
+          en este maravilloso mundo de la programacion.
+        <br>Ese dia hacia frio... </p>
+        
+        <p class="saludo mensaje-album normal">Ya terminando mis vacaciones fui a acampar cerca del mar. Nunca lo habia echo. Fue muy lindo conectar con la naturaleza y dejar un poco las redes y el internet...
+        </p>   
+        
+        <div class="mensaje-inicio mensaje-album saludando">
+
+          <p class="saludo saludo-album">Bueno ahora lo que todo el mundo esperaba.
+            <br>Fotos de mis vacaciones!!!
+          </p>
+              <div class="container-cody">
+                  <img src="images/cody2.png" class="cody" alt="Cody">
+              </div>
+
+        </div> 
+
+        <img src="images/t8qXd3Q.png" class="cody-fotos cody normal" alt="Cody saludando">
+        <img src="images/cody-enojado.png" class="cody-fotos cody enojado" alt="Cody enojado">
+        <img src="images/cody-anteojos.png" class="cody-fotos cody anteojos" alt="Cody con anteojos de sol">
+        <img src="images/cody-bicicleta.png" class="cody-fotos cody bicicleta" alt="Cody en bicicleta">
+        <img src="images/cody-busito.png" class="cody-fotos cody busito" alt="Cody con su busito">
+
+        
+
+    </div>
+
+
+
+
+
+      <div class="container-btn btn-secundario">
+        <a href="#footer" class="btn-inicio">siguiente</a>
+      </div>   
+
+
+
+</section>
+
+<!------------------------------Footer------------------------------>
+
+<footer class="sections footer" id="footer">
+
+  <header class="header header-cursos">
+    <h2>Fin</h2>  
+  </header>
+
+      <div class="container-final">
+
+            
+
+      
+
+          <div class="div-contacto">
+
+                <div class="perfil">
+                  <img src="images/avatar.png" alt="avatar"><small>Cabral_Exon</small>
+                </div>
+
+                <div class="redes">
+                  <a href="mailto:exoncabral1@gmail.com" target="_blank"><span class="icon-mail"></span></a>
+                  <a href="https://github.com/Exon-10" target="_blank"><span class="icon-github"></span></a>
+                  <a href="https://www.linkedin.com/in/exoncabral" target="_blank"><span class="icon-linkedin"></span></a>
+                </div>
+          </div>
+
+
+            <div class="mensaje-inicio div-final">
+
+              <p class="saludo despedida">Hey! llegamos al final de mis vacaciones FrontEnd.
+                <br>No te olvides de saludar a mi amigo quien me ayudo a desarrollar esta pagina web.
+                Te dejo sus redes y nos vemos el PROXIMO VERANO!!
+              </p>
+                  <div class="container-cody">
+                      <img src="images/cody2.png" class="cody" alt="Cody">
+                  </div>
+
+            </div> 
+
+
+      </div>
+
+        <div class="container-btn btn-secundario">
+          <a href="#inicio" class="btn-inicio">Inicio</a>
+        </div>   
+
+</footer>
+   
     
   </main>
 </body>

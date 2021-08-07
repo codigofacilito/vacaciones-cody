@@ -1,0 +1,567 @@
+ 
+ 
+ .ec-card1, .ec-card2, .ec-card3, .ec-card4, .ec-card5 , .ec-card6, .ec-card7 {
+    width: 25rem;
+    height: 18rem;
+    margin: 4rem;
+    padding: 0rem;
+    color: rgba(0, 0, 0, 0.631);
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out 0s;
+    box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.124);
+    cursor: pointer;
+    
+  }
+
+
+  .ec-card1 img, .ec-card2 img, .ec-card3 img, .ec-card4 img, .ec-card5 img, .ec-card6 img {
+   width: 100%;
+   height: 18rem;
+   border-radius: 0.5rem;
+  }
+  
+  .card-position {
+    grid-area: fotos;
+  }
+/*-----------------------card-1---------------------------------*/
+
+  .ec-card1 {
+    margin-left: 3vw;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-name: card;
+    animation-fill-mode: forwards;
+    z-index: 1;
+  }
+  #card-uno:checked ~ .ec-card1 {
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-name: card-animation-open;
+    animation-fill-mode: forwards;
+  }
+  #card-uno:checked ~ .enojado {
+    opacity: 1;
+    transition: 1s ease-in-out 0s;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: enojado;
+  }
+  #card-uno:checked ~ .saludando {
+    opacity: 0;
+  }
+  #card-uno:checked ~ .portada-album {
+    opacity: 0;
+  }
+  @keyframes enojado { 
+      0% {
+          
+      }
+      50% {
+          transform:scale(1.05);
+      }
+  }
+
+
+  :root{
+    --traslate-x:26rem;
+    --margin-x:3vw;
+  }
+    @media (max-width:768px) {
+  
+     :root{
+      --traslate-x:-26rem;
+      
+        }
+    }
+  @keyframes card {
+    0% {
+      transform: rotateY(0deg) translateZ(0vw);
+      z-index: 1;
+      margin-left: var(--margin-x);
+    }
+    20% {
+      transform: rotateY(-5deg) rotatez(5deg) translatex(var(--traslate-x));
+      z-index: 1;
+    }
+    50% {
+      z-index: 0;
+    }
+    100% {
+      transform: rotateY(0deg) translatex(0vw);
+      z-index: 0;
+    }
+  }
+  
+  /*------------------------card-2---------------------------------------*/
+
+  .ec-card2 {
+    margin-left: 3vw;
+    background: radial-gradient(30rem, white, rgba(26, 81, 87, 0.651));
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-name: card;
+    animation-fill-mode: forwards;
+    z-index: 0;
+  }
+  #card-dos:checked ~ .ec-card2  {
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-name: card-animation-open;
+    animation-fill-mode: forwards;
+  }
+  #card-dos:checked ~ .busito {
+    opacity: 1;
+    transition: 1s ease-in-out 0s;
+   }
+   #card-dos:checked ~ .portada-album {
+    opacity: 0;
+  }
+  #card-dos:checked ~ .saludando {
+    opacity: 0;
+  }
+  
+/*---------------------------card-3----------------------------------------*/
+
+  .ec-card3 {
+    margin-left: 3vw;
+    background: radial-gradient(30rem, white, rgba(26, 81, 87, 0.651));
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-name: card;
+    animation-fill-mode: forwards;
+  }
+  #card-tres:checked ~ .ec-card3 {
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-name: card-animation-open;
+    animation-fill-mode: forwards;
+  }
+ #card-tres:checked ~ .normal {
+    opacity: 1;
+    transition: 1s ease-in-out 0s;
+}
+#card-tres:checked ~ .portada-album {
+    opacity: 0;
+  }
+  #card-tres:checked ~ .saludando {
+    opacity: 0;
+  }
+/*---------------------------card-4----------------------------------------*/
+
+.ec-card4 {
+    margin-left: 3vw;
+    background: radial-gradient(30rem, white, rgba(26, 81, 87, 0.651));
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-name: card;
+    animation-fill-mode: forwards;
+  }
+  #card-cuatro:checked ~ .ec-card4 {
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-name: card-animation-open;
+    animation-fill-mode: forwards;
+  }
+ #card-cuatro:checked ~ .bicicleta {
+    opacity: 1;
+    transition: 1s ease-in-out 0s;
+}
+#card-cuatro:checked ~ .portada-album {
+    opacity: 0;
+  }
+  #card-cuatro:checked ~ .saludando {
+    opacity: 0;
+  }
+
+/*---------------------------card-5----------------------------------------*/
+
+.ec-card5 {
+    margin-left: 3vw;
+    background: radial-gradient(30rem, white, rgba(26, 81, 87, 0.651));
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-name: card;
+    animation-fill-mode: forwards;
+  }
+  #card-cinco:checked ~ .ec-card5 {
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-name: card-animation-open;
+    animation-fill-mode: forwards;
+  }
+ #card-cinco:checked ~ .anteojos {
+    opacity: 1;
+    transition: 1s ease-in-out 0s;
+}
+#card-cinco:checked ~ .portada-album {
+    opacity: 0;
+  }
+
+  #card-cinco:checked ~ .saludando {
+    opacity: 0;
+  }
+/*----------------------------------------------------------------------------*/
+
+.ec-card6 {
+    margin-left: 3vw;
+    background: rgb(240, 240, 240);
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-name: card;
+    animation-fill-mode: forwards;
+    z-index: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.cargando{
+    animation-iteration-count: infinite;
+    animation-duration: .3s;
+    animation-name: cargando;
+}
+@keyframes cargando { 
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.ec-card7 {
+    margin-left: 3vw;
+    background: #ffffff;
+    color: #307dc5;
+    font-family: 'fuente2';
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+:root{
+  --width-card:3vw;
+}
+  @media (max-width:768px) {
+
+   :root{
+  --width-card:5vw;
+}
+  }
+
+  @keyframes card-animation-open {
+    20% {
+      transform: translatex(0vw) translatez(0rem);
+    }
+    100% {
+      transform: rotateY(0deg) translateZ(0rem);
+      z-index: 1;
+      margin-left: var(--width-card);
+    }
+  }
+
+  
+.container-cards {
+    width: 100%;
+    height: 65vh;
+    background-color: rgba(0, 255, 255, 0);
+    margin: 0rem;
+    transition: 1s ease-in-out 0s;
+    display: grid;
+    grid-template-areas: 'btn-1 btn-2 btn-3 btn-4 btn-5'
+                          'fotos  fotos mensaje mensaje cody ';
+  }
+
+@media (max-width:768px) {
+  .container-cards{
+    grid-template-areas:'fotos' 
+                        'btn-1'
+                        'btn-2' 
+                        'btn-3'
+                        'btn-4'
+                        'btn-5'
+                        'mensaje';
+                      
+  }
+}
+
+@media (max-width:768px) {
+  .card{
+    width: 90%;
+    max-width: 25rem;
+    height: 15rem;
+    border-radius: 0rem;
+    margin: 1rem 5vw;
+    background-color: #ebebeb;
+    box-shadow: none;
+  }
+  .card img{
+    height: 15rem;
+    border-radius: 0rem;
+  }
+}
+
+input{
+     display: none;
+}
+
+.label{
+  
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     text-transform: uppercase;
+     text-align: center;
+     padding: 0.5rem 0.5rem;
+     border-radius: 1rem;
+     margin-left: 0rem;
+     font-family: 'fuente2';
+     font-size: 0.7rem;
+     color: rgb(255, 255, 255);
+     background:linear-gradient(to left, #046EA0, #01a896);
+ }
+ @media (min-width:768px) {
+  .label{
+  height: 2rem;
+ }
+ }
+
+ @media (max-width:768px) {
+  .label{
+   display: inline;
+   width: 50%;
+   margin: 0rem auto;
+   border-radius: 1rem;
+   border: 0.01rem solid rgb(255, 255, 255);
+ }
+}
+
+.label1{
+    grid-area: btn-1;
+ }
+.label5{
+   
+    grid-area: btn-2;
+}
+.label4{
+   
+    grid-area: btn-3;  
+}
+.label2{
+   
+    grid-area: btn-4;
+    
+}
+.label3{
+    
+    grid-area: btn-5;
+    
+}
+
+.mensaje-album{
+    grid-area: mensaje;
+    opacity: 0;
+    margin-top: 7rem;
+    background-color: #03b4a220;
+    border: solid 0.1rem #03B4A1;
+    color: #02443D;
+    height: 7rem;
+}
+.mensaje-album::before{
+  margin-top: 6rem;
+  margin-left: 13rem;
+  border-left: 1rem solid #03B4A1;
+}
+.saludando{
+  opacity: 1;
+  border: 0rem;
+  background-color: white;
+}
+@media (max-width:768px) {
+  .saludando{
+    display: none;
+  }
+}
+.saludo-album{
+  background-color: #03b4a220;
+  border: solid 0.1rem #03B4A1;
+}
+.saludo-album::before{
+  margin-top: 4.1rem;
+  margin-left: 2rem;
+  border-left: 1rem solid #03B4A1;
+}
+
+.cody-fotos{
+    width: 9rem;
+    max-width: 10rem;
+    min-width: 8rem;
+    margin-top:15rem;
+    z-index: 0;
+    opacity: 0;
+    grid-area:cody;
+}
+@media (max-width:768px) {
+  .cody-fotos{
+    display: none;
+  }
+  .mensaje-album{
+    grid-area: mensaje;
+    opacity: 0;
+    margin: 0.5rem auto;
+    background-color: #03b4a220;
+    border: solid 0.1rem #03B4A1;
+    color: #02443D;
+  }
+  .mensaje-album::before{
+    display: none;
+  }
+}
+/*-------------------------footer------------------*/
+
+.footer{
+  height: 75vh;
+  background-color: #00121a;
+  margin-top: 1rem;
+}
+@media (max-width:768px) {
+  .footer{
+    height: 100vh;
+  }
+}
+.despedida{
+  background-color: #000b10;
+  color: #046EA0;
+}
+@media (max-width:768px) {
+  .despedida{
+    width: 14rem;
+    border: 0rem;
+    margin: 0rem auto;
+  }
+}
+.despedida::before{
+  margin-top: 7rem;
+  border-left: 1rem solid #000b10;
+  z-index: -100;
+}
+.div-footer{
+  background-color: #03b4a200;
+}
+
+.container-final{
+  width:50%;
+  margin: 0rem auto;
+  display: grid;
+  grid-template-areas: 'avatar saludo-final';
+}
+@media (max-width:768px) {
+  .container-final{
+    width: 65%;
+    height: 80vh;
+    grid-template-areas: 'saludo-final'
+                           'avatar';
+  }
+}
+.div-contacto{
+  grid-area: avatar;
+  height: 10rem;
+}
+
+.div-final{
+  grid-area: saludo-final;
+}
+.perfil{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--color-secundario);
+  font-family: 'fuente';
+}
+.perfil img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10rem;
+}
+.redes{
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.redes a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.label{
+  position: absolute;
+  display: block;
+  width: 10rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  border-radius: 1rem;
+  font-family: 'fuente2';
+  font-size: 0.7rem;
+  color: rgb(255, 255, 255);
+  background:linear-gradient(to left, #307dc5, #34c067);
+}
+
+.label1{
+  margin-left: 17%;
+ 
+}
+.label5{
+ margin-left: 31%;
+ 
+}
+.label4{
+ margin-left: 45%;   
+}
+.label2{
+ margin-left: 59%;
+ 
+}
+.label3{
+ margin-left: 73%;
+ 
+}
+
+
+.cody-fotos{
+ width: 9rem;
+ max-width: 10rem;
+ min-width: 8rem;
+ position: absolute;
+ margin-top:15rem;
+ margin-left: 65rem;
+ z-index: 0;
+ opacity: 0;
+}
