@@ -1,38 +1,290 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
 }
 
+:root {
+  --dark-green: #00b043;
+  --green-main: lightgreen;
+}
+
+body {
+  background-color: #00b043;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23004d1d' fill-opacity='0.51' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+main {
+  background: var(--green-main);
+  opacity: 0.9;
+  margin: 0 40px;
+}
+nav{
+  background-color: aliceblue;
+  padding: 10px;
+  display: flex;
+  gap:1em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+}
+
+nav .nav__title {
+  flex: .5;
+  font-size: 1.5em;
+  transition: all .3s ease;
+}
+
+nav .nav__title:hover {
+  border-bottom: 4px solid var(--dark-green);
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  transition: all .3s ease;
+  padding: 5px;
+  border-radius: 23px;
+  width: 100px;
+}
+
+nav a:hover {
+  background: #00b043;
+  color: #fff;
+}
+
+.header__mainBanner {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 15%;
+  margin-bottom: 10px;
+  height: 500px;
+}
+
+.header__mainBanner img {
+  filter: drop-shadow(25px 15px 10px #000);
+  transition: all .3s ease-in-out;
+}
+
+.header__mainBanner:hover  img{
+  filter: drop-shadow(15px -15px 10px #000);
+}
+
+.header__mainBanner p {
+  text-align: left;
+}
 main{
   text-align: center;
   max-width: 960px;
   margin:0 auto;
 }
 
+h1 {
+  font-size: 50px;
+  filter: drop-shadow(10px 8px 5px #000);
+}
+h2 {
+  margin-bottom: 25px;
+  font-size: 35px;
+  filter: drop-shadow(10px 8px 5px #000);
+}
 section{
-  margin-top: 3rem;
+  margin-top: 20px;
+  padding: 10px 1.5em;
+}
+hr {  
+  border: 1px solid #000;
+  margin: 20px 0 10px 0;
+}
+section > p, 
+.section__vacation p, 
+.section__rest-matters p {
+  font-size: 18px;
+  text-align: left;
+}
+
+.section__2019 {
+  height: 550px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
 }
 
 .cursos div{
   background-color: black;
   color: white;
-  max-width: 200px;
+  width: 200px;
+  min-width: 200px;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 15px 8px 15px black;
+  border-radius: 43px;
+  padding: 25px 5px;
+  margin: 10px;
+  transition: all .3s ease;
 }
+
+.cursos div:hover {
+  box-shadow: 5px 5px 25px black;
+  color: #00b043;
+} 
+
+.section__2021 .tech-in-2021{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tech-in-2021 li {
+  border-left: 2px solid var(--dark-green);
+  height: 50px;
+  text-align: center;
+  list-style: none;
+  transition: all .3s ease-out;
+}
+
+.tech-in-2021 li:hover {
+  background: var(--dark-green);
+  color: #fff;
+}
+
+.section__collab {
+  height: 250px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+.section__collab a {
+  text-decoration: underline;
+  transition: all .3s ease-out;
+  color: #000;
+}
+
+.section__collab a:hover {
+  filter: drop-shadow(7px 7px 5px #000);
+  color: #00aa43;
+}
+.section__vacation a {
+  text-decoration: underline;
+  color: #fff;
+  transition: all .3s ease-out;
+}
+
+.section__vacation a:hover {
+  color: var(--dark-green);
+  filter: drop-shadow(3px 0px 50px black);
+}
+.fotos {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+/* 
+.fotos .fotos__span {
+  grid-column: 1 / span 2;
+}
+
+.fotos .fotos__span img {
+  width: 100%;
+  height: 100%;
+} */
 .fotos img{
-  max-width: 450px;
-  display: inline-block;
+  max-width: 350px;
 }
+.section__rest-matters header{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+ul, 
+ol {
+  margin-left: 20px;
+}
+
+ol li, 
 ul li{
   text-align: left;
 }
-ul li::marker {
-  content: "🚀";
+.footer {
+  padding: 10px 0 20px 0;
+  width: 100%;
+  background-color: var(--dark-green);
+  color: #fff;
 }
 
-ol li{
-  text-align: left;
+.footer h2 {
+  margin: 25px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer h2 a {
+  text-decoration: underline;
+  color: #fff;
+  transition: all .3s ease-out;
+}
+
+.footer h2 a:hover {
+  filter: drop-shadow(3px 0px 5px #000);
+  color: #00aa43;
+}
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 100px;
+}
+
+.footer__links li {
+  padding: 5px;
+  border-left: 2px solid #fff;
+  transition: all .3s ease-out;
+}
+
+.footer__links li:hover {
+  border-left: 4px solid #fff;
+}
+
+.footer__links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 700px) {
+  nav {
+    padding: 2px;
+  }
+  .nav__title p{
+
+    font-size: 15px;
+    background: transparent;
+  }
+  hr {
+    border: 2px solid #000;
+  }
+  .section__2021 .tech-in-2021{
+    display: block;
+    flex-flow: row wrap;
+  }
+  
+  .section__2021 .tech-in-2021 li {
+    border-left: 2px solid var(--dark-green);
+    padding: 5px;
+    margin: 15px;
+  }
 }
