@@ -1,16 +1,31 @@
 .hero-fotos{
+    background-color: var(--verde);
     color: var(--blanco);
-    margin-block: 120px;
+    padding-block: 64px;
     margin-inline: auto;
     text-align: center;
+
 }
 .hero-fotos .desc{
     margin-block-end: 64px;
 }
 .hero-fotos .desc h1{
+    font-size: 48px;
     margin-block-end: 32px;
 }
 .hero-fotos .flecha{
     margin-inline: auto;
-    max-inline-size: 200px;
+    max-inline-size: 96px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-fotos{
+        padding-block: 120px;
+    }
+    .hero-fotos .desc h1{
+        margin-block-end: 32px;
+    }
+    .hero-fotos .flecha{
+        max-inline-size: 200px;
+    }
 }

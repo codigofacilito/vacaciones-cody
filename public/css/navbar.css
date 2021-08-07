@@ -1,15 +1,19 @@
 .navbar{
+    transition: .3s all;
+}
+.navbar .wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-block-start: 16px;
     overflow: hidden;
 }
+
 .logo{
     font-weight: 900;
     font-size: 24px;
 }
-.navbar a{
+.navbar .wrapper a{
     color: var(--blanco);
     text-transform: uppercase;
 }
@@ -65,6 +69,39 @@
     transform: translateX(0);
 }
 
+
+
+/* Menu sticky */
+.navbar-sticky{
+    position: fixed;
+    inset-inline: 0;
+    inset-block-start: 0;
+    background: #FFFFFE;
+    padding-block: 16px;
+    z-index: 3;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);    
+}
+.navbar-sticky .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: (--negro);
+    padding-block-start: 0;
+}
+.navbar-sticky .wrapper a{
+    color: var(--negro);
+}
+.navbar-sticky .wrapper ul a{
+    color: var(--gris-claro);
+}
+.navbar-sticky .wrapper ul a.active{
+    color: var(--blanco);
+}
+.navbar-sticky .menu-icon{
+    color: var(--negro);
+}
+
+
 @media screen and (min-width: 600px) {
     .navbar{
         padding-block-start: 32px;
@@ -76,6 +113,9 @@
         inset-inline-end: 32px;
         inset-block-start: 32px;
         font-size: 40px;
+    }
+    .navbar-sticky{
+        padding-block-start: 16px;
     }
 }
 
@@ -101,5 +141,16 @@
     }
     .navbar-menu ul a{
         font-size: 18px;
+    }
+
+    /* Menu sticky */
+    .navbar-sticky{
+        padding-block: 16px;
+    }
+    .navbar-sticky .wrapper ul a{
+        color: var(--negro);
+    }
+    .navbar-sticky .wrapper ul a.active{
+        color: var(--negro);
     }
 }

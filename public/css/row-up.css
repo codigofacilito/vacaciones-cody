@@ -7,11 +7,30 @@
     align-items: center;
     background-color: var(--negro);
     position: fixed;
-    inset-block-end: 96px;
-    inset-inline-end: 64px;
-    z-index: 1;
+    inset-block-end: 32px;
+    inset-inline-end: 32px;
+    z-index: 2;
+    opacity: 0;
+    transition: .5s opacity;
 }
 .row-up i{
     color: var(--blanco);
     font-size: 18px;
+}
+
+.row-up.row-visible{
+    opacity: 1;
+}
+@media screen and (min-width: 768px) {
+    .row-up{
+        inset-block-end: 48px;
+        inset-inline-end: 48px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .row-up{
+        inset-block-end: 96px;
+        inset-inline-end: 64px;
+    }
 }
