@@ -27,3 +27,16 @@ La fecha límite para enviar tu pull request es el 4 de Agosto, 11:59pm
 
 **Mi página no se ve en GitHub Pages**
 Asegúrate de haber habilitado GitHub Actions y GitHub Pages, y que la rama de GitHub Pages sea gh-pages
+
+##Cambios implementados
+Los cambios cuando los subi, los hice desde mi cuenta alterna ya que no se como hacer logout de esa cuenta en mi laptop :'c
+
+#Pagina principal de Cody
+![imagen1](./images/Captura1.PNG)
+![imagen2](./images/Captura2.PNG)
+#Ruta de aprendizaje
+![imagen3](./images/Captura3.PNG)
+#Slideshow de las fotos de las vacaciones de Cody
+![imagen4](./images/Captura4.PNG)
+#Creditos de la pagina
+![imagen5](./images/Captura5.PNG)
