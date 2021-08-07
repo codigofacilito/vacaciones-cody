@@ -38,12 +38,13 @@ nav{
   box-shadow: 2px 2px 2px 0px #e4d2b7;
 }
 .header-1-titulo-intro div{
-  max-width: 460px;
+  max-width: 1260px;
   margin: 0px auto;
 
 }
 .header-1-titulo-intro h1{
-  margin-top: 32px;
+  font-size: 50px;
+  margin-top: 40px;
   padding: 5px 0px 10px 0px;
   margin-bottom: 20px;
   text-align: center;
@@ -174,7 +175,7 @@ ul li::marker {
   text-align: center;
 }
 .fotos_previsualizacion img{
-  max-width: 300px;
+  max-width: 400px;
   display: inline-block;
 
 }
@@ -205,29 +206,29 @@ ul li::marker {
 /* seccion sobre la importancia de las vacaciones con items */
 
 .seccion-4-beneficios{
+  margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
-  background: linear-gradient(
-    90deg,
-    #fae2bf 20%,
-    #ffeccf 80%
-  );
+  background-color: #0099ff57;
+  border-radius: 10px;
   height: 400px;
+  margin-bottom: 20px;
 }
 .seccion-4-beneficios h2{
   font-family: 'DM Sans', sans-serif;
   margin-bottom: 40px;
 }
 .seccion-4-beneficios p{
+  margin-left: 20px;
   font-family: 'Roboto', sans-serif;
   color: #575757;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 body{
   /*background-color: #fff2df; */
   background: linear-gradient(
     90deg,
-    #f7d7a8 1%,
+    #ffcd83 1%,
     #fff2df 100%
   );
   max-width: 1920px;
@@ -235,6 +236,7 @@ body{
   z-index: -1;
 }
 ol li{
+  margin-left:70px;  
   font-family: 'Roboto', sans-serif;
   color: #575757;
   text-align: left;
@@ -313,5 +315,4 @@ efecto ola
   100%{ margin-left: -2200px;
     transform: translateY(900px);
   }
-
 }
