@@ -1,3 +1,21 @@
+@font-face {
+  font-family: Codystar-Regular;
+  src: url('../fonts/Codystar-Regular.ttf');
+}
+
+@font-face {
+  font-family: Spartan-Thin;
+  src: url('../fonts/Spartan-Thin.ttf');
+}
+
+* {
+  font-family: Spartan-Thin;
+}
+
+h1 {
+  font-family: Codystar-Regular;
+}
+
 body {
   background-color: #1bbc9b;
   background-image: url('../images/pattern.jpg');
@@ -5,17 +23,26 @@ body {
   background-size: 80%;
 }
 
-header {
-  background-color: #221527;
-  padding: 3em;
-  color: White;
-}
-
 nav{
-  background-color: #ffe60d;
   padding: 15px;
   display: flex;
   gap:1em;
+  vertical-align: middle;
+}
+
+nav a {
+  padding-top: .5em;
+  width: 50%;
+  vertical-align: middle;
+  height: 1.5em;
+  text-decoration: none;
+  font-size: 2em;
+  color: White;
+  background-color: #1091e5;
+}
+
+nav a.activo {
+  background-color: #f55650;
 }
 
 main{
@@ -24,7 +51,10 @@ main{
   margin:0 auto;
 }
 
-section{
+header, section, footer{
+  background-color: #221527;
+  padding: 3em;
+  color: White;
   margin-top: 3rem;
 }
 
@@ -48,12 +78,25 @@ ol li{
   text-align: left;
 }
 
-.boton-rojo {
-  background-color: #f55650;
+.cursos a {
+  color: white;
   border: #221527 20px solid;
+  text-decoration: none;
 }
 
-.boton-azul {
-  background-color: #1091e5;
-  border: #221527 20px solid;
+.fondo-azul {
+  background-color:  #1091e5;
+}
+
+.fondo-amarillo {
+  background-color:  #ffe60d;
+  color: #221527 !important;
+}
+
+.fondo-rojo {
+  background-color:  #f55650;
+}
+
+#tutorial-youtube, #fotos {
+  color: white;
 }
