@@ -66,6 +66,8 @@ main{
 }
 footer{
   text-align: center;
+  background-color: #007f5f;
+  color: #ffff3f;
 }
 section{
   display: block;
