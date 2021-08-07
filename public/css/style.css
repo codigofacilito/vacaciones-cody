@@ -83,12 +83,22 @@ section {
   color: whitesmoke;
 }
 
-ul li {
-  text-align: left;
+.bg-verde_claro {
+  background-color: #01b99d;
 }
 
-.ruta_aprendizaje {
-  list-style-image: url(cody.png);
+.bg-verde_obscuro {
+  background-color: #026c67;
+}
+
+.ruta .rutaAp a {
+  background-color: #16b6a9;
+  margin: 0.1rem;
+  color: #FFFEFC;
+}
+
+.rutaAp {
+  text-align:center;
 }
 
 ol li {
@@ -97,7 +107,7 @@ ol li {
 
 
 
-.bg-galeria {
+.bg-amarillo {
   padding: 1rem;
   background-color: rgb(255, 204, 28);
 }
