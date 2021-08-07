@@ -1,0 +1,8 @@
+.titles h2 {
+    font-family: var(--fontTitles);
+    font-size: 1.8em;
+}
+
+.titles p {
+    font-size: 1.2em;
+}

@@ -24,7 +24,7 @@
               <h1>Cody Dev</h1>
             </a>
             <div class="navbar__links">
-              <a class="link" href="./perfil.html">Perfil</a>
+              <!-- <a class="link" href="./perfil.html">Perfil</a> -->
               <a class="link" href="./fotos.html">Fotos</a>
               <div class="social-media">
                 <a href="https://github.com/codigofacilito" target="_blank"><img src="./images/github-square-brands.svg" alt="GH"></a>
@@ -49,43 +49,59 @@
         </div>
     </header>
 
-    <section class="courses">
+    <section class="download">
+      <div class="wrapper">
+        <div class="download__content">
+          <div class="download__content--text">
+            <header>
+              <h2>¡Tengo un regalo para ti!</h2>
+            </header>
+            <p>Descarga el fondo de verano de C ody.</p>
+            <a class="button" href="./images/fondo-cody.jpg" download="">Descagar</a>
+          </div>
+          <div class="download__content--image">
+            <img src="./images/iPhone 11 Pro Max.png" alt="HTML-CSS-JS">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses titles">
       <div class="wrapper">
         <div class="courses__content">
-          <div class="courses__content--image">
-            <img src="./images/rsz_html-css-rounded.png" alt="HTML-CSS-JS">
-          </div>
           <div class="courses__content--text">
             <header>
               <h2>Mis vacaciones Frontend</h2>
             </header>
             <p> Durante el verano de 2019, decidí comenzar a aprender <span>desarrollo frontend</span>, por lo que durante mi viaje, estuve aprendiendo <span>HTML, CSS, y JavaScript.</span></p>
             <p> Cada tarde, después de conocer nuevos lugares en mis vacaciones, practicaba mis <span>habilidades en tecnologías frontend</span>, construyendo esta página.</p>
-            <p> Estos son los cursos que estuve tomando:</p>
-            <div class="courses__cards">
-              <div class="card">
-                <img src="./images/imgCardDW.jpg" alt="DW">
+            <p> Estos son los cursos que estuve tomando.</p>
+          </div>
+          <div class="courses__content--cards">
+            <div class="card">
+              <img src="./images/imgCardDW.jpg" alt="DW">
+              <a target="_blank" href="https://codigofacilito.com/cursos/frontend-profesional">
                 <div class="card__description">
                   <p>Curso profesional de Desarrollo Web</p>
                   <img src="./images/codigo_.png " alt="CodFacilito">
-                  <a target="_blank" href="https://codigofacilito.com/cursos/frontend-profesional">Ver más...</a>
                 </div>
-              </div>
-              <div class="card">
-                <img src="./images/imgCardWS.jpg" alt="WS">
+              </a>
+            </div>
+            <div class="card">
+              <img src="./images/imgCardWS.jpg" alt="WS">
+              <a target="_blank" href="https://codigofacilito.com/cursos/primera-pagina-2019">
                 <div class="card__description">
-                  <p>Curso para crear mi primera página web</p>
+                  <p>Curso mi primera página web</p>
                   <img src="./images/codigo_.png " alt="CodFacilito">
-                  <a target="_blank" href="https://codigofacilito.com/cursos/primera-pagina-2019">Ver más...</a>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="learning">
+    <section class="learning titles">
       <div class="wrapper">
         <header>
           <h2>Ruta de aprendizaje 2021</h2>
@@ -98,9 +114,15 @@
           <li> HTML semántico </li>
           <li> Entre otros </li>
         </ul>
+        <!-- <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WNpVXMN" data-user="nivermtz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/nivermtz/pen/WNpVXMN">
+          </a> by NiverMtz (<a href="https://codepen.io/nivermtz">@nivermtz</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> -->
       </section>
 
-      <section class="colaborate">
+      <section class="colaborate titles">
         <div class="wrapper">
           <header>
             <h2>Colabora en mi página</h2>
@@ -113,13 +135,13 @@
           </p>
           <p>
             Si nunca antes has colaborado con un repositorio, en Código Facilito hay un tutorial que lo explica
-            <a href="" target="_blank" >Ir al tutorial</a>
           </p>
+          <a  class="button" href="" target="_blank" >Ir al tutorial</a>
         </div>
         </div>
     </section>
 
-    <section class="photos">
+    <section class="photos titles">
       <div class="wrapper">
         <header>
           <h2>Aquí te comparto algunas fotos de mis vacaciones</h2>
@@ -131,13 +153,13 @@
           <img src="images/3.jpg" alt="Cody en una alberca"> -->
           <p>
             Puedes ver más, en la galería de fotos de mi página
-            <a href="fotos.html">Ir a la galería</a>
           </p>
+          <a class="button" href="fotos.html">Ir a la galería</a>
         </div>
       </div>
     </section>
 
-    <section class="vacations">
+    <section class="vacations titles">
       <div class="wrapper">
         <header>
           <h2>La importancia de las vacaciones</h2>
@@ -158,8 +180,8 @@
 
   <footer class="footer">
     <div class="wrapper">
-      <div class="footer-content">
-        <a href="">Cody Dev</a>
+      <div class="footer__content">
+        <a href="./index.html">Cody Dev</a>
         <p>Todos los derechos reservados. Cody Dev™</p>
         <div class="social-media">
           <a href="https://github.com/codigofacilito" target="_blank"><img src="./images/github-square-brands.svg" alt="GH"></a>

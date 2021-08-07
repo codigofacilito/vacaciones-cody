@@ -1,50 +1,23 @@
 .courses {
-    width: 100%;
-    background: url(../images/detalle-mar-1.png), linear-gradient(180deg, var(--yellow20), var(--yellow30));
-    background-repeat: no-repeat;
-    background-position: center right;
-    border-radius: 20% 0% 0% 0%;
-    box-sizing: border-box;
-    color: var(--green20);
     padding-block: 5em;
+    background: var(--yellow10);
 }
 
 .courses__content {
-    margin: auto;
-    max-inline-size: 80%;
     display: flex;
     gap: 5em;
-    padding: 2em;
-    background: rgba(255,255, 255, 0.75);
-    border-radius: .5em;
 }
 
-.courses__content--image {
-    width: 20%;
+.courses__content--cards {
+    flex: 1;
 }
 
-.courses__content--text{
-    width: 60%;
-    color: var(--green2 0);
-    box-sizing: border-box;
+.courses__content--text {
+    flex: 1;
 }
 
-.courses__content--text h2 {
-    margin-block-start: 0;
-    margin-block-end: 2em;
-    font-size: 2.5em;
-}
-
-.courses__content--text p {
-    font-size: 20px;
-}
-
-.courses__content--text span {
-    font-weight: bold;
-}
-
-.courses__cards {
+.courses__content--cards {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 1em;
 }

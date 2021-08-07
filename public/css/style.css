@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto+Slab&display=swap");
 @import url(../css/wrapper.css);
+@import url(../css/titles.css);
+@import url(../css/button.css);
 @import url(../css/card.css);
 @import url(../css/navbar.css);
 @import url(../css/banner.css);
+@import url(../css/download.css);
 @import url(../css/courses.css);
 @import url(../css/learning.css);
 @import url(../css/colaborate.css);
@@ -21,6 +24,10 @@
   --white: white;
   --fontBase: 'DM Sans', sans-serif;
   --fontTitles: 'Roboto Slab', serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

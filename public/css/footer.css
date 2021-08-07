@@ -1,11 +1,17 @@
 .footer {
     padding-block: 1.5em;
     color: var(--white);
-    background: linear-gradient(135deg, var(--yellow30), var(--yellow20), var(--yellow20), var(--yellow30));
+    background: linear-gradient(to top, var(--yellow30), var(--yellow20), var(--yellow10));
 }
 
-.footer-content {
+.footer__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer__content a {
+    text-decoration: none;
+    font-family: var(--fontTitles);
+    color: var(--white);
 }

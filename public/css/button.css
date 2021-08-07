@@ -1,0 +1,10 @@
+.button {
+    width: 5em;
+    text-decoration: none;
+    color: var(--white);
+    padding: .5em;
+    background: var(--green20);
+    border-radius: .5rem;
+    text-align: center;
+    font: 16px var(--fontBase);
+}
