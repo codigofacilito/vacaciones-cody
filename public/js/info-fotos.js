@@ -3,20 +3,20 @@ const info_fotos = [
         url: "./images/galeria/1.jpg",
         id: "001",
         titulo: "Montando en bicicleta",
-        descripcion: "Recuerdo ese dia, estaba caminando por una playa del caribe, cuando vi un local donde rentaban bicicletas, no lo pense y rente una, esa fotografia la tomó un amable turista, fue un gran día.",
+        descripcion: "Recuerdo ese dia, estaba caminando por una playa del caribe, cuando vi un local donde rentaban bicicletas, no lo pensé y rente una, esa fotografía la tomó un amable turista, fue un gran día.",
         ubicacion: "Playa Cana, República Dominicana."
     },
     {
         url: "./images/galeria/2.jpg",
         id: "002",
         titulo: "Acampando en la playa",
-        descripcion: "Este fué un día increíble, después de recorrer las playas de Puerto Escondido, decidi acampar en una de ellas, definitivamente volvere allí.",
+        descripcion: "Este fué un día increíble, después de recorrer las playas de Puerto Escondido, decidí acampar en una de ellas, definitivamente volveré allí.",
         ubicacion: "Playa Manzanillo, Puerto Escondido, Oaxaca, México."
     },
     {
         url: "./images/galeria/3.jpg",
         id: "003",
-        titulo: "Relajandome en la alberca",
+        titulo: "Relajándome en la alberca",
         descripcion: "Al llegar a Cancún, decidí darme un lujo y descansar en un hotel con alberca, recuerdo que mas tarde opte por estudiar un poco de frontend, aprendí mucho mejor después de un descanso.",
         ubicacion: "Cancún, México."
     },
@@ -31,7 +31,7 @@ const info_fotos = [
         url: "./images/galeria/5.jpg",
         id: "005",
         titulo: "Recorriendo Guanajuato",
-        descripcion: "Guanajuato es conocido por sus cajones, recuerdo que ese día buscaba el famoso Callejón del beso, pero me perdí entre tanto callejón.",
+        descripcion: "Guanajuato es conocido por sus callejones, recuerdo que ese día buscaba el famoso Callejón del beso, pero me perdí entre tanto callejón.",
         ubicacion: "Guanajuato, México."
     },
     {
