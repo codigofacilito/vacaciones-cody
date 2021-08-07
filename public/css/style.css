@@ -1,38 +1,252 @@
-nav{
-  background-color: aliceblue;
+* {
+  font-family: "PT Sans";
+}
+
+nav {
+  background-color: rgb(68, 211, 12);
   padding: 15px;
   display: flex;
-  gap:1em;
+  gap: 1em;
+  border-radius: 5px;
 }
 
-main{
+nav a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+nav a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.linkb {
+  color: red;
+  text-decoration: none;
+}
+
+header p {
+  margin-bottom: 2em;
+  /* font-family: "Lobster", cursive; */
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+h1,
+h2 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+main {
   text-align: center;
   max-width: 960px;
-  margin:0 auto;
+  margin: 0 auto;
+  /* border-style: solid;
+  border-color: red; */
 }
 
-section{
+section {
   margin-top: 3rem;
 }
 
-.cursos div{
-  background-color: black;
+.fondo {
+  background-color: #ece2c6;
+  border-radius: 8px;
+  width: 950px;
+  height: 30px;
+  margin-top: -4px;
+}
+
+.animation {
+  animation-name: move;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    /* transform: scaleX(1); */
+    transform: translateX(200%);
+  }
+}
+
+.linkFotos {
+  margin-top: 4em;
+}
+
+.cursos {
+  background-color: rgb(70, 183, 228);
   color: white;
   max-width: 200px;
   display: inline-block;
-  box-shadow: 5px 5px 10px black;
-}
-.fotos img{
-  max-width: 450px;
-  display: inline-block;
-}
-ul li{
-  text-align: left;
-}
-ul li::marker {
-  content: "🚀";
+  box-shadow: 5px 5px 10px rgb(132, 134, 132);
+  border-radius: 5px;
+  margin: 2em;
+  padding: 2px;
 }
 
-ol li{
+.cursos:hover {
+  color: black;
+}
+
+.displays {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  /* border-style: solid;
+  border-color: red;
+  padding: 0px; */
+}
+
+.zin {
+  z-index: 1;
+}
+
+.fotos img {
+  /* flex: auto; */
+  max-width: 450px;
+  display: inline-block;
+  background-color: white;
+  padding: 10px 10px 50px 10px;
+  margin: 1em;
+  border: 1px solid #bfbfbf;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.pictures {
+  max-width: 400px;
+  display: inline-block;
+}
+
+.polaroidContenedor {
+  display: inline-block;
+  width: 400px;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #bfbfbf;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+  /* margin: 3px; */
+}
+
+.textoPolaroid {
+  display: block;
+  margin-top: 1em;
+  text-align: center;
+  font-style: italic;
+  font-family: "Lobster";
+}
+
+.animated {
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+
+.swing {
+  transform-origin: top center;
+  animation-name: swing;
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.rotarIzq4 {
+  transform: rotate(2deg);
+}
+
+.rotarIzq {
+  transform: rotate(2deg);
+}
+
+.rotarDer4 {
+  transform: rotate(-4deg);
+}
+
+.rotarDer {
+  transform: rotate(-2deg);
+}
+
+.beneficios {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+ul li {
   text-align: left;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+li {
+  padding-left: 15px;
+}
+
+ul li::marker {
+  content: " ✅";
+}
+
+.footer {
+  background-color: rgb(68, 211, 12);
+  max-width: 960;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.sun {
+  width: 100px;
+  height: 100px;
+  background-color: #ffde00;
+  border-radius: 50%;
+  box-shadow: 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040, 0 0 0 60px #ffde0020,
+    0 0 0 80px #ffde0010, 0 0 0 100px #ffde0000, 0 0 40px 100px #ffde0010;
+  animation: sunrise 2s infinite linear forwards, rays 2s 2s infinite linear;
+}
+
+@keyframes sunrise {
+  0% {
+    box-shadow: none;
+  }
+}
+
+@keyframes rays {
+  0% {
+    box-shadow: 0 0 0 0 #ffde0080, 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040,
+      0 0 0 60px #ffde0020, 0 0 0 80px #ffde0010, 0 0 40px 100px #ffde0010;
+  }
+  100% {
+    box-shadow: 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040, 0 0 0 60px #ffde0020,
+      0 0 0 80px #ffde0010, 0 0 0 100px #ffde0000, 0 0 40px 100px #ffde0010;
+  }
 }
