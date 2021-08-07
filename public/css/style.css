@@ -346,3 +346,59 @@ ol li {
     width: 100%;
   }
 }
+
+.fotos-content {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.fotos-content h2 {
+  font-size: 2em;
+  color: var(--cody-green);
+  margin-top: 2em;
+}
+
+.fotos-background {
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: red;
+  background-image: url("/public/images/4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotos-img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.fotos-img img {
+  transition: transform 0.5s ease-in-out;
+  max-width: 30%;
+  display: inline-block;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.fotos-img img:hover {
+  transform: scale(1.2) rotate(-25deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .fotos-img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fotos-img img {
+    max-width: 80%;
+    margin: 1em 0;
+  }
+}
