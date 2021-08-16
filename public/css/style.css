@@ -5,13 +5,13 @@
 }
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: rgb(241, 241, 241);
 }
 
@@ -20,7 +20,7 @@ nav {
   background-color: var(--secundario-color);
   padding: 10px 30px;
   display: flex;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.45);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.45);
   border-radius: 15px;
 }
 
@@ -34,66 +34,62 @@ nav li {
   padding: 0 30px;
 }
 nav ul {
-display: flex;
-
+  display: flex;
 }
-nav  a {
-background-color: #fff;
-color: var(--texto-color);
-box-shadow: 0 4px 10px rgba(0,0,0,0.30);
-border-radius: 42px;
-font-size: 18px;
-padding: 0.5em 0.7em;
-font-weight: 500;
-line-height: 50px;
-text-transform: uppercase;
-position: relative;
-text-decoration: none;
+nav a {
+  background-color: #fff;
+  color: var(--texto-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 42px;
+  font-size: 18px;
+  padding: 0.5em 0.7em;
+  font-weight: 500;
+  line-height: 50px;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
 }
 
-nav  a:hover {
+nav a:hover {
   background-color: var(--primer-color);
   color: #fff;
 }
 
-
-.container{
-  background-color:#fff;
+.container {
+  background-color: #fff;
   color: #000;
   padding: 18px;
   font-size: 20px;
   border-radius: 15px;
 }
 
-.texto{
+.texto {
   margin: 50px;
 }
 
-
-section header h2{
+section header h2 {
   background-color: var(--primer-color);
   color: #fff;
   font-size: 40px;
   border-radius: 15px;
 }
 
-.mis-vacasiones{
+.mis-vacasiones {
   color: #000;
   font-size: 18px;
 }
 
-
-main{
+main {
   text-align: center;
   max-width: 960px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-section{
+section {
   margin-top: 3rem;
 }
 
-.titulos-secundarios p{
+.titulos-secundarios p {
   background-color: var(--secundario-color);
   color: #fff;
   font-size: 18px;
@@ -119,7 +115,7 @@ section{
   color: #fff;
 }
 
-.fotos img{
+.fotos img {
   max-width: 450px;
   display: inline-block;
 }
@@ -136,7 +132,7 @@ ol {
   margin: 60px 0px;
 }
 
-ol li{
+ol li {
   text-align: left;
   background-color: #fff;
   color: #000;
@@ -151,7 +147,7 @@ ol li{
   flex-wrap: wrap;
 }
 
-.contenedor{
+.contenedor {
   margin: 20px;
   display: flex;
 }
@@ -162,13 +158,13 @@ ol li{
 }
 
 .contenedor:hover figure {
-  -webkit-transform:  perspective(600px) rotateY(180deg);
-  -ms-transform:  perspective(600px) rotateY(180deg);
-  -o-transform:  perspective(600px) rotateY(180deg);
+  -webkit-transform: perspective(600px) rotateY(180deg);
+  -ms-transform: perspective(600px) rotateY(180deg);
+  -o-transform: perspective(600px) rotateY(180deg);
   transform: perspective(600px) rotateY(180deg);
-  -webkit-box-shadow: 0px 2px 10px rgba(0,0,0,0.45);
-  -moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.45);
-  box-shadow: 0px 2px 110px 2px rgba(0,0,0,0.45);
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 2px 110px 2px rgba(0, 0, 0, 0.45);
 }
 
 .contenedor:hover figure img {
@@ -180,7 +176,7 @@ figure {
   height: 350px;
   margin: 0;
   position: relative;
-  transition: all ease .5s;
+  transition: all ease 0.5s;
   transform-style: preserve-3d;
   transform: perspective(600px) rotateY(0deg);
 }
@@ -190,7 +186,7 @@ figure .trasera {
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  transition: all ease .5s;
+  transition: all ease 0.5s;
 }
 
 figure .frontal {
@@ -212,9 +208,9 @@ figure p {
 }
 
 figure .trasera .titulo {
-  color:#fff;
+  color: #fff;
   font-weight: normal;
   margin-bottom: 20px;
-  font-family: 'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
 }

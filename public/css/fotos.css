@@ -8,8 +8,8 @@
   box-sizing: border-box;
 }
 
-h2{
-  background-color:#fff;
+h2 {
+  background-color: #fff;
   color: #000;
   padding: 10px;
   font-size: 20px;
@@ -17,7 +17,7 @@ h2{
   margin-top: 50px;
 }
 
-.fotos{
+.fotos {
   background-color: var(--primer-color);
   padding-top: 20px;
   grid-template-columns: 50% 1fr;
@@ -30,18 +30,17 @@ h2{
   margin-bottom: 100px;
 }
 
-.img-item{
+.img-item {
   display: grid;
   border-radius: 20px;
   gap: 10px;
   padding: 10px;
   margin: 9px;
-  height:300px;
+  height: 300px;
   width: 450px;
 }
 
 .img-item:hover {
   filter: opacity(0.9);
   transform: scale(1.04);
-  }
-
+}
