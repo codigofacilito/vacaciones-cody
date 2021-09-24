@@ -479,3 +479,182 @@ Galería de fotos de mis vacaciones
   content: "magdiel.vampire@gmail.com";
 }
 
+/* Responsive desing*/
+
+@media screen and (max-width: 800px) {
+  :root{
+    --boton-padding: 18px 40px;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+  .cabecera__texto{
+    width: 120%;
+    text-align: center;
+  }
+  .cabecera_titulo{
+    font-size: 2.6rem;
+    
+  }
+  .cabecera_parrafos{
+    font-size: 1.5rem;
+    margin: 30px 0 30px 126px;
+    text-align: justify;
+  }
+  .subtitulo{
+    font-size: 2.3rem;
+  }
+  .subtitulo3{
+    margin-bottom: 30px;
+  }
+  .card_item{
+    padding: 8PX;
+  }
+  .card_title{
+    text-align: center;
+  }
+  .galery_grid{
+    height: 338px;
+    gap: 7px;
+  }
+  .btn_copy{
+    margin-left: 5px;
+    padding: 22px 40px;
+  }
+  
+  .--impot-parrafo{
+    width: 50%;
+  }
+  .lista{
+    width: 45%;
+  }
+  .uno{
+    margin-right: 0;
+  }
+  .dos{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .tres{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cuatro{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer_social{
+    justify-content: space-between;
+  }
+  .footer_link{
+    height: 59px;
+    margin: 0;
+  }
+
+  /**FOTOS*/
+
+  .galery_cabecera{
+    height: 204px;
+  }
+  .galerias_grid{
+    height: 361px;
+    gap: 7px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  :root{
+    --boton-padding: 15px 40px;
+  }
+  .cabecera{
+    height: 88vh;
+  }
+  .cabecera_titulo{
+    font-size: 2rem;    
+  }
+  .cabecera_parrafos{
+    font-size: 1rem;
+    margin: 90px auto;
+  }
+  .subtitulo{
+    font-size: 1.9rem;
+  }
+  .parrafos{
+    font-size: 1rem;
+  }
+  .subtitulo3{
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  .curso{
+    font-size: 1rem;
+  }
+  .curso--derecha{
+    text-align: center;
+  }
+  .card_contenedor{
+    margin-top: 17px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 7px;
+    grid-template-areas:
+    "card5"
+    "card2"
+    "card3"
+    "card4"
+    "card1";
+  }
+  .galery_grid{
+    height: 513px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 2fr);
+    grid-template-areas: 
+    "img1"
+    "img2"
+    "img3";
+  }
+  .enlece_galery{
+    flex-direction: column;
+  }
+  .btn_copy{
+    margin: 5px auto;
+  }
+  .importancia_text{
+    flex-direction: column;
+  }
+  .--impot-parrafo{
+    width: 90%;
+  }
+  .lista {
+    width: 100%;
+  }
+  .footer{
+    margin-top: 0;
+  }
+
+  /**FOTOS*/
+
+  .galery_cabecera{
+    height: 218px;
+  }
+  .--subtitulo_nav {
+    margin: 8px 0;
+  }
+  .galerias_grid{
+    display: grid;
+    height: 856px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "img1"
+    "img2"
+    "img3"
+    "img4"
+    "img5"
+    "img6";
+    
+  }
+}
+
