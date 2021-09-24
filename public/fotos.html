@@ -5,30 +5,99 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis vacaciones</title>
+  <title>Galeria de mis vacaciones</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <main>
-    <header>
-      <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+  
+  <header class="galery_cabecera">
+    <div class="contenedor contenedor_nav">
+      <nav class="nav">
+        <a href="index.html" class="nav__item">Inicio</a>
       </nav>
-      <h2>Galería completa de mis vacaciones</h2>
-    </header>
-    <div class="fotos">
-      <img src="images/1.jpg" alt="Cody en la playa">
-      <img src="images/2.jpg" alt="Cody acampando">
-      <img src="images/3.jpg" alt="Cody en una alberca">
-      <img src="images/4.jpg" alt="Cody en una alberca">
-      <img src="images/5.jpg" alt="Cody en una alberca">
-      <img src="images/6.jpg" alt="Cody en una alberca">
-      
+      <h2 class="subtitulo --subtitulo_nav">Galería completa de mis vacaciones</h2>
     </div>
+    <div class="galery_wave" style="overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+  </header>
+  <main>
+    <section class="contenedor">
+      <div class="galerias_grid">
 
+        <article class="galery_item">
+          <img src="images/1.jpg" alt="Recorriendo la playa" class="galery_img">
+          <div class="galery_hover">
+            <h2 class="galery_titulo">Recorriendo la playa</h2>
+          </div>
+        </article>
+
+        <article class="galery_item">
+          <img src="images/2.jpg" alt="Acampando en la playa" class="galery_img">
+          <div class="galery_hover">
+            <h2 class="galery_titulo">Acampando en la playa</h2>
+          </div>
+        </article>
+
+        <article class="galery_item">
+          <img src="images/3.jpg" alt="Descansando en la piscina" class="galery_img">
+          <div class="galery_hover">
+            <h2 class="galery_titulo">Descansando en la piscina</h2>
+          </div>
+        </article>
+
+        <article class="galery_item">
+          <img src="images/4.jpg" alt="Disfrutando el atardecer" class="galery_img">
+          <div class="galery_hover">
+            <h2 class="galery_titulo">Disfrutando el atardecer</h2>
+          </div>
+        </article>
+
+        <article class="galery_item">
+          <img src="images/5.jpg" alt="De inncognito en la calle" class="galery_img">
+          <div class="galery_hover">
+            <h2 class="galery_titulo">De inncognito en la calle</h2>
+          </div>
+        </article>
+
+        <article class="galery_item">
+          <img src="images/6.jpg" alt="Desesperado en el Aeropuerto" class="galery_img">
+          <div class="galery_hover">
+            <h2 class="galery_titulo">Desesperado en el Aeropuerto</h2>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
-</body>
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer_texto">
+        <h2 class="subtitulo">Contactame</h2>
+        <p class="parrafos --footer_parrafo">Me puedes contactar en cualquier de mis redes sociales</p>
 
+        <div class="footer_social">
+          <a href="#" class="footer_link">
+            <img src="images/bxl-facebook.svg" alt="Facebook" class="footer_icon">
+          </a>
+          <a href="#" class="footer_link">
+            <img src="images/bxl-twitter.svg" alt="Twitter" class="footer_icon">
+          </a>        
+          <a href="#" class="footer_link">
+            <img src="images/bxl-instagram.svg" alt="WhatsApp" class="footer_icon">
+          </a>        
+          <a href="#" class="footer_link">
+            <img src="images/bxl-youtube.svg" alt="LinKedln" class="footer_icon">
+          </a>
+          <a href="#" class="footer_link">
+            <img src="images/bxl-instagram.svg" alt="GitHub" class="footer_icon">
+          </a>
+        </div>
+        
+      </div>
+      <p class="footer_copy">
+        Sitio Web creado por &copy; Magdiel Andrés Castellanos : 
+      </p>
+    </div>
+  </footer>
+</body>
 </html>
